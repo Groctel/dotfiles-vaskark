@@ -1,0 +1,14 @@
+# This will automatically start MPD as your user when you log into GNOME/KDE,
+# provided that the system-wide MPD has been disabled.
+# Make sure to create your own ~/.mpdconf containing the path to your music,
+# and adjust the other paths such that MPD can write to its log and databases.
+
+[Desktop Entry]
+Type=Application
+Exec=mpDris2
+Terminal=false
+Hidden=false
+X-GNOME-Autostart-enabled=true
+Name=mpDris2
+Comment=Notifications for mpd
+Comment[en_US]=Notifications for mpd
