@@ -1,0 +1,9 @@
+html {
+	font-family: Ubuntu;
+	font-size: 12px;
+/*	padding: 16px; */
+}
+
+#bottom-result-container #spon_links { display: none !important; }
+#bottom-result-container #sponsored_csa1 { display: none !important; }
+#bottom-result-container #sponsored_csa2 { display: none !important; }
