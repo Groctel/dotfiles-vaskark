@@ -1,0 +1,496 @@
+;==========================================================
+;
+;
+;   ██████╗  ██████╗ ██╗  ██╗   ██╗██████╗  █████╗ ██████╗
+;   ██╔══██╗██╔═══██╗██║  ╚██╗ ██╔╝██╔══██╗██╔══██╗██╔══██╗
+;   ██████╔╝██║   ██║██║   ╚████╔╝ ██████╔╝███████║██████╔╝
+;   ██╔═══╝ ██║   ██║██║    ╚██╔╝  ██╔══██╗██╔══██║██╔══██╗
+;   ██║     ╚██████╔╝███████╗██║   ██████╔╝██║  ██║██║  ██║
+;   ╚═╝      ╚═════╝ ╚══════╝╚═╝   ╚═════╝ ╚═╝  ╚═╝╚═╝  ╚═╝
+;
+;
+;   To learn more about how to configure Polybar
+;   go to https://github.com/jaagr/polybar
+;
+;   The README contains alot of information
+;
+;==========================================================
+
+[colors]
+background = #222
+foreground = #dfdfdf
+;primary = #3D8D91
+primary = #2A9C94
+;primary = ${xrdb:color4}
+secondary = #000
+alert = #bd2c40
+
+[bar/top]
+;monitor = ${env:MONITOR:eDP-1}
+width = 100%
+height = 22
+radius = 1.0
+fixed-center = true
+
+background = transparent
+foreground = ${colors.foreground}
+
+line-size = 
+line-color = 
+
+border-size = 4
+border-color = transparent
+
+padding-left = 0
+padding-right = 1
+
+module-margin-left = 2
+module-margin-right = 0
+
+font-0 = Iosevka Custom:style=regular:size=7.5;2
+font-1 = Symbols Nerd Font:size=10;2
+
+;font-2 = Weather Icons:size=10;1
+
+modules-left = i3
+modules-center = 
+modules-right = network backlight pulseaudio memory battery temperature date
+
+;dim-value = 0.8
+
+tray-position = right
+tray-padding = 1
+tray-detached = false
+tray-background = ${colors.secondary}
+tray-maxsize = 16
+
+;wm-restack = bspwm
+;wm-restack = i3
+
+;override-redirect = true
+
+scroll-up = i3wm-wsnext
+scroll-down = i3wm-wsprev
+
+;cursor-click = pointer
+;cursor-scroll = ns-resize
+
+[bar/bottom]
+;monitor = ${env:MONITOR:eDP-1}
+width = 100%
+height = 22
+radius = 1.0
+fixed-center = true
+bottom = true
+
+background = transparent
+foreground = 
+
+line-size = 
+line-color = 
+
+border-size = 4
+border-color = 
+
+padding-left = 0
+padding-right = 0
+
+module-margin-left = 1
+module-margin-right = 0
+
+font-0 = Iosevka Custom:style=regular:size=7.5;2
+font-1 = Symbols Nerd Font:size=7;0
+
+modules-left = mpd-controls
+modules-center = mpd
+modules-right = mpd-time
+
+;dim-value = 0.8
+
+;wm-restack = i3
+
+[module/s]
+type = custom/text
+
+content = ""
+content-foreground = ${colors.secondary}
+content-background = 
+content-padding = 
+
+[module/i3]
+type = internal/i3
+index-sort = true
+wrapping-scroll = false
+enable-click = true
+enable-scroll = false
+reverse-scroll = false
+
+; workspace icons
+ws-icon-0 = 1;
+ws-icon-1 = 2;
+ws-icon-2 = 3;
+ws-icon-3 = 4;
+ws-icon-4 = 5;
+ws-icon-5 = 6;
+ws-icon-6 = 7;
+ws-icon-7 = 8;
+ws-icon-8 = 9;
+ws-icon-9 = 10;
+
+; Only show workspaces on the same output as the bar
+pin-workspaces = true
+
+format = <label-state> <label-mode>
+
+label-mode = %mode%
+label-mode-padding = 1
+label-mode-foreground = ${colors.secondary}
+label-mode-background = ${colors.primary}
+
+; focused = Active workspace on focused monitor
+label-focused = %icon%
+label-focused-foreground = ${colors.primary}
+label-focused-padding = 1
+
+; unfocused = Inactive workspace on any monitor
+label-unfocused = %icon%
+label-unfocused-foreground = ${colors.foreground}
+label-unfocused-background =
+label-unfocused-padding = 1
+
+; visible = Active workspace on unfocused monitor
+label-visible = %icon%
+label-visible-padding = 1
+
+; urgent = Workspace with urgency hint set
+label-urgent = %icon%
+label-urgent-foreground = ${colors.alert}
+label-urgent-background = 
+label-urgent-padding = 1
+
+label-separator = 
+label-separator-padding =
+label-separator-foreground = 
+
+[module/mpd]
+type = internal/mpd
+host = 127.0.0.1
+port = 6601
+
+label-song = %artist% -- %title%
+format-online-prefix = ""
+format-online = <label-song>
+
+label-offline = mpd is offline :(
+format-offline = <label-offline>
+
+label-song-background = ${colors.primary}
+label-song-foreground = ${colors.secondary}
+label-song-padding = 2
+
+format-online-prefix-background = ${colors.secondary}
+format-online-prefix-foreground = ${colors.primary}
+format-online-prefix-padding = 1
+
+;format-online-suffix-background = ${colors.secondary}
+;format-online-suffix-foreground = ${colors.primary}
+;format-online-suffix-padding = 1
+
+format-offline-background = ${colors.primary}
+format-offline-foreground = ${colors.secondary}
+format-offline-padding = 1
+
+label-song-maxlen = 175
+label-song-ellipsis = true
+
+[module/mpd-time]
+type = internal/mpd
+host = 127.0.0.1
+port = 6601
+
+label-time = [%elapsed%/%total%]
+format-online = <label-time>
+
+label-time-background = ${colors.primary}
+label-time-foreground = ${colors.secondary}
+label-time-padding = 1
+
+[module/mpd-controls]
+type = internal/mpd
+host = 127.0.0.1
+port = 6601
+
+;format-online = <icon-prev><icon-seekb><toggle><icon-seekf><icon-next>
+format-online = <toggle><icon-next>
+
+icon-prev = 
+icon-seekb = 
+icon-stop = 
+icon-play = 
+icon-pause = 
+icon-seekf = 
+icon-next = 
+
+icon-prev-background = ${colors.primary}
+;icon-seekb-background = ${colors.primary}
+icon-play-background = ${colors.secondary}
+icon-pause-background = ${colors.secondary}
+;icon-seekf-background = ${colors.primary}
+icon-next-background = ${colors.primary}
+icon-prev-foreground = ${colors.secondary}
+;icon-seekb-foreground = ${colors.secondary}
+icon-play-foreground = ${colors.primary}
+icon-pause-foreground = ${colors.primary}
+;icon-seekf-foreground = ${colors.secondary}
+icon-next-foreground = ${colors.secondary}
+icon-prev-padding = 1
+icon-seekb-padding = 1
+icon-play-padding = 1
+icon-pause-padding = 1
+icon-seekf-padding = 1
+icon-next-padding = 1
+
+[module/backlight]
+type = internal/backlight
+card = intel_backlight
+
+label = %percentage%%
+format = <ramp><label>
+
+label-foreground = ${colors.secondary}
+label-background = ${colors.primary}
+label-padding = 1
+
+ramp-foreground = ${colors.primary}
+ramp-background = ${colors.secondary}
+ramp-padding = 1
+
+ramp-0 = 
+ramp-1 = 
+ramp-2 = 
+ramp-3 = 
+
+[module/pulseaudio]
+type = internal/pulseaudio
+sink = alsa_output.pci-0000_00_1f.3.analog-stereo 
+use-ui-max = false
+
+label-volume = %percentage%%
+format-volume = <ramp-volume><label-volume>
+
+label-volume-background = ${colors.primary}
+label-volume-foreground = ${colors.secondary}
+label-volume-padding = 1
+
+ramp-volume-background = ${colors.secondary}
+ramp-volume-foreground = ${colors.primary}
+ramp-volume-padding = 1
+
+ramp-volume-0 = 
+ramp-volume-1 = 
+ramp-volume-2 = 
+ramp-volume-3 = 
+ramp-volume-4 = 
+ramp-volume-5 = 
+
+label-muted = ---
+format-muted-prefix = 
+format-muted = <label-muted>
+
+label-muted-background = ${colors.primary}
+label-muted-foreground = ${colors.secondary}
+label-muted-padding = 1
+
+format-muted-prefix-background = ${colors.secondary}
+format-muted-prefix-foreground = ${colors.primary}
+format-muted-prefix-padding = 1
+
+[module/cpu]
+type = internal/cpu
+interval = 2
+format-prefix = " "
+label = %percentage%%
+
+[module/memory]
+type = internal/memory
+interval = 2
+format-prefix = ""
+label = %percentage_used%%
+
+format-prefix-background = ${colors.secondary}
+format-prefix-foreground = ${colors.primary}
+format-prefix-padding = 1
+
+label-background = ${colors.primary}
+label-foreground = ${colors.secondary}
+label-padding = 1
+
+[module/local_ip]
+type = internal/network
+interface = wlp2s0
+interval = 1.0
+
+label-connected = %local_ip%
+format-connected-prefix = ""
+format-connected = <label-connected>
+
+format-connected-prefix-foreground = ${colors.primary}
+format-connected-prefix-background = ${colors.secondary}
+format-connected-prefix-padding = 1
+
+label-connected-foreground = ${colors.secondary}
+label-connected-background = ${colors.primary}
+label-connected-padding = 1
+
+label-disconnected = n/a
+format-disconnected = <label-disconnected>
+
+label-disconnected-background = ${colors.secondary}
+label-disconnected-foreground = ${colors.primary}
+label-disconnected-padding = 1
+
+[module/network]
+type = internal/network
+interface = wlp2s0
+; enp0s3
+interval = 1.0
+
+label-connected =  %downspeed%
+; %upspeed%
+format-connected-prefix = ""
+format-connected = <label-connected>
+
+label-connected-background = ${colors.primary}
+label-connected-foreground = ${colors.secondary}
+label-connected-padding = 1
+
+format-connected-prefix-background = ${colors.secondary}
+format-connected-prefix-foreground = ${colors.primary}
+format-connected-prefix-padding = 1
+
+label-disconnected = 睊
+format-disconnected = <label-disconnected>
+
+label-disconnected-background = ${colors.secondary}
+label-disconnected-foreground = ${colors.primary}
+label-disconnected-padding = 1
+
+ramp-signal-0 = 
+ramp-signal-1 = 
+ramp-signal-2 = 
+ramp-signal-3 = 
+ramp-signal-4 = 
+
+[module/date]
+type = internal/date
+interval = 1
+
+date =
+;date-alt = %B %m, %Y
+time = %I:%M %p
+time-alt =
+
+label = %time%
+format-prefix = ""
+format = <label>
+
+label-foreground = ${colors.secondary}
+label-background = ${colors.primary}
+label-padding = 1
+
+format-prefix-foreground = ${colors.primary}
+format-prefix-background = ${colors.secondary}
+format-prefix-padding = 1
+
+[module/battery]
+type = internal/battery
+battery = BAT0
+adapter = AD0
+full-at = 100
+
+label-charging = %percentage%%
+format-charging = <ramp-capacity><label-charging>
+
+label-discharging = %percentage%%
+format-discharging = <ramp-capacity><label-discharging>
+
+label-charging-foreground = ${colors.secondary}
+label-charging-background = ${colors.primary}
+label-charging-padding = 1
+
+label-discharging-foreground = ${colors.secondary}
+label-discharging-background = ${colors.primary}
+label-discharging-padding = 1
+
+ramp-capacity-foreground = ${colors.primary}
+ramp-capacity-background = ${colors.secondary}
+ramp-capacity-padding = 1
+
+;ramp-capacity-0 = 
+;ramp-capacity-1 = 
+;ramp-capacity-2 = 
+;ramp-capacity-3 = 
+;ramp-capacity-4 = 
+;ramp-capacity-5 = 
+;ramp-capacity-6 = 
+
+ramp-capacity-0 = 
+ramp-capacity-1 = 
+ramp-capacity-2 = 
+ramp-capacity-3 = 
+ramp-capacity-4 = 
+ramp-capacity-5 = 
+ramp-capacity-6 = 
+;ramp-capacity-7 = 
+
+[module/temperature]
+type = internal/temperature
+thermal-zone = 0
+warn-temperature = 65
+
+label = %temperature-c%
+format = <ramp><label>
+
+label-background = ${colors.primary}
+label-foreground = ${colors.secondary}
+label-padding = 1
+
+ramp-background = ${colors.secondary}
+ramp-foreground = ${colors.primary}
+ramp-padding = 1
+
+label-warn = %temperature-c%
+format-warn = <ramp><label-warn>
+
+label-warn-background = ${colors.alert}
+label-warn-foreground = ${colors.secondary}
+label-warn-padding = 1
+
+ramp-warn-background = ${colors.secondary}
+ramp-warn-foreground = ${colors.alert} 
+ramp-warn-padding = 1
+
+ramp-0 = 
+ramp-1 = 
+ramp-2 = 
+ramp-3 = 
+ramp-4 = 
+
+[module/openweathermap-simple]
+type = custom/script
+exec = ~/.config/polybar/scripts/openweathermap-simple.sh
+interval = 600
+label-font = 3
+
+[settings]
+screenchange-reload = true
+;compositing-background = xor
+;compositing-background = screen
+;compositing-foreground = source
+;compositing-border = over
+
+[global/wm]
+margin-top = 5
+margin-bottom = 5
+
+; vim:ft=dosini
