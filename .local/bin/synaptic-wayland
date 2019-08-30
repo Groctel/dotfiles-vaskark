@@ -1,0 +1,4 @@
+#!/bin/sh
+xhost +si:localuser:root
+sudo synaptic
+

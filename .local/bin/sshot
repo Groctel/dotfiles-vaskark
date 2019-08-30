@@ -1,0 +1,2 @@
+#!/bin/sh
+scrot -d 3 -q 90 '%Y-%m-%d_%I-%M-%S_%p.png' -e 'mv $f ~/Screenshots/'
