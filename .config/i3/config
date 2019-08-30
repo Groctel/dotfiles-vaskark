@@ -1,0 +1,420 @@
+# set mod key
+set $mod Mod4
+
+# rounded corners (resloved fork)
+#border_radius 5
+
+# drag floating windows
+floating_modifier $mod
+
+# set terminal
+set $term st
+
+# font for window titles
+font xft:Iosevka Custom 7.5
+
+# hide borders
+hide_edge_borders none
+
+# change borders
+bindsym $mod+u border normal 1
+bindsym $mod+i border normal 0
+bindsym $mod+o border pixel 1
+bindsym $mod+p border none
+
+# start terminal
+bindsym $mod+Return exec $term
+bindsym $mod+Shift+Return exec $term -c FloatTERM
+
+# farge stuff
+bindsym $mod+Shift+f --release exec farge --image-viewer sxiv
+for_window [instance="Farge"] floating enable
+
+# kill focused window
+bindsym $mod+Shift+q kill
+
+# start program launcher
+bindsym $mod+d exec --no-startup-id rofi -no-lazy-grab -show drun -theme themes/drun.rasi
+
+# change focus
+bindsym $mod+h focus left
+bindsym $mod+j focus down
+bindsym $mod+k focus up
+bindsym $mod+l focus right
+
+# alternatively, you can use the cursor keys:
+bindsym $mod+Left focus left
+bindsym $mod+Down focus down
+bindsym $mod+Up focus up
+bindsym $mod+Right focus right
+
+# move focused window
+bindsym $mod+Shift+h move left
+bindsym $mod+Shift+j move down
+bindsym $mod+Shift+k move up
+bindsym $mod+Shift+l move right
+
+# alternatively, you can use the cursor keys:
+bindsym $mod+Shift+Left move left
+bindsym $mod+Shift+Down move down
+bindsym $mod+Shift+Up move up
+bindsym $mod+Shift+Right move right
+
+# split orientation
+bindsym $mod+z split h
+bindsym $mod+v split v
+bindsym $mod+q split toggle
+
+# toggle fullscreen
+bindsym $mod+f fullscreen toggle
+
+# center window titles
+title_align center
+
+# change container layout
+bindsym $mod+s layout stacking
+bindsym $mod+w layout tabbed
+bindsym $mod+e layout toggle split
+
+# floating toggle
+bindsym $mod+Shift+space floating toggle
+bindsym $mod+t floating toggle
+
+# change focus between tiling / floating windows
+bindsym $mod+space focus mode_toggle
+
+# center floating windows
+bindsym $mod+c move absolute position center
+
+# sticky toggle
+bindsym $mod+Shift+s sticky toggle
+
+# focus parent container
+bindsym $mod+a focus parent
+
+# move to scratchpad
+bindsym $mod+Shift+minus move scratchpad
+
+# show/hide scratchpad
+bindsym $mod+minus scratchpad show
+
+# workspaces
+workspace_auto_back_and_forth yes
+bindsym $mod+Tab workspace next
+bindsym $mod+Shift+Tab workspace prev
+bindsym $mod+Shift+m move workspace to output right
+workspace 10 output HDMI-2
+
+# workspace names
+set $ws1 "1"
+set $ws2 "2"
+set $ws3 "3"
+set $ws4 "4"
+set $ws5 "5"
+set $ws6 "6"
+set $ws7 "7"
+set $ws8 "8"
+set $ws9 "9"
+set $ws10 "10"
+
+# switch to workspace
+bindsym $mod+1 workspace $ws1
+bindsym $mod+2 workspace $ws2
+bindsym $mod+3 workspace $ws3
+bindsym $mod+4 workspace $ws4
+bindsym $mod+5 workspace $ws5
+bindsym $mod+6 workspace $ws6
+bindsym $mod+7 workspace $ws7
+bindsym $mod+8 workspace $ws8
+bindsym $mod+9 workspace $ws9
+bindsym $mod+0 workspace $ws10
+
+# move focused container to workspace
+bindsym $mod+Shift+1 move container to workspace $ws1
+bindsym $mod+Shift+2 move container to workspace $ws2
+bindsym $mod+Shift+3 move container to workspace $ws3
+bindsym $mod+Shift+4 move container to workspace $ws4
+bindsym $mod+Shift+5 move container to workspace $ws5
+bindsym $mod+Shift+6 move container to workspace $ws6
+bindsym $mod+Shift+7 move container to workspace $ws7
+bindsym $mod+Shift+8 move container to workspace $ws8
+bindsym $mod+Shift+9 move container to workspace $ws9
+bindsym $mod+Shift+0 move container to workspace $ws10
+
+# move focused container to workspace, then go to that workspace
+bindsym $mod+Ctrl+1 move container to workspace $ws1; workspace $ws1
+bindsym $mod+Ctrl+2 move container to workspace $ws2; workspace $ws2
+bindsym $mod+Ctrl+3 move container to workspace $ws3; workspace $ws3
+bindsym $mod+Ctrl+4 move container to workspace $ws4; workspace $ws4
+bindsym $mod+Ctrl+5 move container to workspace $ws5; workspace $ws5
+bindsym $mod+Ctrl+6 move container to workspace $ws6; workspace $ws6
+bindsym $mod+Ctrl+7 move container to workspace $ws7; workspace $ws7
+bindsym $mod+Ctrl+8 move container to workspace $ws8; workspace $ws8
+bindsym $mod+Ctrl+9 move container to workspace $ws9; workspace $ws9
+bindsym $mod+Ctrl+0 move container to workspace $ws10; workspace $ws10
+
+# switch to urgent workspace
+for_window [urgent=latest] focus
+
+# open apps in floating mode
+for_window [class="Pick-colour-picker"] floating enable
+for_window [class="Skype"] floating enable
+for_window [class="Nitrogen"] floating enable
+for_window [class="Mediainfo-gui"] floating enable
+for_window [class="Ukuu-gtk"] floating enable
+for_window [class="feh"] floating enable
+for_window [class="FloatTERM"] floating enable
+
+# open apps on certain workspaces
+#for_window [class="Gimp"] move workspace $ws3
+
+# reload i3 configuration file
+bindsym $mod+Shift+c reload
+
+# restart i3 in place
+bindsym $mod+Shift+r restart
+bindsym $mod+F2	restart
+
+# resize windows
+bindsym $mod+r mode "resize"
+mode "resize" {
+        # resize with arrow keys
+        bindsym Left resize shrink width 10 px or 10 ppt
+        bindsym Down resize grow height 10 px or 10 ppt
+        bindsym Up resize shrink height 10 px or 10 ppt
+        bindsym Right resize grow width 10 px or 10 ppt
+
+        # back to normal: Enter or Escape or $mod+r
+        bindsym Return mode "default"
+        bindsym Escape mode "default"
+        bindsym $mod+r mode "default"
+}
+
+# startup apps
+exec_always --no-startup-id $HOME/.config/polybar/launch.sh
+exec_always --no-startup-id redshift-gtk.sh
+exec_always --no-startup-id compton.sh
+exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
+exec --no-startup-id nitrogen --restore
+exec --no-startup-id libinput-gestures
+exec --no-startup-id mpd
+exec --no-startup-id nm-applet
+exec --no-startup-id xautolock -time 10 -locker 'betterlockscreen -l pixel' -corners 00-+
+
+# lock screen
+bindsym $mod+Escape exec betterlockscreen -l pixel
+
+# app bindings
+bindsym $mod+n exec nautilus
+bindsym $mod+b exec google-chrome-stable
+bindsym $mod+Shift+e exec gedit ~/.config/i3/config
+bindsym $mod+m exec kitty -e ncmpcpp
+bindsym --release $mod+Print exec --no-startup-id scrot -d 3 -q 85 '%Y-%m-%d_%I-%M-%S_%p.jpg' -e 'mv $f ~/Screenshots/'
+
+# pulseaudio controls
+bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume 0 +5%
+bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume 0 -5%
+bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute 0 toggle
+
+# screen brightness controls
+bindsym XF86MonBrightnessUp exec light -A 5
+bindsym XF86MonBrightnessDown exec light -U 5
+
+# colours (from xresources)
+set_from_resource $darkblack   color0  #000000
+set_from_resource $black       color8  #000000
+set_from_resource $darkred     color1  #000000
+set_from_resource $red         color9  #000000
+set_from_resource $darkgreen   color2  #000000
+set_from_resource $green       color10 #000000
+set_from_resource $darkyellow  color3  #000000
+set_from_resource $yellow      color11 #000000
+set_from_resource $darkblue    color4  #000000
+set_from_resource $blue        color12 #000000
+set_from_resource $darkmagenta color5  #000000
+set_from_resource $magenta     color13 #000000
+set_from_resource $darkcyan    color6  #000000
+set_from_resource $cyan        color14 #000000
+set_from_resource $darkwhite   color7  #000000
+set_from_resource $white       color15 #000000
+
+#                       BORDER      BACKGROUND  TEXT        INDICATOR   CHILD_BORDER
+client.focused          #3D8D91     #3D8D91     #000000     #3D8D91      #3D8D91
+client.focused_inactive $black      $black      $fdfdfd     $black       $black
+#client.unfocused       $black      $black      $darkwhite  $black       $black
+#client.urgent          $darkred    $darkred    $darkblack  #$darkred    $darkred
+
+# logout, suspend, reboot, shutdown, uefi ...
+set $system System ... logout (l), suspend (s), reboot (r), shutdown (S), UEFI (R)
+mode "$system" {
+    # logout
+    bindsym l exec --no-startup-id i3-msg exit, mode "default"
+    # suspend
+    bindsym s exec --no-startup-id systemctl suspend, mode "default"
+    # reboot
+    bindsym r exec --no-startup-id systemctl reboot, mode "default"
+    # shutdown
+    bindsym Shift+s exec --no-startup-id systemctl poweroff -i, mode "default"
+    # uefi
+    bindsym Shift+r exec --no-startup-id systemctl reboot --firmware-setup, mode "default"
+    # back to normal
+    bindsym Return mode "default"
+    bindsym Escape mode "default"
+}
+bindsym $mod+Shift+Delete mode "$system"
+
+# gaps stuff
+bindsym $mod+Shift+t		gaps inner current set 20; gaps outer current set 20
+bindsym $mod+y			gaps inner current plus 5; gaps outer current plus 5
+bindsym $mod+Shift+y		gaps inner current minus 5; gaps outer current minus 5
+bindsym $mod+Shift+d		gaps inner current set 10; gaps outer current set 0
+
+workspace $ws3 gaps inner 70
+
+############### i3-gaps stuff ##################
+
+# necessary for i3-gaps to work properly (pixel can be any value)
+for_window [class="^.*"] border pixel 0
+
+# activate smart gaps
+#smart_gaps on
+
+# activate smart borders (always)
+smart_borders on
+
+# Activate smart borders (only when there are effectively no gaps)
+# smart_borders no_gaps
+
+# set inner/outer gaps
+gaps inner 10
+gaps outer 0
+gaps horizontal 0
+gaps vertical 0
+gaps top 0
+gaps right 0
+gaps bottom 0
+gaps left 0
+
+# gaps mode
+
+bindsym $mod+Shift+g mode "$mode_gaps"
+
+set $mode_gaps Gaps: (o)uter, (i)nner, (h)orizontal, (v)ertical, (t)op, (r)ight, (b)ottom, (l)eft
+set $mode_gaps_outer Outer Gaps: +|-|0 (local), Shift + +|-|0 (global)
+set $mode_gaps_inner Inner Gaps: +|-|0 (local), Shift + +|-|0 (global)
+set $mode_gaps_horiz Horizontal Gaps: +|-|0 (local), Shift + +|-|0 (global)
+set $mode_gaps_verti Vertical Gaps: +|-|0 (local), Shift + +|-|0 (global)
+set $mode_gaps_top Top Gaps: +|-|0 (local), Shift + +|-|0 (global)
+set $mode_gaps_right Right Gaps: +|-|0 (local), Shift + +|-|0 (global)
+set $mode_gaps_bottom Bottom Gaps: +|-|0 (local), Shift + +|-|0 (global)
+set $mode_gaps_left Left Gaps: +|-|0 (local), Shift + +|-|0 (global)
+
+mode "$mode_gaps" {
+        bindsym o      mode "$mode_gaps_outer"
+        bindsym i      mode "$mode_gaps_inner"
+        bindsym h      mode "$mode_gaps_horiz"
+        bindsym v      mode "$mode_gaps_verti"
+        bindsym t      mode "$mode_gaps_top"
+        bindsym r      mode "$mode_gaps_right"
+        bindsym b      mode "$mode_gaps_bottom"
+        bindsym l      mode "$mode_gaps_left"
+        bindsym Return mode "$mode_gaps"
+        bindsym Escape mode "default"
+}
+
+mode "$mode_gaps_outer" {
+        bindsym plus  gaps outer current plus 5
+        bindsym minus gaps outer current minus 5
+        bindsym 0     gaps outer current set 0
+
+        bindsym Shift+plus  gaps outer all plus 5
+        bindsym Shift+minus gaps outer all minus 5
+        bindsym Shift+0     gaps outer all set 0
+
+        bindsym Return mode "$mode_gaps"
+        bindsym Escape mode "default"
+}
+mode "$mode_gaps_inner" {
+        bindsym plus  gaps inner current plus 5
+        bindsym minus gaps inner current minus 5
+        bindsym 0     gaps inner current set 0
+
+        bindsym Shift+plus  gaps inner all plus 5
+        bindsym Shift+minus gaps inner all minus 5
+        bindsym Shift+0     gaps inner all set 0
+
+        bindsym Return mode "$mode_gaps"
+        bindsym Escape mode "default"
+}
+mode "$mode_gaps_horiz" {
+        bindsym plus  gaps horizontal current plus 5
+        bindsym minus gaps horizontal current minus 5
+        bindsym 0     gaps horizontal current set 0
+
+        bindsym Shift+plus  gaps horizontal all plus 5
+        bindsym Shift+minus gaps horizontal all minus 5
+        bindsym Shift+0     gaps horizontal all set 0
+
+        bindsym Return mode "$mode_gaps"
+        bindsym Escape mode "default"
+}
+mode "$mode_gaps_verti" {
+        bindsym plus  gaps vertical current plus 5
+        bindsym minus gaps vertical current minus 5
+        bindsym 0     gaps vertical current set 0
+
+        bindsym Shift+plus  gaps vertical all plus 5
+        bindsym Shift+minus gaps vertical all minus 5
+        bindsym Shift+0     gaps vertical all set 0
+
+        bindsym Return mode "$mode_gaps"
+        bindsym Escape mode "default"
+}
+mode "$mode_gaps_top" {
+        bindsym plus  gaps top current plus 5
+        bindsym minus gaps top current minus 5
+        bindsym 0     gaps top current set 0
+
+        bindsym Shift+plus  gaps top all plus 5
+        bindsym Shift+minus gaps top all minus 5
+        bindsym Shift+0     gaps top all set 0
+
+        bindsym Return mode "$mode_gaps"
+        bindsym Escape mode "default"
+}
+mode "$mode_gaps_right" {
+        bindsym plus  gaps right current plus 5
+        bindsym minus gaps right current minus 5
+        bindsym 0     gaps right current set 0
+
+        bindsym Shift+plus  gaps right all plus 5
+        bindsym Shift+minus gaps right all minus 5
+        bindsym Shift+0     gaps right all set 0
+
+        bindsym Return mode "$mode_gaps"
+        bindsym Escape mode "default"
+}
+mode "$mode_gaps_bottom" {
+        bindsym plus  gaps bottom current plus 5
+        bindsym minus gaps bottom current minus 5
+        bindsym 0     gaps bottom current set 0
+
+        bindsym Shift+plus  gaps bottom all plus 5
+        bindsym Shift+minus gaps bottom all minus 5
+        bindsym Shift+0     gaps bottom all set 0
+
+        bindsym Return mode "$mode_gaps"
+        bindsym Escape mode "default"
+}
+mode "$mode_gaps_left" {
+        bindsym plus  gaps left current plus 5
+        bindsym minus gaps left current minus 5
+        bindsym 0     gaps left current set 0
+
+        bindsym Shift+plus  gaps left all plus 5
+        bindsym Shift+minus gaps left all minus 5
+        bindsym Shift+0     gaps left all set 0
+
+        bindsym Return mode "$mode_gaps"
+        bindsym Escape mode "default"
+}
