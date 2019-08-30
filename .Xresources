@@ -1,0 +1,96 @@
+!! Window
+URxvt*termName: rxvt-unicode-256
+URxvt*scrollBar: false
+URxvt*geometry: 100x26+650+250
+URxvt*internalBorder: 20
+!URxvt*fading: 25
+
+!! Cursor
+URxvt*cursorBlink: true
+URxvt*cursorUnderline: true
+
+!! Pointer
+URxvt.pointerBlank: true
+
+!! Real transparency
+URxvt*depth: 32
+
+!! Xft settings
+Xft.dpi:        96
+Xft.antialias:  true
+Xft.rgba:       rgb
+Xft.hinting:    true
+Xft.hintstyle:  hintfull
+Xft.autohint:   true
+Xft.lcdfilter:  lcdfilter
+
+
+!! Fonts
+URxvt*font: xft:Monospace:size=8
+URxvt*boldFont: xft:Monospace:bold:size=8
+URxvt*italicFont: xft:Monospace:italic:size=8
+URxvt*boldItalicFont: xft:Monospace:bolditalic:size=8
+
+!! Spacing
+!URxvt*letterSpace: -1
+
+!! Larger history limit
+URxvt.saveLines: 2000
+
+!! Perl extensions
+URxvt.perl-ext-common: default,matcher,resize-font,selection-to-clipboard,fullscreen,bell-command,tabbedex
+
+!! Clickable URLs
+URxvt.url-launcher: /usr/bin/xdg-open
+URxvt.matcher.button: 1
+
+!! Fullscreen (requires wmctrl package)
+URxvt.keysym.F11: perl:fullscreen:switch
+
+!! Resize fonts
+URxvt.resize-font.smaller: C-minus
+URxvt.resize-font.bigger:  C-plus
+URxvt.resize-font.reset:   C-0
+URxvt.resize-font.show:    C-slash
+
+!! Tabbedex
+URxvt.keysym.Control-t: perl:tabbedex:new_tab
+URxvt.tabbed.reopen-on-close: yes
+URxvt.tabbed.title: yes
+URxvt.tabbed.new-button: no
+URxvt.tabbed.autohide:  yes
+
+URxvt.tabbed.tabbar-fg: 6
+URxvt.tabbed.tabbar-bg: 0
+URxvt.tabbed.tab-fg: 0
+URxvt.tabbed.tab-bg: 6
+URxvt.tabbed.title-fg: 6
+URxvt.tabbed.title-bg: 0
+
+!! Allow Control-Shift
+URxvt.iso14755: false
+URxvt.iso14755_52: false
+
+!! Opacity
+*.alpha: 0.95
+
+!! Skyfall
+*background:  #282F37
+*foreground:  #979EAB
+*cursorColor: #F1FCF9
+*color0:      #20262C
+*color1:      #DB86BA
+*color2:      #74DD91
+*color3:      #E49186
+*color4:      #75DBE1
+*color5:      #B4A1DB
+*color6:      #9EE9EA
+*color7:      #F1FCF9
+*color8:      #465463
+*color9:      #D04E9D
+*color10:     #4BC66D
+*color11:     #DB695B
+*color12:     #3DBAC2
+*color13:     #825ECE
+*color14:     #62CDCD
+*color15:     #E0E5E5
