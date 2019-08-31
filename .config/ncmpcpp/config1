@@ -53,7 +53,7 @@ song_list_format = "{$8%a ⠂ }{%t}$R{%l}"
 #song_list_format = "{ $8%a $1» $2}{%t} $R$1%b"
 
 # Playlist #
-#song_columns_list_format = "$L(9)[white]{l} (20)[red]{a} (30)[green]{b}$R(20)[cyan]{t}"
+#song_columns_list_format = "$L(9)[magenta]{l} (20)[cyan]{a} (30)[magenta]{b}$R(20)[cyan]{t}"
 #song_columns_list_format = "(25)[white]{a} (25)[blue]{brE} (47)[white]{t|f} (6f)[blue]{l}"
 #song_columns_list_format = "(15)[white]{lr} (1)[black]{} (40)[red]{a} (40)[green]{t}"
 #song_columns_list_format = "(40)[magenta]{ar} (40)[cyan]{t}"
