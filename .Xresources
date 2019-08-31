@@ -24,7 +24,6 @@ Xft.hintstyle:  hintfull
 Xft.autohint:   true
 Xft.lcdfilter:  lcdfilter
 
-
 !! Fonts
 URxvt*font: xft:Monospace:size=8
 URxvt*boldFont: xft:Monospace:bold:size=8
