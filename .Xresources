@@ -31,7 +31,7 @@ URxvt*italicFont: xft:Monospace:italic:size=8
 URxvt*boldItalicFont: xft:Monospace:bolditalic:size=8
 
 !! Spacing
-!URxvt*letterSpace: -1
+URxvt*letterSpace: -1
 
 !! Larger history limit
 URxvt.saveLines: 2000

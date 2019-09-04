@@ -14,7 +14,7 @@
    correctly on X11 with `"native"` transparency */
 #define USE_ALPHA 1
 /* How quickly the gradient transitions, in pixels */
-#define GRADIENT 75
+#define GRADIENT 100
 /* Bar color. By default this provides a blue-white gradient. */
 #define COLOR @fg:mix(#151821FF, #2E4053AA, clamp(d / GRADIENT, 0, 1))
 /* Outline color. By default this provides a 'glint' outline based on the bar color */
