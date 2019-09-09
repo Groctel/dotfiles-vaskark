@@ -126,7 +126,8 @@ alias vim='nvim'
 alias tc1="tty-clock -cst -C 4 -f '%B %d, %Y'"
 alias mount='mount | column -t'
 alias um='unimatrix -a -f -n -s 98'
-alias icat='kitty +kitten icat'
+alias kcat='kitty +kitten icat'
+alias kdiff='kitty +kitten diff'
 alias mpc='mpc --host=127.0.0.1 --port=6601'
 alias wttr='curl wttr.in'
 alias cls='clear'
@@ -155,6 +156,11 @@ alias shutdown='sudo shutdown now'
 alias upd8='sudo apt update;sudo apt full-upgrade;sudo apt autoremove;sudo apt clean'
 alias rnm='sudo systemctl restart network-manager'
 alias ffs='sudo !!'
+
+# completion for kitty
+autoload -Uz compinit
+compinit
+kitty + complete setup zsh | source /dev/stdin
 
 # vim mode
 # bindkey -v
