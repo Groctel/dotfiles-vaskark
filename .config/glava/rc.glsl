@@ -36,7 +36,8 @@
    "none"   - Disable window opacity completely. */
 #request setopacity "native"
 
-/* Whether to mirror left and right audio input channels from PulseAudio.*/
+/* Whether to average and mirror left and right audio input channels.
+   This may cause some modules to only render a single channel. */
 #request setmirror false
 
 /* OpenGL context and GLSL shader versions, do not change unless
@@ -48,12 +49,11 @@
 #request settitle "GLava"
 
 /* Window geometry (x, y, width, height) */
-#request setgeometry -10 0 1950 1080
-/* #request setgeometry 1220 780 600 200 */
+#request setgeometry 0 0 1920 1080
 
-/* Window background color (RGB format).
+/* Window background color (RGBA format).
    Does not work with `setopacity "xroot"` */
-#request setbg 444755
+#request setbg 00000000
 
 /* (X11 only) EWMH Window type. Possible values are:
    
@@ -69,7 +69,6 @@
    will do nothing, but you can use "!+" and "!-" to stack on top
    or below other windows.
 */
-// #request setxwintype "normal"
 #request setxwintype "normal"
 
 /* (X11 only) EWMH Window state atoms (multiple can be specified).
@@ -88,7 +87,7 @@
    and your WM is not correctly responding to the "desktop" value
    for `setxwintype`.
 */
-// request addxwinstate "sticky"
+// #request addxwinstate "sticky"
 // #request addxwinstate "skip_taskbar"
 // #request addxwinstate "skip_pager"
 // #request addxwinstate "above"

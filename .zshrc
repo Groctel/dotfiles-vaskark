@@ -1,5 +1,6 @@
 # If you come from bash you might have to change your $PATH.
-export PATH=$HOME/.local/bin:$PATH
+#export PATH=$HOME/bin:$HOME/.local/bin:$PATH
+export PATH=$PATH
 
 # export TERM="rxvt-unicode-256color"
 export TERM="xterm-256color"

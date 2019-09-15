@@ -1,8 +1,9 @@
+/* Note: to only render a single channel, see `setmirror` in `rc.glsl`. */
 
 /* Center line thickness (pixels) */
 #define C_LINE 1
 /* Width (in pixels) of each bar */
-#define BAR_WIDTH 8
+#define BAR_WIDTH 5
 /* Width (in pixels) of each bar gap */
 #define BAR_GAP 1
 /* Outline width (in pixels, set to 0 to disable outline drawing) */
@@ -14,9 +15,10 @@
    correctly on X11 with `"native"` transparency */
 #define USE_ALPHA 1
 /* How quickly the gradient transitions, in pixels */
-#define GRADIENT 100
+#define GRADIENT 80
 /* Bar color. By default this provides a blue-white gradient. */
-#define COLOR @fg:mix(#151821FF, #2E4053AA, clamp(d / GRADIENT, 0, 1))
+/*#define COLOR @fg:mix(#151821FF, #2E4053AA, clamp(d / GRADIENT, 0, 1))*/
+#define COLOR @fg:mix(#2D2029FF, #543B4EAA, clamp(d / GRADIENT, 0, 1))
 /* Outline color. By default this provides a 'glint' outline based on the bar color */
 #define BAR_OUTLINE @bg:vec4(COLOR.rgb * 1.5, COLOR.a)
 /* Direction that the bars are facing, 0 for inward, 1 for outward */
@@ -28,4 +30,5 @@
 /* Whether to mirror output along `Y = X`, causing output to render on the left side of the window */
 /* Use with `FLIP 1` to render on the right side */
 #define MIRROR_YX 0
-
+/* Whether to disable mono rendering when `#request setmirror true` is set in `rc.glsl`. */
+#define DISABLE_MONO 0

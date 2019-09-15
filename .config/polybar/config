@@ -20,8 +20,8 @@
 background = #222
 foreground = #dfdfdf
 ;primary = #3D8D91
-primary = #2A9C94
-;primary = ${xrdb:color4}
+;primary = #2A9C94
+primary = ${xrdb:color4}
 secondary = #000
 alert = #bd2c40
 
@@ -202,6 +202,8 @@ format-offline-padding = 1
 
 label-song-maxlen = 175
 label-song-ellipsis = true
+
+left-click = mpc toggle
 
 [module/mpd-time]
 type = internal/mpd

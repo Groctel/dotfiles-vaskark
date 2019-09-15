@@ -8,7 +8,7 @@ set $mod Mod4
 floating_modifier $mod
 
 # set terminal
-set $term st
+set $term kitty
 
 # font for window titles
 font xft:Iosevka Custom 7.5
@@ -24,7 +24,7 @@ bindsym $mod+p border none
 
 # start terminal
 bindsym $mod+Return exec $term
-bindsym $mod+Shift+Return exec $term -c Float
+bindsym $mod+Shift+Return exec $term --class Float
 
 # farge stuff
 bindsym $mod+Shift+f --release exec farge --image-viewer sxiv
@@ -240,8 +240,8 @@ set_from_resource $darkwhite   color7  #000000
 set_from_resource $white       color15 #000000
 
 #                       BORDER      BACKGROUND  TEXT        INDICATOR   CHILD_BORDER
-client.focused          #3D8D91     #3D8D91     #000000     #3D8D91      #3D8D91
-client.focused_inactive $black      $black      $fdfdfd     $black       $black
+client.focused          $darkblue   $darkblue   $darkblack  $darkblue    $darkblue
+client.focused_inactive $darkblack  $darkblack  $darkwhite  $darkblack   $darkblack
 #client.unfocused       $black      $black      $darkwhite  $black       $black
 #client.urgent          $darkred    $darkred    $darkblack  #$darkred    $darkred
 
