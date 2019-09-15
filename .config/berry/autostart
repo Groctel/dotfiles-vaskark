@@ -13,7 +13,7 @@ dunst &
 # Set decoration geometry
 berryc border_width       1
 berryc inner_border_width 1
-berryc title_height       20
+berryc title_height       30
 berryc top_gap            30
 
 # Set decoration colors
@@ -21,8 +21,8 @@ berryc focus_color         292D3E
 berryc unfocus_color       292D3E
 berryc inner_focus_color   565679
 berryc inner_unfocus_color 565679
-berryc text_focus_color    eeeeee
-berryc test_unfocus_color  fdfdfd
+berryc text_focus_color    000000
+berryc test_unfocus_color  999999
 
 # Other options
 berryc smart_place "true"
