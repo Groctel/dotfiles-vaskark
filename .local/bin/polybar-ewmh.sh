@@ -8,4 +8,4 @@ while pgrep -u $UID -x polybar >/dev/null; do sleep 1; done
 
 # Launch top and bottom
 polybar -c ~/.config/polybar/config.ewmh top &
-#polybar -c ~/.config/polybar/config.ewmh bottom &
+polybar -c ~/.config/polybar/config.ewmh bottom &

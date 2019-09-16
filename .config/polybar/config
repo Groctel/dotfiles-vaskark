@@ -208,8 +208,6 @@ format-offline-padding = 1
 label-song-maxlen = 175
 label-song-ellipsis = true
 
-left-click = mpc toggle
-
 [module/mpd-time]
 type = internal/mpd
 host = 127.0.0.1
