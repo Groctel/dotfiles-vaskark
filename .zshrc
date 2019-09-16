@@ -140,13 +140,11 @@ alias xu='xrdb ~/.Xresources'
 alias ms='ncmpcpp'
 alias uf='cls;ufetch'
 alias bf='bunnyfetch'
-alias n='nnn'
 
 # neofetch
 alias nf0='clear;neofetch --config none'
 alias nf='clear;neofetch'
 alias nfa='clear;neofetch --source ascii'
-alias nfw='clear;neofetch --source wallpaper'
 alias nfo='clear;neofetch --off'
 alias nfp='clear;neofetch --source $HOME/Pictures/'
 alias nff='clear;neofetch --ascii "$(fortune | cowsay -W 30)"'
