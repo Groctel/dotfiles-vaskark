@@ -190,7 +190,7 @@ mode "resize" {
 }
 
 # startup apps
-exec_always --no-startup-id $HOME/.config/polybar/launch.sh
+exec_always --no-startup-id polybar.sh
 exec_always --no-startup-id redshift-gtk.sh
 exec_always --no-startup-id compton.sh
 exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
