@@ -150,6 +150,7 @@ alias nfw='clear;neofetch --source wallpaper'
 alias nfo='clear;neofetch --off'
 alias nfp='clear;neofetch --source $HOME/Pictures/'
 alias nff='clear;neofetch --ascii "$(fortune | cowsay -W 30)"'
+alias nfs='clear;neofetch --config ~/.config/neofetch/config-small.conf'
 
 # superuser
 alias reboot='sudo reboot'

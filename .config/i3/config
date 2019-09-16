@@ -173,7 +173,6 @@ bindsym $mod+Shift+c reload
 
 # restart i3 in place
 bindsym $mod+Shift+r restart
-bindsym $mod+F2	restart
 
 # resize windows
 bindsym $mod+r mode "resize"
@@ -206,10 +205,10 @@ exec --no-startup-id glava-mpd.sh
 bindsym $mod+Escape exec betterlockscreen -l pixel
 
 # app bindings
-bindsym $mod+n exec nautilus
-bindsym $mod+b exec google-chrome-stable
+bindsym $mod+F1 exec nautilus
+bindsym $mod+F2 exec google-chrome-stable
+bindsym $mod+F3 exec kitty --class Float -e ncmpcpp
 bindsym $mod+Shift+e exec gedit ~/.config/i3/config
-bindsym $mod+m exec kitty --class Float -e ncmpcpp
 bindsym --release $mod+Print exec --no-startup-id scrot -d 3 -q 85 '%Y-%m-%d_%I-%M-%S_%p.jpg' -e 'mv $f ~/Screenshots/'
 
 # pulseaudio controls

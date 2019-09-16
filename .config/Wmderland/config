@@ -88,9 +88,9 @@ bindsym $Mod+Shift+Delete exit
 bindsym $Mod+Shift+r reload
 
 bindsym $Mod+Escape exec betterlockscreen -l pixel
-bindsym $Mod+n exec nautilus
-bindsym $Mod+b exec google-chrome
-bindsym $Mod+m exec kitty --class Float -e ncmpcpp
+bindsym $Mod+F1 exec nautilus
+bindsym $Mod+F2 exec google-chrome
+bindsym $Mod+F3 exec kitty --class Float -e ncmpcpp
 bindsym $Mod+Shift+f exec farge.sh
 
 bindsym XF86MonBrightnessUp exec light -A 10

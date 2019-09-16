@@ -11,20 +11,42 @@ super + d
 	rofi -no-lazy-grab -show drun -theme themes/drun.rasi
 
 # make sxhkd reload its configuration files:
-super + Escape
+super + shift + Escape
 	pkill -USR1 -x sxhkd
+
+# lockscreen
+super + Escape
+	betterlockscreen -l pixel
 
 # exit
 super + shift + Delete
-	killall berry
+	pkill -USR1 -x berry
  
 # nautilus
-super + n
+super + F1
 	nautilus
 
 # chrome
-super + b
+super + F2
 	google-chrome
+
+# music
+super + F3
+	kitty -e ncmpcpp
+
+# volume
+XF86AudioRaiseVolume
+	pactl set-sink-volume 0 +5%
+XF86AudioLowerVolume
+	pactl set-sink-volume 0 -5%
+XF86AudioMute
+	pactl set-sink-mute 0 toggle
+
+# brightness
+XF86MonBrightnessUp
+	light -A 5
+XF86MonBrightnessDown
+	light -U 5
 
 #
 # berry hotkeys
@@ -54,7 +76,7 @@ super +  p
 super + o 
     berryc snap_left
 
-super + shift + n
+super + n
     berryc toggle_decorations
 
 super + Tab
@@ -67,4 +89,4 @@ super + c
     berryc window_center
 
 ~button1
-    berryc pointer_focus
+   berryc pointer_focus
