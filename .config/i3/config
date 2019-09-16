@@ -261,7 +261,7 @@ mode "$system" {
     bindsym Return mode "default"
     bindsym Escape mode "default"
 }
-bindsym $mod+Shift+Delete mode "$system"
+bindsym $mod+Delete mode "$system"
 
 # gaps stuff
 bindsym $mod+Shift+t		gaps inner current set 20; gaps outer current set 20
