@@ -1,0 +1,35 @@
+!! Flat Design
+*.foreground:   #c0c5ce
+*.background:   #17202A
+
+! black
+*.color0:       #17202A
+*.color8:       #2C3E50
+
+! red
+*.color1:       #641E16
+*.color9:       #C0392B
+
+! green
+*.color2:       #186A3B
+*.color10:      #2ECC71
+
+! yellow
+*.color3:       #7D6608
+*.color11:      #F1C40F
+
+! blue
+*.color4:       #1B2631
+*.color12:      #34495E
+
+! magenta
+*.color5:       #512E5F
+*.color13:      #9B59B6
+
+! cyan
+*.color6:       #0E6251
+*.color14:      #1ABC9C
+
+! white
+*.color7:       #7B7D7D
+*.color15:      #ECF0F1
