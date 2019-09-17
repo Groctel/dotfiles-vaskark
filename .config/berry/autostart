@@ -5,7 +5,6 @@ sxhkd -c $HOME/.config/berry/sxhkdrc &
 polybar-ewmh.sh &
 nitrogen --restore &
 redshift-gtk.sh &
-nm-applet &
 xautolock.sh &
 compton.sh &
 dunst &
@@ -22,7 +21,7 @@ berryc top_gap            30
 berryc inner_focus_color    565679
 berryc inner_unfocus_color  3D3D56
 berryc text_focus_color     000000
-berryc text_unfocus_color   222222
+berryc text_unfocus_color   111111
 
 # Other options
 berryc smart_place "true"

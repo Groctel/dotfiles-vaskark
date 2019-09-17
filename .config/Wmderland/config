@@ -113,6 +113,6 @@ exec dunst
 exec nm-applet
 exec xautolock.sh
 exec redshift-gtk.sh
-exec compton-blur.sh
+exec compton.sh
 exec nitrogen --restore
 exec_on_reload polybar-ewmh.sh
