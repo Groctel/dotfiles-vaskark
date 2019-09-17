@@ -1,7 +1,6 @@
 #!/bin/bash
 
 # Set startup apps
-xrdb $HOME/.Xresources &
 sxhkd -c $HOME/.config/berry/sxhkdrc &
 nitrogen --restore &
 redshift-gtk.sh &
