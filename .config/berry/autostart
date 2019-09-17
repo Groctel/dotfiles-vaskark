@@ -1,13 +1,14 @@
 #!/bin/bash
 
 # Set startup apps
+xrdb $HOME/.Xresources &
 sxhkd -c $HOME/.config/berry/sxhkdrc &
-polybar-ewmh.sh &
 nitrogen --restore &
 redshift-gtk.sh &
 xautolock.sh &
 compton.sh &
 dunst &
+polybar-ewmh.sh &
 
 # Set decoration geometry
 berryc border_width       2

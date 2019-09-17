@@ -162,6 +162,9 @@ autoload -Uz compinit
 compinit
 kitty + complete setup zsh | source /dev/stdin
 
+# Load xrdb
+# xrdb ~/.Xresources
+
 # vim mode
 # bindkey -v
 

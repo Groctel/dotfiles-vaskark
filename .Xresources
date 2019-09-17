@@ -74,4 +74,4 @@ URxvt.iso14755_52: false
 *.alpha: 0.95
 
 !! Colours
-#include ".xthemes/Skyfall.theme"
+#include ".xthemes/Manta.Xresources"
