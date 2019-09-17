@@ -136,7 +136,7 @@ alias zshrc='vim ~/.zshrc'
 alias yd='youtube-dl'
 alias htop='htop -u $USER'
 alias xr="vim ~/.Xresources"
-alias xu='xrdb ~/.Xresources'
+alias xu='xrdb $HOME/.Xresources'
 alias ms='ncmpcpp'
 alias uf='cls;ufetch'
 alias bf='bunnyfetch'
@@ -161,12 +161,6 @@ alias ffs='sudo !!'
 autoload -Uz compinit
 compinit
 kitty + complete setup zsh | source /dev/stdin
-
-# Load xrdb
-# xrdb ~/.Xresources
-
-# vim mode
-# bindkey -v
 
 # Run when terminal opens
 #unimatrix -a -f -l o -n -o -s 100 -w
