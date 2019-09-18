@@ -9,8 +9,8 @@
 
 VERSION=1.2.4
 COVER=/tmp/kunst.jpg
-MUSIC_DIR=/home/jason/Music
-SIZE=400x400
+MUSIC_DIR=~/Music/
+SIZE=250x250
 
 
 show_help() {

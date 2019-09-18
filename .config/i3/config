@@ -4,6 +4,9 @@ set $mod Mod4
 # rounded corners (resloved fork)
 #border_radius 5
 
+# start in floating mode
+for_window [class="^.*"] floating enable
+
 # drag floating windows
 floating_modifier $mod
 
@@ -25,10 +28,6 @@ bindsym $mod+p border none
 # start terminal
 bindsym $mod+Return exec $term
 bindsym $mod+Shift+Return exec $term --class Float
-
-# farge stuff
-bindsym $mod+Shift+f --release exec farge --image-viewer sxiv
-for_window [instance="Farge"] floating enable
 
 # kill focused window
 bindsym $mod+Shift+q kill
@@ -164,6 +163,7 @@ for_window [class="Mediainfo-gui"] floating enable
 for_window [class="Ukuu-gtk"] floating enable
 for_window [class="feh"] floating enable
 for_window [class="Float"] floating enable
+for_window [instance="Farge"] floating enable
 
 # open apps on certain workspaces
 #for_window [class="Gimp"] move workspace $ws3
@@ -208,6 +208,7 @@ bindsym $mod+Escape exec betterlockscreen -l pixel
 bindsym $mod+F1 exec nautilus
 bindsym $mod+F2 exec google-chrome-stable
 bindsym $mod+F3 exec kitty --class Float -e ncmpcpp
+bindsym $mod+F4 exec farge.sh
 bindsym $mod+Shift+e exec gedit ~/.config/i3/config
 bindsym --release $mod+Print exec --no-startup-id scrot -d 3 -q 85 '%Y-%m-%d_%I-%M-%S_%p.jpg' -e 'mv $f ~/Screenshots/'
 

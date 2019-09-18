@@ -78,14 +78,6 @@ source $ZSH/oh-my-zsh.sh
 
 # User configuration
 
-#if [ -d ~/.local/bin/ ] ; then
-#    export PATH=~/.local/bin:$PATH
-#fi
-
-#if [ -d ~/bin/ ] ; then
-#    export PATH=~/bin:$PATH
-#fi
-
 # export MANPATH="/usr/local/man:$MANPATH"
 
 # You may need to manually set your language environment
@@ -174,3 +166,6 @@ kitty + complete setup zsh | source /dev/stdin
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 #[[ -f ~/.p10k.zsh ]] && source ~/.p10k.zsh
+
+# dir_colors
+#test -r "~/.dir_colors" && eval $(dircolors ~/.dir_colors)
