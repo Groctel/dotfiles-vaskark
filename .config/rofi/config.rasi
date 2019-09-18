@@ -1,18 +1,14 @@
-/**
- * Commands to use the various scripts of this config:
- *  - drun:         rofi -show drun -theme themes/drun.rasi
- *  - layout:       ~/.config/rofi/scripts/layout.sh
- *  - mpd:          ~/.config/rofi/scripts/mpd.sh
- *  - network:      python ~/.config/rofi/scripts/network.py
- *  - powermenu:    ~/.config/rofi/scripts/powermenu.sh
- *  - scrot:        ~/.config/rofi/scripts/scrot.sh
- */
 configuration {
   show-icons:         true;
   cycle:              true;
   hide-scrollbar:     true;
   disable-history:    false;
+  width: 	      20;
+  lines:              10;
+  columns:            1;
   modi: 	      "drun,run,ssh,window,keys";
   display-drun:       "apps";
   display-window:     "win";
+  terminal:           "kitty";
+/*  theme:	      "~/.cache/wal/colors-rofi-dark.rasi";*/
 }

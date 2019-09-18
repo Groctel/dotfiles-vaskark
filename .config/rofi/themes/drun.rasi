@@ -12,7 +12,7 @@
   /* Settings */
   background-color: @background;
   text-color:       @foreground;
-  font:             "Comfortaa bold 12";
+  font:             "Comfortaa Bold 12";
 }
 #window {
   width: 500px;

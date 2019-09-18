@@ -34,6 +34,10 @@ super + F2
 super + F3
 	kitty -e ncmpcpp
 
+# farge
+super + F4
+	farge.sh
+
 # volume
 XF86AudioRaiseVolume
 	pactl set-sink-volume 0 +5%

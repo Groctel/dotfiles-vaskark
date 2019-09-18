@@ -74,5 +74,4 @@ URxvt.iso14755_52: false
 *.alpha: 0.95
 
 !! Colours
-!! Skyfall
 #include ".xthemes/Skyfall.Xresources"
