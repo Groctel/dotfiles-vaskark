@@ -28,7 +28,6 @@ set $Mod = Mod4
 ; Assign an application to a specific workspace
 ; -----------------------------------------------------------------------
 assign Gimp-2.10 3
-;assign Discord 8
 
 
 ; [Floating Rules]
@@ -88,24 +87,22 @@ bindsym $Mod+Shift+q kill
 bindsym $Mod+Delete exit
 bindsym $Mod+Shift+r reload
 
+bindsym $Mod+Return exec kitty
 bindsym $Mod+Escape exec betterlockscreen -l pixel
 bindsym $Mod+F1 exec nautilus
 bindsym $Mod+F2 exec google-chrome
 bindsym $Mod+F3 exec kitty --class Float -e ncmpcpp
 bindsym $Mod+F4 exec farge.sh
+bindsym $Mod+d exec rofi -no-lazy-grab -show drun -theme themes/drun.rasi
+bindsym $Mod+Shift+e exec gedit .config/Wmderland/config
 
 bindsym XF86MonBrightnessUp exec light -A 10
 bindsym XF86MonBrightnessDown exec light -U 10
-bindsym XF86KbdBrightnessUp exec kbdlight up 10
-bindsym XF86KbdBrightnessDown exec kbdlight down 10
+#bindsym XF86KbdBrightnessUp exec kbdlight up 10
+#bindsym XF86KbdBrightnessDown exec kbdlight down 10
 bindsym XF86AudioMute exec amixer -q -D pulse set Master toggle
 bindsym XF86AudioRaiseVolume exec amixer -q -D pulse set Master 5%+ unmute
 bindsym XF86AudioLowerVolume exec amixer -q -D pulse set Master 5%- unmute
-
-bindsym $Mod+d exec rofi -no-lazy-grab -show drun -theme themes/drun.rasi
-bindsym $Mod+Shift+e exec gedit .config/Wmderland/config
-bindsym $Mod+Return exec kitty
-
 
 
 ; [Autostart]

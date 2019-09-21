@@ -26,7 +26,7 @@ secondary = #000
 alert = #bd2c40
 
 [bar/top]
-;monitor = ${env:MONITOR:eDP-1}
+monitor = ${env:MONITOR:eDP-1}
 width = 100%
 height = 22
 radius = 1.0
@@ -44,13 +44,11 @@ border-color = transparent
 padding-left = 0
 padding-right = 1
 
-module-margin-left = 2
+module-margin-left = 1
 module-margin-right = 0
 
 font-0 = Iosevka Custom:style=regular:size=7.5;2
 font-1 = Symbols Nerd Font:size=10;2
-
-;font-2 = Weather Icons:size=10;1
 
 modules-left = ewmh
 modules-center = 
@@ -99,7 +97,7 @@ module-margin-left = 1
 module-margin-right = 0
 
 font-0 = Iosevka Custom:size=7.5;2
-font-1 = Symbols Nerd Font:size=7;0
+font-1 = Symbols Nerd Font:size=7;1
 
 modules-left = mpd-controls
 modules-center = mpd
@@ -126,8 +124,12 @@ icon-6 = 6;
 icon-7 = 7;
 icon-8 = 8;
 
-;label-monitor = %icon%
+;label-monitor = %name%
 format = <label-state>
+
+label-monitor-foreground = ${colors.secondary}
+label-monitor-background = ${colors.primary}
+label-monitor-padding = 1
 
 label-active = %icon%
 label-active-foreground = ${colors.primary}
@@ -161,7 +163,7 @@ format-offline = <label-offline>
 
 label-song-background = ${colors.primary}
 label-song-foreground = ${colors.secondary}
-label-song-padding = 2
+label-song-padding = 1
 
 format-online-prefix-background = ${colors.secondary}
 format-online-prefix-foreground = ${colors.primary}

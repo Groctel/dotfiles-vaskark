@@ -11,7 +11,7 @@ super + d
 	rofi -no-lazy-grab -show drun -theme themes/drun.rasi
 
 # make sxhkd reload its configuration files:
-super + shift + Escape
+super + shift + r
 	pkill -USR1 -x sxhkd
 
 # lockscreen
@@ -57,10 +57,10 @@ XF86MonBrightnessDown
 #
 
 super + {h, j, k, l}
-    berryc window_move {-50 0, 0 50, 0 -50, 50 0}
+    berryc window_move {-20 0, 0 20, 0 -20, 20 0}
 
 super + shift +  {h, j, k, l}
-    berryc window_resize {-50 0, 0 50, 0 -50, 50 0}
+    berryc window_resize {-20 0, 0 20, 0 -20, 20 0}
 
 super + {0-9}
     berryc switch_workspace {0-9}

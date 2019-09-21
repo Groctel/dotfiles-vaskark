@@ -21,7 +21,7 @@ background = #222
 foreground = #dfdfdf
 ;primary = #3D8D91
 ;primary = #2A9C94
-primary = ${xrdb:color4}
+primary = ${xrdb:color8}
 secondary = #000
 alert = #bd2c40
 
@@ -44,13 +44,11 @@ border-color = transparent
 padding-left = 0
 padding-right = 1
 
-module-margin-left = 2
-module-margin-right = 0
+module-margin-left = 0
+module-margin-right = 1
 
 font-0 = Iosevka Custom:style=regular:size=7.5;2
 font-1 = Symbols Nerd Font:size=10;2
-
-;font-2 = Weather Icons:size=10;1
 
 modules-left = i3
 modules-center = 
@@ -191,7 +189,7 @@ format-offline = <label-offline>
 
 label-song-background = ${colors.primary}
 label-song-foreground = ${colors.secondary}
-label-song-padding = 2
+label-song-padding = 1
 
 format-online-prefix-background = ${colors.secondary}
 format-online-prefix-foreground = ${colors.primary}
