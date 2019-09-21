@@ -18,10 +18,6 @@ super + shift + r
 super + Escape
 	betterlockscreen -l pixel
 
-# exit
-super + Delete
-	pkill -USR1 -x berry
- 
 # nautilus
 super + F1
 	nautilus
@@ -59,6 +55,9 @@ XF86MonBrightnessDown
 super + {h, j, k, l}
     berryc window_move {-20 0, 0 20, 0 -20, 20 0}
 
+super + control + {h, j, k, l}
+    berryc window_move {-50 0, 0 50, 0 -50, 50 0}
+
 super + shift +  {h, j, k, l}
     berryc window_resize {-20 0, 0 20, 0 -20, 20 0}
 
@@ -91,6 +90,9 @@ super + q
 
 super + c
     berryc window_center
+
+super + Delete
+     berryc quit
 
 ~button1
    berryc pointer_focus
