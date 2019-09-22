@@ -149,6 +149,10 @@ alias nfp='clear;neofetch --source $HOME/Pictures/'
 alias nff='clear;neofetch --ascii "$(fortune | cowsay -W 30)"'
 alias nfs='clear;neofetch --config ~/.config/neofetch/config-small.conf'
 
+# wifi
+alias up='nmcli c u'
+alias dn='nmcli c d'
+
 # superuser
 alias reboot='sudo reboot'
 alias shutdown='sudo shutdown now'
@@ -166,6 +170,3 @@ kitty + complete setup zsh | source /dev/stdin
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 #[[ -f ~/.p10k.zsh ]] && source ~/.p10k.zsh
-
-# dir_colors
-#test -r "~/.dir_colors" && eval $(dircolors ~/.dir_colors)

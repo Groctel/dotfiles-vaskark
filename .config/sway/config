@@ -41,13 +41,13 @@ output eDP-1 resolution 1920x1080 position 1920,0
 # Example configuration:
 #
 exec swayidle -w \
-          timeout 300 'swaylock -f -i ~/Pictures/j768l86mtqm31.jpg' \
+          timeout 300 'swaylock -f -i ~/Pictures/1w1sc3lxitn31.png' \
           timeout 600 'swaymsg "output * dpms off"' \
                resume 'swaymsg "output * dpms on"' \
-          before-sleep 'swaylock -f  -i ~/Pictures/j768l86mtqm31.jpg'
+          before-sleep 'swaylock -f  -i ~/Pictures/1w1sc3lxitn31.png'
 
 # lock screen
-bindsym $mod+Escape exec swaylock -i ~/Pictures/j768l86mtqm31.jpg
+bindsym $mod+Escape exec swaylock -i ~/Pictures/1w1sc3lxitn31.png
 #
 # This will lock your screen after 300 seconds of inactivity, then turn off
 # your displays after another 300 seconds, and turn your screens back on when
@@ -286,7 +286,7 @@ exec --no-startup-id libinput-gestures
 exec --no-startup-id nm-applet
 exec --no-startup-id glava-mpd.sh
 exec --no-startup-id mpd
-exec --no-startup-id ~/bin/waybar.sh
+exec_always --no-startup-id ~/bin/waybar.sh
 
 # app bindings
 bindsym $mod+F1 exec nautilus

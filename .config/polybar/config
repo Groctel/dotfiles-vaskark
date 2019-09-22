@@ -18,7 +18,7 @@
 
 [colors]
 background = #222
-foreground = #dfdfdf
+foreground = #555
 ;primary = #3D8D91
 ;primary = #2A9C94
 primary = ${xrdb:color8}
@@ -388,12 +388,12 @@ ramp-signal-4 = 
 type = internal/date
 interval = 1
 
-date =
-;date-alt = %B %m, %Y
-time = %I:%M %p
+date = 
+date-alt = %a %b %d, %Y
+time = %I:%M %P
 time-alt =
 
-label = %time%
+label = %date% %time%
 format-prefix = ""
 format = <label>
 
