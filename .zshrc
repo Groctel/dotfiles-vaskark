@@ -139,6 +139,7 @@ alias xu='xrdb ~/.Xresources'
 alias ms='ncmpcpp'
 alias uf='cls;ufetch'
 alias bf='bunnyfetch'
+alias pf='clear;pfetch'
 
 # neofetch
 alias nf0='clear;neofetch --config none'

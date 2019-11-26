@@ -15,12 +15,12 @@
 ; `set <Key> = <Value>` to set a builtin varaible
 ; `set $<Variable> = <Value>` to define your own variable
 ; -----------------------------------------------------------------------
-set gap_width = 10
-set border_width = 2
+set gap_width = 12
+set border_width = 3
 set min_window_width = 100
 set min_window_height = 100
 set focused_color = ff4c5d70
-set unfocused_color = ff32455c
+set unfocused_color = ff394859
 set $Mod = Mod4
 
 
@@ -35,6 +35,7 @@ assign Gimp-2.10 3
 ; -----------------------------------------------------------------------
 floating Pick-colour-picker true
 floating nitrogen true
+floating Sxiv true
 
 
 ; [Fullscreen Rules]
@@ -65,6 +66,9 @@ bindsym $Mod+7 goto_workspace 7
 bindsym $Mod+8 goto_workspace 8
 bindsym $Mod+9 goto_workspace 9
 
+bindsym $Mod+Shift+j workspace -1
+bindsym $Mod+Shift+k workspace +1
+
 bindsym $Mod+Shift+1 move_window_to_workspace 1
 bindsym $Mod+Shift+2 move_window_to_workspace 2
 bindsym $Mod+Shift+3 move_window_to_workspace 3
@@ -79,13 +83,28 @@ bindsym $Mod+h navigate_left
 bindsym $Mod+l navigate_right
 bindsym $Mod+j navigate_down
 bindsym $Mod+k navigate_up
-bindsym $Mod+z tile_h
+bindsym $Mod+g tile_h
 bindsym $Mod+v tile_v
 bindsym $Mod+t toggle_floating
 bindsym $Mod+f toggle_fullscreen
 bindsym $Mod+Shift+q kill
 bindsym $Mod+Delete exit
 bindsym $Mod+Shift+r reload
+
+bindsym XF86MonBrightnessUp exec light -A 10
+bindsym XF86MonBrightnessDown exec light -U 10
+bindsym XF86LaunchA exec rofi -show window
+bindsym XF86LaunchB exec rofi -show drun
+bindsym XF86AudioPrev exec mpc prev
+bindsym XF86AudioNext exec mpc next
+bindsym XF86AudioPlay exec mpc toggle
+bindsym XF86AudioMute exec amixer -q -D pulse set Master toggle
+bindsym XF86AudioRaiseVolume exec amixer -q -D pulse set Master 5%+ unmute
+bindsym XF86AudioLowerVolume exec amixer -q -D pulse set Master 5%- unmute
+
+bindsym Control+Shift+3 exec scrotutl -f
+bindsym Control+Shift+4 exec scrotutl -s
+bindsym Control+Shift+space+4 exec
 
 bindsym $Mod+Return exec kitty
 bindsym $Mod+Escape exec betterlockscreen -l pixel
@@ -96,23 +115,15 @@ bindsym $Mod+F4 exec farge.sh
 bindsym $Mod+d exec rofi -no-lazy-grab -show drun -theme themes/drun.rasi
 bindsym $Mod+Shift+e exec gedit .config/Wmderland/config
 
-bindsym XF86MonBrightnessUp exec light -A 10
-bindsym XF86MonBrightnessDown exec light -U 10
-#bindsym XF86KbdBrightnessUp exec kbdlight up 10
-#bindsym XF86KbdBrightnessDown exec kbdlight down 10
-bindsym XF86AudioMute exec amixer -q -D pulse set Master toggle
-bindsym XF86AudioRaiseVolume exec amixer -q -D pulse set Master 5%+ unmute
-bindsym XF86AudioLowerVolume exec amixer -q -D pulse set Master 5%- unmute
-
-
 ; [Autostart]
-; Applications to execute when WM starts up (Don't append '&' at the end)
+; Applications to execute when WM starts up (DON'T append '&' at the end)
 ; -----------------------------------------------------------------------
 exec pulseaudio --start --log-target=syslog
+; exec mpd.sh
 exec dunst
 exec nm-applet
 exec xautolock.sh
 exec redshift-gtk.sh
-exec compton.sh
+exec picom.sh
 exec nitrogen --restore
 exec_on_reload ~/.config/polybar/launch-ewmh.sh

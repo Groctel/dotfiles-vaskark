@@ -49,10 +49,11 @@ module-margin-right = 0
 
 font-0 = Iosevka Custom:style=regular:size=7.5;2
 font-1 = Symbols Nerd Font:size=10;2
+font-2 = Weather Icons:size=9;2
 
 modules-left = ewmh
 modules-center = 
-modules-right = network backlight pulseaudio memory battery temperature date
+modules-right = network weather backlight pulseaudio memory battery temperature date
 
 ;dim-value = 0.8
 
@@ -332,7 +333,7 @@ interface = wlp2s0
 ; enp0s3
 interval = 1.0
 
-label-connected =  %downspeed%
+label-connected = %downspeed% | %essid%
 ; %upspeed%
 format-connected-prefix = ""
 format-connected = <label-connected>
@@ -345,12 +346,17 @@ format-connected-prefix-background = ${colors.secondary}
 format-connected-prefix-foreground = ${colors.primary}
 format-connected-prefix-padding = 1
 
-label-disconnected = 睊
+label-disconnected = N/A
 format-disconnected = <label-disconnected>
+format-disconnected-prefix = 睊
 
-label-disconnected-background = ${colors.secondary}
-label-disconnected-foreground = ${colors.primary}
+label-disconnected-background = ${colors.primary}
+label-disconnected-foreground = ${colors.secondary}
 label-disconnected-padding = 1
+
+format-disconnected-prefix-background = ${colors.secondary}
+format-disconnected-prefix-foreground = ${colors.primary}
+format-disconnected-prefix-padding = 1
 
 ramp-signal-0 = 
 ramp-signal-1 = 
@@ -363,11 +369,11 @@ type = internal/date
 interval = 1
 
 date =
-;date-alt = %B %m, %Y
+date-alt = %A %B %d, %Y
 time = %I:%M %p
 time-alt =
 
-label = %time%
+label = %date% %time%
 format-prefix = ""
 format = <label>
 
@@ -453,11 +459,22 @@ ramp-2 = 
 ramp-3 = 
 ramp-4 = 
 
-[module/openweathermap-simple]
+[module/weather]
 type = custom/script
 exec = ~/.config/polybar/scripts/openweathermap-simple.sh
 interval = 600
 label-font = 3
+
+format = <label>
+format-prefix = ""
+
+label-background = ${colors.primary}
+label-foreground = ${colors.secondary}
+label-padding = 1
+
+format-prefix-background = ${colors.secondary}
+format-prefix-foreground = ${colors.primary}
+format-prefix-padding = 1
 
 [settings]
 screenchange-reload = true

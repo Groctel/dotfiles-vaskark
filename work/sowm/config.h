@@ -18,21 +18,25 @@ const char* nautilus[] = {"nautilus", 0};
 const char* chrome[] = {"google-chrome", 0};
 const char* music[] = {"kitty", "-e", "ncmpcpp", 0};
 
+const char* quit[] = {"killall", "sowm.sh", 0};
+
 static struct key keys[] = {
-    {MOD,      XK_q,   win_kill,   {0}},
-    {MOD,      XK_c,   win_center, {0}},
-    {MOD,      XK_f,   win_fs,     {0}},
-    {Mod1Mask, XK_Tab, win_next,   {0}},
+    {MOD,      		XK_q,   	win_kill,   {0}},
+    {MOD,      		XK_c,   	win_center, {0}},
+    {MOD,      		XK_f,   	win_fs,     {0}},
+    {Mod1Mask, 		XK_Tab, 	win_next,   {0}},
 
-    {MOD|ShiftMask,	XK_d,	   run, {.com = menu}},
-    {MOD, 	    	XK_d,      run, {.com = rofi}},
-    {MOD,           	XK_p,      run, {.com = scrot}},
-    {MOD,           	XK_Return, run, {.com = term}},
+    {MOD|ShiftMask,	XK_d,	   	run, {.com = menu}},
+    {MOD, 	    	XK_d,      	run, {.com = rofi}},
+    {MOD,           	XK_p,      	run, {.com = scrot}},
+    {MOD,           	XK_Return, 	run, {.com = term}},
 
-    {MOD, XK_Escape, run, {.com = lock}},
-    {MOD, XK_F1,     run, {.com = nautilus}},
-    {MOD, XK_F2,     run, {.com = chrome}},
-    {MOD, XK_F3,     run, {.com = music}},
+    {MOD, 		XK_Escape, 	run, {.com = lock}},
+    {MOD, 		XK_F1,     	run, {.com = nautilus}},
+    {MOD, 		XK_F2,     	run, {.com = chrome}},
+    {MOD, 		XK_F3,     	run, {.com = music}},
+
+    {MOD, 		XK_Delete, 	run, {.com = quit}},
 
     {0,   XF86XK_AudioLowerVolume,  run, {.com = voldown}},
     {0,   XF86XK_AudioRaiseVolume,  run, {.com = volup}},

@@ -190,7 +190,7 @@ mode "resize" {
 
 # startup apps
 exec_always --no-startup-id redshift-gtk.sh
-exec_always --no-startup-id compton.sh
+exec_always --no-startup-id picom.sh
 exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
 exec --no-startup-id nitrogen --restore
 exec --no-startup-id libinput-gestures
@@ -212,9 +212,9 @@ bindsym $mod+Shift+e exec gedit ~/.config/i3/config
 bindsym --release $mod+Print exec --no-startup-id scrot -d 3 -q 85 '%Y-%m-%d_%I-%M-%S_%p.jpg' -e 'mv $f ~/Screenshots/'
 
 # pulseaudio controls
-bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume 0 +5%
-bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume 0 -5%
-bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute 0 toggle
+bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume 1 +5%
+bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume 1 -5%
+bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute 1 toggle
 
 # screen brightness controls
 bindsym XF86MonBrightnessUp exec light -A 5
