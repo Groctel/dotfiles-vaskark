@@ -1,8 +1,8 @@
 #!/bin/bash
 nitrogen --restore &
-picom &
-redshift &
 dunst &
-mpd &
+picom.sh &
+redshift.sh &
+mpd.sh &
 xautolock.sh &
-notify-send "Welcome back, $USER" &
+#notify-send "Welcome back, $USER" &

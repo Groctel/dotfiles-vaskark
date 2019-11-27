@@ -6,7 +6,7 @@
 const char* menu[]    = {"dmenu_run",      0};
 const char* rofi[]    = {"rofi", "-show", "drun", "-theme", "themes/drun.rasi",      0};
 const char* term[]    = {"kitty",             0};
-const char* scrot[]   = {"scrot", "-d", "3", "-q", "85", "'%Y-%m-%d_%I-%M-%S_%p.jpg'", "-e", "'mv", "$f", "~/Screenshots/'",            0};
+const char* sshot[]   = {"screenshot.sh", "full",            0};
 const char* briup[]   = {"light", "-A", "5", 0};
 const char* bridown[] = {"light", "-U", "5", 0};
 const char* voldown[] = {"amixer", "sset", "Master", "5%-",         0};
@@ -28,7 +28,7 @@ static struct key keys[] = {
 
     {MOD|ShiftMask,	XK_d,	   	run, {.com = menu}},
     {MOD, 	    	XK_d,      	run, {.com = rofi}},
-    {MOD,           	XK_p,      	run, {.com = scrot}},
+    {MOD,           	XK_p,      	run, {.com = sshot}},
     {MOD,           	XK_Return, 	run, {.com = term}},
 
     {MOD, 		XK_Escape, 	run, {.com = lock}},
