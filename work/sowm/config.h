@@ -19,6 +19,7 @@ const char* chrome[] = {"google-chrome", 0};
 const char* music[] = {"kitty", "-e", "ncmpcpp", 0};
 
 const char* quit[] = {"killall", "sowm.sh", 0};
+const char* reboot[] = {"systemctl", "reboot", 0};
 
 static struct key keys[] = {
     {MOD,      		XK_q,   	win_kill,   {0}},
@@ -37,6 +38,7 @@ static struct key keys[] = {
     {MOD, 		XK_F3,     	run, {.com = music}},
 
     {MOD, 		XK_Delete, 	run, {.com = quit}},
+    {MOD|ShiftMask,	XK_Delete,	run, {.com = reboot}},
 
     {0,   XF86XK_AudioLowerVolume,  run, {.com = voldown}},
     {0,   XF86XK_AudioRaiseVolume,  run, {.com = volup}},
