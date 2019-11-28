@@ -6,7 +6,7 @@
 const int handle_bar_thickness = 20;
 const char *handlebar_colour   = "#36383e";
 
-const char* menu[]    = {"dmenu_run",      0};
+const char* menu[]    = {"dmenu_run.sh",      0};
 const char* rofi[]    = {"rofi", "-show", "drun", "-theme", "themes/drun.rasi",      0};
 const char* term[]    = {"kitty",             0};
 const char* sshot[]   = {"screenshot.sh", "full",            0};
