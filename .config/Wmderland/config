@@ -119,7 +119,7 @@ bindsym $Mod+Shift+e exec gedit .config/Wmderland/config
 ; Applications to execute when WM starts up (DON'T append '&' at the end)
 ; -----------------------------------------------------------------------
 exec pulseaudio --start --log-target=syslog
-; exec mpd.sh
+exec mpd.sh
 exec dunst
 exec nm-applet
 exec xautolock.sh
