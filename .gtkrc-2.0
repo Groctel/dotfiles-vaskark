@@ -2,8 +2,8 @@
 # Any customization should be done in ~/.gtkrc-2.0.mine instead.
 
 include "/home/jason/.gtkrc-2.0.mine"
-gtk-theme-name="vimix-dark-laptop-beryl"
-gtk-icon-theme-name="Tela-manjaro-dark"
+gtk-theme-name="Skyfall"
+gtk-icon-theme-name="Buuf 3.34"
 gtk-font-name="Iosevka Custom 7.5"
 gtk-cursor-theme-name="Paper"
 gtk-cursor-theme-size=24

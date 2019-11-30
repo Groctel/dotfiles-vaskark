@@ -3,18 +3,15 @@
 
 #define MOD Mod4Mask
 
-const int handle_bar_thickness = 20;
-const char *handlebar_colour   = "#36383e";
-
 const char* menu[]    = {"dmenu_run",      0};
 const char* rofi[]    = {"rofi", "-show", "drun", "-theme", "themes/drun.rasi",      0};
 const char* term[]    = {"kitty",             0};
 const char* sshot[]   = {"screenshot.sh", "full",            0};
 const char* briup[]   = {"light", "-A", "5", 0};
 const char* bridown[] = {"light", "-U", "5", 0};
-const char* voldown[] = {"amixer", "sset", "Master", "5%-",         0};
-const char* volup[]   = {"amixer", "sset", "Master", "5%+",         0};
-const char* volmute[] = {"amixer", "sset", "Master", "toggle",      0};
+const char* voldown[] = {"pactl", "set-sink-volume", "0", "-5%",         0};
+const char* volup[]   = {"pactl", "set-sink-volume", "0", "+5%",         0};
+const char* volmute[] = {"pactl", "set-sink-mute", "0", "toggle",      0};
 
 const char* lock[] = {"betterlockscreen", "-l", "pixel", 0};
 const char* nautilus[] = {"nautilus", 0};
@@ -51,16 +48,29 @@ static struct key keys[] = {
 
     {MOD,           XK_1, ws_go,     {.i = 1}},
     {MOD|ShiftMask, XK_1, win_to_ws, {.i = 1}},
+    {MOD|ControlMask,XK_1,ws_toggle, {.i = 1}},
+
     {MOD,           XK_2, ws_go,     {.i = 2}},
     {MOD|ShiftMask, XK_2, win_to_ws, {.i = 2}},
+    {MOD|ControlMask,XK_2,ws_toggle, {.i = 2}},
+
     {MOD,           XK_3, ws_go,     {.i = 3}},
     {MOD|ShiftMask, XK_3, win_to_ws, {.i = 3}},
+    {MOD|ControlMask,XK_3,ws_toggle, {.i = 3}},
+
     {MOD,           XK_4, ws_go,     {.i = 4}},
     {MOD|ShiftMask, XK_4, win_to_ws, {.i = 4}},
+    {MOD|ControlMask,XK_4,ws_toggle, {.i = 4}},
+
     {MOD,           XK_5, ws_go,     {.i = 5}},
     {MOD|ShiftMask, XK_5, win_to_ws, {.i = 5}},
+    {MOD|ControlMask,XK_5,ws_toggle, {.i = 5}},
+
     {MOD,           XK_6, ws_go,     {.i = 6}},
     {MOD|ShiftMask, XK_6, win_to_ws, {.i = 6}},
+    {MOD|ControlMask,XK_6,ws_toggle, {.i = 6}},
+    
+    {MOD,           XK_0, ws_toggle_all, {.i = 0}},
 };
 
 #endif
