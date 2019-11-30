@@ -3,9 +3,9 @@
 
 include "/home/jason/.gtkrc-2.0.mine"
 gtk-theme-name="vimix-dark-laptop-beryl"
-gtk-icon-theme-name="Solarized-Deluxe"
+gtk-icon-theme-name="Vimix-Beryl"
 gtk-font-name="Iosevka Custom 7.5"
-gtk-cursor-theme-name="Solarized-Turquoise-Cursor"
+gtk-cursor-theme-name="Paper"
 gtk-cursor-theme-size=24
 gtk-toolbar-style=GTK_TOOLBAR_ICONS
 gtk-toolbar-icon-size=GTK_ICON_SIZE_SMALL_TOOLBAR
