@@ -140,6 +140,7 @@ alias ms='ncmpcpp'
 alias uf='cls;ufetch'
 alias bf='bunnyfetch'
 alias pf='clear;pfetch'
+alias f='fff'
 
 # neofetch
 alias nf0='clear;neofetch --config none'
@@ -149,6 +150,7 @@ alias nfo='clear;neofetch --off'
 alias nfp='clear;neofetch --source $HOME/Pictures/'
 alias nff='clear;neofetch --ascii "$(fortune | cowsay -W 30)"'
 alias nfs='clear;neofetch --config ~/.config/neofetch/config-small.conf'
+alias nfall='clear;neofetch --config ~/.config/neofetch/config-all.conf'
 
 # wifi
 alias up='nmcli c u'
@@ -171,3 +173,5 @@ kitty + complete setup zsh | source /dev/stdin
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 #[[ -f ~/.p10k.zsh ]] && source ~/.p10k.zsh
+
+
