@@ -13,7 +13,7 @@ mpd.sh &
 # Set decoration geometry
 berryc border_width       1
 berryc inner_border_width 5
-berryc title_height       26
+berryc title_height       22
 berryc top_gap            30
 
 # Set decoration colors

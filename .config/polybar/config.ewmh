@@ -128,7 +128,7 @@ icon-8 = 8;
 ;label-monitor = %name%
 format = <label-state>
 
-label-monitor-foreground = ${colors.secondary}
+label-monitor-foreground = 
 label-monitor-background = ${colors.primary}
 label-monitor-padding = 1
 
