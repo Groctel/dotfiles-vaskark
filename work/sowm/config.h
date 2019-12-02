@@ -9,9 +9,9 @@ const char* term[]    = {"kitty",             0};
 const char* shot[]   = {"screenshot.sh", "full",            0};
 const char* briup[]   = {"light", "-A", "5", 0};
 const char* bridown[] = {"light", "-U", "5", 0};
-const char* voldown[] = {"pactl", "set-sink-volume", "0", "-5%",         0};
-const char* volup[]   = {"pactl", "set-sink-volume", "0", "+5%",         0};
-const char* volmute[] = {"pactl", "set-sink-mute", "0", "toggle",      0};
+const char* voldown[] = {"pactl", "set-sink-volume", "@DEFAULT_SINK@", "-5%",         0};
+const char* volup[]   = {"pactl", "set-sink-volume", "@DEFAULT_SINK@", "+5%",         0};
+const char* volmute[] = {"pactl", "set-sink-mute", "@DEFAULT_SINK@", "toggle",      0};
 
 const char* lock[] = {"betterlockscreen", "-l", "pixel", 0};
 const char* nautilus[] = {"nautilus", 0};

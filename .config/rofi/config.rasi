@@ -12,3 +12,4 @@ configuration {
   terminal:           "kitty";
 /*  theme:	      "~/.cache/wal/colors-rofi-dark.rasi";*/
 }
+@import "/home/jason/.config/rofi/themes/drun.rasi"

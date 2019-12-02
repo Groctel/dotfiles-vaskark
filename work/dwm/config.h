@@ -68,6 +68,8 @@ static char dmenumon[2] = "0"; /* component of dmenucmd, manipulated in spawn() 
 static const char *dmenucmd[] = { "dmenu_run", "-m", dmenumon, "-fn", dmenufont, "-nb", col_gray1, "-nf", col_gray3, "-sb", col_cyan, "-sf", col_gray4, NULL };
 static const char *roficmd[] = { "rofi", "-no-lazy-grab", "-show", "drun", "-theme", "themes/drun.rasi", NULL };
 static const char *termcmd[]  = { "kitty", NULL };
+static const char *lockcmd[] = { "betterlockscreen", "-l", "pixel", NULL};
+static const char *rebootcmd[] = {"systemctl", "reboot", NULL};
 
 static Key keys[] = {
 	/* modifier                     key        function        argument */
@@ -105,6 +107,8 @@ static Key keys[] = {
 	TAGKEYS(                        XK_8,                      7)
 	TAGKEYS(                        XK_9,                      8)
 	{ MODKEY,                       XK_Delete, quit,           {0} },
+        { MODKEY|ShiftMask,             XK_Delete, spawn,          {.v = rebootcmd } },
+        { MODKEY,			XK_Escape, spawn,	   {.v = lockcmd } },
 	{ MODKEY,                       XK_F11,    spawn,          {.v = downvol } },
 	{ MODKEY,                       XK_F10,    spawn,          {.v = mutevol } },
 	{ MODKEY,                       XK_F12,    spawn,          {.v = upvol   } },

@@ -34,7 +34,7 @@ bindsym $mod+Shift+q kill
 
 # start program launcher
 bindsym $mod+d exec --no-startup-id rofi -no-lazy-grab -show drun -theme themes/drun.rasi
-bindsym $mod+Shift+d exec --no-startup-id dmenu_run
+bindsym $mod+Shift+d exec --no-startup-id i3-dmenu-desktop
 
 # change focus
 bindsym $mod+h focus left
@@ -175,7 +175,6 @@ bindsym $mod+Shift+c reload
 bindsym $mod+Shift+r restart
 
 # resize windows
-bindsym $mod+r mode "resize"
 mode "resize" {
         # resize with arrow keys
         bindsym Left resize shrink width 10 px or 10 ppt
@@ -188,6 +187,7 @@ mode "resize" {
         bindsym Escape mode "default"
         bindsym $mod+r mode "default"
 }
+bindsym $mod+r mode "resize"
 
 # startup apps
 exec_always --no-startup-id redshift-gtk.sh
@@ -212,9 +212,9 @@ bindsym $mod+Shift+e exec gedit ~/.config/i3/config
 bindsym --release $mod+Print exec --no-startup-id scrot -d 3 -q 85 '%Y-%m-%d_%I-%M-%S_%p.jpg' -e 'mv $f ~/Screenshots/'
 
 # pulseaudio controls
-bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume 1 +5%
-bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume 1 -5%
-bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute 1 toggle
+bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ +5%
+bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ -5%
+bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute @DEFAULT_SINK@ toggle
 
 # screen brightness controls
 bindsym XF86MonBrightnessUp exec light -A 5
@@ -268,8 +268,6 @@ bindsym $mod+Delete mode "$system"
 #bindsym $mod+y			gaps inner current plus 5; gaps outer current plus 5
 #bindsym $mod+Shift+y		gaps inner current minus 5; gaps outer current minus 5
 #bindsym $mod+Shift+d		gaps inner current set 10; gaps outer current set 0
-
-#workspace $ws3 gaps inner 70
 
 ############### i3-gaps stuff ##################
 

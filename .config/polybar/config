@@ -50,7 +50,7 @@ module-margin-right = 1
 font-0 = Iosevka Custom:style=regular:size=7.5;2
 font-1 = Symbols Nerd Font:size=10;2
 
-modules-left = i3
+modules-left = i3 xwindow
 modules-center = 
 modules-right = network backlight pulseaudio memory battery temperature date
 
@@ -106,6 +106,10 @@ modules-right = mpd-time
 ;dim-value = 0.8
 
 ;wm-restack = i3
+
+[module/xwindow]
+type = internal/xwindow
+label = %title:0:50:...%
 
 [module/s]
 type = custom/text
@@ -358,7 +362,7 @@ interface = wlp2s0
 ; enp0s3
 interval = 1.0
 
-label-connected =  %downspeed%
+label-connected =  %downspeed% | %essid%
 ; %upspeed%
 format-connected-prefix = ""
 format-connected = <label-connected>
@@ -371,7 +375,7 @@ format-connected-prefix-background = ${colors.secondary}
 format-connected-prefix-foreground = ${colors.primary}
 format-connected-prefix-padding = 1
 
-label-disconnected = 睊
+label-disconnected = 
 format-disconnected = <label-disconnected>
 
 label-disconnected-background = ${colors.secondary}
