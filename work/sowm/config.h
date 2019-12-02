@@ -20,6 +20,7 @@ const char* music[] = {"kitty", "-e", "ncmpcpp", 0};
 
 const char* quit[] = {"killall", "sowm.sh", 0};
 const char* reboot[] = {"systemctl", "reboot", 0};
+const char* shutdown[] = {"systemctl", "shutdown", "now", 0};
 
 static struct key keys[] = {
     {MOD,      		XK_q,   	win_kill,   {0}},
@@ -39,6 +40,7 @@ static struct key keys[] = {
 
     {MOD, 		XK_Delete, 	run, {.com = quit}},
     {MOD|ShiftMask,	XK_Delete,	run, {.com = reboot}},
+    {MOD|ControlMask,	XK_Delete,	run, {.com = shutdown}},
 
     {0,   XF86XK_AudioLowerVolume,  run, {.com = voldown}},
     {0,   XF86XK_AudioRaiseVolume,  run, {.com = volup}},
