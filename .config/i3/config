@@ -34,7 +34,7 @@ bindsym $mod+Shift+q kill
 
 # start program launcher
 bindsym $mod+d exec --no-startup-id rofi -no-lazy-grab -show drun -theme themes/drun.rasi
-bindsym $mod+Shift+d exec --no-startup-id i3-dmenu-desktop
+bindsym $mod+Shift+d exec --no-startup-id dmenu.sh
 
 # change focus
 bindsym $mod+h focus left
@@ -164,6 +164,7 @@ for_window [class="Mediainfo-gui"] floating enable
 for_window [class="Ukuu-gtk"] floating enable
 for_window [class="Float"] floating enable
 for_window [class="farge"] floating enable
+for_window [class="calibre"] floating enable
 
 # open apps on certain workspaces
 #for_window [class="Gimp"] move workspace $ws3
@@ -285,7 +286,7 @@ smart_borders on
 
 # set inner/outer gaps
 gaps inner 10
-gaps outer 0
+gaps outer 50
 gaps horizontal 0
 gaps vertical 0
 gaps top 0
