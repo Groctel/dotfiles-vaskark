@@ -3,7 +3,7 @@
 
 #define MOD Mod4Mask
 
-const char* menu[]    = {"dmenu_run",      0};
+const char* menu[]    = {"dmenu.sh",      0};
 const char* rofi[]    = {"rofi", "-show", "drun", "-theme", "themes/drun.rasi",      0};
 const char* term[]    = {"kitty",             0};
 const char* shot[]   = {"screenshot.sh", "full",            0};

@@ -9,7 +9,7 @@ mpd_music_dir = "/home/jason/Music"
 mpd_connection_timeout = "5"
 
 # Behaviour #
-#execute_on_song_change = "bash ~/.config/ncmpcpp/mpd-notify"
+execute_on_song_change = 
 message_delay_time = 1
 autocenter_mode = "yes"
 centered_cursor = "yes"

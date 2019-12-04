@@ -1,5 +1,5 @@
 # If you come from bash you might have to change your $PATH.
-export PATH=$HOME/bin:$HOME/.local/bin:$PATH
+#export PATH=$HOME/bin:$HOME/.local/bin:$PATH
 
 # export TERM="rxvt-unicode-256color"
 export TERM="xterm-256color"
@@ -172,6 +172,9 @@ kitty + complete setup zsh | source /dev/stdin
 #unimatrix -a -f -l o -n -o -s 100 -w
 
 #To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
-[[ -f ~/.p10k.zsh ]] && source ~/.p10k.zsh
+#[[ -f ~/.p10k.zsh ]] && source ~/.p10k.zsh
 
-
+# kunst
+export KUNST_SIZE="350x350"
+export KUNST_POSITION="+1530+50"
+export KUNST_MUSIC_DIR="/home/jason/Music/"
