@@ -5,11 +5,12 @@ configuration {
   disable-history:    false;
   width: 	      20;
   lines:              10;
+  font:		      "Iosevka Custom 10";
   columns:            1;
   modi: 	      "drun,run,ssh,window,keys";
   display-drun:       "apps";
   display-window:     "win";
   terminal:           "kitty";
-/*  theme:	      "~/.cache/wal/colors-rofi-dark.rasi";*/
+  theme:	      "~/.cache/wal/colors-rofi-dark.rasi";
 }
-@import "/home/jason/.config/rofi/themes/drun.rasi"
+/*@import "/home/jason/.config/rofi/themes/drun.rasi"*/

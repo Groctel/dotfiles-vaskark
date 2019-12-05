@@ -33,7 +33,8 @@ bindsym $mod+Shift+Return exec $term --class Float
 bindsym $mod+Shift+q kill
 
 # start program launcher
-bindsym $mod+d exec --no-startup-id rofi -no-lazy-grab -show drun -theme themes/drun.rasi
+#bindsym $mod+d exec --no-startup-id rofi -no-lazy-grab -show drun -theme themes/drun.rasi
+bindsym $mod+d exec --no-startup-id rofi -no-lazy-grab -show drun
 bindsym $mod+Shift+d exec --no-startup-id dmenu.sh
 
 # change focus
@@ -260,13 +261,13 @@ bindsym $mod+Delete mode "$system"
 for_window [class="^.*"] border pixel 0
 
 # activate smart gaps
-smart_gaps on
+#smart_gaps on
 
 # activate smart borders (always)
 smart_borders on
 
 # Activate smart borders (only when there are effectively no gaps)
-smart_borders no_gaps
+#smart_borders no_gaps
 
 # set inner/outer gaps
 gaps inner 10

@@ -181,4 +181,4 @@ export KUNST_POSITION="+1530+50"
 export KUNST_MUSIC_DIR="/home/jason/Music/"
 
 # wal
-. "${HOME}/.cache/wal/colors"
+#. "${HOME}/.cache/wal/colors"
