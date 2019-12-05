@@ -20,9 +20,9 @@ font xft:Iosevka Custom 7.5
 hide_edge_borders none
 
 # change borders
-bindsym $mod+u border normal 1
+bindsym $mod+u border normal 2
 bindsym $mod+i border normal 0
-bindsym $mod+o border pixel 4
+bindsym $mod+o border pixel 2
 bindsym $mod+p border none
 
 # start terminal
@@ -221,29 +221,18 @@ bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute @DEFAULT_SINK@ to
 bindsym XF86MonBrightnessUp exec light -A 5
 bindsym XF86MonBrightnessDown exec light -U 5
 
-# colours (from xresources)
-set_from_resource $darkblack   color0  #000000
-set_from_resource $black       color8  #000000
-set_from_resource $darkred     color1  #000000
-set_from_resource $red         color9  #000000
-set_from_resource $darkgreen   color2  #000000
-set_from_resource $green       color10 #000000
-set_from_resource $darkyellow  color3  #000000
-set_from_resource $yellow      color11 #000000
-set_from_resource $darkblue    color4  #000000
-set_from_resource $blue        color12 #000000
-set_from_resource $darkmagenta color5  #000000
-set_from_resource $magenta     color13 #000000
-set_from_resource $darkcyan    color6  #000000
-set_from_resource $cyan        color14 #000000
-set_from_resource $darkwhite   color7  #000000
-set_from_resource $white       color15 #000000
+# Set colors from Xresources
+set_from_resource $fg i3wm.color0 #f0f0f0
+set_from_resource $bg i3wm.color4 #f0f0f0
 
-#                       BORDER      BACKGROUND  TEXT        INDICATOR   CHILD_BORDER
-client.focused          $darkblue   $darkblue   $darkblack  $darkblue    $darkblue
-client.focused_inactive $darkblack  $darkblack  $darkwhite  $darkblack   $darkblack
-#client.unfocused       $black      $black      $darkwhite  $black       $black
-#client.urgent          $darkred    $darkred    $darkblack  #$darkred    $darkred
+# class                 border  backgr. text indicator child_border
+client.focused          $bg     $bg     $fg  $bg       $bg
+client.focused_inactive $bg     $bg     $fg  $bg       $bg
+client.unfocused        $bg     $bg     $fg  $bg       $bg
+client.urgent           $bg     $bg     $fg  $bg       $bg
+client.placeholder      $bg     $bg     $fg  $bg       $bg
+
+client.background       $bg
 
 # logout, suspend, reboot, shutdown, uefi ...
 set $system System ... logout (l), suspend (s), reboot (r), shutdown (S), UEFI (R)
@@ -264,11 +253,6 @@ mode "$system" {
 }
 bindsym $mod+Delete mode "$system"
 
-# gaps stuff
-#bindsym $mod+Shift+t		gaps inner current set 20; gaps outer current set 20
-#bindsym $mod+y			gaps inner current plus 5; gaps outer current plus 5
-#bindsym $mod+Shift+y		gaps inner current minus 5; gaps outer current minus 5
-#bindsym $mod+Shift+d		gaps inner current set 10; gaps outer current set 0
 
 ############### i3-gaps stuff ##################
 
@@ -276,13 +260,13 @@ bindsym $mod+Delete mode "$system"
 for_window [class="^.*"] border pixel 0
 
 # activate smart gaps
-#smart_gaps on
+smart_gaps on
 
 # activate smart borders (always)
 smart_borders on
 
 # Activate smart borders (only when there are effectively no gaps)
-# smart_borders no_gaps
+smart_borders no_gaps
 
 # set inner/outer gaps
 gaps inner 10
