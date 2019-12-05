@@ -4,7 +4,7 @@ Clock(){
 	DATE=$(date "+%a %b %-d %Y")
 	TIME=$(date "+%I:%M %p")
 
-	echo -e -n "\uf073 ${DATE} \uf017 ${TIME}"
+	echo -e -n "\uf133 ${DATE} \uf017 ${TIME}"
 }
 
 ActiveWindow(){
@@ -70,7 +70,7 @@ Sound(){
 			echo -e "\uf026 ${VOL}%"
 		fi
 	else
-		echo -e "\uf026 M"
+		echo -e "\uf69a M"
 	fi
 }
 
@@ -87,8 +87,11 @@ Language(){
 	fi
 }
 
+MPD(){
+	echo -e -n "\uf04b" $(mpc current)
+}
+
 while true; do
-#	echo -e "%{l}$(Language)" "%{c}$(ActiveWindow)" "%{r}$(Wifi)  $(Battery)  $(Sound)  $(Clock) "
-	echo -e "%{c}$(ActiveWindow)" "%{r}$(Wifi)  $(Battery)  $(Sound)  $(Clock) "
+	echo -e "%{l} $(MPD)" "%{c}$(ActiveWindow)" "%{r}$(Wifi)  $(Battery)  $(Sound)  $(Clock)  "
 	sleep 0.1s
 done
