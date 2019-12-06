@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 
 Clock(){
 	DATE=$(date "+%a %b %-d %Y")
@@ -53,7 +53,8 @@ Wifi(){
 		WIFISTR=$(( ${WIFISTR} * 100 / 70))
 		ESSID=$(iwconfig wlp2s0 | grep ESSID | sed 's/ //g' | sed 's/.*://' | cut -d "\"" -f 2)
 		if [ $WIFISTR -ge 1 ] ; then
-			echo -e "\uf1eb ${ESSID} ${WIFISTR}%"
+#			echo -e "\uf1eb ${ESSID} ${WIFISTR}%"
+			echo -e "\uf1eb ${ESSID}"
 		fi
 	fi
 }

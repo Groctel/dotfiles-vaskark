@@ -157,6 +157,10 @@ alias nfall='clear;neofetch --config ~/.config/neofetch/config-all.conf'
 alias up='nmcli c u'
 alias dn='nmcli c d'
 
+# windscribe
+alias wsc='windscribe connect'
+alias wsd='windscribe disconnect'
+
 # superuser
 alias reboot='sudo reboot'
 alias shutdown='sudo shutdown now'
