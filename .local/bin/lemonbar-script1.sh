@@ -70,7 +70,7 @@ Sound(){
 			echo -e "\uf026 ${VOL}%"
 		fi
 	else
-		echo -e "\uf69a M"
+		echo -e "\uf6a9 mute"
 	fi
 }
 
