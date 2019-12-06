@@ -1,4 +1,4 @@
-#!/usr/bin/bash
+#!/bin/bash
 
 Clock(){
 	DATE=$(date "+%a %b %-d %Y")
@@ -92,6 +92,6 @@ MPD(){
 }
 
 while true; do
-	echo -e "%{l} $(MPD)" "%{c}$(ActiveWindow)" "%{r}$(Wifi)  $(Battery)  $(Sound)  $(Clock)  "
+	echo -e "%{c}$(ActiveWindow)" "%{r}$(Wifi)  $(Battery)  $(Sound)  $(Clock)  "
 	sleep 0.1s
 done
