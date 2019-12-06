@@ -17,14 +17,7 @@
 ;==========================================================
 
 [colors]
-background = #222
-foreground = #dfdfdf
-;primary = #3D8D91
-;primary = #2A9C94
-primary = ${xrdb:color4}
-;secondary = #000
-secondary = ${xrdb:color0}
-alert = #bd2c40
+include-file = ~/.config/polybar/colors
 
 [bar/top]
 monitor = ${env:MONITOR:eDP-1}
