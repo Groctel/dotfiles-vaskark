@@ -47,7 +47,7 @@ font-2 = Weather Icons:size=9;2
 
 modules-left = ewmh
 modules-center = 
-modules-right = network weather backlight pulseaudio memory battery temperature date
+modules-right = network backlight pulseaudio memory battery temperature date
 
 ;dim-value = 0.8
 
@@ -460,7 +460,7 @@ interval = 600
 label-font = 3
 
 format = <label>
-format-prefix = ""
+format-prefix = ""
 
 label-background = ${colors.primary}
 label-foreground = ${colors.secondary}
