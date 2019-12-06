@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 
 # Set startup apps
 sxhkd -c $HOME/.config/berry/sxhkdrc &

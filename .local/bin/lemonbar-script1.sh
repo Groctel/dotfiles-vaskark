@@ -4,7 +4,8 @@ Clock(){
 	DATE=$(date "+%a %b %-d %Y")
 	TIME=$(date "+%I:%M %p")
 
-	echo -e -n "\uf133 ${DATE} \uf017 ${TIME}"
+#	echo -e -n "\uf133 ${DATE} \uf017 ${TIME}"
+	echo -e -n "\uf017 ${TIME}"
 }
 
 ActiveWindow(){
@@ -71,7 +72,7 @@ Sound(){
 			echo -e "\uf026 ${VOL}%"
 		fi
 	else
-		echo -e "\uf6a9 mute"
+		echo -e "\uf6a9 --"
 	fi
 }
 
@@ -88,11 +89,29 @@ Language(){
 	fi
 }
 
+Groups() {
+	cur=`xprop -root _NET_CURRENT_DESKTOP | awk '{print $3}'
+	tot=`xprop -root _NET_NUMBER_OF_DESKTOPS | awk '{print $3}'
+
+	# Desktop numbers start at 0. if you want desktop 2 to be in second place,
+	# start counting from 1 instead of 0. But you'll lose a group ;)
+	for w in `seq 0 $((cur - 1))`; do line="${line}="; done
+
+	# enough =, let's print the current desktop
+	line="${line}|"
+
+	# And then the other groups
+	for w in `seq $((cur + 2)) $tot`; do line="${line}="; done
+
+	# don't forget to print that line!
+	echo $line
+}
+
 MPD(){
-	echo -e -n "\uf04b" $(mpc current)
+	echo -e "\uf04b" $(mpc current)
 }
 
 while true; do
-	echo -e "%{c}$(ActiveWindow)" "%{r}$(Wifi)  $(Battery)  $(Sound)  $(Clock)  "
+	echo -e "%{l}$(Groups)" "%{c}$(ActiveWindow)" "%{r}$(Wifi)  $(Battery)  $(Sound)  $(Clock)  "
 	sleep 0.1s
 done

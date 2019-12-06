@@ -150,7 +150,7 @@ alias nfa='clear;neofetch --source ascii'
 alias nfo='clear;neofetch --off'
 alias nfp='clear;neofetch --source $HOME/Pictures/'
 alias nff='clear;neofetch --ascii "$(fortune | cowsay -W 30)"'
-#alias nfs='clear;neofetch --config ~/.config/neofetch/config-small.conf'
+alias nfs='clear;neofetch --config ~/.config/neofetch/config-small.conf'
 alias nfall='clear;neofetch --config ~/.config/neofetch/config-all.conf'
 
 # wifi
@@ -185,4 +185,6 @@ export KUNST_POSITION="+1530+50"
 export KUNST_MUSIC_DIR="/home/jason/Music/"
 
 # wal
-#. "${HOME}/.cache/wal/colors"
+cat ~/.cache/wal/sequences
+#source ~/.cache/wal/colors-tty.sh
+

@@ -10,6 +10,9 @@ super + Return
 super + d
 	rofi -no-lazy-grab -show drun -theme themes/drun.rasi
 
+super + shift + d
+        dmenu.sh
+
 # make sxhkd reload its configuration files:
 super + shift + r
 	pkill -USR1 -x sxhkd
@@ -36,11 +39,11 @@ super + F4
 
 # volume
 XF86AudioRaiseVolume
-	pactl set-sink-volume 0 +5%
+	pactl set-sink-volume @DEFAULT_SINK@ +5%
 XF86AudioLowerVolume
-	pactl set-sink-volume 0 -5%
+	pactl set-sink-volume @DEFAULT_SINK@ -5%
 XF86AudioMute
-	pactl set-sink-mute 0 toggle
+	pactl set-sink-mute @DEFAULT_SINK@ toggle
 
 # brightness
 XF86MonBrightnessUp
