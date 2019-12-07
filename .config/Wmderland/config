@@ -112,7 +112,7 @@ bindsym $Mod+Escape exec betterlockscreen -l pixel
 bindsym $Mod+F1 exec nautilus
 bindsym $Mod+F2 exec google-chrome
 bindsym $Mod+F3 exec kitty --class Float -e ncmpcpp
-bindsym $Mod+d exec rofi -no-lazy-grab -show drun -theme themes/drun.rasi
+bindsym $Mod+d exec rofi -no-lazy-grab -show drun
 bindsym $Mod+Shift+e exec gedit .config/Wmderland/config
 
 

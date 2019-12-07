@@ -1,5 +1,5 @@
 configuration {
-  show-icons:         true;
+  show-icons:         false;
   cycle:              true;
   hide-scrollbar:     true;
   disable-history:    false;
@@ -11,6 +11,6 @@ configuration {
   display-drun:       "apps";
   display-window:     "win";
   terminal:           "kitty";
-  theme:	      "~/.cache/wal/colors-rofi-dark.rasi";
+/*  theme:	      "~/.cache/wal/colors-rofi-dark.rasi";*/
 }
-/*@import "/home/jason/.config/rofi/themes/drun.rasi"*/
+@import "/home/jason/.config/rofi/themes/drun.rasi"
