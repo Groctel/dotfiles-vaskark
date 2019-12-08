@@ -7,5 +7,8 @@ killall -q polybar
 while pgrep -u $UID -x polybar >/dev/null; do sleep 1; done
 
 # Launch top and bottom
-polybar -r -c ~/.config/polybar/config.no-ewmh top &
-#polybar -r -c ~/.config/polybar/config.no-ewmh bottom &
+echo "---" | tee -a /tmp/polybar-top.log /tmp/polybar-bottom.log
+polybar -r -c ~/.config/polybar/config.no-ewmh top >>/tmp/polybar-top.log 2>&1 &
+#polybar -r -c ~/.config/polybar/config.no-ewmh bottom >>/tmp/polybar-bottom.log 2>&1 &
+
+echo "Bars launched..."

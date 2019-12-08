@@ -11,7 +11,7 @@
 # dmenu2
 dmenu_run \
 -fn 'Iosevka Custom-8' \
--h 26 \
+-h 28 \
 -p ' dmenu: ' \
 -i \
 -nb "$color0" \

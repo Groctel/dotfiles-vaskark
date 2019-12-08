@@ -40,11 +40,10 @@ primary =
 secondary = 
 alert = #bd2c40
 
-
 [bar/top]
 ;monitor = ${env:MONITOR:eDP-1}
 width = 100%
-height = 26
+height = 28
 radius = 4.0
 fixed-center = true
 
@@ -63,8 +62,8 @@ padding-right = 0
 module-margin-left = 0
 module-margin-right = 0
 
-font-0 = "Iosevka Term:size=7.5;2"
-font-1 = "Material\-Design\-Iconic\-Font:style=Design-Iconic-Font:size=9.5;2"
+font-0 = "Iosevka Term:style=regular:size=7.5;2"
+font-1 = "Material Icons:size=9.5;4"
 
 modules-left = mpd-controls
 modules-center = mpd
@@ -93,8 +92,8 @@ scroll-down = i3wm-wsprev
 [bar/bottom]
 ;monitor = ${env:MONITOR:eDP-1}
 width = 100%
-height = 20
-radius = 2.0
+height = 28
+radius = 4.0
 fixed-center = true
 bottom = true
 
@@ -113,8 +112,8 @@ padding-right = 0
 module-margin-left = 0
 module-margin-right = 0
 
-font-0 = "Iosevka Term:size=7.5;2"
-font-1 = "Material\-Design\-Iconic\-Font:style=Design-Iconic-Font:size=10;2"
+font-0 = "Iosevka Term:style=regular:size=7.5;2"
+font-1 = "Material Icons:size=9.5;4"
 
 modules-left = mpd-controls
 modules-center = mpd
@@ -124,53 +123,6 @@ modules-right = mpd-time
 
 ;wm-restack = i3
 
-
-[module/ewmh]
-type = internal/xworkspaces
-pin-workspaces = true
-enable-click = true
-enable-scroll = true
-
-; workspace icons
-icon-0 = 0;
-icon-1 = 1;
-icon-2 = 2;
-icon-3 = 3;
-icon-4 = 4;
-icon-5 = 5;
-icon-6 = 6;
-icon-7 = 7;
-icon-8 = 8;
-
-label-monitor = %name%
-format = <label-state>
-
-label-monitor-background = ${colors.color3}
-label-monitor-foreground = ${colors.color0}
-label-monitor-padding = 1
-
-label-active = %icon%
-label-active-background = ${colors.color3}
-label-active-foreground = ${colors.color0}
-label-active-padding = 2
-
-label-occupied = %icon%
-label-occupied-background = ${colors.color0}
-label-occupied-foreground = ${colors.color3}
-;label-occupied-underline = 
-label-occupied-padding = 2
-
-label-urgent = %icon%
-label-urgent-background = ${colors.alert}
-label-urgent-foreground = ${colors.color0}
-label-urgent-padding = 2
-
-label-empty = %icon%
-label-empty-background = ${colors.color0}
-label-empty-foreground = #55
-label-empty-padding = 2
-
-
 [module/mpd]
 type = internal/mpd
 host = 127.0.0.1
@@ -178,8 +130,8 @@ port = 6601
 format-active-font = 3
 
 label-song = %artist%  >>  %title%
-format-online-prefix = ""
-format-online-suffix = ""
+format-online-prefix = ""
+format-online-suffix = ""
 format-online = <label-song>
 
 label-offline = mpd is offline :(
@@ -204,7 +156,6 @@ format-offline-padding = 1
 label-song-maxlen = 175
 label-song-ellipsis = true
 
-
 [module/mpd-time]
 type = internal/mpd
 host = 127.0.0.1
@@ -217,7 +168,6 @@ label-time-background = ${colors.color3}
 label-time-foreground = ${colors.color0}
 label-time-padding = 1
 
-
 [module/mpd-controls]
 type = internal/mpd
 host = 127.0.0.1
@@ -226,13 +176,13 @@ port = 6601
 ;format-online = <icon-prev><icon-seekb><toggle><icon-seekf><icon-next>
 format-online = <toggle><icon-next>
 
-icon-prev = 
-icon-seekb = 
-icon-stop = 
-icon-play = 
-icon-pause = 
-icon-seekf = 
-icon-next = 
+icon-prev = 
+icon-seekb = 
+icon-stop = 
+icon-play = 
+icon-pause = 
+icon-seekf = 
+icon-next = 
 
 icon-prev-background = ${colors.color3}
 ;icon-seekb-background = ${colors.color3}
@@ -270,11 +220,10 @@ ramp-background = ${colors.color3}
 ramp-padding-left = 2
 ramp-padding-right = 0
 
-ramp-0 = 
-ramp-1 = 
-ramp-2 = 
-ramp-3 = 
-
+ramp-0 = 
+ramp-1 = 
+ramp-2 = 
+ramp-3 = 
 
 [module/pulseaudio]
 type = internal/pulseaudio
@@ -293,15 +242,15 @@ ramp-volume-foreground = ${colors.color0}
 ramp-volume-padding-left = 1
 ramp-volume-padding-right = 0
 
-ramp-volume-0 = 
-ramp-volume-1 = 
-ramp-volume-2 = 
-ramp-volume-3 = 
-ramp-volume-4 = 
-ramp-volume-5 = 
+ramp-volume-0 = 
+ramp-volume-1 = 
+ramp-volume-2 = 
+ramp-volume-3 = 
+ramp-volume-4 = 
+ramp-volume-5 = 
 
 label-muted = --
-format-muted-prefix = 
+format-muted-prefix = 
 format-muted = <label-muted>
 
 label-muted-background = ${colors.color3}
@@ -312,18 +261,16 @@ format-muted-prefix-background = ${colors.color3}
 format-muted-prefix-foreground = ${colors.color0}
 format-muted-prefix-padding = 1
 
-
 [module/cpu]
 type = internal/cpu
 interval = 2
 format-prefix = " "
 label = %percentage%%
 
-
 [module/memory]
 type = internal/memory
 interval = 2
-format-prefix = ""
+format-prefix = ""
 label = %percentage_used%%
 
 format-prefix-background = ${colors.color3}
@@ -335,7 +282,6 @@ label-background = ${colors.color3}
 label-foreground = ${colors.color0}
 label-padding = 1
 
-
 [module/network]
 type = internal/network
 interface = wlp2s0
@@ -344,7 +290,7 @@ interval = 1.0
 
 label-connected = %downspeed% | %essid%
 ; %upspeed%
-format-connected-prefix = ""
+format-connected-prefix = ""
 format-connected = <label-connected>
 
 label-connected-background = ${colors.color3}
@@ -360,7 +306,6 @@ format-connected-prefix-padding-right = 0
 label-disconnected = 
 format-disconnected = <label-disconnected>
 
-
 [module/date]
 type = internal/date
 interval = 1
@@ -371,7 +316,7 @@ time = %I:%M %p
 time-alt =
 
 label = %time%
-;format-prefix = ""
+;format-prefix = ""
 format = <label>
 
 label-foreground = ${colors.color3}
@@ -383,7 +328,6 @@ format-prefix-foreground = ${colors.color3}
 format-prefix-background = ${colors.color0}
 format-prefix-padding-left = 2
 format-prefix-padding-right = 0
-
 
 [module/battery]
 type = internal/battery
@@ -398,7 +342,7 @@ label-charging-foreground = ${colors.color0}
 label-charging-background = ${colors.color3}
 label-charging-padding = 1
 
-format-charging-prefix = 
+format-charging-prefix = 
 format-charging-prefix-background = ${colors.color3}
 format-charging-prefix-foreground = ${colors.color0}
 format-charging-prefix-padding-right = 0
@@ -411,12 +355,11 @@ label-discharging-foreground = ${colors.color0}
 label-discharging-background = ${colors.color3}
 label-discharging-padding = 1
 
-format-discharging-prefix = 
+format-discharging-prefix = 
 format-discharging-prefix-background = ${colors.color3}
 format-discharging-prefix-foreground = ${colors.color0}
 format-discharging-prefix-padding-left = 1
 format-discharging-prefix-padding-right = 0
-
 
 [module/temperature]
 type = internal/temperature
@@ -425,7 +368,7 @@ warn-temperature = 65
 
 label = %temperature-c%
 format = <label>
-format-prefix = 
+format-prefix = 
 
 label-background = ${colors.color3}
 label-foreground = ${colors.color0}
@@ -450,7 +393,6 @@ format-warn-prefix-foreground = ${colors.color0}
 format-warn-prefix-padding-left = 1
 format-warn-prefix-padding-right = 0
 
-
 [module/weather]
 type = custom/script
 exec = ~/.config/polybar/scripts/openweathermap-simple.sh
@@ -467,7 +409,6 @@ format-prefix-background = ${colors.color3}
 format-prefix-foreground = ${colors.color0}
 format-prefix-padding = 1
 
-
 [settings]
 screenchange-reload = true
 ;compositing-background = xor
@@ -475,10 +416,8 @@ screenchange-reload = true
 ;compositing-foreground = source
 ;compositing-border = over
 
-
 [global/wm]
 margin-top = 1
 margin-bottom = 1
-
 
 ; vim:ft=dosini
