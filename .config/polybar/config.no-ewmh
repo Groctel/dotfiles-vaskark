@@ -288,7 +288,7 @@ interface = wlp2s0
 ; enp0s3
 interval = 1.0
 
-label-connected = %downspeed% | %essid%
+label-connected = %downspeed% |  %essid%
 ; %upspeed%
 format-connected-prefix = ""
 format-connected = <label-connected>

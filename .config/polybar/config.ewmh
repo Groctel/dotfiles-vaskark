@@ -137,8 +137,8 @@ icon-3 = 3;
 icon-4 = 4;
 icon-5 = 5;
 icon-6 = 6;
-icon-7 = 7;
-icon-8 = 8;
+icon-7 = 7;
+icon-8 = 8;
 
 label-monitor = %name%
 format = <label-state>
@@ -333,7 +333,7 @@ interface = wlp2s0
 ; enp0s3
 interval = 1.0
 
-label-connected = %downspeed% | %essid%
+label-connected = %downspeed% |  %essid%
 ; %upspeed%
 format-connected-prefix = ""
 format-connected = <label-connected>
