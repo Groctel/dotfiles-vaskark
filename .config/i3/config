@@ -20,7 +20,7 @@ font xft:Iosevka Custom 7.5
 hide_edge_borders none
 
 # change borders
-bindsym $mod+u border normal 2
+#bindsym $mod+u border normal 2
 bindsym $mod+i border normal 0
 bindsym $mod+o border pixel 2
 bindsym $mod+p border none
@@ -192,16 +192,17 @@ mode "resize" {
 bindsym $mod+r mode "resize"
 
 # startup apps
-exec_always --no-startup-id redshift-gtk.sh
+exec_always --no-startup-id polybar.sh
 exec_always --no-startup-id picom.sh
+exec_always --no-startup-id redshift.sh
 exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
 exec --no-startup-id nitrogen --restore
 exec --no-startup-id libinput-gestures
 exec --no-startup-id mpd.sh
-exec --no-startup-id nm-applet
+#exec --no-startup-id nm-applet
 exec --no-startup-id xautolock -time 10 -locker 'betterlockscreen -l pixel' -corners 00-+
 exec --no-startup-id glava-mpd.sh
-exec_always --no-startup-id ~/.config/polybar/launch.sh
+
 
 # lock screen
 bindsym $mod+Escape exec betterlockscreen -l pixel
@@ -263,21 +264,35 @@ for_window [class="^.*"] border pixel 0
 # activate smart gaps
 #smart_gaps on
 
+# Only enable outer gaps when there is exactly one container
+#smart_gaps inverse_outer
+
 # activate smart borders (always)
 smart_borders on
 
 # Activate smart borders (only when there are effectively no gaps)
 #smart_borders no_gaps
 
+# Hide edge borders only if there is one window with no gaps
+hide_edge_borders smart_no_gaps
+
 # set inner/outer gaps
 gaps inner 10
-gaps outer 50
+gaps outer 10
 gaps horizontal 0
 gaps vertical 0
 gaps top 0
 gaps right 0
 gaps bottom 0
 gaps left 0
+
+# gaps stuff
+#bindsym $mod+y gaps outer current toggle 100
+bindsym $mod+y gaps outer current plus 50
+bindsym $mod+Shift+y gaps outer current minus 50
+bindsym $mod+u gaps outer current toggle 100
+
+#workspace 2 gaps outer 100
 
 # gaps mode
 

@@ -3,7 +3,7 @@
 
 include "/home/jason/.gtkrc-2.0.mine"
 gtk-theme-name="Vimix-Dark-Laptop-Beryl"
-gtk-icon-theme-name="Tela-manjaro-dark"
+gtk-icon-theme-name="Tela-black-dark"
 gtk-font-name="Iosevka Custom 7.5"
 gtk-cursor-theme-name="Paper"
 gtk-cursor-theme-size=24

@@ -123,8 +123,8 @@ exec pulseaudio --start --log-target=syslog
 exec dunst
 exec nm-applet
 exec xautolock.sh
-exec redshift-gtk.sh
+exec redshift.sh
 exec picom.sh
 exec nitrogen --restore
 exec mpd.sh
-exec_on_reload ~/.config/polybar/launch-ewmh.sh
+exec_on_reload polybar-emwh.sh

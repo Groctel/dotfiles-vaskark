@@ -33,9 +33,9 @@ super + F2
 super + F3
 	kitty -e ncmpcpp
 
-# farge
-super + F4
-	farge.sh
+# reboot
+super + shift + Delete
+	systemctl reboot
 
 # volume
 XF86AudioRaiseVolume

@@ -2,12 +2,13 @@
 
 # Set startup apps
 sxhkd -c $HOME/.config/berry/sxhkdrc &
-nitrogen --restore &
+polybar-ewmh.sh &
+#nitrogen --restore &
+wal -R &
 redshift-gtk.sh &
 xautolock.sh &
 picom.sh &
 dunst &
-~/.config/polybar/launch-ewmh.sh &
 mpd.sh &
 
 # Set decoration geometry
@@ -28,4 +29,4 @@ berryc text_unfocus_color   111111
 berryc smart_place "true"
 berryc draw_text   "true"
 berryc edge_lock   "true"
-berryc set_font    "monospace-7.5"
+berryc set_font    "Iosevka Term-7.5"

@@ -56,5 +56,5 @@ set window-title-page false
 set selection-notification true
 
 # Colours
-include colors/base16-nord.config
+#include colors/base16-nord.config
 
