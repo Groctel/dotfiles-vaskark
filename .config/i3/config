@@ -193,8 +193,8 @@ bindsym $mod+r mode "resize"
 
 # startup apps
 exec_always --no-startup-id polybar.sh
-exec_always --no-startup-id picom.sh
-exec_always --no-startup-id redshift.sh
+exec --no-startup-id picom.sh
+exec --no-startup-id redshift.sh
 exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
 #exec --no-startup-id nitrogen --restore
 exec --no-startup-id wal -R
@@ -226,7 +226,7 @@ bindsym XF86MonBrightnessDown exec light -U 5
 
 # Set colors from Xresources
 set_from_resource $fg i3wm.color0 #f0f0f0
-set_from_resource $bg i3wm.color4 #f0f0f0
+set_from_resource $bg i3wm.color3 #f0f0f0
 
 # class                 border  backgr. text indicator child_border
 client.focused          $bg     $bg     $fg  $bg       $bg
@@ -260,7 +260,7 @@ bindsym $mod+Delete mode "$system"
 ############### i3-gaps stuff ##################
 
 # necessary for i3-gaps to work properly (pixel can be any value)
-for_window [class="^.*"] border pixel 0
+for_window [class="^.*"] border pixel 1
 
 # activate smart gaps
 #smart_gaps on
