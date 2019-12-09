@@ -217,34 +217,24 @@ type = internal/mpd
 host = 127.0.0.1
 port = 6601
 
-;format-online = <icon-prev><icon-seekb><toggle><icon-seekf><icon-next>
 format-online = <toggle><icon-next>
 
 icon-prev = 
-icon-seekb = 
-icon-stop = 
 icon-play = 
 icon-pause = 
-icon-seekf = 
 icon-next = 
 
 icon-prev-background = ${colors.color3}
-;icon-seekb-background = ${colors.color3}
 icon-play-background = ${colors.color0}
 icon-pause-background = ${colors.color0}
-;icon-seekf-background = ${colors.color3}
 icon-next-background = ${colors.color3}
 icon-prev-foreground = ${colors.color0}
-;icon-seekb-foreground = ${colors.color0}
 icon-play-foreground = ${colors.color3}
 icon-pause-foreground = ${colors.color3}
-;icon-seekf-foreground = ${colors.color0}
 icon-next-foreground = ${colors.color0}
 icon-prev-padding = 1
-icon-seekb-padding = 1
 icon-play-padding = 2
 icon-pause-padding = 2
-icon-seekf-padding = 1
 icon-next-padding = 2
 
 [module/backlight]
