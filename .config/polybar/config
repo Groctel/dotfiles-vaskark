@@ -328,7 +328,7 @@ interface = wlp2s0
 ; enp0s3
 interval = 1.0
 
-label-connected = %downspeed% |  %essid%
+label-connected = %downspeed% | %essid%
 ; %upspeed%
 format-connected-prefix = ""
 format-connected = <label-connected>
@@ -422,11 +422,12 @@ format-prefix-padding-right = 0
 
 label-warn = %temperature-c%
 format-warn = <label-warn>
-format-warn-prefix = 
+format-warn-prefix = 
 
 label-warn-background = ${colors.alert}
 label-warn-foreground = ${colors.color0}
-label-warn-padding = 1
+label-warn-padding-left = 1
+label-warn-padding-right = 2
 
 format-warn-prefix-background = ${colors.alert}
 format-warn-prefix-foreground = ${colors.color0}
