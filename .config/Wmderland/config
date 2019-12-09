@@ -119,12 +119,12 @@ bindsym $Mod+Shift+e exec gedit .config/Wmderland/config
 ; [Autostart]
 ; Applications to execute when WM starts up (DON'T append '&' at the end)
 ; -----------------------------------------------------------------------
+exec_on_reload polybar-ewmh.sh
 exec pulseaudio --start --log-target=syslog
-exec dunst
-exec nm-applet
+#exec nitrogen --restore
+exec wal -R
+#exec dunst
 exec xautolock.sh
 exec redshift.sh
 exec picom.sh
-exec nitrogen --restore
 exec mpd.sh
-exec_on_reload polybar-emwh.sh

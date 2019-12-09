@@ -15,7 +15,7 @@ dmenu_run \
 -p ' dmenu: ' \
 -i \
 -nb "$color0" \
--nf "$color15" \
+-nf "$color3" \
 -sb "$color3" \
 -sf "#000000" \
 -dim 0.2 \
