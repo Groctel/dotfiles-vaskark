@@ -7,4 +7,4 @@ killall -q picom
 while pgrep -u $UID -x picom >/dev/null; do sleep 1; done
 
 # Launch
-picom --config ~/.config/picom.blur.conf --experimental-backends &
+picom --experimental-backends --config ~/.config/picom.blur.conf &

@@ -325,7 +325,7 @@ label-charging-foreground = ${colors.color0}
 label-charging-background = ${colors.color3}
 label-charging-padding = 1
 
-format-charging-prefix = 
+format-charging-prefix = 
 format-charging-prefix-background = ${colors.color3}
 format-charging-prefix-foreground = ${colors.color0}
 format-charging-prefix-padding-left = 1
@@ -338,11 +338,24 @@ label-discharging-foreground = ${colors.color0}
 label-discharging-background = ${colors.color3}
 label-discharging-padding = 1
 
-format-discharging-prefix = 
+format-discharging-prefix = 
 format-discharging-prefix-background = ${colors.color3}
 format-discharging-prefix-foreground = ${colors.color0}
 format-discharging-prefix-padding-left = 1
 format-discharging-prefix-padding-right = 0
+
+label-full = %percentage%%
+format-full = <label-full>
+
+label-full-foreground = ${colors.color0}
+label-full-background = ${colors.color3}
+label-full-padding = 1
+
+format-full-prefix = 
+format-full-prefix-background = ${colors.color3}
+format-full-prefix-foreground = ${colors.color0}
+format-full-prefix-padding-left = 1
+format-full-prefix-padding-right = 0
 
 [module/temperature]
 type = internal/temperature

@@ -9,7 +9,7 @@ static const unsigned int snap      = 32;       /* snap pixel */
 static const int showbar            = 1;        /* 0 means no bar */
 static const int topbar             = 1;        /* 0 means bottom bar */
 static const unsigned int gappx    = 10;        /* gaps between windows */
-static const char *fonts[]          = { "Iosevka Custom:size=7.5", "Symbols Nerd Font:size=8" };
+static const char *fonts[]          = { "Iosevka Custom:size=7.5", "Symbols Nerd Font:size=10" };
 /*static const char dmenufont[]       = "Iosevka Custom:size=8";*/
 static const char *upvol[]          = { "/usr/bin/pactl", "set-sink-volume", "@DEFAULT_SINK@", "+5%",     NULL };
 static const char *downvol[]        = { "/usr/bin/pactl", "set-sink-volume", "@DEFAULT_SINK@", "-5%",     NULL };
@@ -69,7 +69,6 @@ static const char *dmenucmd[] = { "dmenu.sh", NULL };
 static const char *roficmd[] = { "rofi", "-show", "drun", NULL };
 static const char *termcmd[]  = { "kitty", NULL };
 static const char *lockcmd[] = { "betterlockscreen", "-l", "pixel", NULL};
-static const char *logoutcmd[] = { "killall", "-9", "dwm", NULL};
 static const char *rebootcmd[] = {"systemctl", "reboot", NULL};
 
 static Key keys[] = {
@@ -108,7 +107,7 @@ static Key keys[] = {
 	TAGKEYS(                        XK_8,                      7)
 	TAGKEYS(                        XK_9,                      8)
 	{ MODKEY,                       XK_Delete, quit,           {0} },
-/*	{ MODKEY|ShiftMask,		XK_Delete, spawn,	   {.v = rebootcmd } },*/
+	{ MODKEY|ShiftMask,		XK_Delete, spawn,	   {.v = rebootcmd } },
         { MODKEY,			XK_Escape, spawn,	   {.v = lockcmd } },
 	{ MODKEY,                       XK_F11,    spawn,          {.v = downvol } },
 	{ MODKEY,                       XK_F10,    spawn,          {.v = mutevol } },
