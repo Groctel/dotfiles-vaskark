@@ -183,7 +183,7 @@ label-separator-padding =
 [module/mpd]
 type = internal/mpd
 host = 127.0.0.1
-port = 6601
+port = 6600
 format-active-font = 3
 
 label-song = %artist%  >>  %title%
@@ -216,7 +216,7 @@ label-song-ellipsis = true
 [module/mpd-time]
 type = internal/mpd
 host = 127.0.0.1
-port = 6601
+port = 6600
 
 label-time = [%elapsed%/%total%]
 format-online = <label-time>
@@ -228,7 +228,7 @@ label-time-padding = 1
 [module/mpd-controls]
 type = internal/mpd
 host = 127.0.0.1
-port = 6601
+port = 6600
 
 format-online = <toggle><icon-next>
 

@@ -128,7 +128,7 @@ alias mount='mount | column -t'
 alias um='unimatrix -a -f -n -s 98'
 alias kcat='kitty +kitten icat'
 alias kdiff='kitty +kitten diff'
-alias mpc='mpc --host=127.0.0.1 --port=6601'
+alias mpc='mpc --host=127.0.0.1 --port=6600'
 alias wttr='curl wttr.in'
 alias cls='clear'
 alias zshrc='vim ~/.zshrc'
@@ -182,4 +182,3 @@ kitty + complete setup zsh | source /dev/stdin
 # wal
 # cat ~/.cache/wal/sequences
 #source ~/.cache/wal/colors-tty.sh
-
