@@ -260,7 +260,7 @@ bindsym $mod+Delete mode "$system"
 ############### i3-gaps stuff ##################
 
 # necessary for i3-gaps to work properly (pixel can be any value)
-for_window [class="^.*"] border pixel 1
+for_window [class="^.*"] border pixel 0
 
 # activate smart gaps
 #smart_gaps on
