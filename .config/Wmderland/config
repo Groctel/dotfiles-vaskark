@@ -127,4 +127,3 @@ exec wal -R
 exec xautolock.sh
 exec redshift.sh
 exec picom.sh
-exec mpd.sh

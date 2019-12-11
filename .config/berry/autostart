@@ -3,13 +3,12 @@
 # Set startup apps
 sxhkd -c $HOME/.config/berry/sxhkdrc &
 polybar-ewmh.sh &
-#nitrogen --restore &
+nitrogen --restore &
 wal -R &
-redshift-gtk.sh &
+redshift.sh &
 xautolock.sh &
 picom.sh &
 dunst &
-mpd.sh &
 
 # Set decoration geometry
 berryc border_width       1
