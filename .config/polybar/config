@@ -133,13 +133,13 @@ show-all = true
 
 ; workspace icons
 ws-icon-0 = 1;
-ws-icon-1 = 2;
-ws-icon-2 = 3;
+ws-icon-1 = 2;
+ws-icon-2 = 3;
 ws-icon-3 = 4;
 ws-icon-4 = 5;
 ws-icon-5 = 6;
 ws-icon-6 = 7;
-ws-icon-7 = 8;
+ws-icon-7 = 8;
 ws-icon-8 = 9;
 ws-icon-9 = 10;
 
@@ -356,7 +356,7 @@ time = %I:%M %p
 time-alt =
 
 label = %time%
-;format-prefix = ""
+;format-prefix = ""
 format = <label>
 
 label-foreground = ${colors.color3}
@@ -382,7 +382,7 @@ label-charging-foreground = ${colors.color0}
 label-charging-background = ${colors.color3}
 label-charging-padding = 1
 
-format-charging-prefix = 
+format-charging-prefix = 
 format-charging-prefix-background = ${colors.color3}
 format-charging-prefix-foreground = ${colors.color0}
 format-charging-prefix-padding-left = 1
@@ -395,7 +395,7 @@ label-discharging-foreground = ${colors.color0}
 label-discharging-background = ${colors.color3}
 label-discharging-padding = 1
 
-format-discharging-prefix = 
+format-discharging-prefix = 
 format-discharging-prefix-background = ${colors.color3}
 format-discharging-prefix-foreground = ${colors.color0}
 format-discharging-prefix-padding-left = 1
@@ -408,7 +408,7 @@ label-full-foreground = ${colors.color0}
 label-full-background = ${colors.color3}
 label-full-padding = 1
 
-format-full-prefix = 
+format-full-prefix = 
 format-full-prefix-background = ${colors.color3}
 format-full-prefix-foreground = ${colors.color0}
 format-full-prefix-padding-left = 1

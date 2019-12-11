@@ -63,7 +63,7 @@ module-margin-left = 0
 module-margin-right = 0
 
 font-0 = "Iosevka Term:style=regular:size=7.5;2"
-font-1 = "Material Icons:size=10;4"
+font-1 = "Material Icons:size=10;3"
 
 modules-left = ewmh
 modules-center = 
@@ -130,13 +130,13 @@ enable-scroll = true
 
 ; workspace icons
 icon-0 = 0;
-icon-1 = 1;
-icon-2 = 2;
+icon-1 = 1;
+icon-2 = 2;
 icon-3 = 3;
 icon-4 = 4;
 icon-5 = 5;
 icon-6 = 6;
-icon-7 = 7;
+icon-7 = 7;
 icon-8 = 8;
 
 label-monitor = %name%
@@ -344,7 +344,7 @@ time = %I:%M %p
 time-alt =
 
 label = %time%
-;format-prefix = ""
+;format-prefix = ""
 format = <label>
 
 label-foreground = ${colors.color3}
@@ -370,7 +370,7 @@ label-charging-foreground = ${colors.color0}
 label-charging-background = ${colors.color3}
 label-charging-padding = 1
 
-format-charging-prefix = 
+format-charging-prefix = 
 format-charging-prefix-background = ${colors.color3}
 format-charging-prefix-foreground = ${colors.color0}
 format-charging-prefix-padding-left = 1
