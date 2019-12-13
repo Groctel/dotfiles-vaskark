@@ -5,7 +5,7 @@ Clock(){
 	TIME=$(date "+%I:%M %p")
 
 #	echo -e -n "\uf133 ${DATE} \uf017 ${TIME}"
-	echo -e -n "\uf017 ${TIME}"
+	echo -e -n "\ue192 ${TIME}"
 }
 
 ActiveWindow(){
@@ -18,30 +18,30 @@ Battery() {
 
 	if [[ $BATTACPI == *"100%"* ]]
 	then
-		echo -e -n "\uf00c $BATPERC"
+		echo -e -n "\ue1a3 $BATPERC"
 	elif [[ $BATTACPI == *"Discharging"* ]]
 	then
 		BATPERC=${BATPERC::-1}
 		if [ $BATPERC -le "10" ]
 		then
-			echo -e -n "\uf244"
+			echo -e -n "\ue1a3"
 		elif [ $BATPERC -le "25" ]
 		then
-			echo -e -n "\uf243"
+			echo -e -n "\ue1a3"
 		elif [ $BATPERC -le "50" ]
 		then
-			echo -e -n "\uf242"
+			echo -e -n "\ue1a3"
 		elif [ $BATPERC -le "75" ]
 		then
-			echo -e -n "\uf241"
+			echo -e -n "\ue1a3"
 		elif [ $BATPERC -le "100" ]
 		then
-			echo -e -n "\uf240"
+			echo -e -n "\ue1a3"
 		fi
 		echo -e " $BATPERC%"
 	elif [[ $BATTACPI == *"Charging"* && $BATTACPI != *"100%"* ]]
 	then
-		echo -e "\uf0e7 $BATPERC"
+		echo -e "\ue1a6 $BATPERC"
 	elif [[ $BATTACPI == *"Unknown"* ]]
 	then
 		echo -e "$BATPERC"
@@ -55,7 +55,7 @@ Wifi(){
 		ESSID=$(iwconfig wlp2s0 | grep ESSID | sed 's/ //g' | sed 's/.*://' | cut -d "\"" -f 2)
 		if [ $WIFISTR -ge 1 ] ; then
 #			echo -e "\uf1eb ${ESSID} ${WIFISTR}%"
-			echo -e "\uf1eb ${ESSID}"
+			echo -e "\ue63e ${ESSID}"
 		fi
 	fi
 }
@@ -65,14 +65,14 @@ Sound(){
 	if [[ ! -z $NOTMUTED ]] ; then
 		VOL=$(awk -F"[][]" '/dB/ { print $2 }' <(amixer sget Master) | sed 's/%//g')
 		if [ $VOL -ge 85 ] ; then
-			echo -e "\uf028 ${VOL}%"
+			echo -e "\ue050 ${VOL}%"
 		elif [ $VOL -ge 50 ] ; then
-			echo -e "\uf027 ${VOL}%"
+			echo -e "\ue04d ${VOL}%"
 		else
-			echo -e "\uf026 ${VOL}%"
+			echo -e "\ue04e ${VOL}%"
 		fi
 	else
-		echo -e "\uf6a9 --"
+		echo -e "\ue04f --"
 	fi
 }
 
@@ -108,10 +108,10 @@ Groups() {
 }
 
 MPD(){
-	echo -e "\uf04b" $(mpc current)
+	echo -e "\ue3a1" $(mpc current)
 }
 
 while true; do
-	echo -e "%{c}$(ActiveWindow)" "%{r}$(Wifi)  $(Battery)  $(Sound)  $(Clock)  "
+    echo -e "%{l}$(Groups)" "%{c}$(ActiveWindow)" "%{r}$(Wifi)  $(Battery)  $(Sound)  $(Clock)  "
 	sleep 0.1s
 done

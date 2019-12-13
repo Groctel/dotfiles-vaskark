@@ -132,7 +132,6 @@ alias mpc='mpc --host=127.0.0.1 --port=6600'
 alias wttr='curl wttr.in'
 alias cls='clear'
 alias zshrc='vim ~/.zshrc'
-alias yd='youtube-dl'
 alias ht='htop -u $USER'
 alias xr="vim ~/.Xresources"
 alias xu='xrdb ~/.Xresources'
@@ -182,3 +181,12 @@ kitty + complete setup zsh | source /dev/stdin
 # wal
 # cat ~/.cache/wal/sequences
 #source ~/.cache/wal/colors-tty.sh
+
+# pfetch
+PF_INFO="ascii title os host kernel uptime shell wm pkgs memory palette"
+PF_SEP=":"
+PF_COL1=0
+PF_COL2=3
+PF_COL3=1
+PF_ALIGN=""
+PF_ASCII="ubuntu"
