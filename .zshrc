@@ -162,6 +162,7 @@ alias wsd='windscribe disconnect'
 # yadm
 alias yc='yadm commit -a'
 alias ya='yadm add'
+alias yp='yadm push -u origin master'
 
 # superuser
 alias reboot='sudo reboot'
