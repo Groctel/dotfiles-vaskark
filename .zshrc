@@ -15,7 +15,6 @@ ZSH_THEME="spaceship"
 # Specific theme settings
 source ~/.spaceship
 source ~/.powerlevel
-#source ~/.oh-my-zsh/custom/themes/powerlevel10k/config/p10k-rainbow.zsh
 
 # Set list of themes to load
 # Setting this variable when ZSH_THEME=random
@@ -160,6 +159,10 @@ alias dn='nmcli c d'
 alias wsc='windscribe connect'
 alias wsd='windscribe disconnect'
 
+# yadm
+alias yc='yadm commit -a'
+alias ya='yadm add'
+
 # superuser
 alias reboot='sudo reboot'
 alias shutdown='sudo shutdown now'
@@ -175,13 +178,6 @@ kitty + complete setup zsh | source /dev/stdin
 # Run when terminal opens
 #unimatrix -a -f -l o -n -o -s 100 -w
 
-#To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
-[[ -f ~/.p10k.zsh ]] && source ~/.p10k.zsh
-
-# wal
-# cat ~/.cache/wal/sequences
-#source ~/.cache/wal/colors-tty.sh
-
 # pfetch
 PF_INFO="ascii title os host kernel uptime shell wm pkgs memory palette"
 PF_SEP=":"
@@ -190,3 +186,6 @@ PF_COL2=3
 PF_COL3=1
 PF_ALIGN=""
 PF_ASCII="ubuntu"
+
+# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
+[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh

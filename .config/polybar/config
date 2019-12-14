@@ -334,15 +334,15 @@ label-connected = %downspeed% | %essid%
 format-connected-prefix = ""
 format-connected = <label-connected>
 
-label-connected-background = ${colors.color3}
-label-connected-foreground = ${colors.color0}
+label-connected-background = ${colors.color0}
+label-connected-foreground = ${colors.color3}
 label-connected-padding-left = 1
-label-connected-padding-right = 0
+label-connected-padding-right = 2
 
-format-connected-prefix-background = ${colors.color3}
-format-connected-prefix-foreground = ${colors.color0}
+format-connected-prefix-background = ${colors.color0}
+format-connected-prefix-foreground = ${colors.color3}
 format-connected-prefix-padding-left = 2
-format-connected-prefix-padding-right = 0
+format-connected-prefix-padding-right = 1
 
 label-disconnected = 
 format-disconnected = <label-disconnected>
