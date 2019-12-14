@@ -15,7 +15,7 @@ ZSH_THEME="spaceship"
 # Specific theme settings
 source ~/.spaceship
 source ~/.powerlevel
-#source ~/.oh-my-zsh/custom/themes/powerlevel10k/config/p10k-lean.zsh
+#source ~/.oh-my-zsh/custom/themes/powerlevel10k/config/p10k-rainbow.zsh
 
 # Set list of themes to load
 # Setting this variable when ZSH_THEME=random
@@ -72,7 +72,7 @@ HIST_STAMPS="yyyy-mm-dd"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git zsh_reload systemadmin themes command-not-found)
+plugins=(git zsh_reload systemadmin themes command-not-found sudo)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -176,7 +176,7 @@ kitty + complete setup zsh | source /dev/stdin
 #unimatrix -a -f -l o -n -o -s 100 -w
 
 #To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
-#[[ -f ~/.p10k.zsh ]] && source ~/.p10k.zsh
+[[ -f ~/.p10k.zsh ]] && source ~/.p10k.zsh
 
 # wal
 # cat ~/.cache/wal/sequences
