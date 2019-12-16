@@ -2,6 +2,7 @@
 #define CONFIG_H
 
 #define MOD Mod4Mask
+#define WheelResizeStep 5
 
 const char* menu[]    = {"dmenu.sh",      0};
 const char* rofi[]    = {"rofi", "-show", "drun",      0};
@@ -26,7 +27,7 @@ static struct key keys[] = {
     {MOD,      		XK_q,   	win_kill,   {0}},
     {MOD,      		XK_c,   	win_center, {0}},
     {MOD,      		XK_f,   	win_fs,     {0}},
-    {Mod1Mask, 		XK_Tab, 	win_next,   {0}},
+    {MOD, 		XK_Tab, 	win_next,   {0}},
 
     {MOD,	        XK_x,	   	run, {.com = menu}},
     {MOD, 	    	XK_d,      	run, {.com = rofi}},

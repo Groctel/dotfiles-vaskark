@@ -5,7 +5,7 @@
  *
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
-static char *font = "Iosevka Custom:pixelsize=10:antialias=true:autohint=true";
+static char *font = "Monospace:pixelsize=10:antialias=true:autohint=true";
 static char *font2[] = { "Typicons:pixelsize=10:antialias=true:autohint=true" };
 static int borderpx = 20;
 
@@ -103,7 +103,7 @@ static unsigned int cursorshape = 6;
  */
 
 static unsigned int cols = 100;
-static unsigned int rows = 34;
+static unsigned int rows = 28;
 
 /*
  * Default colour and shape of the mouse cursor

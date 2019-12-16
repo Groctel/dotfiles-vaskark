@@ -164,6 +164,10 @@ alias yc='yadm commit -a'
 alias ya='yadm add'
 alias yp='yadm push -u origin master'
 
+# pywal
+alias w1='wal -i ~/Pictures/favs/'
+alias w2='wal --theme random'
+
 # superuser
 alias reboot='sudo reboot'
 alias shutdown='sudo shutdown now'
