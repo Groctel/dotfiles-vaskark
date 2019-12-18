@@ -2,7 +2,7 @@ ncmpcpp_directory = ~/.ncmpcpp
 
 mpd_music_dir = /home/jason/Music
 mpd_host = 127.0.0.1
-mpd_port = 6601
+mpd_port = 6600
 
 visualizer_fifo_path = /tmp/mpd.fifo
 visualizer_in_stereo = yes

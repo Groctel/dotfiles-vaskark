@@ -72,9 +72,8 @@ static struct key keys[] = {
     {MOD,           XK_6, ws_go,     {.i = 6}},
     {MOD|ShiftMask, XK_6, win_to_ws, {.i = 6}},
     {MOD|ControlMask,XK_6,ws_toggle, {.i = 6}},
-
+    
     {MOD,           XK_0, ws_toggle_all, {.i = 0}},
- 
 };
 
 #endif

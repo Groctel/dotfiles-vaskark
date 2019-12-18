@@ -1,6 +1,8 @@
 configuration {
   show-icons:         false;
   cycle:              true;
+  location:	      0;
+  sidebar-mode:	      false;	
   hide-scrollbar:     true;
   disable-history:    false;
   width: 	      16;
