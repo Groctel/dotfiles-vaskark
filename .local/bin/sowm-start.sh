@@ -7,3 +7,4 @@ dunst &
 picom.sh &
 redshift.sh &
 xautolock.sh &
+libinput-gestures &

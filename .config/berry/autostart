@@ -9,6 +9,7 @@ redshift.sh &
 xautolock.sh &
 picom.sh &
 dunst &
+libinput-gestures &
 
 # Set decoration geometry
 berryc border_width       1
