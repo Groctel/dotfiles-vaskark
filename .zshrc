@@ -122,7 +122,7 @@ alias lt='lsd --tree --depth 3'
 
 # general
 alias vim='nvim'
-alias tc1="tty-clock -cst -C 4 -f '%B %d, %Y'"
+alias tc1="tty-clock -cst -C 3 -f '%B %d, %Y'"
 alias mount='mount | column -t'
 alias um='unimatrix -a -f -n -s 98'
 alias kcat='kitty +kitten icat'
