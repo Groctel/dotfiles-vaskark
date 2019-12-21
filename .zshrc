@@ -167,6 +167,7 @@ alias yp='yadm push -u origin master'
 # pywal
 alias w1='wal -i ~/Pictures/favs/'
 alias w2='wal --theme random'
+alias wf='wal --theme dkeg-skigh'
 
 # superuser
 alias reboot='sudo reboot'
