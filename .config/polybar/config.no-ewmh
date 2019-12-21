@@ -119,7 +119,7 @@ modules-right = mpd-time
 
 ;dim-value = 0.8
 
-wm-restack = i3
+;wm-restack = i3
 
 [module/mpd]
 type = internal/mpd
