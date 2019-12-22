@@ -18,8 +18,8 @@ berryc title_height       22
 berryc top_gap            30
 
 # Set decoration colors
-berryc focus_color          
-berryc unfocus_color	    
+berryc focus_color         
+berryc unfocus_color
 berryc inner_focus_color    565679
 berryc inner_unfocus_color  3D3D56
 berryc text_focus_color     000000

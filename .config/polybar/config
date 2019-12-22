@@ -149,8 +149,8 @@ format = <label-state> <label-mode>
 
 label-mode = %mode%
 label-mode-padding = 2
-label-mode-foreground = ${colors.color0}
-label-mode-background = ${colors.color3}
+label-mode-foreground = ${colors.color3}
+label-mode-background = ${colors.color0}
 
 ; focused = Active workspace on focused monitor
 label-focused = %icon%
