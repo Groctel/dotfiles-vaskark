@@ -63,7 +63,7 @@ module-margin-left = 0
 module-margin-right = 0
 
 font-0 = "Iosevka Term:style=regular:size=7.5;2"
-font-1 = "Feather:style=regular:size=8;2"
+font-1 = "feather:style=regular:size=8;2"
 
 modules-left = ewmh
 modules-center = 
@@ -110,7 +110,7 @@ module-margin-left = 0
 module-margin-right = 0
 
 font-0 = "Iosevka Term:style=regular:size=7.5;2"
-font-1 = "Feather:style=regular:size=8;2"
+font-1 = "feather:style=regular:size=8;2"
 
 modules-left = mpd-controls
 modules-center = mpd
