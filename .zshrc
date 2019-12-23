@@ -140,6 +140,7 @@ alias bf='bunnyfetch'
 alias pf='clear;pfetch'
 alias f='fff'
 alias n='nnn'
+alias cv='cava'
 
 # neofetch
 alias nf0='clear;neofetch --config none'
