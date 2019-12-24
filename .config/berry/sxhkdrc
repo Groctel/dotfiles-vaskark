@@ -51,6 +51,12 @@ XF86MonBrightnessUp
 XF86MonBrightnessDown
 	light -U 5
 
+# extras
+
+# send window to top left
+super + shift + t
+        send_top_left.sh
+
 #
 # berry hotkeys
 #
