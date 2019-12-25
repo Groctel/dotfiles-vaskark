@@ -33,6 +33,10 @@ super + F2
 super + F3
 	kitty -e ncmpcpp
 
+# wal
+super + w
+	wal_berry.sh
+
 # reboot
 super + shift + Delete
 	systemctl reboot
@@ -51,11 +55,6 @@ XF86MonBrightnessUp
 XF86MonBrightnessDown
 	light -U 5
 
-# extras
-
-# send window to top left
-super + shift + t
-        send_top_left.sh
 
 #
 # berry hotkeys
