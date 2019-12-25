@@ -212,7 +212,7 @@ bindsym $mod+F3 exec --no-startup-id kitty --class Float -e ncmpcpp
 bindsym $mod+Shift+e exec --no-startup-id gedit ~/.config/i3/config
 bindsym --release $mod+Print exec --no-startup-id scrot -d 3 -q 85 '%Y-%m-%d_%I-%M-%S_%p.jpg' -e 'mv $f ~/Screenshots/'
 
-bindsym $mod+F8 exec --no-startup-id wal_favs.sh
+bindsym $mod+F8 exec --no-startup-id wal-favs.sh
 bindsym $mod+F9 exec --no-startup-id wal -i ~/Pictures/favs/
 bindsym $mod+F10 exec --no-startup-id wal --theme random
 bindsym $mod+F11 exec --no-startup-id wal --theme dkeg-skigh

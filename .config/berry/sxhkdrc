@@ -53,13 +53,13 @@ XF86MonBrightnessDown
 
 # wal
 super + F9
-        wal -i ~/Pictures/favs/ && wal_berry.sh
+        wal -i ~/Pictures/favs/ && wal-berry.sh
 super + F10
-        wal --theme random && wal_berry.sh
+        wal --theme random && wal-berry.sh
 super + F11
-        wal --theme dkeg-skigh && wal_berry.sh
+        wal --theme dkeg-skigh && wal-berry.sh
 super + F12
-        wal -R && wal_berry.sh
+        wal -R && wal-berry.sh
 
 
 #
