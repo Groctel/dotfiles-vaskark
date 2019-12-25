@@ -52,12 +52,15 @@ XF86MonBrightnessDown
 	light -U 5
 
 # wal
-super + F6
+super + F9
         wal -i ~/Pictures/favs/ && wal_berry.sh
-super + F7
+super + F10
         wal --theme random && wal_berry.sh
-super + F8
+super + F11
         wal --theme dkeg-skigh && wal_berry.sh
+super + F12
+        wal -R && wal_berry.sh
+
 
 #
 # berry hotkeys
