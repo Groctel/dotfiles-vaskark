@@ -206,11 +206,16 @@ exec --no-startup-id xautolock -time 10 -locker 'betterlockscreen -l pixel' -cor
 bindsym $mod+Escape exec betterlockscreen -l pixel
 
 # app bindings
-bindsym $mod+F1 exec nautilus
-bindsym $mod+F2 exec google-chrome-stable
-bindsym $mod+F3 exec kitty --class Float -e ncmpcpp
-bindsym $mod+Shift+e exec gedit ~/.config/i3/config
+bindsym $mod+F1 exec --no-startup-id nautilus
+bindsym $mod+F2 exec --no-startup-id google-chrome-stable
+bindsym $mod+F3 exec --no-startup-id kitty --class Float -e ncmpcpp
+bindsym $mod+Shift+e exec --no-startup-id gedit ~/.config/i3/config
 bindsym --release $mod+Print exec --no-startup-id scrot -d 3 -q 85 '%Y-%m-%d_%I-%M-%S_%p.jpg' -e 'mv $f ~/Screenshots/'
+
+bindsym $mod+F8 exec --no-startup-id wal_favs.sh
+bindsym $mod+F9 exec --no-startup-id wal -i ~/Pictures/favs/
+bindsym $mod+F10 exec --no-startup-id wal --theme random
+bindsym $mod+F11 exec --no-startup-id wal --theme dkeg-skigh
 
 # pulseaudio controls
 bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ +5%
@@ -257,7 +262,7 @@ bindsym $mod+Delete mode "$system"
 ############### i3-gaps stuff ##################
 
 # necessary for i3-gaps to work properly (pixel can be any value)
-for_window [class="^.*"] border pixel 0
+for_window [class="^.*"] border pixel 2
 
 # activate smart gaps
 #smart_gaps on

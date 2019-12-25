@@ -19,6 +19,10 @@ const char* nautilus[] = {"nautilus", 0};
 const char* chrome[] = {"google-chrome", 0};
 const char* music[] = {"kitty", "-e", "ncmpcpp", 0};
 
+const char* w1[] = {"wal", "-i", "/home/jason/Pictures/favs/", 0};
+const char* w2[] = {"wal", "--theme", "random", 0};
+const char* wf[] = {"wal", "--theme", "dkeg-skigh", 0}; 
+
 const char* quit[] = {"killall", "sowm.sh", 0};
 const char* reboot[] = {"systemctl", "reboot", 0};
 const char* shutdown[] = {"systemctl", "poweroff", 0};
@@ -38,6 +42,10 @@ static struct key keys[] = {
     {MOD, 		XK_F1,     	run, {.com = nautilus}},
     {MOD, 		XK_F2,     	run, {.com = chrome}},
     {MOD, 		XK_F3,     	run, {.com = music}},
+
+    {MOD,		XK_F9,		run, {.com = w1}},
+    {MOD,		XK_F10,		run, {.com = w2}},
+    {MOD,		XK_F11,		run, {.com = wf}},
 
     {MOD, 		XK_Delete, 	run, {.com = quit}},
     {MOD|ShiftMask,	XK_Delete,	run, {.com = reboot}},
