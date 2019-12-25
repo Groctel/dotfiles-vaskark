@@ -33,10 +33,6 @@ super + F2
 super + F3
 	kitty -e ncmpcpp
 
-# wal
-super + w
-	wal_berry.sh
-
 # reboot
 super + shift + Delete
 	systemctl reboot
@@ -55,6 +51,13 @@ XF86MonBrightnessUp
 XF86MonBrightnessDown
 	light -U 5
 
+# wal
+super + F6
+        wal -i ~/Pictures/favs/ && wal_berry.sh
+super + F7
+        wal --theme random && wal_berry.sh
+super + F8
+        wal --theme dkeg-skigh && wal_berry.sh
 
 #
 # berry hotkeys

@@ -4,12 +4,12 @@
 sxhkd -c $HOME/.config/berry/sxhkdrc &
 polybar-ewmh.sh &
 #nitrogen --restore &
-wal -R &
 redshift.sh &
 xautolock.sh &
 picom.sh &
 dunst &
 libinput-gestures &
+wal -R &
 wal_berry.sh &
 
 # Set decoration geometry
