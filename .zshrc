@@ -141,6 +141,7 @@ alias pf='clear;pfetch'
 alias f='fff'
 alias n='nnn'
 alias cv='cava'
+alias hc='history -c'
 
 # neofetch
 alias nf0='clear;neofetch --config none'
@@ -176,6 +177,7 @@ alias shutdown='sudo shutdown now'
 alias upd8='sudo apt update;sudo apt full-upgrade;sudo apt autoremove;sudo apt clean'
 alias rnm='sudo systemctl restart network-manager'
 alias ffs='sudo !!'
+alias s1='sudo make install'
 alias s2='sudo make PREFIX=/usr/local install'
 
 # completion for kitty
@@ -185,10 +187,6 @@ kitty + complete setup zsh | source /dev/stdin
 
 # Run when terminal opens
 #unimatrix -a -f -l o -n -o -s 100 -w
-
-# kunst
-#export KUNST_SIZE="350x350"
-#export KUNST_POSITION="+1520+83"
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
