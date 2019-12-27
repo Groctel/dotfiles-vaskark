@@ -3,10 +3,10 @@
 ## By me
 ## Inspired by Aditya Shakya
 
-MENU="$(rofi -sep "|" -dmenu -i -p 'wal favs' -location 0 -width 10 -hide-scrollbar -line-padding 4 -padding 20 -lines 10 -font "Iosevka Custom 8" <<< "Colesium|Cars|Shelby|Astronaut|Chicago|Skyfall|Matrix|BR|Stairway|Museum")"
+MENU="$(rofi -sep "|" -dmenu -i -p 'wal favs' -location 0 -width 10 -hide-scrollbar -line-padding 4 -padding 20 -lines 10 -font "Iosevka Custom 8" <<< "Coliseum|Cars|Shelby|Astronaut|Chicago|Skyfall|Matrix|BR|Stairway|Museum")"
 
 case "$MENU" in
-	*Colesium) wal -i ~/Pictures/favs/bence-boros-178730-unsplash.jpg && wal-berry.sh ;;
+	*Coliseum) wal -i ~/Pictures/favs/bence-boros-178730-unsplash.jpg && wal-berry.sh ;;
 	*Cars) wal -i ~/Pictures/favs/2cia48lnxqw31-m.jpg && wal-berry.sh ;;
 	*Shelby) wal -i ~/Pictures/favs/676514-m.jpg && wal-berry.sh ;;
 	*Astronaut) wal -i ~/Pictures/favs/uigXpL3cPvQTlRro81PfdsBRT7jyTPpUMzFUGBcZnkA-m.jpg --backend haishoku && wal-berry.sh ;;

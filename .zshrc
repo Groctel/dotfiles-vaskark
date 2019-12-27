@@ -21,7 +21,7 @@ source ~/.powerlevel
 # cause zsh load theme from this variable instead of
 # looking in ~/.oh-my-zsh/themes/
 # An empty array have no effect
-ZSH_THEME_RANDOM_CANDIDATES=("bira" "ys" "half-life" "agnoster" "gnzh" "powerlevel9k" "spaceship" "nanotech" "intheloop" "wedisagree")
+ZSH_THEME_RANDOM_CANDIDATES=("bira" "ys" "half-life" "agnoster" "gnzh" "powerlevel9k" "spaceship" "nanotech" "intheloop" "wedisagree" "fwalch")
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
