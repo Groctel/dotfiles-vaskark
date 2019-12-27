@@ -19,6 +19,7 @@ const char* nautilus[] = {"nautilus", 0};
 const char* chrome[] = {"google-chrome", 0};
 const char* music[] = {"kitty", "-e", "ncmpcpp", 0};
 
+const char* w0[] = {"wal-favs.sh", 0};
 const char* w1[] = {"wal", "-i", "/home/jason/Pictures/favs/", 0};
 const char* w2[] = {"wal", "--theme", "random", 0};
 const char* wf[] = {"wal", "--theme", "dkeg-skigh", 0}; 
@@ -43,6 +44,7 @@ static struct key keys[] = {
     {MOD, 		XK_F2,     	run, {.com = chrome}},
     {MOD, 		XK_F3,     	run, {.com = music}},
 
+    {MOD,               XK_F8,          run, {.com = w0}},
     {MOD,		XK_F9,		run, {.com = w1}},
     {MOD,		XK_F10,		run, {.com = w2}},
     {MOD,		XK_F11,		run, {.com = wf}},

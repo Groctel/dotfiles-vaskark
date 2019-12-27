@@ -10,8 +10,8 @@
 VERSION=1.2.4
 COVER=/tmp/kunst.jpg
 MUSIC_DIR=~/Music/
-SIZE=400x400
-POSITION="+1370+188"
+SIZE=250x250
+POSITION="+0+0"
 
 
 show_help() {

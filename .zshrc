@@ -176,6 +176,7 @@ alias shutdown='sudo shutdown now'
 alias upd8='sudo apt update;sudo apt full-upgrade;sudo apt autoremove;sudo apt clean'
 alias rnm='sudo systemctl restart network-manager'
 alias ffs='sudo !!'
+alias s2='sudo make PREFIX=/usr/local install'
 
 # completion for kitty
 autoload -Uz compinit

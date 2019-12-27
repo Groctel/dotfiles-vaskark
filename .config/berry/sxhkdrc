@@ -52,6 +52,8 @@ XF86MonBrightnessDown
 	light -U 5
 
 # wal
+super + F8
+	wal-favs.sh
 super + F9
         wal -i ~/Pictures/favs/ && wal-berry.sh
 super + F10
