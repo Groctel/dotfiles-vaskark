@@ -61,7 +61,7 @@ Wifi(){
 }
 
 Sound(){
-	NOTMUTED=$( amixer sget Master | grep "\[on\]" )
+	NOTMUTED=$(amixer sget Master | grep "\[on\]")
 	if [[ ! -z $NOTMUTED ]] ; then
 		VOL=$(awk -F"[][]" '/dB/ { print $2 }' <(amixer sget Master) | sed 's/%//g')
 		if [ $VOL -ge 85 ] ; then
@@ -105,10 +105,6 @@ Groups() {
 
 	# don't forget to print that line!
 	echo $line
-}
-
-MPD(){
-	echo -e "\ue3a1" $(mpc current)
 }
 
 while true; do

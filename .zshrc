@@ -186,14 +186,9 @@ kitty + complete setup zsh | source /dev/stdin
 # Run when terminal opens
 #unimatrix -a -f -l o -n -o -s 100 -w
 
-# pfetch
-PF_INFO="ascii title os host kernel uptime shell wm pkgs memory palette"
-PF_SEP=":"
-PF_COL1=0
-PF_COL2=3
-PF_COL3=1
-PF_ALIGN=""
-PF_ASCII="ubuntu"
+# kunst
+#export KUNST_SIZE="350x350"
+#export KUNST_POSITION="+1520+83"
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
