@@ -188,5 +188,14 @@ kitty + complete setup zsh | source /dev/stdin
 # Run when terminal opens
 #unimatrix -a -f -l o -n -o -s 100 -w
 
+# pfetch
+# OFF by default: shell editor wm de palette
+PF_INFO="ascii title os host kernel shell wm uptime pkgs memory"
+PF_COL1=4
+PF_COL2=7
+PF_COL3=1
+PF_ALIGN=""
+PF_ASCII="ubuntu"
+
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
