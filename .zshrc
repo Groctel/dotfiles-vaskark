@@ -10,7 +10,7 @@ export ZSH=$HOME/.oh-my-zsh
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
-ZSH_THEME="spaceship"
+ZSH_THEME="agnoster"
 
 # Specific theme settings
 source ~/.spaceship
@@ -190,7 +190,7 @@ kitty + complete setup zsh | source /dev/stdin
 
 # pfetch
 # OFF by default: shell editor wm de palette
-PF_INFO="ascii title os host kernel shell wm uptime pkgs memory"
+PF_INFO="ascii title os host kernel shell wm uptime pkgs memory palette"
 PF_COL1=4
 PF_COL2=7
 PF_COL3=1
@@ -198,4 +198,4 @@ PF_ALIGN=""
 PF_ASCII="ubuntu"
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
-[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+#[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
