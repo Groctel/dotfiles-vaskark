@@ -10,7 +10,7 @@ export ZSH=$HOME/.oh-my-zsh
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
-ZSH_THEME="agnoster"
+ZSH_THEME="spaceship"
 
 # Specific theme settings
 source ~/.spaceship
@@ -122,7 +122,7 @@ alias lt='lsd --tree --depth 3'
 
 # general
 alias vim='nvim'
-alias tc1="tty-clock -cst -C 3 -f '%B %d, %Y'"
+alias tc1="tty-clock -cst -C 3 -f '%A %B %d %Y'"
 alias mount='mount | column -t'
 alias um='unimatrix -a -f -n -s 98'
 alias kcat='kitty +kitten icat'
