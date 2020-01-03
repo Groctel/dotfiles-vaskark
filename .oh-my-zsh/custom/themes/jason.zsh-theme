@@ -4,9 +4,9 @@
 # Configuration
 num_dirs=2 # Use 0 for full path
 truncated_path="%F{yellow}[%$num_dirs~]%f"
-#                         
-decoration="%F{cyan}%f"
-time="%F{cyan}[%D{%l:%M %p}]%f"
+#                        
+decoration="%F{cyan}%f"
+time="%F{cyan}[%D{%I:%M %p}]%f"
 
 # Left prompt
 PROMPT='$truncated_path $decoration '
