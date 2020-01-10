@@ -112,6 +112,7 @@ alias df='df -H | grep sda5'
 alias du='du -h'
 alias cd..='cd ..'
 alias h='history'
+alias hc='history -c'
 alias p='pwd -P'
 
 # listings
@@ -125,8 +126,8 @@ alias vim='nvim'
 alias tc1="tty-clock -cst -C 3 -f '%A %B %d %Y'"
 alias mount='mount | column -t'
 alias um='unimatrix -a -f -n -s 98'
-alias kcat='kitty +kitten icat'
-alias kdiff='kitty +kitten diff'
+alias kc='kitty +kitten icat'
+alias kd='kitty +kitten diff'
 alias mpc='mpc --host=127.0.0.1 --port=6600'
 alias wttr='curl wttr.in'
 alias cls='clear'
@@ -141,7 +142,6 @@ alias pf='clear;pfetch'
 alias f='fff'
 alias n='nnn'
 alias cv='cava'
-alias hc='history -c'
 
 # neofetch
 alias nf0='clear;neofetch --config none'
@@ -187,15 +187,6 @@ kitty + complete setup zsh | source /dev/stdin
 
 # Run when terminal opens
 #unimatrix -a -f -l o -n -o -s 100 -w
-
-# pfetch
-# OFF by default: shell editor wm de palette
-PF_INFO="ascii title os host kernel shell wm uptime pkgs memory palette"
-PF_COL1=4
-PF_COL2=7
-PF_COL3=1
-PF_ALIGN=""
-PF_ASCII="ubuntu"
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 #[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
