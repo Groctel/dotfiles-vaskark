@@ -216,6 +216,7 @@ bindsym $mod+F8 exec --no-startup-id wal-favs.sh
 bindsym $mod+F9 exec --no-startup-id wal -i ~/Pictures/favs/
 bindsym $mod+F10 exec --no-startup-id wal --theme random
 bindsym $mod+F11 exec --no-startup-id wal --theme dkeg-skigh
+bindsym $mod+F12 exec --no-startup-id wal -R
 
 # pulseaudio controls
 bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ +5%

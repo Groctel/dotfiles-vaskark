@@ -57,6 +57,35 @@ static struct key keys[] = {
     {MOD|ShiftMask,	XK_Delete,	run, {.com = reboot}},
     {MOD|ControlMask,	XK_Delete,	run, {.com = shutdown}},
 
+    {MOD,           XK_h,      move,  {.com=(char*[]){"move", "left"}, .i=30}},
+    {MOD,           XK_j,      move,  {.com=(char*[]){"move", "down"}, .i=30}},
+    {MOD,           XK_k,      move,  {.com=(char*[]){"move", "up"}, .i=30}},
+    {MOD,           XK_l,      move,  {.com=(char*[]){"move", "right"}, .i=30}},
+    {MOD|ShiftMask, XK_h,      move,  {.com=(char*[]){"resize", "left"}, .i=30}},
+    {MOD|ShiftMask, XK_j,      move,  {.com=(char*[]){"resize", "down"}, .i=30}},
+    {MOD|ShiftMask, XK_k,      move,  {.com=(char*[]){"resize", "up"}, .i=30}},
+    {MOD|ShiftMask, XK_l,      move,  {.com=(char*[]){"resize", "right"}, .i=30}},
+
+    {MOD,           XK_Left,   move,  {.com=(char*[]){"move", "left"}, .i=30}},
+    {MOD,           XK_Down,   move,  {.com=(char*[]){"move", "down"}, .i=30}},
+    {MOD,           XK_Up,     move,  {.com=(char*[]){"move", "up"}, .i=30}},
+    {MOD,           XK_Right,  move,  {.com=(char*[]){"move", "right"}, .i=30}},
+    {MOD|ShiftMask, XK_Left,   move,  {.com=(char*[]){"resize", "left"}, .i=30}},
+    {MOD|ShiftMask, XK_Down,   move,  {.com=(char*[]){"resize", "down"}, .i=30}},
+    {MOD|ShiftMask, XK_Up,     move,  {.com=(char*[]){"resize", "up"}, .i=30}},
+    {MOD|ShiftMask, XK_Right,  move,  {.com=(char*[]){"resize", "right"}, .i=30}},
+
+    /*
+    {MOD,           XK_h,      move_left,  {.com = {"move"},.i=10}},
+    {MOD,           XK_j,      move_down,  {.com = {"move"},.i=10}},
+    {MOD,           XK_k,      move_up,    {.com = {"move"},.i=10}},
+    {MOD,           XK_l,      move_right, {.com = {"move"},.i=10}},
+    {MOD|ShiftMask, XK_h,      resize_left,  {.com = {"resize"},.i=10}},
+    {MOD|ShiftMask, XK_j,      resize_down,  {.com = {"resize"},.i=10}},
+    {MOD|ShiftMask, XK_k,      resize_up,    {.com = {"resize"},.i=10}},
+    {MOD|ShiftMask, XK_l,      resize_right, {.com = {"resize"},.i=10}},
+     */
+
     {0,   XF86XK_AudioLowerVolume,  run, {.com = voldown}},
     {0,   XF86XK_AudioRaiseVolume,  run, {.com = volup}},
     {0,   XF86XK_AudioMute,         run, {.com = volmute}},

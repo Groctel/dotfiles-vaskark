@@ -10,7 +10,7 @@ export ZSH=$HOME/.oh-my-zsh
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
-ZSH_THEME="spaceship"
+ZSH_THEME="agnoster"
 
 # Specific theme settings
 source ~/.spaceship
@@ -140,7 +140,7 @@ alias uf='cls;ufetch'
 alias bf='bunnyfetch'
 alias pf='clear;pfetch'
 alias f='fff'
-alias n='nnn'
+alias n='nnn -d -o'
 alias cv='cava'
 
 # neofetch
