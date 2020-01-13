@@ -180,6 +180,9 @@ alias ffs='sudo !!'
 alias s1='sudo make install'
 alias s2='sudo make PREFIX=/usr/local install'
 
+# pacman
+alias pq='pacman -Qm'
+
 # completion for kitty
 autoload -Uz compinit
 compinit
