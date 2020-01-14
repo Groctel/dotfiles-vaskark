@@ -10,7 +10,7 @@
 
 border=5
 width=$(xdotool getdisplaygeometry | awk '{print $1}')
-w=$((width-(2*border)))
+w=$(( width-(2*border) ))
 
 # dmenu2
 dmenu_run \
