@@ -26,8 +26,8 @@ window:
   # Specified in number of pixels.
   # If the position is not set, the window manager will handle the placement.
   #position:
-    x: 100
-    y: 100
+  #  x: 100
+  #  y: 100
 
   # Window padding (changes require restart)
   #
