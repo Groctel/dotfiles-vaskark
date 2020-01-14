@@ -8,6 +8,9 @@
 # -sb "$color1"
 # dmenu_run -fn 'Iosevka Custom-8' -h 26 -p ' dmenu: ' -i -nb "$color0" -nf "$color15" -sb "$color4" -sf "#000000" -dim 0.5 -x 10 -y 10 -w 1900
 
+border=5
+w=$(xdotool getdisplaygeometry | awk '{print $1}') - 2*$border
+
 # dmenu2
 dmenu_run \
 -fn 'Iosevka Custom-8' \
@@ -19,6 +22,6 @@ dmenu_run \
 -sb "$color3" \
 -sf "#000000" \
 -dim 0.2 \
--x 5 \
--y 5 \
+-x $border \
+-y $border \
 -w 1910 \
