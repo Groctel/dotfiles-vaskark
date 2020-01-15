@@ -353,7 +353,7 @@ set encoding=utf8
 scriptencoding utf-8
 
 " Colorscheme
-colorscheme lena
+colorscheme wal
 set fillchars=vert::
 
 " Restore last cursor position and marks on open
