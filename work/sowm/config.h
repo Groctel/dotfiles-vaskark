@@ -53,15 +53,15 @@ static struct key keys[] = {
     {MOD,		XK_F11,		run, {.com = wf}},
     {MOD,               XK_F12,         run, {.com = wr}},
 
+    {MOD, 		XK_Delete, 	run, {.com = quit}},
+    {MOD|ShiftMask,	XK_Delete,	run, {.com = reboot}},
+    {MOD|ControlMask,	XK_Delete,	run, {.com = shutdown}},
+
     {0,   XF86XK_AudioLowerVolume,  run, {.com = voldown}},
     {0,   XF86XK_AudioRaiseVolume,  run, {.com = volup}},
     {0,   XF86XK_AudioMute,         run, {.com = volmute}},
     {0,   XF86XK_MonBrightnessUp,   run, {.com = briup}},
     {0,   XF86XK_MonBrightnessDown, run, {.com = bridown}},
-
-    {MOD, 		XK_Delete, 	run, {.com = quit}},
-    {MOD|ShiftMask,	XK_Delete,	run, {.com = reboot}},
-    {MOD|ControlMask,	XK_Delete,	run, {.com = shutdown}},
 
     {MOD,           	XK_h,      	move,  {.com=(char*[]){"move", "left"}, .i=20}},
     {MOD,           	XK_j,      	move,  {.com=(char*[]){"move", "down"}, .i=20}},
@@ -82,23 +82,23 @@ static struct key keys[] = {
     {MOD|ShiftMask, 	XK_Right,  	move,  {.com=(char*[]){"resize", "right"}, .i=20}},
 
     {MOD,               XK_1, ws_go,     	{.i = 1}},
-    {MOD|Mod1Mask,      XK_1, win_to_ws, 	{.i = 1}},
+    {MOD|ShiftMask,     XK_1, win_to_ws, 	{.i = 1}},
     {MOD|ControlMask,   XK_1,ws_toggle, 	{.i = 1}},
 
     {MOD,               XK_2, ws_go,     	{.i = 2}},
-    {MOD|Mod1Mask,      XK_2, win_to_ws, 	{.i = 2}},
+    {MOD|ShiftMask,     XK_2, win_to_ws, 	{.i = 2}},
     {MOD|ControlMask,   XK_2,ws_toggle, 	{.i = 2}},
 
     {MOD,               XK_3, ws_go,     	{.i = 3}},
-    {MOD|Mod1Mask,      XK_3, win_to_ws, 	{.i = 3}},
+    {MOD|ShiftMask,     XK_3, win_to_ws, 	{.i = 3}},
     {MOD|ControlMask,   XK_3,ws_toggle, 	{.i = 3}},
 
     {MOD,               XK_4, ws_go,     	{.i = 4}},
-    {MOD|Mod1Mask,      XK_4, win_to_ws, 	{.i = 4}},
+    {MOD|ShiftMask,     XK_4, win_to_ws, 	{.i = 4}},
     {MOD|ControlMask,   XK_4,ws_toggle, 	{.i = 4}},
 
     {MOD,               XK_5, ws_go,     	{.i = 5}},
-    {MOD|Mod1Mask,      XK_5, win_to_ws, 	{.i = 5}},
+    {MOD|ShiftMask,     XK_5, win_to_ws, 	{.i = 5}},
     {MOD|ControlMask,   XK_5,ws_toggle, 	{.i = 5}},
     
     {MOD,               XK_0, ws_toggle_all, 	{.i = 0}},

@@ -54,7 +54,7 @@ static void ws_toggle_all(const Arg arg);
 static int  xerror() { return 0;}
 
 static client       *list = {0}, *ws_list[10] = {0}, *cur;
-static int          ws = 1, sw, sh, wx, wy, numlock;
+static int          ws = 1, sw, sh, wx, wy;
 static unsigned int ww, wh;
 static int			is_ws_enabled[10] = {0}; /* +1 the amount of ws */
 
@@ -77,7 +77,6 @@ static void (*events[LASTEvent])(XEvent *e) = {
 #define win        (client *t=0, *c=list; c && t!=list->prev; t=c, c=c->next)
 #define ws_save(W) ws_list[W] = list
 #define ws_sel(W)  list = ws_list[ws = W]
-#define mask(M)    (M & ~(numlock | LockMask))
 
 #define win_size(W, gx, gy, gw, gh) \
     XGetGeometry(d, W, &(Window){0}, gx, gy, gw, gh, \
@@ -107,7 +106,6 @@ void move(const Arg arg) {
         apply(0, (arg.com[0]=="resize")?-arg.i:arg.i, 0, (arg.com[0]=="resize")?arg.i:0);
     }
 }
-
 
 void win_focus(client *c) {
     cur = c;
@@ -144,13 +142,10 @@ void notify_motion(XEvent *e) {
 void key_press(XEvent *e) {
     KeySym keysym = XkbKeycodeToKeysym(d, e->xkey.keycode, 0, 0);
 
-    for (unsigned int i=0; i < sizeof(keys)/sizeof(*keys); ++i) {
-        numlock = ((e->xkey.state & keys[i].mod) == keys[i].mod);
-
-        if (mask(keys[i].mod) == mask(e->xkey.state) &&
+    for (unsigned int i=0; i < sizeof(keys)/sizeof(*keys); ++i)
+        if (keys[i].mod == e->xkey.state &&
             keys[i].keysym == keysym)
             keys[i].function(keys[i].arg);
-    }
 }
 
 void button_press(XEvent *e) {
@@ -290,9 +285,9 @@ void ws_go(const Arg arg) {
 			is_ws_enabled[i] = 0;
 		}
 	}
+ 
 
     ws_sel(arg.i);
-
     if (list) for win XMapWindow(d, c->w);
     if (list) win_focus(list); else cur = 0;
 }
@@ -340,7 +335,6 @@ ws_toggle_all(const Arg arg)
 	}
 	ws_sel(tmp);
 }
-
 
 void configure_request(XEvent *e) {
     XConfigureRequestEvent *ev = &e->xconfigurerequest;

@@ -192,4 +192,4 @@ kitty + complete setup zsh | source /dev/stdin
 #unimatrix -a -f -l o -n -o -s 100 -w
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
-#[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
