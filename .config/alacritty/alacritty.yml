@@ -18,7 +18,7 @@ window:
   # Specified in number of columns/lines, not pixels.
   # If both are `0`, this setting is ignored.
   dimensions:
-    columns: 100
+    columns: 96
     lines: 28
 
   # Window position (changes require restart)
@@ -226,7 +226,7 @@ colors:
 # Specifying a `duration` of `0` will disable the visual bell.
 visual_bell:
   animation: EaseOutExpo
-  duration: 0
+  duration: 5
   color: '0xffffff'
 
 # Background opacity
@@ -464,15 +464,15 @@ debug:
 #   - AppKeypad
 key_bindings:
   # (Windows/Linux only)
-  #- { key: V,        mods: Control|Shift, action: Paste            }
-  #- { key: C,        mods: Control|Shift, action: Copy             }
-  #- { key: Insert,   mods: Shift,         action: PasteSelection   }
-  #- { key: Key0,     mods: Control,       action: ResetFontSize    }
-  #- { key: Equals,   mods: Control,       action: IncreaseFontSize }
-  #- { key: Add,      mods: Control,       action: IncreaseFontSize }
-  #- { key: Subtract, mods: Control,       action: DecreaseFontSize }
-  #- { key: Minus,    mods: Control,       action: DecreaseFontSize }
-  #- { key: Return,   mods: Alt,           action: ToggleFullscreen }
+  - { key: V,        mods: Alt, 	   action: Paste            }
+  - { key: C,        mods: Alt, 	   action: Copy             }
+  - { key: S,        mods: Alt,            action: PasteSelection   }
+  - { key: Key0,     mods: Alt,            action: ResetFontSize    }
+  - { key: Equals,   mods: Alt,            action: IncreaseFontSize }
+  - { key: Add,      mods: Alt,            action: IncreaseFontSize }
+  - { key: Subtract, mods: Alt,            action: DecreaseFontSize }
+  - { key: Minus,    mods: Alt,            action: DecreaseFontSize }
+  - { key: F11,      mods: Alt,            action: ToggleFullscreen }
 
   # (macOS only)
   #- { key: Key0,   mods: Command,         action: ResetFontSize    }

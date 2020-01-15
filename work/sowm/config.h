@@ -81,31 +81,27 @@ static struct key keys[] = {
     {MOD|ShiftMask, 	XK_Up,     	move,  {.com=(char*[]){"resize", "up"}, .i=20}},
     {MOD|ShiftMask, 	XK_Right,  	move,  {.com=(char*[]){"resize", "right"}, .i=20}},
 
-    {MOD,           XK_1, ws_go,     {.i = 1}},
-    {MOD|ShiftMask, XK_1, win_to_ws, {.i = 1}},
-    {MOD|ControlMask,XK_1,ws_toggle, {.i = 1}},
+    {MOD,               XK_1, ws_go,     	{.i = 1}},
+    {MOD|Mod1Mask,      XK_1, win_to_ws, 	{.i = 1}},
+    {MOD|ControlMask,   XK_1,ws_toggle, 	{.i = 1}},
 
-    {MOD,           XK_2, ws_go,     {.i = 2}},
-    {MOD|ShiftMask, XK_2, win_to_ws, {.i = 2}},
-    {MOD|ControlMask,XK_2,ws_toggle, {.i = 2}},
+    {MOD,               XK_2, ws_go,     	{.i = 2}},
+    {MOD|Mod1Mask,      XK_2, win_to_ws, 	{.i = 2}},
+    {MOD|ControlMask,   XK_2,ws_toggle, 	{.i = 2}},
 
-    {MOD,           XK_3, ws_go,     {.i = 3}},
-    {MOD|ShiftMask, XK_3, win_to_ws, {.i = 3}},
-    {MOD|ControlMask,XK_3,ws_toggle, {.i = 3}},
+    {MOD,               XK_3, ws_go,     	{.i = 3}},
+    {MOD|Mod1Mask,      XK_3, win_to_ws, 	{.i = 3}},
+    {MOD|ControlMask,   XK_3,ws_toggle, 	{.i = 3}},
 
-    {MOD,           XK_4, ws_go,     {.i = 4}},
-    {MOD|ShiftMask, XK_4, win_to_ws, {.i = 4}},
-    {MOD|ControlMask,XK_4,ws_toggle, {.i = 4}},
+    {MOD,               XK_4, ws_go,     	{.i = 4}},
+    {MOD|Mod1Mask,      XK_4, win_to_ws, 	{.i = 4}},
+    {MOD|ControlMask,   XK_4,ws_toggle, 	{.i = 4}},
 
-    {MOD,           XK_5, ws_go,     {.i = 5}},
-    {MOD|ShiftMask, XK_5, win_to_ws, {.i = 5}},
-    {MOD|ControlMask,XK_5,ws_toggle, {.i = 5}},
-
-    {MOD,           XK_6, ws_go,     {.i = 6}},
-    {MOD|ShiftMask, XK_6, win_to_ws, {.i = 6}},
-    {MOD|ControlMask,XK_6,ws_toggle, {.i = 6}},
+    {MOD,               XK_5, ws_go,     	{.i = 5}},
+    {MOD|Mod1Mask,      XK_5, win_to_ws, 	{.i = 5}},
+    {MOD|ControlMask,   XK_5,ws_toggle, 	{.i = 5}},
     
-    {MOD,           XK_0, ws_toggle_all, {.i = 0}},
+    {MOD,               XK_0, ws_toggle_all, 	{.i = 0}},
 };
 
 #endif
