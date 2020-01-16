@@ -116,10 +116,10 @@ alias hc='history -c'
 alias p='pwd -P'
 
 # listings
-alias ls='lsd'
+alias ls='lsd -h'
 alias l='ls -l'
 alias ll='ls -al'
-alias lt='lsd --tree --depth 3'
+alias lt='lsd --tree --depth 2'
 
 # general
 alias v='nvim'
