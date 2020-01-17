@@ -25,6 +25,7 @@ wmname="$(echo $DESKTOP_SESSION)"
 
 k=
 kernel="$(uname -r | cut -d '-' -f1)"
+#kernel="$(uname -r)"
 
 r=
 resolution="$(xwininfo -root | grep geometry | awk '{print $2}' | cut -d + -f1)"
@@ -42,7 +43,6 @@ shell=$(basename $SHELL)
 
 tput clear
 cat << EOF
-
              $d$f1$h  $t$wmname
    (\ /)     $f3$k  $t$kernel
    ( $d. .$t)    $f2$sh  $t$shell

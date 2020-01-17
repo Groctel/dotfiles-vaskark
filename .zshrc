@@ -183,6 +183,9 @@ alias s2='sudo make PREFIX=/usr/local install'
 # pacman
 alias pq='pacman -Qm'
 
+# systemctl
+alias sct='systemctl --user list-timers --all'
+
 # completion for kitty
 autoload -Uz compinit
 compinit
