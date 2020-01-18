@@ -1,3 +1,10 @@
+# Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
+# Initialization code that may require console input (password prompts, [y/n]
+# confirmations, etc.) must go above this block, everything else may go below.
+if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
+  source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
+fi
+
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/.local/bin:$PATH
 
@@ -21,7 +28,7 @@ source ~/.powerlevel
 # cause zsh load theme from this variable instead of
 # looking in ~/.oh-my-zsh/themes/
 # An empty array have no effect
-ZSH_THEME_RANDOM_CANDIDATES=("bira" "ys" "half-life" "agnoster" "gnzh" "powerlevel9k" "spaceship" "nanotech" "intheloop" "wedisagree" "fwalch")
+ZSH_THEME_RANDOM_CANDIDATES=("bira" "ys" "half-life" "agnoster" "gnzh" "powerlevel10k" "spaceship" "nanotech" "intheloop" "wedisagree" "fwalch" "jaischeema")
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -192,10 +199,9 @@ compinit
 kitty + complete setup zsh | source /dev/stdin
 
 # Run when terminal opens
+#clear
 #unimatrix -a -f -l o -n -o -s 100 -w
+pfetch
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
-
-# run at term startup
-pfetch
