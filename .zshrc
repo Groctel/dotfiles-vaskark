@@ -153,12 +153,9 @@ alias cv='cava'
 # neofetch
 alias nf0='clear;neofetch --config none'
 alias nf='clear;neofetch'
-alias nfa='clear;neofetch --source ascii'
 alias nfo='clear;neofetch --off'
-alias nfp='clear;neofetch --source $HOME/Pictures/'
-alias nff='clear;neofetch --ascii "$(fortune | cowsay -W 30)"'
+alias nfw='clear;neofetch --source $HOME/Pictures/women'
 alias nfs='clear;neofetch --config ~/.config/neofetch/config-small.conf'
-alias nfall='clear;neofetch --config ~/.config/neofetch/config-all.conf'
 
 # wifi
 alias up='nmcli c u'
