@@ -11,6 +11,7 @@
 " Plug 'vimwiki/vimwiki'
 " Plug 'tpope/vim-markdown'
 " Plug 'nelstrom/vim-markdown-folding'
+" Plug 'dylanaraps/wal.vim'
 " call plug#end()
 
 " Highlight the line on which the cursor lives.

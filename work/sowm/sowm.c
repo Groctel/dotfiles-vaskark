@@ -29,7 +29,6 @@ typedef struct client {
     Window w;
 } client;
 
-static void init();
 static void button_press(XEvent *e);
 static void button_release();
 static void configure_request(XEvent *e);
@@ -108,18 +107,6 @@ void move(const Arg arg) {
     }
 }
 
-void init() {
-    Window *child;
-    unsigned int nchild;
-    XQueryTree(d, RootWindow(d, DefaultScreen(d)), &(Window){0},
-        &(Window){0}, &child, &nchild);
-    for(unsigned int i = 0; i < nchild; i++) {
-        XSelectInput(d, child[i], StructureNotifyMask|EnterWindowMask);
-        XMapWindow(d, child[i]);
-        win_add(child[i]);
-    }
-}
-
 void win_focus(client *c) {
     cur = c;
     XSetInputFocus(d, cur->w, RevertToParent, CurrentTime);
@@ -154,8 +141,6 @@ void notify_motion(XEvent *e) {
 
 void key_press(XEvent *e) {
     KeySym keysym = XkbKeycodeToKeysym(d, e->xkey.keycode, 0, 0);
-
-    init();
 
     for (unsigned int i=0; i < sizeof(keys)/sizeof(*keys); ++i)
         if (keys[i].mod == e->xkey.state &&
