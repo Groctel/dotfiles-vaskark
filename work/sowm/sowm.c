@@ -155,6 +155,17 @@ void button_press(XEvent *e) {
 
     win_size(e->xbutton.subwindow, &wx, &wy, &ww, &wh);
     XRaiseWindow(d, e->xbutton.subwindow);
+
+    int sd = 0;
+    if(e->xbutton.button == Button4) sd = WheelResizeStep;
+    else if(e->xbutton.button == Button5) sd = -WheelResizeStep;
+
+    XMoveResizeWindow(d, e->xbutton.subwindow,
+        wx - sd,
+        wy - sd,
+        ww + sd*2,
+        wh + sd*2);
+
     mouse = e->xbutton;
 }
 
@@ -379,7 +390,7 @@ void input_grab(Window root) {
                 XGrabKey(d, code, keys[i].mod | modifiers[j], root,
                         True, GrabModeAsync, GrabModeAsync);
 
-    for (i = 1; i < 4; i += 2)
+    for (i = 1; i < 6; i ++)
         for (j = 0; j < sizeof(modifiers)/sizeof(*modifiers); j++)
             XGrabButton(d, i, MOD | modifiers[j], root, True,
                 ButtonPressMask|ButtonReleaseMask|PointerMotionMask,

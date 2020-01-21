@@ -2,6 +2,7 @@
 #define CONFIG_H
 
 #define MOD Mod4Mask
+#define WheelResizeStep 5
 
 const char* menu[]    = {"dmenu_run",      0};
 const char* term[]    = {"st",             0};
