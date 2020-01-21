@@ -51,10 +51,11 @@ static void apply(int x, int y, int w, int h);
 static void move(const Arg arg);
 static void ws_toggle(const Arg arg);
 static void ws_toggle_all(const Arg arg);
+
 static int  xerror() { return 0;}
 
 static client       *list = {0}, *ws_list[10] = {0}, *cur;
-static int          ws = 1, sw, sh, wx, wy;
+static int          ws = 1, sw, sh, wx, wy, numlock = 0;
 static unsigned int ww, wh;
 static int			is_ws_enabled[10] = {0}; /* +1 the amount of ws */
 
@@ -82,28 +83,29 @@ static void (*events[LASTEvent])(XEvent *e) = {
     XGetGeometry(d, W, &(Window){0}, gx, gy, gw, gh, \
                  &(unsigned int){0}, &(unsigned int){0})
 
-void apply(int x,int y,int w,int h) {
+// Taken from DWM. Many thanks. https://git.suckless.org/dwm
+#define mod_clean(mask) (mask & ~(numlock|LockMask) & \
+        (ShiftMask|ControlMask|Mod1Mask|Mod2Mask|Mod3Mask|Mod4Mask|Mod5Mask))
+
+void apply(int x, int y, int w, int h) {
     win_size(cur->w, &wx, &wy, &ww, &wh);
     XMoveResizeWindow(d, cur->w,
-        wx + x,
-        wy + y,
-        ww + w,
-				wh + h);
-    win_size(cur->w, &wx, &wy, &ww, &wh);
+        wx + x, wy + y,
+        ww + w, wh + h);
 }
 
 void move(const Arg arg) {
 	 if(arg.com[1]=="left") {
-        apply((arg.com[0]=="resize")?arg.i:-arg.i, 0, (arg.com[0]=="resize")?-arg.i:0, 0);
+        apply((arg.com[0]=="resize")?0:-arg.i, 0, (arg.com[0]=="resize")?-arg.i:0, 0);
     }
     else if(arg.com[1]=="right"){
-        apply((arg.com[0]=="resize")?-arg.i:arg.i, 0, (arg.com[0]=="resize")?arg.i:0, 0);
+        apply((arg.com[0]=="resize")?0:arg.i, 0, (arg.com[0]=="resize")?arg.i:0, 0);
     }
     else if(arg.com[1]=="up"){
-        apply(0, (arg.com[0]=="resize")?arg.i:-arg.i, 0, (arg.com[0]=="resize")?-arg.i:0);
+        apply(0, (arg.com[0]=="resize")?0:-arg.i, 0, (arg.com[0]=="resize")?-arg.i:0);
     }
     else if(arg.com[1]=="down"){
-        apply(0, (arg.com[0]=="resize")?-arg.i:arg.i, 0, (arg.com[0]=="resize")?arg.i:0);
+        apply(0, (arg.com[0]=="resize")?0:arg.i, 0, (arg.com[0]=="resize")?arg.i:0);
     }
 }
 
@@ -143,8 +145,8 @@ void key_press(XEvent *e) {
     KeySym keysym = XkbKeycodeToKeysym(d, e->xkey.keycode, 0, 0);
 
     for (unsigned int i=0; i < sizeof(keys)/sizeof(*keys); ++i)
-        if (keys[i].mod == e->xkey.state &&
-            keys[i].keysym == keysym)
+        if (keys[i].keysym == keysym &&
+            mod_clean(keys[i].mod) == mod_clean(e->xkey.state))
             keys[i].function(keys[i].arg);
 }
 
@@ -153,17 +155,6 @@ void button_press(XEvent *e) {
 
     win_size(e->xbutton.subwindow, &wx, &wy, &ww, &wh);
     XRaiseWindow(d, e->xbutton.subwindow);
-
-    int sd = 0;
-    if(e->xbutton.button == Button4) sd = WheelResizeStep;
-    else if(e->xbutton.button == Button5) sd = -WheelResizeStep;
-
-    XMoveResizeWindow(d, e->xbutton.subwindow,
-        wx - sd,
-        wy - sd,
-        ww + sd*2,
-        wh + sd*2);
-
     mouse = e->xbutton;
 }
 
@@ -285,9 +276,9 @@ void ws_go(const Arg arg) {
 			is_ws_enabled[i] = 0;
 		}
 	}
- 
 
     ws_sel(arg.i);
+
     if (list) for win XMapWindow(d, c->w);
     if (list) win_focus(list); else cur = 0;
 }
@@ -371,6 +362,32 @@ void run(const Arg arg) {
     execvp((char*)arg.com[0], (char**)arg.com);
 }
 
+void input_grab(Window root) {
+    unsigned int i, j, modifiers[] = {0, LockMask, numlock, numlock|LockMask};
+    XModifierKeymap *modmap = XGetModifierMapping(d);
+    KeyCode code;
+
+    for (i = 0; i < 8; i++)
+        for (j=0; j < modmap->max_keypermod; j++)
+            if (modmap->modifiermap[i * modmap->max_keypermod + j]
+                == XKeysymToKeycode(d, 0xff7f))
+                numlock = (1 << i);
+
+    for (i = 0; i < sizeof(keys)/sizeof(*keys); i++)
+        if ((code = XKeysymToKeycode(d, keys[i].keysym)))
+            for (j = 0; j < sizeof(modifiers)/sizeof(*modifiers); j++)
+                XGrabKey(d, code, keys[i].mod | modifiers[j], root,
+                        True, GrabModeAsync, GrabModeAsync);
+
+    for (i = 1; i < 4; i += 2)
+        for (j = 0; j < sizeof(modifiers)/sizeof(*modifiers); j++)
+            XGrabButton(d, i, MOD | modifiers[j], root, True,
+                ButtonPressMask|ButtonReleaseMask|PointerMotionMask,
+                GrabModeAsync, GrabModeAsync, 0, 0);
+
+    XFreeModifiermap(modmap);
+}
+
 int main(void) {
     XEvent ev;
 
@@ -386,15 +403,7 @@ int main(void) {
 
     XSelectInput(d,  root, SubstructureRedirectMask);
     XDefineCursor(d, root, XCreateFontCursor(d, 68));
-
-    for (unsigned int i=0; i < sizeof(keys)/sizeof(*keys); ++i)
-        XGrabKey(d, XKeysymToKeycode(d, keys[i].keysym), keys[i].mod,
-                 root, True, GrabModeAsync, GrabModeAsync);
-
-    for (int i=1; i<6; i++)
-        XGrabButton(d, i, MOD, root, True,
-            ButtonPressMask|ButtonReleaseMask|PointerMotionMask,
-            GrabModeAsync, GrabModeAsync, 0, 0);
+    input_grab(root);
 
     while (1 && !XNextEvent(d, &ev))
         if (events[ev.type]) events[ev.type](&ev);

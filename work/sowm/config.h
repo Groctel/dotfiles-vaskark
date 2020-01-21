@@ -2,7 +2,6 @@
 #define CONFIG_H
 
 #define MOD Mod4Mask
-#define WheelResizeStep 5
 
 const char* menu[]    = {"dmenu.sh",      0};
 const char* rofi[]    = {"rofi", "-show", "drun",      0};
