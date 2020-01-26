@@ -2,6 +2,7 @@ acpi_als
 acpi_pad
 acpi_thermal_rel
 aesni_intel
+aes_x86_64
 ahci
 asus_nb_wmi
 asus_wireless
@@ -25,6 +26,7 @@ drm
 drm_kms_helper
 ecc
 ecdh_generic
+enclosure
 fb_sys_fops
 ghash_clmulni_intel
 glue_helper
@@ -96,7 +98,9 @@ ppdev
 processor_thermal_device
 roles
 sch_fq_codel
+scsi_transport_sas
 serio_raw
+ses
 snd
 snd_hda_codec
 snd_hda_codec_generic
@@ -115,6 +119,9 @@ sparse_keymap
 syscopyarea
 sysfillrect
 sysimgblt
+uas
+usbhid
+usb_storage
 uvcvideo
 video
 videobuf2_common

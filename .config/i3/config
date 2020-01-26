@@ -64,7 +64,7 @@ bindsym $mod+Shift+Right move right
 # split orientation
 bindsym $mod+z split h
 bindsym $mod+v split v
-bindsym $mod+Shift+q split toggle
+#bindsym $mod+Shift+q split toggle
 
 # toggle fullscreen
 bindsym $mod+f fullscreen toggle

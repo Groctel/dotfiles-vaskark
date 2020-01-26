@@ -200,5 +200,8 @@ kitty + complete setup zsh | source /dev/stdin
 #unimatrix -a -f -l o -n -o -s 100 -w
 #pfetch
 
+# pfetch
+export PF_INFO="ascii os kernel uptime shell de pkgs memory"
+
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
