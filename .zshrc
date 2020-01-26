@@ -195,12 +195,15 @@ autoload -Uz compinit
 compinit
 kitty + complete setup zsh | source /dev/stdin
 
-# Run when terminal opens
+# Run when terminal opens/resets
 #clear
 #unimatrix -a -f -l o -n -o -s 100 -w
 
 # pfetch
-export PF_INFO="ascii os kernel uptime shell de pkgs memory palette"
+export PF_INFO="ascii os kernel uptime shell de pkgs memory"
+export PF_SEP=":"
+export PF_COL1=3
+export PF_COL2=6
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
