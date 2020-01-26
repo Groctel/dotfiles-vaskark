@@ -198,7 +198,6 @@ kitty + complete setup zsh | source /dev/stdin
 # Run when terminal opens
 #clear
 #unimatrix -a -f -l o -n -o -s 100 -w
-#pfetch
 
 # pfetch
 export PF_INFO="ascii os kernel uptime shell de pkgs memory palette"

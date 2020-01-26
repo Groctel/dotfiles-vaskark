@@ -2,7 +2,6 @@ acpi_als
 acpi_pad
 acpi_thermal_rel
 aesni_intel
-aes_x86_64
 ahci
 asus_nb_wmi
 asus_wireless
