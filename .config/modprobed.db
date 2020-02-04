@@ -8,10 +8,12 @@ asus_wireless
 asus_wmi
 autofs4
 binfmt_misc
+blake2b_generic
 bluetooth
 bpfilter
 btbcm
 btintel
+btrfs
 btrtl
 btusb
 ccm
@@ -29,6 +31,8 @@ enclosure
 fb_sys_fops
 ghash_clmulni_intel
 glue_helper
+hfs
+hfsplus
 hid
 hid_generic
 hid_multitouch
@@ -62,6 +66,7 @@ ipt_REJECT
 irqbypass
 iwlmvm
 iwlwifi
+jfs
 joydev
 kfifo_buf
 kvm
@@ -77,6 +82,8 @@ mc
 mei
 mei_hdcp
 mei_me
+minix
+msdos
 nf_conntrack
 nf_conntrack_broadcast
 nf_conntrack_ftp
@@ -91,10 +98,13 @@ nf_nat_ftp
 nf_reject_ipv4
 nf_reject_ipv6
 nls_iso8859_1
+ntfs
 parport
 parport_pc
 ppdev
 processor_thermal_device
+qnx4
+raid6_pq
 roles
 sch_fq_codel
 scsi_transport_sas
@@ -111,8 +121,11 @@ snd_hwdep
 snd_intel_dspcfg
 snd_intel_nhlt
 snd_pcm
+snd_rawmidi
 snd_seq
 snd_seq_device
+snd_seq_midi
+snd_seq_midi_event
 snd_timer
 soundcore
 sparse_keymap
@@ -120,6 +133,7 @@ syscopyarea
 sysfillrect
 sysimgblt
 uas
+ufs
 usbhid
 usb_storage
 uvcvideo
@@ -133,6 +147,8 @@ virt_dma
 wmi
 wmi_bmof
 x86_pkg_temp_thermal
+xfs
+xor
 x_tables
 xt_addrtype
 xt_conntrack
@@ -141,3 +157,4 @@ xt_limit
 xt_LOG
 xt_recent
 xt_tcpudp
+zstd_compress
