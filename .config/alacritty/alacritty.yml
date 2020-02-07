@@ -281,10 +281,10 @@ colors:
 #   - Linear
 #
 # Specifying a `duration` of `0` will disable the visual bell.
-#visual_bell:
-#  animation: EaseOutExpo
-#  duration: 5
-#  color: '0xffffff'
+visual_bell:
+  animation: EaseOutExpo
+  duration: 5
+  color: '0xffffff'
 
 # Background opacity
 #
@@ -315,7 +315,7 @@ cursor:
   #unfocused_hollow: true
 
 # Live config reload (changes require restart)
-#live_config_reload: true
+live_config_reload: true
 
 # Shell
 #
