@@ -18,7 +18,7 @@ window:
   # Specified in number of columns/lines, not pixels.
   # If both are `0`, this setting is ignored.
   dimensions:
-    columns: 94
+    columns: 90
     lines: 26
 
   # Window position (changes require restart)
@@ -34,8 +34,8 @@ window:
   # Blank space added around the window in pixels. This padding is scaled
   # by DPI and the specified value is always added at both opposing sides.
   padding:
-    x: 24
-    y: 24
+    x: 20
+    y: 20
 
   # Spread additional padding evenly around the terminal content.
   #dynamic_padding: false
