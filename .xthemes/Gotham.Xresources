@@ -1,6 +1,6 @@
 !! Gotham
 *.foreground:   #98d1ce
-*.background:   #0a0f14
+*.background:   [95]#0a0f14
 *.cursorColor:  #98d1ce
 
 ! black

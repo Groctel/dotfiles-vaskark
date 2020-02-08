@@ -1,6 +1,6 @@
 !! Kasugano
 *.foreground:   #ffffff
-*.background:   #1b1b1b
+*.background:   [95]#1b1b1b
 *.cursorColor:  #ffffff
 
 ! black

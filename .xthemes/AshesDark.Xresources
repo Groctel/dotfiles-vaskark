@@ -1,6 +1,6 @@
 !! Ashes Dark
 *.foreground:   #c7ccd1
-*.background:   #1c2023
+*.background:   [95]#1c2023
 *.cursorColor:  #c7ccd1
 
 ! black

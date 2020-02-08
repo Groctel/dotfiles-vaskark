@@ -1,6 +1,6 @@
 !! Flat Design
 *.foreground:   #c0c5ce
-*.background:   #17202A
+*.background:   [95]#17202A
 
 ! black
 *.color0:       #17202A

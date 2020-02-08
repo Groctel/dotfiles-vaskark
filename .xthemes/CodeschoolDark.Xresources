@@ -1,6 +1,6 @@
 !! Codeschool Dark
 *.foreground:   #9ea7a6
-*.background:   #232c31
+*.background:   [95]#232c31
 *.cursorColor:  #9ea7a6
 
 ! black

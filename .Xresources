@@ -110,7 +110,9 @@ URxvt.iso14755_52: true
 URxvt*skipBuiltinGlyphs: true
 
 !! Opacity
-URxvt*alpha: 0.95
+*alpha: 0.95
 
 !! Colours
+!#include ".xthemes/Dkeg-Skigh.Xresources"
+! wal
 #include ".cache/wal/colors.Xresources"

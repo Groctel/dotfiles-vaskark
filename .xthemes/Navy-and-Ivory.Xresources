@@ -1,6 +1,6 @@
 !! Navy-and-Ivory
 *.foreground:   #e8dfd6
-*.background:   #021b21
+*.background:   [95]#021b21
 *.cursorColor:  #e8dfd6
 
 ! black

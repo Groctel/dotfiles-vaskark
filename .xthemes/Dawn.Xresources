@@ -1,6 +1,6 @@
 !! Dawn
 *.foreground:   #9b9081
-*.background:   #181b20
+*.background:   [95]#181b20
 *.cursorColor:  #9b9081
 
 ! black
