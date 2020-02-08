@@ -32,9 +32,9 @@ Xft.lcdfilter:  lcdfilter
 
 !! Fonts
 URxvt*font: xft:Monospace:size=8 
-!URxvt*boldFont: xft:Monospace:bold:size=8
-!URxvt*italicFont: xft:Monospace:italic:size=8
-!URxvt*boldItalicFont: xft:Monospace:bolditalic:size=8
+URxvt*boldFont: xft:Monospace:bold:size=8
+URxvt*italicFont: xft:Monospace:italic:size=8
+URxvt*boldItalicFont: xft:Monospace:bolditalic:size=8
 
 !! Change font
 URxvt.keysym.M-C-1: command:\033]710;xft:JetBrainsMono Nerd Font Mono:size=8\007\033]711;xft:JetBrainsMono Nerd Font Mono:bold:size=8\007\033]712;xft:JetBrainsMono Nerd Font Mono:italic:size=8\007\033]713;xft:JetBrainsMono Nerd Font Mono:bolditalic:size=8\007
@@ -85,11 +85,11 @@ URxvt.keyboard-select.clipboard: true
 ! make sure to turn off default copy/paste keybindings:
 URxvt.keysym.C-M-c: builtin-string:
 URxvt.keysym.C-M-v: builtin-string:
-!
+
 URxvt.keysym.M-c: eval:selection_to_clipboard
 URxvt.keysym.M-v: eval:paste_clipboard
 
-!! Allow Control-Shift
+!! Allow Control-Shift (for unicode)
 URxvt.iso14755: true
 URxvt.iso14755_52: true
 
