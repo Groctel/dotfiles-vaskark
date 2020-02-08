@@ -15,4 +15,4 @@ PROMPT='$truncated_path $decoration '
 RPROMPT='$time'
 
 # Input in bold
-zle_highlight=(default:bold)
+#zle_highlight=(default:bold)
