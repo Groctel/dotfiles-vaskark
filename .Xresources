@@ -31,14 +31,14 @@ Xft.autohint:   true
 Xft.lcdfilter:  lcdfilter
 
 !! Fonts
-URxvt*font: xft:Monospace:size=8    
+URxvt*font: xft:Monospace:size=8 
 URxvt*boldFont: xft:Monospace:bold:size=8
 URxvt*italicFont: xft:Monospace:italic:size=8
 URxvt*boldItalicFont: xft:Monospace:bolditalic:size=8
 
 !! Change font
-URxvt.keysym.M-C-0: command:\033]710;xft:Monospace:size=8\007\033]711;xft:Monospace:bold:size=8\007\033]712;xft:Monospace:italic:size=8\007\033]713;xft:Monospace:bolditalic:size=8\007
 URxvt.keysym.M-C-1: command:\033]710;xft:JetBrainsMono Nerd Font Mono:size=8\007\033]711;xft:JetBrainsMono Nerd Font Mono:bold:size=8\007\033]712;xft:JetBrainsMono Nerd Font Mono:italic:size=8\007\033]713;xft:JetBrainsMono Nerd Font Mono:bolditalic:size=8\007
+URxvt.keysym.M-C-2: command:\033]710;xft:TerminessTTF Nerd Font Mono:size=10\007\033]711;xft:TerminessTTF Nerd Font Mono:bold:size=10\007\033]712;xft:TerminessTTF Nerd Font Mono:italic:size=10\007\033]713;xft:TerminessTTF Nerd Font Mono:bolditalic:size=810\007
 
 !! Spacing
 URxvt*letterSpace: -1
@@ -69,11 +69,11 @@ URxvt.tabbed.title: yes
 URxvt.tabbed.new-button: no
 URxvt.tabbed.autohide:  yes
 
-URxvt.tabbed.tabbar-fg: 6
+URxvt.tabbed.tabbar-fg: 3
 URxvt.tabbed.tabbar-bg: 0
 URxvt.tabbed.tab-fg: 0
-URxvt.tabbed.tab-bg: 6
-URxvt.tabbed.title-fg: 6
+URxvt.tabbed.tab-bg: 3
+URxvt.tabbed.title-fg: 3
 URxvt.tabbed.title-bg: 0
 
 !! Keyboard select
