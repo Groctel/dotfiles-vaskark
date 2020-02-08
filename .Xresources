@@ -50,9 +50,11 @@ URxvt.saveLines: 2000
 !! Perl extensions
 URxvt.perl-ext-common: default,matcher,resize-font,selection-to-clipboard,fullscreen,bell-command,tabbedex,keyboard-select
 
-!! Clickable URLs
+!! Matcher (clickable urls)
 URxvt.url-launcher: /usr/bin/xdg-open
 URxvt.matcher.button: 1
+URxvt.keysym.M-Delete: perl:matcher:list
+URxvt.matcher.rend.0: Uline Bold fg5
 
 !! Fullscreen (requires wmctrl package)
 URxvt.keysym.F11: perl:fullscreen:switch
