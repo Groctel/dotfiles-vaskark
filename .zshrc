@@ -156,6 +156,8 @@ alias nf='clear;neofetch'
 alias nfo='clear;neofetch --off'
 alias nfw='clear;neofetch --source $HOME/Pictures/women'
 alias nfs='clear;neofetch --config ~/.config/neofetch/config-small.conf'
+alias nfu='clear;neofetch --config ~/.config/neofetch/config-w3m.conf'
+alias nfus='clear;neofetch --config ~/.config/neofetch/config-small-w3m.conf'
 
 # wifi
 alias up='nmcli c u'
