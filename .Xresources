@@ -48,7 +48,7 @@ URxvt*letterSpace: -1
 URxvt.saveLines: 2000
 
 !! Perl extensions
-URxvt.perl-ext-common: default,matcher,resize-font,selection-to-clipboard,fullscreen,bell-command,tabbedex,keyboard-select
+URxvt.perl-ext-common: default,matcher,fullscreen,selection-to-clipboard,resize-font,bell-command,tabbedex,keyboard-select
 
 !! Matcher (clickable urls)
 URxvt.url-launcher: /usr/bin/xdg-open
@@ -65,12 +65,22 @@ URxvt.resize-font.bigger:  M-plus
 URxvt.resize-font.reset:   M-0
 URxvt.resize-font.show:    M-slash
 
+!! Bell command
+URxvt.bell-command: canberra-gtk-play -i bell
+
 !! Tabbedex
-URxvt.keysym.Control-t: perl:tabbedex:new_tab
+URxvt.tabbed.no-tabbedex-keys: true
+URxvt.keysym.M-t: perl:tabbedex:new_tab
+URxvt.keysym.M-Right: perl:tabbedex:next_tab
+URxvt.keysym.M-Left: perl:tabbedex:prev_tab
+URxvt.keysym.M-Shift-Left: perl:tabbedex:move_tab_left
+URxvt.keysym.M-Shift-Right: perl:tabbedex:move_tab_right
+URxvt.keysym.M-r: perl:tabbedex:rename_tab
+
 URxvt.tabbed.reopen-on-close: yes
 URxvt.tabbed.title: yes
 URxvt.tabbed.new-button: no
-URxvt.tabbed.autohide:  yes
+URxvt.tabbed.autohide: true
 
 URxvt.tabbed.tabbar-fg: 3
 URxvt.tabbed.tabbar-bg: 0
@@ -96,8 +106,11 @@ URxvt.keysym.M-v: eval:paste_clipboard
 URxvt.iso14755: true
 URxvt.iso14755_52: true
 
+!! See if this speeds things up
+URxvt*skipBuiltinGlyphs: true
+
 !! Opacity
-*.alpha: 0.95
+URxvt*alpha: 0.95
 
 !! Colours
 #include ".cache/wal/colors.Xresources"
