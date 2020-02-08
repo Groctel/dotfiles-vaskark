@@ -9,7 +9,8 @@ URxvt*internalBorder: 20
 Urxvt.modifier: alt
 
 !! Print
-URxvt*print-pipe: cat > $(TMPDIR=$HOME mktemp urxvt.XXXXXX)
+!URxvt*print-pipe: cat > $(TMPDIR=$HOME mktemp urxvt.XXXXXX)
+URxvt*print-pipe: cat > $HOME/$(echo urxvt.dump.$(date +'%Y%M%d%H%m%S'))
 
 !! Cursor
 URxvt*cursorBlink: false
@@ -31,8 +32,7 @@ Xft.autohint:   true
 Xft.lcdfilter:  lcdfilter
 
 !! Fonts
-URxvt*font: xft:Monospace:size=8, \
-            xft:Typicons:size=10
+URxvt*font: xft:Monospace:size=8
 URxvt*boldFont: xft:Monospace:bold:size=8
 URxvt*italicFont: xft:Monospace:italic:size=8
 URxvt*boldItalicFont: xft:Monospace:bolditalic:size=8
