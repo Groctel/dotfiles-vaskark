@@ -143,13 +143,13 @@ alias ht='htop -u $USER'
 alias xr="vim ~/.Xresources"
 alias xu='xrdb ~/.Xresources'
 alias ms='ncmpcpp'
-alias uf='cls;ufetch'
+alias uf='clear;ufetch'
 alias bf='bunnyfetch'
 alias pf='clear;pfetch'
 alias f='fff'
 alias n='nnn -d -o'
 alias r='ranger'
-alias cv='cava'
+alias c='cava'
 
 # neofetch
 alias nf0='clear;neofetch --config none'
@@ -211,6 +211,3 @@ export PF_COL2=6
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
-
-# broot
-source /home/jason/.config/broot/launcher/bash/br

@@ -9,7 +9,7 @@ xautolock.sh &
 picom.sh &
 dunst &
 libinput-gestures &
-wal -R -a 90 -o "wal-berry.sh" &
+wal -R -a 90 &
 
 # Set decoration geometry
 berryc border_width       0
