@@ -32,10 +32,10 @@ Xft.autohint:   true
 Xft.lcdfilter:  lcdfilter
 
 !! Fonts
-URxvt*font: xft:Monospace:size=8
-URxvt*boldFont: xft:Monospace:bold:size=8
-URxvt*italicFont: xft:Monospace:italic:size=8
-URxvt*boldItalicFont: xft:Monospace:bolditalic:size=8
+URxvt*font: xft:Monospace:size=8, xft:MesloLGS NF:size=8
+URxvt*boldFont: xft:Monospace:bold:size=8, xft:MesloLGS NF:bold:size=8
+URxvt*italicFont: xft:Monospace:italic:size=8, xft:MesloLGS NF:italic:size=8
+URxvt*boldItalicFont: xft:Monospace:bolditalic:size=8, xft:MesloLGS NF:bolditalic:size=8
 
 !! Change font
 URxvt.keysym.M-C-1: command:\033]710;xft:agave Nerd Font Mono:size=9\007\033]711;xft:agave Nerd Font Mono:bold:size=9\007\033]712;xft:agave Nerd Font Mono:italic:size=9\007\033]713;xft:agave Nerd Font Mono:bolditalic:size=9\007
@@ -61,7 +61,7 @@ URxvt.keysym.F11: perl:fullscreen:switch
 
 !! Resize fonts
 URxvt.resize-font.smaller: M-minus
-URxvt.resize-font.bigger:  M-plus
+URxvt.resize-font.bigger:  M-equal
 URxvt.resize-font.reset:   M-0
 URxvt.resize-font.show:    M-slash
 

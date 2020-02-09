@@ -17,7 +17,7 @@ export ZSH=$HOME/.oh-my-zsh
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
-ZSH_THEME="jason"
+ZSH_THEME="powerlevel10k"
 
 # Specific theme settings
 source ~/.spaceship
@@ -211,3 +211,6 @@ export PF_COL2=6
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+
+# pywal
+(cat ~/.cache/wal/sequences &)

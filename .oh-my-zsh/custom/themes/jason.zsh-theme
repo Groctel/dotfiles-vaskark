@@ -5,7 +5,7 @@
 num_dirs=2 # Use 0 for full path
 truncated_path="%F{yellow}[%$num_dirs~]%f"
 #                 
-#                
+#                 
 decoration="%F{cyan}%f"
 time="%F{magenta}[%D{%I:%M %p}]%f"
 
