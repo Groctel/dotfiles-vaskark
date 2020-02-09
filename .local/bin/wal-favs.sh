@@ -3,7 +3,7 @@
 ## By me
 ## Inspired by Aditya Shakya
 
-MENU="$(rofi -sep "|" -dmenu -i -p 'wal favs' -location 0 -width 10 -hide-scrollbar -line-padding 4 -padding 20 -lines 10 -font "Iosevka Custom 8" <<< "Coliseum|Cars|Shelby|Astronaut|Chicago|Skyfall|Matrix|BR|Stairway|Museum")"
+MENU="$(rofi -sep "|" -dmenu -i -p 'wal favs' -location 0 -width 10 -hide-scrollbar -line-padding 4 -padding 20 -lines 11 -font "Iosevka Custom 8" <<< "Coliseum|Cars|Shelby|Astronaut|Chicago|Skyfall|Matrix|BR|Stairway|Museum|FutureParis")"
 
 case "$MENU" in
 	*Coliseum) wal -i ~/Pictures/favs/bence-boros-178730-unsplash.jpg && wal-berry.sh ;;
@@ -15,5 +15,6 @@ case "$MENU" in
         *Matrix) wal -i ~/Pictures/favs/image_6483441.JPG && wal-berry.sh ;;
 	*BR) wal -i ~/Pictures/favs/FsIVsFQ.jpg && wal-berry.sh ;;
 	*Stairway) wal -i ~/Pictures/favs/7n6mldxwd8m31.jpg && wal-berry.sh ;;
-	*Museum) wal -i ~/Pictures/favs/b6xfmpv54f341.jpg && wal-berry.sh
+	*Museum) wal -i ~/Pictures/favs/b6xfmpv54f341.jpg && wal-berry.sh ;;
+	*FutureParis) wal -i ~/Pictures/favs/future_paris-m.jpg && wal-berry.sh
 esac

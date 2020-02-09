@@ -148,6 +148,7 @@ alias bf='bunnyfetch'
 alias pf='clear;pfetch'
 alias f='fff'
 alias n='nnn -d -o'
+alias r='ranger'
 alias cv='cava'
 
 # neofetch
