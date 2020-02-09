@@ -20,7 +20,7 @@ URxvt*cursorUnderline: true
 URxvt.pointerBlank: true
 
 !! Real transparency
-URxvt*depth: 32
+!URxvt*depth: 32
 
 !! Xft settings
 Xft.dpi:        96
