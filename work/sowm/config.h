@@ -26,7 +26,7 @@ const char* w2[] = {"wal", "--theme", "random", 0};
 const char* wf[] = {"wal", "--theme", "dkeg-skigh", 0}; 
 const char* wr[] = {"wal", "-R", 0};
 
-const char* pix[] = {"sxiv", "-rt", "/home/jason/Pictures/", 0};
+const char* pix[] = {"sxiv", "/home/jason/Pictures/", "-rt", 0};
 
 const char* quit[] = {"pkill", "x", 0};
 const char* reboot[] = {"systemctl", "reboot", 0};
