@@ -25,6 +25,9 @@ const char* w1[] = {"wal", "-i", "/home/jason/Pictures/favs/", 0};
 const char* w2[] = {"wal", "--theme", "random", 0};
 const char* wf[] = {"wal", "--theme", "dkeg-skigh", 0}; 
 const char* wr[] = {"wal", "-R", 0};
+const char* wn[] = {"wal", "-i", "/home/jason/Pictures/favs/", "--iterative", 0};
+
+const char* pix[] = {"sxiv", "-rt", "/home/jason/Pictures/", 0};
 
 const char* quit[] = {"pkill", "x", 0};
 const char* reboot[] = {"systemctl", "reboot", 0};
@@ -40,7 +43,7 @@ static struct key keys[] = {
 
     {MOD,	        XK_x,	   	run, {.com = menu}},
     {MOD, 	    	XK_d,      	run, {.com = rofi}},
-    {MOD,		XK_n,		run, {.com = nmd}},
+    {MOD,       	XK_n,		run, {.com = nmd}},
     {MOD,           	XK_Print,      	run, {.com = shot}},
     {MOD,           	XK_Return, 	run, {.com = term}},
 
@@ -54,6 +57,9 @@ static struct key keys[] = {
     {MOD,		XK_F10,		run, {.com = w2}},
     {MOD,		XK_F11,		run, {.com = wf}},
     {MOD,               XK_F12,         run, {.com = wr}},
+    {Mod1Mask,       	XK_n,	        run, {.com = wn}},
+
+    {Mod1Mask,		XK_p,		run, {.com = pix}},
 
     {MOD, 		XK_Delete, 	run, {.com = quit}},
     {MOD|ShiftMask,	XK_Delete,	run, {.com = reboot}},
