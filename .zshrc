@@ -213,4 +213,4 @@ export PF_COL2=6
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
 # pywal
-#(cat ~/.cache/wal/sequences &)
+(cat ~/.cache/wal/sequences &)

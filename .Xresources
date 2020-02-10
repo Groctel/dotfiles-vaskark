@@ -21,6 +21,8 @@ URxvt.pointerBlank: true
 
 !! Real transparency
 URxvt*depth: 32
+URxvt*transparency: true
+URxvt*shading: 30
 
 !! Xft settings
 Xft.dpi:        96
@@ -50,7 +52,7 @@ URxvt.saveLines: 2000
 !! Perl extensions
 URxvt.perl-ext-common: default,matcher,fullscreen,selection-to-clipboard,resize-font,bell-command,tabbedex,keyboard-select
 
-!! Matcher (clickable urls)
+!! Matcher
 URxvt.url-launcher: /usr/bin/xdg-open
 URxvt.matcher.button: 1
 URxvt.keysym.M-Delete: perl:matcher:list
@@ -98,7 +100,7 @@ URxvt.keyboard-select.clipboard: true
 ! make sure to turn off default copy/paste keybindings:
 URxvt.keysym.C-M-c: builtin-string:
 URxvt.keysym.C-M-v: builtin-string:
-!
+
 URxvt.keysym.M-c: eval:selection_to_clipboard
 URxvt.keysym.M-v: eval:paste_clipboard
 
@@ -106,11 +108,8 @@ URxvt.keysym.M-v: eval:paste_clipboard
 URxvt.iso14755: true
 URxvt.iso14755_52: true
 
-!! See if this speeds things up
-URxvt*skipBuiltinGlyphs: true
-
 !! Opacity
-*alpha: 0.90
+!*alpha: 0.90
 
 !! Colours
 !#include ".xthemes/Dkeg-Skigh.Xresources"
