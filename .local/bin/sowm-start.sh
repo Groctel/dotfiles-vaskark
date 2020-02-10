@@ -2,7 +2,7 @@
 polybar-no-ewmh.sh
 pulseaudio --start --log-target=syslog &
 #nitrogen --restore &
-wal -R -a 90 &
+wal -R &
 picom.sh &
 redshift.sh &
 xautolock.sh &

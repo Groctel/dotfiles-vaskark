@@ -174,10 +174,10 @@ alias ya='yadm add'
 alias yp='yadm push -u origin master'
 
 # pywal
-alias w1='wal -i ~/Pictures/favs/ -a 90'
-alias w2='wal --theme random -a 90'
-alias wf='wal --theme dkeg-skigh -a 90'
-alias wr='wal -R -a 90'
+alias w1='wal -i ~/Pictures/favs/'
+alias w2='wal --theme random'
+alias wf='wal --theme dkeg-skigh'
+alias wr='wal -R'
 
 # superuser
 alias reboot='sudo reboot'
@@ -213,4 +213,4 @@ export PF_COL2=6
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
 # pywal
-(cat ~/.cache/wal/sequences &)
+#(cat ~/.cache/wal/sequences &)
