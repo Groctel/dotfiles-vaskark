@@ -187,6 +187,7 @@ alias rnm='sudo systemctl restart network-manager'
 alias ffs='sudo !!'
 alias s1='sudo make install'
 alias s2='sudo make PREFIX=/usr/local install'
+alias syn='sudo synaptic'
 
 # pacman
 alias pq='pacman -Qm'
