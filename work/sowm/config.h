@@ -21,10 +21,10 @@ const char* chrome[] = {"google-chrome", 0};
 const char* music[] = {"kitty", "-e", "ncmpcpp", 0};
 
 const char* w0[] = {"sxiv", "/home/jason/Pictures/favs/", "-rt", 0};
-const char* w1[] = {"wal", "-i", "/home/jason/Pictures/favs/", 0};
-const char* w2[] = {"wal", "--theme", "random", 0};
-const char* wf[] = {"wal", "--theme", "dkeg-skigh", 0}; 
-const char* wr[] = {"wal", "-R", 0};
+const char* w1[] = {"wal", "-i", "/home/jason/Pictures/favs/", "-a", "90", 0};
+const char* w2[] = {"wal", "--theme", "random", "-a", "90", 0};
+const char* wf[] = {"wal", "--theme", "dkeg-skigh", "-a", "90", 0}; 
+const char* wr[] = {"wal", "-R", "-a", "90", 0};
 
 const char* quit[] = {"pkill", "x", 0};
 const char* reboot[] = {"systemctl", "reboot", 0};
