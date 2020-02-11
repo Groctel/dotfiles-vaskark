@@ -220,6 +220,3 @@ kitty + complete setup zsh | source /dev/stdin
 
 # pywal
 (cat ~/.cache/wal/sequences &)
-
-# ls_colors
-# eval $( dircolors -b $HOME/.LS_COLORS )
