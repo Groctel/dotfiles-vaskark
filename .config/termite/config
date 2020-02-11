@@ -1,9 +1,9 @@
 [options]
 allow_bold = true
-audible_bell = false
+audible_bell = true
 clickable_url = true
 dynamic_title = true
-font = Hurmit Nerd Font Mono 8
+font = Monospace 8
 #fullscreen = true
 #icon_name = terminal
 #mouse_autohide = false
@@ -47,7 +47,7 @@ foreground = #868A8C
 #foreground_bold = #ffffff
 #background = #3f3f3f
 
-# 20% background transparency (requires a compositor)
+# 10% background transparency (requires a compositor)
 background = rgba(9, 17, 22, 0.9)
 
 # If unset, will reverse foreground and background
@@ -72,7 +72,7 @@ color14 = #93e0e3
 color15 = #ffffff
 
 [hints]
-#font = Monospace 12
+font = Monospace 8
 #foreground = #dcdccc
 #background = #3f3f3f
 #active_foreground = #e68080
