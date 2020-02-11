@@ -5,7 +5,7 @@ set $mod Mod4
 #border_radius 5
 
 # start in floating mode
-#for_window [class="^.*"] floating enable
+for_window [class="^.*"] floating enable
 
 # drag floating windows
 floating_modifier $mod
@@ -258,7 +258,6 @@ mode "$system" {
     bindsym Escape mode "default"
 }
 bindsym $mod+Delete mode "$system"
-
 
 ############### i3-gaps stuff ##################
 
