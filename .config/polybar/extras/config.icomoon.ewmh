@@ -139,7 +139,7 @@ icon-4 = 4;
 icon-5 = 5;
 icon-6 = 6;
 icon-7 = 7;
-icon-8 = 8;
+icon-8 = 8;
 
 label-monitor = %name%
 format = <label-state>
@@ -439,7 +439,6 @@ format-warn-prefix-padding-right = 0
 [module/session]
 type = custom/script
 exec = echo $DESKTOP_SESSION
-;label-font = 3
 click-right = exit.sh
 
 label-background = ${colors.color3} 

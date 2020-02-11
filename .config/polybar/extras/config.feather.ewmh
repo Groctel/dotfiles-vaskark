@@ -439,7 +439,6 @@ format-warn-prefix-padding-right = 0
 [module/session]
 type = custom/script
 exec = echo $DESKTOP_SESSION
-;label-font = 3
 click-right = exit.sh
 
 label-background = ${colors.color3} 

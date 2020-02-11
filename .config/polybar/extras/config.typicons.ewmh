@@ -63,7 +63,7 @@ module-margin-left = 0
 module-margin-right = 0
 
 font-0 = "Iosevka Term:style=regular:size=7.5;2"
-font-1 = "Typicons:style=Regular:size=10;2"
+font-1 = "Typicons:style=Book:size=10;2"
 
 modules-left = ewmh spacer mpd-controls
 modules-center = mpd
@@ -439,7 +439,6 @@ format-warn-prefix-padding-right = 0
 [module/session]
 type = custom/script
 exec = echo $DESKTOP_SESSION
-;label-font = 3
 click-right = exit.sh
 
 label-background = ${colors.color3} 
