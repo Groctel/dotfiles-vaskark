@@ -88,7 +88,6 @@ sudo
 extract
 jump
 colored-man-pages
-tmux
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -126,9 +125,8 @@ fi
 alias rm='rm -i'
 alias cp='cp -i'
 alias mv='mv -i'
-alias df='df -H | grep sda5'
-alias du='du -h'
-alias dud='du -d 1 -h'
+alias df='df -H | grep sda'
+alias du='du -d 1 -h'
 alias cd..='cd ..'
 alias h='history'
 alias hc='history -c'
@@ -162,6 +160,7 @@ alias f='fff'
 alias n='nnn -d -o'
 alias r='ranger'
 alias c='cava'
+alias fd='fdfind'
 
 # neofetch
 alias nf0='clear;neofetch --config none'
@@ -221,3 +220,6 @@ kitty + complete setup zsh | source /dev/stdin
 
 # pywal
 (cat ~/.cache/wal/sequences &)
+
+# ls_colors
+# eval $( dircolors -b $HOME/.LS_COLORS )
