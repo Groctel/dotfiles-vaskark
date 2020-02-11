@@ -17,3 +17,9 @@
 if [ -d "$HOME/.local/bin" ] ; then
     PATH="$HOME/.local/bin:$PATH"
 fi
+
+# pfetch
+export PF_INFO="ascii os kernel uptime shell de pkgs memory"
+export PF_SEP=":"
+export PF_COL1=3
+export PF_COL2=6

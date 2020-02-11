@@ -17,7 +17,7 @@ export ZSH=$HOME/.oh-my-zsh
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
-ZSH_THEME="powerlevel10k"
+ZSH_THEME="jason"
 
 # Specific theme settings
 source ~/.spaceship
@@ -78,7 +78,18 @@ HIST_STAMPS="yyyy-mm-dd"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git zsh_reload systemadmin themes command-not-found sudo extract)
+plugins=(
+git
+zsh_reload
+systemadmin
+themes
+command-not-found
+sudo
+extract
+jump
+colored-man-pages
+tmux
+)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -117,6 +128,7 @@ alias cp='cp -i'
 alias mv='mv -i'
 alias df='df -H | grep sda5'
 alias du='du -h'
+alias dud='du -d 1 -h'
 alias cd..='cd ..'
 alias h='history'
 alias hc='history -c'
@@ -203,12 +215,6 @@ kitty + complete setup zsh | source /dev/stdin
 # Run when terminal opens/resets
 #clear
 #unimatrix -a -f -l o -n -o -s 100 -w
-
-# pfetch
-export PF_INFO="ascii os kernel uptime shell de pkgs memory"
-export PF_SEP=":"
-export PF_COL1=3
-export PF_COL2=6
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh

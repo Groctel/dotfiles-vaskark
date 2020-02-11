@@ -109,8 +109,8 @@ URxvt.iso14755: true
 URxvt.iso14755_52: true
 
 !! Opacity
-URxvt*alpha: 0.90
-st*alpha: 0.90
+!URxvt*alpha: 0.90
+!st*alpha: 0.90
 
 !! Colours
 !#include ".xthemes/Dkeg-Skigh.Xresources"
