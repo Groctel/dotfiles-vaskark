@@ -118,5 +118,4 @@ URxvt.iso14755_52: true
 
 !! Colours
 !#include ".xthemes/Dkeg-Skigh.Xresources"
-! wal
 #include ".cache/wal/colors.Xresources"
