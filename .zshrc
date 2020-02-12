@@ -110,7 +110,7 @@ fi
 # export ARCHFLAGS="-arch x86_64"
 
 # ssh
-export SSH_KEY_PATH="~/.ssh/id_rsa"
+# export SSH_KEY_PATH="~/.ssh/id_rsa"
 
 # Set personal aliases, overriding those provided by oh-my-zsh libs,
 # plugins, and themes. Aliases can be placed here, though oh-my-zsh
@@ -211,6 +211,12 @@ autoload -Uz compinit
 compinit
 kitty + complete setup zsh | source /dev/stdin
 
+# pfetch
+export PF_INFO="ascii os kernel uptime shell de pkgs memory"
+export PF_SEP=":"
+export PF_COL1=3
+export PF_COL2=6
+
 # Run when terminal opens/resets
 #clear
 #unimatrix -a -f -l o -n -o -s 100 -w
@@ -220,4 +226,4 @@ kitty + complete setup zsh | source /dev/stdin
 
 # pywal
 (cat ~/.cache/wal/sequences &)
-. "/home/jason/.cache/wal/colors.sh"
+#. "/home/jason/.cache/wal/colors.sh"

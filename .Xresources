@@ -21,8 +21,6 @@ URxvt.pointerBlank: true
 
 !! Real transparency
 URxvt*depth: 32
-!URxvt*transparency: true
-!URxvt*shading: 30
 
 !! Xft settings
 Xft.dpi:        96
