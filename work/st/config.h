@@ -208,7 +208,7 @@ static Shortcut shortcuts[] = {
 	{ XK_ANY_MOD,		Button2,	selpaste,	{.i =  0} },
 
 	{ MODKEY,               XK_Num_Lock,    numlock,        {.i =  0} },
-	{ MODKEY,               XK_Control_L,   iso14755,       {.i =  0} },
+	{ MODKEY,               XK_u,           iso14755,       {.i =  0} },
 
 	{ MODKEY,               XK_Up,          kscrollup,      {.i =  1} },
 	{ MODKEY,               XK_Down,        kscrolldown,    {.i =  1} },
