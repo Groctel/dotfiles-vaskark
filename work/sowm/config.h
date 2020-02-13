@@ -6,6 +6,7 @@
 
 const char* menu[]    = {"dmenu.sh",      0};
 const char* rofi[]    = {"rofi", "-show", "drun",      0};
+const char* emoji[]   = {"rofi-emoji.sh", 0};
 const char* term[]    = {"kitty",             0};
 const char* nmd[]      = {"networkmanager_dmenu", 0};
 const char* shot[]   = {"screenshot.sh", "full",            0};
@@ -40,6 +41,7 @@ static struct key keys[] = {
 
     {MOD,	        XK_x,	   	run, {.com = menu}},
     {MOD, 	    	XK_d,      	run, {.com = rofi}},
+    {MOD|ShiftMask,     XK_d,      	run, {.com = emoji}},
     {MOD,       	XK_n,		run, {.com = nmd}},
     {MOD,           	XK_Print,      	run, {.com = shot}},
     {MOD,           	XK_Return, 	run, {.com = term}},

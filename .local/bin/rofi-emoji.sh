@@ -22,7 +22,7 @@
 #
 
 # Where to save the emojis file.
-EMOJI_FILE="$HOME/.cache/emojis.txt"
+EMOJI_FILE="$HOME/.config/emojis.txt"
 
 # Urls of emoji to download.
 # You can remove what you don't need.
@@ -72,7 +72,7 @@ function download() {
 }
 
 function rofi_menu() { # {{{
-	rofi -width 25 -lines 7 -dmenu -i -p 'emoji: ' \
+	rofi -width 15 -lines 10 -dmenu -i -p 'emoji: ' \
 		-kb-row-tab '' \
 		-kb-row-select Tab \
 		-kb-custom-1 Ctrl+c

@@ -230,4 +230,3 @@ export PF_COL2=6
 
 # pywal
 (cat ~/.cache/wal/sequences &)
-#. "/home/jason/.cache/wal/colors.sh"
