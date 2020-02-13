@@ -546,7 +546,7 @@ key_bindings:
   - { key: D,        mods: Alt,           action: ScrollToBottom   }
   - { key: U,        mods: Alt,           action: ScrollToTop      }
   - { key: Return,   mods: Alt,           action: SpawnNewInstance }
-# - { key: E,	     mods: Alt,     action: {program: "gedit", args: ["~/.config/alacritty/alacritty.yml"]} }
+# - { key: F2,	     mods: Alt,           action: {program: "gedit", args: ["~/.config/alacritty/alacritty.yml"]} }
 
 
   # (Windows only)
