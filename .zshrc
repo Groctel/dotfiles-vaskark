@@ -162,6 +162,10 @@ alias r='ranger'
 alias c='cava'
 alias fd='fdfind'
 
+# git
+alias gc='git clone --depth=1'
+alias gp='git pull'
+
 # neofetch
 alias nf0='clear;neofetch --config none'
 alias nf='clear;neofetch'
