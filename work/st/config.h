@@ -6,7 +6,7 @@
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
 static char *font = "Monospace:size=7.5:antialias=true:autohint=true";
-static char *font2[] = { "Typicons:size=10:antialias=true:autohint=true" };
+static char *font2[] = { "JoyPixels:size=10:antialias=true:autohint=true" };
 static int borderpx = 20;
 
 /*
@@ -108,7 +108,7 @@ static unsigned int rows = 28;
 /*
  * Default colour and shape of the mouse cursor
  */
-static unsigned int mouseshape = XC_xterm;
+static unsigned int mouseshape = XC_left_ptr;
 static unsigned int mousefg = 7;
 static unsigned int mousebg = 0;
 

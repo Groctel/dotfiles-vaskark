@@ -374,7 +374,7 @@ live_config_reload: true
   # Record all characters and escape sequences as test data.
   #ref_test: false
 
-#mouse:
+mouse:
   # Click settings
   #
   # The `double_click` and `triple_click` settings control the time
@@ -384,9 +384,9 @@ live_config_reload: true
   #triple_click: { threshold: 300 }
 
   # If this is `true`, the cursor is temporarily hidden when typing.
-  #hide_when_typing: false
+  hide_when_typing: true
 
-  #url:
+  url:
     # URL launcher
     #
     # This program is executed when clicking on a text which is recognized as a URL.
@@ -398,8 +398,8 @@ live_config_reload: true
     #   - (macOS) open
     #   - (Linux/BSD) xdg-open
     #   - (Windows) explorer
-    #launcher:
-    #  program: xdg-open
+    launcher:
+      program: xdg-open
     #  args: []
 
     # URL modifiers
@@ -537,9 +537,17 @@ key_bindings:
   - { key: S,        mods: Alt,           action: PasteSelection   }
   - { key: Key0,     mods: Alt,           action: ResetFontSize    }
   - { key: Equals,   mods: Alt,           action: IncreaseFontSize }
-  - { key: Add,      mods: Alt,           action: IncreaseFontSize }
   - { key: Subtract, mods: Alt,           action: DecreaseFontSize }
-  - { key: Minus,    mods: Alt,           action: DecreaseFontSize }
+  - { key: Q,	     mods: Alt,		  action: Quit             }
+  - { key: J,        mods: Alt,           action: ScrollLineDown   }
+  - { key: K,        mods: Alt,           action: ScrollLineUp     }
+  - { key: J,        mods: Alt|Shift,     action: ScrollPageDown   }
+  - { key: K,        mods: Alt|Shift,     action: ScrollPageUp     }
+  - { key: D,        mods: Alt,           action: ScrollToBottom   }
+  - { key: U,        mods: Alt,           action: ScrollToTop      }
+  - { key: Return,   mods: Alt,           action: SpawnNewInstance }
+# - { key: E,	     mods: Alt,     action: {program: "gedit", args: ["~/.config/alacritty/alacritty.yml"]} }
+
 
   # (Windows only)
   #- { key: Return,   mods: Alt,           action: ToggleFullscreen }
