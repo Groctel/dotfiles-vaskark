@@ -262,7 +262,7 @@ bindsym $mod+Delete mode "$system"
 ############### i3-gaps stuff ##################
 
 # necessary for i3-gaps to work properly (pixel can be any value)
-for_window [class="^.*"] border pixel 2
+for_window [class="^.*"] border pixel 0
 
 # activate smart gaps
 #smart_gaps on
@@ -280,8 +280,8 @@ smart_borders on
 hide_edge_borders smart_no_gaps
 
 # set inner/outer gaps
-gaps inner 10
-gaps outer 10
+gaps inner 12
+gaps outer 0
 gaps horizontal 0
 gaps vertical 0
 gaps top 0
