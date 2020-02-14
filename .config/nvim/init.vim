@@ -1,14 +1,14 @@
 " ~~~ Plugins ~~~
 call plug#begin('~/.local/share/nvim/plugged')
 "Plug 'shougo/deoplete.nvim'
-Plug 'ctrlpvim/ctrlp.vim'
+"Plug 'ctrlpvim/ctrlp.vim'
 Plug 'itchyny/lightline.vim'
-Plug 'tpope/vim-commentary'
-Plug 'tpope/vim-surround'
-Plug 'lambdalisue/suda.vim'
-Plug 'jiangmiao/auto-pairs'
+"Plug 'tpope/vim-commentary'
+"Plug 'tpope/vim-surround'
+"Plug 'lambdalisue/suda.vim'
+"Plug 'jiangmiao/auto-pairs'
 Plug 'machakann/vim-highlightedyank'
-Plug 'vimwiki/vimwiki'
+"Plug 'vimwiki/vimwiki'
 Plug 'tpope/vim-markdown'
 Plug 'nelstrom/vim-markdown-folding'
 Plug 'dylanaraps/wal'
@@ -257,7 +257,7 @@ let g:ctrlp_clear_cache_on_exit = 0
 " Lightline
 " Get default from :h lightline
 let g:lightline = {
-    \ 'colorscheme': 'lena',
+    \ 'colorscheme': 'jellybeans',
     \ }
 
 let g:lightline.active = {
@@ -266,7 +266,7 @@ let g:lightline.active = {
     \           [ ] ],
     \ 'right': [ [ 'lineinfo' ],
     \            [ 'percent' ],
-    \            [ 'filetype' ] ]
+    \            [ 'filetype', 'fileencoding' ] ]
     \ }
 
 let g:lightline.inactive = {
@@ -323,7 +323,6 @@ let g:lightline.mode_map = {
     \ "\<C-s>": 'S-BLOCK',
     \ 't': 'T',
     \ }
-
 
 let g:lightline.separator = {
     \   'left': '', 'right': ''
