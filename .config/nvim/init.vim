@@ -1,18 +1,19 @@
 " ~~~ Plugins ~~~
-" call plug#begin('~/.local/share/nvim/plugged')
+call plug#begin('~/.local/share/nvim/plugged')
 " Plug 'shougo/deoplete.nvim'
-" Plug 'ctrlpvim/ctrlp.vim'
-" Plug 'itchyny/lightline.vim'
-" Plug 'tpope/vim-commentary'
-" Plug 'tpope/vim-surround'
-" Plug 'lambdalisue/suda.vim'
-" Plug 'jiangmiao/auto-pairs'
-" Plug 'machakann/vim-highlightedyank'
-" Plug 'vimwiki/vimwiki'
-" Plug 'tpope/vim-markdown'
-" Plug 'nelstrom/vim-markdown-folding'
-" Plug 'dylanaraps/wal.vim'
-" call plug#end()
+Plug 'ctrlpvim/ctrlp.vim'
+Plug 'itchyny/lightline.vim'
+Plug 'tpope/vim-commentary'
+Plug 'tpope/vim-surround'
+Plug 'lambdalisue/suda.vim'
+Plug 'jiangmiao/auto-pairs'
+Plug 'machakann/vim-highlightedyank'
+Plug 'vimwiki/vimwiki'
+Plug 'tpope/vim-markdown'
+Plug 'nelstrom/vim-markdown-folding'
+Plug 'dylanaraps/wal.vim'
+Plug 'preservim/nerdtree'
+call plug#end()
 
 " Highlight the line on which the cursor lives.
 set nocursorline
@@ -66,6 +67,9 @@ imap <C-a> <home>
 imap <C-e> <end>
 cmap <C-a> <home>
 cmap <C-e> <end>
+
+" Nerdtree
+map <C-n> :NERDTreeToggle<CR>
 
 " Control-S Save
 nmap <C-S> :w<cr>
@@ -253,7 +257,7 @@ let g:ctrlp_clear_cache_on_exit = 0
 " Lightline
 " Get default from :h lightline
 let g:lightline = {
-    \ 'colorscheme': 'lena',
+    \ 'colorscheme': 'wal',
     \ }
 
 let g:lightline.active = {
@@ -319,7 +323,6 @@ let g:lightline.mode_map = {
     \ "\<C-s>": 'S-BLOCK',
     \ 't': 'T',
     \ }
-
 
 let g:lightline.separator = {
     \   'left': '', 'right': ''
