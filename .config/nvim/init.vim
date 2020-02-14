@@ -1,6 +1,6 @@
 " ~~~ Plugins ~~~
 call plug#begin('~/.local/share/nvim/plugged')
-" Plug 'shougo/deoplete.nvim'
+"Plug 'shougo/deoplete.nvim'
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'itchyny/lightline.vim'
 Plug 'tpope/vim-commentary'
@@ -11,7 +11,7 @@ Plug 'machakann/vim-highlightedyank'
 Plug 'vimwiki/vimwiki'
 Plug 'tpope/vim-markdown'
 Plug 'nelstrom/vim-markdown-folding'
-Plug 'dylanaraps/wal.vim'
+Plug 'dylanaraps/wal'
 Plug 'preservim/nerdtree'
 call plug#end()
 
@@ -257,7 +257,7 @@ let g:ctrlp_clear_cache_on_exit = 0
 " Lightline
 " Get default from :h lightline
 let g:lightline = {
-    \ 'colorscheme': 'wal',
+    \ 'colorscheme': 'lena',
     \ }
 
 let g:lightline.active = {
@@ -323,6 +323,7 @@ let g:lightline.mode_map = {
     \ "\<C-s>": 'S-BLOCK',
     \ 't': 'T',
     \ }
+
 
 let g:lightline.separator = {
     \   'left': '', 'right': ''
