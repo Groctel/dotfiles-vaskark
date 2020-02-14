@@ -213,10 +213,10 @@ bindsym $mod+Shift+e exec --no-startup-id gedit ~/.config/i3/config
 bindsym --release $mod+Print exec --no-startup-id scrot -d 3 -q 85 '%Y-%m-%d_%I-%M-%S_%p.jpg' -e 'mv $f ~/Screenshots/'
 
 bindsym $mod+F8 exec --no-startup-id sxiv ~/Pictures/favs -rt
-bindsym $mod+F9 exec --no-startup-id wal -i ~/Pictures/favs/ -a 90
-bindsym $mod+F10 exec --no-startup-id wal --theme random -a 90
-bindsym $mod+F11 exec --no-startup-id wal --theme dkeg-skigh -a 90
-bindsym $mod+F12 exec --no-startup-id wal -R -a 90
+bindsym $mod+F9 exec --no-startup-id wal -i ~/Pictures/favs/
+bindsym $mod+F10 exec --no-startup-id wal --theme random
+bindsym $mod+F11 exec --no-startup-id wal --theme dkeg-skigh
+bindsym $mod+F12 exec --no-startup-id wal -R
 
 # pulseaudio controls
 bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ +5%
@@ -280,7 +280,7 @@ smart_borders on
 hide_edge_borders smart_no_gaps
 
 # set inner/outer gaps
-gaps inner 12
+gaps inner 10
 gaps outer 0
 gaps horizontal 0
 gaps vertical 0
