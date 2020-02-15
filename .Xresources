@@ -72,6 +72,14 @@ URxvt.resize-font.bigger:  M-equal
 URxvt.resize-font.reset:   M-0
 URxvt.resize-font.show:    M-slash
 
+!! Navigation
+! scroll by line
+URxvt.keysym.M-Up: command:\033]720;1\007
+URxvt.keysym.M-Down: command:\033]721;1\007
+! jump to word
+URxvt.keysym.C-Right: \033[1;5C
+URxvt.keysym.C-Left: \033[1;5D
+
 !! Bell command
 URxvt.bell-command: canberra-gtk-play -i bell
 
