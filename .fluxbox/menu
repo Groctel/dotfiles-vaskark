@@ -1,0 +1,72 @@
+[begin] (MAIN MENU)
+[encoding] {UTF-8}
+
+	[nop]
+	[exec] (Run..) {rofi -show drun}
+	[exec] (Term) {kitty}
+	[exec] (Chrome) {google-chrome}
+	
+	[separator]
+
+	[submenu] (Accessories) {ACCESSORIES}
+	[nop]
+		[exec] (Picom) {pkill picom; picom}
+		[exec] (Evince) {evince}
+		[exec] (File Roller) {file-roller}
+		[exec] (Gucharmap) {gucharmap}
+		[exec] (Nautilus) {nautilus}
+		[exec] (Nautilus as Root) {pkexec nautilus}
+	[nop]
+	[end]
+	[submenu] (Internet) {INTERNET}
+
+	[nop]
+		[exec] (Google Chrome) {google-chrome}
+		[exec] (Network Manager) {nm-connection-editor}
+		[exec] (Transmission) {transmission-gtk}
+	[nop]
+	[end]
+
+	[submenu] (Multimedia) {MULTIMEDIA}
+	[nop]
+		[exec] (Audacious) {audacious}
+		[exec] (GIMP) {gimp}
+		[exec] (Inkscape) {inkscape}
+		[exec] (Pulse Audio) {pavucontrol}
+		[exec] (Screenshot) {screenshot.sh full}
+	[nop]
+	[end]
+
+	[submenu] (Office) {OFFICE}
+	[nop]
+		[exec] (LibreOffice Calc) {libreoffice --calc}
+		[exec] (LibreOffice Writer) {libreoffice --writer}
+		[exec] (Printer Manager) {system-config-printer}
+	[nop]
+	[end]
+
+	[submenu] (System) {SYSTEM}
+	[nop]
+		[exec] (Appearance) {lxappearance}
+		[exec] (Edit Autostart) {xdg-open ~/.fluxbox/startup}
+		[exec] (Edit Init) {xdg-open ~/.fluxbox/init}
+		[exec] (Edit Keybinds) {xdg-open ~/.fluxbox/keys}
+		[exec] (Edit Menu) {xdg-open ~/.fluxbox/menu}
+		[restart] (Reload Fluxbox)
+	[nop]
+	[end]
+
+	[separator]
+
+	[submenu] (Exit) {EXIT}
+	[nop]
+		[exit] (Logout)
+		[exec] (Sleep) {systemctl suspend}
+		[exec] (Reboot) {systemctl reboot}
+		[exec] (Poweroff) {systemctl poweroff}
+	[nop]
+	[end]
+
+[nop]
+[endencoding]
+[end]
