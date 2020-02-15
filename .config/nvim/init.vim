@@ -68,7 +68,7 @@ imap <C-e> <end>
 cmap <C-a> <home>
 cmap <C-e> <end>
 
-" Nerdtree
+" Nerdtree toggle
 map <C-n> :NERDTreeToggle<CR>
 
 " Control-S Save
@@ -257,7 +257,7 @@ let g:ctrlp_clear_cache_on_exit = 0
 " Lightline
 " Get default from :h lightline
 let g:lightline = {
-    \ 'colorscheme': 'jellybeans',
+    \ 'colorscheme': 'wal',
     \ }
 
 let g:lightline.active = {
@@ -310,19 +310,19 @@ let g:lightline.component = {
     \ 'sep1': ''
     \}
 
-let g:lightline.mode_map = {
-    \ 'n' : 'N',
-    \ 'i' : 'I',
-    \ 'R' : 'R',
-    \ 'v' : 'V',
-    \ 'V' : 'L',
-    \ "\<C-v>": 'B',
-    \ 'c' : 'C',
-    \ 's' : 'S',
-    \ 'S' : 'S-LINE',
-    \ "\<C-s>": 'S-BLOCK',
-    \ 't': 'T',
-    \ }
+"let g:lightline.mode_map = {
+"    \ 'n' : 'N',
+"    \ 'i' : 'I',
+"    \ 'R' : 'R',
+"    \ 'v' : 'V',
+"    \ 'V' : 'L',
+"    \ "\<C-v>": 'B',
+"    \ 'c' : 'C',
+"    \ 's' : 'S',
+"    \ 'S' : 'S-LINE',
+"    \ "\<C-s>": 'S-BLOCK',
+"    \ 't': 'T',
+"    \ }
 
 let g:lightline.separator = {
     \   'left': '', 'right': ''
