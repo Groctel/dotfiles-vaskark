@@ -15,11 +15,11 @@ xmodmap "/home/jason/.Xmodmap"
 # wmsmixer -w &
 # idesk &
 
-picom.sh
+picom-xrender.sh
 #wal -R &
 xautolock.sh &
 redshift.sh &
-hsetroot -fill ~/Pictures/binocular.jpg
+hsetroot -fill ~/.fluxbox/binocular.jpg
 xset +fp ~/.fonts/misc/
 
 # Debian-local change:
@@ -33,6 +33,4 @@ fi
 # And last but not least we start fluxbox.
 # Because it is the last app you have to run it with ''exec'' before it.
 
-exec fluxbox -no-slit
-# or if you want to keep a log:
-# exec fluxbox -log "/home/jason/.fluxbox/log"
+exec fluxbox -no-slit -log "~/.fluxbox/log"
