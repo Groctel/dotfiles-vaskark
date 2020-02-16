@@ -10,6 +10,7 @@ const char* emoji[]   = {"rofi-emoji.sh", 0};
 const char* term[]    = {"kitty",             0};
 const char* nmd[]      = {"networkmanager_dmenu", 0};
 const char* shot[]   = {"screenshot.sh", "full",            0};
+const char* wshot[]  = {"screenshot.sh", "window", 0};
 const char* briup[]   = {"light", "-A", "5", 0};
 const char* bridown[] = {"light", "-U", "5", 0};
 const char* voldown[] = {"pactl", "set-sink-volume", "@DEFAULT_SINK@", "-5%",         0};
@@ -44,6 +45,7 @@ static struct key keys[] = {
     {MOD|ShiftMask,     XK_d,      	run, {.com = emoji}},
     {MOD,       	XK_n,		run, {.com = nmd}},
     {MOD,           	XK_Print,      	run, {.com = shot}},
+    {MOD|ShiftMask,     XK_Print,      	run, {.com = wshot}},
     {MOD,           	XK_Return, 	run, {.com = term}},
 
     {MOD, 		XK_Escape, 	run, {.com = lock}},
