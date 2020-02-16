@@ -21,7 +21,7 @@
 	[nop]
 	[end]
 
-    	[submenu] (Dev) {DEV}
+    	[submenu] (Develop) {    DEVELOP    }
         [nop]
         	[exec] (gitg) {gitg}
         	[exec] (Meld) {meld}

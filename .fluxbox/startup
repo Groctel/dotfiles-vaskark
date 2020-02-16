@@ -5,7 +5,7 @@ picom.sh
 #wal -R &
 xautolock.sh &
 redshift.sh &
-hsetroot -fill ~/.fluxbox/wallpaper.jpg
+hsetroot -fill ~/Pictures/835834-m.jpg
 xset +fp ~/.fonts/misc/
 
 # Debian-local change:
