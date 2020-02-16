@@ -1,7 +1,10 @@
 !! Appearance
 URxvt*termName: rxvt-unicode-256
+
+URxvt*font: xft:scientifica:bold:size=11
+!URxvt*font: xft:Cozette:size=9
+
 !URxvt*font: xft:Monospace:size=8, xft:MesloLGS NF:size=8
-URxvt*font: xft:scientifica:style=Bold:size=11
 !URxvt*boldFont: xft:Monospace:bold:size=8, xft:MesloLGS NF:bold:size=8
 !URxvt*italicFont: xft:Monospace:italic:size=8, xft:MesloLGS NF:italic:size=8
 !URxvt*boldItalicFont: xft:Monospace:bolditalic:size=8, xft:MesloLGS NF:bolditalic:size=8

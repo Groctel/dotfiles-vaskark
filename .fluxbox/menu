@@ -21,10 +21,10 @@
 	[nop]
 	[end]
 
-    	[submenu] (Develop) {    DEVELOP    }
+    	[submenu] (Develop) {DEVELOP}
         [nop]
         	[exec] (gitg) {gitg}
-        	[exec] (Meld) {meld}
+        	[exec] (Meld Diff Viewer) {meld}
 	[nop]
     	[end]
 

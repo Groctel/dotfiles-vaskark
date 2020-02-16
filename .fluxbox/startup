@@ -7,6 +7,7 @@ xautolock.sh &
 redshift.sh &
 hsetroot -fill ~/Pictures/835834-m.jpg
 xset +fp ~/.fonts/misc/
+/usr/lib/policykit-1-gnome/polkit-gnome-authentication-agent-1 &
 
 # Debian-local change:
 #   - fbautostart has been added with a quick hack to check to see if it
