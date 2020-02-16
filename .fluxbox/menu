@@ -2,7 +2,6 @@
 [encoding] {UTF-8}
 
 	[nop]
-	[exec] (Run ...) {rofi -show drun}
 	[exec] (Term) {kitty}
 	[exec] (Web) {google-chrome}
 	
