@@ -15,7 +15,7 @@ xmodmap "/home/jason/.Xmodmap"
 # wmsmixer -w &
 # idesk &
 
-picom-xrender.sh
+picom.sh
 #wal -R &
 xautolock.sh &
 redshift.sh &
