@@ -121,6 +121,14 @@ modules-right = mpd-time
 
 ;wm-restack = i3
 
+[module/sep]
+type = custom/text
+content = "| "
+
+content-background = ${color.alpha}
+content-foreground = ${color.alpha}
+content-padding = 0
+
 [module/i3]
 type = internal/i3
 index-sort = true

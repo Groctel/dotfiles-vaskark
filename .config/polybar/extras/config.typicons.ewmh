@@ -65,7 +65,7 @@ module-margin-right = 0
 font-0 = "Iosevka Term:style=regular:size=7.5;2"
 font-1 = "Typicons:style=Book:size=10;2"
 
-modules-left = ewmh spacer mpd-controls
+modules-left = ewmh sep mpd-controls
 modules-center = mpd
 modules-right = network backlight pulseaudio memory battery temperature date session
 
@@ -120,9 +120,13 @@ modules-right = mpd-time
 
 ;wm-restack = i3
 
-[module/spacer]
+[module/sep]
 type = custom/text
-content = " "
+content = "| "
+
+content-background = ${color.alpha}
+content-foreground = ${color.alpha}
+content-padding = 0
 
 [module/ewmh]
 type = internal/xworkspaces
