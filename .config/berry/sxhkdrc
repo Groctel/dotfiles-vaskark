@@ -53,7 +53,7 @@ XF86MonBrightnessDown
 
 # wal
 super + F8
-	wal-favs.sh
+	sxiv ~/Pictures/favs -rt
 super + F9
         wal -i ~/Pictures/favs/ -a 90 -o "wal-berry.sh"
 super + F10
