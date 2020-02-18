@@ -92,7 +92,7 @@
                 [exec] (Bleachbit) {bleachbit}
         	[exec] (Htop) {kitty -e htop}
 	        [exec] (Passwords and Keys) {seahorse}
-            	[exec] (Synaptic Package Manager) {x-terminal-emulator -e synaptic-pkexec}
+            	[exec] (Synaptic) {synaptic-pkexec}
 		[exec] (System Log) {gnome-system-log}
         	[exec] (System Monitor) {gnome-system-monitor}
 	[nop]
