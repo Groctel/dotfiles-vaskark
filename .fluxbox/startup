@@ -6,7 +6,7 @@ picom.sh
 xautolock.sh &
 redshift.sh &
 hsetroot -fill ~/Pictures/835834-m.jpg
-xset +fp ~/.local/share/fonts/misc/
+xset +fp ~/.local/share/fonts/bitmaps/
 /usr/lib/policykit-1-gnome/polkit-gnome-authentication-agent-1 &
 
 # Debian-local change:
