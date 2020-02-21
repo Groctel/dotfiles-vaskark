@@ -8,7 +8,7 @@ w=$(( width-(2*b) ))
 # dmenu2
 dmenu_run \
 -fn 'Iosevka Custom-8' \
--h 28 \
+-h 30 \
 -p ' dmenu: ' \
 -i \
 -nb "#ffffff" \

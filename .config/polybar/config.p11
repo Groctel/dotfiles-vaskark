@@ -54,15 +54,15 @@ fixed-center = true
 ; Dimension defined as pixel value (e.g. 35) or percentage (e.g. 50%),
 ; the percentage can optionally be extended with a pixel offset like so:
 ; 50%:-10, this will result in a width or height of 50% minus 10 pixels
-width = 99%
+width = 100%
 height = 30
 
 ; Offset defined as pixel value (e.g. 35) or percentage (e.g. 50%)
 ; the percentage can optionally be extended with a pixel offset like so:
 ; 50%:-10, this will result in an offset in the x or y direction 
 ; of 50% minus 10 pixels
-offset-x = 0.5%
-offset-y = 1%
+;offset-x = 0.5%
+;offset-y = 1%
 
 ; Background ARGB color (e.g. #f00, #ff992a, #ddff1023)
 background = ${color.alpha}
@@ -100,8 +100,8 @@ line-color = ${color.shade5}
 ; the border is placed withing this area. So you effectively only have the
 ; following horizontal space on the bar:
 ;   width - border-right-size - border-left-size
-border-top-size = 0
-border-color = ${color.shade5}
+border-size = 5
+border-color = ${color.alpha}
 
 ; Number of spaces to add at the beginning/end of the bar
 ; Individual side values can be defined using:
@@ -333,12 +333,12 @@ fg-alt = #141C21
 
 alpha = #00000000
 
-shade1 = #F57C00
-shade2 = #FB8C00
-shade3 = #FF9800
-shade4 = #FFA726
-shade5 = #FFB74D
-shade6 = #FFCC80
+shade1 = #0288D1
+shade2 = #039BE5
+shade3 = #03A9F4
+shade4 = #29B6F6
+shade5 = #4FC3F7
+shade6 = #81D4FA
 
 ;; _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_
 ;;
@@ -586,7 +586,7 @@ label-empty-padding = 2
 
 [module/sep]
 type = custom/text
-content = "| "
+content = "|"
 
 content-background = ${color.alpha}
 content-foreground = ${color.alpha}
