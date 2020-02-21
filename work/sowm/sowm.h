@@ -3,6 +3,7 @@
 #define win        (client *t=0, *c=list; c && t!=list->prev; t=c, c=c->next)
 #define ws_save(W) ws_list[W] = list
 #define ws_sel(W)  list = ws_list[ws = W]
+#define MAX(a, b)  ((a) > (b) ? (a) : (b))
 
 #define win_size(W, gx, gy, gw, gh) \
     XGetGeometry(d, W, &(Window){0}, gx, gy, gw, gh, \
@@ -50,10 +51,8 @@ void win_focus(client *c);
 void win_kill(const Arg arg);
 void win_prev(const Arg arg);
 void win_next(const Arg arg);
+void win_move(const Arg arg);
 void win_to_ws(const Arg arg);
 void ws_go(const Arg arg);
-static void apply(int x, int y, int w, int h);
-static void move(const Arg arg);
-static void ws_toggle(const Arg arg);
-static void ws_toggle_all(const Arg arg);
-int  xerror() { return 0; }
+
+static int xerror() { return 0; }

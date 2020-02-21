@@ -13,10 +13,10 @@
 static client       *list = {0}, *ws_list[10] = {0}, *cur;
 static int          ws = 1, sw, sh, wx, wy, numlock = 0;
 static unsigned int ww, wh;
-static int			is_ws_enabled[10] = {0}; /* +1 the amount of ws */
 
 static Display      *d;
 static XButtonEvent mouse;
+static Window       root;
 
 static void (*events[LASTEvent])(XEvent *e) = {
     [ButtonPress]      = button_press,
@@ -31,26 +31,17 @@ static void (*events[LASTEvent])(XEvent *e) = {
 
 #include "config.h"
 
-void apply(int x, int y, int w, int h) {
-    win_size(cur->w, &wx, &wy, &ww, &wh);
-    XMoveResizeWindow(d, cur->w,
-        wx + x, wy + y,
-        ww + w, wh + h);
-}
+void win_move(const Arg arg) {
+    int  r = arg.com[0][0] == 'r';
+    char m = arg.com[1][0];
 
-void move(const Arg arg) {
-	 if(arg.com[1]=="left") {
-        apply((arg.com[0]=="resize")?0:-arg.i, 0, (arg.com[0]=="resize")?-arg.i:0, 0);
-    }
-    else if(arg.com[1]=="right"){
-        apply((arg.com[0]=="resize")?0:arg.i, 0, (arg.com[0]=="resize")?arg.i:0, 0);
-    }
-    else if(arg.com[1]=="up"){
-        apply(0, (arg.com[0]=="resize")?0:-arg.i, 0, (arg.com[0]=="resize")?-arg.i:0);
-    }
-    else if(arg.com[1]=="down"){
-        apply(0, (arg.com[0]=="resize")?0:arg.i, 0, (arg.com[0]=="resize")?arg.i:0);
-    }
+    win_size(cur->w, &wx, &wy, &ww, &wh);
+
+    XMoveResizeWindow(d, cur->w, \
+        wx + (r ? 0 : m == 'e' ?  arg.i : m == 'w' ? -arg.i : 0),
+        wy + (r ? 0 : m == 'n' ? -arg.i : m == 's' ?  arg.i : 0),
+        MAX(10, ww + (r ? m == 'e' ?  arg.i : m == 'w' ? -arg.i : 0 : 0)),
+        MAX(10, wh + (r ? m == 'n' ? -arg.i : m == 's' ?  arg.i : 0 : 0)));
 }
 
 void win_focus(client *c) {
@@ -81,8 +72,8 @@ void notify_motion(XEvent *e) {
     XMoveResizeWindow(d, mouse.subwindow,
         wx + (mouse.button == 1 ? xd : 0),
         wy + (mouse.button == 1 ? yd : 0),
-        ww + (mouse.button == 3 ? xd : 0),
-        wh + (mouse.button == 3 ? yd : 0));
+        MAX(1, ww + (mouse.button == 3 ? xd : 0)),
+        MAX(1, wh + (mouse.button == 3 ? yd : 0)));
 }
 
 void key_press(XEvent *e) {
@@ -99,14 +90,6 @@ void button_press(XEvent *e) {
 
     win_size(e->xbutton.subwindow, &wx, &wy, &ww, &wh);
     XRaiseWindow(d, e->xbutton.subwindow);
-
-		int sd = 0;
-		if(e->xbutton.button == Button4) sd = WHEELSTEP;
-		else if(e->xbutton.button == Button5) sd = -WHEELSTEP;
-
-		XMoveResizeWindow(d, e->xbutton.subwindow,
-				wx - sd, wy - sd,
-				ww + sd*2, wh + sd*2);
     mouse = e->xbutton;
 }
 
@@ -152,17 +135,7 @@ void win_del(Window w) {
 }
 
 void win_kill(const Arg arg) {
-    if (!cur) return;
-
-    XEvent ev = { .type = ClientMessage };
-
-    ev.xclient.window       = cur->w;
-    ev.xclient.format       = 32;
-    ev.xclient.message_type = XInternAtom(d, "WM_PROTOCOLS", True);
-    ev.xclient.data.l[0]    = XInternAtom(d, "WM_DELETE_WINDOW", True);
-    ev.xclient.data.l[1]    = CurrentTime;
-
-    XSendEvent(d, cur->w, False, NoEventMask, &ev);
+    if (cur) XKillClient(d, cur->w);
 }
 
 void win_center(const Arg arg) {
@@ -179,8 +152,9 @@ void win_fs(const Arg arg) {
         win_size(cur->w, &cur->wx, &cur->wy, &cur->ww, &cur->wh);
         XMoveResizeWindow(d, cur->w, 0, 0, sw, sh);
 
-    } else
+    } else {
         XMoveResizeWindow(d, cur->w, cur->wx, cur->wy, cur->ww, cur->wh);
+    }
 }
 
 void win_to_ws(const Arg arg) {
@@ -215,66 +189,22 @@ void win_next(const Arg arg) {
 }
 
 void ws_go(const Arg arg) {
+    int tmp = ws;
 
-    int i;
+    if (arg.i == ws) return;
 
     ws_save(ws);
-    for (i = 1; i <= 9; i++) {
-	if (i != arg.i) {
-		ws_sel(i);
-		if (list) for win XUnmapWindow(d, c->w);
-		is_ws_enabled[i] = 0;
-	}
-    }
+    ws_sel(arg.i);
+
+    for win XMapWindow(d, c->w);
+
+    ws_sel(tmp);
+
+    for win XUnmapWindow(d, c->w);
 
     ws_sel(arg.i);
 
-    if (list) for win XMapWindow(d, c->w);
     if (list) win_focus(list); else cur = 0;
-}
-
-void
-ws_toggle(const Arg arg)
-{
-	int i, tmp = -1;
-
-	if (arg.i == ws) {
-		for (i = 1; i <= 9; i++) {
-			if (is_ws_enabled[i] && i != ws) {
-				tmp = i;
-				break;
-			}
-		}
-
-		if (tmp > 0)
-			ws_sel(tmp);
-		else
-			return;
-	}
-
-	tmp = ws;
-
-	ws_sel(arg.i);
-	if (is_ws_enabled[arg.i]) {
-		is_ws_enabled[arg.i] = 0;
-		if (list) for win XUnmapWindow(d, c->w);
-	} else {
-		is_ws_enabled[arg.i] = 1;
-		if (list) for win XMapWindow(d, c->w);
-	}
-	ws_sel(tmp);
-}
-
-void
-ws_toggle_all(const Arg arg)
-{
-	int i, tmp = ws;
-	for (i = 1; i <= 6; i++) {
-		ws_sel(i);
-		if (list) for win XMapWindow(d, c->w);
-		is_ws_enabled[i] = 1;
-	}
-	ws_sel(tmp);
 }
 
 void configure_request(XEvent *e) {
@@ -329,7 +259,7 @@ void input_grab(Window root) {
                 XGrabKey(d, code, keys[i].mod | modifiers[j], root,
                         True, GrabModeAsync, GrabModeAsync);
 
-    for (i = 1; i < 6; i++)
+    for (i = 1; i < 4; i += 2)
         for (j = 0; j < sizeof(modifiers)/sizeof(*modifiers); j++)
             XGrabButton(d, i, MOD | modifiers[j], root, True,
                 ButtonPressMask|ButtonReleaseMask|PointerMotionMask,
@@ -346,10 +276,10 @@ int main(void) {
     signal(SIGCHLD, SIG_IGN);
     XSetErrorHandler(xerror);
 
-    int s       = DefaultScreen(d);
-    Window root = RootWindow(d, s);
-    sw          = XDisplayWidth(d, s);
-    sh          = XDisplayHeight(d, s);
+    int s = DefaultScreen(d);
+    root  = RootWindow(d, s);
+    sw    = XDisplayWidth(d, s);
+    sh    = XDisplayHeight(d, s);
 
     XSelectInput(d,  root, SubstructureRedirectMask);
     XDefineCursor(d, root, XCreateFontCursor(d, 68));

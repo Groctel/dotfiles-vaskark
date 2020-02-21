@@ -1,7 +1,6 @@
 #ifndef CONFIG_H
 #define CONFIG_H
 
-#define WHEELSTEP 5
 #define MOD Mod4Mask
 
 const char* menu[]    = {"dmenu.sh",      0};
@@ -33,12 +32,12 @@ const char* reboot[] = {"systemctl", "reboot", 0};
 const char* shutdown[] = {"systemctl", "poweroff", 0};
 
 static struct key keys[] = {
-    {MOD,      		XK_q,   	win_kill,   {0}},
-    {MOD,      		XK_c,   	win_center, {0}},
-    {MOD,      		XK_f,   	win_fs,     {0}},
+    {MOD,      XK_q,   win_kill,   {0}},
+    {MOD,      XK_c,   win_center, {0}},
+    {MOD,      XK_f,   win_fs,     {0}},
 
-    {Mod1Mask,          XK_Tab, 	win_next,   {0}},
-    {Mod1Mask|ShiftMask, XK_Tab, 	win_prev,   {0}},
+    {Mod1Mask,           XK_Tab, win_next,   {0}},
+    {Mod1Mask|ShiftMask, XK_Tab, win_prev,   {0}},
 
     {MOD,	        XK_x,	   	run, {.com = menu}},
     {MOD, 	    	XK_d,      	run, {.com = rofi}},
@@ -63,51 +62,44 @@ static struct key keys[] = {
     {MOD|ShiftMask,	XK_Delete,	run, {.com = reboot}},
     {MOD|ControlMask,	XK_Delete,	run, {.com = shutdown}},
 
+    {MOD,           XK_k,  win_move,  {.com = (const char*[]){"move",   "n"}, .i = 30}},
+    {MOD,           XK_j,  win_move,  {.com = (const char*[]){"move",   "s"}, .i = 30}},
+    {MOD,           XK_l,  win_move,  {.com = (const char*[]){"move",   "e"}, .i = 30}},
+    {MOD,           XK_h,  win_move,  {.com = (const char*[]){"move",   "w"}, .i = 30}},
+
+    {MOD|ShiftMask, XK_k,  win_move,  {.com = (const char*[]){"resize", "n"}, .i = 30}},
+    {MOD|ShiftMask, XK_j,  win_move,  {.com = (const char*[]){"resize", "s"}, .i = 30}},
+    {MOD|ShiftMask, XK_l,  win_move,  {.com = (const char*[]){"resize", "e"}, .i = 30}},
+    {MOD|ShiftMask, XK_h,  win_move,  {.com = (const char*[]){"resize", "w"}, .i = 30}},
+
+    {MOD,           XK_Up,  win_move,  {.com = (const char*[]){"move",   "n"}, .i = 30}},
+    {MOD,           XK_Down,  win_move,  {.com = (const char*[]){"move",   "s"}, .i = 30}},
+    {MOD,           XK_Right,  win_move,  {.com = (const char*[]){"move",   "e"}, .i = 30}},
+    {MOD,           XK_Left,  win_move,  {.com = (const char*[]){"move",   "w"}, .i = 30}},
+
+    {MOD|ShiftMask, XK_Up,  win_move,  {.com = (const char*[]){"resize", "n"}, .i = 30}},
+    {MOD|ShiftMask, XK_Down,  win_move,  {.com = (const char*[]){"resize", "s"}, .i = 30}},
+    {MOD|ShiftMask, XK_Right,  win_move,  {.com = (const char*[]){"resize", "e"}, .i = 30}},
+    {MOD|ShiftMask, XK_Left,  win_move,  {.com = (const char*[]){"resize", "w"}, .i = 30}},
+
     {0,   XF86XK_AudioLowerVolume,  run, {.com = voldown}},
     {0,   XF86XK_AudioRaiseVolume,  run, {.com = volup}},
     {0,   XF86XK_AudioMute,         run, {.com = volmute}},
     {0,   XF86XK_MonBrightnessUp,   run, {.com = briup}},
     {0,   XF86XK_MonBrightnessDown, run, {.com = bridown}},
 
-    {MOD,           	XK_h,      	move,  {.com=(char*[]){"move", "left"}, .i=30}},
-    {MOD,           	XK_j,      	move,  {.com=(char*[]){"move", "down"}, .i=30}},
-    {MOD,           	XK_k,      	move,  {.com=(char*[]){"move", "up"}, .i=30}},
-    {MOD,           	XK_l,      	move,  {.com=(char*[]){"move", "right"}, .i=30}},
-    {MOD|ShiftMask, 	XK_h,      	move,  {.com=(char*[]){"resize", "left"}, .i=30}},
-    {MOD|ShiftMask, 	XK_j,      	move,  {.com=(char*[]){"resize", "down"}, .i=30}},
-    {MOD|ShiftMask, 	XK_k,      	move,  {.com=(char*[]){"resize", "up"}, .i=30}},
-    {MOD|ShiftMask, 	XK_l,      	move,  {.com=(char*[]){"resize", "right"}, .i=30}},
-
-    {MOD,           	XK_Left,   	move,  {.com=(char*[]){"move", "left"}, .i=30}},
-    {MOD,           	XK_Down,   	move,  {.com=(char*[]){"move", "down"}, .i=30}},
-    {MOD,           	XK_Up,     	move,  {.com=(char*[]){"move", "up"}, .i=30}},
-    {MOD,           	XK_Right,  	move,  {.com=(char*[]){"move", "right"}, .i=30}},
-    {MOD|ShiftMask, 	XK_Left,   	move,  {.com=(char*[]){"resize", "left"}, .i=30}},
-    {MOD|ShiftMask, 	XK_Down,   	move,  {.com=(char*[]){"resize", "down"}, .i=30}},
-    {MOD|ShiftMask, 	XK_Up,     	move,  {.com=(char*[]){"resize", "up"}, .i=30}},
-    {MOD|ShiftMask, 	XK_Right,  	move,  {.com=(char*[]){"resize", "right"}, .i=30}},
-
-    {MOD,               XK_1, ws_go,     	{.i = 1}},
-    {MOD|ShiftMask,     XK_1, win_to_ws, 	{.i = 1}},
-    {MOD|ControlMask,   XK_1,ws_toggle, 	{.i = 1}},
-
-    {MOD,               XK_2, ws_go,     	{.i = 2}},
-    {MOD|ShiftMask,     XK_2, win_to_ws, 	{.i = 2}},
-    {MOD|ControlMask,   XK_2,ws_toggle, 	{.i = 2}},
-
-    {MOD,               XK_3, ws_go,     	{.i = 3}},
-    {MOD|ShiftMask,     XK_3, win_to_ws, 	{.i = 3}},
-    {MOD|ControlMask,   XK_3,ws_toggle, 	{.i = 3}},
-
-    {MOD,               XK_4, ws_go,     	{.i = 4}},
-    {MOD|ShiftMask,     XK_4, win_to_ws, 	{.i = 4}},
-    {MOD|ControlMask,   XK_4,ws_toggle, 	{.i = 4}},
-
-    {MOD,               XK_5, ws_go,     	{.i = 5}},
-    {MOD|ShiftMask,     XK_5, win_to_ws, 	{.i = 5}},
-    {MOD|ControlMask,   XK_5,ws_toggle, 	{.i = 5}},
-    
-    {MOD,               XK_0, ws_toggle_all, 	{.i = 0}},
+    {MOD,           XK_1, ws_go,     {.i = 1}},
+    {MOD|ShiftMask, XK_1, win_to_ws, {.i = 1}},
+    {MOD,           XK_2, ws_go,     {.i = 2}},
+    {MOD|ShiftMask, XK_2, win_to_ws, {.i = 2}},
+    {MOD,           XK_3, ws_go,     {.i = 3}},
+    {MOD|ShiftMask, XK_3, win_to_ws, {.i = 3}},
+    {MOD,           XK_4, ws_go,     {.i = 4}},
+    {MOD|ShiftMask, XK_4, win_to_ws, {.i = 4}},
+    {MOD,           XK_5, ws_go,     {.i = 5}},
+    {MOD|ShiftMask, XK_5, win_to_ws, {.i = 5}},
+    {MOD,           XK_6, ws_go,     {.i = 6}},
+    {MOD|ShiftMask, XK_6, win_to_ws, {.i = 6}},
 };
 
 #endif
