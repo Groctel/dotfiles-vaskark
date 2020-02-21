@@ -3,33 +3,33 @@
 
 #define MOD Mod4Mask
 
-const char* menu[]    = {"dmenu.sh",      0};
-const char* rofi[]    = {"rofi", "-show", "drun",      0};
-const char* emoji[]   = {"rofi-emoji.sh", 0};
-const char* term[]    = {"kitty",             0};
-const char* nmd[]      = {"networkmanager_dmenu", 0};
-const char* shot[]   = {"screenshot.sh", "full",            0};
-const char* wshot[]  = {"screenshot.sh", "window", 0};
-const char* briup[]   = {"light", "-A", "5", 0};
-const char* bridown[] = {"light", "-U", "5", 0};
-const char* voldown[] = {"pactl", "set-sink-volume", "@DEFAULT_SINK@", "-5%",         0};
-const char* volup[]   = {"pactl", "set-sink-volume", "@DEFAULT_SINK@", "+5%",         0};
-const char* volmute[] = {"pactl", "set-sink-mute", "@DEFAULT_SINK@", "toggle",      0};
+const char* menu[]	= {"dmenu.sh",      0};
+const char* rofi[]	= {"rofi", "-show", "drun",      0};
+const char* emoji[]	= {"rofi-emoji.sh", 0};
+const char* term[]	= {"kitty",             0};
+const char* nmd[] 	= {"networkmanager_dmenu", 0};
+const char* shot[]	= {"screenshot.sh", "full",            0};
+const char* wshot[] 	= {"screenshot.sh", "window", 0};
+const char* briup[] 	= {"light", "-A", "5", 0};
+const char* bridown[] 	= {"light", "-U", "5", 0};
+const char* voldown[] 	= {"pactl", "set-sink-volume", "@DEFAULT_SINK@", "-5%",         0};
+const char* volup[] 	= {"pactl", "set-sink-volume", "@DEFAULT_SINK@", "+5%",         0};
+const char* volmute[] 	= {"pactl", "set-sink-mute", "@DEFAULT_SINK@", "toggle",      0};
 
-const char* lock[] = {"betterlockscreen", "-l", "pixel", 0};
-const char* nautilus[] = {"nautilus", 0};
-const char* chrome[] = {"google-chrome", 0};
-const char* music[] = {"kitty", "-e", "ncmpcpp", 0};
+const char* lock[] 	= {"betterlockscreen", "-l", "pixel", 0};
+const char* nautilus[] 	= {"nautilus", 0};
+const char* chrome[] 	= {"google-chrome", 0};
+const char* music[] 	= {"kitty", "-e", "ncmpcpp", 0};
 
-const char* w0[] = {"sxiv", "/home/jason/Pictures/favs/", "-rt", 0};
-const char* w1[] = {"wal", "-i", "/home/jason/Pictures/favs/", 0};
-const char* w2[] = {"wal", "--theme", "random", 0};
-const char* wf[] = {"wal", "--theme", "dkeg-skigh", 0}; 
-const char* wr[] = {"wal", "-R", 0};
+const char* w0[] 	= {"sxiv", "/home/jason/Pictures/favs/", "-rt", 0};
+const char* w1[] 	= {"wal", "-i", "/home/jason/Pictures/favs/", 0};
+const char* w2[] 	= {"wal", "--theme", "random", 0};
+const char* wf[] 	= {"wal", "--theme", "dkeg-skigh", 0}; 
+const char* wr[] 	= {"wal", "-R", 0};
 
-const char* quit[] = {"pkill", "x", 0};
-const char* reboot[] = {"systemctl", "reboot", 0};
-const char* shutdown[] = {"systemctl", "poweroff", 0};
+const char* quit[] 	= {"pkill", "x", 0};
+const char* reboot[] 	= {"systemctl", "reboot", 0};
+const char* shutdown[] 	= {"systemctl", "poweroff", 0};
 
 static struct key keys[] = {
     {MOD,      XK_q,   win_kill,   {0}},
@@ -67,15 +67,15 @@ static struct key keys[] = {
     {MOD,           XK_l,  win_move,  {.com = (const char*[]){"move",   "e"}, .i = 30}},
     {MOD,           XK_h,  win_move,  {.com = (const char*[]){"move",   "w"}, .i = 30}},
 
-    {MOD|ShiftMask, XK_k,  win_move,  {.com = (const char*[]){"resize", "n"}, .i = 30}},
-    {MOD|ShiftMask, XK_j,  win_move,  {.com = (const char*[]){"resize", "s"}, .i = 30}},
-    {MOD|ShiftMask, XK_l,  win_move,  {.com = (const char*[]){"resize", "e"}, .i = 30}},
-    {MOD|ShiftMask, XK_h,  win_move,  {.com = (const char*[]){"resize", "w"}, .i = 30}},
-
     {MOD,           XK_Up,  win_move,  {.com = (const char*[]){"move",   "n"}, .i = 30}},
     {MOD,           XK_Down,  win_move,  {.com = (const char*[]){"move",   "s"}, .i = 30}},
     {MOD,           XK_Right,  win_move,  {.com = (const char*[]){"move",   "e"}, .i = 30}},
     {MOD,           XK_Left,  win_move,  {.com = (const char*[]){"move",   "w"}, .i = 30}},
+
+    {MOD|ShiftMask, XK_k,  win_move,  {.com = (const char*[]){"resize", "n"}, .i = 30}},
+    {MOD|ShiftMask, XK_j,  win_move,  {.com = (const char*[]){"resize", "s"}, .i = 30}},
+    {MOD|ShiftMask, XK_l,  win_move,  {.com = (const char*[]){"resize", "e"}, .i = 30}},
+    {MOD|ShiftMask, XK_h,  win_move,  {.com = (const char*[]){"resize", "w"}, .i = 30}},
 
     {MOD|ShiftMask, XK_Up,  win_move,  {.com = (const char*[]){"resize", "n"}, .i = 30}},
     {MOD|ShiftMask, XK_Down,  win_move,  {.com = (const char*[]){"resize", "s"}, .i = 30}},
