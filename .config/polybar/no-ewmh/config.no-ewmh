@@ -169,7 +169,7 @@ type = internal/mpd
 host = 127.0.0.1
 port = 6600
 
-format-online = <toggle><icon-next>
+format-online = <icon-prev><toggle><icon-next>
 
 icon-prev = 
 icon-play = 
@@ -184,7 +184,7 @@ icon-prev-foreground = ${colors.color0}
 icon-play-foreground = ${colors.color3}
 icon-pause-foreground = ${colors.color3}
 icon-next-foreground = ${colors.color0}
-icon-prev-padding = 1
+icon-prev-padding = 2
 icon-play-padding = 2
 icon-pause-padding = 2
 icon-next-padding = 2
