@@ -169,7 +169,7 @@ type = internal/mpd
 host = 127.0.0.1
 port = 6600
 
-format-online = <icon-prev><toggle><icon-next>
+format-online = <toggle><icon-next>
 
 icon-prev = 
 icon-play = 

@@ -52,3 +52,7 @@ www.imdb.com	FALSE	/	FALSE	1628543839	csm-hit	tb:TN8NHW3M0RB63EAA4ZYQ+s-HVB3NM80
 .youtube.com	TRUE	/	FALSE	1587888768	PREF	f5=30000&al=en-GB&f1=50000000
 .google.com	TRUE	/	TRUE	1584469873	1P_JAR	2020-02-16-18
 #HttpOnly_.google.com	TRUE	/	TRUE	1629178756	ANID	AHWqTUnNWQTk-MiBCQoKpirZgckRkB3Gxw9gVF8gAtOvtkgQg1tsjzCRqi-laiRE
+#HttpOnly_wikipedia.org	FALSE	/	TRUE	1585137600	WMF-Last-Access	22-Feb-2020
+#HttpOnly_.wikipedia.org	TRUE	/	TRUE	1585137600	WMF-Last-Access-Global	22-Feb-2020
+#HttpOnly_www.wikipedia.org	FALSE	/	TRUE	1585137600	WMF-Last-Access	22-Feb-2020
+#HttpOnly_en.wikipedia.org	FALSE	/	TRUE	1585137600	WMF-Last-Access	22-Feb-2020

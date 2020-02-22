@@ -86,7 +86,6 @@ themes
 command-not-found
 sudo
 extract
-jump
 colored-man-pages
 )
 
@@ -153,7 +152,6 @@ alias ht='htop -u $USER'
 alias xr="vim ~/.Xresources"
 alias xu='xrdb ~/.Xresources'
 alias m='ncmpcpp'
-alias uf='clear;ufetch'
 alias bf='bunnyfetch'
 alias pf='clear;pfetch'
 alias f='fff'

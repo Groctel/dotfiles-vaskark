@@ -1,5 +1,5 @@
 #!/bin/bash
-polybar-p11.sh
+polybar-no-ewmh.sh
 pulseaudio --start --log-target=syslog &
 #nitrogen --restore &
 wal -R &
