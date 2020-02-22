@@ -148,8 +148,7 @@ font-1 = "Siji:size=8;2"
 ;cpu_bar memory_bar filesystem_bar mpd_bar 
 ;volume brightness battery_bar 
 
-#modules-left = workspaces sep mpd_i mpd
-modules-left = mpd_i sep mpd
+modules-left = workspaces sep mpd_i sep mpd
 modules-center = 
 modules-right = colors sep memory cpu alsa battery network date
 
@@ -566,10 +565,12 @@ label-active = %name%
 label-active-foreground = ${color.fg-alt}
 label-active-background = ${color.shade6}
 
-label-occupied = %icon%
-label-occupied-underline = ${color.fg}
+label-occupied = %name%
+label-occupied-foreground = ${color.shade1}
+label-occupied-background = ${color.bg}
+#label-occupied-underline = ${color.shade1}
 
-label-urgent = %icon%
+label-urgent = %name%
 label-urgent-foreground = ${color.bg}
 label-urgent-background = ${color.bg}
 
