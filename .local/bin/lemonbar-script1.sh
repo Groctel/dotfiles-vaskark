@@ -108,6 +108,6 @@ Groups() {
 }
 
 while true; do
-    echo -e "%{c}$(ActiveWindow)" "%{r}$(Wifi)  $(Battery)  $(Sound)  $(Clock)  "
+    echo -e "%{l}$(Groups)" "%{c}$(ActiveWindow)" "%{r}$(Wifi)  $(Battery)  $(Sound)  $(Clock)  "
 	sleep 0.1s
 done
