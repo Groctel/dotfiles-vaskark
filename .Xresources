@@ -23,7 +23,7 @@ URxvt.urgentOnBell: true
 URxvt.depth: 32
 URxvt.iso14755: true
 
-!! Xft Antialiasing
+!! Xft
 Xft.dpi: 96
 Xft.antialias: true
 Xft.hinting: true
