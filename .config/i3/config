@@ -14,7 +14,7 @@ floating_modifier $mod
 set $term kitty
 
 # font for window titles
-font xft:Iosevka Custom 7.5
+font xft:scientifica bold 8
 
 # hide borders
 hide_edge_borders none
@@ -48,9 +48,13 @@ bindsym $mod+Shift+Down move down
 bindsym $mod+Shift+Up move up
 bindsym $mod+Shift+Right move right
 
-# split orientation
+# split horizontal orientation
 bindsym $mod+h split h
+
+# split vertical orientation
 bindsym $mod+v split v
+
+# split toggle
 #bindsym $mod+Shift+q split toggle
 
 # toggle fullscreen
@@ -267,7 +271,7 @@ smart_borders on
 hide_edge_borders smart_no_gaps
 
 # set inner/outer gaps
-gaps inner 10
+gaps inner 8
 gaps outer 0
 gaps horizontal 0
 gaps vertical 0

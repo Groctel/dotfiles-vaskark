@@ -21,15 +21,15 @@ const char* nautilus[] 	= {"nautilus", 0};
 const char* chrome[] 	= {"google-chrome", 0};
 const char* music[] 	= {"kitty", "-e", "ncmpcpp", 0};
 
-const char* w0[] 	= {"sxiv", "/home/jason/Pictures/favs/", "-rt", 0};
-const char* w1[] 	= {"wal", "-i", "/home/jason/Pictures/favs/", 0};
+const char* w0[] 	= {"sxiv", "~/Pictures/favs/", "-rt", 0};
+const char* w1[] 	= {"wal", "-i", "~/Pictures/favs/", 0};
 const char* w2[] 	= {"wal", "--theme", "random", 0};
 const char* wf[] 	= {"wal", "--theme", "dkeg-skigh", 0}; 
 const char* wr[] 	= {"wal", "-R", 0};
 
 const char* quit[] 	= {"pkill", "x", 0};
 const char* reboot[] 	= {"systemctl", "reboot", 0};
-const char* shutdown[] 	= {"systemctl", "poweroff", 0};
+const char* shutdown[] 	= {"systemctl", "-i", "poweroff", 0};
 
 static struct key keys[] = {
     {MOD,      XK_q,   win_kill,   {0}},
