@@ -275,7 +275,7 @@ gaps inner 8
 gaps outer 0
 gaps horizontal 0
 gaps vertical 0
-gaps top 0
+gaps top -3
 gaps right 0
 gaps bottom 0
 gaps left 0
