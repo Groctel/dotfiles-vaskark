@@ -194,7 +194,7 @@ alias wr='wal -R'
 
 # superuser
 alias reboot='sudo reboot'
-alias shutdown='sudo shutdown now'
+alias shut='sudo shutdown now'
 alias upd8='sudo apt update;sudo apt full-upgrade;sudo apt autoremove;sudo apt clean'
 alias rnm='sudo systemctl restart network-manager'
 alias ffs='sudo !!'
