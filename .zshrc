@@ -22,6 +22,7 @@ ZSH_THEME="agnoster"
 # Specific theme settings
 source ~/.spaceship
 source ~/.powerlevel
+source ~/.bullet-train
 
 # Set list of themes to load
 # Setting this variable when ZSH_THEME=random
