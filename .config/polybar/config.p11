@@ -148,7 +148,7 @@ font-1 = "Siji:size=8;2"
 ;cpu_bar memory_bar filesystem_bar mpd_bar 
 ;volume brightness battery_bar 
 
-modules-left = workspaces sep mpd_i sep mpd
+modules-left = workspaces mpd_i sep mpd
 modules-center = 
 modules-right = colors sep memory cpu alsa battery network date
 
@@ -536,7 +536,7 @@ format-disconnected-background = ${color.shade2}
 format-disconnected-foreground = ${color.fg-alt}
 format-disconnected-padding = 2
 
-label-connected = %essid%
+label-connected = %essid% [%downspeed%]
 label-disconnected =  Disconnected
 
 ; Only applies if <ramp-signal> is used
