@@ -150,7 +150,7 @@ font-1 = "Siji:size=8;2"
 
 modules-left = workspaces mpd_i sep mpd
 modules-center = 
-modules-right = colors sep memory cpu alsa battery network date
+modules-right = colors sep memory cpu alsa battery network wireless date
 
 ; The separator will be inserted between the output of each module
 separator =
@@ -332,12 +332,12 @@ fg-alt = #141C21
 
 alpha = #00000000
 
-shade1 = #C2185B
-shade2 = #D81B60
-shade3 = #E91E63
-shade4 = #EC407A
-shade5 = #F06292
-shade6 = #F48FB1
+shade1 = #F57C00
+shade2 = #FB8C00
+shade3 = #FF9800
+shade4 = #FFA726
+shade5 = #FFB74D
+shade6 = #FFCC80
 
 ;; _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_
 ;;
@@ -518,9 +518,37 @@ icon-next = 
 
 ;; _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_
 
-[module/network]
+[module/wireless]
 type = internal/network
 interface = wlp2s0
+
+interval = 1.0
+accumulate-stats = true
+unknown-as-up = true
+
+format-connected = <ramp-signal> <label-connected>
+format-connected-background = ${color.shade2}
+format-connected-foreground = ${color.fg-alt}
+format-connected-padding = 2
+
+format-disconnected = <label-disconnected>
+format-disconnected-background = ${color.shade2}
+format-disconnected-foreground = ${color.fg-alt}
+format-disconnected-padding = 2
+
+label-connected = %essid% [%downspeed%]
+label-disconnected =  Disconnected
+
+; Only applies if <ramp-signal> is used
+ramp-signal-0 = 
+ramp-signal-1 = 
+ramp-signal-2 = 
+ramp-signal-3 = 
+ramp-signal-4 = 
+
+[module/network]
+type = internal/network
+interface = enp0s3
 
 interval = 1.0
 accumulate-stats = true
