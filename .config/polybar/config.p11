@@ -150,7 +150,7 @@ font-1 = "Siji:size=8;2"
 
 modules-left = workspaces mpd_i sep mpd
 modules-center = 
-modules-right = colors sep memory cpu alsa battery wireless wired date
+modules-right = colors sep memory cpu volume battery wireless wired date
 
 ; The separator will be inserted between the output of each module
 separator =
@@ -351,7 +351,7 @@ shade6 = #FFCC80
 ;;
 ;; _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_
 
-[module/alsa]
+[module/volume]
 type = internal/alsa
 
 format-volume = <ramp-volume> <label-volume>
