@@ -150,7 +150,7 @@ font-1 = "Siji:size=8;2"
 
 modules-left = workspaces mpd_i sep mpd
 modules-center = 
-modules-right = colors sep memory cpu alsa battery network wireless date
+modules-right = colors sep memory cpu alsa battery network wireless wired date
 
 ; The separator will be inserted between the output of each module
 separator =
@@ -546,7 +546,7 @@ ramp-signal-2 = 
 ramp-signal-3 = 
 ramp-signal-4 = 
 
-[module/network]
+[module/wired]
 type = internal/network
 interface = enp0s3
 
@@ -564,7 +564,7 @@ format-disconnected-background = ${color.shade2}
 format-disconnected-foreground = ${color.fg-alt}
 format-disconnected-padding = 2
 
-label-connected = %essid% [%downspeed%]
+label-connected = %ifname% [%downspeed%]
 label-disconnected =  Disconnected
 
 ; Only applies if <ramp-signal> is used
