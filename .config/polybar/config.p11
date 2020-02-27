@@ -332,12 +332,12 @@ fg-alt = #141C21
 
 alpha = #00000000
 
-shade1 = #FFA000
-shade2 = #FFB300
-shade3 = #FFC107
-shade4 = #FFCA28
-shade5 = #FFD54F
-shade6 = #FFE082
+shade1 = #0097A7
+shade2 = #00ACC1
+shade3 = #00BCD4
+shade4 = #26C6DA
+shade5 = #4DD0E1
+shade6 = #80DEEA
 
 ;; _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_
 ;;
