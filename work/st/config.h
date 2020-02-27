@@ -5,8 +5,8 @@
  *
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
-static char *font = "Monospace:size=7.5:antialias=true:autohint=true";
-static char *font2[] = { "Typicons:size=10:antialias=true:autohint=true" };
+static char *font = "scientifica:style=bold:size=11";
+static char *font2[] = { "Typicons:size=10" };
 static int borderpx = 20;
 
 /*
@@ -103,7 +103,7 @@ static unsigned int cursorshape = 6;
  */
 
 static unsigned int cols = 100;
-static unsigned int rows = 28;
+static unsigned int rows = 26;
 
 /*
  * Default colour and shape of the mouse cursor

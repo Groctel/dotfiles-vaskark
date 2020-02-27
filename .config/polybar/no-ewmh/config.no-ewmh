@@ -62,7 +62,7 @@ padding-right = 0
 module-margin-left = 0
 module-margin-right = 0
 
-font-0 = "scientifica:style=bold:size=8;2"
+font-0 = "scientifica:style=bold:size=11;2"
 font-1 = "Material Icons:size=10;4"
 
 modules-left = mpd-controls
@@ -290,13 +290,10 @@ format-disconnected = <label-disconnected>
 type = internal/date
 interval = 1
 
-date =
-date-alt =
 time = %I:%M %p
-time-alt =
+time-alt = %A %B %d %Y
 
 label = %time%
-;format-prefix = ""
 format = <label>
 
 label-foreground = ${colors.color3}
