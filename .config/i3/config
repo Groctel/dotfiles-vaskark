@@ -69,7 +69,7 @@ bindsym $mod+w layout tabbed
 bindsym $mod+e layout toggle split
 
 # floating toggle
-bindsym $mod+Shift+space floating toggle
+# bindsym $mod+Shift+space floating toggle
 bindsym $mod+t floating toggle
 
 # change focus between tiling / floating windows
@@ -150,10 +150,8 @@ for_window [urgent=latest] focus
 
 # open apps in floating mode
 for_window [class="Pick-colour-picker"] floating enable
-for_window [class="Skype"] floating enable
 for_window [class="Nitrogen"] floating enable
 for_window [class="Mediainfo-gui"] floating enable
-for_window [class="Ukuu-gtk"] floating enable
 for_window [class="Float"] floating enable
 for_window [class="farge"] floating enable
 for_window [class="calibre"] floating enable

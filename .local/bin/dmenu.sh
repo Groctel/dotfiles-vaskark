@@ -10,7 +10,7 @@ w=$(( width-(2*b) ))
 
 # dmenu2
 dmenu_run \
--fn 'Iosevka Custom-8' \
+-fn 'scientifica-11:bold' \
 -h 30 \
 -p ' dmenu: ' \
 -i \
@@ -21,4 +21,4 @@ dmenu_run \
 -dim 0.2 \
 -x $b \
 -y $b \
--w $w \
+-w $w
