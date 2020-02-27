@@ -148,7 +148,7 @@ font-1 = "Siji:size=8;2"
 ;cpu_bar memory_bar filesystem_bar mpd_bar 
 ;volume brightness battery_bar 
 
-modules-left = workspaces sep mpd_i sep mpd
+modules-left = workspaces sep mpd_i mpd
 modules-center = 
 modules-right = colors sep memory cpu volume battery wireless wired date
 
@@ -523,6 +523,7 @@ type = internal/network
 interface = wlp2s0
 
 interval = 1.0
+ping-interval = 2
 accumulate-stats = true
 unknown-as-up = true
 
