@@ -1,7 +1,9 @@
 #!/bin/bash
+
 polybar-p11.sh
 pulseaudio --start --log-target=syslog &
 #nitrogen --restore &
+dunst &
 wal -R &
 picom.sh &
 redshift.sh &
