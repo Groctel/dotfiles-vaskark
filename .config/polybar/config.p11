@@ -537,7 +537,7 @@ format-disconnected-foreground = ${color.fg-alt}
 format-disconnected-padding = 2
 
 label-connected = %essid% [%downspeed%]
-label-disconnected =  Disconnected
+label-disconnected =  Disconnected
 
 ; Only applies if <ramp-signal> is used
 ramp-signal-0 = 
@@ -565,7 +565,7 @@ format-disconnected-foreground = ${color.fg-alt}
 format-disconnected-padding = 2
 
 label-connected = %ifname% [%downspeed%] [%linkspeed%]
-label-disconnected =  Disconnected
+label-disconnected =  Disconnected
 
 ; Only applies if <ramp-signal> is used
 ramp-signal-0 = 

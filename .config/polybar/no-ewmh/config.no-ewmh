@@ -63,11 +63,11 @@ module-margin-left = 0
 module-margin-right = 0
 
 font-0 = "scientifica:style=bold:size=11;2"
-font-1 = "Material Icons:size=10;4"
+font-1 = "Siji:size=10;2"
 
 modules-left = mpd-controls
 modules-center = mpd
-modules-right = network backlight pulseaudio memory battery temperature date session
+modules-right = wireless wired backlight pulseaudio memory battery temperature date session
 
 ;dim-value = 0.8
 
@@ -126,8 +126,8 @@ host = 127.0.0.1
 port = 6600
 
 label-song = %artist%  >>  %title%
-format-online-prefix = ""
-format-online-suffix = ""
+format-online-prefix = ""
+format-online-suffix = ""
 format-online = <label-song>
 
 label-offline = mpd is offline :(
@@ -171,10 +171,10 @@ port = 6600
 
 format-online = <toggle><icon-next>
 
-icon-prev = 
-icon-play = 
-icon-pause = 
-icon-next = 
+icon-prev = 
+icon-play = 
+icon-pause = 
+icon-next = 
 
 icon-prev-background = ${colors.color3}
 icon-play-background = ${colors.color0}
@@ -205,10 +205,10 @@ ramp-background = ${colors.color3}
 ramp-padding-left = 2
 ramp-padding-right = 0
 
-ramp-0 = 
-ramp-1 = 
-ramp-2 = 
-ramp-3 = 
+ramp-0 = 
+ramp-1 = 
+ramp-2 = 
+ramp-3 = 
 
 [module/pulseaudio]
 type = internal/pulseaudio
@@ -225,15 +225,14 @@ label-volume-padding = 1
 
 ramp-volume-background = ${colors.color3}
 ramp-volume-foreground = ${colors.color0}
-ramp-volume-padding-left = 1
-ramp-volume-padding-right = 0
+ramp-volume-padding-left = 2
 
-ramp-volume-0 = 
-ramp-volume-1 = 
+ramp-volume-0 = 
+ramp-volume-1 = 
 ramp-volume-2 = 
-ramp-volume-3 = 
-ramp-volume-4 = 
-ramp-volume-5 = 
+ramp-volume-3 = 
+ramp-volume-4 = 
+ramp-volume-5 = 
 
 label-muted = --
 format-muted-prefix = 
@@ -249,140 +248,151 @@ format-muted-prefix-padding = 1
 
 [module/memory]
 type = internal/memory
-interval = 2
-format-prefix = ""
-label = %percentage_used%%
 
-format-prefix-background = ${colors.color3}
-format-prefix-foreground = ${colors.color0}
-format-prefix-padding-left = 1
-format-prefix-padding-right = 0
+interval = 3
 
-label-background = ${colors.color3}
-label-foreground = ${colors.color0}
-label-padding = 1
+format = <label>
+format-background = ${colors.color3}
+format-foreground = ${colors.color0}
+format-padding = 2
 
-[module/network]
+label =   %percentage_used%%
+
+[module/wireless]
 type = internal/network
 interface = wlp2s0
-; enp0s3
 interval = 1.0
+accumulate-stats = true
+unknown-as-up = true
 
-label-connected = %downspeed% | %essid%
-; %upspeed%
-format-connected-prefix = ""
-format-connected = <label-connected>
+format-connected = <ramp-signal> <label-connected>
+format-connected-background = ${colors.color0}
+format-connected-foreground = ${colors.color3}
+format-connected-padding = 2
 
-label-connected-background = ${colors.color0}
-label-connected-foreground = ${colors.color3}
-label-connected-padding-left = 1
-label-connected-padding-right = 2
-
-format-connected-prefix-background = ${colors.color0}
-format-connected-prefix-foreground = ${colors.color3}
-format-connected-prefix-padding-left = 2
-format-connected-prefix-padding-right = 1
-
-label-disconnected = 
 format-disconnected = <label-disconnected>
+format-disconnected-background = ${colors.color0}
+format-disconnected-foreground = ${colors.color3}
+format-disconnected-padding = 2
+
+label-connected = %essid% [%downspeed%]
+label-disconnected =  Disconnected
+
+; Only applies if <ramp-signal> is used
+ramp-signal-0 = 
+ramp-signal-1 = 
+ramp-signal-2 = 
+ramp-signal-3 = 
+ramp-signal-4 = 
+
+[module/wired]
+type = internal/network
+interface = enp0s3
+interval = 1.0
+accumulate-stats = true
+unknown-as-up = true
+
+format-connected = <ramp-signal> <label-connected>
+format-connected-background = ${colors.color0}
+format-connected-foreground = ${colors.color3}
+format-connected-padding = 2
+
+format-disconnected = <label-disconnected>
+format-disconnected-background = ${colors.color0}
+format-disconnected-foreground = ${colors.color3}
+format-disconnected-padding = 2
+
+label-connected = %ifname% [%downspeed%]
+label-disconnected =  Disconnected
+
+; Only applies if <ramp-signal> is used
+ramp-signal-0 = 
+ramp-signal-1 = 
+ramp-signal-2 = 
+ramp-signal-3 = 
+ramp-signal-4 = 
 
 [module/date]
 type = internal/date
 interval = 1
 
-time = %I:%M %p
-time-alt = %A %B %d %Y
+time =  %I:%M %p
+time-alt =  %A %B %d %Y
 
 label = %time%
 format = <label>
 
 label-foreground = ${colors.color3}
 label-background = ${colors.color0}
-label-padding-left = 2
-label-padding-right = 2
-
-format-prefix-foreground = ${colors.color3}
-format-prefix-background = ${colors.color0}
-format-prefix-padding-left = 2
-format-prefix-padding-right = 0
+label-padding = 2
 
 [module/battery]
 type = internal/battery
+
+full-at = 99
 battery = BAT0
-adapter = AD0
-full-at = 100
+adapter = ADP0
+poll-interval = 2
+time-format = %I:%M %p
+
+format-charging = <animation-charging> <label-charging>
+format-charging-background = ${colors.color3}
+format-charging-foreground = ${colors.color0}
+format-charging-padding = 1
+
+format-discharging = <ramp-capacity> <label-discharging>
+format-discharging-background = ${colors.color3}
+format-discharging-foreground = ${colors.color0}
+format-discharging-padding = 1
+
+format-full = <label-full>
+format-full-background = ${colors.color3}
+format-full-foreground = ${colors.color0}
+format-full-padding = 1
 
 label-charging = %percentage%%
-format-charging = <label-charging>
-
-label-charging-foreground = ${colors.color0}
-label-charging-background = ${colors.color3}
-label-charging-padding = 1
-
-format-charging-prefix = 
-format-charging-prefix-background = ${colors.color3}
-format-charging-prefix-foreground = ${colors.color0}
-format-charging-prefix-padding-left = 1
-format-charging-prefix-padding-right = 0
-
 label-discharging = %percentage%%
-format-discharging = <label-discharging>
+label-full = 100% Charged
 
-label-discharging-foreground = ${colors.color0}
-label-discharging-background = ${colors.color3}
-label-discharging-padding = 1
+; Only applies if <ramp-capacity> is used
+ramp-capacity-0 = 
+ramp-capacity-1 = 
+ramp-capacity-2 = 
+ramp-capacity-3 = 
+ramp-capacity-4 = 
+ramp-capacity-5 = 
+ramp-capacity-6 = 
+ramp-capacity-7 = 
+ramp-capacity-8 = 
+ramp-capacity-9 = 
 
-format-discharging-prefix = 
-format-discharging-prefix-background = ${colors.color3}
-format-discharging-prefix-foreground = ${colors.color0}
-format-discharging-prefix-padding-left = 1
-format-discharging-prefix-padding-right = 0
+; Only applies if <animation-charging> is used
+animation-charging-0 = 
+animation-charging-1 = 
+animation-charging-2 = 
+animation-charging-3 = 
 
-label-full = %percentage%%
-format-full = <label-full>
-
-label-full-foreground = ${colors.color0}
-label-full-background = ${colors.color3}
-label-full-padding = 1
-
-format-full-prefix = 
-format-full-prefix-background = ${colors.color3}
-format-full-prefix-foreground = ${colors.color0}
-format-full-prefix-padding-left = 1
-format-full-prefix-padding-right = 0
+; Framerate in milliseconds
+animation-charging-framerate = 750
 
 [module/temperature]
 type = internal/temperature
 thermal-zone = 0
 warn-temperature = 65
 
-label = %temperature-c%
+label =  %temperature-c%
 format = <label>
-format-prefix = 
 
 label-background = ${colors.color3}
 label-foreground = ${colors.color0}
-label-padding-left = 1
-label-padding-right = 2
+label-padding = 2
 
-format-prefix-background = ${colors.color3}
-format-prefix-foreground = ${colors.color0}
-format-prefix-padding-left = 1
-format-prefix-padding-right = 0
+;label-warn =  %temperature-c%
+;format-warn = <label-warn>
 
-label-warn = %temperature-c%
-format-warn = <label-warn>
-format-warn-prefix = 
-
-label-warn-background = ${colors.alert}
-label-warn-foreground = ${colors.color0}
-label-warn-padding-left = 1
-label-warn-padding-right = 2
-
-format-warn-prefix-background = ${colors.alert}
-format-warn-prefix-foreground = ${colors.color0}
-format-warn-prefix-padding-left = 1
-format-warn-prefix-padding-right = 0
+;label-warn-background = ${colors.alert}
+;label-warn-foreground = ${colors.color0}
+;label-warn-padding= 2
 
 [module/session]
 type = custom/script
