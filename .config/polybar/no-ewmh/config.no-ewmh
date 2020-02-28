@@ -48,7 +48,7 @@ font-0 = "scientifica:style=bold:size=8;2"
 font-1 = "Siji:size=8;2"
 
 modules-left = mpd-controls
-modules-center = mpd mpd-time
+modules-center =  mpd mpd-time
 modules-right = wireless wired backlight pulseaudio memory battery temperature date session
 
 ;dim-value = 0.8
@@ -92,7 +92,7 @@ label-song-padding = 2
 format-online-prefix = ""
 format-online-prefix-background = ${colors.color0}
 format-online-prefix-foreground = ${colors.color3}
-format-online-prefix-padding = 2
+format-online-prefix-padding = 1
 
 label-offline = MPD is offline :(
 
@@ -109,7 +109,7 @@ type = internal/mpd
 ;host = 127.0.0.1
 ;port = 6600
 
-label-time = [%elapsed%]
+label-time = [%elapsed%/%total%]
 
 format-online = <label-time>
 format-online-background = ${colors.color0}
@@ -124,7 +124,7 @@ type = internal/mpd
 format-online = <icon-prev> <toggle> <icon-next>
 format-online-background = ${colors.color3}
 format-online-foreground = ${colors.color0}
-format-online-padding = 2
+format-online-padding = 1
 
 icon-prev = 
 icon-play = 
