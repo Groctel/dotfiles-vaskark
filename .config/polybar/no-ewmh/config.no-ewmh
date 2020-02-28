@@ -25,7 +25,7 @@ alert = #bd2c40
 [bar/top]
 ;monitor = ${env:MONITOR:eDP-1}
 width = 100%
-height = 26
+height = 28
 radius = 4.0
 fixed-center = true
 
@@ -92,11 +92,11 @@ label-song-padding = 2
 
 format-online-prefix-background = ${colors.color0}
 format-online-prefix-foreground = ${colors.color3}
-format-online-prefix-padding = 1
+format-online-prefix-padding = 2
 
 format-online-suffix-background = ${colors.color0}
 format-online-suffix-foreground = ${colors.color3}
-format-online-suffix-padding = 1
+format-online-suffix-padding = 2
 
 label-offline = MPD is offline :(
 
@@ -140,10 +140,10 @@ icon-prev-foreground = ${colors.color0}
 icon-play-foreground = ${colors.color3}
 icon-pause-foreground = ${colors.color3}
 icon-next-foreground = ${colors.color0}
-icon-prev-padding = 1
-icon-play-padding = 1
-icon-pause-padding = 1
-icon-next-padding = 1
+icon-prev-padding = 2
+icon-play-padding = 2
+icon-pause-padding = 2
+icon-next-padding = 2
 
 [module/wireless]
 type = internal/network
