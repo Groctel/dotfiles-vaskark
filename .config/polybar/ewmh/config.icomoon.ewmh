@@ -62,7 +62,7 @@ padding-right = 0
 module-margin-left = 0
 module-margin-right = 0
 
-font-0 = "Iosevka Term:style=regular:size=7.5;2"
+font-0 = "scientifica:style=bold:size=11;2"
 font-1 = "IcoMoon\-Free:style=Regular:size=8;3"
 
 modules-left = mpd-controls sep mpd
