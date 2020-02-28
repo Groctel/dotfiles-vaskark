@@ -92,7 +92,7 @@ label-song-padding = 2
 format-online-prefix = ""
 format-online-prefix-background = ${colors.color0}
 format-online-prefix-foreground = ${colors.color3}
-format-online-prefix-padding = 1
+format-online-prefix-padding = 2
 
 label-offline = MPD is offline :(
 
