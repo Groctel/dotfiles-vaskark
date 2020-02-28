@@ -49,7 +49,7 @@ font-1 = "Siji:size=8;2"
 
 modules-left = mpd-controls
 modules-center =  mpd mpd-time
-modules-right = wireless wired backlight pulseaudio memory battery temperature date session
+modules-right = wireless wired pulseaudio memory battery temperature date session
 
 ;dim-value = 0.8
 
@@ -186,17 +186,6 @@ ramp-signal-1 = 
 ramp-signal-2 = 
 ramp-signal-3 = 
 ramp-signal-4 = 
-
-[module/backlight]
-type = internal/backlight
-card = intel_backlight
-
-label = %percentage%%
-
-format =  <label>
-format-foreground = ${colors.color0}
-format-background = ${colors.color3}
-format-padding = 2
 
 [module/pulseaudio]
 type = internal/pulseaudio
