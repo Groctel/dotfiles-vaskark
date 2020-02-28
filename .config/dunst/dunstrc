@@ -64,7 +64,7 @@
     frame_width = 5
 
     # Defines color of the frame around the notification window.
-    frame_color = "#479598"
+    frame_color = "#aa937b"
 
     # Define a color for the separator.
     # possible values are:
@@ -130,7 +130,7 @@
 
     # Alignment of message text.
     # Possible values are "left", "center" and "right".
-    alignment = center
+    alignment = left
 
     # Vertical alignment of message text and icon.
     # Possible values are "top", "center" and "bottom".
@@ -284,23 +284,23 @@
 [urgency_low]
     # IMPORTANT: colors have to be defined in quotation marks.
     # Otherwise the "#" and following would be interpreted as a comment.
-    background = "#479598"
-    foreground = "#1b1c1c"
+    background = "#aa937b"
+    foreground = "#272422"
     timeout = 10
     # Icon for notifications with low urgency, uncomment to enable
     icon = /home/jason/.config/dunst/normal-alt.png
 
 [urgency_normal]
-    background = "#479598"
-    foreground = "#1b1c1c"
+    background = "#aa937b"
+    foreground = "#272422"
     timeout = 10
     # Icon for notifications with normal urgency, uncomment to enable
     icon = /home/jason/.config/dunst/normal-alt.png
 
 [urgency_critical]
-    background = "#479598"
-    foreground = "#1b1c1c"
-    frame_color = "#479598"
+    background = "#aa937b"
+    foreground = "#272422"
+    frame_color = "#aa937b"
     timeout = 0
     # Icon for notifications with critical urgency, uncomment to enable
     icon = /home/jason/.config/dunst/critical.png
