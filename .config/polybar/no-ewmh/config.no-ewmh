@@ -48,7 +48,7 @@ font-0 = "scientifica:style=bold:size=8;2"
 font-1 = "Siji:size=8;2"
 
 modules-left = mpd-controls
-modules-center = mpd
+modules-center = mpd mpd-time
 modules-right = wireless wired backlight pulseaudio memory battery temperature date session
 
 ;dim-value = 0.8
@@ -78,72 +78,58 @@ content-padding = 0
 
 [module/mpd]
 type = internal/mpd
-host = 127.0.0.1
-port = 6600
+;host = 127.0.0.1
+;port = 6600
 
 label-song = %artist%  >>  %title%
-format-online-prefix = ""
-format-online-suffix = ""
+
 format-online = <label-song>
 
 label-song-background = ${colors.color3}
 label-song-foreground = ${colors.color0}
 label-song-padding = 2
 
+format-online-prefix = ""
 format-online-prefix-background = ${colors.color0}
 format-online-prefix-foreground = ${colors.color3}
 format-online-prefix-padding = 2
-
-format-online-suffix-background = ${colors.color0}
-format-online-suffix-foreground = ${colors.color3}
-format-online-suffix-padding = 2
 
 label-offline = MPD is offline :(
 
 format-offline = <label-offline>
 format-offline-background = ${colors.color3}
 format-offline-foreground = ${colors.color0}
-format-offline-padding = 1
+format-offline-padding = 2
 
 label-song-maxlen = 175
 label-song-ellipsis = true
 
 [module/mpd-time]
 type = internal/mpd
-host = 127.0.0.1
-port = 6600
+;host = 127.0.0.1
+;port = 6600
 
-label-time = [%elapsed%/%total%]
+label-time = [%elapsed%]
+
 format-online = <label-time>
-
-label-time-background = ${colors.color3}
-label-time-foreground = ${colors.color0}
-label-time-padding = 1
+format-online-background = ${colors.color0}
+format-online-foreground = ${colors.color3}
+format-online-padding = 2
 
 [module/mpd-controls]
 type = internal/mpd
-host = 127.0.0.1
-port = 6600
+;host = 127.0.0.1
+;port = 6600
 
-format-online = <toggle><icon-next>
+format-online = <icon-prev> <toggle> <icon-next>
+format-online-background = ${colors.color3}
+format-online-foreground = ${colors.color0}
+format-online-padding = 2
 
 icon-prev = 
 icon-play = 
 icon-pause = 
 icon-next = 
-
-icon-prev-background = ${colors.color3}
-icon-play-background = ${colors.color0}
-icon-pause-background = ${colors.color0}
-icon-next-background = ${colors.color3}
-icon-prev-foreground = ${colors.color0}
-icon-play-foreground = ${colors.color3}
-icon-pause-foreground = ${colors.color3}
-icon-next-foreground = ${colors.color0}
-icon-prev-padding = 2
-icon-play-padding = 2
-icon-pause-padding = 2
-icon-next-padding = 2
 
 [module/wireless]
 type = internal/network
@@ -206,31 +192,30 @@ type = internal/backlight
 card = intel_backlight
 
 label = %percentage%%
-format =  <label>
 
+format =  <label>
 format-foreground = ${colors.color0}
 format-background = ${colors.color3}
 format-padding = 2
 
 [module/pulseaudio]
 type = internal/pulseaudio
-sink = alsa_output.pci-0000_00_1f.3.analog-stereo 
-use-ui-max = false
+;sink = alsa_output.pci-0000_00_1f.3.analog-stereo
 click-right = pavucontrol &
 
 label-volume =  %percentage%%
-label-volume-background = ${colors.color3}
-label-volume-foreground = ${colors.color0}
-label-volume-padding = 2
 
 format-volume = <label-volume>
+format-volume-background = ${colors.color3}
+format-volume-foreground = ${colors.color0}
+format-volume-padding = 2
 
 label-muted =  ---
-label-muted-background = ${colors.color3}
-label-muted-foreground = ${colors.color0}
-label-muted-padding = 2
 
 format-muted = <label-muted>
+format-muted-background = ${colors.color3}
+format-muted-foreground = ${colors.color0}
+format-muted-padding = 2
 
 [module/memory]
 type = internal/memory
@@ -246,7 +231,6 @@ format-padding = 2
 
 [module/battery]
 type = internal/battery
-
 full-at = 99
 battery = BAT0
 adapter = ADP0
@@ -265,13 +249,6 @@ format-discharging = <ramp-capacity> <label-discharging>
 format-discharging-background = ${colors.color3}
 format-discharging-foreground = ${colors.color0}
 format-discharging-padding = 2
-
-;label-full = 100% Charged
-
-;format-full = <label-full>
-;format-full-background = ${colors.color3}
-;format-full-foreground = ${colors.color0}
-;format-full-padding = 2
 
 ; Only applies if <ramp-capacity> is used
 ramp-capacity-0 = 

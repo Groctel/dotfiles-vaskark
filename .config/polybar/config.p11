@@ -148,7 +148,7 @@ font-1 = "Siji:size=8;2"
 ;cpu_bar memory_bar filesystem_bar mpd_bar 
 ;volume brightness battery_bar 
 
-modules-left = workspaces sep mpd_i mpd
+modules-left = workspaces mpd_i mpd
 modules-center = 
 modules-right = colors sep memory cpu volume battery wireless wired date
 
@@ -332,12 +332,12 @@ fg-alt = #141C21
 
 alpha = #00000000
 
-shade1 = #0097A7
-shade2 = #00ACC1
-shade3 = #00BCD4
-shade4 = #26C6DA
-shade5 = #4DD0E1
-shade6 = #80DEEA
+shade1 = #00796B
+shade2 = #00897B
+shade3 = #009688
+shade4 = #26A69A
+shade5 = #4DB6AC
+shade6 = #80CBC4
 
 ;; _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_
 ;;
@@ -435,13 +435,13 @@ type = internal/cpu
 
 interval = 0.5
 
+label = " %percentage%%"
+
 format = <label>
 format-prefix = 
 format-background = ${color.shade5}
 format-foreground = ${color.fg-alt}
 format-padding = 2
-
-label = " %percentage%%"
 
 ;; _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_
 
@@ -453,12 +453,12 @@ interval = 1.0
 time =  %I:%M %p
 time-alt =  %A %B %d %Y
 
+label = %time%
+
 format = <label>
 format-background = ${color.bg}
 format-foreground = ${color.shade1}
 format-padding = 2
-
-label = %time%
 
 ;; _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_
 
