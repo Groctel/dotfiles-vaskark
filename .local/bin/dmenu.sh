@@ -14,6 +14,8 @@ dmenu_run \
 -h 30 \
 -p ' dmenu: ' \
 -i \
+-q \
+-o 0.8 \
 -nb "$color0" \
 -nf "$color3" \
 -sb "$color3" \

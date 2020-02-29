@@ -1,5 +1,11 @@
 #!/bin/sh
 
+# statusbar
+while true; do
+	xsetroot -name "$( date +"%I:%M %p" )"
+	sleep 1m
+done &
+
 # relaunch DWM if the binary changes, otherwise bail
 csum=$(sha1sum $(which dwm))
 new_csum=""
