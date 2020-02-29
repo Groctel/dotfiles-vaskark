@@ -16,7 +16,9 @@ xautolock.sh &
 libinput-gestures &
 /usr/lib/policykit-1-gnome/polkit-gnome-authentication-agent-1 &
 
-# relaunch sara if binary changes, otherwise bail (usual quit keybind)
+# relaunch sara if binary changes, otherwise bail
+# quit keybind once, reloads binary
+# next, if unchanged, quit
 csum=$(sha1sum $(which sara))
 new_csum=""
 while true
