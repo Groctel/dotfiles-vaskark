@@ -484,7 +484,7 @@ interval = 2
 
 format-online =  <label-song>
 format-online-background = ${color.bg}
-format-online-foreground = ${color.fg}
+format-online-foreground = ${color.shade1}
 format-online-padding = 2
 
 #format-online-prefix = 
