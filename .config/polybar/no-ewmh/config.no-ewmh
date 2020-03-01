@@ -47,9 +47,10 @@ module-margin-right = 0
 font-0 = "scientifica:style=bold:size=11;2"
 font-1 = "Siji:size=8;2"
 
-modules-left = mpd-controls
-modules-center =  mpd
-modules-right = wireless wired pulseaudio memory battery temperature date session
+;modules-left = mpd
+;modules-center = mpd
+modules-right = mpd wireless wired volume
+;modules-right = wireless wired volume memory battery temperature date session
 
 ;dim-value = 0.8
 
@@ -187,7 +188,7 @@ ramp-signal-2 = 
 ramp-signal-3 = 
 ramp-signal-4 = 
 
-[module/pulseaudio]
+[module/volume]
 type = internal/pulseaudio
 ;sink = alsa_output.pci-0000_00_1f.3.analog-stereo
 click-right = pavucontrol &
