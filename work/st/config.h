@@ -5,7 +5,7 @@
  *
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
-static char *font = "scientifica:style=bold:size=11";
+static char *font = "scientifica:style=bold:size=8";
 static char *font2[] = { "Typicons:size=9" };
 static int borderpx = 20;
 
@@ -102,8 +102,8 @@ static unsigned int cursorshape = 6;
  * Default columns and rows numbers
  */
 
-static unsigned int cols = 90;
-static unsigned int rows = 24;
+static unsigned int cols = 110;
+static unsigned int rows = 32;
 
 /*
  * Default colour and shape of the mouse cursor
