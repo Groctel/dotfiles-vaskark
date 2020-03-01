@@ -10,11 +10,10 @@ w=$(( width-(2*b) ))
 
 # dmenu
 dmenu_run \
--p ' dmenu: ' \
+-p ' ask and ye shall find: ' \
 -fn 'scientifica-11:bold' \
 -h 30 \
 -i \
--q \
 -nb "$color0" \
 -nf "$color3" \
 -sb "$color3" \
@@ -22,5 +21,5 @@ dmenu_run \
 -x $b \
 -y $b \
 -w $w \
--dim 0.2 \
+-dim 0.25 \
 -o 0.95

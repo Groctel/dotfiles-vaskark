@@ -3,9 +3,8 @@
 
 #define MOD Mod4Mask
 
-const char* menu[]	= {"dmenu.sh",      0};
-const char* rofi[]	= {"rofi", "-show", "drun",      0};
-const char* emoji[]	= {"rofi-emoji.sh", 0};
+const char* dmenu[]	= {"dmenu.sh",      0};
+/*const char* rofi[]	= {"rofi", "-show", "drun",      0};*/
 const char* term[]	= {"kitty",             0};
 const char* nmd[] 	= {"networkmanager_dmenu", 0};
 const char* shot[]	= {"screenshot.sh", "full",            0};
@@ -27,7 +26,7 @@ const char* w2[] 	= {"wal", "--theme", "random", 0};
 const char* wf[] 	= {"wal", "--theme", "dkeg-skigh", 0}; 
 const char* wr[] 	= {"wal", "-R", 0};
 
-const char* quit[] 	= {"pkill", "x", 0};
+const char* quit[] 	= {"killall", "sowm", 0};
 const char* reboot[] 	= {"systemctl", "reboot", 0};
 const char* shutdown[] 	= {"systemctl", "-i", "poweroff", 0};
 
@@ -39,9 +38,8 @@ static struct key keys[] = {
     {Mod1Mask,           XK_Tab, win_next,   {0}},
     {Mod1Mask|ShiftMask, XK_Tab, win_prev,   {0}},
 
-    {MOD,	        XK_x,	   	run, {.com = menu}},
-    {MOD, 	    	XK_d,      	run, {.com = rofi}},
-    {MOD|ShiftMask,     XK_d,      	run, {.com = emoji}},
+    {MOD,	        XK_x,	   	run, {.com = dmenu}},
+/*    {MOD,		XK_d,		run, {.com = rofi}},*/
     {MOD,       	XK_n,		run, {.com = nmd}},
     {MOD,           	XK_Print,      	run, {.com = shot}},
     {MOD|ShiftMask,     XK_Print,      	run, {.com = wshot}},
