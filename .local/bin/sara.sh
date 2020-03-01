@@ -2,7 +2,7 @@
 
 # statusbar
 while true; do
-	xsetroot -name "$( date +"%I:%M %p" )"
+	xsetroot -name " $( date +"%I:%M %p" ) "
 	sleep 1m
 done &
 
@@ -17,8 +17,8 @@ libinput-gestures &
 /usr/lib/policykit-1-gnome/polkit-gnome-authentication-agent-1 &
 
 # relaunch sara if binary changes, otherwise bail
-# quit keybind once, reloads binary
-# next, if unchanged, quit
+# quit kb once: reloads binary
+# quit kb next, quit
 csum=$(sha1sum $(which sara))
 new_csum=""
 while true

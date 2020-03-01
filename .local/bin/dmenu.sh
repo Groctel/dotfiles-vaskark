@@ -3,24 +3,24 @@
 # Import wal colors 
 . "${HOME}/.cache/wal/colors.sh"
 
-# vars
+# vars for xyw
 b=5
 width=$(xdotool getdisplaygeometry | awk '{print $1}')
 w=$(( width-(2*b) ))
 
-# dmenu2
+# dmenu
 dmenu_run \
+-p ' dmenu: ' \
 -fn 'scientifica-11:bold' \
 -h 30 \
--p ' dmenu: ' \
 -i \
 -q \
--o 0.8 \
 -nb "$color0" \
 -nf "$color3" \
 -sb "$color3" \
 -sf "#000000" \
--dim 0.2 \
 -x $b \
 -y $b \
--w $w
+-w $w \
+-dim 0.2 \
+-o 0.9
