@@ -177,6 +177,7 @@ alias nfus='clear;neofetch --config ~/.config/neofetch/config-small-w3m.conf'
 # wifi
 alias up='nmcli c u'
 alias dn='nmcli c d'
+alias ndw='nmcli d wifi'
 
 # windscribe
 alias wsc='windscribe connect'

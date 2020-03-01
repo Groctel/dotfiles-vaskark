@@ -4,7 +4,7 @@
 #define MOD Mod4Mask
 
 const char* dmenu[]	= {"dmenu.sh",      0};
-/*const char* rofi[]	= {"rofi", "-show", "drun",      0};*/
+const char* rofi[]	= {"rofi", "-show", "drun",      0};
 const char* term[]	= {"kitty",             0};
 const char* nmd[] 	= {"networkmanager_dmenu", 0};
 const char* shot[]	= {"screenshot.sh", "full",            0};
@@ -39,7 +39,7 @@ static struct key keys[] = {
     {Mod1Mask|ShiftMask, XK_Tab, win_prev,   {0}},
 
     {MOD,	        XK_x,	   	run, {.com = dmenu}},
-/*    {MOD,		XK_d,		run, {.com = rofi}},*/
+    {MOD,		XK_d,		run, {.com = rofi}},
     {MOD,       	XK_n,		run, {.com = nmd}},
     {MOD,           	XK_Print,      	run, {.com = shot}},
     {MOD|ShiftMask,     XK_Print,      	run, {.com = wshot}},
