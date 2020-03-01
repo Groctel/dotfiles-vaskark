@@ -10,10 +10,9 @@ w=$(( width-(2*b) ))
 
 # dmenu
 dmenu_run \
--p ' ask and ye shall find: ' \
+-p ' dmenu ' \
 -fn 'scientifica-11:bold' \
 -h 30 \
--i \
 -nb "$color3" \
 -nf "$color0" \
 -sb "$color0" \
@@ -22,4 +21,8 @@ dmenu_run \
 -y $b \
 -w $w \
 -dim 0.25 \
--o 0.95
+-o 0.90 \
+#-z \
+
+# border is n so h = h-2n
+# dmenu2 doesn't appear to have fuzzy matching like it claims

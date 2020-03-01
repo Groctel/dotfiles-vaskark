@@ -8,8 +8,8 @@ redshift.sh &
 xautolock.sh &
 libinput-gestures &
 /usr/lib/policykit-1-gnome/polkit-gnome-authentication-agent-1 &
-polybar-p11.sh &
-wal -R &
+wal.sh &
+polybar-no-ewmh.sh &
 
 # relaunch sowm if the binary changes, otherwise bail
 csum=$(sha1sum $(which sowm))
