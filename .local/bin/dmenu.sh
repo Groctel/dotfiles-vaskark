@@ -23,4 +23,4 @@ dmenu_run \
 -y $b \
 -w $w \
 -dim 0.2 \
--o 0.9
+-o 0.95

@@ -6,7 +6,7 @@
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
 static char *font = "scientifica:style=bold:size=11";
-static char *font2[] = { "Typicons:size=10" };
+static char *font2[] = { "Typicons:size=9" };
 static int borderpx = 20;
 
 /*
