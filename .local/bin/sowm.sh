@@ -8,7 +8,7 @@ redshift.sh &
 xautolock.sh &
 libinput-gestures &
 /usr/lib/policykit-1-gnome/polkit-gnome-authentication-agent-1 &
-wal.sh &
+wal -R &
 #polybar-no-ewmh.sh &
 
 # relaunch sowm if the binary changes, otherwise bail

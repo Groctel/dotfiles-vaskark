@@ -1,9 +1,6 @@
 # set mod key
 set $mod Mod4
 
-# rounded corners (resloved fork)
-#border_radius 5
-
 # start in floating mode
 #for_window [class="^.*"] floating enable
 

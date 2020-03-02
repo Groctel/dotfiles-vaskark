@@ -25,7 +25,7 @@ const char* prev[]	= {"mpc", "prev", 0};
 const char* next[]	= {"mpc", "next", 0};
 const char* toggle[]	= {"mpc", "toggle", 0};
 
-const char* polybar_toggle[] = {"polybar-toggle.sh", 0};
+const char* pb_toggle[] = {"pb-toggle.sh", 0};
 
 const char* w0[] 	= {"sxiv", "/home/jason/Pictures/favs/", "-t", 0};
 const char* w1[] 	= {"wal.sh", 0};
@@ -62,7 +62,7 @@ static struct key keys[] = {
     {Mod1Mask,		XK_F11,		run, {.com = toggle}},
     {Mod1Mask,		XK_F12 ,	run, {.com = next}},
 
-    {MOD,		XK_p,		run, {.com = polybar_toggle}},
+    {MOD,		XK_p,		run, {.com = pb_toggle}},
 
     {MOD,               XK_F8,          run, {.com = w0}},
     {MOD,		XK_F9,		run, {.com = w1}},

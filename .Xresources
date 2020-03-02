@@ -25,10 +25,10 @@ URxvt.iso14755: true
 
 !! Xft
 Xft.dpi: 96
-Xft.antialias: true
-Xft.hinting: true
+Xft.antialias: 1
+Xft.hinting: 1
 Xft.rgba: rgb
-!Xft.autohint: true
+!Xft.autohint: 1
 Xft.hintstyle: hintfull
 Xft.lcdfilter: lcddefault
 
