@@ -1,9 +1,4 @@
 #!/bin/bash
-
-# Toggle script for polybar
-
-if pgrep -x 'polybar' > /dev/null; then
-    killall polybar
-else
-    polybar -r -c ~/.config/polybar/config.no-ewmh top &
-fi
+# Toggle polybar:
+# If on, turn off. If off, start.
+xdotool search polybar &>/dev/null && (ps x | grep "polybar" | grep -v grep | awk '{print $1}' | xargs kill) || polybar-no-ewmh.sh &

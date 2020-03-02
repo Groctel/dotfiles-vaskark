@@ -27,7 +27,7 @@ const char* toggle[]	= {"mpc", "toggle", 0};
 
 const char* polybar_toggle[] = {"polybar-toggle.sh", 0};
 
-const char* w0[] 	= {"sxiv", "/home/jason/Pictures/favs/", "-rt", 0};
+const char* w0[] 	= {"sxiv", "/home/jason/Pictures/favs/", "-t", 0};
 const char* w1[] 	= {"wal.sh", 0};
 const char* w2[] 	= {"wal", "--theme", "random", 0};
 const char* wf[] 	= {"wal", "--theme", "dkeg-skigh", 0}; 
