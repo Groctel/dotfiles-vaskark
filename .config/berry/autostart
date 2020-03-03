@@ -2,11 +2,11 @@
 
 # Set startup apps
 sxhkd -c $HOME/.config/berry/sxhkdrc &
-polybar-ewmh.sh &
+polybar-2.sh &
 #nitrogen --restore &
 redshift.sh &
 xautolock.sh &
-picom.sh &
+#picom.sh &
 dunst &
 libinput-gestures &
 wal -R -o "wal-berry.sh" &

@@ -332,12 +332,12 @@ fg-alt = #141C21
 
 alpha = #00000000
 
-shade1 = #0097A7
-shade2 = #00ACC1
-shade3 = #00BCD4
-shade4 = #26C6DA
-shade5 = #4DD0E1
-shade6 = #80DEEA
+shade1 = #00796B
+shade2 = #00897B
+shade3 = #009688
+shade4 = #26A69A
+shade5 = #4DB6AC
+shade6 = #80CBC4
 
 ;; _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_
 ;;
@@ -580,7 +580,7 @@ ramp-signal-4 = 
 [module/workspaces]
 type = internal/xworkspaces
 
-pin-workspaces = true
+pin-workspaces = false
 
 enable-click = true
 enable-scroll = true
@@ -588,22 +588,22 @@ enable-scroll = true
 format = <label-state>
 format-padding = 0
 
-label-monitor = %name%
+;label-monitor = %index%
 
-label-active = %name%
+label-active = %index%
 label-active-foreground = ${color.fg-alt}
 label-active-background = ${color.shade6}
 
-label-occupied = %name%
+label-occupied = %index%
 label-occupied-foreground = ${color.shade1}
 label-occupied-background = ${color.bg}
 #label-occupied-underline = ${color.shade1}
 
-label-urgent = %name%
+label-urgent = %index%
 label-urgent-foreground = ${color.bg}
 label-urgent-background = ${color.bg}
 
-label-empty = %name%
+label-empty = %index%
 label-empty-background = ${color.bg}
 label-empty-foreground = ${color.fg}
 

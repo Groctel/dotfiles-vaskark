@@ -33,6 +33,16 @@ super + F2
 super + F3
 	kitty -e ncmpcpp
 
+# music controls, etc.
+alt + F9
+	viz.sh
+alt + F10
+	mpc prev
+alt + F11
+	mpc toggle
+alt + F12
+	mpc next
+
 # reboot
 super + shift + Delete
 	systemctl reboot
@@ -53,15 +63,15 @@ XF86MonBrightnessDown
 
 # wal
 super + F8
-	sxiv ~/Pictures/favs -t -g 630x600+60+60
+	sxiv ~/Pictures/favs/ -t -g 630x600+60+60
 super + F9
-        wal -i ~/Pictures/favs/ -a 90 -o "wal-berry.sh"
+        wal -i ~/Pictures/favs/ -a 90 -o "wal-berry.sh" -o "wal-dunst.sh"
 super + F10
-        wal --theme random -o -a 90 "wal-berry.sh"
+        wal --theme random -o -a 90 "wal-berry.sh" -o "wal-dunst.sh"
 super + F11
-        wal --theme dkeg-skigh -a 90 -o "wal-berry.sh"
+        wal --theme dkeg-skigh -a 90 -o "wal-berry.sh" -o "wal-dunst.sh"
 super + F12
-        wal -R -a 90 -o "wal-berry.sh"
+        wal -R -a 90 -o "wal-berry.sh" -o "wal-dunst.sh"
 
 
 #

@@ -178,7 +178,7 @@ mode "resize" {
 bindsym $mod+r mode "resize"
 
 # startup apps
-exec_always --no-startup-id polybar-p11.sh
+exec_always --no-startup-id polybar.sh
 exec --no-startup-id picom.sh
 exec --no-startup-id redshift.sh
 exec --no-startup-id /usr/lib/policykit-1-gnome/polkit-gnome-authentication-agent-1
@@ -197,6 +197,10 @@ bindsym $mod+F2 exec --no-startup-id google-chrome-stable
 bindsym $mod+F3 exec --no-startup-id kitty --class Float -e ncmpcpp
 bindsym $mod+Shift+e exec --no-startup-id gedit ~/.config/i3/config
 bindsym --release $mod+Print exec --no-startup-id scrot -d 3 -q 85 '%Y-%m-%d_%I-%M-%S_%p.jpg' -e 'mv $f ~/Screenshots/'
+
+bindsym Mod1+F10 exec --no-startup-id mpc prev
+bindsym Mod1+F11 exec --no-startup-id mpc toggle
+bindsym Mod1+F12 exec --no-startup-id mpc next
 
 bindsym $mod+F8 exec --no-startup-id sxiv ~/Pictures/favs -t -g 630x600+60+60
 bindsym $mod+F9 exec --no-startup-id wal -i ~/Pictures/favs/
