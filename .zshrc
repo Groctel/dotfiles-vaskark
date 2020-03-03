@@ -150,7 +150,7 @@ alias wttr='curl wttr.in'
 alias cls='clear'
 alias zshrc='vim ~/.zshrc'
 alias ht='htop -u $USER'
-alias xr="vim ~/.Xresources"
+alias xr="nvim ~/.Xresources"
 alias xu='xrdb ~/.Xresources'
 alias m='ncmpcpp'
 alias bf='bunnyfetch'
@@ -173,6 +173,9 @@ alias nfw='clear;neofetch --source $HOME/Pictures/women'
 alias nfs='clear;neofetch --config ~/.config/neofetch/config-small.conf'
 alias nfu='clear;neofetch --config ~/.config/neofetch/config-w3m.conf'
 alias nfus='clear;neofetch --config ~/.config/neofetch/config-small-w3m.conf'
+
+# fzf
+alias se='nvim $(fzf)'
 
 # wifi
 alias up='nmcli c u'
@@ -230,3 +233,8 @@ export PF_COL2=6
 
 # pywal
 (cat ~/.cache/wal/sequences &)
+
+# fzf
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+export FZF_DEFAULT_OPTS='--inline-info --border --prompt="select: "'
+

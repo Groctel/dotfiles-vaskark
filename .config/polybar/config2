@@ -37,11 +37,11 @@ modules-right = wireless wired volume memory battery temperature date session
 
 ;dim-value = 0.8
 
-tray-position = right
-tray-padding = 2
-tray-detached = false
-tray-background = ${colors.color0}
-tray-maxsize = 12
+;tray-position = right
+;tray-padding = 2
+;tray-detached = false
+;tray-background = ${colors.color0}
+;tray-maxsize = 12
 
 ;override-redirect = true
 ;wm-restack = i3
@@ -110,7 +110,7 @@ type = internal/mpd
 ;host = 127.0.0.1
 ;port = 6600
 
-label-song = %artist%  >>  %title%
+label-song = %{A1:mpc toggle:}%{A3:mpc next:}%artist%  >>  %title%%{A}%{A}
 
 format-online = <label-song>
 

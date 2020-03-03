@@ -36,11 +36,11 @@ modules-right = mpd wireless wired volume
 
 ;dim-value = 0.8
 
-tray-position = right
-tray-padding = 2
-tray-detached = false
-tray-background = ${colors.color0}
-tray-maxsize = 12
+;tray-position = right
+;tray-padding = 2
+;tray-detached = false
+;tray-background = ${colors.color0}
+;tray-maxsize = 12
 
 ;override-redirect = true
 ;wm-restack = i3
@@ -82,7 +82,7 @@ format = <label-state>
 
 label-monitor-background = ${colors.color3}
 label-monitor-foreground = ${colors.color0}
-label-monitor-padding = 1
+label-monitor-padding = 2
 
 label-active = %index%
 label-active-background = ${colors.color3}
@@ -109,7 +109,7 @@ type = internal/mpd
 ;host = 127.0.0.1
 ;port = 6600
 
-label-song = %artist%  >>  %title%
+label-song = %{A1:mpc toggle:}%{A2:kitty -e ncmpcpp:}%{A3:mpc next:}%artist%  >>  %title%%{A}%{A}%{A}
 
 format-online = <label-song>
 
@@ -223,16 +223,16 @@ click-right = pavucontrol &
 label-volume =  %percentage%%
 
 format-volume = <label-volume>
-format-volume-background = ${colors.color3}
-format-volume-foreground = ${colors.color0}
-format-volume-padding = 2
+label-volume-background = ${colors.color3}
+label-volume-foreground = ${colors.color0}
+label-volume-padding = 2
 
 label-muted =  ---
 
 format-muted = <label-muted>
-format-muted-background = ${colors.color3}
-format-muted-foreground = ${colors.color0}
-format-muted-padding = 2
+label-muted-background = ${colors.color3}
+label-muted-foreground = ${colors.color0}
+label-muted-padding = 2
 
 [module/memory]
 type = internal/memory
@@ -292,16 +292,14 @@ label =  %temperature-c%
 format = <label>
 label-background = ${colors.color3}
 label-foreground = ${colors.color0}
-label-padding-right = 2
-label-padding-left = 0
+label-padding = 2
 
 label-warn =  %temperature-c%
 
 format-warn = <label-warn>
 label-warn-background = ${colors.alert}
 label-warn-foreground = ${colors.color0}
-label-warn-padding-right = 2
-label-warn-padding-left = 0
+label-warn-padding = 2
 
 [module/date]
 type = internal/date
