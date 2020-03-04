@@ -45,7 +45,7 @@ blur-background-exclude = [
 
 blur:
 {
-  method = "none";
+  method = "gaussian";
   size = 50;
   deviation = 5.0;
 };
@@ -60,7 +60,9 @@ opacity-rule = [
 	"50:class_g = 'Visualizer'",
 	"90:class_g = 'St'",
 	"90:class_g = 'URxvt'",
-	"90:class_g = 'Polybar'"
+	"90:class_g = 'Polybar'",
+        "90:class_g = 'dmenu'",
+        "95:class_g = 'kitty'"
 ];
 
 # Fading

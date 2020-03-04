@@ -2,6 +2,7 @@
 
 [colors]
 color0 = ${xrdb:color0}
+color6 = ${xrdb:color6}
 color3 = ${xrdb:color3}
 alert = #bd2c40
 
@@ -248,9 +249,9 @@ format-padding = 1
 
 [module/battery]
 type = internal/battery
-full-at = 99
+full-at = 98
 battery = BAT0
-adapter = ADP0
+adapter = AC0
 poll-interval = 2
 
 label-charging = %percentage%%

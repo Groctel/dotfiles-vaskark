@@ -20,9 +20,6 @@ dmenu_run \
 -x $b \
 -y $b \
 -w $w \
--dim 0.25 \
--o 0.90 \
-#-z \
+
 
 # border is n so h = h-2n
-# dmenu2 doesn't appear to have fuzzy matching like it claims

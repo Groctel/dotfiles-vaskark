@@ -1,7 +1,8 @@
-## Polybar config
+## Polybar config - compact
 
 [colors]
 color0 = ${xrdb:color0}
+color6 = ${xrdb:color6}
 color3 = ${xrdb:color3}
 alert = #bd2c40
 
@@ -32,8 +33,7 @@ font-1 = "Siji:size=8;2"
 
 modules-left = workspaces
 modules-center = mpd
-;modules-right = mpd wireless wired volume date
-modules-right = wireless wired volume memory battery temperature date session
+modules-right = wireless wired memory battery temperature volume date session
 
 ;dim-value = 0.8
 
@@ -83,7 +83,7 @@ format = <label-state>
 
 label-monitor-background = ${colors.color3}
 label-monitor-foreground = ${colors.color0}
-label-monitor-padding = 1
+label-monitor-padding = 2
 
 label-active = %index%
 label-active-background = ${colors.color3}
@@ -110,7 +110,7 @@ type = internal/mpd
 ;host = 127.0.0.1
 ;port = 6600
 
-label-song = %{A1:mpc toggle:}%{A3:mpc next:}%artist%  >>  %title%%{A}%{A}
+label-song = %{A1:mpc toggle:}%{A2:kitty -e ncmpcpp:}%{A3:mpc next:}%artist%  >>  %title%%{A}%{A}%{A}
 
 format-online = <label-song>
 
@@ -224,16 +224,16 @@ click-right = pavucontrol &
 label-volume =  %percentage%%
 
 format-volume = <label-volume>
-format-volume-background = ${colors.color3}
-format-volume-foreground = ${colors.color0}
-format-volume-padding = 1
+label-volume-background = ${colors.color3}
+label-volume-foreground = ${colors.color0}
+label-volume-padding = 2
 
 label-muted =  ---
 
 format-muted = <label-muted>
-format-muted-background = ${colors.color3}
-format-muted-foreground = ${colors.color0}
-format-muted-padding = 1
+label-muted-background = ${colors.color3}
+label-muted-foreground = ${colors.color0}
+label-muted-padding = 2
 
 [module/memory]
 type = internal/memory
@@ -249,7 +249,7 @@ format-padding = 1
 
 [module/battery]
 type = internal/battery
-full-at = 99
+full-at = 98
 battery = BAT0
 adapter = ADP0
 poll-interval = 2
@@ -259,7 +259,7 @@ label-charging = %percentage%%
 format-charging = <ramp-capacity> <label-charging>
 format-charging-background = ${colors.color3}
 format-charging-foreground = ${colors.color0}
-format-charging-padding-right = 1
+format-charging-padding = 1
 
 label-discharging = %percentage%%
 
@@ -293,16 +293,14 @@ label =  %temperature-c%
 format = <label>
 label-background = ${colors.color3}
 label-foreground = ${colors.color0}
-label-padding-right = 2
-label-padding-left = 0
+label-padding = 2
 
 label-warn =  %temperature-c%
 
 format-warn = <label-warn>
 label-warn-background = ${colors.alert}
 label-warn-foreground = ${colors.color0}
-label-warn-padding-right = 2
-label-warn-padding-left = 0
+label-warn-padding = 2
 
 [module/date]
 type = internal/date

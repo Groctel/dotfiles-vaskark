@@ -379,8 +379,8 @@ format-prefix-padding-right = 0
 [module/battery]
 type = internal/battery
 battery = BAT0
-adapter = AD0
-full-at = 100
+adapter = AC0
+full-at = 98
 
 label-charging = %percentage%%
 format-charging = <label-charging>
