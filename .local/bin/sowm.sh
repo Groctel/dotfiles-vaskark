@@ -3,7 +3,7 @@
 # autostart
 pulseaudio --start --log-target=syslog &
 dunst &
-picom.sh &
+picom-dk.sh &
 redshift.sh &
 xautolock.sh &
 libinput-gestures &

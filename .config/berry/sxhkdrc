@@ -124,4 +124,4 @@ super + Delete
      berryc quit
 
 ~button1
-   berryc pointer_focus
+     berryc pointer_focus
