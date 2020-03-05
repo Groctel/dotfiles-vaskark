@@ -237,4 +237,3 @@ export PF_COL2=6
 # fzf
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 export FZF_DEFAULT_OPTS='--inline-info --border --prompt="select: "'
-

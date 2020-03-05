@@ -36,12 +36,8 @@ super + F3
 # music controls, etc.
 alt + F9
 	viz.sh
-alt + F10
-	mpc prev
-alt + F11
-	mpc toggle
-alt + F12
-	mpc next
+alt + {F10,F11,F12}
+	mpc {prev,toggle,next}
 
 # reboot
 super + shift + Delete
@@ -71,7 +67,7 @@ super + F10
 super + F11
         wal --theme dkeg-skigh -a 90 -o "wal-berry.sh" -o "wal-dunst.sh"
 super + F12
-        wal -R -a 90 -o "wal-berry.sh" -o "wal-dunst.sh"
+        wal -R -o "wal-berry.sh" -o "wal-dunst.sh"
 
 
 #
