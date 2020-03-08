@@ -169,7 +169,7 @@ alias gp='git pull'
 alias nf0='clear;neofetch --config none'
 alias nf='clear;neofetch'
 alias nfs='clear;neofetch --config ~/.config/neofetch/small.conf'
-alias nfu='clear;neofetch --backend w3m --image_size 175px'
+alias nfu='clear;neofetch --backend w3m --image_size 190px'
 alias nfus='clear;neofetch --config ~/.config/neofetch/smallu.conf'
 
 # fzf

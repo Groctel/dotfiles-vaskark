@@ -12,8 +12,8 @@ URxvt.keysym.M-C-1: command:\033]710;xft:agave Nerd Font Mono:size=9\007\033]711
 URxvt.keysym.M-C-2: command:\033]710;xft:TerminessTTF Nerd Font Mono:size=10\007\033]711;xft:TerminessTTF Nerd Font Mono:bold:size=10\007\033]712;xft:TerminessTTF Nerd Font Mono:italic:size=10\007\033]713;xft:TerminessTTF Nerd Font Mono:bolditalic:size=10\007
 
 URxvt*letterSpace: 1
-URxvt*lineSpace: 0
-URxvt*geometry: 90x32
+URxvt*lineSpace: 1
+URxvt*geometry: 90x30
 URxvt*internalBorder: 20
 URxvt*cursorBlink: false
 URxvt*cursorUnderline: true
