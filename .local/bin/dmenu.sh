@@ -21,5 +21,4 @@ dmenu_run \
 -y $b \
 -w $w \
 
-
 # border is n so h = h-2n
