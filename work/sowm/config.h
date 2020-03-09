@@ -6,6 +6,7 @@
 const char* dmenu[]	= {"dmenu.sh",      0};
 const char* rofi[]	= {"rofi", "-show", "drun",      0};
 const char* term[]	= {"kitty",             0};
+const char* term2[]	= {"urxvt",             0};
 const char* nmd[] 	= {"networkmanager_dmenu", 0};
 const char* shot[]	= {"screenshot.sh", "full",            0};
 const char* wshot[] 	= {"screenshot.sh", "window", 0};
@@ -52,6 +53,7 @@ static struct key keys[] = {
     {MOD,           	XK_Print,      	run, {.com = shot}},
     {MOD|ShiftMask,     XK_Print,      	run, {.com = wshot}},
     {MOD,           	XK_Return, 	run, {.com = term}},
+    {MOD|ShiftMask,     XK_Return, 	run, {.com = term2}},
 
     {MOD, 		XK_Escape, 	run, {.com = lock}},
     {MOD, 		XK_F1,     	run, {.com = nautilus}},
