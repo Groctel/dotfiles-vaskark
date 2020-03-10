@@ -13,7 +13,7 @@ URxvt*font: xft:scientifica:size=11
 
 URxvt*letterSpace: 2
 URxvt*lineSpace: 1
-URxvt*geometry: 90x30
+URxvt*geometry: 92x30
 URxvt*internalBorder: 20
 URxvt*cursorBlink: false
 URxvt*cursorUnderline: true
