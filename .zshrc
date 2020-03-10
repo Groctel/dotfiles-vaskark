@@ -168,6 +168,7 @@ alias gp='git pull'
 # neofetch
 alias nf0='clear;neofetch --config none'
 alias nf='clear;neofetch'
+alias nfo='clear; neofetch --off'
 alias nfs='clear;neofetch --config ~/.config/neofetch/small.conf'
 alias nf2='clear;neofetch --backend w3m --image_size 190px'
 alias nf2s='clear;neofetch --config ~/.config/neofetch/small2.conf'
@@ -235,4 +236,5 @@ export PF_ALIGN=""
 
 # fzf
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
-export FZF_DEFAULT_OPTS='--inline-info --border --prompt="select: "'
+export FZF_DEFAULT_OPTS='--border'
+#export FZF_DEFAULT_COMMAND='fd --type f'
