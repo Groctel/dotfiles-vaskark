@@ -20,9 +20,5 @@ dmenu_run \
 -x $b \
 -y $b \
 -w $w \
--dim 0.25 \
--o 0.9 \
--z \
 
 # border is n so h = h-2n
-# -o for opacity (0-1)
