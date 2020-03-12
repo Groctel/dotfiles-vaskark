@@ -81,6 +81,7 @@ HIST_STAMPS="yyyy-mm-dd"
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
 git
+mercurial
 zsh_reload
 systemadmin
 themes
@@ -218,11 +219,10 @@ compinit
 kitty + complete setup zsh | source /dev/stdin
 
 # pfetch
-export PF_INFO="ascii os kernel uptime pkgs shell de"
+export PF_INFO="ascii os kernel uptime pkgs shell wm"
 export PF_SEP=":"
 export PF_COL1=3
 export PF_COL2=2
-export PF_ALIGN=""
 
 # Run when terminal opens/resets
 #clear

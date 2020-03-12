@@ -6,7 +6,7 @@ polybar-2.sh &
 #nitrogen --restore &
 redshift.sh &
 xautolock.sh &
-#picom.sh &
+picom -cCG --backend xrender &
 dunst &
 libinput-gestures &
 wal -R -o "wal-berry.sh" -o "wal-dunst.sh" &
@@ -30,4 +30,4 @@ berryc text_unfocus_color   111111
 berryc smart_place "true"
 berryc draw_text   "true"
 berryc edge_lock   "true"
-berryc set_font    "Iosevka Term-7.5"
+berryc set_font    "scientifica-11:bold"
