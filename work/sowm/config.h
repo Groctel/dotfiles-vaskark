@@ -21,7 +21,6 @@ const char* nautilus[] 	= {"nautilus", 0};
 const char* chrome[] 	= {"google-chrome", 0};
 const char* music[] 	= {"kitty", "-e", "ncmpcpp", 0};
 
-const char* viz[]	= {"viz.sh", 0};
 const char* prev[]	= {"mpc", "prev", 0};
 const char* next[]	= {"mpc", "next", 0};
 const char* toggle[]	= {"mpc", "toggle", 0};
@@ -60,7 +59,6 @@ static struct key keys[] = {
     {MOD, 		XK_F2,     	run, {.com = chrome}},
     {MOD, 		XK_F3,     	run, {.com = music}},
 
-    {Mod1Mask,		XK_F9,	        run, {.com = viz}},
     {Mod1Mask,		XK_F10,		run, {.com = prev}},
     {Mod1Mask,		XK_F11,		run, {.com = toggle}},
     {Mod1Mask,		XK_F12 ,	run, {.com = next}},

@@ -6,7 +6,7 @@ polybar-2.sh &
 #nitrogen --restore &
 redshift.sh &
 xautolock.sh &
-picom -cCG --backend xrender &
+picom -cCG --experimental-backends --backend xrender &
 dunst &
 libinput-gestures &
 wal -R -o "wal-berry.sh" -o "wal-dunst.sh" &
