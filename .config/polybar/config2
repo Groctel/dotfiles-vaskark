@@ -79,7 +79,7 @@ enable-scroll = true
 ;icon-9 = 9:
 
 label-monitor = %name%
-format = <label-monitor> <label-state>
+format = <label-state>
 
 label-monitor-background = ${colors.color0}
 label-monitor-foreground = ${colors.color3}
