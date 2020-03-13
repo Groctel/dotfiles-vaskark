@@ -1,6 +1,6 @@
 #!/bin/sh
 
-# Query ~/.cache/wal/colors for color3 (record 4, field 1, no '#'):
+# Query ~/.cache/wal/colors for colors:
 color0=$(awk 'NR==1 {print substr($1,2,7)}' ~/.cache/wal/colors)
 color3=$(awk 'NR==4 {print substr($1,2,7)}' ~/.cache/wal/colors)
 
