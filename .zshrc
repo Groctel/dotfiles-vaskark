@@ -219,7 +219,7 @@ compinit
 kitty + complete setup zsh | source /dev/stdin
 
 # pfetch
-export PF_INFO="os kernel uptime pkgs shell wm memory"
+export PF_INFO="ascii os kernel uptime shell wm memory"
 export PF_SEP=":"
 export PF_COL1=3
 export PF_COL2=2
