@@ -128,7 +128,7 @@ font-1 = "Siji:size=8;2"
 
 modules-left = workspaces
 modules-center = mpd
-modules-right = wireless wired memory battery temperature volume date session
+modules-right = wireless wired volume memory battery temperature date session
 
 #######################################
 ########## BAR -- MAIN-SMALL ##########
@@ -181,7 +181,62 @@ scroll-down = i3wm-wsprev
 ;cursor-click = pointer
 ;cursor-scroll = ns-resize
 
-########## MODULE -- I3 ##########
+##############################################
+########## BAR -- MAIN-SMALL-BOTTOM ##########
+##############################################
+
+[bar/main-small-bottom]
+;monitor = ${env:MONITOR:eDP-1}
+width = 100%
+height = 30
+radius = 2
+fixed-center = true
+bottom = true
+
+;offset-x = 2%
+offset-y = 2%
+
+background = transparent
+foreground = 
+
+line-size = 
+line-color = 
+
+border-size = 0
+border-color = transparent
+
+padding-left = 5
+padding-right = 5
+
+module-margin-left = 0
+module-margin-right = 0
+
+font-0 = "scientifica:style=bold:size=11;2"
+font-1 = "Siji:size=8;2"
+
+modules-left = mpd
+modules-center = 
+modules-right = battery wireless wired volume
+
+;dim-value = 0.8
+
+;tray-position = right
+;tray-padding = 2
+;tray-detached = false
+;tray-background = ${colors.color0}
+;tray-maxsize = 12
+
+;override-redirect = true
+;wm-restack = i3
+
+scroll-up = i3wm-wsnext
+scroll-down = i3wm-wsprev
+
+;cursor-click = pointer
+;cursor-scroll = ns-resize
+
+
+##################################################
 
 [module/i3]
 type = internal/i3
@@ -240,7 +295,7 @@ label-separator =
 label-separator-foreground = 
 label-separator-padding =
 
-########## MODULE -- SEPARATOR ##########
+##################################################
 
 [module/sep]
 type = custom/text
@@ -250,7 +305,7 @@ content-background = transparent
 content-foreground = transparent
 content-padding = 0
 
-########## MODULE -- WORKSPACES ##########
+##################################################
 
 [module/workspaces]
 type = internal/xworkspaces
@@ -288,7 +343,7 @@ label-occupied-foreground = ${colors.color3}
 label-occupied-padding = 2
 
 label-urgent = %index%
-label-urgent-background = ${colors.alert}
+label-urgent-background = ${colors.color1}
 label-urgent-foreground = ${colors.color0}
 label-urgent-padding = 2
 
@@ -297,14 +352,14 @@ label-empty-background = ${colors.color0}
 label-empty-foreground = #444444
 label-empty-padding = 2
 
-########## MODULE -- MPD ##########
+##################################################
 
 [module/mpd]
 type = internal/mpd
 ;host = 127.0.0.1
 ;port = 6600
 
-label-song = %{A1:mpc toggle:}%{A2:kitty -e ncmpcpp:}%{A3:mpc next:}%artist%  >>  %title%%{A}%{A}%{A}
+label-song = %{A1:mpc toggle:}%{A2:urxvt -e ncmpcpp:}%{A3:mpc next:}%artist%  >>  %title%%{A}%{A}%{A}
 
 format-online = <label-song>
 
@@ -327,7 +382,7 @@ format-offline-padding = 2
 label-song-maxlen = 175
 label-song-ellipsis = true
 
-########## MODULE -- MPD TIME ##########
+##################################################
 
 [module/mpd-time]
 type = internal/mpd
@@ -341,7 +396,7 @@ format-online-background = ${colors.color0}
 format-online-foreground = ${colors.color3}
 format-online-padding = 2
 
-########## MODULE -- MPD CONTROLS ##########
+##################################################
 
 [module/mpd-controls]
 type = internal/mpd
@@ -358,7 +413,7 @@ icon-play = 
 icon-pause = 
 icon-next = 
 
-########## MODULE -- WIRELESS ##########
+##################################################
 
 [module/wireless]
 type = internal/network
@@ -388,7 +443,7 @@ ramp-signal-2 = 
 ramp-signal-3 = 
 ramp-signal-4 = 
 
-########## MODULE -- WIRED ##########
+##################################################
 
 [module/wired]
 type = internal/network
@@ -418,7 +473,7 @@ ramp-signal-2 = 
 ramp-signal-3 = 
 ramp-signal-4 = 
 
-########## MODULE -- VOLUME ##########
+##################################################
 
 [module/volume]
 type = internal/pulseaudio
@@ -439,7 +494,7 @@ label-muted-background = ${colors.color3}
 label-muted-foreground = ${colors.color0}
 label-muted-padding = 2
 
-########## MODULE -- MEMORY ##########
+##################################################
 
 [module/memory]
 type = internal/memory
@@ -453,7 +508,7 @@ format-background = ${colors.color3}
 format-foreground = ${colors.color0}
 format-padding = 2
 
-########## MODULE -- BATTERY ##########
+##################################################
 
 [module/battery]
 type = internal/battery
@@ -496,7 +551,7 @@ ramp-capacity-9 = 
 ; Framerate in milliseconds
 animation-charging-framerate = 750
 
-########## MODULE -- TEMPERATURE ##########
+##################################################
 
 [module/temperature]
 type = internal/temperature
@@ -517,7 +572,7 @@ format-warn-background = ${colors.color1}
 format-warn-foreground = ${colors.color0}
 format-warn-padding = 2
 
-########## MODULE -- DATE ##########
+##################################################
 
 [module/date]
 type = internal/date
@@ -533,7 +588,25 @@ format-foreground = ${colors.color3}
 format-background = ${colors.color0}
 format-padding = 2
 
-########## MODULE -- SESSION ##########
+##################################################
+
+[module/uptime]
+;https://github.com/jaagr/polybar/wiki/User-contributed-modules#uptime
+type = custom/script
+exec = uptime | awk -F, '{sub(".*up ",x,$1);print $1}'
+interval = 50
+
+label = %output%
+
+format-foreground = ${colors.color0}
+format-background = ${colors.color3}
+format-padding = 2
+
+format-prefix = " "
+format-prefix-foreground = ${colors.color0}
+format-prefix-background = ${colors.color3}
+
+##################################################
 
 [module/session]
 type = custom/script

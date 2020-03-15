@@ -4,7 +4,7 @@
 killall -q polybar
 
 # Launch
-echo "---" | tee -a /tmp/polybar-main.log
-polybar -r -c ~/.config/polybar/config main-small >>/tmp/polybar-main-small.log 2>&1 &
+echo "---" | tee -a /tmp/polybar.log
+polybar -r -c ~/.config/polybar/config main-small >>/tmp/polybar.log 2>&1 &
 
 #echo "Bars launched..."

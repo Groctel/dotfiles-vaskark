@@ -148,8 +148,8 @@ font-1 = "Siji:size=8;2"
 ;cpu_bar memory_bar filesystem_bar mpd_bar 
 ;volume brightness battery_bar 
 
-modules-left = workspaces mpd_i mpd
-modules-center = 
+modules-left = workspaces
+modules-center = mpd_i mpd
 modules-right = colors sep memory cpu volume battery wireless wired date
 
 ; The separator will be inserted between the output of each module
