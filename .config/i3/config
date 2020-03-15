@@ -178,7 +178,7 @@ mode "resize" {
 bindsym $mod+r mode "resize"
 
 # startup apps
-exec_always --no-startup-id polybar.sh
+exec_always --no-startup-id polybar-main-i3.sh
 exec --no-startup-id picom.sh
 exec --no-startup-id redshift.sh
 exec --no-startup-id /usr/lib/policykit-1-gnome/polkit-gnome-authentication-agent-1
