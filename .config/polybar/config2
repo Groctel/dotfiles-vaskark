@@ -62,7 +62,7 @@ content-padding = 0
 
 [module/workspaces]
 type = internal/xworkspaces
-pin-workspaces = false
+pin-workspaces = true
 enable-click = true
 enable-scroll = true
 

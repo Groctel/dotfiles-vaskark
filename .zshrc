@@ -216,6 +216,7 @@ alias sct='systemctl --user list-timers --all'
 # completion for kitty
 autoload -Uz compinit
 compinit
+# Completion for kitty
 kitty + complete setup zsh | source /dev/stdin
 
 # pfetch
