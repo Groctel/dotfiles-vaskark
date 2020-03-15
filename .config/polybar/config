@@ -77,7 +77,7 @@ font-1 = "Siji:size=8;2"
 
 modules-left = i3
 modules-center = mpd
-modules-right = wireless wired volume memory battery date session
+modules-right = wireless wired volume memory battery temperature date session
 
 ;dim-value = 0.8
 
@@ -451,7 +451,7 @@ label =   %percentage_used%%
 format = <label>
 format-background = ${colors.color3}
 format-foreground = ${colors.color0}
-format-padding = 1
+format-padding = 2
 
 ########## MODULE -- BATTERY ##########
 
@@ -506,16 +506,16 @@ warn-temperature = 65
 label =  %temperature-c%
 
 format = <label>
-label-background = ${colors.color3}
-label-foreground = ${colors.color0}
-label-padding = 2
+format-background = ${colors.color3}
+format-foreground = ${colors.color0}
+format-padding = 2
 
 label-warn =  %temperature-c%
 
 format-warn = <label-warn>
-label-warn-background = ${colors.alert}
-label-warn-foreground = ${colors.color0}
-label-warn-padding = 2
+format-warn-background = ${colors.color1}
+format-warn-foreground = ${colors.color0}
+format-warn-padding = 2
 
 ########## MODULE -- DATE ##########
 
