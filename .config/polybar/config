@@ -126,7 +126,7 @@ module-margin-right = 0
 font-0 = "scientifica:style=bold:size=11;2"
 font-1 = "Siji:size=8;2"
 
-modules-left = workspaces
+modules-left = ewmh
 modules-center = mpd
 modules-right = wireless wired volume memory battery temperature date session
 
@@ -160,7 +160,7 @@ module-margin-right = 0
 font-0 = "scientifica:style=bold:size=11;2"
 font-1 = "Siji:size=8;2"
 
-modules-left = workspaces
+modules-left = ewmh
 modules-center = 
 modules-right = mpd wireless wired volume
 
@@ -214,7 +214,7 @@ module-margin-right = 0
 font-0 = "scientifica:style=bold:size=11;2"
 font-1 = "Siji:size=8;2"
 
-modules-left = workspaces
+modules-left = ewmh
 modules-center = 
 modules-right = battery wireless wired volume
 
@@ -306,12 +306,11 @@ content-padding = 0
 
 ##################################################
 
-[module/workspaces]
+[module/ewmh]
 type = internal/xworkspaces
 pin-workspaces = false
 enable-click = true
 enable-scroll = true
-reverse-scroll = true
 
 ; workspace icons
 ;icon-0 = 1;
@@ -436,7 +435,6 @@ format-disconnected-background = ${colors.color0}
 format-disconnected-foreground = ${colors.color3}
 format-disconnected-padding = 2
 
-; Only applies if <ramp-signal> is used
 ramp-signal-0 = 
 ramp-signal-1 = 
 ramp-signal-2 = 
@@ -466,7 +464,6 @@ format-disconnected-background = ${colors.color0}
 format-disconnected-foreground = ${colors.color3}
 format-disconnected-padding = 2
 
-; Only applies if <ramp-signal> is used
 ramp-signal-0 = 
 ramp-signal-1 = 
 ramp-signal-2 = 
