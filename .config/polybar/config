@@ -348,7 +348,7 @@ label-urgent-padding = 2
 
 label-empty = %index%
 label-empty-background = ${colors.color0}
-label-empty-foreground = #444444
+label-empty-foreground = #444
 label-empty-padding = 2
 
 ##################################################
