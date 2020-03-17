@@ -213,10 +213,11 @@ module-margin-right = 0
 
 font-0 = "scientifica:bold:size=11;2"
 font-1 = "Siji:size=8;2"
+font-2 = "Weather Icons:size=8;2"
 
 modules-left = ewmh
 modules-center = 
-modules-right = mpd sep uptime battery wireless wired volume
+modules-right = weather sep mpd sep uptime battery wireless wired volume
 
 ;dim-value = 0.8
 
@@ -616,6 +617,20 @@ label =  %output%
 
 label-background = ${colors.color0}
 label-foreground = ${colors.color3}
+label-padding = 2
+
+##################################################
+
+[module/weather]
+type = custom/script
+exec = ~/.config/polybar/scripts/openweathermap-simple.sh
+interval = 600
+label-font = 3
+
+label = %output%
+
+label-background = ${colors.color3}
+label-foreground = ${colors.color0}
 label-padding = 2
 
 ##################################################
