@@ -23,6 +23,7 @@ visualizer_in_stereo = yes
 visualizer_sync_interval = 30
 #visualizer_look = ●●
 #visualizer_look = ▉▉
+#visualizer_look = ●▉
 visualizer_look = +|
 visualizer_color = yellow, cyan
 visualizer_type = spectrum
@@ -71,3 +72,4 @@ color2 = "red"
 # Stuff #
 clock_display_seconds = "yes"
 jump_to_now_playing_song_at_start = "yes"
+playlist_disable_highlight_delay = 0

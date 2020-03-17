@@ -237,6 +237,17 @@ scroll-down = i3wm-wsprev
 ;cursor-scroll = ns-resize
 
 ##################################################
+##################################################
+
+[module/sep]
+type = custom/text
+content = " "
+
+content-background = transparent
+content-foreground = transparent
+content-padding = 0
+
+##################################################
 
 [module/i3]
 type = internal/i3
@@ -245,7 +256,6 @@ wrapping-scroll = false
 enable-click = true
 enable-scroll = false
 reverse-scroll = false
-;show-all = true
 
 ; workspace icons
 ws-icon-0 = 1;
@@ -294,16 +304,6 @@ label-urgent-padding = 2
 label-separator = 
 label-separator-foreground = 
 label-separator-padding =
-
-##################################################
-
-[module/sep]
-type = custom/text
-content = " "
-
-content-background = transparent
-content-foreground = transparent
-content-padding = 0
 
 ##################################################
 
@@ -359,7 +359,7 @@ type = internal/mpd
 ;host = 127.0.0.1
 ;port = 6600
 
-label-song = %{A1:mpc toggle:}%{A2:kitty -e ncmpcpp:}%{A3:mpc next:}%artist%  >>  %title%%{A}%{A}%{A}
+label-song = %{A1:mpc toggle:}%{A2:kitty -e ncmpcpp:}%{A3:mpc next:}%{A8:mpc prev:}%artist%  >>  %title%%{A}%{A}%{A}%{A}
 
 format-online = <label-song>
 
@@ -384,7 +384,7 @@ label-song-ellipsis = true
 
 ##################################################
 
-[module/mpd-time]
+[module/mpd-t]
 type = internal/mpd
 ;host = 127.0.0.1
 ;port = 6600
@@ -398,7 +398,7 @@ format-online-padding = 2
 
 ##################################################
 
-[module/mpd-controls]
+[module/mpd-c]
 type = internal/mpd
 ;host = 127.0.0.1
 ;port = 6600
@@ -475,7 +475,7 @@ ramp-signal-4 = 
 
 [module/volume]
 type = internal/pulseaudio
-sink = alsa_output.pci-0000_00_1f.3.analog-stereo
+;sink = alsa_output.pci-0000_00_1f.3.analog-stereo
 click-right = pavucontrol &
 
 label-volume = %percentage%%
@@ -500,7 +500,6 @@ ramp-volume-2 = 
 
 [module/memory]
 type = internal/memory
-
 interval = 3
 
 label =   %percentage_used%%
@@ -592,7 +591,7 @@ label =  %output%
 format = <label>
 
 format-foreground = ${colors.color0}
-format-background = ${colors.color5}
+format-background = ${colors.color1}
 format-padding = 2
 
 ##################################################
