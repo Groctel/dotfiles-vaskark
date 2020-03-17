@@ -217,7 +217,7 @@ font-2 = "Weather Icons:size=8;2"
 
 modules-left = ewmh
 modules-center = 
-modules-right = weather sep mpd sep uptime battery wireless wired volume
+modules-right = mpd sep uptime battery wireless wired volume
 
 ;dim-value = 0.8
 
