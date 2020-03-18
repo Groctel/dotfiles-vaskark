@@ -379,7 +379,7 @@ format-offline-background = ${colors.color3}
 format-offline-foreground = ${colors.color0}
 format-offline-padding = 2
 
-label-song-maxlen = 175
+label-song-maxlen = 200
 label-song-ellipsis = true
 
 ##################################################
