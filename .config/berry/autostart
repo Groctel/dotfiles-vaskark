@@ -2,7 +2,7 @@
 
 # Set startup apps
 sxhkd -c $HOME/.config/berry/sxhkdrc &
-polybar-main-small.sh &
+polybar-main-small-bottom.sh &
 #nitrogen --restore &
 redshift.sh &
 xautolock.sh &

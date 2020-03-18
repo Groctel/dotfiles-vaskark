@@ -47,6 +47,10 @@ super + shift + p
 alt + {F10,F11,F12}
 	mpc {prev,toggle,next}
 
+# picom
+ctrl + {F11,F12}
+	{picom.sh,picom-blur.sh}
+
 # reboot
 super + shift + Delete
 	systemctl reboot
