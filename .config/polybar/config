@@ -31,6 +31,7 @@ screenchange-reload = true
 ;xrdb, dkeg-skigh
 color0 = ${xrdb:color0:#252a32}
 color1 = ${xrdb:color1:#876058}
+;color1 = ${env:color1_alpha}
 color2 = ${xrdb:color2:#6f7f71}
 color3 = ${xrdb:color3:#b39580}
 color4 = ${xrdb:color4:#546780}

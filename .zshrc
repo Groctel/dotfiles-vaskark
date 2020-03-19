@@ -234,6 +234,8 @@ export PF_COL2=2
 
 # pywal
 (cat ~/.cache/wal/sequences &)
+source ~/.cache/wal/colors.sh
+export color1_alpha="#22${color1/'#'}"
 
 # fzf
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
