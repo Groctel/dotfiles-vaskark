@@ -77,13 +77,13 @@ XF86MonBrightnessDown
 super + F8
 	sxiv ~/Pictures/favs/ -t -g 630x600+60+60
 super + F9
-        wal -i ~/Pictures/favs/ -o "wal-berry.sh" -o "wal-dunst.sh"
+        wal -i ~/Pictures/favs/;wal-berry.sh;wal-dunst.sh
 super + F10
-        wal --theme random -o "wal-berry.sh" -o "wal-dunst.sh"
+        wal --theme random;wal-berry.sh;wal-dunst.sh
 super + F11
-        wal --theme dkeg-skigh -o "wal-berry.sh" -o "wal-dunst.sh"
+        wal --theme dkeg-skigh;wal-berry.sh;wal-dunst.sh
 super + F12
-        wal -R -o "wal-berry.sh" -o "wal-dunst.sh"
+        wal -R;wal-berry.sh;wal-dunst.sh
 
 
 #
