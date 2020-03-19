@@ -142,7 +142,7 @@ font:
   # as modifying the line spacing, and `offset.x` as modifying the letter spacing.
   offset:
     x: 1
-    y: 0
+    y: 1
 
   # Glyph offset determines the locations of the glyphs within their cells with
   # the default being at the bottom. Increasing `x` moves the glyph to the right,
@@ -271,7 +271,7 @@ colors:
 # Specifying a `duration` of `0` will disable the visual bell.
 visual_bell:
   animation: EaseOutExpo
-  duration: 0
+  duration: 10
   color: '#ffffff'
 
 # Background opacity
@@ -502,13 +502,12 @@ live_config_reload: true
 # at once.
 key_bindings:
   # (Windows, Linux, and BSD only)
-  - { key: V,        mods: Alt,           action: Paste            }
   - { key: C,        mods: Alt,           action: Copy             }
+  - { key: V,        mods: Alt,           action: Paste            }
   - { key: S,        mods: Alt,           action: PasteSelection   }
-  - { key: Key0,     mods: Alt,           action: ResetFontSize    }
   - { key: Equals,   mods: Alt,           action: IncreaseFontSize }
   - { key: Subtract, mods: Alt,           action: DecreaseFontSize }
-  - { key: Q,	     mods: Alt,		  action: Quit             }
+  - { key: Key0,     mods: Alt,           action: ResetFontSize    }
   - { key: J,        mods: Alt,           action: ScrollLineDown   }
   - { key: K,        mods: Alt,           action: ScrollLineUp     }
   - { key: J,        mods: Alt|Shift,     action: ScrollPageDown   }
@@ -516,6 +515,8 @@ key_bindings:
   - { key: D,        mods: Alt,           action: ScrollToBottom   }
   - { key: U,        mods: Alt,           action: ScrollToTop      }
   - { key: Return,   mods: Alt,           action: SpawnNewInstance }
+  - { key: Q,	     mods: Alt,		  action: Quit             }
+  - { key: F2,	     mods: Alt,		  command: {program: "gedit", args: [".config/alacritty/alacritty.yml"]} }
 
   # (Windows only)
   #- { key: Return,   mods: Alt,           action: ToggleFullscreen }
