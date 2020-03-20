@@ -487,16 +487,18 @@ format-volume-background = ${colors.color3}
 format-volume-foreground = ${colors.color0}
 format-volume-padding = 2
 
-label-muted =  ---
+label-muted =  ---
 
 format-muted = <label-muted>
 format-muted-background = ${colors.color3}
 format-muted-foreground = ${colors.color0}
 format-muted-padding = 2
 
-ramp-volume-0 = 
-ramp-volume-1 = 
-ramp-volume-2 = 
+ramp-volume-0 = 
+ramp-volume-1 = 
+ramp-volume-2 = 
+ramp-volume-3 = 
+ramp-volume-4 = 
 
 ##################################################
 
@@ -542,7 +544,7 @@ format-full-padding = 2
 ramp-capacity-0 = 
 ramp-capacity-1 = 
 ramp-capacity-2 = 
-ramp-capacity-3 = 
+ramp-capacity-3 = 
 ramp-capacity-4 = 
 
 ##################################################

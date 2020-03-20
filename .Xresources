@@ -2,6 +2,7 @@
 URxvt*termName: rxvt-unicode-256
 
 URxvt*font: xft:scientifica:size=11
+!URxvt*font: xft:Cozette:style=Medium:size=8
 
 !URxvt*font: xft:Monospace:size=8, xft:MesloLGS NF:size=8
 !URxvt*boldFont: xft:Monospace:bold:size=8, xft:MesloLGS NF:bold:size=8
