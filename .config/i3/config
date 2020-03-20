@@ -163,7 +163,6 @@ bindsym $mod+Shift+c reload
 bindsym $mod+Shift+r restart
 
 # resize windows
-bindsym $mod+r mode "resize"
 mode "resize" {
         # resize with arrow keys
         bindsym Left resize grow width 10 px or 10 ppt
@@ -182,6 +181,7 @@ mode "resize" {
         bindsym Escape mode "default"
         bindsym $mod+r mode "default"
 }
+bindsym $mod+r mode "resize"
 
 # startup apps
 exec_always --no-startup-id polybar-main-i3.sh
@@ -238,7 +238,6 @@ client.placeholder      $bg     $bg     $fg  $bg       $bg
 client.background       $bg
 
 # system menu
-bindsym $mod+Delete mode "$system"
 set $system System ... logout (l), suspend (s), reboot (r), shutdown (S), UEFI (R)
 mode "$system" {
     # logout
@@ -255,6 +254,7 @@ mode "$system" {
     bindsym Return mode "default"
     bindsym Escape mode "default"
 }
+bindsym $mod+Delete mode "$system"
 
 ############### i3-gaps stuff ##################
 
@@ -285,7 +285,6 @@ bindsym $mod+y gaps outer current toggle 100
 #workspace 2 gaps outer 100
 
 # gaps mode
-bindsym $mod+Shift+g mode "$mode_gaps"
 set $mode_gaps Gaps: (o)uter, (i)nner
 set $mode_gaps_outer Outer Gaps: +|-|0 (local), Shift + +|-|0 (global)
 set $mode_gaps_inner Inner Gaps: +|-|0 (local), Shift + +|-|0 (global)
@@ -321,3 +320,4 @@ mode "$mode_gaps_inner" {
         bindsym Return mode "default"
         bindsym Escape mode "default"
 }
+bindsym $mod+Shift+g mode "$mode_gaps"
