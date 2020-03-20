@@ -536,6 +536,8 @@ format-discharging-background = ${colors.color3}
 format-discharging-foreground = ${colors.color0}
 format-discharging-padding = 2
 
+label-full = %percentage%%
+
 format-full = <ramp-capacity> <label-full>
 format-full-background = ${colors.color3}
 format-full-foreground = ${colors.color0}
