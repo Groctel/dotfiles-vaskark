@@ -275,10 +275,7 @@ gaps inner 8
 gaps outer 0
 
 # gaps stuff
-#bindsym $mod+y gaps outer current toggle 100
-bindsym $mod+y gaps outer current plus 50
-bindsym $mod+Shift+y gaps outer current minus 50
-bindsym $mod+u gaps outer current toggle 100
+bindsym $mod+y gaps outer current toggle 100
 #workspace 2 gaps outer 100
 
 # gaps mode
