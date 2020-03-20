@@ -179,14 +179,13 @@ bindsym $mod+r mode "resize"
 
 # startup apps
 exec_always --no-startup-id polybar-main-i3.sh
-exec --no-startup-id picom.sh
+exec_always --no-startup-id picom.sh
 exec --no-startup-id redshift.sh
 exec --no-startup-id /usr/lib/policykit-1-gnome/polkit-gnome-authentication-agent-1
 #exec --no-startup-id nitrogen --restore
 exec --no-startup-id wal -R
 exec --no-startup-id libinput-gestures
 exec --no-startup-id xautolock -time 10 -locker 'betterlockscreen -l pixel' -corners 00-+
-#exec --no-startup-id glava-mpd.sh
 
 # lock screen
 bindsym $mod+Escape exec betterlockscreen -l pixel
@@ -273,7 +272,7 @@ hide_edge_borders smart_no_gaps
 
 # set inner/outer gaps
 gaps inner 8
-gaps outer -4
+gaps outer 0
 
 # gaps stuff
 #bindsym $mod+y gaps outer current toggle 100
