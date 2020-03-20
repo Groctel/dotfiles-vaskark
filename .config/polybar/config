@@ -217,7 +217,7 @@ font-0 = "scientifica:bold:size=11;2"
 font-1 = "Siji:size=8;2"
 font-2 = "Weather Icons:size=8;2"
 
-modules-left = ewmh-i
+modules-left = ewmh
 modules-center = 
 modules-right = mpd sep uptime battery wireless wired volume
 
@@ -352,10 +352,10 @@ enable-scroll = true
 
 ; workspace icons
 icon-0 = 0;
-icon-1 = 1;
-icon-2 = 2;
-icon-3 = 3;
-icon-4 = 4;
+icon-1 = 1;
+icon-2 = 2;
+icon-3 = 3;
+icon-4 = 4;
 ;icon-5 = 5;
 ;icon-6 = 6;
 ;icon-7 = 7;
