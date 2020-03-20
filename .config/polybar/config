@@ -164,7 +164,7 @@ font-1 = "Siji:size=8;2"
 
 modules-left = ewmh
 modules-center = 
-modules-right = mpd wireless wired volume
+modules-right = mpd sep uptime battery wireless wired volume
 
 ;dim-value = 0.8
 
