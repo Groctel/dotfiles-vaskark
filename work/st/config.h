@@ -5,8 +5,11 @@
  *
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
-static char *font = "scientifica:size=11";
-static char *font2[] = { "Typicons:size=8" };
+static char *font = "scientifica:size=11:antialias=true:autohint=true";
+static char *font2[] = { 
+	"Typicons:size=8:antialias=true:autohint=true",  
+	"MesloLGS NF:size=8:antialias=true:autohint=true",
+};
 static int borderpx = 20;
 
 /*
