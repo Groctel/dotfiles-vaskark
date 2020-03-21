@@ -1,10 +1,9 @@
 #!/usr/bin/env sh
 
-# Terminate
-killall -q picom
-
-# Wait until the processes have been shut down
-while pgrep -u $UID -x picom >/dev/null; do sleep 1; done
+# If picom is running, kill it to prevent multiple instances
+if ps -A | grep picom; then
+	killall -q picom
+fi
 
 # Launch
 picom --experimental-backends --config ~/.config/picom/picom-blur.conf >> /tmp/picom.log 2>&1 &
