@@ -91,6 +91,7 @@
 // #request addxwinstate "skip_taskbar"
 // #request addxwinstate "skip_pager"
 // #request addxwinstate "above"
+// #request addxwinstate "below"
 // #request addxwinstate "pinned"
 
 /* (X11 only) Use the XShape extension to support clicking through
