@@ -1,10 +1,10 @@
 static const char norm_fg[] = "{color0}";
 static const char norm_bg[] = "{color3}";
-static const char norm_border[] = "{color3}";
+static const char norm_border[] = "{color0}";
 
 static const char sel_fg[] = "{color3}";
 static const char sel_bg[] = "{color0}";
-static const char sel_border[] = "{color0}";
+static const char sel_border[] = "{color3}";
 
 static const char *colors[][3]      = {{
     /*               fg           bg         border                         */
