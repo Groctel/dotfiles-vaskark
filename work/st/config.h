@@ -7,8 +7,8 @@
  */
 static char *font = "scientifica:size=11:antialias=true:autohint=true";
 static char *font2[] = { 
-	"Typicons:size=8:antialias=true:autohint=true",  
-	"MesloLGS NF:size=8:antialias=true:autohint=true",
+	"Typicons:size=8:antialias=true:autohint=true",
+	"MesloLGS NF:size=8:antialias=true:autohint=true"
 };
 static int borderpx = 20;
 
