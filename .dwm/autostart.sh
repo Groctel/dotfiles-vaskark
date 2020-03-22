@@ -2,17 +2,17 @@
 
 # startup
 #nitrogen --restore &
-pulseaudio --start --log-target=syslog &
+#pulseaudio --start --log-target=syslog &
 #redshift.sh &
 xautolock.sh &
 picom.sh &
 #dunst &
-libinput-gestures &
+#libinput-gestures &
 wal -R &
 /usr/lib/policykit-1-gnome/polkit-gnome-authentication-agent-1 &
 
 # statusbar
 while true; do
-	xsetroot -name "$( date +"%I:%M %p" )"
+	xsetroot -name "$( date +"%I:%M %P" )"
 	sleep 1m
 done &

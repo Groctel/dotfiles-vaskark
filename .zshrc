@@ -163,8 +163,9 @@ alias c='cava'
 alias fd='fdfind'
 
 # git
-alias gc='git clone --depth=1'
+alias gc='git commit -a'
 alias gp='git pull'
+alias gpom='git push -u origin master'
 
 # neofetch
 alias nf0='clear;neofetch --config none'

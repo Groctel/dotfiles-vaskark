@@ -8,7 +8,7 @@ static const unsigned int borderpx  = 2;        /* border pixel of windows */
 static const unsigned int snap      = 32;       /* snap pixel */
 static const int showbar            = 1;        /* 0 means no bar */
 static const int topbar             = 1;        /* 0 means bottom bar */
-static const unsigned int gappx    = 6;        /* gaps between windows */
+static const unsigned int gappx    = 10;        /* gaps between windows */
 static const int horizpadbar        = 0;        /* horizontal padding for statusbar */
 static const int vertpadbar         = 12;        /* vertical padding for statusbar */
 static const char *fonts[]          = { "scientifica:bold:size=11", "Symbols Nerd Font:size=8" };
@@ -115,6 +115,7 @@ static Key keys[] = {
 	{ MODKEY|ShiftMask,             XK_comma,  tagmon,         {.i = -1 } },
 	{ MODKEY|ShiftMask,             XK_period, tagmon,         {.i = +1 } },
 
+	/* tags */
 	TAGKEYS(                        XK_1,                      0)
 	TAGKEYS(                        XK_2,                      1)
 	TAGKEYS(                        XK_3,                      2)
@@ -125,31 +126,37 @@ static Key keys[] = {
 	TAGKEYS(                        XK_8,                      7)
 	TAGKEYS(                        XK_9,                      8)
 
+	/* apps */
         { MODKEY,			XK_Escape,      spawn,	        {.v = lock } },
         { MODKEY, 			XK_F1,     	spawn, 		{.v = nautilus}},
         { MODKEY, 			XK_F2,     	spawn, 		{.v = chrome}},
         { MODKEY, 			XK_F3,     	spawn, 		{.v = music}},
 
+	/* pywal */
 	{ MODKEY,               	XK_F8,          spawn,     {.v = w0 } },
         { MODKEY,			XK_F9,		spawn,     {.v = w1 } },
         { MODKEY,			XK_F10,		spawn,     {.v = w2 } },
         { MODKEY,			XK_F11,		spawn,     {.v = wf } },
         { MODKEY,               	XK_F12,         spawn,     {.v = wr } },
 
+	/* volume */
 	{ 0,                            XF86XK_AudioLowerVolume,   spawn, {.v = downvol } },
 	{ 0,                            XF86XK_AudioMute,          spawn, {.v = mutevol } },
 	{ 0,                            XF86XK_AudioRaiseVolume,   spawn, {.v = upvol   } },
 
+	/* mpd */
 	{ Mod1Mask,			XK_F10,	   spawn,	   {.v = prev } },
 	{ Mod1Mask,			XK_F11,	   spawn,	   {.v = toggle } },
 	{ Mod1Mask,			XK_F12,	   spawn,	   {.v = next } },
 
+	/* gaps */
 	{ MODKEY,                       XK_minus,  setgaps,        {.i = -1 } },
 	{ MODKEY|ShiftMask,             XK_plus,   setgaps,        {.i = +1 } },
 	{ MODKEY,                       XK_equal,  setgaps,        {.i = 0  } },
 
-	{ MODKEY,                       XK_Delete,      quit,      {0} },
+	/* reload,quit */
 	{ MODKEY|ShiftMask,             XK_Delete,      quit,      {1} }, 
+	{ MODKEY,                       XK_Delete,      quit,      {0} },
 };
 
 /* button definitions */
