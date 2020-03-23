@@ -220,6 +220,9 @@ compinit
 # Completion for kitty
 kitty + complete setup zsh | source /dev/stdin
 
+# dmenu
+alias dm='dmenu_run -fn 'scientifica-11:bold' -p " dmenu " -nb "$color3" -nf "$color0" -sb "$color0" -sf "$color3" -h 30'
+
 # pfetch
 export PF_INFO="ascii os kernel uptime shell wm memory"
 export PF_SEP=":"
@@ -236,7 +239,7 @@ export PF_COL2=2
 # pywal
 (cat ~/.cache/wal/sequences &)
 source ~/.cache/wal/colors.sh
-export color1_alpha="#22${color1/'#'}"
+#export color1_alpha="#22${color1/'#'}"
 
 # fzf
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
