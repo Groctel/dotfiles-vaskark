@@ -220,9 +220,6 @@ compinit
 # Completion for kitty
 kitty + complete setup zsh | source /dev/stdin
 
-# dmenu
-alias dm='dmenu_run -fn 'scientifica-11:bold' -p " dmenu " -nb "$color3" -nf "$color0" -sb "$color0" -sf "$color3" -h 30'
-
 # pfetch
 export PF_INFO="ascii os kernel uptime shell wm memory"
 export PF_SEP=":"
