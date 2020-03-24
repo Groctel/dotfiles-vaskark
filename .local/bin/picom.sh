@@ -5,6 +5,7 @@ if ps -A | grep picom; then
 	killall -q picom
 fi
 
+# Wait until the processes have been shut down
 sleep 0.1s
 
 # Launch
