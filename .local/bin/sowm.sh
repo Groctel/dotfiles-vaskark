@@ -2,6 +2,7 @@
 
 # autostart
 pulseaudio --start --log-target=syslog &
+polybar-main-small-bottom.sh &
 dunst &
 picom.sh &
 redshift.sh &
