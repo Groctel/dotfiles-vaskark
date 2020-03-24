@@ -38,13 +38,10 @@ super + F3
 
 # polybar
 super + p
-	polybar-hide.sh
+	polybar-toggle.sh
 
 super + shift + p
-	polybar-show.sh
-
-super + control +p
-	pb-toggle.sh
+	polybar-menu.sh
 
 # music controls
 alt + {F10,F11,F12}

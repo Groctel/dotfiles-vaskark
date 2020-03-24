@@ -194,6 +194,7 @@ height = 30
 radius = 2
 fixed-center = true
 bottom = true
+enable-ipc = true
 
 ;offset-x = 2%
 offset-y = 2%
