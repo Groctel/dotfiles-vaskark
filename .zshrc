@@ -17,7 +17,7 @@ export ZSH=$HOME/.oh-my-zsh
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
-ZSH_THEME="p10k"
+ZSH_THEME="spaceship"
 
 # Specific theme settings
 source ~/.spaceship
@@ -165,7 +165,6 @@ alias fd='fdfind'
 # git
 alias gc='git commit -a'
 alias gp='git pull'
-alias gpom='git push -u origin master'
 
 # neofetch
 alias nf0='clear;neofetch --config none'
