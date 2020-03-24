@@ -58,6 +58,7 @@ height = 30
 radius = 2
 fixed-center = true
 bottom = false
+enable-ipc = true
 
 background = transparent
 foreground = ${colors.color3}
@@ -109,6 +110,7 @@ height = 30
 radius = 2
 fixed-center = true
 bottom = false
+enable-ipc = true
 
 background = transparent
 foreground = 
@@ -143,6 +145,7 @@ height = 30
 radius = 2
 fixed-center = true
 bottom = false
+enable-ipc = true
 
 background = transparent
 foreground = 
