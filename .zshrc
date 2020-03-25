@@ -146,6 +146,7 @@ source ~/.cache/wal/colors.sh
 #export color1_alpha="#22${color1/'#'}"
 
 # fzf
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 export FZF_DEFAULT_OPTS='--border'
-#export FZF_DEFAULT_COMMAND='fd --type f'
+export FZF_DEFAULT_COMMAND='fd --type f'
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh

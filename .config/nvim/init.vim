@@ -6,6 +6,7 @@ Plug 'itchyny/lightline.vim'
 "Plug 'tpope/vim-commentary'
 "Plug 'tpope/vim-surround'
 "Plug 'lambdalisue/suda.vim'
+Plug 'junegunn/fzf'
 "Plug 'jiangmiao/auto-pairs'
 Plug 'machakann/vim-highlightedyank'
 "Plug 'vimwiki/vimwiki'
@@ -359,6 +360,8 @@ scriptencoding utf-8
 " Colorscheme
 colorscheme wal
 set fillchars=vert::
+
+hi Normal guibg=NONE ctermbg=NONE
 
 " Restore last cursor position and marks on open
 au BufReadPost *
