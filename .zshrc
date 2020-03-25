@@ -122,7 +122,7 @@ fi
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-source ~/.zsh_aliases
+source ~/.aliases
 
 # fzf
 alias se='nvim $(fzf)'
