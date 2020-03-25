@@ -1,0 +1,96 @@
+# aliases
+alias rm='rm -i'
+alias cp='cp -i'
+alias mv='mv -i'
+alias df='df -H | grep sda'
+alias du='du -d 1 -h'
+alias cd..='cd ..'
+alias h='history'
+alias hc='history -c'
+alias p='pwd -P'
+
+# listings
+alias ls='lsd -h'
+alias l='ls -l'
+alias ll='ls -al'
+alias lt='lsd --tree --depth 2'
+
+# general
+alias v='nvim'
+alias tc1="tty-clock -cst -C 3 -f '%B %d %Y'"
+alias mount='mount | column -t'
+alias um='unimatrix -a -f -n -s 98'
+alias kc='kitty +kitten icat'
+alias kd='kitty +kitten diff'
+alias mpc='mpc --host=127.0.0.1 --port=6600'
+alias wttr='curl wttr.in'
+alias cls='clear'
+alias zshrc='vim ~/.zshrc'
+alias ht='htop -u $USER'
+alias xr="nvim ~/.Xresources"
+alias xu='xrdb ~/.Xresources'
+alias m='ncmpcpp'
+alias bf='bunnyfetch'
+alias pf='clear;pfetch'
+alias f='fff'
+alias n='nnn -d -o'
+alias r='ranger'
+alias c='cava'
+alias fd='fdfind'
+
+# git
+alias gc='git commit -a'
+alias gp='git pull'
+
+# neofetch
+alias nf0='clear;neofetch --config none'
+alias nf='clear;neofetch'
+alias nfo='clear; neofetch --off'
+alias nfs='clear;neofetch --config ~/.config/neofetch/small.conf'
+alias nf2='clear;neofetch --backend w3m --image_size 190px'
+alias nf2s='clear;neofetch --config ~/.config/neofetch/small2.conf'
+
+# fzf
+alias se='nvim $(fzf)'
+
+# wifi
+alias up='nmcli c u'
+alias dn='nmcli c d'
+alias ndw='nmcli d wifi'
+
+# windscribe
+alias wsc='windscribe connect'
+alias wsd='windscribe disconnect'
+
+# yadm
+alias yc='yadm commit -a'
+alias ya='yadm add'
+alias yp='yadm push -u origin master'
+
+# pywal
+alias w1='wal -i ~/Pictures/favs/'
+alias w2='wal --theme random -o wal-berry.sh -o wal-dunst.sh'
+alias wf='wal --theme dkeg-skigh -o wal-berry.sh -o wal-dunst.sh'
+alias wr='wal -R -o wal-berry.sh -o wal-dunst.sh'
+
+# superuser
+alias reboot='sudo reboot'
+alias shut='sudo shutdown now'
+alias upd8='sudo apt update;sudo apt full-upgrade;sudo apt autoremove;sudo apt clean'
+alias rnm='sudo systemctl restart network-manager'
+alias ffs='sudo !!'
+alias s1='sudo make install'
+alias s2='sudo make PREFIX=/usr/local install'
+alias syn='sudo synaptic'
+
+# pacman
+alias pq='pacman -Qm'
+
+# systemctl
+alias sct='systemctl --user list-timers --all'
+
+# pfetch
+export PF_INFO="ascii os kernel uptime shell wm memory"
+export PF_SEP=":"
+export PF_COL1=3
+export PF_COL2=2
