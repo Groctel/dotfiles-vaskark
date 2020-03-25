@@ -18,6 +18,9 @@ berryc inner_border_width 0
 berryc title_height       24
 berryc top_gap            0
 
+berryc decorate_new	true
+berryc edge_gap 	40 0 0 0
+
 # Set decoration colors
 berryc focus_color          
 berryc unfocus_color        
