@@ -124,6 +124,9 @@ fi
 
 source ~/.zsh_aliases
 
+# fzf
+alias se='nvim $(fzf)'
+
 # completion for kitty
 autoload -Uz compinit
 compinit
