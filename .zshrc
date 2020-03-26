@@ -142,7 +142,6 @@ kitty + complete setup zsh | source /dev/stdin
 
 # pywal
 (cat ~/.cache/wal/sequences &)
-source ~/.cache/wal/colors.sh
 #export color1_alpha="#22${color1/'#'}"
 
 # fzf
