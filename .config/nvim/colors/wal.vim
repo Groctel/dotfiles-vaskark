@@ -1,0 +1,1 @@
+/home/jason/.local/share/nvim/plugged/wal.vim/colors/wal.vim
