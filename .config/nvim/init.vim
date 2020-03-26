@@ -206,21 +206,6 @@ set inccommand=nosplit
 " Markdown Folding
 let g:markdown_fold_style = 'nested'
 
-" Vimwiki
-" let g:vimwiki_list = [{'path': '~/dox/vimwiki/', 'syntax': 'markdown', 'ext': '.md'}]
-let g:vimwiki_global_ext=0
-let g:vimwiki_table_mappings=0
-let g:vimwiki_folding='expr'
-nmap <leader>vv <Plug>VimwikiIndex
-nmap <leader>vV <Plug>VimwikiTabIndex
-nmap <leader>vs <Plug>VimwikiUISelect
-nmap <leader>vi <Plug>VimwikiDiaryIndex
-nmap <leader>vdd <Plug>VimwikiMakeDiaryNote
-nmap <leader>vDD <Plug>VimwikiTabMakeDiaryNote
-nmap <leader>vdy <Plug>VimwikiMakeYesterdayDiaryNote
-nmap <leader>vdt <Plug>VimwikiMakeTomorrowDiaryNote
-nmap <M-space> <Plug>VimwikiToggleListItem
-
 " Highlighted yank (-1 for persistent)
 let g:highlightedyank_highlight_duration = 400
 
@@ -229,24 +214,6 @@ set noshowmode
 
 " Shell
 set shell=/bin/zsh
-
-" Ctrlp
-let g:ctrlp_switch_buffer = '0'
-" Useful for large projects
-let g:ctrlp_max_files=0
-let g:ctrlp_max_depth=10
-" So that it does not only index starting from current directory
-let g:ctrlp_working_path_mode = ""
-let g:ctrlp_cache_dir = $HOME . '/.cache/ctrlp'
-" Use ag AKA the_silver_searcher for indexing. Faster!!!
-" TIP: Use ~/.ignore to ignore directories/files
-" set grepprg=ag\ --nogroup\ --nocolor
-" let g:ctrlp_user_command = 'ag %s -l --hidden --nocolor -g ""'
-""if executable('ag')
-""  let g:ctrlp_user_command = 'ag %s -l --nocolor -g ""'
-""endif
-let g:ctrlp_show_hidden =1
-let g:ctrlp_clear_cache_on_exit = 0
 
 " Lightline
 " Get default from :h lightline
@@ -333,10 +300,6 @@ let g:lightline.enable = {
     \ 'tabline': 1
     \ }
 
-" deoplete
-let g:deoplete#enable_at_startup = 1
-inoremap <expr><tab> pumvisible() ? "\<c-n>" : "\<tab>"
-
 " Clear search highlighting with Escape key
 nnoremap <silent><esc> :noh<return><esc>
 
@@ -354,7 +317,7 @@ scriptencoding utf-8
 colorscheme wal
 set fillchars=vert::
 
-hi Normal guibg=NONE ctermbg=NONE
+" hi Normal guibg=NONE ctermbg=NONE
 
 " Restore last cursor position and marks on open
 au BufReadPost *
