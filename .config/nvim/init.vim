@@ -1,18 +1,11 @@
 " ~~~ Plugins ~~~
 call plug#begin('~/.local/share/nvim/plugged')
-"Plug 'shougo/deoplete.nvim'
-"Plug 'ctrlpvim/ctrlp.vim'
 Plug 'itchyny/lightline.vim'
-"Plug 'tpope/vim-commentary'
-"Plug 'tpope/vim-surround'
-"Plug 'lambdalisue/suda.vim'
 Plug 'junegunn/fzf'
-"Plug 'jiangmiao/auto-pairs'
 Plug 'machakann/vim-highlightedyank'
-"Plug 'vimwiki/vimwiki'
 Plug 'tpope/vim-markdown'
 Plug 'nelstrom/vim-markdown-folding'
-Plug 'dylanaraps/wal'
+Plug 'dylanaraps/wal.vim'
 Plug 'preservim/nerdtree'
 call plug#end()
 
