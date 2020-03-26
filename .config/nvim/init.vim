@@ -1,8 +1,11 @@
 " ~~~ Plugins ~~~
-call plug#begin('~/.local/share/nvim/plugged')
+call plug#begin('~/.config/nvim/plugged')
 Plug 'itchyny/lightline.vim'
-Plug 'junegunn/fzf'
+Plug 'itchyny/vim-gitbranch'
+"Plug 'vim-airline/vim-airline'
+"Plug 'vim-airline/vim-airline-themes'
 Plug 'machakann/vim-highlightedyank'
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'tpope/vim-markdown'
 Plug 'nelstrom/vim-markdown-folding'
 Plug 'dylanaraps/wal.vim'
@@ -215,6 +218,9 @@ set noshowmode
 " Shell
 set shell=/bin/zsh
 
+" Airline
+let g:airline_theme='powerlineish'
+
 " Lightline
 " Get default from :h lightline
 let g:lightline = {
@@ -222,7 +228,7 @@ let g:lightline = {
     \ }
 
 let g:lightline.active = {
-    \ 'left': [ [ 'mode', 'paste', 'sep1' ],
+    \ 'left': [ [ 'mode', 'paste' ],
     \           [ 'readonly', 'filename', 'modified' ],
     \           [ ] ],
     \ 'right': [ [ 'lineinfo' ],
@@ -231,7 +237,7 @@ let g:lightline.active = {
     \ }
 
 let g:lightline.inactive = {
-    \ 'left': [ [ 'mode', 'paste', 'sep1' ],
+    \ 'left': [ [ 'mode', 'paste' ],
     \           [ 'readonly', 'filename', 'modified' ] ],
     \ 'right': [ [ 'lineinfo' ],
     \            [ 'percent' ],
@@ -247,6 +253,7 @@ let g:lightline.tab = {
     \ 'inactive': [ 'tabnum', 'filename', 'modified' ] }
 
 let g:lightline.component = {
+    \ 'gitbranch': 'gitbranch#name',
     \ 'mode': '%{lightline#mode()}',
     \ 'absolutepath': '%F',
     \ 'relativepath': '%f',
@@ -286,10 +293,10 @@ let g:lightline.component = {
 "    \ }
 
 let g:lightline.separator = {
-    \   'left': '', 'right': ''
+    \   'left': '', 'right': ''
     \}
 let g:lightline.subseparator = {
-    \   'left': '', 'right': '' 
+    \   'left': '', 'right': '' 
     \}
 
 let g:lightline.tabline_separator = g:lightline.separator
@@ -317,13 +324,8 @@ scriptencoding utf-8
 colorscheme wal
 set fillchars=vert::
 
-" hi Normal guibg=NONE ctermbg=NONE
-
 " Restore last cursor position and marks on open
 au BufReadPost *
          \ if line("'\"") > 1 && line("'\"") <= line("$") && &ft !~# 'commit' 
          \ |   exe "normal! g`\""
          \ | endif
-
-" statusline
-source ~/.config/nvim/statusline.vim
