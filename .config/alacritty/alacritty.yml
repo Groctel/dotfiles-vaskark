@@ -18,8 +18,8 @@ window:
   # Specified in number of columns/lines, not pixels.
   # If both are `0`, this setting is ignored.
   dimensions:
-    columns: 90
-    lines: 24
+    columns: 80
+    lines: 26
 
   # Window position (changes require restart)
   #
@@ -97,7 +97,7 @@ font:
     #   - (macOS) Menlo
     #   - (Linux/BSD) monospace
     #   - (Windows) Consolas
-    family: Monospace
+    family: scientifica
 
     # The `style` can be specified to pick a specific face.
     style: Regular
@@ -141,7 +141,7 @@ font:
   # Offset is the extra space around each character. `offset.y` can be thought of
   # as modifying the line spacing, and `offset.x` as modifying the letter spacing.
   offset:
-    x: -1
+    x: 1
     y: 0
 
   # Glyph offset determines the locations of the glyphs within their cells with
