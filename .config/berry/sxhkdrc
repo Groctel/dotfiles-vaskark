@@ -4,10 +4,10 @@
 
 # terminal emulators
 super + Return
-	kitty
+	alacritty
 
 super + shift + Return
-        urxvt
+        kitty
 
 # program launcher
 super + d
