@@ -2,6 +2,7 @@
 call plug#begin('~/.config/nvim/plugged')
 Plug 'itchyny/lightline.vim'
 Plug 'itchyny/vim-gitbranch'
+Plug 'itchyny/calendar.vim'
 "Plug 'vim-airline/vim-airline'
 "Plug 'vim-airline/vim-airline-themes'
 Plug 'machakann/vim-highlightedyank'
@@ -218,6 +219,9 @@ set noshowmode
 " Shell
 set shell=/bin/zsh
 
+" Calendar
+" let g:calendar_google_calendar = 1
+
 " Airline
 let g:airline_theme='powerlineish'
 
@@ -278,7 +282,7 @@ let g:lightline.component = {
     \ 'sep1': ''
     \}
 
-"let g:lightline.mode_map = {
+"set g:lightline.mode_map = {
 "    \ 'n' : 'N',
 "    \ 'i' : 'I',
 "    \ 'R' : 'R',
@@ -293,10 +297,10 @@ let g:lightline.component = {
 "    \ }
 
 let g:lightline.separator = {
-    \   'left': '', 'right': ''
+    \   'left': '', 'right': ''
     \}
 let g:lightline.subseparator = {
-    \   'left': '', 'right': '' 
+    \   'left': '', 'right': ''
     \}
 
 let g:lightline.tabline_separator = g:lightline.separator
