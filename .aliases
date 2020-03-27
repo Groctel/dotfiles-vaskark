@@ -1,4 +1,4 @@
-# aliases
+# general
 alias rm='rm -i'
 alias cp='cp -i'
 alias mv='mv -i'
@@ -9,13 +9,11 @@ alias h='history'
 alias hc='history -c'
 alias p='pwd -P'
 
-# listings
 alias ls='lsd -h'
 alias l='ls -l'
 alias ll='ls -al'
 alias lt='lsd --tree --depth 2'
 
-# general
 alias v='nvim'
 alias tc1="tty-clock -cst -C 3 -f '%B %d %Y'"
 alias mount='mount | column -t'
@@ -29,6 +27,7 @@ alias zshrc='vim ~/.zshrc'
 alias ht='htop -u $USER'
 alias xr="nvim ~/.Xresources"
 alias xu='xrdb ~/.Xresources'
+alias nvrc='nvim ~/.vimrc'
 alias m='ncmpcpp'
 alias bf='bunnyfetch'
 alias pf='clear;pfetch'
