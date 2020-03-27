@@ -224,7 +224,7 @@ set shell=/bin/zsh
 " let g:calendar_google_calendar = 1
 
 " Airline
-" let g:airline_theme='powerlineish'
+let g:airline_theme='wal'
 
 " Lightline
 " Get default from :h lightline
@@ -234,7 +234,7 @@ let g:lightline = {
 
 let g:lightline.active = {
     \ 'left': [ [ 'mode', 'paste' ],
-    \           [ 'fugitive', 'readonly', 'filename', 'modified' ],
+    \           [ 'readonly', 'filename', 'modified' ],
     \           [ ] ],
     \ 'right': [ [ 'lineinfo' ],
     \            [ 'percent' ],
@@ -243,7 +243,7 @@ let g:lightline.active = {
 
 let g:lightline.inactive = {
     \ 'left': [ [ 'mode', 'paste' ],
-    \           [ 'fugitive', 'readonly', 'filename', 'modified' ] ],
+    \           [ 'readonly', 'filename', 'modified' ] ],
     \ 'right': [ [ 'lineinfo' ],
     \            [ 'percent' ],
     \            [ 'filetype' ] ]
