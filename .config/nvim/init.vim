@@ -1,13 +1,14 @@
 " ~~~ Plugins ~~~
 call plug#begin('~/.config/nvim/plugged')
 Plug 'itchyny/lightline.vim'
-Plug 'itchyny/vim-gitbranch'
 Plug 'itchyny/calendar.vim'
+Plug 'tpope/vim-fugitive'
+Plug 'tpope/vim-markdown'
+Plug 'rafi/awesome-vim-colorschemes'
 "Plug 'vim-airline/vim-airline'
 "Plug 'vim-airline/vim-airline-themes'
 Plug 'machakann/vim-highlightedyank'
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
-Plug 'tpope/vim-markdown'
 Plug 'nelstrom/vim-markdown-folding'
 Plug 'dylanaraps/wal.vim'
 Plug 'preservim/nerdtree'
@@ -223,7 +224,7 @@ set shell=/bin/zsh
 " let g:calendar_google_calendar = 1
 
 " Airline
-let g:airline_theme='powerlineish'
+" let g:airline_theme='powerlineish'
 
 " Lightline
 " Get default from :h lightline
@@ -233,7 +234,7 @@ let g:lightline = {
 
 let g:lightline.active = {
     \ 'left': [ [ 'mode', 'paste' ],
-    \           [ 'readonly', 'filename', 'modified' ],
+    \           [ 'fugitive', 'readonly', 'filename', 'modified' ],
     \           [ ] ],
     \ 'right': [ [ 'lineinfo' ],
     \            [ 'percent' ],
@@ -242,7 +243,7 @@ let g:lightline.active = {
 
 let g:lightline.inactive = {
     \ 'left': [ [ 'mode', 'paste' ],
-    \           [ 'readonly', 'filename', 'modified' ] ],
+    \           [ 'fugitive', 'readonly', 'filename', 'modified' ] ],
     \ 'right': [ [ 'lineinfo' ],
     \            [ 'percent' ],
     \            [ 'filetype' ] ]
@@ -257,7 +258,7 @@ let g:lightline.tab = {
     \ 'inactive': [ 'tabnum', 'filename', 'modified' ] }
 
 let g:lightline.component = {
-    \ 'gitbranch': 'gitbranch#name',
+    \ 'fugitive': '%{FugitiveStatusline()}',
     \ 'mode': '%{lightline#mode()}',
     \ 'absolutepath': '%F',
     \ 'relativepath': '%f',
@@ -327,6 +328,8 @@ scriptencoding utf-8
 " Colorscheme
 colorscheme wal
 set fillchars=vert::
+
+hi Normal guibg=NONE ctermbg=NONE
 
 " Restore last cursor position and marks on open
 au BufReadPost *
