@@ -1,11 +1,11 @@
 [options]
 allow_bold = true
-audible_bell = false
+audible_bell = true
 #bold_is_bright = true
 #cell_height_scale = 1.0
 #cell_width_scale = 1.0
 clickable_url = true
-dynamic_title = true
+#dynamic_title = true
 font = scientifica 8
 #fullscreen = true
 #icon_name = terminal
@@ -54,7 +54,7 @@ cursor_shape = ibeam
 background = rgba(63, 63, 63, 0.9)
 
 # If unset, will reverse foreground and background
-highlight = #2f2f2f
+#highlight = #2f2f2f
 
 # Colors from color0 to color254 can be set
 color0 = #3f3f3f
