@@ -47,7 +47,7 @@ map <F3> :source ~/.vim_session<cr>
 " Fix indentation
 map <F7> gg=G<C-o><C-o>
 " Toggle auto change directory
-map <F8> :set autochdir! autochdir?<CR>
+map <F9> :set autochdir! autochdir?<CR>
 
 " Toggle vertical line
 set colorcolumn=
