@@ -72,7 +72,7 @@ color14 = #93e0e3
 color15 = #ffffff
 
 [hints]
-#font = scientifica 8
+#font = Monospace 7
 #foreground = #dcdccc
 #background = #3f3f3f
 #active_foreground = #e68080
