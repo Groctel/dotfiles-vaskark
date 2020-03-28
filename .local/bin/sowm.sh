@@ -3,7 +3,7 @@
 # autostart
 polybar-main-small-bottom.sh &
 dunst &
-picom.sh &
+picom-xr.sh &
 redshift.sh &
 xautolock.sh &
 libinput-gestures &
