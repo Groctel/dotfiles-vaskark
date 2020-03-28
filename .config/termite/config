@@ -1,6 +1,9 @@
 [options]
 allow_bold = true
-audible_bell = true
+audible_bell = false
+#bold_is_bright = true
+#cell_height_scale = 1.0
+#cell_width_scale = 1.0
 clickable_url = true
 dynamic_title = true
 font = scientifica 8
@@ -20,7 +23,7 @@ scrollback_lines = 10000
 #browser = xdg-open
 
 # "system", "on" or "off"
-cursor_blink = system
+#cursor_blink = system
 
 # "block", "underline" or "ibeam"
 cursor_shape = ibeam
@@ -32,26 +35,26 @@ cursor_shape = ibeam
 #modify_other_keys = false
 
 # set size hints for the window
-size_hints = true
+#size_hints = false
 
 # "off", "left" or "right"
-scrollbar = off
+#scrollbar = off
 
 [colors]
 # If both of these are unset, cursor falls back to the foreground color,
 # and cursor_foreground falls back to the background color.
-#cursor = #868A8C
+#cursor = #dcdccc
 #cursor_foreground = #dcdccc
 
-foreground = #868A8C
+#foreground = #dcdccc
 #foreground_bold = #ffffff
 #background = #3f3f3f
 
-# 10% background transparency (requires a compositor)
-background = rgba(9, 17, 22, 0.9)
+# 20% background transparency (requires a compositor)
+background = rgba(63, 63, 63, 0.9)
 
 # If unset, will reverse foreground and background
-#highlight = #2f2f2f
+highlight = #2f2f2f
 
 # Colors from color0 to color254 can be set
 color0 = #3f3f3f
@@ -72,7 +75,7 @@ color14 = #93e0e3
 color15 = #ffffff
 
 [hints]
-#font = Monospace 7
+#font = Monospace 12
 #foreground = #dcdccc
 #background = #3f3f3f
 #active_foreground = #e68080
