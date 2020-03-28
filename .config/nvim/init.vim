@@ -10,6 +10,7 @@ Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'nelstrom/vim-markdown-folding'
 Plug 'dylanaraps/wal.vim'
 Plug 'preservim/nerdtree'
+Plug 'ryanoasis/vim-devicons'
 call plug#end()
 
 " Highlight the line on which the cursor lives.
@@ -220,6 +221,10 @@ set shell=/bin/zsh
 
 " Calendar
 " let g:calendar_google_calendar = 1
+
+" Devicons
+let g:webdevicons_enable = 1
+let g:webdevicons_enable_nerdtree = 1
 
 " Airline
 let g:airline_theme='wal'
