@@ -190,6 +190,12 @@ set hidden
 " Mouse support
 set mouse=a
 
+" Restore cursor shape to beam on exit
+augroup restore_cursor_shape
+  autocmd!
+  au VimLeave * set guicursor=a:ver10-blinkoff0
+augroup END
+
 "Case insensitive searching
 set ignorecase
 

@@ -6,7 +6,7 @@ polybar-main-small-bottom.sh &
 #nitrogen --restore &
 redshift.sh &
 xautolock.sh &
-picom.sh &
+picom-xr.sh &
 dunst &
 libinput-gestures &
 wal -R -o "wal-berry.sh" -o "wal-dunst.sh" &
