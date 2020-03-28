@@ -6,7 +6,7 @@ if ps -A | grep picom; then
 fi
 
 # Wait until the processes have been shut down
-sleep 0.1s
+sleep 0.05s
 
 # Launch
-picom --dbus --experimental-backends --config ~/.config/picom/picom.conf >> /tmp/picom.log 2>&1 &
+picom --experimental-backends --config ~/.config/picom/picom.conf >> /tmp/picom.log 2>&1 &
