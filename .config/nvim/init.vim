@@ -223,8 +223,8 @@ set shell=/bin/zsh
 " let g:calendar_google_calendar = 1
 
 " Devicons
-let g:webdevicons_enable = 1
-let g:webdevicons_enable_nerdtree = 1
+" let g:webdevicons_enable = 1
+" let g:webdevicons_enable_nerdtree = 1
 
 " Airline
 let g:airline_theme='wal'
