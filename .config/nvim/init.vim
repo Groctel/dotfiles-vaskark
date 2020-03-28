@@ -5,8 +5,6 @@ Plug 'itchyny/calendar.vim'
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-markdown'
 Plug 'rafi/awesome-vim-colorschemes'
-"Plug 'vim-airline/vim-airline'
-"Plug 'vim-airline/vim-airline-themes'
 Plug 'machakann/vim-highlightedyank'
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'nelstrom/vim-markdown-folding'
