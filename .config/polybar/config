@@ -193,7 +193,7 @@ scroll-down = i3wm-wsprev
 [bar/main-small-bottom]
 ;monitor = ${env:MONITOR:eDP-1}
 width = 100%
-height = 28
+height = 30
 radius = 2
 fixed-center = true
 bottom = true
