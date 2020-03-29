@@ -193,7 +193,7 @@ scroll-down = i3wm-wsprev
 [bar/main-small-bottom]
 ;monitor = ${env:MONITOR:eDP-1}
 width = 100%
-height = 30
+height = 28
 radius = 2
 fixed-center = true
 bottom = true
@@ -221,9 +221,9 @@ font-0 = "scientifica:bold:size=11;2"
 font-1 = "Siji:size=8;2"
 font-2 = "Weather Icons:size=8;2"
 
-modules-left = ewmh
+modules-left = ewmh sep mpd
 modules-center =
-modules-right = mpd sep uptime battery wireless wired volume
+modules-right = sep uptime battery wireless wired volume
 
 ;dim-value = 0.8
 
