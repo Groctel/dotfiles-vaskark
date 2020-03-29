@@ -149,3 +149,6 @@ export FZF_DEFAULT_OPTS='--border'
 export FZF_DEFAULT_COMMAND='fd --type f'
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+# termite
+source /usr/local/etc/profile.d/vte.sh
