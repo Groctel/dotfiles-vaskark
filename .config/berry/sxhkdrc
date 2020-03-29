@@ -81,7 +81,7 @@ super + F9
 super + F10
         wal --theme random -o wal-berry.sh -o wal-dunst.sh
 super + F11
-        wal --theme dkeg-skigh -o wal-berry.sh -o wal-dunst.sh
+        wal --theme dkeg-traffic -o wal-berry.sh -o wal-dunst.sh
 super + F12
         wal -R -o wal-berry.sh -o wal-dunst.sh
 
