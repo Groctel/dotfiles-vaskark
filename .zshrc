@@ -152,6 +152,3 @@ export FZF_CTRL_R_OPTS="--preview 'echo {}' --preview-window down:3:hidden:wrap 
 export FZF_ALT_C_OPTS="--preview 'tree -C {} | head -200'"
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
-
-# termite
-source /usr/local/etc/profile.d/vte.sh
