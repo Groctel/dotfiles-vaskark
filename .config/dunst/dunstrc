@@ -9,22 +9,27 @@ separator_height = 5
 padding = 10 
 horizontal_padding = 10
 frame_width = 0
-frame_color = "#977C79"
+frame_color = "#99837B"
 separator_color = frame
 sort = yes
 idle_threshold = 10
+
 font = scientifica 8
 line_height = 20
 markup = yes
 format = "%s %b"
 alignment = center
 show_age_threshold = 1000
-word_wrap = no
-ignore_newline = yes
+word_wrap = yes
+ellipsize = end
+ignore_newline = no
 show_indicators = yes
+
 sticky_history = yes
 history_length = 2
+
 startup_notification = false
+corner_radius = 0
 
 [shortcuts]
 close = ctrl+space
@@ -33,18 +38,18 @@ history = ctrl+grave
 context = ctrl+shift+period
 
 [urgency_low]
-background = "#977C79"
-foreground = "#111b20"
+background = "#99837B"
+foreground = "#0C0912"
 timeout = 20
 
 [urgency_normal]
-background = "#977C79"
-foreground = "#111b20"
+background = "#99837B"
+foreground = "#0C0912"
 timeout = 20
 
 [urgency_critical]
-background = "#977C79"
-foreground = "#111b20"
+background = "#99837B"
+foreground = "#0C0912"
 timeout = 30
 
 # vim: ft=cfg
