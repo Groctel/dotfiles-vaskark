@@ -2,26 +2,26 @@
     "wallpaper": "/home/jason/Pictures/favs/Mya1PbA-m.jpg",
     "alpha": "100",
     "special": {
-        "background": "#221311",
-        "foreground": "#c7c4c3",
-        "cursor": "#c7c4c3"
+        "background": "#0e121e",
+        "foreground": "#afbcbe",
+        "cursor": "#afbcbe"
     },
     "colors": {
-        "color0": "#221311",
-        "color1": "#ad6156",
-        "color2": "#bf937c",
-        "color3": "#6ba4a2",
-        "color4": "#bbbfc1",
-        "color5": "#4771aa",
-        "color6": "#9597a8",
-        "color7": "#c7c4c3",
-        "color8": "#594e4c",
-        "color9": "#ad6156",
-        "color10": "#bf937c",
-        "color11": "#6ba4a2",
-        "color12": "#bbbfc1",
-        "color13": "#4771aa",
-        "color14": "#9597a8",
-        "color15": "#c7c4c3"
+        "color0": "#0e121e",
+        "color1": "#56635F",
+        "color2": "#99533E",
+        "color3": "#B23E42",
+        "color4": "#A3684D",
+        "color5": "#C38F69",
+        "color6": "#476183",
+        "color7": "#afbcbe",
+        "color8": "#7a8385",
+        "color9": "#56635F",
+        "color10": "#99533E",
+        "color11": "#B23E42",
+        "color12": "#A3684D",
+        "color13": "#C38F69",
+        "color14": "#476183",
+        "color15": "#afbcbe"
     }
 }
