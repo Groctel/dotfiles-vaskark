@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/jason/Pictures/favs/andre-benz-cXU6tNxhub0-unsplash.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#0c1112",
+        "foreground": "#d5d4d7",
+        "cursor": "#d5d4d7"
+    },
+    "colors": {
+        "color0": "#0c1112",
+        "color1": "#57676B",
+        "color2": "#62696C",
+        "color3": "#956F69",
+        "color4": "#6D7A85",
+        "color5": "#77878B",
+        "color6": "#99A0A5",
+        "color7": "#d5d4d7",
+        "color8": "#959496",
+        "color9": "#57676B",
+        "color10": "#62696C",
+        "color11": "#956F69",
+        "color12": "#6D7A85",
+        "color13": "#77878B",
+        "color14": "#99A0A5",
+        "color15": "#d5d4d7"
+    }
+}

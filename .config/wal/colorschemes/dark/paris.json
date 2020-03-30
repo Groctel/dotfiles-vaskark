@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/jason/Pictures/favs/future_paris-m.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#060607",
+        "foreground": "#a5a5a8",
+        "cursor": "#a5a5a8"
+    },
+    "colors": {
+        "color0": "#060607",
+        "color1": "#4d5364",
+        "color2": "#595e63",
+        "color3": "#9c5462",
+        "color4": "#79787a",
+        "color5": "#90939c",
+        "color6": "#939c9d",
+        "color7": "#a5a5a8",
+        "color8": "#4b4c52",
+        "color9": "#4d5364",
+        "color10": "#595e63",
+        "color11": "#9c5462",
+        "color12": "#79787a",
+        "color13": "#90939c",
+        "color14": "#939c9d",
+        "color15": "#a5a5a8"
+    }
+}

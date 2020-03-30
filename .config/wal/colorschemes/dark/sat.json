@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/jason/Pictures/favs/spacex-VBNb52J8Trk-unsplash.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#221e1b",
+        "foreground": "#c7c6c6",
+        "cursor": "#c7c6c6"
+    },
+    "colors": {
+        "color0": "#221e1b",
+        "color1": "#ac9a8b",
+        "color2": "#aa8f76",
+        "color3": "#c2b19e",
+        "color4": "#0b71aa",
+        "color5": "#2d79a9",
+        "color6": "#9c9ea6",
+        "color7": "#c7c6c6",
+        "color8": "#595654",
+        "color9": "#ac9a8b",
+        "color10": "#aa8f76",
+        "color11": "#c2b19e",
+        "color12": "#0b71aa",
+        "color13": "#2d79a9",
+        "color14": "#9c9ea6",
+        "color15": "#c7c6c6"
+    }
+}

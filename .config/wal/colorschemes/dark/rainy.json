@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/jason/Pictures/favs/lhhriy92cmu21.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#211a19",
+        "foreground": "#c7c5c5",
+        "cursor": "#c7c5c5"
+    },
+    "colors": {
+        "color0": "#211a19",
+        "color1": "#a98380",
+        "color2": "#aa665e",
+        "color3": "#61a6ad",
+        "color4": "#839ca9",
+        "color5": "#a596a1",
+        "color6": "#b0383c",
+        "color7": "#c7c5c5",
+        "color8": "#585352",
+        "color9": "#a98380",
+        "color10": "#aa665e",
+        "color11": "#61a6ad",
+        "color12": "#839ca9",
+        "color13": "#a596a1",
+        "color14": "#b0383c",
+        "color15": "#c7c5c5"
+    }
+}
