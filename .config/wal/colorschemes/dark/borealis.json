@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/jason/Pictures/favs/astotin_lake_northern_lights_5k-5120x2880.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#010304",
+        "foreground": "#9c9fa1",
+        "cursor": "#9c9fa1"
+    },
+    "colors": {
+        "color0": "#010304",
+        "color1": "#27424d",
+        "color2": "#775879",
+        "color3": "#348769",
+        "color4": "#5f7696",
+        "color5": "#619ab4",
+        "color6": "#54b2ac",
+        "color7": "#9c9fa1",
+        "color8": "#3a4043",
+        "color9": "#27424d",
+        "color10": "#775879",
+        "color11": "#348769",
+        "color12": "#5f7696",
+        "color13": "#619ab4",
+        "color14": "#54b2ac",
+        "color15": "#9c9fa1"
+    }
+}

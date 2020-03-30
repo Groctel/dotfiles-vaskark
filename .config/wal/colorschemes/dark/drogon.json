@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/jason/Pictures/favs/bn7tb1xlm5031.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#211f1f",
+        "foreground": "#c7c7c7",
+        "cursor": "#c7c7c7"
+    },
+    "colors": {
+        "color0": "#211f1f",
+        "color1": "#a69d9c",
+        "color2": "#b5554b",
+        "color3": "#ad755d",
+        "color4": "#c6ab96",
+        "color5": "#ac9179",
+        "color6": "#8794a9",
+        "color7": "#c7c7c7",
+        "color8": "#585757",
+        "color9": "#a69d9c",
+        "color10": "#b5554b",
+        "color11": "#ad755d",
+        "color12": "#c6ab96",
+        "color13": "#ac9179",
+        "color14": "#8794a9",
+        "color15": "#c7c7c7"
+    }
+}

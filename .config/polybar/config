@@ -635,7 +635,7 @@ label =  %output%
 format = <label>
 
 format-foreground = ${colors.color0}
-format-background = ${colors.color4}
+format-background = ${colors.color1}
 format-padding = 2
 
 ##################################################

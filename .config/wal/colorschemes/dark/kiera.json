@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/jason/Pictures/favs/Kiera Knightly wallpaper 05-m.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#181921",
+        "foreground": "#c5c5c7",
+        "cursor": "#c5c5c7"
+    },
+    "colors": {
+        "color0": "#181921",
+        "color1": "#7d81aa",
+        "color2": "#9587a9",
+        "color3": "#a696a4",
+        "color4": "#aa5981",
+        "color5": "#aa3350",
+        "color6": "#aa8b90",
+        "color7": "#c5c5c7",
+        "color8": "#515258",
+        "color9": "#7d81aa",
+        "color10": "#9587a9",
+        "color11": "#a696a4",
+        "color12": "#aa5981",
+        "color13": "#aa3350",
+        "color14": "#aa8b90",
+        "color15": "#c5c5c7"
+    }
+}
