@@ -11,7 +11,7 @@ w=$(( width-(2*b) ))
 # dmenu
 dmenu_run \
 -p ' dmenu ' \
--fn 'scientifica-11:bold' \
+-fn 'scientifica-8:bold' \
 -h 30 \
 -nb "$color3" \
 -nf "$color0" \
