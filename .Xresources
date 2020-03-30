@@ -1,7 +1,7 @@
 !! Appearance
 URxvt*termName: rxvt-unicode-256
 
-URxvt*font: xft:scientifica:size=11
+URxvt*font: xft:scientifica:size=8
 
 !URxvt*font: xft:Monospace:size=8, xft:MesloLGS NF:size=8
 !URxvt*boldFont: xft:Monospace:bold:size=8, xft:MesloLGS NF:bold:size=8
@@ -11,7 +11,7 @@ URxvt*font: xft:scientifica:size=11
 !URxvt.keysym.M-C-1: command:\033]710;xft:agave Nerd Font Mono:size=9\007\033]711;xft:agave Nerd Font Mono:bold:size=9\007\033]712;xft:agave Nerd Font Mono:italic:size=9\007\033]713;xft:agave Nerd Font Mono:bolditalic:size=9\007
 !URxvt.keysym.M-C-2: command:\033]710;xft:TerminessTTF Nerd Font Mono:size=10\007\033]711;xft:TerminessTTF Nerd Font Mono:bold:size=10\007\033]712;xft:TerminessTTF Nerd Font Mono:italic:size=10\007\033]713;xft:TerminessTTF Nerd Font Mono:bolditalic:size=10\007
 
-URxvt*letterSpace: 2
+URxvt*letterSpace: 1
 URxvt*lineSpace: 1
 URxvt*geometry: 90x28
 URxvt*internalBorder: 20

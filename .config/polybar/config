@@ -75,8 +75,8 @@ padding-right = 0
 module-margin-left = 0
 module-margin-right = 0
 
-font-0 = "scientifica:bold:size=11;2"
-font-1 = "Siji:size=8;2"
+font-0 = "scientifica:bold:size=8;2"
+font-1 = "siji:size=9;2"
 
 modules-left = i3
 modules-center = mpd
@@ -127,8 +127,8 @@ padding-right = 0
 module-margin-left = 0
 module-margin-right = 0
 
-font-0 = "scientifica:bold:size=11;2"
-font-1 = "Siji:size=8;2"
+font-0 = "scientifica:bold:size=8;2"
+font-1 = "siji:size=9;2"
 
 modules-left = ewmh
 modules-center = mpd
@@ -162,8 +162,8 @@ padding-right = 0
 module-margin-left = 0
 module-margin-right = 0
 
-font-0 = "scientifica:bold:size=11;2"
-font-1 = "Siji:size=8;2"
+font-0 = "scientifica:bold:size=8;2"
+font-1 = "siji:size=9;2"
 
 modules-left = ewmh
 modules-center = 
@@ -217,8 +217,8 @@ padding-right = 4
 module-margin-left = 0
 module-margin-right = 0
 
-font-0 = "scientifica:bold:size=11;2"
-font-1 = "Siji:size=8;2"
+font-0 = "scientifica:bold:size=8;2"
+font-1 = "siji:size=9;2"
 font-2 = "Weather Icons:size=8;2"
 
 modules-left = ewmh sep mpd
@@ -403,7 +403,6 @@ type = internal/mpd
 label-song = %{A1:mpc toggle:}%{A2:kitty -e ncmpcpp:}%{A3:mpc next:}%{A8:mpc prev:}%artist%  >>  %title%%{A}%{A}%{A}%{A}
 
 format-online = <label-song>
-
 label-song-background = ${colors.color3}
 label-song-foreground = ${colors.color0}
 label-song-padding = 2
@@ -636,7 +635,7 @@ label =  %output%
 format = <label>
 
 format-foreground = ${colors.color0}
-format-background = ${colors.color1}
+format-background = ${colors.color4}
 format-padding = 2
 
 ##################################################
@@ -659,8 +658,8 @@ interval = 1024
 
 label =  %output%
 
-label-background = ${colors.color0}
-label-foreground = ${colors.color3}
+label-background = ${colors.color3}
+label-foreground = ${colors.color0}
 label-padding = 2
 
 ##################################################
