@@ -17,6 +17,7 @@ btrfs
 btrtl
 btusb
 ccm
+cec
 cfg80211
 coretemp
 crc32_pclmul
