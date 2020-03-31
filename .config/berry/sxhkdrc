@@ -4,7 +4,7 @@
 
 # terminal emulators
 super + Return
-	alacritty
+	termite
 
 super + shift + Return
         kitty
