@@ -63,8 +63,8 @@ enable-ipc = true
 background = transparent
 foreground = ${colors.color3}
 
-line-size = 
-line-color = 
+line-size =
+line-color =
 
 border-size = 5
 border-color = transparent
@@ -113,10 +113,10 @@ bottom = false
 enable-ipc = true
 
 background = transparent
-foreground = 
+foreground =
 
-line-size = 
-line-color = 
+line-size =
+line-color =
 
 border-size = 5
 border-color = transparent
@@ -148,10 +148,10 @@ bottom = false
 enable-ipc = true
 
 background = transparent
-foreground = 
+foreground =
 
-line-size = 
-line-color = 
+line-size =
+line-color =
 
 border-size = 5
 border-color = transparent
@@ -166,7 +166,7 @@ font-0 = "scientifica:bold:size=8;2"
 font-1 = "siji:size=9;2"
 
 modules-left = ewmh
-modules-center = 
+modules-center =
 modules-right = mpd sep uptime battery wireless wired volume
 
 ;dim-value = 0.8
@@ -203,10 +203,10 @@ enable-ipc = true
 offset-y = 2%
 
 background = transparent
-foreground = 
+foreground =
 
-line-size = 
-line-color = 
+line-size =
+line-color =
 
 border-size = 0
 border-color = transparent
@@ -307,8 +307,8 @@ label-urgent-foreground = ${colors.color0}
 label-urgent-background = ${colors.color1}
 label-urgent-padding = 2
 
-label-separator = 
-label-separator-foreground = 
+label-separator =
+label-separator-foreground =
 label-separator-padding =
 
 ##################################################
@@ -645,7 +645,7 @@ type = custom/script
 exec = echo $DESKTOP_SESSION
 click-right = exit.sh
 
-label-background = ${colors.color3} 
+label-background = ${colors.color3}
 label-foreground = ${colors.color0}
 label-padding = 2
 
