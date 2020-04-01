@@ -73,3 +73,4 @@ color2 = "red"
 clock_display_seconds = "yes"
 jump_to_now_playing_song_at_start = "yes"
 playlist_disable_highlight_delay = 0
+#startup_screen = "visualizer"

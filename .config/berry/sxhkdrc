@@ -53,6 +53,12 @@ ctrl + F12
 ctrl + shift + F12
 	picom.sh
 
+# shot
+super + PrintScreen
+	screenshot.sh full
+super + shift PrintScreen
+	screenshot.sh window
+
 # reboot
 super + shift + Delete
 	systemctl reboot
