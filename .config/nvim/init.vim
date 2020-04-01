@@ -1,6 +1,8 @@
 " ~~~ Plugins ~~~
 call plug#begin('~/.config/nvim/plugged')
 Plug 'itchyny/lightline.vim'
+"Plug 'vim-airline/vim-airline'
+"Plug 'vim-airline/vim-airline-themes'
 Plug 'itchyny/calendar.vim'
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-markdown'
@@ -254,7 +256,7 @@ let g:lightline = {
     \ }
 
 let g:lightline.active = {
-    \ 'left': [ [ 'mode', 'paste' ],
+    \ 'left': [ [ 'mode', 'paste', 'fugitive' ],
     \           [ 'readonly', 'filename', 'modified' ],
     \           [ ] ],
     \ 'right': [ [ 'lineinfo' ],
@@ -263,7 +265,7 @@ let g:lightline.active = {
     \ }
 
 let g:lightline.inactive = {
-    \ 'left': [ [ 'mode', 'paste' ],
+    \ 'left': [ [ 'mode', 'paste', 'fugitive' ],
     \           [ 'readonly', 'filename', 'modified' ] ],
     \ 'right': [ [ 'lineinfo' ],
     \            [ 'percent' ],
