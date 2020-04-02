@@ -23,8 +23,8 @@ visualizer_in_stereo = yes
 visualizer_sync_interval = 30
 #visualizer_look = ●●
 #visualizer_look = ▉▉
-visualizer_look = ●▉
-#visualizer_look = +|
+#visualizer_look = ●▉
+visualizer_look = +|
 visualizer_color = yellow, cyan
 visualizer_type = spectrum
 

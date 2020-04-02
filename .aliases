@@ -17,7 +17,7 @@ alias lt='lsd --tree --depth 2'
 alias v='nvim'
 alias tc1="tty-clock -cst -C 3 -f '%B %d %Y'"
 alias mount='mount | column -t'
-alias um='unimatrix -a -f -n -s 98'
+alias um='unimatrix -c yellow -a -f -n -s 98'
 alias kc='kitty +kitten icat'
 alias kd='kitty +kitten diff'
 alias mpc='mpc --host=127.0.0.1 --port=6600'
@@ -64,10 +64,9 @@ alias ya='yadm add'
 alias yp='yadm push -u origin master'
 
 # pywal
-alias w1='wal -i ~/Pictures/favs/ -o wal-berry.sh -o wal-dunst.sh'
+alias w1='wal --theme random_user -o wal-berry.sh -o wal-dunst.sh'
 alias w2='wal --theme random -o wal-berry.sh -o wal-dunst.sh'
-alias wf='wal --theme dkeg-skigh -o wal-berry.sh -o wal-dunst.sh'
-alias wr='wal -R -o wal-berry.sh -o wal-dunst.sh'
+alias wf='wal --theme dkeg-traffic -o wal-berry.sh -o wal-dunst.sh'
 
 # superuser
 alias reboot='sudo reboot'

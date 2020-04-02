@@ -9,5 +9,4 @@ fi
 sleep 0.05s
 
 # Launch
-#picom --experimental-backends --config ~/.config/picom/picom.conf >> /tmp/picom.log 2>&1 &
-picom --config ~/.config/picom/picom.conf >> /tmp/picom.log 2>&1 &
+picom --experimental-backends --config ~/.config/picom/picom.conf >> /tmp/picom.log 2>&1 &
