@@ -126,6 +126,12 @@ if [ -f ~/.aliases ]; then
     . ~/.aliases
 fi
 
+# pfetch
+export PF_INFO="ascii os kernel uptime shell wm memory"
+export PF_SEP=":"
+export PF_COL1=3
+export PF_COL2=2
+
 # fzf
 alias se='nvim $(fzf)'
 

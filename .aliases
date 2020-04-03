@@ -23,7 +23,7 @@ alias kd='kitty +kitten diff'
 alias mpc='mpc --host=127.0.0.1 --port=6600'
 alias wttr='curl wttr.in'
 alias cls='clear'
-alias zshc='vim ~/.zshrc'
+alias zshc='nvim ~/.zshrc'
 alias ht='htop -u $USER'
 alias xrc="nvim ~/.Xresources"
 alias xru='xrdb ~/.Xresources'
@@ -31,7 +31,6 @@ alias nvc='nvim ~/.vimrc'
 alias m='ncmpcpp'
 alias bf='bunnyfetch'
 alias pf='clear;pfetch'
-alias f='fff'
 alias n='nnn -d -o'
 alias r='ranger'
 alias c='cava'
@@ -45,9 +44,6 @@ alias gp='git pull'
 alias nf0='clear;neofetch --config none'
 alias nf='clear;neofetch'
 alias nfo='clear; neofetch --off'
-alias nfs='clear;neofetch --config ~/.config/neofetch/small.conf'
-alias nf2='clear;neofetch --backend w3m --image_size 190px'
-alias nf2s='clear;neofetch --config ~/.config/neofetch/small2.conf'
 
 # wifi
 alias up='nmcli c u'
@@ -73,19 +69,11 @@ alias reboot='sudo reboot'
 alias shut='sudo shutdown now'
 alias upd8='sudo apt update;sudo apt full-upgrade;sudo apt autoremove;sudo apt clean'
 alias rnm='sudo systemctl restart network-manager'
-alias ffs='sudo !!'
 alias s1='sudo make install'
 alias s2='sudo make PREFIX=/usr/local install'
-alias syn='sudo synaptic'
 
 # pacman
 alias pq='pacman -Qm'
 
 # systemctl
 alias sct='systemctl --user list-timers --all'
-
-# pfetch
-export PF_INFO="ascii os kernel uptime shell wm memory"
-export PF_SEP=":"
-export PF_COL1=3
-export PF_COL2=2
