@@ -44,6 +44,7 @@ alias gp='git pull'
 alias nf0='clear;neofetch --config none'
 alias nf='clear;neofetch'
 alias nfo='clear; neofetch --off'
+alias nfs='neofetch --config ~/.config/neofetch/config-small.conf'
 
 # wifi
 alias up='nmcli c u'
