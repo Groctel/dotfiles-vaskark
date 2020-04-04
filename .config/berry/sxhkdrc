@@ -37,10 +37,9 @@ super + F3
 	kitty -e ncmpcpp
 
 # polybar
-super + p
-	polybar-toggle.sh
-
-super + shift + p
+super + semicolon
+	polybar-msg cmd toggle
+super + shift + semicolon
 	polybar-menu.sh
 
 # music controls
@@ -84,13 +83,10 @@ XF86MonBrightnessDown
 # wal
 super + F12
     wal -f random_user -o wal-berry.sh -o wal-dunst.sh
-
 super + shift + F12
     sxiv ~/Pictures/favs/ -t -g 630x600+60+60 
-
 super + control + F12
     wal -f random -o wal-berry.sh -o wal-dunst.sh
-
 super + control + shift + F12
     wal -R
 
@@ -130,11 +126,11 @@ super + m
 super + f
     berryc fullscreen
 
-#super +  p
-#    berryc snap_right
+super +  p
+    berryc snap_right
 
-#super + o 
-#    berryc snap_left
+super + o 
+    berryc snap_left
 
 super + n
     berryc toggle_decorations
