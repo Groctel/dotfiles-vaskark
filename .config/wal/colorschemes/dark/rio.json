@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/jason/Pictures/riomaggiore_at_sunset_5120x2880-m.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#050506",
+        "foreground": "#a5a4a7",
+        "cursor": "#a5a4a7"
+    },
+    "colors": {
+        "color0": "#050506",
+        "color1": "#614441",
+        "color2": "#796350",
+        "color3": "#527c69",
+        "color4": "#8d725e",
+        "color5": "#a18173",
+        "color6": "#b39f8e",
+        "color7": "#a5a4a7",
+        "color8": "#4b4a4f",
+        "color9": "#614441",
+        "color10": "#796350",
+        "color11": "#527c69",
+        "color12": "#8d725e",
+        "color13": "#a18173",
+        "color14": "#b39f8e",
+        "color15": "#a5a4a7"
+    }
+}
