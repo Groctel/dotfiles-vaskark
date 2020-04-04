@@ -1,5 +1,5 @@
 {
-    "wallpaper": "/home/jason/Pictures/favs/Mya1PbA-m.jpg",
+    "wallpaper": "/home/jason/Pictures/Mya1PbA-m.jpg",
     "alpha": "100",
     "special": {
         "background": "#0e121e",
@@ -8,20 +8,20 @@
     },
     "colors": {
         "color0": "#0e121e",
-        "color1": "#56635F",
-        "color2": "#99533E",
-        "color3": "#B23E42",
-        "color4": "#A3684D",
-        "color5": "#C38F69",
-        "color6": "#476183",
+        "color1": "#37816a",
+        "color2": "#965440",
+        "color3": "#a8484b",
+        "color4": "#a86648",
+        "color5": "#c08f6b",
+        "color6": "#3c5f8d",
         "color7": "#afbcbe",
         "color8": "#7a8385",
-        "color9": "#56635F",
-        "color10": "#99533E",
-        "color11": "#B23E42",
-        "color12": "#A3684D",
-        "color13": "#C38F69",
-        "color14": "#476183",
+        "color9": "#37816a",
+        "color10": "#965440",
+        "color11": "#a8484b",
+        "color12": "#a86648",
+        "color13": "#c08f6b",
+        "color14": "#3c5f8d",
         "color15": "#afbcbe"
     }
 }
