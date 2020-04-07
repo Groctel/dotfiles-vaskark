@@ -24,11 +24,11 @@ super + shift + r
 super + Escape
 	betterlockscreen -l pixel
 
-# nautilus
+# file manager
 super + F1
 	nemo
 
-# chrome
+# browser
 super + F2
 	google-chrome
 
@@ -42,7 +42,7 @@ super + semicolon
 super + shift + semicolon
 	polybar-menu.sh
 
-# music controls
+# music
 alt + {F10,F11,F12}
 	mpc {prev,toggle,next}
 
@@ -52,7 +52,7 @@ ctrl + F12
 ctrl + shift + F12
 	picom.sh
 
-# shot
+# shots
 super + PrintScreen
 	screenshot.sh full
 super + shift PrintScreen

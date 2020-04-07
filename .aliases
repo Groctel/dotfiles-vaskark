@@ -35,6 +35,7 @@ alias n='nnn -d -o'
 alias r='ranger'
 alias c='cava'
 alias fd='fdfind'
+alias km='kmon -u'
 
 # git
 alias gc='git commit -a'
