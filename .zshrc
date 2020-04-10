@@ -23,7 +23,6 @@ ZSH_THEME="p10k"
 source ~/.spaceship
 source ~/.powerlevel
 source ~/.bullet-train
-source ~/.apollo
 
 # Set list of themes to load
 # Setting this variable when ZSH_THEME=random
@@ -89,7 +88,7 @@ themes
 command-not-found
 extract
 colored-man-pages
-#vi-mode
+vi-mode
 )
 
 source $ZSH/oh-my-zsh.sh
