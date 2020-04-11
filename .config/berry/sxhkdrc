@@ -88,7 +88,7 @@ super + shift + F12
 super + control + F12
     wal -f random -o wal-berry.sh -o wal-dunst.sh
 super + control + shift + F12
-    wal -R
+    wal -R -o wal-berry.sh -o wal-dunst.sh
 
 
 #
