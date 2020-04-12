@@ -51,7 +51,7 @@ MENU="$(rofi -no-lazy-grab -sep "|" -dmenu -i -p 'Style :' \
 -location 5 \
 -columns 1 \
 -show-icons -icon-theme "Papirus" \
--font "Terminus (TTF) 9" \
+-font "scientifica bold 8" \
 -color-enabled true \
 -color-window "$BACKGROUND,$BORDER,$SEPARATOR" \
 -color-normal "$BACKGROUND_ALT,$FOREGROUND,$BACKGROUND_ALT,$HIGHLIGHT_BACKGROUND,$HIGHLIGHT_FOREGROUND" \
