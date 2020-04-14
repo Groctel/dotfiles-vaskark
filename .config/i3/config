@@ -8,10 +8,10 @@ set $mod Mod4
 floating_modifier $mod
 
 # set terminal
-set $term kitty
+set $term termite
 
 # font for window titles
-font xft:scientifica bold 11
+font xft:scientifica bold 8
 
 # hide borders
 hide_edge_borders none
@@ -234,8 +234,8 @@ bindsym --release $mod+Print exec --no-startup-id screenshot.sh full
 bindsym --release $mod+Shift+Print exec --no-startup-id screenshot.sh window
 
 # polybar controls
-bindsym Control+F11 exec --no-startup-id polybar-toggle.sh
-bindsym Control+Shift+F11 exec --no-startup-id polybar-menu.sh
+bindsym $mod+semicolon exec --no-startup-id polybar-msg cmd toggle
+bindsym $mod+Shift+semicolon exec --no-startup-id polybar-menu.sh
 
 # pulseaudio controls
 bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ +5%
