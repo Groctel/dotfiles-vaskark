@@ -88,7 +88,7 @@ themes
 command-not-found
 extract
 colored-man-pages
-vi-mode
+#vi-mode
 )
 
 source $ZSH/oh-my-zsh.sh
