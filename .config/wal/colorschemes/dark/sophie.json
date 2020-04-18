@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/jason/Pictures/0lo1bgne12141-m.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#1b1a1d",
+        "foreground": "#c6c5c6",
+        "cursor": "#c6c5c6"
+    },
+    "colors": {
+        "color0": "#1b1a1d",
+        "color1": "#785260",
+        "color2": "#52697f",
+        "color3": "#8a686e",
+        "color4": "#9a8b89",
+        "color5": "#b79e98",
+        "color6": "#c8b8ab",
+        "color7": "#c6c5c6",
+        "color8": "#545355",
+        "color9": "#785260",
+        "color10": "#52697f",
+        "color11": "#8a686e",
+        "color12": "#9a8b89",
+        "color13": "#b79e98",
+        "color14": "#c8b8ab",
+        "color15": "#c6c5c6"
+    }
+}
