@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/jason/Pictures/favs/slh9daxcvvt41.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#171718",
+        "foreground": "#c5c5c5",
+        "cursor": "#c5c5c5"
+    },
+    "colors": {
+        "color0": "#171718",
+        "color1": "#354d5b",
+        "color2": "#673e3f",
+        "color3": "#7e4864",
+        "color4": "#40687a",
+        "color5": "#79738a",
+        "color6": "#659eb5",
+        "color7": "#c5c5c5",
+        "color8": "#515151",
+        "color9": "#354d5b",
+        "color10": "#673e3f",
+        "color11": "#7e4864",
+        "color12": "#40687a",
+        "color13": "#79738a",
+        "color14": "#659eb5",
+        "color15": "#c5c5c5"
+    }
+}
