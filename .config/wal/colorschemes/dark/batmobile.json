@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/jason/Pictures/wallhaven-536903.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#1b1b1d",
+        "foreground": "#c6c6c6",
+        "cursor": "#c6c6c6"
+    },
+    "colors": {
+        "color0": "#1b1b1d",
+        "color1": "#723f76",
+        "color2": "#7a4682",
+        "color3": "#b16e71",
+        "color4": "#715fa8",
+        "color5": "#97bac7",
+        "color6": "#b19ac9",
+        "color7": "#c6c6c6",
+        "color8": "#545455",
+        "color9": "#723f76",
+        "color10": "#7a4682",
+        "color11": "#b16e71",
+        "color12": "#715fa8",
+        "color13": "#97bac7",
+        "color14": "#b19ac9",
+        "color15": "#c6c6c6"
+    }
+}

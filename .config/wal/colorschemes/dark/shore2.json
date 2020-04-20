@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/jason/Pictures/kace-rodriguez-85845-unsplash.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#212121",
+        "foreground": "#c7c7c7",
+        "cursor": "#c7c7c7"
+    },
+    "colors": {
+        "color0": "#212121",
+        "color1": "#a6a6a6",
+        "color2": "#aa9d95",
+        "color3": "#ae947f",
+        "color4": "#c4ae98",
+        "color5": "#959ea9",
+        "color6": "#7f90a9",
+        "color7": "#c7c7c7",
+        "color8": "#585858",
+        "color9": "#a6a6a6",
+        "color10": "#aa9d95",
+        "color11": "#ae947f",
+        "color12": "#c4ae98",
+        "color13": "#959ea9",
+        "color14": "#7f90a9",
+        "color15": "#c7c7c7"
+    }
+}

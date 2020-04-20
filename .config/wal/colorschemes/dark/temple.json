@@ -1,5 +1,5 @@
 {
-    "wallpaper": "/home/jason/Pictures/favs/slh9daxcvvt41.jpg",
+    "wallpaper": "/home/jason/Pictures/slh9daxcvvt41.jpg",
     "alpha": "100",
     "special": {
         "background": "#171718",
@@ -8,20 +8,20 @@
     },
     "colors": {
         "color0": "#171718",
-        "color1": "#354d5b",
-        "color2": "#673e3f",
-        "color3": "#7e4864",
-        "color4": "#40687a",
-        "color5": "#79738a",
-        "color6": "#659eb5",
+        "color1": "#394b56",
+        "color2": "#634242",
+        "color3": "#764f63",
+        "color4": "#4a646f",
+        "color5": "#726597",
+        "color6": "#7696a3",
         "color7": "#c5c5c5",
         "color8": "#515151",
-        "color9": "#354d5b",
-        "color10": "#673e3f",
-        "color11": "#7e4864",
-        "color12": "#40687a",
-        "color13": "#79738a",
-        "color14": "#659eb5",
+        "color9": "#394b56",
+        "color10": "#634242",
+        "color11": "#764f63",
+        "color12": "#4a646f",
+        "color13": "#726597",
+        "color14": "#7696a3",
         "color15": "#c5c5c5"
     }
 }
