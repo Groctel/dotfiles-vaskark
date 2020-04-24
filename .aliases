@@ -41,6 +41,7 @@ alias km='kmon -u'
 alias gc='git commit -a'
 alias gp='git pull'
 alias gl='git log'
+alias gs='git status'
 
 # neofetch
 alias nf0='clear;neofetch --config none'
