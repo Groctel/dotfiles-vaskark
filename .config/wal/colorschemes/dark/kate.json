@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/jason/Pictures/3840x2160-kate-winslet-4k_1542236265-m.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#211c1c",
+        "foreground": "#c7c6c6",
+        "cursor": "#c7c6c6"
+    },
+    "colors": {
+        "color0": "#211c1c",
+        "color1": "#aa918f",
+        "color2": "#aa736b",
+        "color3": "#aa8882",
+        "color4": "#aa7f77",
+        "color5": "#9999aa",
+        "color6": "#a99aa0",
+        "color7": "#c7c6c6",
+        "color8": "#585454",
+        "color9": "#aa918f",
+        "color10": "#aa736b",
+        "color11": "#aa8882",
+        "color12": "#aa7f77",
+        "color13": "#9999aa",
+        "color14": "#a99aa0",
+        "color15": "#c7c6c6"
+    }
+}

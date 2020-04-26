@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/jason/Pictures/eva-green-300-rise-of-an-empire-2880x1800-m.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#0B0B0E",
+        "foreground": "#e0cdc3",
+        "cursor": "#e0cdc3"
+    },
+    "colors": {
+        "color0": "#0B0B0E",
+        "color1": "#374854",
+        "color2": "#5F5759",
+        "color3": "#92675F",
+        "color4": "#C17E75",
+        "color5": "#8E8482",
+        "color6": "#BEB5AD",
+        "color7": "#e0cdc3",
+        "color8": "#9c8f88",
+        "color9": "#374854",
+        "color10": "#5F5759",
+        "color11": "#92675F",
+        "color12": "#C17E75",
+        "color13": "#8E8482",
+        "color14": "#BEB5AD",
+        "color15": "#e0cdc3"
+    }
+}
