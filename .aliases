@@ -6,7 +6,7 @@ alias df='df -H | grep sda'
 alias du='du -d 1 -h'
 alias cd..='cd ..'
 alias h='history'
-alias hc='history -c'
+alias hc='history -c;src'
 alias p='pwd -P'
 
 alias ls='lsd -h'

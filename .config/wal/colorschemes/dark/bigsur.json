@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/jason/Pictures/joshua-sortino-xZqr8WtYEJ0-unsplash-m.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#211e1d",
+        "foreground": "#c7c6c6",
+        "cursor": "#c7c6c6"
+    },
+    "colors": {
+        "color0": "#211e1d",
+        "color1": "#aa9895",
+        "color2": "#aa887e",
+        "color3": "#aa5e46",
+        "color4": "#8092aa",
+        "color5": "#929baa",
+        "color6": "#a5a3a8",
+        "color7": "#c7c6c6",
+        "color8": "#585655",
+        "color9": "#aa9895",
+        "color10": "#aa887e",
+        "color11": "#aa5e46",
+        "color12": "#8092aa",
+        "color13": "#929baa",
+        "color14": "#a5a3a8",
+        "color15": "#c7c6c6"
+    }
+}
