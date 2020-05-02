@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/jason/Pictures/lea-seydoux-2017-n2-m.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#211816",
+        "foreground": "#c7c5c4",
+        "cursor": "#c7c5c4"
+    },
+    "colors": {
+        "color0": "#211816",
+        "color1": "#aa7c71",
+        "color2": "#a99089",
+        "color3": "#89a96b",
+        "color4": "#9da4a4",
+        "color5": "#8094a8",
+        "color6": "#657baa",
+        "color7": "#c7c5c4",
+        "color8": "#585150",
+        "color9": "#aa7c71",
+        "color10": "#a99089",
+        "color11": "#89a96b",
+        "color12": "#9da4a4",
+        "color13": "#8094a8",
+        "color14": "#657baa",
+        "color15": "#c7c5c4"
+    }
+}
