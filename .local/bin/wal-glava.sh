@@ -5,4 +5,5 @@ sed -i "s|#define COLOR.*$|#define COLOR ("$color" * ((d / 800) + 1))|g" ~/.conf
 
 killall -q glava
 while pgrep -u $UID -x glava >/dev/null; do sleep 1; done
-glava --desktop --audio=fifo &
+#glava --desktop --audio=fifo &
+glava --desktop &
