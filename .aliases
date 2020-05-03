@@ -64,9 +64,9 @@ alias ya='yadm add'
 alias yp='yadm push -u origin master'
 
 # pywal
-alias w1='wal --theme random_user -o wal-berry.sh -o wal-dunst.sh'
-alias w2='wal --theme random_dark -o wal-berry.sh -o wal-dunst.sh'
-alias wf='wal --theme dkeg-traffic -o wal-berry.sh -o wal-dunst.sh'
+alias w1='wal --theme random_user -o wal-berry.sh -o wal-dunst.sh -o wal-glava.sh'
+alias w2='wal --theme random -o wal-berry.sh -o wal-dunst.sh -o wal-glava.sh'
+alias wf='wal --theme dkeg-traffic -o wal-berry.sh -o wal-dunst.sh -o wal-glava.sh'
 
 # superuser
 alias reboot='sudo reboot'
