@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/jason/Pictures/dihvcop8c7231.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#09080a",
+        "foreground": "#aca9ad",
+        "cursor": "#aca9ad"
+    },
+    "colors": {
+        "color0": "#09080a",
+        "color1": "#4e4a8a",
+        "color2": "#7c5442",
+        "color3": "#9d5454",
+        "color4": "#7979b6",
+        "color5": "#ab7c64",
+        "color6": "#b78979",
+        "color7": "#aca9ad",
+        "color8": "#59535c",
+        "color9": "#4e4a8a",
+        "color10": "#7c5442",
+        "color11": "#9d5454",
+        "color12": "#7979b6",
+        "color13": "#ab7c64",
+        "color14": "#b78979",
+        "color15": "#aca9ad"
+    }
+}
