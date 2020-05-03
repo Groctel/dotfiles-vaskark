@@ -17,8 +17,7 @@
 /* How quickly the gradient transitions, in pixels */
 #define GRADIENT 80
 /* Bar color. By default this provides a blue-white gradient. */
-/*#define COLOR @fg:mix(#151821FF, #2E4053AA, clamp(d / GRADIENT, 0, 1))*/
-#define COLOR @fg:mix(#2D2029FF, #543B4EAA, clamp(d / GRADIENT, 0, 1))
+#define COLOR (#88aa55 * ((d / 800) + 1))
 /* Outline color. By default this provides a 'glint' outline based on the bar color */
 #define BAR_OUTLINE @bg:vec4(COLOR.rgb * 1.5, COLOR.a)
 /* Direction that the bars are facing, 0 for inward, 1 for outward */
@@ -26,9 +25,10 @@
 /* Whether to switch left/right audio buffers */
 #define INVERT 0
 /* Whether to flip the output vertically */
-#define FLIP 0
+#define FLIP 1
 /* Whether to mirror output along `Y = X`, causing output to render on the left side of the window */
 /* Use with `FLIP 1` to render on the right side */
 #define MIRROR_YX 0
 /* Whether to disable mono rendering when `#request setmirror true` is set in `rc.glsl`. */
 #define DISABLE_MONO 0
+

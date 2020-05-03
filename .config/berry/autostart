@@ -16,9 +16,9 @@ wal -R -o wal-berry.sh -o wal-dunst.sh &
 berryc border_width         0
 berryc inner_border_width   0
 berryc title_height         24
-# berryc top_gap            0
-berryc edge_gap             5 60 5 5
-berryc decorate_new	    true
+#berryc top_gap		    30	
+berryc edge_gap             0 0 0 0
+berryc decorate_new	    false
 
 # Set decoration colors
 berryc focus_color          

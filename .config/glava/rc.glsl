@@ -17,7 +17,7 @@
 
 /* Window hints */
 #request setfloating  false
-#request setdecorated true
+#request setdecorated false
 #request setfocused   false
 #request setmaximized false
 
@@ -69,7 +69,7 @@
    will do nothing, but you can use "!+" and "!-" to stack on top
    or below other windows.
 */
-#request setxwintype "normal"
+#request setxwintype "desktop"
 
 /* (X11 only) EWMH Window state atoms (multiple can be specified).
    Possible values are:
@@ -87,12 +87,11 @@
    and your WM is not correctly responding to the "desktop" value
    for `setxwintype`.
 */
-// #request addxwinstate "sticky"
+#request addxwinstate "sticky"
 // #request addxwinstate "skip_taskbar"
 // #request addxwinstate "skip_pager"
 // #request addxwinstate "above"
-// #request addxwinstate "below"
-// #request addxwinstate "pinned"
+#request addxwinstate "pinned"
 
 /* (X11 only) Use the XShape extension to support clicking through
    the GLava window. Useful when you want to interact with other
@@ -129,7 +128,7 @@
    
    This will delay data output by one update frame, so it can
    desync audio with visual effects on low UPS configs. */
-#request setinterpolate true
+#request setinterpolate false
 
 /* Frame limiter, set to the frames per second (FPS) desired or
    simply set to zero (or lower) to disable the frame limiter. */
@@ -202,6 +201,14 @@
    backend. Instead, an ideal rate should be be configured
    in the application generating the output. */
 #request setsamplerate 22050
+
+/* Enable GPU acceleration of the audio buffer's fourier transform.
+   This drastically reduces CPU usage, but should be avoided on
+   old integrated graphics hardware.
+   
+   Enabling this also enables acceleration for post-FFT processing
+   effects, such as gravity, averaging, windowing, and interpolation. */
+#request setaccelfft true
 
 /*                    ** DEPRECATED **
    Force window geometry (locking the window in place), useful

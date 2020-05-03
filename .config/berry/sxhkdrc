@@ -34,7 +34,7 @@ super + F2
 
 # music
 super + F3
-	kitty -e ncmpcpp
+	termite -e ncmpcpp
 
 # polybar
 super + semicolon
@@ -84,7 +84,7 @@ XF86MonBrightnessDown
 
 # wal
 super + F12
-    wal -f random_user -o wal-berry.sh -o wal-dunst.sh
+    wal -f random_user -o wal-berry.sh -o wal-dunst.sh -o wal-glava.sh
 super + shift + F12
     sxiv ~/Pictures/favs/ -t -g 630x600+60+60 
 super + control + F12
