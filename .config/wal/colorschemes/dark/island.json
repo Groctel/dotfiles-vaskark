@@ -1,27 +1,27 @@
 {
-    "wallpaper": "/home/jason/Pictures/austin-neill-685084-unsplash.jpg",
+    "wallpaper": "/home/jason/Pictures/iswanto-arif-qWPKK3oh794-unsplash.jpg",
     "alpha": "100",
     "special": {
-        "background": "#2c373d",
-        "foreground": "#baad8a",
-        "cursor": "#c4c0bb"
+        "background": "#262f33",
+        "foreground": "#948d65",
+        "cursor": "#b5b699"
     },
     "colors": {
-        "color0": "#2c373d",
-        "color1": "#a67979",
-        "color2": "#809f7b",
-        "color3": "#baad8a",
-        "color4": "#6d7575",
-        "color5": "#8e7d79",
-        "color6": "#7b9899",
-        "color7": "#c4c0bb",
-        "color8": "#4d5459",
-        "color9": "#a67979",
-        "color10": "#809f7b",
-        "color11": "#baad8a",
-        "color12": "#6d7575",
-        "color13": "#8e7d79",
-        "color14": "#7b9899",
-        "color15": "#c4c0bb"
+        "color0": "#262f33",
+        "color1": "#804f4e",
+        "color2": "#68786c",
+        "color3": "#948d65",
+        "color4": "#47575f",
+        "color5": "#74636a",
+        "color6": "#526562",
+        "color7": "#b5b699",
+        "color8": "#464c50",
+        "color9": "#804f4e",
+        "color10": "#68786c",
+        "color11": "#948d65",
+        "color12": "#47575f",
+        "color13": "#74636a",
+        "color14": "#526562",
+        "color15": "#cbcbb7"
     }
 }
