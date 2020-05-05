@@ -81,6 +81,7 @@ HIST_STAMPS="yyyy-mm-dd"
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
 git
+#gitfast
 mercurial
 zsh_reload
 systemadmin

@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/jason/Pictures/wp4700180-jessica-chastain-4k-wallpapers-m.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#1a171c",
+        "foreground": "#c5c5c6",
+        "cursor": "#c5c5c6"
+    },
+    "colors": {
+        "color0": "#1a171c",
+        "color1": "#7d354c",
+        "color2": "#a9484b",
+        "color3": "#b96c5d",
+        "color4": "#b66755",
+        "color5": "#c38974",
+        "color6": "#cda98a",
+        "color7": "#c5c5c6",
+        "color8": "#535154",
+        "color9": "#7d354c",
+        "color10": "#a9484b",
+        "color11": "#b96c5d",
+        "color12": "#b66755",
+        "color13": "#c38974",
+        "color14": "#cda98a",
+        "color15": "#c5c5c6"
+    }
+}
