@@ -84,7 +84,8 @@ XF86MonBrightnessDown
 
 # wal
 super + F12
-    wal -f random_user -o wal-berry.sh -o wal-dunst.sh -o wal-glava.sh
+    wpg -m
+    #wal -f random_user -o wal-berry.sh -o wal-dunst.sh -o wal-glava.sh
 super + shift + F12
     sxiv ~/Pictures/favs/ -t -g 630x600+60+60 
 super + control + F12

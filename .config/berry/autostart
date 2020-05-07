@@ -1,6 +1,7 @@
 #!/bin/sh
 
 # Set startup apps
+~/.config/wpg/wp_init.sh &
 sxhkd -c $HOME/.config/berry/sxhkdrc &
 polybar-main-small-bottom.sh &
 #nitrogen --restore &
@@ -9,7 +10,10 @@ xautolock.sh &
 picom-xr.sh &
 dunst &
 libinput-gestures &
-wal -R -o wal-berry.sh -o wal-dunst.sh -o wal-glava.sh &
+wal-berry.sh &
+wal-dunst.sh &
+wal-glava.sh &
+#wal -R -o wal-berry.sh -o wal-dunst.sh -o wal-glava.sh &
 /usr/lib/policykit-1-gnome/polkit-gnome-authentication-agent-1 &
 
 # Set decoration geometry

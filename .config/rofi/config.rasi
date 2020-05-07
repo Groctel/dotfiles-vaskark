@@ -7,7 +7,7 @@ configuration {
   disable-history:    false;
   width: 	      16;
   lines:              10;
-  font:		      "scientifica bold 8";
+  font:		      "scientifica 8";
   columns:            1;
   modi: 	      "drun,run,ssh,window,keys";
   display-drun:       "apps";
@@ -15,4 +15,3 @@ configuration {
   terminal:           "kitty";
   theme:	      "~/.cache/wal/colors-rofi-dark.rasi";
 }
-@import "/home/jason/.local/share/rofi/themes/DarkGray-SlateGray.rasi"
