@@ -80,7 +80,7 @@ font-1 = "siji:size=9;2"
 
 modules-left = i3
 modules-center = mpd
-modules-right = wireless wired volume memory battery temperature date session
+modules-right = wireless wired volume memory battery temp date session
 
 ;dim-value = 0.8
 
@@ -132,7 +132,7 @@ font-1 = "siji:size=9;2"
 
 modules-left = ewmh
 modules-center = mpd
-modules-right = wireless wired volume memory battery temperature date session
+modules-right = wireless wired volume memory battery temp date session
 
 #######################################
 ########## BAR -- MAIN-SMALL ##########
@@ -221,9 +221,9 @@ font-0 = "scientifica:bold:size=8;2"
 font-1 = "siji:size=9;2"
 font-2 = "Weather Icons:size=8;2"
 
-modules-left = ewmh
-modules-center = mpd-c
-modules-right = mpd sep uptime battery wireless wired volume
+modules-left = ewmh sep mpd-c
+modules-center = 
+modules-right = mpd sep uptime battery wireless wired volume sep music picom nmc wpg
 
 ;dim-value = 0.8
 
@@ -252,6 +252,7 @@ content = " "
 content-background = transparent
 content-foreground = transparent
 content-padding = 0
+
 
 ##################################################
 
@@ -401,7 +402,7 @@ host = 127.0.0.1
 port = 6601
 
 #label-song = %artist% - %title%
-label-song = %{A1:mpc toggle:}%{A2:kitty -e ncmpcpp:}%{A3:mpc next:}%{A8:mpc prev:}%artist%  >>  %title%%{A}%{A}%{A}%{A}
+label-song = %{A1:mpc toggle:}%{A2:kitty -e ncmpcpp:}%{A3:mpc next:}%{A8:mpc prev:}%artist%  //  %title%%{A}%{A}%{A}%{A}
 
 format-online = <label-song>
 label-song-background = ${colors.color3}
@@ -453,6 +454,7 @@ icon-prev = 
 icon-play = 
 icon-pause = 
 icon-next = 
+
 
 ##################################################
 
@@ -590,7 +592,7 @@ ramp-capacity-4 = 
 
 ##################################################
 
-[module/temperature]
+[module/temp]
 type = internal/temperature
 thermal-zone = 0
 warn-temperature = 65
@@ -668,6 +670,7 @@ label-padding = 2
 [module/weather]
 type = custom/script
 exec = ~/.config/polybar/scripts/openweathermap-simple.sh
+click-right = gnome-weather &
 interval = 600
 label-font = 3
 
@@ -676,6 +679,42 @@ label = %output%
 label-background = ${colors.color3}
 label-foreground = ${colors.color0}
 label-padding = 2
+
+##################################################
+##################################################
+
+[module/picom]
+type = custom/text
+content = " "
+click-left = picom-blur.sh &
+click-right = picom-rounded.sh &
+
+content-background = ${colors.color2}
+content-foreground = ${colors.color8}
+content-padding = 1
+
+##################################################
+
+[module/nmc]
+type = custom/text
+content = ""
+click-right = nm-connection-editor &
+
+content-background = ${colors.color2}
+content-foreground = ${colors.color8}
+content-padding = 1
+
+##################################################
+
+[module/wpg]
+type = custom/text
+content = " "
+click-right = wpg -m &
+
+content-background = ${colors.color2}
+content-foreground = ${colors.color8}
+content-padding = 1
+
 
 ##################################################
 ##################################################

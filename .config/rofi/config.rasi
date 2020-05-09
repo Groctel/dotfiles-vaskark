@@ -1,17 +1,17 @@
 configuration {
-  show-icons:         false;
-  cycle:              true;
-  location:	      0;
-  sidebar-mode:	      false;	
-  hide-scrollbar:     true;
-  disable-history:    false;
-  width: 	      16;
-  lines:              10;
-  font:		      "scientifica 8";
-  columns:            1;
-  modi: 	      "drun,run,ssh,window,keys";
-  display-drun:       "apps";
-  display-window:     "win";
-  terminal:           "kitty";
-  theme:	      "~/.cache/wal/colors-rofi-dark.rasi";
+  show-icons:         	false;
+  cycle:              	true;
+  location:	      	0;
+  sidebar-mode:	false;	
+  hide-scrollbar:     	true;
+  disable-history:    	false;
+  width: 	      	16;
+  lines:              	10;
+  font:		"scientifica 8";
+  columns:            	1;
+  modi: 	      	"drun,run,ssh,window,keys";
+  display-drun:       	"apps";
+  display-window:     	"win";
+  terminal:           	"kitty";
+  theme:	      	"~/.cache/wal/colors-rofi-dark.rasi";
 }

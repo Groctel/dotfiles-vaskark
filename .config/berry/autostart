@@ -7,7 +7,7 @@ polybar-main-small-bottom.sh &
 #nitrogen --restore &
 redshift.sh &
 xautolock.sh &
-picom-xr.sh &
+picom-blur.sh &
 dunst &
 libinput-gestures &
 wal-berry.sh &
