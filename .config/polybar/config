@@ -223,7 +223,7 @@ font-2 = "Weather Icons:size=8;2"
 
 modules-left = ewmh sep mpd-c
 modules-center = 
-modules-right = mpd sep uptime battery wireless wired volume sep music picom nmc wpg
+modules-right = mpd sep uptime battery wireless wired volume sep nmc wpg
 
 ;dim-value = 0.8
 
@@ -690,18 +690,18 @@ click-left = picom-blur.sh &
 click-right = picom-rounded.sh &
 
 content-background = ${colors.color2}
-content-foreground = ${colors.color8}
+content-foreground = ${colors.color0}
 content-padding = 1
 
 ##################################################
 
 [module/nmc]
 type = custom/text
-content = ""
+content = " "
 click-right = nm-connection-editor &
 
 content-background = ${colors.color2}
-content-foreground = ${colors.color8}
+content-foreground = ${colors.color0}
 content-padding = 1
 
 ##################################################
@@ -710,9 +710,10 @@ content-padding = 1
 type = custom/text
 content = " "
 click-right = wpg -m &
+click-middle = wpg -r &
 
 content-background = ${colors.color2}
-content-foreground = ${colors.color8}
+content-foreground = ${colors.color0}
 content-padding = 1
 
 
