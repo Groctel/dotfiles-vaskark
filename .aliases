@@ -9,7 +9,7 @@ alias h='history'
 alias hc='history -c;src'
 alias p='pwd -P'
 
-alias ls='lsd -h'
+alias ls='lsd'
 alias l='ls -l'
 alias ll='ls -al'
 alias lt='lsd --tree --depth 2'

@@ -90,6 +90,7 @@ command-not-found
 extract
 colored-man-pages
 #vi-mode
+#magic-enter
 )
 
 source $ZSH/oh-my-zsh.sh

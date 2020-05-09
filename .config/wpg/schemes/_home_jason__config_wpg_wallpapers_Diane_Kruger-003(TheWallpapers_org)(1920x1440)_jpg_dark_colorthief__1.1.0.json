@@ -1,0 +1,28 @@
+{
+    "wallpaper": "/home/jason/.config/wpg/wallpapers/Diane_Kruger-003(TheWallpapers.org)(1920x1440).jpg",
+    "alpha": "100",
+
+    "special": {
+        "background": "#1c1f23",
+        "foreground": "#fffff6",
+        "cursor": "#fffff6"
+    },
+    "colors": {
+        "color0": "#1c1f23",
+        "color1": "#415459",
+        "color2": "#234640",
+        "color3": "#7e6b5f",
+        "color4": "#555552",
+        "color5": "#444d4d",
+        "color6": "#384758",
+        "color7": "#ccc7bf",
+        "color8": "#32373e",
+        "color9": "#4a737d",
+        "color10": "#266157",
+        "color11": "#b2876d",
+        "color12": "#79795f",
+        "color13": "#4f6d6d",
+        "color14": "#3f5b7b",
+        "color15": "#fffff6"
+    }
+}

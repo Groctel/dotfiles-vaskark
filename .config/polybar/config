@@ -222,7 +222,7 @@ font-1 = "siji:size=9;2"
 font-2 = "Weather Icons:size=8;2"
 
 modules-left = ewmh
-modules-center =
+modules-center = mpd-c
 modules-right = mpd sep uptime battery wireless wired volume
 
 ;dim-value = 0.8
@@ -444,7 +444,7 @@ type = internal/mpd
 host = 127.0.0.1
 port = 6601
 
-format-online = <icon-prev> <toggle> <icon-next>
+format-online = <icon-prev>  <toggle>  <icon-next>
 format-online-background = ${colors.color3}
 format-online-foreground = ${colors.color0}
 format-online-padding = 2
@@ -516,7 +516,7 @@ ramp-signal-4 = 
 
 [module/volume]
 type = internal/pulseaudio
-;sink = alsa_output.pci-0000_00_1f.3.analog-stereo
+sink = alsa_output.pci-0000_00_1f.3.analog-stereo
 click-right = pavucontrol &
 
 label-volume = %percentage%%

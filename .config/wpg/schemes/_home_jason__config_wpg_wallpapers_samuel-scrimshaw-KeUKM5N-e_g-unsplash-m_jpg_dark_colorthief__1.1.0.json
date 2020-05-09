@@ -1,0 +1,28 @@
+{
+    "wallpaper": "/home/jason/.config/wpg/wallpapers/samuel-scrimshaw-KeUKM5N-e_g-unsplash-m.jpg",
+    "alpha": "100",
+
+    "special": {
+        "background": "#16130F",
+        "foreground": "#e2d6c8",
+        "cursor": "#e2d6c8"
+    },
+    "colors": {
+        "color0": "#16130F",
+        "color1": "#6D5782",
+        "color2": "#826D57",
+        "color3": "#57826D",
+        "color4": "#6D8257",
+        "color5": "#82576D",
+        "color6": "#576D82",
+        "color7": "#A39A90",
+        "color8": "#342c23",
+        "color9": "#8e63b7",
+        "color10": "#b78e63",
+        "color11": "#63b78e",
+        "color12": "#8eb763",
+        "color13": "#b7638e",
+        "color14": "#638eb7",
+        "color15": "#e2d6c8"
+    }
+}

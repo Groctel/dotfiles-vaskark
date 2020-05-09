@@ -1,0 +1,28 @@
+{
+    "wallpaper": "/home/jason/.config/wpg/wallpapers/bn7tb1xlm5031.jpg",
+    "alpha": "100",
+
+    "special": {
+        "background": "#1b1414",
+        "foreground": "#fffded",
+        "cursor": "#fffded"
+    },
+    "colors": {
+        "color0": "#1b1414",
+        "color1": "#512f28",
+        "color2": "#726561",
+        "color3": "#b7826f",
+        "color4": "#b8b3b3",
+        "color5": "#b5b5c0",
+        "color6": "#aaa59e",
+        "color7": "#c2c0b4",
+        "color8": "#372929",
+        "color9": "#683529",
+        "color10": "#9b786b",
+        "color11": "#f99c79",
+        "color12": "#ffcccc",
+        "color13": "#ceceff",
+        "color14": "#ebd0b3",
+        "color15": "#fffded"
+    }
+}

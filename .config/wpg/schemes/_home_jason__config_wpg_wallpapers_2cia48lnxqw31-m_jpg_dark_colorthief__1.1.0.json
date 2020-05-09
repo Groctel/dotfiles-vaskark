@@ -1,0 +1,28 @@
+{
+    "wallpaper": "/home/jason/.config/wpg/wallpapers/2cia48lnxqw31-m.jpg",
+    "alpha": "100",
+
+    "special": {
+        "background": "#09090d",
+        "foreground": "#e6e6f0",
+        "cursor": "#e6e6f0"
+    },
+    "colors": {
+        "color0": "#09090d",
+        "color1": "#929bac",
+        "color2": "#626e6d",
+        "color3": "#b15861",
+        "color4": "#5b7f8d",
+        "color5": "#897b7a",
+        "color6": "#96acab",
+        "color7": "#acacb3",
+        "color8": "#1d1d2b",
+        "color9": "#a9c3f4",
+        "color10": "#719c98",
+        "color11": "#f76170",
+        "color12": "#67abc6",
+        "color13": "#c2918d",
+        "color14": "#aef4f1",
+        "color15": "#e6e6f0"
+    }
+}

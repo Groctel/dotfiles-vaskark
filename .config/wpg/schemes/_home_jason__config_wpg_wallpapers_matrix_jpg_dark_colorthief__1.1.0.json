@@ -1,0 +1,28 @@
+{
+    "wallpaper": "/home/jason/.config/wpg/wallpapers/matrix.jpg",
+    "alpha": "100",
+
+    "special": {
+        "background": "#010207",
+        "foreground": "#b4cdff",
+        "cursor": "#b4cdff"
+    },
+    "colors": {
+        "color0": "#010207",
+        "color1": "#6778ae",
+        "color2": "#22605f",
+        "color3": "#347680",
+        "color4": "#6073a0",
+        "color5": "#214759",
+        "color6": "#384465",
+        "color7": "#8395c0",
+        "color8": "#031634",
+        "color9": "#7393f7",
+        "color10": "#248584",
+        "color11": "#39a2b1",
+        "color12": "#6c8de1",
+        "color13": "#225e78",
+        "color14": "#3c5290",
+        "color15": "#b4cdff"
+    }
+}

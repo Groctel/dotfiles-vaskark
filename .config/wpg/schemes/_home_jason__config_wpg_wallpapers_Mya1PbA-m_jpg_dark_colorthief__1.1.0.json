@@ -1,0 +1,28 @@
+{
+    "wallpaper": "/home/jason/.config/wpg/wallpapers/Mya1PbA-m.jpg",
+    "alpha": "100",
+
+    "special": {
+        "background": "#030609",
+        "foreground": "#e6e6e6",
+        "cursor": "#e6e6e6"
+    },
+    "colors": {
+        "color0": "#030609",
+        "color1": "#5a6782",
+        "color2": "#5b5b5b",
+        "color3": "#a24558",
+        "color4": "#8d8d8d",
+        "color5": "#2b3b69",
+        "color6": "#535555",
+        "color7": "#ababab",
+        "color8": "#10172d",
+        "color9": "#6980b7",
+        "color10": "#7d7577",
+        "color11": "#d64c69",
+        "color12": "#b5b5b5",
+        "color13": "#2e4b93",
+        "color14": "#5f757c",
+        "color15": "#e6e6e6"
+    }
+}

@@ -1,0 +1,28 @@
+{
+    "wallpaper": "/home/jason/.config/wpg/wallpapers/wp1830528-scarlett-johansson-wallpaper.jpg",
+    "alpha": "100",
+
+    "special": {
+        "background": "#002b36",
+        "foreground": "#ccdfdf",
+        "cursor": "#ccdfdf"
+    },
+    "colors": {
+        "color0": "#002b36",
+        "color1": "#dc322f",
+        "color2": "#268bd2",
+        "color3": "#859900",
+        "color4": "#6c71c4",
+        "color5": "#2aa198",
+        "color6": "#b58900",
+        "color7": "#93a1a1",
+        "color8": "#015267",
+        "color9": "#ff302b",
+        "color10": "#21b7ff",
+        "color11": "#acc501",
+        "color12": "#7881ff",
+        "color13": "#29ded0",
+        "color14": "#eab101",
+        "color15": "#ccdfdf"
+    }
+}

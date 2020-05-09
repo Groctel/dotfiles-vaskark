@@ -1,0 +1,28 @@
+{
+    "wallpaper": "/home/jason/.config/wpg/wallpapers/dihvcop8c7231.jpg",
+    "alpha": "100",
+
+    "special": {
+        "background": "#1d1422",
+        "foreground": "#ffdcff",
+        "cursor": "#ffdcff"
+    },
+    "colors": {
+        "color0": "#1d1422",
+        "color1": "#5f5b9e",
+        "color2": "#8181d3",
+        "color3": "#ab6b6b",
+        "color4": "#89685a",
+        "color5": "#d28862",
+        "color6": "#c69c8f",
+        "color7": "#cca7d3",
+        "color8": "#362740",
+        "color9": "#6a63d4",
+        "color10": "#8e8eff",
+        "color11": "#e97474",
+        "color12": "#ba7f63",
+        "color13": "#ffa568",
+        "color14": "#ffbfa0",
+        "color15": "#ffdcff"
+    }
+}

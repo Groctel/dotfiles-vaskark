@@ -9,7 +9,7 @@ separator_height = 5
 padding = 10 
 horizontal_padding = 10
 frame_width = 0
-frame_color = "#ffa800"
+frame_color = "#39a172"
 separator_color = frame
 sort = yes
 idle_threshold = 10
@@ -38,18 +38,18 @@ history = ctrl+grave
 context = ctrl+shift+period
 
 [urgency_low]
-background = "#ffa800"
-foreground = "#171717"
+background = "#39a172"
+foreground = "#08080e"
 timeout = 20
 
 [urgency_normal]
-background = "#ffa800"
-foreground = "#171717"
+background = "#39a172"
+foreground = "#08080e"
 timeout = 20
 
 [urgency_critical]
-background = "#ffa800"
-foreground = "#171717"
+background = "#39a172"
+foreground = "#08080e"
 timeout = 30
 
 # vim: ft=cfg

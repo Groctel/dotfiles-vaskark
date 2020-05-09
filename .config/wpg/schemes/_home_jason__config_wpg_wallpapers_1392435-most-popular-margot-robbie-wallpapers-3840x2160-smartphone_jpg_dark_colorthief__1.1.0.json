@@ -1,0 +1,28 @@
+{
+    "wallpaper": "/home/jason/.config/wpg/wallpapers/1392435-most-popular-margot-robbie-wallpapers-3840x2160-smartphone.jpg",
+    "alpha": "100",
+
+    "special": {
+        "background": "#171717",
+        "foreground": "#ffffff",
+        "cursor": "#ffffff"
+    },
+    "colors": {
+        "color0": "#171717",
+        "color1": "#d81765",
+        "color2": "#97d01a",
+        "color3": "#ffa800",
+        "color4": "#0fdcb6",
+        "color5": "#ff2491",
+        "color6": "#16b1fb",
+        "color7": "#ebebeb",
+        "color8": "#303030",
+        "color9": "#ff0e80",
+        "color10": "#caff12",
+        "color11": "#ffda01",
+        "color12": "#04fff6",
+        "color13": "#ff1bbc",
+        "color14": "#0aecff",
+        "color15": "#ffffff"
+    }
+}
