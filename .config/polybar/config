@@ -400,6 +400,7 @@ type = internal/mpd
 host = 127.0.0.1
 port = 6601
 
+#label-song = %artist% - %title%
 label-song = %{A1:mpc toggle:}%{A2:kitty -e ncmpcpp:}%{A3:mpc next:}%{A8:mpc prev:}%artist%  >>  %title%%{A}%{A}%{A}%{A}
 
 format-online = <label-song>
