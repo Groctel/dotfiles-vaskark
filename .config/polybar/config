@@ -683,7 +683,7 @@ label-padding = 2
 ##################################################
 ##################################################
 
-[module/picom]
+[module/blur]
 type = custom/text
 content = " "
 click-left = picom-blur.sh &
@@ -715,7 +715,6 @@ click-middle = wpg -r &
 content-background = ${colors.color2}
 content-foreground = ${colors.color0}
 content-padding = 1
-
 
 ##################################################
 ##################################################
