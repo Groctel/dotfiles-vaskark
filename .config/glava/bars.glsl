@@ -17,7 +17,7 @@
 /* How quickly the gradient transitions, in pixels */
 #define GRADIENT 100
 /* Bar color. By default this provides a blue-white gradient. */
-#define COLOR @fg:mix(#794c55FF, #aa5666AA, clamp(d / GRADIENT, 0, 1))
+#define COLOR @fg:mix(#b2947fFF, #f5bd91AA, clamp(d / GRADIENT, 0, 1))
 /* Outline color. By default this provides a 'glint' outline based on the bar color */
 #define BAR_OUTLINE @bg:vec4(COLOR.rgb * 1.5, COLOR.a)
 /* Direction that the bars are facing, 0 for inward, 1 for outward */

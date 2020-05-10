@@ -10,11 +10,11 @@ xautolock.sh &
 picom-blur.sh &
 dunst &
 libinput-gestures &
-wal-berry.sh &
-wal-dunst.sh &
-wal-glava.sh &
 #wal -R -o wal-berry.sh -o wal-dunst.sh -o wal-glava.sh &
 /usr/lib/policykit-1-gnome/polkit-gnome-authentication-agent-1 &
+wal-dunst.sh &
+wal-glava.sh &
+wal-berry.sh &
 
 # Set decoration geometry
 berryc border_width         0
