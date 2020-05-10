@@ -12,7 +12,7 @@ fi
 export TERM="xterm-256color"
 
 # Path to your oh-my-zsh installation.
-export ZSH=$HOME/.oh-my-zsh
+export ZSH=/usr/share/oh-my-zsh
 
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
@@ -21,8 +21,8 @@ ZSH_THEME="p10k"
 
 # Specific theme settings
 source ~/.spaceship
-source ~/.powerlevel
-source ~/.bullet-train
+#source ~/.powerlevel
+#source ~/.bullet-train
 
 # Set list of themes to load
 # Setting this variable when ZSH_THEME=random
