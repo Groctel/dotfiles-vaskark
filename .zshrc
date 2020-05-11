@@ -81,7 +81,6 @@ HIST_STAMPS="yyyy-mm-dd"
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
 git
-#gitfast
 mercurial
 zsh_reload
 systemadmin
@@ -147,9 +146,8 @@ kitty + complete setup zsh | source /dev/stdin
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
 # pywal
-(cat ~/.cache/wal/sequences &)
+#(cat ~/.cache/wal/sequences &)
 (cat ~/.config/wpg/sequences &)
-source ~/.cache/wal/colors-tty.sh
 #export color1_alpha="#22${color1/'#'}"
 
 # fzf
@@ -160,3 +158,6 @@ export FZF_CTRL_R_OPTS="--preview 'echo {}' --preview-window down:3:hidden:wrap 
 export FZF_ALT_C_OPTS="--preview 'tree -C {} | head -200'"
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+# gitstatus
+GITSTATUS_LOG_LEVEL=DEBUG
