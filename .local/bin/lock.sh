@@ -11,6 +11,6 @@ i3lock \
 -b \
 \
 --clock \
---timestr="%I:%M %P" \
+--timestr="%-I:%M %P" \
 --time-font="scientifica" \
 --datestr="" \

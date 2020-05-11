@@ -7,4 +7,4 @@ killall -q glava
 while pgrep -u $UID -x glava >/dev/null; do sleep 1; done
 
 # Launch
-glava --desktop --audio=fifo &
+glava -d -m bars --audio=fifo &

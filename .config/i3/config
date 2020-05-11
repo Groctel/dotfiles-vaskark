@@ -197,16 +197,16 @@ bindsym $mod+r mode "resize"
 
 # startup apps
 exec_always --no-startup-id polybar-main-i3.sh
-exec --no-startup-id picom-xr.sh
+exec --no-startup-id picom-blur.sh
 exec --no-startup-id redshift.sh
 exec --no-startup-id /usr/lib/policykit-1-gnome/polkit-gnome-authentication-agent-1
 #exec --no-startup-id nitrogen --restore
 exec --no-startup-id wal -R
 exec --no-startup-id libinput-gestures
-exec --no-startup-id xautolock -time 10 -locker 'betterlockscreen -l pixel' -corners 00-+
+exec --no-startup-id xautolock -time 10 -locker 'lock.sh' -corners 00-+
 
 # lock screen
-bindsym $mod+Escape exec betterlockscreen -l pixel
+bindsym $mod+Escape exec lock.sh
 
 # app bindings
 bindsym $mod+F1 exec --no-startup-id nemo
@@ -220,10 +220,10 @@ bindsym Mod1+F11 exec --no-startup-id mpc toggle
 bindsym Mod1+F12 exec --no-startup-id mpc next
 
 # wal controls
-bindsym $mod+F12 exec --no-startup-id wal -f random_user -o wal-dunst.sh
-bindsym $mod+Shift+F12 exec --no-startup-id sxiv ~/Pictures/favs/ -t -g 630x600+60+60
-bindsym $mod+Control+F12 exec --no-startup-id wal -f random -o wal-dunst.sh
-bindsym $mod+Control+Shift+F12 exec --no-startup-id wal -R -o wal-dunst.sh
+bindsym $mod+F12 exec --no-startup-id wpg -m
+#bindsym $mod+Shift+F12 exec --no-startup-id sxiv ~/Pictures/favs/ -t -g 630x600+60+60
+#bindsym $mod+Control+F12 exec --no-startup-id wal -f random -o wal-dunst.sh
+#bindsym $mod+Control+Shift+F12 exec --no-startup-id wal -R -o wal-dunst.sh
 
 # picom controls
 bindsym Control+F12 exec --no-startup-id picom-blur.sh
@@ -299,7 +299,7 @@ smart_borders on
 hide_edge_borders smart_no_gaps
 
 # set inner/outer gaps
-gaps inner 8
+gaps inner 6
 gaps outer 0
 
 # gaps stuff
