@@ -221,7 +221,7 @@ font-0 = "scientifica:bold:size=8;2"
 font-1 = "siji:size=9;2"
 font-2 = "Weather Icons:size=8;2"
 
-modules-left = ewmh sep mpd-c
+modules-left = ewmh
 modules-center = 
 modules-right = mpd sep uptime battery wireless wired volume sep nmc wpg
 
@@ -399,7 +399,7 @@ label-empty-padding = 2
 [module/mpd]
 type = internal/mpd
 host = 127.0.0.1
-port = 6601
+port = 6600
 
 #label-song = %artist% - %title%
 label-song = %{A1:mpc toggle > /tmp/toggle.log 2>&1:}%{A2:kitty -e ncmpcpp:}%{A3:mpc next:}%{A8:mpc prev:}%artist%  //  %title%%{A}%{A}%{A}%{A}
@@ -429,7 +429,7 @@ label-song-ellipsis = true
 [module/mpd-t]
 type = internal/mpd
 host = 127.0.0.1
-port = 6601
+port = 6600
 
 label-time = [%elapsed%/%total%]
 
@@ -443,7 +443,7 @@ format-online-padding = 2
 [module/mpd-c]
 type = internal/mpd
 host = 127.0.0.1
-port = 6601
+port = 6600
 
 format-online = <icon-prev>  <toggle>  <icon-next>
 format-online-background = ${colors.color3}

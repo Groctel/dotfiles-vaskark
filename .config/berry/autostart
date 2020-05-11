@@ -15,7 +15,6 @@ libinput-gestures &
 wal-dunst.sh &
 wal-glava.sh &
 wal-berry.sh &
-mpd.sh &
 
 # Set decoration geometry
 berryc border_width         0
