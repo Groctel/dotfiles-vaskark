@@ -4,10 +4,10 @@
 
 # terminal emulators
 super + Return
-	termite
+	kitty
 
 super + shift + Return
-        kitty
+        termite
 
 # program launcher
 super + d
@@ -36,6 +36,10 @@ super + F2
 # music
 super + F3
 	termite -e ncmpcpp
+	
+# farge
+super + F4
+	farge.sh
 
 # polybar
 super + semicolon
