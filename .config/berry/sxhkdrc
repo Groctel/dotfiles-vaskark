@@ -35,11 +35,11 @@ super + F2
 
 # music
 super + F3
-	termite -e ncmpcpp
+	kitty -e ncmpcpp
 	
 # farge
 super + F4
-	farge.sh
+	pick-colour-picker
 
 # polybar
 super + semicolon
