@@ -221,7 +221,7 @@ font-0 = "scientifica:bold:size=8;2"
 font-1 = "siji:size=9;2"
 font-2 = "Weather Icons:size=8;2"
 
-modules-left = ewmh
+modules-left = ewmh sep weather
 modules-center = 
 modules-right = mpd sep uptime battery wireless wired volume sep nmc wpg
 
@@ -669,10 +669,11 @@ label-padding = 2
 
 [module/weather]
 type = custom/script
-exec = ~/.config/polybar/scripts/openweathermap-simple.sh
+#exec = ~/.config/polybar/scripts/openweathermap-simple.sh
+exec = curl -s "wttr.in/Hamilton?format="+%C+%t""
 click-right = gnome-weather &
 interval = 600
-label-font = 3
+#label-font = 3
 
 label = %output%
 
@@ -698,7 +699,7 @@ content-padding = 1
 [module/nmc]
 type = custom/text
 content = " "
-click-right = nm-connection-editor &
+click-left = nm-connection-editor &
 
 content-background = ${colors.color2}
 content-foreground = ${colors.color0}
