@@ -669,9 +669,9 @@ label-padding = 2
 
 [module/weather]
 type = custom/script
-#exec = ~/.config/polybar/scripts/openweathermap-simple.sh
+#exec = ~/.config/polybar/scripts/openweathermap-detailed.sh
 exec = curl -s "wttr.in/Hamilton?format="+%C+%t""
-click-right = gnome-weather &
+click-left = gnome-weather &
 interval = 600
 #label-font = 3
 
