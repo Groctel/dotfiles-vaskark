@@ -1,28 +1,27 @@
 {
     "wallpaper": "/home/jason/.config/wpg/wallpapers/lvmr4nng9my21-m.jpg",
     "alpha": "100",
-
     "special": {
-        "background": "#04071a",
-        "foreground": "#ebebeb",
-        "cursor": "#ebebeb"
+        "background": "#06070e",
+        "foreground": "#a6a8b6",
+        "cursor": "#a6a8b6"
     },
     "colors": {
-        "color0": "#04071a",
-        "color1": "#4d6585",
-        "color2": "#939683",
-        "color3": "#b65b54",
-        "color4": "#70a7c6",
-        "color5": "#3a4a2e",
-        "color6": "#93bbc2",
-        "color7": "#b4b4b4",
-        "color8": "#151a3a",
-        "color9": "#5680b7",
-        "color10": "#c8d396",
-        "color11": "#e56559",
-        "color12": "#7cd9e4",
-        "color13": "#486533",
-        "color14": "#a5e4e4",
-        "color15": "#ebebeb"
+        "color0": "#06070e",
+        "color1": "#354529",
+        "color2": "#466082",
+        "color3": "#b4544c",
+        "color4": "#919778",
+        "color5": "#66a3c6",
+        "color6": "#86bcc1",
+        "color7": "#a6a8b6",
+        "color8": "#4d516d",
+        "color9": "#354529",
+        "color10": "#466082",
+        "color11": "#b4544c",
+        "color12": "#919778",
+        "color13": "#66a3c6",
+        "color14": "#86bcc1",
+        "color15": "#a6a8b6"
     }
 }

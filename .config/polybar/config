@@ -709,8 +709,8 @@ content-padding = 1
 [module/wpg]
 type = custom/text
 content = " "
-click-right = wpg -m &
-click-middle = wpg -r &
+click-left = wpg -m &
+click-right = wpg -r &
 
 content-background = ${colors.color2}
 content-foreground = ${colors.color0}

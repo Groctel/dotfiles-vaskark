@@ -1,3 +1,3 @@
 #!/bin/bash
 
-farge --image-viewer sxiv
+farge --no-preview --image-viewer sxiv

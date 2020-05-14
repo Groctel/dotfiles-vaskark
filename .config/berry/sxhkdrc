@@ -39,7 +39,7 @@ super + F3
 	
 # farge
 super + F4
-	pick-colour-picker
+	farge.sh
 
 # polybar
 super + semicolon

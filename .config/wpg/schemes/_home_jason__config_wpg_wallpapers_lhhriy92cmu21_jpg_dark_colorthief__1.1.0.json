@@ -9,20 +9,20 @@
     },
     "colors": {
         "color0": "#080708",
-        "color1": "#cb8778",
+        "color1": "#523430",
         "color2": "#455e52",
         "color3": "#3f737a",
-        "color4": "#76513d",
-        "color5": "#4585a6",
-        "color6": "#523430",
+        "color4": "#cb8778",
+        "color5": "#76513d",
+        "color6": "#4585a6",
         "color7": "#aaa7a9",
         "color8": "#221e22",
-        "color9": "#ffa287",
+        "color9": "#733d35",
         "color10": "#4f846b",
         "color11": "#459eaa",
-        "color12": "#a56543",
-        "color13": "#4ab1e7",
-        "color14": "#733d35",
+        "color12": "#ffa287",
+        "color13": "#a56543",
+        "color14": "#4ab1e7",
         "color15": "#e6e2e5"
     }
 }

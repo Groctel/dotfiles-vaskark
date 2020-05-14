@@ -1,28 +1,27 @@
 {
     "wallpaper": "/home/jason/.config/wpg/wallpapers/riomaggiore_at_sunset_5120x2880-m.jpg",
     "alpha": "100",
-
     "special": {
-        "background": "#08080e",
-        "foreground": "#ffb9b9",
-        "cursor": "#ffb9b9"
+        "background": "#050506",
+        "foreground": "#a5a4a7",
+        "cursor": "#a5a4a7"
     },
     "colors": {
-        "color0": "#08080e",
-        "color1": "#39a172",
-        "color2": "#73413b",
-        "color3": "#bb8165",
-        "color4": "#d7a376",
-        "color5": "#8f6746",
-        "color6": "#966262",
-        "color7": "#ce8a8a",
-        "color8": "#1c1c2b",
-        "color9": "#3ddd93",
-        "color10": "#9d4940",
-        "color11": "#ff9c6f",
-        "color12": "#ffda85",
-        "color13": "#c4834d",
-        "color14": "#c99779",
-        "color15": "#ffb9b9"
+        "color0": "#050506",
+        "color1": "#624441",
+        "color2": "#7c634e",
+        "color3": "#428d6b",
+        "color4": "#7c7570",
+        "color5": "#a58070",
+        "color6": "#bf9f83",
+        "color7": "#a5a4a7",
+        "color8": "#4b4a4f",
+        "color9": "#624441",
+        "color10": "#7c634e",
+        "color11": "#428d6b",
+        "color12": "#7c7570",
+        "color13": "#a58070",
+        "color14": "#bf9f83",
+        "color15": "#a5a4a7"
     }
 }
