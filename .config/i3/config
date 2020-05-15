@@ -201,9 +201,10 @@ exec --no-startup-id picom-blur.sh
 exec --no-startup-id redshift.sh
 exec --no-startup-id /usr/lib/policykit-1-gnome/polkit-gnome-authentication-agent-1
 #exec --no-startup-id nitrogen --restore
-exec --no-startup-id wal -R
+exec --no-startup-id wpg -r
 exec --no-startup-id libinput-gestures
 exec --no-startup-id xautolock -time 10 -locker 'lock.sh' -corners 00-+
+exec --no-startup-id wal-glava-b.sh
 
 # lock screen
 bindsym $mod+Escape exec lock.sh
