@@ -221,7 +221,7 @@ font-0 = "scientifica:bold:size=8;2"
 font-1 = "siji:size=9;2"
 font-2 = "Weather Icons:size=8;2"
 
-modules-left = ewmh sep weather
+modules-left = ewmh sep weather sep apt
 modules-center = 
 modules-right = mpd sep uptime battery wireless wired volume sep nmc wpg
 
@@ -632,7 +632,7 @@ format-padding = 2
 [module/uptime]
 type = custom/script
 exec = ~/.config/polybar/scripts/system-uptime-pretty.sh
-interval = 50
+interval = 60
 
 label =  %output%
 format = <label>

@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 get_icon() {
     case $1 in
@@ -69,8 +69,9 @@ fi
 
 if [ -n "$weather" ]; then
     weather_desc=$(echo "$weather" | jq -r ".weather[0].description")
+    weather_desc_U=${weather_desc^}
     weather_temp=$(echo "$weather" | jq ".main.temp" | cut -d "." -f 1)
     weather_icon=$(echo "$weather" | jq -r ".weather[0].icon")
 
-    echo "$(get_icon "$weather_icon")" " " "$weather_desc", "$weather_temp$SYMBOL"
+    echo "$(get_icon "$weather_icon")" "" "$weather_desc_U": "$weather_temp$SYMBOL"
 fi
