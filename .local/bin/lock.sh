@@ -14,3 +14,7 @@ i3lock \
 --timestr="%-I:%M %P" \
 --time-font="scientifica" \
 --datestr="" \
+\
+--greetertext="Locked!" \
+--greeter-font="Steve" \
+--greetersize=50 \
