@@ -221,7 +221,7 @@ font-0 = "scientifica:bold:size=8;2"
 font-1 = "siji:size=9;2"
 font-2 = "Weather Icons:size=8;2"
 
-modules-left = ewmh sep weather
+modules-left = ewmh sep weather sep apt
 modules-center = 
 modules-right = mpd sep uptime battery wireless wired volume sep nmc wpg
 
@@ -472,7 +472,7 @@ format-connected-background = ${colors.color0}
 format-connected-foreground = ${colors.color3}
 format-connected-padding = 2
 
-label-disconnected =  Disconnected
+label-disconnected =  Disconnected
 
 format-disconnected = <label-disconnected>
 format-disconnected-background = ${colors.color0}
@@ -501,7 +501,7 @@ format-connected-background = ${colors.color0}
 format-connected-foreground = ${colors.color3}
 format-connected-padding = 2
 
-label-disconnected =  Disconnected
+label-disconnected =  Disconnected
 
 format-disconnected = <label-disconnected>
 format-disconnected-background = ${colors.color0}
@@ -669,13 +669,27 @@ label-padding = 2
 
 [module/weather]
 type = custom/script
-#exec = ~/.config/polybar/scripts/openweathermap-detailed.sh
-exec = curl -s "wttr.in/Hamilton?format="+%C+%t""
+exec = ~/.config/polybar/scripts/openweathermap-detailed.sh
+#exec = curl -s "wttr.in/Hamilton?format="+%C+%t""
 click-left = gnome-weather &
 interval = 600
-#label-font = 3
+label-font = 3
 
 label = %output%
+
+label-background = ${colors.color3}
+label-foreground = ${colors.color0}
+label-padding = 2
+
+##################################################
+
+[module/apt]
+type = custom/script
+exec = ~/.config/polybar/scripts/updates-apt.sh
+click-left = synaptic-pkexec &
+interval = 600
+
+label =  %output%
 
 label-background = ${colors.color3}
 label-foreground = ${colors.color0}
