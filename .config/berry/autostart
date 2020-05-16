@@ -8,7 +8,7 @@ xautolock.sh &
 picom-blur.sh &
 dunst &
 libinput-gestures &
-wal -R -o wal-berry.sh -o wal-dunst.sh -o wal-glava.sh -o lockwp.sh &
+wal -R -o wal-berry.sh -o wal-dunst.sh -o wal-glava.sh &
 /usr/lib/policykit-1-gnome/polkit-gnome-authentication-agent-1 &
 
 # Set decoration geometry

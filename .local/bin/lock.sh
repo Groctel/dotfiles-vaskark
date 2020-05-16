@@ -6,15 +6,11 @@ color0a="${color0}dd"
 color3=$(awk 'NR==4 {print substr($1,2,7)}' ~/.cache/wal/colors)
 color3a="${color3}ff"
 
-# current wallpaper
-# wp1="$HOME/Pictures/"
-# wp2=$(wpg -c)
-# wp="$wp1$wp2"
+# -i /tmp/lockblur.jpg \
 
 # i3lock command
 i3lock \
 \
--i /tmp/lockblur.jpg \
 -c $color0a \
 \
 -u \
