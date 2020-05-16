@@ -14,6 +14,7 @@ color3a="${color3}ff"
 # i3lock command
 i3lock \
 \
+-i /tmp/lockblur.jpg \
 -c $color0a \
 \
 -u \
@@ -28,7 +29,7 @@ i3lock \
 --datestr="" \
 \
 --greetertext="Locked!" \
---greeter-font="Steve" \
+--greeter-font="scientifica" \
 --greetersize=34 \
 --greeterpos="965:510" \
 --greetercolor=$color3a
