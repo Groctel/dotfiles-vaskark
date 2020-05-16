@@ -7,6 +7,7 @@ color3=$(awk 'NR==4 {print substr($1,2,7)}' ~/.cache/wal/colors)
 color3a="${color3}ff"
 
 # -i /tmp/lockblur.jpg \
+# --greeterpos="965:510" \
 
 # i3lock command
 i3lock \
@@ -19,13 +20,13 @@ i3lock \
 --clock \
 --timestr="%-I:%M %P" \
 --time-font="scientifica" \
---timesize=16 \
+--timesize=20 \
 --timecolor=$color3a \
 \
 --datestr="" \
 \
 --greetertext="Locked!" \
---greeter-font="scientifica" \
---greetersize=34 \
---greeterpos="965:510" \
---greetercolor=$color3a
+--greeter-font="Steve" \
+--greetersize=40 \
+--greetercolor=$color3a \
+--greeterpos="960:510" \

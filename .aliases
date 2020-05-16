@@ -34,6 +34,7 @@ alias pf='clear;pfetch'
 alias n='nnn -d -o'
 alias r='ranger'
 alias c='cava'
+alias p='pipes'
 alias fd='fdfind'
 alias km='kmon -u'
 
