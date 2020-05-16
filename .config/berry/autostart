@@ -3,13 +3,12 @@
 # Set startup apps
 sxhkd -c $HOME/.config/berry/sxhkdrc &
 polybar-main-small-bottom.sh &
-#nitrogen --restore &
 redshift.sh &
 xautolock.sh &
 picom-blur.sh &
 dunst &
 libinput-gestures &
-wal -R -o wal-berry.sh -o wal-dunst.sh -o wal-glava.sh &
+wal -R -o wal-berry.sh -o wal-dunst.sh -o wal-glava.sh -o lockwp.sh &
 /usr/lib/policykit-1-gnome/polkit-gnome-authentication-agent-1 &
 
 # Set decoration geometry
