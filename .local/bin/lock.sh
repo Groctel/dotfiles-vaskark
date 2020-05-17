@@ -19,14 +19,14 @@ i3lock \
 \
 --clock \
 --timestr="%-I:%M %P" \
---time-font="scientifica" \
+--time-font="scientifica:bold" \
 --timesize=20 \
 --timecolor=$color3a \
 \
 --datestr="" \
 \
 --greetertext="Locked!" \
---greeter-font="Steve" \
+--greeter-font="scientifica:bold" \
 --greetersize=40 \
 --greetercolor=$color3a \
 --greeterpos="960:510" \

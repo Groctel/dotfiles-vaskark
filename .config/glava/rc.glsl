@@ -87,17 +87,17 @@
    and your WM is not correctly responding to the "desktop" value
    for `setxwintype`.
 */
-#request addxwinstate "sticky"
+// #request addxwinstate "sticky"
 // #request addxwinstate "skip_taskbar"
 // #request addxwinstate "skip_pager"
 // #request addxwinstate "above"
-#request addxwinstate "pinned"
+// #request addxwinstate "pinned"
 
 /* (X11 only) Use the XShape extension to support clicking through
    the GLava window. Useful when you want to interact with other
    desktop windows (icons, menus, desktop shells). Enabled by
    default when GLava itself is a desktop window. */
-#request setclickthrough false
+#request setclickthrough true
 
 /* Audio source
 
@@ -216,14 +216,14 @@
    embedding in the desktop.
    
    This routinely sends X11 events and should be avoided. */
-#request setforcegeometry false
+// #request setforcegeometry false
 
 /*                    ** DEPRECATED **
    Force window to be raised (focused in some WMs), useful for
    WMs that have their own stacking order for desktop windows.
    
    This routinely sends X11 events and should be avoided. */
-#request setforceraised false
+// #request setforceraised false
 
 /*                    ** DEPRECATED **
    Scale down the audio buffer before any operations are 
@@ -233,4 +233,4 @@
    since it applies (crude) averaging to the data when shrinking
    the buffer. It is reccommended to use `setsamplerate` and
    `setsamplesize` to improve performance or accuracy instead. */
-#request setbufscale 1
+// #request setbufscale 1
