@@ -15,12 +15,12 @@ alias ll='ls -al'
 alias lt='lsd --tree --depth 2'
 
 alias v='nvim'
-alias tc1="tty-clock -cst -C 3 -f '%B %d %Y'"
+alias tc1="tty-clock -cst -C 2 -f '%B %d %Y'"
 alias mount='mount | column -t'
-alias um='unimatrix -c yellow -a -f -n -s 98'
+alias um='unimatrix -c green -a -f -n -s 98'
 alias kc='kitty +kitten icat'
 alias kd='kitty +kitten diff'
-alias mpc='mpc --host=127.0.0.1 --port=6601'
+alias mpc='mpc --host=127.0.0.1 --port=6600'
 alias wttr='curl wttr.in'
 alias cls='clear'
 alias zshc='nvim ~/.zshrc'

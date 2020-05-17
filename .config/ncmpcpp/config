@@ -25,7 +25,7 @@ visualizer_sync_interval = 30
 #visualizer_look = ▉▉
 #visualizer_look = ●▉
 visualizer_look = +|
-visualizer_color = yellow, cyan
+visualizer_color = green, blue
 visualizer_type = spectrum
 
 # Appearance #
@@ -60,14 +60,14 @@ song_list_format = "{$8%a ⠂ }{%t}$R{%l}"
 #song_columns_list_format = "(25)[white]{a} (25)[blue]{brE} (47)[white]{t|f} (6f)[blue]{l}"
 #song_columns_list_format = "(15)[white]{lr} (1)[black]{} (40)[red]{a} (40)[green]{t}"
 #song_columns_list_format = "(40)[magenta]{ar} (40)[cyan]{t}"
-song_columns_list_format = "(50)[yellow]{ar} (50)[cyan]{t}"
+song_columns_list_format = "(50)[green]{ar} (50)[blue]{t}"
 
 # Colors #
-main_window_color = "cyan"
+main_window_color = "green"
 #state_line_color = "yellow"
 #state_flags_color = "green"
-color1 = "yellow"
-color2 = "red"
+color1 = "green"
+color2 = "green"
 
 # Stuff #
 clock_display_seconds = "yes"
