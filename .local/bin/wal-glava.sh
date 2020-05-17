@@ -1,11 +1,11 @@
 #!/bin/sh
 
 # get colors
-colora=$(sed -n 3p ~/.cache/wal/colors)FF
-colorb=$(sed -n 11p ~/.cache/wal/colors)AA
+color2=$(sed -n 3p ~/.cache/wal/colors)FF
+color10=$(sed -n 11p ~/.cache/wal/colors)AA
 
 # write chosen colors to file
-sed -i "s|#define COLOR.*$|#define COLOR @fg:mix($colora, $colorb, clamp(d / GRADIENT, 0, 1))|g" ~/.config/glava/bars.glsl
+sed -i "s|#define COLOR.*$|#define COLOR @fg:mix($color2, $color10, clamp(d / GRADIENT, 0, 1))|g" ~/.config/glava/bars.glsl
 sed -i "s|#define FLIP.*$|#define FLIP 1|g" ~/.config/glava/bars.glsl
 
 # restart glava
