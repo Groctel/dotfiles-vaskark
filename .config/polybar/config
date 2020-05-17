@@ -61,7 +61,7 @@ bottom = false
 enable-ipc = true
 
 background = transparent
-foreground = ${colors.color3}
+foreground = ${colors.color2}
 
 line-size =
 line-color =
@@ -284,17 +284,17 @@ format = <label-state> <label-mode>
 label-mode = %mode%
 label-mode-padding = 2
 label-mode-foreground = ${colors.color0}
-label-mode-background = ${colors.color3}
+label-mode-background = ${colors.color2}
 
 ; focused = Active workspace on focused monitor
 label-focused = %index%
 label-focused-foreground = ${colors.color0}
-label-focused-background = ${colors.color3}
+label-focused-background = ${colors.color2}
 label-focused-padding = 2
 
 ; unfocused = Inactive workspace on any monitor
 label-unfocused = %index%
-label-unfocused-foreground = ${colors.color3}
+label-unfocused-foreground = ${colors.color2}
 label-unfocused-background = ${colors.color0}
 label-unfocused-padding = 2
 
@@ -323,18 +323,18 @@ enable-scroll = true
 label-monitor = %name%
 format = <label-state>
 
-label-monitor-background = ${colors.color3}
+label-monitor-background = ${colors.color2}
 label-monitor-foreground = ${colors.color0}
 label-monitor-padding = 2
 
 label-active = %index%
-label-active-background = ${colors.color3}
+label-active-background = ${colors.color2}
 label-active-foreground = ${colors.color0}
 label-active-padding = 2
 
 label-occupied = %index%
 label-occupied-background = ${colors.color0}
-label-occupied-foreground = ${colors.color3}
+label-occupied-foreground = ${colors.color2}
 label-occupied-padding = 2
 
 label-urgent = %index%
@@ -370,18 +370,18 @@ icon-4 = 4;
 label-monitor = %name%
 format = <label-state>
 
-label-monitor-background = ${colors.color3}
+label-monitor-background = ${colors.color2}
 label-monitor-foreground = ${colors.color0}
 label-monitor-padding = 2
 
 label-active = %icon%
-label-active-background = ${colors.color3}
+label-active-background = ${colors.color2}
 label-active-foreground = ${colors.color0}
 label-active-padding = 2
 
 label-occupied = %icon%
 label-occupied-background = ${colors.color0}
-label-occupied-foreground = ${colors.color3}
+label-occupied-foreground = ${colors.color2}
 label-occupied-padding = 2
 
 label-urgent = %icon%
@@ -405,19 +405,19 @@ port = 6600
 label-song = %{A1:mpc toggle > /tmp/toggle.log 2>&1:}%{A2:kitty -e ncmpcpp:}%{A3:mpc next:}%{A8:mpc prev:}%artist%  //  %title%%{A}%{A}%{A}%{A}
 
 format-online = <label-song>
-label-song-background = ${colors.color3}
+label-song-background = ${colors.color2}
 label-song-foreground = ${colors.color0}
 label-song-padding = 2
 
 format-online-prefix = ""
 format-online-prefix-background = ${colors.color0}
-format-online-prefix-foreground = ${colors.color3}
+format-online-prefix-foreground = ${colors.color2}
 format-online-prefix-padding = 2
 
 label-offline = MPD is offline :(
 
 format-offline = <label-offline>
-format-offline-background = ${colors.color3}
+format-offline-background = ${colors.color2}
 format-offline-foreground = ${colors.color0}
 format-offline-padding = 2
 
@@ -435,7 +435,7 @@ label-time = [%elapsed%/%total%]
 
 format-online = <label-time>
 format-online-background = ${colors.color0}
-format-online-foreground = ${colors.color3}
+format-online-foreground = ${colors.color2}
 format-online-padding = 2
 
 ##################################################
@@ -446,7 +446,7 @@ host = 127.0.0.1
 port = 6600
 
 format-online = <icon-prev>  <toggle>  <icon-next>
-format-online-background = ${colors.color3}
+format-online-background = ${colors.color2}
 format-online-foreground = ${colors.color0}
 format-online-padding = 2
 
@@ -469,14 +469,14 @@ label-connected = %essid% [%downspeed%]
 
 format-connected = <ramp-signal> <label-connected>
 format-connected-background = ${colors.color0}
-format-connected-foreground = ${colors.color3}
+format-connected-foreground = ${colors.color2}
 format-connected-padding = 2
 
 label-disconnected =  Disconnected
 
 format-disconnected = <label-disconnected>
 format-disconnected-background = ${colors.color0}
-format-disconnected-foreground = ${colors.color3}
+format-disconnected-foreground = ${colors.color2}
 format-disconnected-padding = 2
 
 ramp-signal-0 = 
@@ -498,14 +498,14 @@ label-connected = %ifname% [%downspeed%]
 
 format-connected = <ramp-signal> <label-connected>
 format-connected-background = ${colors.color0}
-format-connected-foreground = ${colors.color3}
+format-connected-foreground = ${colors.color2}
 format-connected-padding = 2
 
 label-disconnected =  Disconnected
 
 format-disconnected = <label-disconnected>
 format-disconnected-background = ${colors.color0}
-format-disconnected-foreground = ${colors.color3}
+format-disconnected-foreground = ${colors.color2}
 format-disconnected-padding = 2
 
 ramp-signal-0 = 
@@ -524,14 +524,14 @@ click-right = pavucontrol &
 label-volume = %percentage%%
 
 format-volume = <ramp-volume> <label-volume>
-format-volume-background = ${colors.color3}
+format-volume-background = ${colors.color2}
 format-volume-foreground = ${colors.color0}
 format-volume-padding = 2
 
 label-muted =  ---
 
 format-muted = <label-muted>
-format-muted-background = ${colors.color3}
+format-muted-background = ${colors.color2}
 format-muted-foreground = ${colors.color0}
 format-muted-padding = 2
 
@@ -550,7 +550,7 @@ interval = 3
 label =   %percentage_used%%
 
 format = <label>
-format-background = ${colors.color3}
+format-background = ${colors.color2}
 format-foreground = ${colors.color0}
 format-padding = 2
 
@@ -566,21 +566,21 @@ poll-interval = 2
 label-charging = %percentage%%
 
 format-charging = <ramp-capacity> <label-charging>
-format-charging-background = ${colors.color3}
+format-charging-background = ${colors.color2}
 format-charging-foreground = ${colors.color0}
 format-charging-padding = 2
 
 label-discharging = %percentage%%
 
 format-discharging = <ramp-capacity> <label-discharging>
-format-discharging-background = ${colors.color3}
+format-discharging-background = ${colors.color2}
 format-discharging-foreground = ${colors.color0}
 format-discharging-padding = 2
 
 label-full = %percentage%%
 
 format-full = <ramp-capacity> <label-full>
-format-full-background = ${colors.color3}
+format-full-background = ${colors.color2}
 format-full-foreground = ${colors.color0}
 format-full-padding = 2
 
@@ -600,7 +600,7 @@ warn-temperature = 65
 label =  %temperature-c%
 
 format = <label>
-format-background = ${colors.color3}
+format-background = ${colors.color2}
 format-foreground = ${colors.color0}
 format-padding = 2
 
@@ -623,7 +623,7 @@ time-alt =  %A %B %d %Y
 label = %time%
 
 format = <label>
-format-foreground = ${colors.color3}
+format-foreground = ${colors.color2}
 format-background = ${colors.color0}
 format-padding = 2
 
@@ -648,7 +648,7 @@ type = custom/script
 exec = echo $DESKTOP_SESSION
 click-right = exit.sh
 
-label-background = ${colors.color3}
+label-background = ${colors.color2}
 label-foreground = ${colors.color0}
 label-padding = 2
 
@@ -661,7 +661,7 @@ interval = 1024
 
 label =  %output%
 
-label-background = ${colors.color3}
+label-background = ${colors.color2}
 label-foreground = ${colors.color0}
 label-padding = 2
 
@@ -677,7 +677,7 @@ label-font = 3
 
 label = %output%
 
-label-background = ${colors.color3}
+label-background = ${colors.color2}
 label-foreground = ${colors.color0}
 label-padding = 2
 
@@ -691,7 +691,7 @@ interval = 600
 
 label =  %output%
 
-label-background = ${colors.color3}
+label-background = ${colors.color2}
 label-foreground = ${colors.color0}
 label-padding = 2
 
@@ -715,7 +715,7 @@ type = custom/text
 content = " "
 click-left = nm-connection-editor &
 
-content-background = ${colors.color2}
+content-background = ${colors.color4}
 content-foreground = ${colors.color0}
 content-padding = 1
 
@@ -727,7 +727,7 @@ content = " "
 click-left = wpg -m &
 click-right = wpg -r &
 
-content-background = ${colors.color2}
+content-background = ${colors.color4}
 content-foreground = ${colors.color0}
 content-padding = 1
 

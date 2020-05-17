@@ -27,9 +27,9 @@ kolor14=$(sed -n 15p ~/.cache/wal/colors)
 kolor15=$(sed -n 16p ~/.cache/wal/colors)
 
 # inject pywal colors into dunst config
-sed -i "s/background = .*/background = \"$kolor03\"/g" ~/.config/dunst/dunstrc
+sed -i "s/background = .*/background = \"$kolor02\"/g" ~/.config/dunst/dunstrc
 sed -i "s/foreground = .*/foreground = \"$kolor00\"/g" ~/.config/dunst/dunstrc
-sed -i "s/frame_color = .*/frame_color = \"$kolor03\"/g" ~/.config/dunst/dunstrc
+sed -i "s/frame_color = .*/frame_color = \"$kolor02\"/g" ~/.config/dunst/dunstrc
 
 pkill dunst
 dunst &

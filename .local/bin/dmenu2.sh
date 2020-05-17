@@ -13,10 +13,10 @@ dmenu_run \
 -p ' dmenu ' \
 -fn 'scientifica-8:bold' \
 -h 30 \
--nb "$color3" \
+-nb "$color2" \
 -nf "$color0" \
 -sb "$color0" \
--sf "$color3" \
+-sf "$color2" \
 -x $b \
 -y $b \
 -w $w \

@@ -1,27 +1,28 @@
 {
     "wallpaper": "/home/jason/.config/wpg/wallpapers/lvmr4nng9my21-m.jpg",
     "alpha": "100",
+
     "special": {
         "background": "#06070e",
-        "foreground": "#a6a8b6",
-        "cursor": "#a6a8b6"
+        "foreground": "#dfe1f4",
+        "cursor": "#dfe1f4"
     },
     "colors": {
         "color0": "#06070e",
-        "color1": "#354529",
-        "color2": "#466082",
-        "color3": "#b4544c",
-        "color4": "#919778",
-        "color5": "#66a3c6",
-        "color6": "#86bcc1",
+        "color1": "#86bcc1",
+        "color2": "#b4544c",
+        "color3": "#919778",
+        "color4": "#466082",
+        "color5": "#354529",
+        "color6": "#66a3c6",
         "color7": "#a6a8b6",
-        "color8": "#4d516d",
-        "color9": "#354529",
-        "color10": "#466082",
-        "color11": "#b4544c",
-        "color12": "#919778",
-        "color13": "#66a3c6",
-        "color14": "#86bcc1",
-        "color15": "#a6a8b6"
+        "color8": "#131732",
+        "color9": "#98ffff",
+        "color10": "#fa5f52",
+        "color11": "#c7d58a",
+        "color12": "#4e7bb5",
+        "color13": "#43602e",
+        "color14": "#71d9ff",
+        "color15": "#dfe1f4"
     }
 }
