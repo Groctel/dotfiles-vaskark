@@ -128,7 +128,7 @@ if [ -f ~/.aliases ]; then
 fi
 
 # pfetch
-export PF_INFO="ascii os kernel uptime shell wm memory"
+export PF_INFO="os kernel uptime shell wm memory"
 export PF_SEP=":"
 export PF_COL1=2
 export PF_COL2=4
