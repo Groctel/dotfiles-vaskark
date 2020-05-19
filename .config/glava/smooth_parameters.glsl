@@ -1,4 +1,3 @@
-
 /* Settings for smoothing functions and transformations commonly
    used to display FFT output.
 

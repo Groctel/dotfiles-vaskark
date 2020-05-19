@@ -1,21 +1,19 @@
-
 /* center radius (pixels) */
-#define C_RADIUS 128
+#define C_RADIUS 100
 /* center line thickness (pixels) */
-#define C_LINE 2
+#define C_LINE 1
 /* outline color */
 #define OUTLINE @bg:#333333
 /* number of bars (use even values for best results) */
 #define NBARS 160
 /* width (in pixels) of each bar*/
-#define BAR_WIDTH 4.5
+#define BAR_WIDTH 5
 /* Amplify magnitude of the results each bar displays */
 #define AMPLIFY 300
 /* How quickly the gradient transitions, in pixels */
-#define GRADIENT 95
+#define GRADIENT 80
 /* Bar color. This is a gradient by default. */
-/* #define COLOR @fg:mix(#cc3333, #cca0a0, clamp(d / GRADIENT, 0, 1)) */
-#define COLOR @fg:mix(#2D2029FF, #543B4EAA, clamp(d / GRADIENT, 0, 1))
+#define COLOR @fg:mix(#9b5066FF, #d8587eAA, clamp(d / GRADIENT, 0, 1))
 /* Angle (in radians) for how much to rotate the visualizer */
 #define ROTATE (PI / 2)
 /* Whether to swap left/right audio buffers, set to 1 to enable */
