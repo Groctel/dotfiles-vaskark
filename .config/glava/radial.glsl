@@ -13,7 +13,7 @@
 /* How quickly the gradient transitions, in pixels */
 #define GRADIENT 80
 /* Bar color. This is a gradient by default. */
-#define COLOR @fg:mix(#9b5066FF, #d8587eAA, clamp(d / GRADIENT, 0, 1))
+#define COLOR @fg:mix(#ffa800FF, #ffda01AA, clamp(d / GRADIENT, 0, 1))
 /* Angle (in radians) for how much to rotate the visualizer */
 #define ROTATE (PI / 2)
 /* Whether to swap left/right audio buffers, set to 1 to enable */
