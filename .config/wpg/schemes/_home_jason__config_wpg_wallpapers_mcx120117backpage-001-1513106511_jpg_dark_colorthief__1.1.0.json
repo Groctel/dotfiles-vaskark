@@ -1,0 +1,28 @@
+{
+    "wallpaper": "/home/jason/.config/wpg/wallpapers/mcx120117backpage-001-1513106511.jpg",
+    "alpha": "100",
+
+    "special": {
+        "background": "#000000",
+        "foreground": "#fdfdfd",
+        "cursor": "#fdfdfd"
+    },
+    "colors": {
+        "color0": "#000000",
+        "color1": "#a06666",
+        "color2": "#5f8787",
+        "color3": "#999999",
+        "color4": "#dd9999",
+        "color5": "#aaaaaa",
+        "color6": "#888888",
+        "color7": "#c1c1c1",
+        "color8": "#191919",
+        "color9": "#e07373",
+        "color10": "#6cbebe",
+        "color11": "#dab3b3",
+        "color12": "#ffaeae",
+        "color13": "#f3c7c7",
+        "color14": "#c29f9f",
+        "color15": "#fdfdfd"
+    }
+}

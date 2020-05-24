@@ -1,0 +1,28 @@
+{
+    "wallpaper": "/home/jason/.config/wpg/wallpapers/gsge4a5sssq41-m.jpg",
+    "alpha": "100",
+
+    "special": {
+        "background": "#212b2b",
+        "foreground": "#f4e8e8",
+        "cursor": "#f4e8e8"
+    },
+    "colors": {
+        "color0": "#212b2b",
+        "color1": "#655050",
+        "color2": "#867364",
+        "color3": "#3c4d61",
+        "color4": "#265049",
+        "color5": "#594949",
+        "color6": "#465d61",
+        "color7": "#e0b9b9",
+        "color8": "#374046",
+        "color9": "#818164",
+        "color10": "#bb8d71",
+        "color11": "#426185",
+        "color12": "#286c61",
+        "color13": "#547575",
+        "color14": "#4e7a86",
+        "color15": "#f4e8e8"
+    }
+}

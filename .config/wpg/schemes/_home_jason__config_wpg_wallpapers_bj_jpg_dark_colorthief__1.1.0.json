@@ -1,0 +1,28 @@
+{
+    "wallpaper": "/home/jason/.config/wpg/wallpapers/bj.jpg",
+    "alpha": "100",
+
+    "special": {
+        "background": "#020303",
+        "foreground": "#dadadd",
+        "cursor": "#dadadd"
+    },
+    "colors": {
+        "color0": "#020303",
+        "color1": "#3eb444",
+        "color2": "#b6710c",
+        "color3": "#571611",
+        "color4": "#3988af",
+        "color5": "#3988af",
+        "color6": "#7c130d",
+        "color7": "#9f9fa1",
+        "color8": "#122424",
+        "color9": "#40f94a",
+        "color10": "#f99502",
+        "color11": "#77160f",
+        "color12": "#7eb4d2",
+        "color13": "#3ab5f2",
+        "color14": "#aa1007",
+        "color15": "#dadadd"
+    }
+}
