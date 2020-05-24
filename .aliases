@@ -15,7 +15,7 @@ alias ll='ls -al'
 alias lt='lsd --tree --depth 2'
 
 alias v='nvim'
-alias tc1="tty-clock -cst -C 2 -f '%B %d %Y'"
+alias t="tty-clock -cst -C 2 -f '%B %d %Y'"
 alias mount='mount | column -t'
 alias um='unimatrix -c green -a -f -n -s 98'
 alias kc='kitty +kitten icat'
