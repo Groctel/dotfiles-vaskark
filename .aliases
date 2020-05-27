@@ -17,7 +17,7 @@ alias lt='lsd --tree --depth 2'
 alias v='nvim'
 alias t="tty-clock -cst -C 2 -f '%B %d %Y'"
 alias mount='mount | column -t'
-alias um='unimatrix -c green -a -f -n -s 98'
+alias u='unimatrix -c green -a -f -n -s 98'
 alias kc='kitty +kitten icat'
 alias kd='kitty +kitten diff'
 alias mpc='mpc --host=127.0.0.1 --port=6600'
