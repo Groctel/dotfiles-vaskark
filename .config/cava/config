@@ -122,8 +122,8 @@ foreground = green
 # not able to restore color definitions on exit, simply restart your terminal to restore colors.
 ; gradient = 1
 ; gradient_count = 2
-gradient_color_1 = '#6c7c07'
-gradient_color_2 = '#92a709'
+gradient_color_1 = '#5f8787'
+gradient_color_2 = '#6cbebe'
 
 
 
