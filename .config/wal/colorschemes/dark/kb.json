@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/jason/.config/wpg/wallpapers/cPnOs1p.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#080702",
+        "foreground": "#f2e9d0",
+        "cursor": "#f2e9d0"
+    },
+    "colors": {
+        "color0": "#080702",
+        "color1": "#a9446b",
+        "color2": "#826869",
+        "color3": "#64bdd4",
+        "color4": "#523695",
+        "color5": "#cb6f3b",
+        "color6": "#3e78ce",
+        "color7": "#b2ac99",
+        "color8": "#2d260e",
+        "color9": "#ec4888",
+        "color10": "#b9777c",
+        "color11": "#6df6f6",
+        "color12": "#6639ce",
+        "color13": "#f78c3b",
+        "color14": "#3f9af7",
+        "color15": "#f2e9d0"
+    }
+}

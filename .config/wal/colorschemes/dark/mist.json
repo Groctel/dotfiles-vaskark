@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/jason/.config/wpg/wallpapers/wallhaven-73qeg9.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#030303",
+        "foreground": "#dcdadc",
+        "cursor": "#dcdadc"
+    },
+    "colors": {
+        "color0": "#030303",
+        "color1": "#3a516c",
+        "color2": "#994336",
+        "color3": "#4b729c",
+        "color4": "#695754",
+        "color5": "#2d3e55",
+        "color6": "#6f9bc4",
+        "color7": "#a09fa0",
+        "color8": "#1c1c1c",
+        "color9": "#406897",
+        "color10": "#d44d38",
+        "color11": "#5293d9",
+        "color12": "#946860",
+        "color13": "#324f76",
+        "color14": "#7ccaff",
+        "color15": "#dcdadc"
+    }
+}

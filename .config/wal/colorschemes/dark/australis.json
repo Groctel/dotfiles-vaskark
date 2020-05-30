@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/jason/.config/wpg/wallpapers/aurora_australis.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#070708",
+        "foreground": "#e5e2e6",
+        "cursor": "#e5e2e6"
+    },
+    "colors": {
+        "color0": "#070708",
+        "color1": "#8da387",
+        "color2": "#7b525d",
+        "color3": "#8a8ba0",
+        "color4": "#61656b",
+        "color5": "#53454f",
+        "color6": "#5c596d",
+        "color7": "#a9a7aa",
+        "color8": "#1e1e22",
+        "color9": "#ace79c",
+        "color10": "#ad5d72",
+        "color11": "#a0a3e3",
+        "color12": "#708098",
+        "color13": "#754f6a",
+        "color14": "#6e669a",
+        "color15": "#e5e2e6"
+    }
+}
