@@ -8,7 +8,7 @@ set $mod Mod4
 floating_modifier $mod
 
 # set terminal
-set $term termite
+set $term kitty
 
 # font for window titles
 font xft:scientifica bold 8
@@ -249,7 +249,7 @@ bindsym XF86MonBrightnessDown exec light -U 5
 
 # Set colors from Xresources
 set_from_resource $fg i3wm.color0 #f0f0f0
-set_from_resource $bg i3wm.color3 #f0f0f0
+set_from_resource $bg i3wm.color2 #f0f0f0
 
 # class                 border  backgr. text indicator child_border
 client.focused          $bg     $bg     $fg  $bg       $bg
