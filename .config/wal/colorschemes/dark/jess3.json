@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/jason/.config/wpg/wallpapers/jessica-chastain-la-rousse-sulfureuse-du-festival-de-cannes-photo-6.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#28282C",
+        "foreground": "#F4F4F2",
+        "cursor": "#F4F4F2"
+    },
+    "colors": {
+        "color0": "#28282C",
+        "color1": "#BF5C56",
+        "color2": "#97B19C",
+        "color3": "#D7BD8A",
+        "color4": "#D7BD8A",
+        "color5": "#BF5C56",
+        "color6": "#97B19C",
+        "color7": "#545F72",
+        "color8": "#404047",
+        "color9": "#BF5C56",
+        "color10": "#97B19C",
+        "color11": "#D7BD8A",
+        "color12": "#D7BD8A",
+        "color13": "#BF5C56",
+        "color14": "#97B19C",
+        "color15": "#F4F4F2"
+    }
+}
