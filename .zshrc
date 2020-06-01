@@ -146,8 +146,8 @@ kitty + complete setup zsh | source /dev/stdin
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
 # pywal
-#(cat ~/.cache/wal/sequences &)
-(cat ~/.config/wpg/sequences &)
+(cat ~/.cache/wal/sequences &)
+#(cat ~/.config/wpg/sequences &)
 #export color1_alpha="#22${color1/'#'}"
 
 # fzf
