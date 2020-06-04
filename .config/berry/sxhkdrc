@@ -97,7 +97,7 @@ super + F12
 super + control + F12
     sxiv ~/Pictures/favs/ -t -g 630x600+60+60 
 super + shift + F12
-    wal -R -o wal-berry.sh -o wal-dunst.sh -o wal-glava.sh
+    wal -R -o wal-berry.sh -o wal-dunst.sh -o wal-glava.sh -o wal-cava.sh
 
 
 #
