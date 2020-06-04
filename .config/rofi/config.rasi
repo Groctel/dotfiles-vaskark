@@ -6,7 +6,7 @@ configuration {
   hide-scrollbar:     	true;
   disable-history:    	false;
   width: 	      	16;
-  lines:              	10;
+  lines:              	8;
   font:		"scientifica 8";
   columns:            	1;
   modi: 	      	"drun,run,ssh,window,keys";

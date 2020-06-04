@@ -54,8 +54,9 @@
 
 #textbox-prompt-colon {{
     expand: false;
-    str: ":";
-    margin: 0px 0.3em 0em 0em;
+/*    str: ":"; */
+/*    margin: 0px 0.3em 0em 0em; */
+    padding: 4px 0px 0px 0px;
     text-color: @normal-foreground;
 }}
 
@@ -70,7 +71,7 @@
 
 #element {{
     border: 0;
-    padding: 1px;
+    padding: 4px;
 }}
 
 #element.normal.normal {{
@@ -153,10 +154,12 @@
 #entry {{
     spacing: 0;
     text-color: @normal-foreground;
+    padding: 4px;
 }}
 
 #prompt {{
     spacing: 0;
-    text-color: @normal-foreground;
-    background-color: @normal-background;
+    text-color: {color0};
+    background-color: {color2};
+    padding: 4px;
 }}
