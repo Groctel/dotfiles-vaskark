@@ -1,2 +1,5 @@
 name="GLava"
 	berryc decorate_new "false"
+	
+class="GLava"
+	berryc decorate_new "false"
