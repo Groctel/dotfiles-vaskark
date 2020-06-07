@@ -253,7 +253,6 @@ content-background = transparent
 content-foreground = transparent
 content-padding = 0
 
-
 ##################################################
 
 [module/i3]

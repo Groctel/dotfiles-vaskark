@@ -9,11 +9,11 @@
 /* width (in pixels) of each bar*/
 #define BAR_WIDTH 5
 /* Amplify magnitude of the results each bar displays */
-#define AMPLIFY 300
+#define AMPLIFY 200
 /* How quickly the gradient transitions, in pixels */
-#define GRADIENT 80
+#define GRADIENT 50
 /* Bar color. This is a gradient by default. */
-#define COLOR @fg:mix(#7f9005FF, #a3ba08AA, clamp(d / GRADIENT, 0, 1))
+#define COLOR @fg:mix(#648c73FF, #72c591AA, clamp(d / GRADIENT, 0, 1))
 /* Angle (in radians) for how much to rotate the visualizer */
 #define ROTATE (PI / 2)
 /* Whether to swap left/right audio buffers, set to 1 to enable */

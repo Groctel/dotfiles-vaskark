@@ -2,7 +2,7 @@
 
 # Set startup apps
 wal -R -o wal-berry.sh -o wal-dunst.sh -o wal-glava &
-polybar-main-small-bottom.sh &
+polybar -r -c ~/.config/polybar/config main-small-bottom &
 sxhkd -c $HOME/.config/berry/sxhkdrc &
 redshift.sh &
 xautolock.sh &

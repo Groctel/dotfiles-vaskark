@@ -196,15 +196,14 @@ mode "resize" {
 bindsym $mod+r mode "resize"
 
 # startup apps
-exec_always --no-startup-id polybar-main-i3.sh
+exec_always --no-startup-id polybar-i3.sh
 exec --no-startup-id picom-blur.sh
 exec --no-startup-id redshift.sh
 exec --no-startup-id /usr/lib/policykit-1-gnome/polkit-gnome-authentication-agent-1
 #exec --no-startup-id nitrogen --restore
-exec --no-startup-id wpg -r
+exec --no-startup-id wal -R -o wal-berry.sh -o wal-dunst.sh -o wal-glava-b.sh -o wal.cava.sh
 exec --no-startup-id libinput-gestures
 exec --no-startup-id xautolock -time 10 -locker 'lock.sh' -corners 00-+
-exec --no-startup-id wal-glava-b.sh
 
 # lock screen
 bindsym $mod+Escape exec lock.sh
@@ -221,10 +220,7 @@ bindsym Mod1+F11 exec --no-startup-id mpc toggle
 bindsym Mod1+F12 exec --no-startup-id mpc next
 
 # wal controls
-bindsym $mod+F12 exec --no-startup-id wpg -m
-#bindsym $mod+Shift+F12 exec --no-startup-id sxiv ~/Pictures/favs/ -t -g 630x600+60+60
-#bindsym $mod+Control+F12 exec --no-startup-id wal -f random -o wal-dunst.sh
-#bindsym $mod+Control+Shift+F12 exec --no-startup-id wal -R -o wal-dunst.sh
+bindsym $mod+F12 exec --no-startup-id wal -f random_user -o wal-berry.sh -o wal-dunst.sh -o wal-glava-b.sh -o wal.cava.sh
 
 # picom controls
 bindsym Control+F12 exec --no-startup-id picom-blur.sh
