@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/jason/.config/wpg/wallpapers/trail.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#080805",
+        "foreground": "#a9aaa3",
+        "cursor": "#a9aaa3"
+    },
+    "colors": {
+        "color0": "#080805",
+        "color1": "#363f3f",
+        "color2": "#73625a",
+        "color3": "#587159",
+        "color4": "#6e7475",
+        "color5": "#849b7d",
+        "color6": "#909c9e",
+        "color7": "#a9aaa3",
+        "color8": "#535647",
+        "color9": "#363f3f",
+        "color10": "#73625a",
+        "color11": "#587159",
+        "color12": "#6e7475",
+        "color13": "#849b7d",
+        "color14": "#909c9e",
+        "color15": "#a9aaa3"
+    }
+}
