@@ -1,5 +1,5 @@
 name="GLava"
-	berryc decorate_new "false"
+	berryc toggle_decorations
 	
 class="GLava"
-	berryc decorate_new "false"
+	berryc toggle_decorations
