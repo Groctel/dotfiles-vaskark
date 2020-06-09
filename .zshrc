@@ -88,6 +88,7 @@ themes
 command-not-found
 extract
 colored-man-pages
+#zsh-interactive-cd
 #vi-mode
 )
 
