@@ -125,10 +125,10 @@ freetype-font=Ubuntu
 freetype-monofont=Hurmit Nerd Font Mono
 
 # Font size in pixels (integer)
-#freetype-fontsize=0
+freetype-fontsize=28
 
 # Relative font size (integer)
-freetype-rel-fontsize=20
+#freetype-rel-fontsize=0
 
 # Text opacity (integer)
 #freetype-opacity=255
