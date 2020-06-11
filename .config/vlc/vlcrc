@@ -1,5 +1,5 @@
 ﻿###
-###  vlc 3.0.8
+###  vlc 3.0.9.2
 ###
 
 ###
@@ -119,16 +119,16 @@
 [freetype] # Freetype2 font renderer
 
 # Font (string)
-#freetype-font=Serif Bold
+freetype-font=Ubuntu
 
 # Monospace Font (string)
-#freetype-monofont=Monospace
+freetype-monofont=Hurmit Nerd Font Mono
 
 # Font size in pixels (integer)
 #freetype-fontsize=0
 
 # Relative font size (integer)
-#freetype-rel-fontsize=0
+freetype-rel-fontsize=20
 
 # Text opacity (integer)
 #freetype-opacity=255
@@ -310,6 +310,23 @@
 # File where vlc reads key-uri and keyfile-location (string)
 #sout-livehttp-key-loadfile=
 
+[access_output_srt] # SRT stream output
+
+# SRT chunk size (bytes) (integer)
+#chunk-size=1316
+
+# Return poll wait after timeout milliseconds (-1 = infinite) (integer)
+#poll-timeout=100
+
+# SRT latency (ms) (integer)
+#latency=125
+
+# Password for stream encryption (string)
+#passphrase=
+
+# Crypto key length in bytes (integer)
+#key-length=16
+
 [udp] # UDP stream output
 
 # Caching value (ms) (integer)
@@ -396,9 +413,6 @@
 # Tone-mapping parameter (float)
 #tone-mapping-param=0.000000
 
-# Tone-mapping desaturation coefficient (float)
-#tone-mapping-desat=0.500000
-
 # Highlight clipped pixels (boolean)
 #tone-mapping-warn=0
 
@@ -407,6 +421,9 @@
 
 # Dither depth override (0 = framebuffer depth) (integer)
 #dither-depth=0
+
+# Tone-mapping desaturation coefficient (float)
+#tone-mapping-desat=0.500000
 
 [vdummy] # Dummy video output
 
@@ -436,9 +453,6 @@
 # Tone-mapping parameter (float)
 #tone-mapping-param=0.000000
 
-# Tone-mapping desaturation coefficient (float)
-#tone-mapping-desat=0.500000
-
 # Highlight clipped pixels (boolean)
 #tone-mapping-warn=0
 
@@ -447,6 +461,9 @@
 
 # Dither depth override (0 = framebuffer depth) (integer)
 #dither-depth=0
+
+# Tone-mapping desaturation coefficient (float)
+#tone-mapping-desat=0.500000
 
 [wl_shell] # Wayland shell surface
 
@@ -3187,6 +3204,15 @@ qt-privacy-ask=0
 # Use regular HTTP modules (boolean)
 #adaptive-use-access=0
 
+# Live Playback delay (ms) (integer)
+#adaptive-livedelay=15000
+
+# Max buffering (ms) (integer)
+#adaptive-maxbuffer=30000
+
+# Low latency (integer)
+#adaptive-lowlatency=-1
+
 [ts] # MPEG Transport Stream demuxer
 
 # Digital TV Standard (string)
@@ -3334,7 +3360,7 @@ qt-privacy-ask=0
 #sout-avi-subject=
 
 # Encoder (string)
-#sout-avi-encoder=VLC Media Player - 3.0.8 Vetinari
+#sout-avi-encoder=VLC Media Player - 3.0.9.2 Vetinari
 
 # Keywords (string)
 #sout-avi-keywords=
@@ -4063,7 +4089,7 @@ snapshot-format=jpg
 #meta-url=
 
 # File caching (ms) (integer)
-#file-caching=300
+#file-caching=1000
 
 # Live capture caching (ms) (integer)
 #live-caching=300
