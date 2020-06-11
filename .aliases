@@ -45,6 +45,7 @@ alias gs='git status'
 
 # neofetch
 alias nf0='clear;neofetch --config none'
+alias nf1='clear;neofetch --off --config none'
 alias nf='clear;neofetch'
 alias nfo='clear;neofetch --off'
 alias nfs='clear;neofetch --config ~/.config/neofetch/config-small.conf'
