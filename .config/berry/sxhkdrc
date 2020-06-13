@@ -40,6 +40,10 @@ super + F3
 # farge
 super + F4
 	farge.sh
+	
+# date
+super + F5
+	date.sh
 
 # polybar
 super + semicolon
