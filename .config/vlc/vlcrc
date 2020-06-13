@@ -122,7 +122,7 @@
 freetype-font=Ubuntu
 
 # Monospace Font (string)
-freetype-monofont=Hurmit Nerd Font Mono
+freetype-monofont=scientifica
 
 # Font size in pixels (integer)
 freetype-fontsize=28
