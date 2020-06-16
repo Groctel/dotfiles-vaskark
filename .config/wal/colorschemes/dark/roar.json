@@ -2,26 +2,26 @@
     "wallpaper": "/home/jason/Pictures/samuel-scrimshaw-KeUKM5N-e_g-unsplash-m.jpg",
     "alpha": "100",
     "special": {
-        "background": "#2c2833",
-        "foreground": "#ffffe8",
-        "cursor": "#ffffe8"
+        "background": "#18161d",
+        "foreground": "#a4a0ac",
+        "cursor": "#a4a0ac"
     },
     "colors": {
-        "color0": "#2c2833",
-        "color1": "#bf6257",
-        "color2": "#82a37c",
-        "color3": "#b7a16c",
-        "color4": "#6d6a80",
-        "color5": "#938e8f",
-        "color6": "#825969",
-        "color7": "#dbd7b8",
-        "color8": "#443d4f",
-        "color9": "#ff715f",
-        "color10": "#9ce68e",
-        "color11": "#ffd979",
-        "color12": "#827ab5",
-        "color13": "#d1a5ae",
-        "color14": "#b76585",
-        "color15": "#ffffe8"
+        "color0": "#18161d",
+        "color1": "#ff7780",
+        "color2": "#68b183",
+        "color3": "#bda014",
+        "color4": "#54a5ff",
+        "color5": "#da89b2",
+        "color6": "#79a8c3",
+        "color7": "#a4a0ac",
+        "color8": "#bd9b87",
+        "color9": "#ef873d",
+        "color10": "#08b885",
+        "color11": "#d39710",
+        "color12": "#a294fe",
+        "color13": "#ec7aca",
+        "color14": "#4ab0b9",
+        "color15": "#a4a0ac"
     }
 }
