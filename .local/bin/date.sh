@@ -1,2 +1,2 @@
 #!/bin/sh
-notify-send "`date`" -t 5000
+notify-send "`date`" -t 4000
