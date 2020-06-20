@@ -515,7 +515,7 @@ key_bindings:
   - { key: D,        mods: Alt,           action: ScrollToBottom   }
   - { key: U,        mods: Alt,           action: ScrollToTop      }
   - { key: Return,   mods: Alt,           action: SpawnNewInstance }
-  - { key: Q,	     mods: Alt,		  action: Quit             }
+  - { key: Q,	     mods: Alt,           action: Quit             }
   - { key: F2,	     mods: Alt,           command: {program: "gedit", args: [".config/alacritty/alacritty.yml"]} }
 
   # (Windows only)
