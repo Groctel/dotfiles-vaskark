@@ -45,7 +45,7 @@ set statusbar-h-padding 10
 set statusbar-v-padding 10
 
 ## Font
-set font "Ubuntu 8"
+set font "scientifica 8"
 
 ## Window options
 set window-height 800
