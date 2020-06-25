@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/jason/Pictures/la7l0aijy4k41.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#050506",
+        "foreground": "#dee0e1",
+        "cursor": "#dee0e1"
+    },
+    "colors": {
+        "color0": "#050506",
+        "color1": "#425f66",
+        "color2": "#774962",
+        "color3": "#4d2a3a",
+        "color4": "#334156",
+        "color5": "#154036",
+        "color6": "#567291",
+        "color7": "#a3a4a5",
+        "color8": "#1b1b21",
+        "color9": "#4a828f",
+        "color10": "#a75280",
+        "color11": "#6b2e4a",
+        "color12": "#395278",
+        "color13": "#155849",
+        "color14": "#6093cb",
+        "color15": "#dee0e1"
+    }
+}
