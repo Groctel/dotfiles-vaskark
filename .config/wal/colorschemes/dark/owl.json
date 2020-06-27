@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/jason/Pictures/owl.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#030200",
+        "foreground": "#dbd9d5",
+        "cursor": "#dbd9d5"
+    },
+    "colors": {
+        "color0": "#030200",
+        "color1": "#674521",
+        "color2": "#944427",
+        "color3": "#8b744d",
+        "color4": "#493114",
+        "color5": "#53442b",
+        "color6": "#896c54",
+        "color7": "#9f9d9a",
+        "color8": "#342301",
+        "color9": "#8e5922",
+        "color10": "#cc5226",
+        "color11": "#c29a56",
+        "color12": "#654013",
+        "color13": "#745a2f",
+        "color14": "#c08b5e",
+        "color15": "#dbd9d5"
+    }
+}
