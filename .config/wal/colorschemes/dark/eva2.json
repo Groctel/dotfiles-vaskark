@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/jason/Pictures/Eva-Green-by-Greg-Williams-006-m.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#040407",
+        "foreground": "#c8d3fb",
+        "cursor": "#c8d3fb"
+    },
+    "colors": {
+        "color0": "#040407",
+        "color1": "#4a566c",
+        "color2": "#584650",
+        "color3": "#7d8faa",
+        "color4": "#816871",
+        "color5": "#546777",
+        "color6": "#83aa95",
+        "color7": "#939cb9",
+        "color8": "#181824",
+        "color9": "#556e97",
+        "color10": "#7e4f68",
+        "color11": "#90b7f0",
+        "color12": "#b7778d",
+        "color13": "#6186a6",
+        "color14": "#97f0c0",
+        "color15": "#c8d3fb"
+    }
+}
