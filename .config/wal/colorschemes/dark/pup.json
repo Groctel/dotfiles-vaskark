@@ -2,26 +2,26 @@
     "wallpaper": "/home/jason/Pictures/pupper.jpg",
     "alpha": "100",
     "special": {
-        "background": "#28282C",
-        "foreground": "#F4F4F2",
-        "cursor": "#F4F4F2"
+        "background": "#272a2a",
+        "foreground": "#f6f7f8",
+        "cursor": "#f6f7f8"
     },
     "colors": {
-        "color0": "#28282C",
-        "color1": "#BF5C56",
-        "color2": "#97B19C",
-        "color3": "#D7BD8A",
-        "color4": "#D7BD8A",
-        "color5": "#97B19C",
-        "color6": "#BF5C56",
-        "color7": "#545F72",
-        "color8": "#404047",
-        "color9": "#BF5C56",
-        "color10": "#97B19C",
-        "color11": "#D7BD8A",
-        "color12": "#D7BD8A",
-        "color13": "#97B19C",
-        "color14": "#BF5C56",
-        "color15": "#F4F4F2"
+        "color0": "#272a2a",
+        "color1": "#ccb05f",
+        "color2": "#b05f5f",
+        "color3": "#b05f5f",
+        "color4": "#88aa55",
+        "color5": "#ccb05f",
+        "color6": "#88aa55",
+        "color7": "#556973",
+        "color8": "#484c4e",
+        "color9": "#ccb05f",
+        "color10": "#b05f5f",
+        "color11": "#b05f5f",
+        "color12": "#88aa55",
+        "color13": "#ccb05f",
+        "color14": "#88aa55",
+        "color15": "#f6f7f8"
     }
 }
