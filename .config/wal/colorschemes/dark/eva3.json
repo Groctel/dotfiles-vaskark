@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/jason/.config/wpg/wallpapers/eva-green-wallpaper-hd-1920x1200-449356-m.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#212833",
+        "foreground": "#ffd9d9",
+        "cursor": "#ffd9d9"
+    },
+    "colors": {
+        "color0": "#212833",
+        "color1": "#8b5b51",
+        "color2": "#68836d",
+        "color3": "#b99277",
+        "color4": "#4d6584",
+        "color5": "#8a7070",
+        "color6": "#4e6e8a",
+        "color7": "#c9a3a3",
+        "color8": "#354050",
+        "color9": "#c36d5a",
+        "color10": "#77ba80",
+        "color11": "#ffbb87",
+        "color12": "#5782b9",
+        "color13": "#c2819c",
+        "color14": "#5890c2",
+        "color15": "#ffd9d9"
+    }
+}

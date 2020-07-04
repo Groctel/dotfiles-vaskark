@@ -1,27 +1,27 @@
 {
-    "wallpaper": "/home/jason/Pictures/74tpvg8405231.jpg",
+    "wallpaper": "/home/jason/.config/wpg/wallpapers/74tpvg8405231.jpg",
     "alpha": "100",
     "special": {
-        "background": "#022932",
-        "foreground": "#d5d5d5",
-        "cursor": "#d5d5d5"
+        "background": "#012730",
+        "foreground": "#e9bfbf",
+        "cursor": "#e9bfbf"
     },
     "colors": {
-        "color0": "#022932",
-        "color1": "#ce3e3b",
-        "color2": "#7f9106",
-        "color3": "#ab8308",
-        "color4": "#7a7db4",
-        "color5": "#34968e",
-        "color6": "#3287c4",
-        "color7": "#9a9a9a",
-        "color8": "#054e61",
-        "color9": "#ef3e39",
-        "color10": "#a4bb09",
-        "color11": "#deab0b",
-        "color12": "#8a91eb",
-        "color13": "#35d0c4",
-        "color14": "#2fb1ef",
-        "color15": "#d5d5d5"
+        "color0": "#012730",
+        "color1": "#cc3c39",
+        "color2": "#7d8f04",
+        "color3": "#a98106",
+        "color4": "#787bb2",
+        "color5": "#34968a",
+        "color6": "#3086c2",
+        "color7": "#a88a8a",
+        "color8": "#034c5f",
+        "color9": "#ed3a37",
+        "color10": "#a2b907",
+        "color11": "#dca909",
+        "color12": "#8890e9",
+        "color13": "#33cec2",
+        "color14": "#2dafed",
+        "color15": "#e9bfbf"
     }
 }
