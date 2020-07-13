@@ -83,7 +83,7 @@ bar_width = 1
 # 'raw' is an 8 or 16 bit (configurable via the 'bit_format' option) data
 # stream of the bar heights that can be used to send to other applications.
 # 'raw' defaults to 200 bars, which can be adjusted in the 'bars' option above.
-method = noncurses
+method = ncurses
 
 # Visual channels. Can be 'stereo' or 'mono'.
 # 'stereo' mirrors both channels with low frequencies in center.
@@ -123,10 +123,10 @@ foreground = green
 # Gradient mode, only hex defined colors (and thereby ncurses mode) are supported,
 # background must also be defined in hex  or remain commented out. 1 = on, 0 = off.
 # You can define as many as 8 different colors. They range from bottom to top of screen
-; gradient = 1
-; gradient_count = 2
-; gradient_color_1 = '#ff9800'
-; gradient_color_2 = '#ffc501'
+gradient = 1
+gradient_count = 2
+gradient_color_1 = '#f0832e'
+gradient_color_2 = '#fea829'
 ; gradient_color_3 = '#a6cc33'
 ; gradient_color_4 = '#cccc33'
 ; gradient_color_5 = '#cca633'

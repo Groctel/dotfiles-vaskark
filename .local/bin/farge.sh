@@ -1,3 +1,4 @@
 #!/bin/sh
 
-farge --no-preview --notify --expire-time 4000 --image-viewer sxiv
+#farge --notify --expire-time --image-viewer sxiv
+farge --image-viewer sxiv
