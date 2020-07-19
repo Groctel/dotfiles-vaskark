@@ -36,6 +36,7 @@ alias c='cava'
 alias p='pipes'
 alias fd='fdfind'
 alias km='kmon -u'
+alias mi='mediainfo'
 
 # git
 alias gc='git commit -a'

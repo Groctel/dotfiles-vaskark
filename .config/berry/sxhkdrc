@@ -123,9 +123,15 @@ super + control {Left, Down, Up, Right}
 
 super + shift +  {h, j, k, l}
     berryc window_resize {-50 0, 0 50, 0 -50, 50 0}
+    
+super + control + shift +  {h, j, k, l}
+    berryc window_resize {-10 0, 0 10, 0 -10, 10 0}
 
 super + shift +  {Left, Down, Up, Right}
     berryc window_resize {-50 0, 0 50, 0 -50, 50 0}
+    
+super + control + shift +  {Left, Down, Up, Right}
+    berryc window_resize {-10 0, 0 10, 0 -10, 10 0}
 
 super + {1-9}
     berryc switch_workspace {0-9}
