@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/jason/Pictures/KateWinsletPeterLindbergh.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#2c373d",
+        "foreground": "#fffcf5",
+        "cursor": "#fffcf5"
+    },
+    "colors": {
+        "color0": "#2c373d",
+        "color1": "#a67979",
+        "color2": "#8e7d79",
+        "color3": "#809f7b",
+        "color4": "#7b9899",
+        "color5": "#baad8a",
+        "color6": "#6d7575",
+        "color7": "#c4c0bb",
+        "color8": "#40515a",
+        "color9": "#ea8a8a",
+        "color10": "#c9978c",
+        "color11": "#99e08d",
+        "color12": "#8ed6d8",
+        "color13": "#ffea9e",
+        "color14": "#7fa6a6",
+        "color15": "#fffcf5"
+    }
+}
