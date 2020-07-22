@@ -2,26 +2,26 @@
     "wallpaper": "/home/jason/Pictures/T98cxoNC9yYmunFw.jpg",
     "alpha": "100",
     "special": {
-        "background": "#252a32",
-        "foreground": "#b39580",
-        "cursor": "#272c34"
+        "background": "#342836",
+        "foreground": "#ffefef",
+        "cursor": "#ffefef"
     },
     "colors": {
-        "color0": "#252a32",
-        "color1": "#876058",
-        "color2": "#6f7f71",
-        "color3": "#b39580",
-        "color4": "#546780",
-        "color5": "#84787d",
-        "color6": "#556f86",
-        "color7": "#bab7b5",
-        "color8": "#bab7b5",
-        "color9": "#876058",
-        "color10": "#6f7f71",
-        "color11": "#b39580",
-        "color12": "#546780",
-        "color13": "#84787d",
-        "color14": "#556f86",
-        "color15": "#dfdedd"
+        "color0": "#342836",
+        "color1": "#945e60",
+        "color2": "#8a9981",
+        "color3": "#aaa083",
+        "color4": "#756a6a",
+        "color5": "#7d496a",
+        "color6": "#8a7d7d",
+        "color7": "#c9b6b6",
+        "color8": "#4f3d53",
+        "color9": "#d1696f",
+        "color10": "#b1d794",
+        "color11": "#f1da96",
+        "color12": "#a57c9d",
+        "color13": "#af528e",
+        "color14": "#b2c293",
+        "color15": "#ffefef"
     }
 }
