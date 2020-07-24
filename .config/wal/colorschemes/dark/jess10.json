@@ -2,26 +2,26 @@
     "wallpaper": "/home/jason/Pictures/wallpapersden.com_jessica-chastain-4k_1920x1200-m.jpg",
     "alpha": "100",
     "special": {
-        "background": "#1f252d",
-        "foreground": "#d9e1fa",
-        "cursor": "#d9e1fa"
+        "background": "#2f2832",
+        "foreground": "#f9efef",
+        "cursor": "#f9efef"
     },
     "colors": {
-        "color0": "#1f252d",
-        "color1": "#cb8d56",
-        "color2": "#8ba089",
-        "color3": "#a79c46",
-        "color4": "#8e9aba",
-        "color5": "#b190af",
-        "color6": "#8c9abe",
-        "color7": "#a2a8ba",
-        "color8": "#333d4a",
-        "color9": "#ffb65c",
-        "color10": "#a4e39e",
-        "color11": "#e8d64b",
-        "color12": "#a3beff",
-        "color13": "#faa6f5",
-        "color14": "#a0beff",
-        "color15": "#d9e1fa"
+        "color0": "#2f2832",
+        "color1": "#885d50",
+        "color2": "#747965",
+        "color3": "#9a8e80",
+        "color4": "#4a4e5a",
+        "color5": "#76675b",
+        "color6": "#59555c",
+        "color7": "#bcb5b5",
+        "color8": "#493e4d",
+        "color9": "#be7159",
+        "color10": "#9dab74",
+        "color11": "#daba94",
+        "color12": "#55607f",
+        "color13": "#a68468",
+        "color14": "#756383",
+        "color15": "#f9efef"
     }
 }
