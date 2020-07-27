@@ -1,27 +1,27 @@
 {
-    "wallpaper": "/home/jason/Pictures/bj.jpg",
+    "wallpaper": "/home/jason/.config/wpg/wallpapers/bj.jpg",
     "alpha": "100",
     "special": {
         "background": "#020101",
-        "foreground": "#e5d0d0",
-        "cursor": "#e5d0d0"
+        "foreground": "#e5d1d1",
+        "cursor": "#e5d1d1"
     },
     "colors": {
         "color0": "#020101",
         "color1": "#8a1c18",
-        "color2": "#a56813",
-        "color3": "#81c3e9",
-        "color4": "#51a151",
-        "color5": "#501914",
-        "color6": "#33637f",
+        "color2": "#b88216",
+        "color3": "#42b445",
+        "color4": "#265c78",
+        "color5": "#8c6568",
+        "color6": "#68c4f5",
         "color7": "#a79898",
-        "color8": "#131f1f",
-        "color9": "#bb1b13",
-        "color10": "#d1730e",
-        "color11": "#8aeaea",
-        "color12": "#56e35b",
-        "color13": "#6e1914",
-        "color14": "#3685b2",
-        "color15": "#e5d0d0"
+        "color8": "#340101",
+        "color9": "#be1a14",
+        "color10": "#fcad0f",
+        "color11": "#45fa4a",
+        "color12": "#277aa6",
+        "color13": "#c57379",
+        "color14": "#70ffff",
+        "color15": "#e5d1d1"
     }
 }
