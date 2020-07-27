@@ -2,26 +2,26 @@
     "wallpaper": "/home/jason/Pictures/bj.jpg",
     "alpha": "100",
     "special": {
-        "background": "#020303",
-        "foreground": "#dadadd",
-        "cursor": "#dadadd"
+        "background": "#020101",
+        "foreground": "#e5d0d0",
+        "cursor": "#e5d0d0"
     },
     "colors": {
-        "color0": "#020303",
-        "color1": "#2c688a",
-        "color2": "#b06b0c",
-        "color3": "#921710",
-        "color4": "#45b048",
-        "color5": "#571611",
-        "color6": "#70cafe",
-        "color7": "#9f9fa1",
-        "color8": "#122424",
-        "color9": "#2d8abf",
-        "color10": "#de7605",
-        "color11": "#c8140a",
-        "color12": "#49f44e",
-        "color13": "#77160f",
-        "color14": "#79ffff",
-        "color15": "#dadadd"
+        "color0": "#020101",
+        "color1": "#8a1c18",
+        "color2": "#a56813",
+        "color3": "#81c3e9",
+        "color4": "#51a151",
+        "color5": "#501914",
+        "color6": "#33637f",
+        "color7": "#a79898",
+        "color8": "#131f1f",
+        "color9": "#bb1b13",
+        "color10": "#d1730e",
+        "color11": "#8aeaea",
+        "color12": "#56e35b",
+        "color13": "#6e1914",
+        "color14": "#3685b2",
+        "color15": "#e5d0d0"
     }
 }
