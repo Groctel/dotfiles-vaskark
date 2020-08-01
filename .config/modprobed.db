@@ -1,3 +1,4 @@
+8021q
 acpi_als
 acpi_pad
 acpi_thermal_rel
@@ -30,6 +31,7 @@ ecc
 ecdh_generic
 enclosure
 fb_sys_fops
+garp
 ghash_clmulni_intel
 glue_helper
 hfs
@@ -76,6 +78,7 @@ ledtrig_audio
 libahci
 libarc4
 libcrc32c
+llc
 lp
 mac80211
 mac_hid
@@ -84,6 +87,7 @@ mei
 mei_hdcp
 mei_me
 minix
+mrp
 msdos
 nf_conntrack
 nf_conntrack_broadcast
@@ -130,6 +134,7 @@ snd_seq_midi_event
 snd_timer
 soundcore
 sparse_keymap
+stp
 syscopyarea
 sysfillrect
 sysimgblt
