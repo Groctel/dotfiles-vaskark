@@ -582,7 +582,7 @@ cursor:
 #
 # If the same trigger is assigned to multiple actions, all of them are executed
 # in the order they were defined in.
-#key_bindings:
+key_bindings:
   #- { key: Paste,                                action: Paste          }
   #- { key: Copy,                                 action: Copy           }
   #- { key: L,         mods: Control,             action: ClearLogNotice }
@@ -652,6 +652,7 @@ cursor:
   #- { key: Add,      mods: Control,                 action: IncreaseFontSize }
   #- { key: Subtract, mods: Control,                 action: DecreaseFontSize }
   #- { key: Minus,    mods: Control,                 action: DecreaseFontSize }
+  - { key: F2,       mods: Alt,                     command: { program: "gedit", args: [".config/alacritty/alacritty.yml"] }}
 
   # (Windows only)
   #- { key: Return,   mods: Alt,           action: ToggleFullscreen }
