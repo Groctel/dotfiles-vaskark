@@ -42,6 +42,7 @@ hid_multitouch
 i2c_algo_bit
 i2c_hid
 i2c_i801
+i2c_smbus
 i915
 idma64
 industrialio
