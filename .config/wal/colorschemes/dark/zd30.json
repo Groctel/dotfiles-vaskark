@@ -1,5 +1,5 @@
 {
-    "wallpaper": "/home/jason/Pictures/609504-m.jpg",
+    "wallpaper": "/home/jason/.config/wpg/wallpapers/609504-m.jpg",
     "alpha": "100",
     "special": {
         "background": "#2c292b",
@@ -10,16 +10,16 @@
         "color0": "#2c292b",
         "color1": "#7c5545",
         "color2": "#88885d",
-        "color3": "#456e66",
-        "color4": "#c8a168",
+        "color3": "#c8a168",
+        "color4": "#456e66",
         "color5": "#45626e",
         "color6": "#ab6d4e",
         "color7": "#c3b495",
         "color8": "#454144",
         "color9": "#ad694d",
         "color10": "#bfbf6a",
-        "color11": "#4e9a8b",
-        "color12": "#ffd573",
+        "color11": "#ffd573",
+        "color12": "#4e9a8b",
         "color13": "#4e849a",
         "color14": "#ee8855",
         "color15": "#fff2c8"
