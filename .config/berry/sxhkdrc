@@ -23,7 +23,7 @@ super + shift + r
 # lockscreen
 super + Escape
 #	betterlockscreen -l pixel
-#	lock.sh
+	lock.sh
 
 # file manager
 super + F1
