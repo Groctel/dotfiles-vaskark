@@ -58,3 +58,6 @@ URxvt.bell-command: canberra-gtk-play -i bell
 
 !! Colours
 #include ".cache/wal/colors.Xresources"
+
+!! xmenu
+xmenu.font: xft:scientifica:size=8
