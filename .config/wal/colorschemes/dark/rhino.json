@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/jason/Pictures/bkrw0ylckle51.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#2b2c33",
+        "foreground": "#fffddd",
+        "cursor": "#fffddd"
+    },
+    "colors": {
+        "color0": "#2b2c33",
+        "color1": "#b16c7f",
+        "color2": "#92ab75",
+        "color3": "#bdab77",
+        "color4": "#485476",
+        "color5": "#746081",
+        "color6": "#636f7d",
+        "color7": "#d9c1a9",
+        "color8": "#41434e",
+        "color9": "#f8799c",
+        "color10": "#bff085",
+        "color11": "#ffe886",
+        "color12": "#5167a5",
+        "color13": "#996eb6",
+        "color14": "#728fb0",
+        "color15": "#fffddd"
+    }
+}

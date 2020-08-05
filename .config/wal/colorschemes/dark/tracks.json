@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/jason/Pictures/dyog8l67nbd41.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#220e0d",
+        "foreground": "#fffbfb",
+        "cursor": "#fffbfb"
+    },
+    "colors": {
+        "color0": "#220e0d",
+        "color1": "#ae4b44",
+        "color2": "#90aa7d",
+        "color3": "#a6a39c",
+        "color4": "#b17963",
+        "color5": "#199dac",
+        "color6": "#62a0a2",
+        "color7": "#c7c2c2",
+        "color8": "#461c1a",
+        "color9": "#f15348",
+        "color10": "#b8f08f",
+        "color11": "#ecdcb5",
+        "color12": "#f8956e",
+        "color13": "#13d6ec",
+        "color14": "#6edfe3",
+        "color15": "#fffbfb"
+    }
+}
