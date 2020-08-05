@@ -90,6 +90,7 @@ extract
 colored-man-pages
 #zsh-interactive-cd
 #vi-mode
+wd
 )
 
 source $ZSH/oh-my-zsh.sh
