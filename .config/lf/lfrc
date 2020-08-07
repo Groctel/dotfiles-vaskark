@@ -97,3 +97,14 @@ cmd zip ${{
     zip -r $1.zip $1
     rm -rf $1
 }}
+
+# draw image
+map - $~/.config/lf/draw_img.sh "$f"
+
+# video thumbnail
+cmd video_preview ${{
+    CACHE=$(mktemp /tmp/thumb_cache.XXXXX)
+    ffmpegthumbnailer -i "$f" -o $CACHE -s 0
+    ~/.config/lf/draw_img.sh $CACHE && rm $CACHE
+}}
+map + :video_preview

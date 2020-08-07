@@ -653,10 +653,12 @@ key_bindings:
   #- { key: Subtract, mods: Control,                 action: DecreaseFontSize }
   #- { key: Minus,    mods: Control,                 action: DecreaseFontSize }
   
-  #- (Extras) 
+  # (Extras) 
    - { key: F2,       mods: Control|Shift,           command: { program: "gedit", args: [".config/alacritty/alacritty.yml"] }}
-   - { key: S,	      mods: Control|Shift,	       chars: "ssh ** \x09" }
-   - { key: K,	      mods: Control|Shift,	       chars: "kill ** \x09" }
+   - { key: S,	      mods: Control|Shift,	       chars: "ssh **\x09" }
+   - { key: K,	      mods: Control|Shift,	       chars: "kill **\x09" }
+   - { key: Return,   mods: Control|Shift,            action: SpawnNewInstance }
+   - { key: Q,        mods: Control|Shift,            action: Quit }
 
   # (Windows only)
   #- { key: Return,   mods: Alt,           action: ToggleFullscreen }
