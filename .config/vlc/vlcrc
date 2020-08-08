@@ -4224,7 +4224,7 @@ vod-server=any
 #repeat=0
 
 # Play and exit (boolean)
-play-and-exit=1
+#play-and-exit=0
 
 # Play and stop (boolean)
 #play-and-stop=0

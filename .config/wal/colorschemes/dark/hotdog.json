@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/jason/Pictures/joyce-romero-FFcMeEEsems-unsplash.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#181515",
+        "foreground": "#fde5e5",
+        "cursor": "#fde5e5"
+    },
+    "colors": {
+        "color0": "#181515",
+        "color1": "#6c5246",
+        "color2": "#556c64",
+        "color3": "#bca386",
+        "color4": "#867b6e",
+        "color5": "#ccb797",
+        "color6": "#776553",
+        "color7": "#ccb9b9",
+        "color8": "#322d2d",
+        "color9": "#986650",
+        "color10": "#619a85",
+        "color11": "#f4d698",
+        "color12": "#c1a181",
+        "color13": "#f3f3ae",
+        "color14": "#a8825e",
+        "color15": "#fde5e5"
+    }
+}
