@@ -3792,7 +3792,7 @@ qt-privacy-ask=0
 #role=video
 
 # Audio filters (string)
-audio-filter=compressor
+#audio-filter=
 
 # Audio visualizations (string)
 #audio-visual=none
