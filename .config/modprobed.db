@@ -29,6 +29,7 @@ drm
 drm_kms_helper
 ecc
 ecdh_generic
+efi_pstore
 enclosure
 fb_sys_fops
 garp
@@ -111,6 +112,8 @@ ppdev
 processor_thermal_device
 qnx4
 raid6_pq
+rapl
+rc_core
 roles
 sch_fq_codel
 scsi_transport_sas
@@ -155,6 +158,8 @@ wmi
 wmi_bmof
 x86_pkg_temp_thermal
 xfs
+xhci_pci
+xhci_pci_renesas
 xor
 x_tables
 xt_addrtype

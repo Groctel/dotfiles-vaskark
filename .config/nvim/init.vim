@@ -11,6 +11,7 @@ Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'nelstrom/vim-markdown-folding'
 Plug 'dylanaraps/wal.vim'
 Plug 'preservim/nerdtree'
+Plug 'vimwiki/vimwiki'
 call plug#end()
 
 " Highlight the line on which the cursor lives.
@@ -178,6 +179,7 @@ set autoindent
 
 set nocompatible
 filetype plugin indent on
+syntax on
 
 " Write buffer through sudo (works on vim but not neovim)
 " cnoreabbrev w!! w !sudo -S tee % >/dev/null
