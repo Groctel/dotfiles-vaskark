@@ -13,9 +13,9 @@ static struct Config config = {
 	/* sizes in pixels */
 	.width_pixels = 100,        /* minimum width of a menu */
 	.height_pixels = 20,        /* height of a single menu item */
-	.border_pixels = 1,         /* menu border */
+	.border_pixels = 5,         /* menu border */
 	.separator_pixels = 15,      /* space around separator */
-	.gap_pixels = 5,           /* gap between menus */
+	.gap_pixels = 10,           /* gap between menus */
 
 	/*
 	 * The variables below cannot be set by X resources.

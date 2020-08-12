@@ -68,9 +68,9 @@ XClock*secondColor: rgba:{color15.xrgba}
 URxvt*depth: 32
 
 ! xmenu
-xmenu.background: {color2}
-xmenu.foreground: {color0}
-xmenu.selbackground: {color0}
-xmenu.selforeground: {color2}
-xmenu.separator: {color0}
+xmenu.background: {color0}
+xmenu.foreground: #a5a5a5
+xmenu.selbackground: {color2}
+xmenu.selforeground: {color0}
+xmenu.separator: #a5a5a5
 xmenu.border: {color0}
