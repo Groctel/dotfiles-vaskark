@@ -69,8 +69,8 @@ URxvt*depth: 32
 
 ! xmenu
 xmenu.background: {color0}
-xmenu.foreground: #a5a5a5
+xmenu.foreground: #888888
 xmenu.selbackground: {color2}
 xmenu.selforeground: {color0}
-xmenu.separator: #a5a5a5
+xmenu.separator: {color2}
 xmenu.border: {color0}

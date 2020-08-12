@@ -59,5 +59,5 @@ Video
 
 Logout			pkill x
 Reboot			reboot
-Shut			poweroff
+Off			poweroff
 EOF
