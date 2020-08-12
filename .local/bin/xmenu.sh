@@ -54,6 +54,7 @@ Video
 	Peek		peek
 	VLC		vlc
 
+Logout			pkill x
 Reboot			reboot
-Shutdown		poweroff
+Shut			poweroff
 EOF
