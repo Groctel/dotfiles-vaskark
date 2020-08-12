@@ -1,6 +1,9 @@
 #!/bin/sh
 
 cat <<EOF | xmenu | sh &
+Alacritty		alacritty
+Chrome			google-chrome-stable
+
 Apps
 	Appearance	lxappearance
 	Bleachbit	bleachbit
