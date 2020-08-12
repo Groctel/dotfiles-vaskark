@@ -11,10 +11,10 @@ static struct Config config = {
 	.border_color = "#E6E6E6",
 
 	/* sizes in pixels */
-	.width_pixels = 130,        /* minimum width of a menu */
+	.width_pixels = 100,        /* minimum width of a menu */
 	.height_pixels = 20,        /* height of a single menu item */
 	.border_pixels = 1,         /* menu border */
-	.separator_pixels = 20,      /* space around separator */
+	.separator_pixels = 15,      /* space around separator */
 	.gap_pixels = 5,           /* gap between menus */
 
 	/*

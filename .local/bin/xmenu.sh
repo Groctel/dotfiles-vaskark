@@ -6,6 +6,8 @@ Apps
 	Bleachbit	bleachbit
 	Calculator	gnome-calculator
 	Calendar	gnome-calendar
+	Calibre	calibre
+	Flameshot	flameshot gui
 	Foliate	foliate
 	Font Manager	font-manager
 	Gitg		gitg
@@ -32,6 +34,7 @@ Sound
 	Rhythmbox	rhythmbox
 System
 	Bleachbit	pkexec bleachbit
+	Boxes		gnome-boxes
 	Firewall	gufw-pkexec
 	Logs		gnome-system-log-pkexec
 	Monitor	gnome-system-monitor
