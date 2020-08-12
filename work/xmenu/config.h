@@ -1,6 +1,6 @@
 static struct Config config = {
 	/* font, separate different fonts with comma */
-	.font = "scientifica:size=8",
+	.font = "scientifica:bold:size=8",
 
 	/* colors */
 	.background_color = "#FFFFFF",
