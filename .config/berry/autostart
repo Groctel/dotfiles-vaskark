@@ -1,6 +1,7 @@
 #!/bin/sh
 
 # Set startup apps
+xclickroot -r xmenu.sh &
 wal -R -o wal-berry.sh -o wal-dunst.sh -o wal-glava.sh -o wal-cava.sh &
 polybar-bottom.sh &
 sxhkd -c $HOME/.config/berry/sxhkdrc &
