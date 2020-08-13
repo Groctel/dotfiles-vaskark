@@ -21,6 +21,11 @@ Apps
 	Text Editor	gedit
 	Weather	gnome-weather
 	Zathura	zathura
+Audio
+	Audacity	audacity
+	Easytag	easytag
+	PulseAudio	pavucontrol
+	Rhythmbox	rhythmbox
 Graphics
 	GIMP		gimp
 	Inkscape	inkscape
@@ -30,11 +35,6 @@ Internet
 	Chrome		google-chrome
 	Firefox	firefox
 	Transmission	transmission-gtk
-Sound
-	Audacity	audacity
-	Easytag	easytag
-	PulseAudio	pavucontrol
-	Rhythmbox	rhythmbox
 System
 	Bleachbit	pkexec bleachbit
 	Boxes		gnome-boxes
@@ -49,8 +49,8 @@ Terms
 	Alacritty	alacritty
 	Byobu		byobu
 	Kitty		kitty
-	Termite	termite
 	St		st
+	Termite	termite
 Video
 	Celluloid	celluloid
 	MKVToolnix	mkvtoolnix-gui
