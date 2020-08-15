@@ -200,7 +200,7 @@ exec_always --no-startup-id polybar-i3.sh
 exec_always --no-startup-id picom-blur.sh
 exec --no-startup-id redshift.sh
 exec --no-startup-id /usr/lib/policykit-1-gnome/polkit-gnome-authentication-agent-1
-exec --no-startup-id wal -R -o wal-berry.sh -o wal-cava.sh -o wal-dunst-b.sh -o wal-glava-b.sh
+exec --no-startup-id wal -R -o wal-berry.sh -o wal-cava.sh -o wal-dunst.sh -o wal-glava-b.sh
 exec --no-startup-id libinput-gestures
 exec --no-startup-id xautolock -time 10 -locker 'lock.sh' -corners 00-+
 

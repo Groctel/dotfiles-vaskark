@@ -582,7 +582,7 @@ content-padding = 1
 [module/wpg]
 type = custom/text
 content = " "
-click-left = wal -f random_user -o wal-berry.sh -o wal-cava.sh -o wal-dunst.sh -o wal-glava.sh &
+click-left = wal -f random_user -o wal-berry.sh -o wal-cava.sh -o wal-dunst.sh -o wal-glava-b.sh &
 click-right = wpg -r &
 
 content-background = ${colors.color4}
