@@ -8,7 +8,7 @@ set $mod Mod4
 floating_modifier $mod
 
 # set terminal
-set $term kitty
+set $term alacritty
 
 # font for window titles
 font xft:scientifica bold 8
@@ -200,7 +200,7 @@ exec_always --no-startup-id polybar-i3.sh
 exec_always --no-startup-id picom-blur.sh
 exec --no-startup-id redshift.sh
 exec --no-startup-id /usr/lib/policykit-1-gnome/polkit-gnome-authentication-agent-1
-exec --no-startup-id wal -R -o wal-berry.sh -o wal-dunst.sh -o wal-glava-b.sh -o wal.cava.sh
+exec --no-startup-id wal -R -o wal-berry.sh -o wal-cava.sh -o wal-dunst-b.sh -o wal-glava-b.sh
 exec --no-startup-id libinput-gestures
 exec --no-startup-id xautolock -time 10 -locker 'lock.sh' -corners 00-+
 
@@ -219,7 +219,8 @@ bindsym Mod1+F11 exec --no-startup-id mpc toggle
 bindsym Mod1+F12 exec --no-startup-id mpc next
 
 # wal controls
-bindsym $mod+F12 exec --no-startup-id wal -f random_user -o wal-berry.sh -o wal-dunst.sh -o wal-glava-b.sh -o wal.cava.sh
+bindsym $mod+F12 exec --no-startup-id wal -f random_user -o wal-berry.sh -o wal-cava.sh -o wal-dunst.sh -o wal-glava-b.sh
+bindsym $mod+Shift+F12 exec --no-startup-id wal -R
 
 # picom controls
 bindsym Control+F12 exec --no-startup-id picom-blur.sh
