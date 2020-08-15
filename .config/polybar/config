@@ -80,6 +80,7 @@ module-margin-right = 0
 font-0 = "scientifica:bold:size=8;2"
 font-1 = "siji:size=9;2"
 font-2 = "Weather Icons:size=8;2"
+font-3 = "JoyPixels:size=8;2"
 
 modules-left = ewmh sep weather
 modules-center = 
@@ -260,7 +261,6 @@ type = internal/mpd
 host = 127.0.0.1
 port = 6600
 
-#label-song = %artist% - %title%
 label-song = %{A1:mpc toggle > /tmp/toggle.log 2>&1:}%{A2:kitty -e ncmpcpp:}%{A3:mpc next:}%{A8:mpc prev:}%artist%  //  %title%%{A}%{A}%{A}%{A}
 
 format-online = <label-song>
@@ -269,6 +269,7 @@ label-song-foreground = ${colors.color0}
 label-song-padding = 2
 
 format-online-prefix = ""
+#format-online-prefix = "🎵"
 format-online-prefix-background = ${colors.color0}
 format-online-prefix-foreground = ${colors.color2}
 format-online-prefix-padding = 2
@@ -532,7 +533,6 @@ exec = ~/.config/polybar/scripts/openweathermap-detailed.sh
 #exec = curl -s "wttr.in/Hamilton?format="+%C+%t""
 click-left = gnome-weather &
 interval = 600
-label-font = 3
 
 label = %output%
 
