@@ -175,7 +175,7 @@ bindsym $mod+Shift+c reload
 bindsym $mod+Shift+r restart
 
 # resize windows
-mode "resize" {
+mode "Resize" {
         # resize with arrow keys
         bindsym Left resize shrink width 10 px or 10 ppt
         bindsym Down resize grow height 10 px or 10 ppt
@@ -193,7 +193,7 @@ mode "resize" {
         bindsym Escape mode "default"
         bindsym $mod+r mode "default"
 }
-bindsym $mod+r mode "resize"
+bindsym $mod+r mode "Resize"
 
 # startup apps
 exec_always --no-startup-id polybar-i3.sh
@@ -208,7 +208,7 @@ exec --no-startup-id xautolock -time 10 -locker 'lock.sh' -corners 00-+
 bindsym $mod+Escape exec lock.sh
 
 # app bindings
-bindsym $mod+F1 exec --no-startup-id nemo
+bindsym $mod+F1 exec --no-startup-id nautilus
 bindsym $mod+F2 exec --no-startup-id google-chrome-stable
 bindsym $mod+F3 exec --no-startup-id kitty --class Float -e ncmpcpp
 bindsym $mod+Shift+e exec --no-startup-id gedit ~/.config/i3/config
@@ -257,7 +257,7 @@ client.placeholder      $bg     $bg     $fg  $bg       $bg
 client.background       $bg
 
 # system menu
-set $system System ... logout (l), suspend (s), reboot (r), shutdown (S), UEFI (R)
+set $system System: logout (l), suspend (s), reboot (r), shutdown (S), UEFI (R)
 mode "$system" {
     # logout
     bindsym l exec --no-startup-id i3-msg exit, mode "default"
@@ -296,7 +296,7 @@ smart_borders on
 hide_edge_borders smart_no_gaps
 
 # set inner/outer gaps
-gaps inner 6
+gaps inner 20
 gaps outer 0
 
 # gaps stuff
