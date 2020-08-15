@@ -54,13 +54,13 @@ color15 = ${xrdb:color15:#dfdedd}
 ;monitor = ${env:MONITOR:eDP-1}
 width = 100%
 height = 30
-radius = 2
+radius = 0
 fixed-center = true
 bottom = true
 enable-ipc = true
 
 ;offset-x = 2%
-offset-y = 2%
+offset-y = 1.8%
 
 background = transparent
 foreground =
@@ -80,7 +80,7 @@ module-margin-right = 0
 font-0 = "scientifica:bold:size=8;2"
 font-1 = "siji:size=9;2"
 font-2 = "Weather Icons:size=8;2"
-font-3 = "JoyPixels:size=8;2"
+font-3 = "JoyPixels:pixelsize=16;2:scale=12;2"
 
 modules-left = ewmh sep weather
 modules-center = 
@@ -268,13 +268,13 @@ label-song-background = ${colors.color2}
 label-song-foreground = ${colors.color0}
 label-song-padding = 2
 
+#format-online-prefix = "🌮️"
 format-online-prefix = ""
-#format-online-prefix = "🎵"
 format-online-prefix-background = ${colors.color0}
 format-online-prefix-foreground = ${colors.color2}
 format-online-prefix-padding = 2
 
-label-offline = MPD is offline :(
+label-offline = MPD offline :(
 
 format-offline = <label-offline>
 format-offline-background = ${colors.color2}
@@ -314,7 +314,6 @@ icon-prev = 
 icon-play = 
 icon-pause = 
 icon-next = 
-
 
 ##################################################
 
@@ -559,11 +558,11 @@ label-padding = 2
 
 [module/blur]
 type = custom/text
-content = " "
+content = " "
 click-left = picom-blur.sh &
 click-right = picom-rounded.sh &
 
-content-background = ${colors.color2}
+content-background = ${colors.color4}
 content-foreground = ${colors.color0}
 content-padding = 1
 
