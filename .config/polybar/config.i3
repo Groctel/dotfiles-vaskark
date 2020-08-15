@@ -59,6 +59,9 @@ fixed-center = true
 bottom = false
 enable-ipc = true
 
+;offset-x = 2%
+;offset-y = 1.8%
+
 background = transparent
 foreground =
 
