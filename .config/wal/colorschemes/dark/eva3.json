@@ -2,26 +2,26 @@
     "wallpaper": "/home/jason/Pictures/eva-green-wallpaper-hd-1920x1200-449356-m.jpg",
     "alpha": "100",
     "special": {
-        "background": "#151515",
-        "foreground": "#cfbaa2",
-        "cursor": "#cfbaa2"
+        "background": "#181818",
+        "foreground": "#fdfdfd",
+        "cursor": "#fdfdfd"
     },
     "colors": {
-        "color0": "#151515",
-        "color1": "#d54433",
-        "color2": "#7ba470",
-        "color3": "#d4a22f",
-        "color4": "#034450",
-        "color5": "#8d7171",
-        "color6": "#6f3457",
-        "color7": "#8c7e6e",
-        "color8": "#2e2e2e",
-        "color9": "#ff4a31",
-        "color10": "#95e77f",
-        "color11": "#ffd92c",
-        "color12": "#015a6a",
-        "color13": "#c78282",
-        "color14": "#9a3873",
-        "color15": "#cfbaa2"
+        "color0": "#181818",
+        "color1": "#863a47",
+        "color2": "#91b4a8",
+        "color3": "#1a698a",
+        "color4": "#ca7450",
+        "color5": "#7e9d9d",
+        "color6": "#7b8686",
+        "color7": "#c4c4c4",
+        "color8": "#292936",
+        "color9": "#ba3c55",
+        "color10": "#a9fde1",
+        "color11": "#178dbf",
+        "color12": "#ff8f53",
+        "color13": "#95dfdb",
+        "color14": "#8fbfbf",
+        "color15": "#fdfdfd"
     }
 }
