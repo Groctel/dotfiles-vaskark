@@ -9,27 +9,27 @@
 # Created: 02.08.19
 
 # get pywal colors
-kolor00=$(sed -n 1p ~/.cache/wal/colors)
-kolor01=$(sed -n 2p ~/.cache/wal/colors)
-kolor02=$(sed -n 3p ~/.cache/wal/colors)
-kolor03=$(sed -n 4p ~/.cache/wal/colors)
-kolor04=$(sed -n 5p ~/.cache/wal/colors)
-kolor05=$(sed -n 6p ~/.cache/wal/colors)
-kolor06=$(sed -n 7p ~/.cache/wal/colors)
-kolor07=$(sed -n 8p ~/.cache/wal/colors)
-kolor08=$(sed -n 9p ~/.cache/wal/colors)
-kolor09=$(sed -n 10p ~/.cache/wal/colors)
-kolor10=$(sed -n 11p ~/.cache/wal/colors)
-kolor11=$(sed -n 12p ~/.cache/wal/colors)
-kolor12=$(sed -n 13p ~/.cache/wal/colors)
-kolor13=$(sed -n 14p ~/.cache/wal/colors)
-kolor14=$(sed -n 15p ~/.cache/wal/colors)
-kolor15=$(sed -n 16p ~/.cache/wal/colors)
+color00=$(sed -n 1p ~/.cache/wal/colors)
+color01=$(sed -n 2p ~/.cache/wal/colors)
+color02=$(sed -n 3p ~/.cache/wal/colors)
+color03=$(sed -n 4p ~/.cache/wal/colors)
+color04=$(sed -n 5p ~/.cache/wal/colors)
+color05=$(sed -n 6p ~/.cache/wal/colors)
+color06=$(sed -n 7p ~/.cache/wal/colors)
+color07=$(sed -n 8p ~/.cache/wal/colors)
+color08=$(sed -n 9p ~/.cache/wal/colors)
+color09=$(sed -n 10p ~/.cache/wal/colors)
+color10=$(sed -n 11p ~/.cache/wal/colors)
+color11=$(sed -n 12p ~/.cache/wal/colors)
+color12=$(sed -n 13p ~/.cache/wal/colors)
+color13=$(sed -n 14p ~/.cache/wal/colors)
+color14=$(sed -n 15p ~/.cache/wal/colors)
+color15=$(sed -n 16p ~/.cache/wal/colors)
 
 # inject pywal colors into dunst config
-sed -i "s/background = .*/background = \"$kolor02\"/g" ~/.config/dunst/dunstrc
-sed -i "s/foreground = .*/foreground = \"$kolor00\"/g" ~/.config/dunst/dunstrc
-sed -i "s/frame_color = .*/frame_color = \"$kolor02\"/g" ~/.config/dunst/dunstrc
+sed -i "s/background = .*/background = \"$color02\"/g" ~/.config/dunst/dunstrc
+sed -i "s/foreground = .*/foreground = \"$color00\"/g" ~/.config/dunst/dunstrc
+sed -i "s/frame_color = .*/frame_color = \"$color02\"/g" ~/.config/dunst/dunstrc
 
 pkill dunst
 dunst &

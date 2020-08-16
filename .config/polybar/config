@@ -83,7 +83,7 @@ font-2 = "Weather Icons:size=8;2"
 font-3 = "JoyPixels:pixelsize=16;2:scale=12;2"
 
 modules-left = ewmh sep weather
-modules-center = 
+modules-center =
 modules-right = mpd sep uptime battery wireless wired volume sep nmc wpg
 
 ;dim-value = 0.8

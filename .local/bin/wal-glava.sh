@@ -13,6 +13,5 @@ sed -i "s|#define COLOR.*$|#define COLOR @fg:mix($color2, $color10, clamp(d / GR
 
 # restart glava
 killall -q glava
-while pgrep -u $UID -x glava >/dev/null; do sleep 0.1; done
 #glava -d m bars --audio=fifo &
-glava -d -m bars
+glava -d -m bars &
