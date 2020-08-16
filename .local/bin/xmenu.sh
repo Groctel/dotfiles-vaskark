@@ -30,7 +30,7 @@ Graphics
 	GIMP		gimp
 	Inkscape	inkscape
 	Pick		pick-colour-picker
-	YACReader	yacreader
+	YACReader	YACReader
 Internet
 	Chrome		google-chrome
 	Firefox	firefox
