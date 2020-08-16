@@ -7,7 +7,7 @@ configuration {
   disable-history:    	false;
   width: 	      	16;
   lines:              	8;
-  font:		"scientifica 8";
+  font:		"scientifica bold 8";
   columns:            	1;
   modi: 	      	"drun,run,ssh,window,keys";
   display-drun:       	"apps";
