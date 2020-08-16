@@ -168,4 +168,3 @@ if [[ $TERM == xterm-termite ]]; then
     . /usr/local/etc/profile.d/vte.sh
     __vte_osc7
 fi
-
