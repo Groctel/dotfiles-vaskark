@@ -69,7 +69,6 @@ alias yp='yadm push -u origin master'
 alias wal='wal -o wal-berry.sh -o wal-dunst.sh -o wal-glava.sh -o wal-cava.sh'
 alias w1='wal --theme random_user'
 alias w2='wal --theme random'
-#alias cdw='cd ~/.config/wal/colorschemes/dark/'
 
 # superuser
 alias reboot='sudo reboot'
