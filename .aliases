@@ -35,12 +35,20 @@ alias c='cava'
 alias p='pipes'
 alias fd='fdfind'
 alias mi='mediainfo'
+alias grep='grep --color=auto'
+alias egrep='egrep --color-auto'
+alias free='free -m'
 
 # git
 alias gc='git commit -a'
 alias gp='git pull'
 alias gl='git log'
 alias gs='git status'
+
+# yadm
+alias yc='yadm commit -a'
+alias ya='yadm add'
+alias yp='yadm push -u origin master'
 
 # neofetch
 alias nf0='clear;neofetch --config none'
@@ -58,11 +66,6 @@ alias ndw='nmcli d wifi'
 alias wsc='windscribe connect'
 alias wsd='windscribe disconnect'
 
-# yadm
-alias yc='yadm commit -a'
-alias ya='yadm add'
-alias yp='yadm push -u origin master'
-
 # pywal
 alias wal='wal -o wal-berry.sh -o wal-cava.sh -o wal-dunst.sh -o wal-glava.sh'
 alias w1='wal --theme random_user'
@@ -76,3 +79,10 @@ alias rnm='sudo systemctl restart network-manager'
 alias s1='sudo make install'
 alias s2='sudo make PREFIX=/usr/local install'
 alias s3='sudo ninja -C build install'
+
+# pacman
+alias unlock='sudo rm /var/lib/pacman/db.lck'
+alias cleanup='sudo pacman -Rns $(pacman -Qtdq)'
+alias mirror='sudo reflector -f 30 -l 30 -n 12 --verbose --save /etc/pacman.d/mirrorlist'
+alias yaur='yay -Sua --no-confirm'
+alias yay='yay -Syu --no-confirm'
