@@ -6,6 +6,7 @@ alias df='df -H | grep sda'
 alias du='du -d 1 -h'
 alias cd..='cd ..'
 alias hc='history -c;src'
+alias free='free -m'
 
 alias ls='lsd'
 alias l='ls -l'
@@ -37,7 +38,6 @@ alias fd='fdfind'
 alias mi='mediainfo'
 alias grep='grep --color=auto'
 alias egrep='egrep --color-auto'
-alias free='free -m'
 
 # git
 alias gc='git commit -a'
@@ -79,6 +79,9 @@ alias rnm='sudo systemctl restart network-manager'
 alias s1='sudo make install'
 alias s2='sudo make PREFIX=/usr/local install'
 alias s3='sudo ninja -C build install'
+
+# journal
+alias jctl='journalctl -p 3 -xb'
 
 # pacman
 alias unlock='sudo rm /var/lib/pacman/db.lck'
