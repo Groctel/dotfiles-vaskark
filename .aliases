@@ -6,7 +6,6 @@ alias df='df -H | grep sda'
 alias du='du -d 1 -h'
 alias cd..='cd ..'
 alias hc='history -c;src'
-alias p='pwd -P'
 
 alias ls='lsd'
 alias l='ls -l'
@@ -35,7 +34,6 @@ alias r='ranger'
 alias c='cava'
 alias p='pipes'
 alias fd='fdfind'
-alias km='kmon -u'
 alias mi='mediainfo'
 
 # git
@@ -66,7 +64,7 @@ alias ya='yadm add'
 alias yp='yadm push -u origin master'
 
 # pywal
-alias wal='wal -o wal-berry.sh -o wal-dunst.sh -o wal-glava.sh -o wal-cava.sh'
+alias wal='wal -o wal-berry.sh -o wal-cava.sh -o wal-dunst.sh -o wal-glava.sh'
 alias w1='wal --theme random_user'
 alias w2='wal --theme random'
 
@@ -78,9 +76,3 @@ alias rnm='sudo systemctl restart network-manager'
 alias s1='sudo make install'
 alias s2='sudo make PREFIX=/usr/local install'
 alias s3='sudo ninja -C build install'
-
-# pacman
-alias pq='pacman -Qm'
-
-# systemctl
-alias sct='systemctl --user list-timers --all'
