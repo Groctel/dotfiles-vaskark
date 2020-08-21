@@ -86,4 +86,4 @@ alias jctl='journalctl -p 3 -xb'
 # pacman
 alias unlock='sudo rm /var/lib/pacman/db.lck'
 alias cleanup='sudo pacman -Rns $(pacman -Qtdq)'
-alias mirror='sudo reflector -f 30 -l 30 -n 12 --sort rate --verbose --save /etc/pacman.d/mirrorlist'
+alias mirror='sudo --country 'United States' --latest 5 --sort rate --verbose --save /etc/pacman.d/mirrorlist'
