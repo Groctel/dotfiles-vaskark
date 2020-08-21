@@ -554,7 +554,6 @@ label-foreground = ${colors.color0}
 label-padding = 2
 
 ##################################################
-##################################################
 
 [module/blur]
 type = custom/text
