@@ -69,6 +69,8 @@ cmap <C-e> <end>
 
 " Nerdtree toggle
 map <C-n> :NERDTreeToggle<CR>
+" let g:NERDTreeDirArrowExpandable = ''
+" let g:NERDTreeDirArrowCollapsible = ''
 
 " Control-S Save
 nmap <C-S> :w<cr>
