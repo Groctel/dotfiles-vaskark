@@ -83,7 +83,7 @@ alias s3='sudo ninja -C build install'
 # journal
 alias jctl='journalctl -p 3 -xb'
 
-# pacman
+# arch
 alias unlock='sudo rm /var/lib/pacman/db.lck'
 alias cleanup='sudo pacman -Rns $(pacman -Qtdq)'
 alias mirror='sudo --country 'United States' --latest 5 --sort rate --verbose --save /etc/pacman.d/mirrorlist'

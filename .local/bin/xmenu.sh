@@ -1,8 +1,8 @@
 #!/bin/sh
 
 cat <<EOF | xmenu | sh &
-Alacritty		alacritty
-Chrome			google-chrome-stable
+Term		alacritty
+Web		google-chrome-stable
 
 Apps
 	Appearance	lxappearance
