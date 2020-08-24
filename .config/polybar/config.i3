@@ -261,7 +261,7 @@ type = internal/mpd
 host = 127.0.0.1
 port = 6600
 
-label-song = %{A1:mpc toggle:}%{A2:kitty -e ncmpcpp:}%{A3:mpc next:}%{A8:mpc prev:}%artist%  //  %title%%{A}%{A}%{A}%{A}
+label-song = %{A1:mpc toggle:}%{A2:kitty -e ncmpcpp:}%{A3:mpc next:}%{A8:mpc prev:}%artist% // %title%%{A}%{A}%{A}%{A}
 
 format-online = <label-song>
 label-song-background = ${colors.color2}
@@ -553,7 +553,6 @@ label-background = ${colors.color2}
 label-foreground = ${colors.color0}
 label-padding = 2
 
-##################################################
 ##################################################
 
 [module/blur]
