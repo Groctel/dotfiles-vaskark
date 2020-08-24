@@ -134,9 +134,6 @@ export PF_SEP=":"
 export PF_COL1=2
 export PF_COL2=4
 
-# fzf
-alias se='nvim $(fzf)'
-
 # completion for kitty
 autoload -Uz compinit
 compinit
@@ -150,6 +147,9 @@ kitty + complete setup zsh | source /dev/stdin
 (cat ~/.cache/wal/sequences &)
 #(cat ~/.config/wpg/sequences &)
 #export color1_alpha="#22${color1/'#'}"
+
+# fzf
+alias se='nvim $(fzf)'
 
 # fzf
 export FZF_DEFAULT_OPTS='--border'
