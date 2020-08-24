@@ -479,8 +479,7 @@ label = " %percentage_used%%"
 
 [module/mpd]
 type = internal/mpd
-host = 127.0.0.1
-port = 6601
+include-file = "~/.config/polybar/mpd.ini"
 
 interval = 2
 
@@ -502,8 +501,7 @@ label-offline = "MPD is offline"
 
 [module/mpd_i]
 type = internal/mpd
-host = 127.0.0.1
-port = 6601
+include-file = "~/.config/polybar/mpd.ini"
 
 interval = 2
 
