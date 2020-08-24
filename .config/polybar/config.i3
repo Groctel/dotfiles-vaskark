@@ -258,8 +258,7 @@ label-empty-padding = 2
 
 [module/mpd]
 type = internal/mpd
-host = 127.0.0.1
-port = 6600
+include-file = "~/.config/polybar/mpd.ini"
 
 label-song = %{A1:mpc toggle:}%{A2:kitty -e ncmpcpp:}%{A3:mpc next:}%{A8:mpc prev:}%artist% // %title%%{A}%{A}%{A}%{A}
 
@@ -288,8 +287,7 @@ label-song-ellipsis = true
 
 [module/mpd-t]
 type = internal/mpd
-host = 127.0.0.1
-port = 6600
+include-file = "~/.config/polybar/mpd.ini"
 
 label-time = [%elapsed%/%total%]
 
@@ -302,8 +300,7 @@ format-online-padding = 2
 
 [module/mpd-c]
 type = internal/mpd
-host = 127.0.0.1
-port = 6600
+include-file = "~/.config/polybar/mpd.ini"
 
 format-online = <icon-prev>  <toggle>  <icon-next>
 format-online-background = ${colors.color2}
