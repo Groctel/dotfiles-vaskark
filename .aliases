@@ -43,6 +43,7 @@ alias egrep='egrep --color-auto'
 
 # git
 alias gc='git commit -a'
+alias ga='git add'
 alias gp='git pull'
 alias gl='git log'
 alias gs='git status'
@@ -51,6 +52,8 @@ alias gs='git status'
 alias yc='yadm commit -a'
 alias ya='yadm add'
 alias yp='yadm push -u origin master'
+alias yl='yadm log'
+alias ys='yadm status'
 
 # neofetch
 alias nf0='clear;neofetch --config none'
@@ -88,4 +91,5 @@ alias jctl='journalctl -p 3 -xb'
 # arch
 alias unlock='sudo rm /var/lib/pacman/db.lck'
 alias cleanup='sudo pacman -Rns $(pacman -Qtdq)'
-alias mirror='sudo --country 'United States' --latest 5 --sort rate --verbose --save /etc/pacman.d/mirrorlist'
+alias mr='sudo reflector --country 'United States' --latest 5 --sort rate --save /etc/pacman.d/mirrorlist'
+alias ma='sudo reflector --country 'United States' --latest 5 --sort age --save /etc/pacman.d/mirrorlist'
