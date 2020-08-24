@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/jason/Pictures/iovq987kizi51-m.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#09090c",
+        "foreground": "#fffdf9",
+        "cursor": "#fffdf9"
+    },
+    "colors": {
+        "color0": "#09090c",
+        "color1": "#C45C56",
+        "color2": "#966765",
+        "color3": "#B78B75",
+        "color4": "#81748C",
+        "color5": "#4F4046",
+        "color6": "#645256",
+        "color7": "#cac5c2",
+        "color8": "#1e1e28",
+        "color9": "#ff675d",
+        "color10": "#d37673",
+        "color11": "#ffae84",
+        "color12": "#a986c6",
+        "color13": "#6f4959",
+        "color14": "#8d5e69",
+        "color15": "#fffdf9"
+    }
+}
