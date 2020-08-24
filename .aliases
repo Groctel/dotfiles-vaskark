@@ -39,7 +39,7 @@ alias p='pipes'
 alias fd='fdfind'
 alias mi='mediainfo'
 alias grep='grep --color=auto'
-alias egrep='egrep --color-auto'
+alias egrep='egrep --color=auto'
 
 # git
 alias gc='git commit -a'
