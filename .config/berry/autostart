@@ -1,9 +1,9 @@
 #!/bin/sh
 
 # Set startup apps
+mpd &
 xclickroot -r xmenu.sh &
 wal -R -o wal-berry.sh -o wal-cava.sh -o wal-dunst.sh -o wal-glava.sh &
-polybar-bottom.sh &
 sxhkd -c $HOME/.config/berry/sxhkdrc &
 redshift.sh &
 xautolock.sh &
@@ -11,7 +11,7 @@ picom-blur.sh &
 dunst &
 libinput-gestures &
 /usr/lib/policykit-1-gnome/polkit-gnome-authentication-agent-1 &
-mpd &
+polybar-bottom.sh &
 
 # Set decoration geometry
 berryc border_width         0
