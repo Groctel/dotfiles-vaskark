@@ -493,11 +493,11 @@ format-online-padding = 2
 #format-online-prefix-foreground = ${color.fg-alt}
 #format-online-prefix-padding = 2
 
-label-song = %{A1:mpc toggle:}%{A2:kitty -e ncmpcpp:}%{A3:mpc next:}%{A8:mpc prev:}%artist%  >>  %title%%{A}%{A}%{A}%{A}
+label-song = %{A1:mpc toggle >/dev/null 2>&1:}%{A2:kitty -e ncmpcpp >/dev/null 2>&1:}%{A3:mpc next >/dev/null 2>&1:}%{A8:mpc prev >/dev/null 2>&1:}%artist% // %title%%{A}%{A}%{A}%{A}
 label-song-maxlen = 
 label-song-ellipsis = true
 
-label-offline = "MPD is offline"
+label-offline = MPD offline :(
 
 [module/mpd_i]
 type = internal/mpd
@@ -510,7 +510,7 @@ format-online-background = ${color.shade1}
 format-online-foreground = ${color.fg-alt}
 format-online-padding = 2
 
-label-offline = "MPD is offline"
+label-offline = MPD offline :(
 
 ; Only applies if <icon-X> is used
 icon-play = 

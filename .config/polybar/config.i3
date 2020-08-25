@@ -260,7 +260,7 @@ label-empty-padding = 2
 type = internal/mpd
 include-file = "~/.config/polybar/mpd.ini"
 
-label-song = %{A1:mpc toggle:}%{A2:kitty -e ncmpcpp:}%{A3:mpc next:}%{A8:mpc prev:}%artist% // %title%%{A}%{A}%{A}%{A}
+label-song = %{A1:mpc toggle >/dev/null 2>&1:}%{A2:kitty -e ncmpcpp >/dev/null 2>&1:}%{A3:mpc next >/dev/null 2>&1:}%{A8:mpc prev >/dev/null 2>&1:}%artist% // %title%%{A}%{A}%{A}%{A}
 
 format-online = <label-song>
 label-song-background = ${colors.color2}
