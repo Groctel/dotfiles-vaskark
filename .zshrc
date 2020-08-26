@@ -167,7 +167,7 @@ if [[ $TERM == xterm-termite ]]; then
 fi
 
 # pure prompt (omz turned off above)
-fpath+=$HOME/work/pure
+fpath+=/usr/share/pure
 autoload -U promptinit; promptinit
 source ~/.pure
 prompt pure
