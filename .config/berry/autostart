@@ -1,11 +1,11 @@
 #!/bin/sh
 
 # Set startup apps
-mpd &
 xclickroot -r xmenu.sh &
 wal -R -o wal-berry.sh -o wal-cava.sh -o wal-dunst.sh -o wal-glava.sh &
 sxhkd -c $HOME/.config/berry/sxhkdrc &
 redshift.sh &
+mpd &
 xautolock.sh &
 picom-blur.sh &
 dunst &
