@@ -9,6 +9,7 @@ xautolock.sh &
 libinput-gestures &
 /usr/lib/policykit-1-gnome/polkit-gnome-authentication-agent-1 &
 wal -R -o wal-berry.sh -o wal-cava.sh -o wal-dunst.sh -o wal-glava.sh &
+xclickroot -r xmenu.sh &
 
 # relaunch sowm if the binary changes, otherwise bail
 csum=$(sha1sum $(which sowm))
