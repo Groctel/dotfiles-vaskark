@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/jason/Pictures/wp4068042-mulholland-drive-wallpapers-m.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#0a0f14",
+        "foreground": "#caffff",
+        "cursor": "#caffff"
+    },
+    "colors": {
+        "color0": "#0a0f14",
+        "color1": "#c33027",
+        "color2": "#26a98b",
+        "color3": "#edb54b",
+        "color4": "#33859d",
+        "color5": "#4e5165",
+        "color6": "#195465",
+        "color7": "#98d1ce",
+        "color8": "#1a2735",
+        "color9": "#ff3023",
+        "color10": "#23e9bc",
+        "color11": "#fff14d",
+        "color12": "#34b4d9",
+        "color13": "#59608e",
+        "color14": "#18718b",
+        "color15": "#caffff"
+    }
+}

@@ -17,7 +17,7 @@ export ZSH=/usr/share/oh-my-zsh
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
-ZSH_THEME="p10k"
+ZSH_THEME=""
 
 # Specific theme settings
 source ~/.spaceship
@@ -149,9 +149,6 @@ kitty + complete setup zsh | source /dev/stdin
 #export color1_alpha="#22${color1/'#'}"
 
 # fzf
-alias se='nvim $(fzf)'
-
-# fzf
 export FZF_DEFAULT_OPTS='--border'
 #export FZF_DEFAULT_COMMAND='fd --type f'
 export FZF_CTRL_T_OPTS="--preview '(highlight -O ansi -l {} 2> /dev/null || cat {} || tree -C {}) 2> /dev/null | head -200'"
@@ -168,3 +165,9 @@ if [[ $TERM == xterm-termite ]]; then
     . /usr/local/etc/profile.d/vte.sh
     __vte_osc7
 fi
+
+# pure prompt (omz turned off above)
+fpath+=$HOME/work/pure
+autoload -U promptinit; promptinit
+source ~/.pure
+prompt pure
