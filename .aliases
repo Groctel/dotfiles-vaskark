@@ -48,6 +48,8 @@ alias gp='git pull'
 alias gl='git log'
 alias gs='git status'
 
+alias rmch='make clean && rm config.h'
+
 # yadm
 alias yc='yadm commit -a'
 alias ya='yadm add'
