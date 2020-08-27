@@ -175,3 +175,6 @@ PURE_CMD_MAX_EXEC_TIME=5
 #zstyle :prompt:pure:path color white
 #zstyle ':prompt:pure:prompt:*' color magenta
 zstyle :prompt:pure:git:stash show yes
+
+# vi mode
+# bindkey -v
