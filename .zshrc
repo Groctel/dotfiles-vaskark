@@ -20,7 +20,7 @@ export ZSH=/usr/share/oh-my-zsh
 ZSH_THEME=""
 
 # Specific theme settings
-source ~/.spaceship
+#source ~/.spaceship
 #source ~/.powerlevel
 #source ~/.bullet-train
 
