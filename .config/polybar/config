@@ -60,7 +60,7 @@ bottom = true
 enable-ipc = true
 
 ;offset-x = 2%
-offset-y = 1.8%
+;offset-y = 1.8%
 
 background = transparent
 foreground =
@@ -68,11 +68,11 @@ foreground =
 line-size =
 line-color =
 
-border-size = 0
+border-size = 15
 border-color = transparent
 
-padding-left = 4
-padding-right = 4
+padding-left = 0
+padding-right = 0
 
 module-margin-left = 0
 module-margin-right = 0

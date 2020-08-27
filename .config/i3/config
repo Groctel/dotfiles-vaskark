@@ -17,7 +17,7 @@ font xft:scientifica bold 8
 hide_edge_borders none
 
 # change borders
-#bindsym $mod+u border normal 2
+bindsym $mod+u border normal 2
 bindsym $mod+i border normal 0
 bindsym $mod+o border pixel 2
 bindsym $mod+p border none
@@ -210,7 +210,7 @@ bindsym $mod+Escape exec lock.sh
 # app bindings
 bindsym $mod+F1 exec --no-startup-id nautilus
 bindsym $mod+F2 exec --no-startup-id google-chrome-stable
-bindsym $mod+F3 exec --no-startup-id kitty --class Float -e ncmpcpp
+bindsym $mod+F3 exec --no-startup-id $term --class Float -e ncmpcpp
 bindsym $mod+Shift+e exec --no-startup-id gedit ~/.config/i3/config
 
 # mpd controls
