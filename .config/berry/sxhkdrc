@@ -135,11 +135,11 @@ super + shift +  {Left, Down, Up, Right}
 super + control + shift +  {Left, Down, Up, Right}
     berryc window_resize {-10 0, 0 10, 0 -10, 10 0}
 
-super + {1-9}
-    berryc switch_workspace {0-9}
+super + {1-5}
+    berryc switch_workspace {0-5}
 
-super + shift + {1-9}
-    berryc send_to_workspace {0-9}
+super + shift + {1-5}
+    berryc send_to_workspace {0-5}
 
 super + m
     berryc window_monocle
