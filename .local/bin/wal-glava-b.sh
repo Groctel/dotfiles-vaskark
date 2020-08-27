@@ -13,4 +13,4 @@ sed -i "s|#define COLOR.*$|#define COLOR @fg:mix($color2, $color10, clamp(d / GR
 
 # restart glava
 killall -q glava
-glava -d m bars &
+glava -d m bars -a fifo &
