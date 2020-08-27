@@ -168,6 +168,10 @@ fi
 # pure prompt (omz turned off above)
 fpath+=/usr/share/pure
 autoload -U promptinit; promptinit
-source ~/.pure
 #source ~/.zsh/vim.zsh
 prompt pure
+
+PURE_CMD_MAX_EXEC_TIME=5
+#zstyle :prompt:pure:path color white
+#zstyle ':prompt:pure:prompt:*' color magenta
+zstyle :prompt:pure:git:stash show yes
