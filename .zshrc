@@ -169,5 +169,5 @@ fi
 fpath+=/usr/share/pure
 autoload -U promptinit; promptinit
 source ~/.pure
-source ~/.zsh/vim.zsh
+#source ~/.zsh/vim.zsh
 prompt pure
