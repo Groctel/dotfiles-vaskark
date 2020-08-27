@@ -146,7 +146,6 @@ kitty + complete setup zsh | source /dev/stdin
 # pywal
 (cat ~/.cache/wal/sequences &)
 #(cat ~/.config/wpg/sequences &)
-#export color1_alpha="#22${color1/'#'}"
 
 # fzf
 export FZF_DEFAULT_OPTS='--border'
