@@ -9,8 +9,8 @@
 export PATH=$HOME/.local/bin:$PATH
 
 # General
-export TERM="xterm-256color"
-export EDITOR=nvim
+#export TERM="xterm-256color"
+#export EDITOR=nvim
 
 # pfetch
 export PF_INFO="os kernel uptime shell wm memory"

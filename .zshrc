@@ -29,6 +29,9 @@ kitty + complete setup zsh | source /dev/stdin
 bindkey -v
 export KEYTIMEOUT=1
 
+# emacs mode
+#bindkey -e
+
 # Use vim keys in tab complete menu:
 bindkey -M menuselect 'h' vi-backward-char
 bindkey -M menuselect 'k' vi-up-line-or-history
@@ -68,9 +71,6 @@ lfcd () {
     fi
 }
 bindkey -s '^o' 'lfcd\n'
-
-# Calc 
-bindkey -s '^a' 'bc -l\n'
 
 # Edit line in vim with ctrl-e:
 autoload edit-command-line; zle -N edit-command-line
