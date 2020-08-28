@@ -2,9 +2,9 @@
 
 . "${HOME}/.cache/wal/colors.sh"
 
-insidecolor=00000000
-ringcolor=ffffffff
-keyhlcolor=d23c3dff
+insidecolor="$color8"ff
+ringcolor="$color7"ff
+keyhlcolor="$color1"ff
 bshlcolor=d23c3dff
 separatorcolor=00000000
 insidevercolor=00000000
