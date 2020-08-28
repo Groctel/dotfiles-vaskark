@@ -1,8 +1,3 @@
-# Exports
-export TERM="xterm-256color"
-export EDITOR=nvim
-export SSH_KEY_PATH="~/.ssh/id_rsa"
-
 # Pure prompt
 fpath+=/usr/share/pure
 autoload -U promptinit; promptinit
@@ -83,20 +78,8 @@ source /usr/share/oh-my-zsh/plugins/command-not-found/command-not-found.plugin.z
 source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh 2>/dev/null
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh 2>/dev/null
 
-# Misc
-# pywal colors for some terms
+# Pywal colors for some terms
 (cat ~/.cache/wal/sequences &)
 
-# pfetch
-export PF_INFO="os kernel uptime shell wm memory"
-export PF_SEP=":"
-export PF_COL1=2
-export PF_COL2=4
-
-# fzf
-export FZF_DEFAULT_OPTS='--border'
-export FZF_CTRL_T_OPTS="--preview '(highlight -O ansi -l {} 2> /dev/null || cat {} || tree -C {}) 2> /dev/null | head -200'"
-export FZF_CTRL_R_OPTS="--preview 'echo {}' --preview-window down:3:hidden:wrap --bind '?:toggle-preview'"
-export FZF_ALT_C_OPTS="--preview 'tree -C {} | head -200'"
+# Fzf
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
-
