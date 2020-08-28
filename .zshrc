@@ -68,7 +68,7 @@ bindkey -s '^o' 'lfcd\n'
 autoload edit-command-line; zle -N edit-command-line
 bindkey '^e' edit-command-line
 
-# Load aliases and shortcuts if existent.
+# Load aliases
 [ -f "$HOME/.aliases" ] && source "$HOME/.aliases"
 
 # Plugins
