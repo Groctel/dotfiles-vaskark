@@ -72,8 +72,9 @@ alias wsc='windscribe connect'
 alias wsd='windscribe disconnect'
 
 # pywal
-alias w1='wal --theme random_user -o wal-berry.sh -o wal-dunst.sh -o wal-glava.sh'
-alias w2='wal --theme random -o wal-berry.sh -o wal-dunst.sh -o wal-glava.sh'
+alias wal='wal -o wal-berry.sh -o wal-dunst.sh -o wal-glava.sh'
+alias w1='wal -f random_user'
+alias w2='wal -f random'
 
 # superuser
 alias reboot='sudo reboot'
