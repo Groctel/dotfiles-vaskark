@@ -46,6 +46,8 @@ alias ping='ping -a -c 5'
 alias path='print -l $path'
 alias mkdir='mkdir -pv'
 
+alias -s html=google-chrome-stable
+
 # git
 alias gc='git commit -a'
 alias ga='git add'

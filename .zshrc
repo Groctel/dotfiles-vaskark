@@ -88,7 +88,7 @@ zsh_reload
 command-not-found
 extract
 colored-man-pages
-#zsh-autosuggestions
+zsh-autosuggestions
 #zsh-interactive-cd
 #vi-mode
 wd
@@ -135,10 +135,10 @@ export PF_SEP=":"
 export PF_COL1=2
 export PF_COL2=4
 
-# completion for kitty
+# completion
 autoload -Uz compinit
 compinit
-# Completion for kitty
+# completion for kitty
 kitty + complete setup zsh | source /dev/stdin
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
