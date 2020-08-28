@@ -1,1 +1,1 @@
-/home/jason/.zprofile
+.zprofile
