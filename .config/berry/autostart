@@ -7,7 +7,6 @@ sxhkd -c $HOME/.config/berry/sxhkdrc &
 redshift.sh &
 xautolock.sh &
 picom-blur.sh &
-dunst &
 libinput-gestures &
 /usr/lib/policykit-1-gnome/polkit-gnome-authentication-agent-1 &
 polybar-bottom.sh &
