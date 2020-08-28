@@ -35,11 +35,21 @@ Internet
 	Chrome		google-chrome
 	Firefox	firefox
 	Transmission	transmission-gtk
+Office
+	LibreOffice	libreoffice
+	
+	Base		lobase
+	Calc		localc
+	Draw		lodraw
+	Impress	loimpress
+	Math		lomath
+	Writer		lowriter
 System
 	Bleachbit	pkexec bleachbit
 	Boxes		gnome-boxes
 	Firewall	gufw-pkexec
 	Logs		gnome-system-log-pkexec
+	Gnome Logs	gnome-logs
 	Monitor	gnome-system-monitor
 	Nautilus	nautilus-pkexec
 	Nemo		nemo-pkexec
