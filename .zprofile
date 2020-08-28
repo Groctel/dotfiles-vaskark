@@ -1,5 +1,15 @@
+#!/bin/zsh
+
+# zsh profile file. Runs on login. Environmental variables are set here.
+
+# If you don't plan on reverting to bash, you can remove the link in ~/.profile
+# to clean up.
+
+# Adds `~/.local/bin` to $PATH
+export PATH=$HOME/.local/bin:$PATH
+
+# General
 export TERM="xterm-256color"
-#export PATH=$HOME/.local/bin:$PATH
 export EDITOR=nvim
 
 # pfetch

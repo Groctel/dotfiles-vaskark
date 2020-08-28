@@ -12,7 +12,7 @@ PURE_CMD_MAX_EXEC_TIME=5
 # History in cache directory:
 HISTSIZE=10000
 SAVEHIST=10000
-HISTFILE=~/.cache/zsh/history
+HISTFILE=~/.zhistory
 
 # Basic auto/tab complete:
 autoload -U compinit
@@ -68,6 +68,9 @@ lfcd () {
     fi
 }
 bindkey -s '^o' 'lfcd\n'
+
+# Calc 
+bindkey -s '^a' 'bc -l\n'
 
 # Edit line in vim with ctrl-e:
 autoload edit-command-line; zle -N edit-command-line
