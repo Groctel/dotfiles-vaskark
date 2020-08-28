@@ -8,8 +8,8 @@ transparency = 0
 separator_height = 2
 padding = 10 
 horizontal_padding = 10
-frame_width = 0
-frame_color = "{color10}"
+frame_width = 1
+frame_color = "{color0}"
 separator_color = frame
 sort = yes
 idle_threshold = 10
@@ -40,16 +40,16 @@ context = ctrl+shift+period
 [urgency_low]
 background = "{color10}"
 foreground = "{color0}"
-timeout = 20
+timeout = 10
 
 [urgency_normal]
 background = "{color2}"
 foreground = "{color0}"
-timeout = 20
+timeout = 10
 
 [urgency_critical]
 background = "{color1}"
 foreground = "{color0}"
-timeout = 30
+timeout = 20
 
 # vim: ft=cfg
