@@ -110,5 +110,7 @@ cmd video_preview ${{
 map + :video_preview
 
 # preview
-map p $~/.config/lf/preview.sh "$f"
+map ] $~/.config/lf/preview.sh "$f"
+
+set relativenumber on
 
