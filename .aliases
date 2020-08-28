@@ -5,7 +5,7 @@ alias mv='mv -i'
 alias df='df -H | grep sda'
 alias du='du -d 1 -h'
 alias cd..='cd ..'
-alias hc='history -c;clear'
+alias hc='history -c;src'
 alias free='free -m'
 
 alias ls='lsd'
