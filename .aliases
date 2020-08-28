@@ -1,5 +1,5 @@
 # general
-alias rz='source ~/.zshrc && src'
+alias rz='source ~/.zshrc'
 
 alias rm='rm -i'
 alias cp='cp -i'
@@ -7,7 +7,7 @@ alias mv='mv -i'
 alias df='df -H | grep sda'
 alias du='du -d 1 -h'
 alias cd..='cd ..'
-alias hc='history -c;src'
+alias hc='history -c'
 alias free='free -m'
 
 alias ls='lsd'
