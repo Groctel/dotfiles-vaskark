@@ -5,6 +5,10 @@ prompt pure
 PURE_CMD_MAX_EXEC_TIME=5
 zstyle :prompt:pure:git:stash show yes
 
+# Enable colors and prompt:
+#autoload -U colors && colors
+#PS1="%B%{$fg[red]%}[%{$fg[yellow]%}%n%{$fg[green]%}@%{$fg[blue]%}%M %{$fg[magenta]%}%~%{$fg[red]%}]%{$reset_color%}$%b "
+
 # History in cache directory:
 HISTSIZE=10000
 SAVEHIST=10000
@@ -69,7 +73,7 @@ bindkey -s '^o' 'lfcd\n'
 autoload edit-command-line; zle -N edit-command-line
 bindkey '^e' edit-command-line
 
-# Load aliases
+# Aliases
 [ -f "$HOME/.aliases" ] && source "$HOME/.aliases"
 
 # Plugins
