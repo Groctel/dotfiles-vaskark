@@ -1,5 +1,7 @@
 # configuration file for betterlockscreen
 
+. "${HOME}/.cache/wal/colors.sh"
+
 insidecolor=00000000
 ringcolor=ffffffff
 keyhlcolor=d23c3dff
@@ -10,9 +12,9 @@ insidewrongcolor=d23c3dff
 ringvercolor=ffffffff
 ringwrongcolor=ffffffff
 verifcolor=ffffffff
-timecolor=ffffffff
-datecolor=ffffffff
-loginbox=00000066
+timecolor="$color2"ff
+datecolor="$color2"ff
+loginbox="$color0"66
 font="scientifica"
 locktext='Type password to unlock...'
 wallpaper_cmd='nitrogen --set-zoom-fill'

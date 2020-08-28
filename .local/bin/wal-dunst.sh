@@ -31,5 +31,5 @@ sed -i "s/background = .*/background = \"$color02\"/g" ~/.config/dunst/dunstrc
 sed -i "s/foreground = .*/foreground = \"$color00\"/g" ~/.config/dunst/dunstrc
 sed -i "s/frame_color = .*/frame_color = \"$color02\"/g" ~/.config/dunst/dunstrc
 
-pkill dunst
+killall -9 dunst
 dunst &
