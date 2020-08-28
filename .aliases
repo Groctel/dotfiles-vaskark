@@ -7,7 +7,7 @@ alias mv='mv -i'
 alias df='df -H | grep sda'
 alias du='du -d 1 -h'
 alias cd..='cd ..'
-alias hc='history -c'
+alias hc='rm -rf ~/.cache/zsh/history;echo "History cleared!";clear'
 alias free='free -m'
 
 alias ls='lsd'
@@ -42,10 +42,11 @@ alias fd='fdfind'
 alias mi='mediainfo'
 alias grep='grep --color=auto'
 alias egrep='egrep --color=auto'
-alias ping='ping -a -c 5'
+alias ping='ping -c 5'
 alias path='print -l $path'
 alias mkdir='mkdir -pv'
 
+# suffix
 alias -s html=google-chrome-stable
 
 # git
@@ -73,7 +74,6 @@ alias nfs='clear;neofetch --config ~/.config/neofetch/config-small.conf'
 alias up='nmcli c u'
 alias dn='nmcli c d'
 alias ndw='nmcli d wifi'
-alias myip="curl http://ipecho.net/plain; echo"
 
 # windscribe
 alias wsc='windscribe connect'

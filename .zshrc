@@ -2,8 +2,8 @@
 fpath+=/usr/share/pure
 autoload -U promptinit; promptinit
 prompt pure
-PURE_CMD_MAX_EXEC_TIME=5
 zstyle :prompt:pure:git:stash show yes
+PURE_CMD_MAX_EXEC_TIME=5
 
 # Enable colors and prompt:
 #autoload -U colors && colors
