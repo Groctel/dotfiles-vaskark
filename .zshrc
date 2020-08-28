@@ -88,6 +88,7 @@ themes
 command-not-found
 extract
 colored-man-pages
+zsh-autosuggestions
 #zsh-interactive-cd
 #vi-mode
 wd

@@ -1,4 +1,6 @@
 # general
+alias rz='source ~/.zshrc'
+
 alias rm='rm -i'
 alias cp='cp -i'
 alias mv='mv -i'
@@ -66,6 +68,7 @@ alias nfs='clear;neofetch --config ~/.config/neofetch/config-small.conf'
 alias up='nmcli c u'
 alias dn='nmcli c d'
 alias ndw='nmcli d wifi'
+alias myip="curl http://ipecho.net/plain; echo"
 
 # windscribe
 alias wsc='windscribe connect'
