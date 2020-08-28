@@ -1,5 +1,5 @@
 # general
-alias rz='source ~/.zshrc'
+alias rz='source ~/.zshrc && src'
 
 alias rm='rm -i'
 alias cp='cp -i'

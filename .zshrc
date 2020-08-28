@@ -81,14 +81,14 @@ HIST_STAMPS="yyyy-mm-dd"
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
 git
-mercurial
+#mercurial
 zsh_reload
 systemadmin
 themes
 command-not-found
 extract
 colored-man-pages
-zsh-autosuggestions
+#zsh-autosuggestions
 #zsh-interactive-cd
 #vi-mode
 wd
