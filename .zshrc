@@ -14,9 +14,6 @@ if [[ -n $SSH_CONNECTION ]]; then
    export EDITOR='nvim'
 fi
 
-# Compilation flags
-# export ARCHFLAGS="-arch x86_64"
-
 # ssh
 export SSH_KEY_PATH="~/.ssh/id_rsa"
 
@@ -37,9 +34,6 @@ compinit
 # Completion for kitty
 kitty + complete setup zsh | source /dev/stdin
 
-# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
-[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
-
 # pywal
 (cat ~/.cache/wal/sequences &)
 #(cat ~/.config/wpg/sequences &)
@@ -52,9 +46,6 @@ export FZF_CTRL_R_OPTS="--preview 'echo {}' --preview-window down:3:hidden:wrap 
 export FZF_ALT_C_OPTS="--preview 'tree -C {} | head -200'"
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
-
-# gitstatus
-#GITSTATUS_LOG_LEVEL=DEBUG
 
 # termite
 if [[ $TERM == xterm-termite ]]; then
