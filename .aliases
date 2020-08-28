@@ -42,6 +42,9 @@ alias fd='fdfind'
 alias mi='mediainfo'
 alias grep='grep --color=auto'
 alias egrep='egrep --color=auto'
+alias ping='ping -a -c 5'
+alias path='print -l $path'
+alias mkdir='mkdir -pv'
 
 # git
 alias gc='git commit -a'

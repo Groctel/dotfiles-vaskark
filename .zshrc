@@ -83,8 +83,8 @@ plugins=(
 git
 #mercurial
 zsh_reload
-systemadmin
-themes
+#systemadmin
+#themes
 command-not-found
 extract
 colored-man-pages
