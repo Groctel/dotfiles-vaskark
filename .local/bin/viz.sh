@@ -1,4 +1,4 @@
 #!/bin/bash
 # Toggle visualizer:
 # Kill it if it is running or spawn it if it is not running
-xdotool search --class Visualizer &>/dev/null && (ps x | grep "kitty --class Visualizer" | grep -v grep | awk '{print $1}' | xargs kill) || kitty --class Visualizer -o background_opacity=0 -o font_size=6 -o window_margin_width=0 -e cava &
+xdotool search --class Visualizer &>/dev/null && (ps x | grep "kitty --class Visualizer" | grep -v grep | awk '{print $1}' | xargs kill) || kitty --class Visualizer -o background_opacity=0 -o font_size=4 -o window_margin_width=0 -e cava &
