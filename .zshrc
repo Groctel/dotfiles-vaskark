@@ -1,4 +1,4 @@
-# Pure prompt
+# Pure
 fpath+=/usr/share/pure
 autoload -U promptinit; promptinit
 prompt pure
