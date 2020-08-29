@@ -13,6 +13,11 @@ zmodload zsh/complist
 compinit
 _comp_options+=(globdots)		# Include hidden files.
 
+# History in cache directory:
+HISTSIZE=10000
+SAVEHIST=10000
+HISTFILE=~/.cache/zsh/history
+
 # Completion for kitty
 kitty + complete setup zsh | source /dev/stdin
 
@@ -34,5 +39,5 @@ source /usr/share/oh-my-zsh/custom/plugins/zsh-syntax-highlighting/zsh-syntax-hi
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 # Vi (v) or emacs (e) [forced]
-bindkey -e
-export KEYTIMEOUT=1
+#bindkey -v
+#export KEYTIMEOUT=1
