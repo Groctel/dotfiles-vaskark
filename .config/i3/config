@@ -219,8 +219,8 @@ bindsym Mod1+F11 exec --no-startup-id mpc toggle
 bindsym Mod1+F12 exec --no-startup-id mpc next
 
 # wal controls
-bindsym $mod+F12 exec --no-startup-id wal -f random_user -o wal-extras.sh
-bindsym $mod+Shift+F12 exec --no-startup-id wal -R -o wal-extras.sh
+bindsym $mod+F12 exec --no-startup-id wal -f random_user -o wal-berry.sh -o wal-dunst.sh -o wal-glava-b.sh 
+bindsym $mod+Shift+F12 exec --no-startup-id wal -R -o wal-berry.sh -o wal-dunst.sh -o wal-glava-b.sh 
 
 # picom controls
 bindsym Control+F12 exec --no-startup-id picom-blur.sh

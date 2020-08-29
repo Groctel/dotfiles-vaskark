@@ -23,7 +23,6 @@ color14=$(sed -n 15p ~/.cache/wal/colors)
 color15=$(sed -n 16p ~/.cache/wal/colors)
 
 ## Berry
-
 color00b=$(awk 'NR==1 {print substr($1,2,7)}' ~/.cache/wal/colors)
 color02b=$(awk 'NR==3 {print substr($1,2,7)}' ~/.cache/wal/colors)
 
@@ -36,8 +35,10 @@ berryc text_unfocus_color  $color02b
 sed -i "s|gradient_color_1.*$|gradient_color_1 = '$color02'|g" ~/.config/cava/config
 sed -i "s|gradient_color_2.*$|gradient_color_2 = '$color10'|g" ~/.config/cava/config
 
-## GLava
+## Dunst
+systemctl --user restart dunst
 
+## GLava
 color02g=$(sed -n 3p ~/.cache/wal/colors)FF # alpha
 color10g=$(sed -n 11p ~/.cache/wal/colors)AA # alpha
 
