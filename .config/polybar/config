@@ -82,7 +82,7 @@ font-1 = "siji:size=9;2"
 font-2 = "Weather Icons:size=8;2"
 font-3 = "JoyPixels:pixelsize=16;2:scale=12;2"
 
-modules-left = ewmh sep weather
+modules-left = ewmh sep powermenu
 modules-center =
 modules-right = mpd sep uptime battery wireless wired volume sep nmc wpg
 
@@ -479,8 +479,8 @@ time-alt =  %A %B %d %Y
 label = %time%
 
 format = <label>
-format-foreground = ${colors.color2}
-format-background = ${colors.color0}
+format-foreground = ${colors.color0}
+format-background = ${colors.color2}
 format-padding = 2
 
 ##################################################
@@ -584,6 +584,50 @@ click-right = wpg -r &
 content-background = ${colors.color4}
 content-foreground = ${colors.color0}
 content-padding = 1
+
+##################################################
+
+[module/powermenu]
+type = custom/menu
+expand-right = true
+
+format = <label-toggle><menu>
+
+label-open = 
+label-open-background = ${colors.color2}
+label-open-foreground = ${colors.color0}
+label-open-padding = 2
+
+label-close = 
+label-close-background = ${colors.color1}
+label-close-foreground = ${colors.color0}
+label-close-padding = 2
+
+label-separator = 
+label-separator-background = ${colors.color0}
+label-separator-foreground = ${colors.color2}
+label-separator-padding = 2
+
+menu-0-0 = "Logout"
+menu-0-0-exec = pkill x
+
+menu-0-1 = "Reboot"
+menu-0-1-exec = systemctl reboot
+
+menu-0-2 = "Shutdown"
+menu-0-2-exec = systemctl poweroff
+
+menu-0-0-background = ${colors.color0}
+menu-0-0-foreground = ${colors.color2}
+menu-0-0-padding = 2
+
+menu-0-1-background = ${colors.color0}
+menu-0-1-foreground = ${colors.color2}
+menu-0-1-padding = 0
+
+menu-0-2-background = ${colors.color0}
+menu-0-2-foreground = ${colors.color1}
+menu-0-2-padding = 2
 
 ##################################################
 ##################################################
