@@ -50,7 +50,62 @@ color15 = ${xrdb:color15:#dfdedd}
 ##############################################
 ##############################################
 
-[bar/main]
+[bar/top]
+;monitor = ${env:MONITOR:eDP-1}
+width = 100%
+height = 30
+radius = 0
+fixed-center = true
+bottom = false
+enable-ipc = true
+
+;offset-x = 2%
+;offset-y = 1.8%
+
+background = transparent
+foreground =
+
+line-size =
+line-color =
+
+border-size = 10
+border-color = transparent
+
+padding-left = 0
+padding-right = 0
+
+module-margin-left = 0
+module-margin-right = 0
+
+font-0 = "scientifica:bold:size=8;2"
+font-1 = "siji:size=9;2"
+font-2 = "Weather Icons:size=8;2"
+font-3 = "JoyPixels:pixelsize=16;2:scale=12;2"
+
+modules-left = powermenu
+modules-center =
+modules-right = date
+
+;dim-value = 0.8
+
+;tray-position = right
+;tray-padding = 2
+;tray-detached = false
+;tray-background = ${colors.color0}
+;tray-maxsize = 12
+
+;override-redirect = true
+;wm-restack = i3
+
+scroll-up = i3wm-wsnext
+scroll-down = i3wm-wsprev
+
+;cursor-click = pointer
+;cursor-scroll = ns-resize
+
+##################################################
+
+[bar/bottom]
 ;monitor = ${env:MONITOR:eDP-1}
 width = 100%
 height = 30
@@ -68,7 +123,7 @@ foreground =
 line-size =
 line-color =
 
-border-size = 15
+border-size = 10
 border-color = transparent
 
 padding-left = 0
@@ -82,7 +137,7 @@ font-1 = "siji:size=9;2"
 font-2 = "Weather Icons:size=8;2"
 font-3 = "JoyPixels:pixelsize=16;2:scale=12;2"
 
-modules-left = ewmh sep powermenu
+modules-left = ewmh sep weather
 modules-center =
 modules-right = mpd sep uptime battery wireless wired volume sep nmc wpg
 
