@@ -68,7 +68,7 @@ foreground =
 line-size =
 line-color =
 
-border-size = 10
+border-size = 15
 border-color = transparent
 
 padding-left = 0
@@ -94,7 +94,7 @@ modules-right = date
 ;tray-background = ${colors.color0}
 ;tray-maxsize = 12
 
-;override-redirect = true
+override-redirect = true
 ;wm-restack = i3
 
 scroll-up = i3wm-wsnext
@@ -123,7 +123,7 @@ foreground =
 line-size =
 line-color =
 
-border-size = 10
+border-size = 15
 border-color = transparent
 
 padding-left = 0
@@ -383,7 +383,7 @@ format-connected-background = ${colors.color0}
 format-connected-foreground = ${colors.color2}
 format-connected-padding = 2
 
-label-disconnected =  Disconnected
+label-disconnected = 
 
 format-disconnected = <label-disconnected>
 format-disconnected-background = ${colors.color0}
