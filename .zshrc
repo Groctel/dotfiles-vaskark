@@ -13,6 +13,16 @@ zmodload zsh/complist
 compinit
 _comp_options+=(globdots)		# Include hidden files.
 
+# disable globbing
+unsetopt nomatch
+
+# urls
+autoload -Uz bracketed-paste-magic
+zle -N bracketed-paste bracketed-paste-magic
+
+autoload -Uz url-quote-magic
+zle -N self-insert url-quote-magic
+
 # History in cache directory:
 HISTSIZE=10000
 SAVEHIST=10000
@@ -25,10 +35,10 @@ kitty + complete setup zsh | source /dev/stdin
 [ -f "$HOME/.aliases" ] && source "$HOME/.aliases"
 
 # Plugins
-source ~/.zsh/plugins/zsh-system-clipboard/zsh-system-clipboard.zsh 2>/dev/null
 source /usr/share/oh-my-zsh/plugins/extract/extract.plugin.zsh 2>/dev/null
 source /usr/share/oh-my-zsh/plugins/colored-man-pages/colored-man-pages.plugin.zsh 2>/dev/null
 source /usr/share/oh-my-zsh/plugins/command-not-found/command-not-found.plugin.zsh 2>/dev/null
+source /usr/share/oh-my-zsh/custom/plugins/zsh-system-clipboard/zsh-system-clipboard.zsh 2>/dev/null
 source /usr/share/oh-my-zsh/custom/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh 2>/dev/null
 source /usr/share/oh-my-zsh/custom/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh 2>/dev/null
 
