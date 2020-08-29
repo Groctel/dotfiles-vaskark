@@ -10,9 +10,9 @@ PURE_CMD_MAX_EXEC_TIME=5
 #PS1="%B%{$fg[red]%}[%{$fg[yellow]%}%n%{$fg[green]%}@%{$fg[blue]%}%M %{$fg[magenta]%}%~%{$fg[red]%}]%{$reset_color%}$%b "
 
 # History in cache directory:
-HISTSIZE=10000
-SAVEHIST=10000
-HISTFILE=~/.cache/.zsh_history
+#HISTSIZE=10000
+#SAVEHIST=10000
+#HISTFILE=~/.cache/.zsh_history
 
 # Basic auto/tab complete:
 autoload -U compinit
