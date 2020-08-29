@@ -20,7 +20,7 @@ kitty + complete setup zsh | source /dev/stdin
 [ -f "$HOME/.aliases" ] && source "$HOME/.aliases"
 
 # Plugins
-#source ~/.zsh/plugins/zsh-system-clipboard/zsh-system-clipboard.zsh
+source ~/.zsh/plugins/zsh-system-clipboard/zsh-system-clipboard.zsh
 source /usr/share/oh-my-zsh/plugins/extract/extract.plugin.zsh 2>/dev/null
 source /usr/share/oh-my-zsh/plugins/colored-man-pages/colored-man-pages.plugin.zsh 2>/dev/null
 source /usr/share/oh-my-zsh/plugins/command-not-found/command-not-found.plugin.zsh 2>/dev/null
