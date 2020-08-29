@@ -12,7 +12,7 @@ PURE_CMD_MAX_EXEC_TIME=5
 # History in cache directory:
 HISTSIZE=10000
 SAVEHIST=10000
-HISTFILE=~/.zhistory
+HISTFILE=~/.cache/.zsh_history
 
 # Basic auto/tab complete:
 autoload -U compinit
@@ -29,7 +29,7 @@ kitty + complete setup zsh | source /dev/stdin
 bindkey -v
 export KEYTIMEOUT=1
 
-# emacs mode
+# emacs mode (even if EDITOR is vi-like)
 #bindkey -e
 
 # Use vim keys in tab complete menu:
