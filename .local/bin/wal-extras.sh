@@ -24,24 +24,24 @@ color15=$(sed -n 16p ~/.cache/wal/colors)
 
 ## Berry
 
-color0b=$(awk 'NR==1 {print substr($1,2,7)}' ~/.cache/wal/colors)
-color2b=$(awk 'NR==3 {print substr($1,2,7)}' ~/.cache/wal/colors)
+color00b=$(awk 'NR==1 {print substr($1,2,7)}' ~/.cache/wal/colors)
+color02b=$(awk 'NR==3 {print substr($1,2,7)}' ~/.cache/wal/colors)
 
-berryc inner_focus_color   $color2b
-berryc text_focus_color    $color0b
-berryc inner_unfocus_color $color0b
-berryc text_unfocus_color  $color2b
+berryc inner_focus_color   $color02b
+berryc text_focus_color    $color00b
+berryc inner_unfocus_color $color00b
+berryc text_unfocus_color  $color02b
 
 ## Cava
-sed -i "s|gradient_color_1.*$|gradient_color_1 = '$color2'|g" ~/.config/cava/config
+sed -i "s|gradient_color_1.*$|gradient_color_1 = '$color02'|g" ~/.config/cava/config
 sed -i "s|gradient_color_2.*$|gradient_color_2 = '$color10'|g" ~/.config/cava/config
 
 ## GLava
 
-color2g=$(sed -n 3p ~/.cache/wal/colors)FF # alpha
+color02g=$(sed -n 3p ~/.cache/wal/colors)FF # alpha
 color10g=$(sed -n 11p ~/.cache/wal/colors)AA # alpha
 
-sed -i "s|#define COLOR.*$|#define COLOR @fg:mix($color2g, $color10g, clamp(d / GRADIENT, 0, 1))|g" ~/.config/glava/bars.glsl
+sed -i "s|#define COLOR.*$|#define COLOR @fg:mix($color02g, $color10g, clamp(d / GRADIENT, 0, 1))|g" ~/.config/glava/bars.glsl
 sed -i "s|#define FLIP.*$|#define FLIP 1|g" ~/.config/glava/bars.glsl
 
 # Check wm to decide orientation
