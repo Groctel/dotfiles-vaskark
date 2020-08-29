@@ -31,7 +31,6 @@ screenchange-reload = true
 ;xrdb, dkeg-skigh
 color0 = ${xrdb:color0:#252a32}
 color1 = ${xrdb:color1:#876058}
-;color1 = ${env:color1_alpha}
 color2 = ${xrdb:color2:#6f7f71}
 color3 = ${xrdb:color3:#b39580}
 color4 = ${xrdb:color4:#546780}
@@ -383,7 +382,7 @@ format-connected-background = ${colors.color0}
 format-connected-foreground = ${colors.color2}
 format-connected-padding = 2
 
-label-disconnected = 
+label-disconnected =  Disconnected
 
 format-disconnected = <label-disconnected>
 format-disconnected-background = ${colors.color0}
@@ -674,7 +673,7 @@ menu-0-2-exec = systemctl poweroff
 
 menu-0-0-background = ${colors.color0}
 menu-0-0-foreground = ${colors.color2}
-menu-0-0-padding = 2
+menu-0-0-padding = 4
 
 menu-0-1-background = ${colors.color0}
 menu-0-1-foreground = ${colors.color2}
@@ -682,7 +681,7 @@ menu-0-1-padding = 0
 
 menu-0-2-background = ${colors.color0}
 menu-0-2-foreground = ${colors.color1}
-menu-0-2-padding = 2
+menu-0-2-padding = 4
 
 ##################################################
 ##################################################
