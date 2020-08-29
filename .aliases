@@ -7,7 +7,7 @@ alias mv='mv -i'
 alias df='df -H | grep sda'
 alias du='du -d 1 -h'
 alias cd..='cd ..'
-alias hc='rm -rf ~/.cache/.zsh_history;echo "History cleared!"'
+alias ..='cd ../..'
 alias free='free -m'
 
 alias ls='lsd'
