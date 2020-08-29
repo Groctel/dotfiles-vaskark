@@ -2,7 +2,7 @@
 
 # Set startup apps
 xclickroot -r xmenu.sh &
-wal -R -o wal-berry.sh -o wal-cava.sh -o wal-dunst.sh -o wal-glava.sh &
+wal -R -o wal-extras.sh &
 sxhkd -c $HOME/.config/berry/sxhkdrc &
 redshift.sh &
 xautolock.sh &
