@@ -29,9 +29,6 @@ kitty + complete setup zsh | source /dev/stdin
 bindkey -v
 export KEYTIMEOUT=1
 
-# emacs mode (even if EDITOR is vi-like)
-#bindkey -e
-
 # Use vim keys in tab complete menu:
 bindkey -M menuselect 'h' vi-backward-char
 bindkey -M menuselect 'k' vi-up-line-or-history
