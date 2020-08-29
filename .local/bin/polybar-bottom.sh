@@ -1,7 +1,7 @@
 #!/usr/bin/env sh
 
 # Terminate already running bar instances
-pkill polybar
+killall -9 polybar
 
 # Launch
 echo "---" | tee -a /tmp/polybar.log

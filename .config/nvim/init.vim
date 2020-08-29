@@ -109,7 +109,7 @@ imap <M-b> <C-left>
 " Spacemacs-like keybinds
 " Change <leader> bind from default \
 " nnoremap <space> <nop>
-" let mapleader=" "
+" let mapleader=","
 
 " Make ci( work like quotes do
 function! New_cib()
