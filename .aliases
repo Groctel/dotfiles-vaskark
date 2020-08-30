@@ -24,10 +24,10 @@ alias kd='kitty +kitten diff'
 alias mpc='mpc --host=127.0.0.1 --port=6600'
 alias wttr='curl wttr.in'
 alias cls='clear'
-alias zshc='nvim ~/.zshrc'
+alias zc='nvim ~/.zshrc'
 alias h='htop -u $USER'
-alias xrc="nvim ~/.Xresources"
-alias xru='xrdb ~/.Xresources'
+alias xc="nvim ~/.Xresources"
+alias xu='xrdb ~/.Xresources'
 alias nvc='nvim ~/.vimrc'
 alias m='ncmpcpp -q'
 alias bf='bunnyfetch'
