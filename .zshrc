@@ -1,5 +1,5 @@
 # If you come from bash you might have to change your $PATH.
-# export PATH=$HOME/bin:/usr/local/bin:$PATH
+# export PATH=$HOME/.local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
 export ZSH="/usr/share/oh-my-zsh"
@@ -8,7 +8,7 @@ export ZSH="/usr/share/oh-my-zsh"
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
-ZSH_THEME="p10k"
+ZSH_THEME="spaceship"
 
 # other
 source ~/.spaceship
@@ -72,12 +72,11 @@ SAVEHIST=10000
 # Plugins
 plugins=(
 git
-zsh_reload
 command-not-found
 extract
 colored-man-pages
-zsh-autosuggestions
-zsh-syntax-highlighting
+#zsh-autosuggestions
+#zsh-syntax-highlighting
 )
 
 source $ZSH/oh-my-zsh.sh
