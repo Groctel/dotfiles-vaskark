@@ -18,8 +18,8 @@ export ZSH="/usr/share/oh-my-zsh"
 ZSH_THEME="p10k"
 
 # Others
-# source ~/.spaceship
-# source ~/.powerlevel
+# . ~/.spaceship
+# . ~/.powerlevel
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
