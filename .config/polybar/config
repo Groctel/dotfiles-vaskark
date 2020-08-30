@@ -625,13 +625,13 @@ click-right = wpg -r &
 
 content-background = ${colors.color4}
 content-foreground = ${colors.color0}
-content-padding = 1
+content-padding = 0
 
 ##################################################
 
 [module/pbc]
 type = custom/text
-content = " "
+content = " "
 click-right = gedit .config/polybar/config &
 
 content-background = ${colors.color4}

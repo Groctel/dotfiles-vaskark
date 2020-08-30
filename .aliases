@@ -46,6 +46,9 @@ alias egrep='egrep --color=auto'
 alias ping='ping -c 5'
 alias path='print -l $path'
 
+# bindkey help
+alias bkh='run-help bindkey'
+
 # last modified logs
 alias lml='ls -ltr /var/log | tail'
 

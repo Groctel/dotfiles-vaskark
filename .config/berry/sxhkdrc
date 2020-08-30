@@ -22,10 +22,10 @@ super + shift + r
 
 # lockscreen
 super + Escape
-	betterlockscreen -l pixel
-#	lock.sh
-super + shift + Escape
-	betterlockscreen -s pixel
+#	betterlockscreen -l pixel
+	lock.sh
+#super + shift + Escape
+#	betterlockscreen -s pixel
 
 # file manager
 super + F1
