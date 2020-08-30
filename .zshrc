@@ -1,3 +1,10 @@
+# Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
+# Initialization code that may require console input (password prompts, [y/n]
+# confirmations, etc.) must go above this block; everything else may go below.
+if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
+  source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
+fi
+
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/.local/bin:$PATH
 
@@ -62,10 +69,7 @@ ZSH_THEME="p10k"
 # "mm/dd/yyyy"|"dd.mm.yyyy"|"yyyy-mm-dd"
 # or set a custom format using the strftime function format specifications,
 # see 'man strftime' for details.
-HIST_STAMPS="yyyy/mm/dd"
-HISTSIZE=10000
-SAVEHIST=10000
-#HISTFILE=~/.cache/zsh/history
+HIST_STAMPS="yyyy-mm-dd"
 
 # Would you like to use another custom folder than $ZSH/custom?
 # ZSH_CUSTOM=/path/to/new-custom-folder
@@ -76,11 +80,14 @@ git
 command-not-found
 extract
 colored-man-pages
-#zsh-autosuggestions
-#zsh-syntax-highlighting
+zsh-autosuggestions
+zsh-syntax-highlighting
 )
 
 source $ZSH/oh-my-zsh.sh
+
+export SSH_KEY_PATH="~/.ssh/id_rsa"
+export EDITOR='nvim'
 
 # Aliases
 [ -f "$HOME/.aliases" ] && source "$HOME/.aliases"
@@ -93,10 +100,16 @@ kitty + complete setup zsh | source /dev/stdin
 
 # Fzf
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+export FZF_DEFAULT_OPTS='--border'
+
+# Pfetch
+export PF_INFO="os kernel uptime shell wm memory"
+export PF_SEP=":"
+export PF_COL1=2
+export PF_COL2=4
 
 # Pywal
 (cat ~/.cache/wal/sequences &)
 
-# Vi (v) or emacs
+# Vi
 #bindkey -v
-#export KEYTIMEOUT=1
