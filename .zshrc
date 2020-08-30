@@ -10,6 +10,9 @@ export ZSH="/usr/share/oh-my-zsh"
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
 ZSH_THEME="p10k"
 
+# other
+source ~/.spaceship
+
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
 # a theme from this variable instead of looking in $ZSH/themes/
@@ -70,13 +73,11 @@ SAVEHIST=10000
 plugins=(
 git
 zsh_reload
-themes
 command-not-found
 extract
 colored-man-pages
 zsh-autosuggestions
 zsh-syntax-highlighting
-zsh-system-clipboard
 )
 
 source $ZSH/oh-my-zsh.sh

@@ -655,9 +655,9 @@ key_bindings:
   
   # (Extras) 
    - { key: F2,       mods: Control|Shift,           command: { program: "gedit", args: [".config/alacritty/alacritty.yml"] }}
-   - { key: S,	      mods: Control|Shift,	       chars: "ssh **\x09" }
-   - { key: K,	      mods: Control|Shift,	       chars: "kill **\x09" }
-   - { key: Return,   mods: Control|Shift,            action: SpawnNewInstance }
+  # - { key: S,	      mods: Control|Shift,	       chars: "ssh **\x09" }
+  # - { key: K,	      mods: Control|Shift,	       chars: "kill **\x09" }
+  # - { key: Return,   mods: Control|Shift,            action: SpawnNewInstance }
 
   # (Windows only)
   #- { key: Return,   mods: Alt,           action: ToggleFullscreen }

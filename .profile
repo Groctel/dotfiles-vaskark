@@ -4,6 +4,7 @@ export PATH=$HOME/.local/bin:$PATH
 # Defaults
 #export TERM="xterm-256color"
 export EDITOR=nvim
+export ZSH_CAHE_DIR="$HOME/.cache/zsh"
 
 # pfetch
 export PF_INFO="os kernel uptime shell wm memory"
