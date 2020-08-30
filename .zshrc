@@ -80,13 +80,16 @@ git
 command-not-found
 extract
 colored-man-pages
-zsh-autosuggestions
+#zsh-autosuggestions
 zsh-syntax-highlighting
 )
 
 source $ZSH/oh-my-zsh.sh
 
+# SSH
 export SSH_KEY_PATH="~/.ssh/id_rsa"
+
+# Editor
 export EDITOR='nvim'
 
 # Aliases
@@ -113,3 +116,9 @@ export PF_COL2=4
 
 # Vi
 #bindkey -v
+
+# nnn
+export NNN_FIFO='/tmp/nnn.fifo' 
+export NNN_COLORS='2'
+export NNN_OPENER=nuke
+export NNN_TRASH=1
