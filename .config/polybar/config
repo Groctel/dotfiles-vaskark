@@ -606,18 +606,6 @@ label-padding = 2
 
 ##################################################
 
-[module/blur]
-type = custom/text
-content = " "
-click-left = picom-blur.sh &
-click-right = picom-rounded.sh &
-
-content-background = ${colors.color4}
-content-foreground = ${colors.color0}
-content-padding = 1
-
-##################################################
-
 [module/nmc]
 type = custom/text
 content = " "

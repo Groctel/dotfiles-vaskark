@@ -8,5 +8,5 @@ MENU="$(rofi -sep "|" -dmenu -i -p 'Polybars' -location 0 -width 10 -hide-scroll
 		*bottom) polybar-bottom.sh ;;
                 *shades) polybar-p11.sh ;;
                 *config) gedit ~/.config/polybar/config ;;
-		*off) pkill polybar
+		*off) killall -9 polybar ;;
             esac
