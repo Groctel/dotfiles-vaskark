@@ -138,7 +138,7 @@ font-3 = "JoyPixels:pixelsize=16;2:scale=12;2"
 
 modules-left = ewmh sep weather
 modules-center =
-modules-right = mpd sep uptime battery wireless wired volume sep nmc wpg
+modules-right = mpd sep uptime battery wireless wired volume sep nmc wpg pbc
 
 ;dim-value = 0.8
 
@@ -619,9 +619,20 @@ content-padding = 1
 
 [module/wpg]
 type = custom/text
-content = " "
+content = ""
 click-left = wal -f random_user -o wal-extras.sh &
 click-right = wpg -r &
+
+content-background = ${colors.color4}
+content-foreground = ${colors.color0}
+content-padding = 1
+
+##################################################
+
+[module/pbc]
+type = custom/text
+content = " "
+click-right = gedit .config/polybar/config &
 
 content-background = ${colors.color4}
 content-foreground = ${colors.color0}
@@ -635,12 +646,12 @@ expand-right = true
 
 format = <label-toggle><menu>
 
-label-open = 
+label-open = 
 label-open-background = ${colors.color2}
 label-open-foreground = ${colors.color0}
 label-open-padding = 2
 
-label-close = 
+label-close = 
 label-close-background = ${colors.color1}
 label-close-foreground = ${colors.color0}
 label-close-padding = 2
