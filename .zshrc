@@ -119,6 +119,6 @@ export PF_COL2=4
 
 # nnn
 export NNN_FIFO='/tmp/nnn.fifo' 
-export NNN_COLORS='2'
+export NNN_COLORS='2356'
 export NNN_OPENER=nuke
 export NNN_TRASH=1

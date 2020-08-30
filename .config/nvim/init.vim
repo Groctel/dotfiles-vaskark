@@ -2,8 +2,6 @@
 call plug#begin('~/.config/nvim/plugged')
 Plug 'itchyny/lightline.vim'
 Plug 'tpope/vim-fugitive'
-"Plug 'vim-airline/vim-airline'
-"Plug 'vim-airline/vim-airline-themes'
 Plug 'itchyny/calendar.vim'
 Plug 'tpope/vim-markdown'
 Plug 'machakann/vim-highlightedyank'
@@ -11,7 +9,7 @@ Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'nelstrom/vim-markdown-folding'
 Plug 'dylanaraps/wal.vim'
 Plug 'preservim/nerdtree'
-Plug 'vimwiki/vimwiki'
+Plug 'mcchrish/nnn.vim'
 call plug#end()
 
 " Highlight the line on which the cursor lives.
@@ -229,9 +227,6 @@ set noshowmode
 " Shell
 set shell=/bin/zsh
 
-" Calendar
-" let g:calendar_google_calendar = 1
-
 " Lightline
 " Get default from :h lightline
 let g:lightline = {
@@ -317,26 +312,6 @@ let g:lightline.enable = {
     \ 'statusline': 1,
     \ 'tabline': 1
     \ }
-
-" Airline
-let g:airline_theme='wal'
-let g:airline#extensions#tabline#enabled = 1
-let g:airline#extensions#tabline#left_sep = ' '
-let g:airline#extensions#tabline#left_alt_sep = '|'
-let g:airline#extensions#tabline#formatter = 'default'
-let g:airline_powerline_fonts = 1
-let g:airline_highlighting_cache = 1
-let g:airline_statusline_ontop=0
-
-"function! AirlineInit()
-"    let g:airline_section_a = airline#section#create(['mode', 'branch'])
-"    let g:airline_section_b = airline#section#create_left(['%f'])
-"    let g:airline_section_c = airline#section#create(['filetype'])
-"    let g:airline_section_x = airline#section#create(['%P'])
-"    let g:airline_section_y = airline#section#create(['%B'])
-"    let g:airline_section_z = airline#section#create_right(['%c'])
-"endfunction
-"autocmd VimEnter * call AirlineInit()
 
 " Clear search highlighting with Escape key
 nnoremap <silent><esc> :noh<return><esc>
