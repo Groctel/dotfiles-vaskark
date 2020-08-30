@@ -1,6 +1,5 @@
 # general
 alias rz='source ~/.zshrc'
-
 alias rm='rm -i'
 alias cp='cp -i'
 alias mv='mv -i'
@@ -98,7 +97,7 @@ alias sc='sudo systemctl'
 alias scu='systemctl --user'
 
 # journal
-alias jctl='journalctl -p 3 -xb'
+alias jctl='journalctl -p 3 -xe'
 
 # arch
 alias unlock='sudo rm /var/lib/pacman/db.lck'
