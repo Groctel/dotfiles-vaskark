@@ -35,7 +35,7 @@ alias m='ncmpcpp -q'
 alias bf='bunnyfetch'
 alias pf='clear;pfetch'
 alias n='nnn -C -E -d -o -T e -a -x'
-#alias r='ranger'
+alias r='ranger'
 alias f='lf'
 alias c='cava'
 alias p='pipes'
@@ -73,7 +73,19 @@ alias nf='clear;neofetch'
 alias nfo='clear;neofetch --off'
 alias nfs='clear;neofetch --config ~/.config/neofetch/config-small.conf'
 
-# wifi
+# pywal
+alias wal='wal -o wal-extras.sh'
+alias w1='wal -f random_user'
+alias w2='wal -f random'
+
+# system
+alias upd8='sudo apt update;sudo apt full-upgrade;sudo apt autoremove;sudo apt clean'
+alias reboot='systemctl reboot'
+alias shut='systemctl poweroff -i'
+alias susp='systemctl suspend'
+
+# networking
+alias rnm='sudo systemctl restart network-manager'
 alias up='nmcli c u'
 alias dn='nmcli c d'
 alias ndw='nmcli d wifi'
@@ -81,18 +93,6 @@ alias ndw='nmcli d wifi'
 # windscribe
 alias wsc='windscribe connect'
 alias wsd='windscribe disconnect'
-
-# pywal
-alias wal='wal -o wal-extras.sh'
-alias w1='wal -f random_user'
-alias w2='wal -f random'
-
-# superuser
-alias reboot='systemctl reboot'
-alias shut='systemctl poweroff -i'
-alias susp='systemctl suspend'
-alias upd8='sudo apt update;sudo apt full-upgrade;sudo apt autoremove;sudo apt clean'
-alias rnm='sudo systemctl restart network-manager'
 
 # install
 alias s1='sudo make install'
