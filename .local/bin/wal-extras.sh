@@ -53,4 +53,4 @@ sed -i "s|#define FLIP.*$|#define FLIP 1|g" ~/.config/glava/bars.glsl
 # fi
 
 killall -q glava
-glava -d -m bars -a fifo &
+glava -d -a fifo &

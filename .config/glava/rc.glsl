@@ -1,3 +1,4 @@
+
 /* The module to use. A module is a set of shaders used to produce
    the visualizer. The structure for a module is the following:
    
@@ -48,7 +49,7 @@
 #request settitle "GLava"
 
 /* Window geometry (x, y, width, height) */
-#request setgeometry 0 0 1920 1080
+#request setgeometry 0 0 1920 300
 
 /* Window background color (RGBA format).
    Does not work with `setopacity "xroot"` */
@@ -68,7 +69,7 @@
    will do nothing, but you can use "!+" and "!-" to stack on top
    or below other windows.
 */
-#request setxwintype "desktop"
+#request setxwintype "normal"
 
 /* (X11 only) EWMH Window state atoms (multiple can be specified).
    Possible values are:
@@ -96,7 +97,7 @@
    the GLava window. Useful when you want to interact with other
    desktop windows (icons, menus, desktop shells). Enabled by
    default when GLava itself is a desktop window. */
-#request setclickthrough true
+#request setclickthrough false
 
 /* Audio source
 
@@ -207,7 +208,7 @@
    
    Enabling this also enables acceleration for post-FFT processing
    effects, such as gravity, averaging, windowing, and interpolation. */
-#request setaccelfft true
+// #request setaccelfft true
 
 /*                    ** DEPRECATED **
    Force window geometry (locking the window in place), useful
