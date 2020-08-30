@@ -63,11 +63,9 @@ alt + F12
 	
 # picom
 ctrl + F12
-	picom-blur.sh
-ctrl + shift + F12
 	picom.sh
-ctrl + alt + shift + F12
-	picom-rounded.sh
+ctrl + shift + F12
+	picom-dk.sh
 
 # shots
 super + PrintScreen
