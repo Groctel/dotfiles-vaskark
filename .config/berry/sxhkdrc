@@ -60,12 +60,6 @@ alt + F11
 	mpc toggle
 alt + F12
 	mpc next
-	
-# picom
-ctrl + F12
-	picom.sh
-ctrl + shift + F12
-	picom-dk.sh
 
 # shots
 super + PrintScreen
