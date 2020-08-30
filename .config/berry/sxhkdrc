@@ -22,8 +22,10 @@ super + shift + r
 
 # lockscreen
 super + Escape
-#	betterlockscreen -l pixel
-	lock.sh
+	betterlockscreen -l pixel
+#	lock.sh
+super + shift + Escape
+	betterlockscreen -s pixel
 
 # file manager
 super + F1
@@ -72,6 +74,10 @@ super + PrintScreen
 	screenshot.sh full
 super + shift PrintScreen
 	screenshot.sh window
+
+# suspend
+super + alt + Delete
+	systemctl suspend
 
 # reboot
 super + shift + Delete

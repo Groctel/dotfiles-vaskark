@@ -45,6 +45,9 @@ alias ping='ping -c 5'
 alias path='print -l $path'
 alias mkdir='mkdir -pv'
 
+# last modified logs
+alias lml='ls -ltr /var/log | tail'
+
 # suffix
 alias -s html=google-chrome-stable
 
