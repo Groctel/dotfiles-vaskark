@@ -136,9 +136,9 @@ font-1 = "siji:size=9;2"
 font-2 = "Weather Icons:size=8;2"
 font-3 = "JoyPixels:pixelsize=16;2:scale=12;2"
 
-modules-left = ewmh sep weather
+modules-left = ewmh weather
 modules-center =
-modules-right = mpd sep uptime battery wireless wired volume sep nmc wpg pbc
+modules-right = mpd uptime battery wireless wired volume sep nmc wpg pbc
 
 ;dim-value = 0.8
 
