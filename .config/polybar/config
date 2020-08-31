@@ -641,7 +641,7 @@ label-open-background = ${colors.color2}
 label-open-foreground = ${colors.color0}
 label-open-padding = 2
 
-label-close = 
+label-close = 
 label-close-background = ${colors.color1}
 label-close-foreground = ${colors.color0}
 label-close-padding = 2
