@@ -8,9 +8,6 @@ color10=$(sed -n 11p ~/.cache/wal/colors)AA
 sed -i "s|#define COLOR.*$|#define COLOR @fg:mix($color2, $color10, clamp(d / GRADIENT, 0, 1))|g" ~/.config/glava/bars.glsl
 sed -i "s|#define FLIP.*$|#define FLIP 0|g" ~/.config/glava/bars.glsl
 
-# radial
-sed -i "s|#define COLOR.*$|#define COLOR @fg:mix($color2, $color10, clamp(d / GRADIENT, 0, 1))|g" ~/.config/glava/radial.glsl
-
 # restart glava
 killall -q glava
 glava -d -a fifo &
