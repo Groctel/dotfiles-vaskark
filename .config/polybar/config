@@ -619,20 +619,9 @@ content-padding = 1
 
 [module/wpg]
 type = custom/text
-content = ""
+content = " "
 click-left = wal -f random_user -o wal-extras.sh &
 click-right = wpg -r &
-
-content-background = ${colors.color4}
-content-foreground = ${colors.color0}
-content-padding = 1
-
-##################################################
-
-[module/pbc]
-type = custom/text
-content = " "
-click-right = gedit .config/polybar/config &
 
 content-background = ${colors.color4}
 content-foreground = ${colors.color0}
