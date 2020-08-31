@@ -6,7 +6,7 @@ wal -R -o wal-extras.sh &
 sxhkd -c $HOME/.config/berry/sxhkdrc &
 redshift.sh &
 xautolock.sh &
-picom.sh &
+picom-dk.sh &
 libinput-gestures &
 /usr/lib/policykit-1-gnome/polkit-gnome-authentication-agent-1 &
 polybar-bottom.sh &

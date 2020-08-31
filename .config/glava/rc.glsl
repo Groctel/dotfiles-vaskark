@@ -97,7 +97,7 @@
    the GLava window. Useful when you want to interact with other
    desktop windows (icons, menus, desktop shells). Enabled by
    default when GLava itself is a desktop window. */
-#request setclickthrough false
+#request setclickthrough true
 
 /* Audio source
 
