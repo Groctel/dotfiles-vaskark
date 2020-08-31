@@ -609,7 +609,8 @@ label-padding = 2
 [module/nmc]
 type = custom/text
 content = " "
-click-left = nm-connection-editor &
+click-left = networkmanager_dmenu &
+click-right = nm-connection-editor &
 
 content-background = ${colors.color4}
 content-foreground = ${colors.color0}

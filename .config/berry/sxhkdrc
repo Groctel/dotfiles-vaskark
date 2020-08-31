@@ -60,6 +60,10 @@ alt + F11
 	mpc toggle
 alt + F12
 	mpc next
+	
+# random wallpaper
+super + p
+	feh --randomize --bg-fill --recursive --no-fehbg ~/Pictures/*.(png|jpg)
 
 # shots
 super + PrintScreen
