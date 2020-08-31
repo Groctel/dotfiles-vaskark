@@ -222,10 +222,6 @@ bindsym Mod1+F12 exec --no-startup-id mpc next
 bindsym $mod+F12 exec --no-startup-id wal -f random_user -o wal-berry.sh -o wal-dunst.sh -o wal-glava-b.sh 
 bindsym $mod+Shift+F12 exec --no-startup-id wal -R -o wal-berry.sh -o wal-dunst.sh -o wal-glava-b.sh 
 
-# picom controls
-bindsym Control+F12 exec --no-startup-id picom.sh
-bindsym Control+Shift+F12 exec --no-startup-id picom-dk.sh
-
 # shot controls
 bindsym --release $mod+Print exec --no-startup-id screenshot.sh full
 bindsym --release $mod+Shift+Print exec --no-startup-id screenshot.sh window
