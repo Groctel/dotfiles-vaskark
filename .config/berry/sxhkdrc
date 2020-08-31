@@ -39,9 +39,9 @@ super + F2
 super + F3
 	kitty -e ncmpcpp
 	
-# farge
+# wp
 super + F4
-	farge.sh
+	feh --randomize --bg-fill --recursive --no-fehbg ~/Pictures/*.(png|jpg)
 	
 # date
 super + F5
@@ -60,10 +60,6 @@ alt + F11
 	mpc toggle
 alt + F12
 	mpc next
-	
-# random wallpaper
-super + p
-	feh --randomize --bg-fill --recursive --no-fehbg ~/Pictures/*.(png|jpg)
 
 # shots
 super + PrintScreen
