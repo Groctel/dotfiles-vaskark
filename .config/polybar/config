@@ -625,7 +625,7 @@ click-right = wpg -r &
 
 content-background = ${colors.color4}
 content-foreground = ${colors.color0}
-content-padding = 0
+content-padding = 1
 
 ##################################################
 
