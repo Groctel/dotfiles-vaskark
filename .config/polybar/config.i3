@@ -80,7 +80,6 @@ module-margin-right = 0
 font-0 = "scientifica:bold:size=8;2"
 font-1 = "siji:size=9;2"
 font-2 = "Weather Icons:size=8;2"
-font-3 = "JoyPixels:pixelsize=16;2:scale=12;2"
 
 modules-left = i3
 modules-center =
@@ -100,7 +99,7 @@ modules-right = mpd sep uptime battery wireless wired volume sep nmc wpg
 scroll-up = i3wm-wsnext
 scroll-down = i3wm-wsprev
 
-;cursor-click = pointer
+cursor-click = pointer
 ;cursor-scroll = ns-resize
 
 ##################################################
@@ -267,7 +266,6 @@ label-song-background = ${colors.color2}
 label-song-foreground = ${colors.color0}
 label-song-padding = 2
 
-#format-online-prefix = "🌮️"
 format-online-prefix = ""
 format-online-prefix-background = ${colors.color0}
 format-online-prefix-foreground = ${colors.color2}
@@ -549,18 +547,6 @@ label =  %output%
 label-background = ${colors.color2}
 label-foreground = ${colors.color0}
 label-padding = 2
-
-##################################################
-
-[module/blur]
-type = custom/text
-content = " "
-click-left = picom-blur.sh &
-click-right = picom-rounded.sh &
-
-content-background = ${colors.color4}
-content-foreground = ${colors.color0}
-content-padding = 1
 
 ##################################################
 
