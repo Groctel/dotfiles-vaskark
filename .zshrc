@@ -76,7 +76,7 @@ HIST_STAMPS="yyyy-mm-dd"
 
 # Plugins
 plugins=(
-git
+#git
 command-not-found
 extract
 #themes
@@ -86,10 +86,6 @@ zsh-syntax-highlighting
 )
 
 source $ZSH/oh-my-zsh.sh
-
-# Environment vars
-export SSH_KEY_PATH="~/.ssh/id_rsa"
-export EDITOR='nvim'
 
 # Aliases
 [ -f "$HOME/.aliases" ] && source "$HOME/.aliases"
@@ -102,13 +98,6 @@ kitty + complete setup zsh | source /dev/stdin
 
 # Fzf
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
-export FZF_DEFAULT_OPTS='--border'
-
-# Pfetch
-export PF_INFO="os kernel uptime shell wm memory"
-export PF_SEP=":"
-export PF_COL1=2
-export PF_COL2=4
 
 # Pywal
 (cat ~/.cache/wal/sequences &)
@@ -116,7 +105,10 @@ export PF_COL2=4
 # Vi
 # bindkey -v
 
-# nnn
-export NNN_FIFO='/tmp/nnn.fifo' 
-export NNN_COLORS='2356'
-export NNN_TRASH=1
+# ncmpcpp (Alt+\)
+ncmpcppShow() {
+  BUFFER="ncmpcpp"
+  zle accept-line
+}
+zle -N ncmpcppShow
+bindkey '^[\' ncmpcppShow

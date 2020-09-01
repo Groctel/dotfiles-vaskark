@@ -1,5 +1,6 @@
 # general
 alias zr='clear && history -c && exec zsh'
+alias zs='exec zsh'
 alias hc='history -c'
 alias rm='rm -i'
 alias cp='cp -i'
@@ -34,7 +35,7 @@ alias h='htop -u $USER'
 alias xc="nvim ~/.Xresources"
 alias xu='xrdb ~/.Xresources'
 alias nvc='nvim ~/.vimrc'
-alias m='ncmpcpp -q'
+#alias m='ncmpcpp -q'
 alias bf='bunnyfetch'
 alias pf='clear;pfetch'
 alias n='nnn -C -E -d -o -T e -a -x'
