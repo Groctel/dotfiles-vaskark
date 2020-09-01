@@ -104,6 +104,7 @@ kitty + complete setup zsh | source /dev/stdin
 
 # Vi
 # bindkey -v
+# export KEYTIMEOUT=1
 
 # ncmpcpp (Alt+\)
 ncmpcppShow() {

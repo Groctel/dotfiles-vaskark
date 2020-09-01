@@ -1,7 +1,6 @@
 #!/bin/sh
 
 # Set startup apps
-wal -R -o wal-extras.sh &
 sxhkd -c $HOME/.config/berry/sxhkdrc &
 redshift.sh &
 picom --config ~/.config/picom/picom-dk.conf >> /tmp/picom.log 2>&1 &
@@ -9,6 +8,7 @@ libinput-gestures &
 /usr/lib/policykit-1-gnome/polkit-gnome-authentication-agent-1 &
 xclickroot -r xmenu.sh &
 xautolock -time 10 -locker 'lock.sh' -corners 00-+ &
+wal -R -o wal-extras.sh &
 polybar-main.sh &
 
 # Set decoration geometry
