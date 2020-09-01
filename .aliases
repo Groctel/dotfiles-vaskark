@@ -9,12 +9,15 @@ alias rd='rmdir'
 alias df='df -H | grep sda'
 alias du='du -d 1 -h'
 alias cd..='cd ..'
+alias d='dirs -v | head -10'
 alias free='free -m'
 
 alias ls='lsd'
 alias l='ls -l'
 alias ll='ls -al'
 alias lt='lsd --tree --depth 2'
+
+alias -g G='| grep -i'
 
 alias vim='nvim'
 alias v='nvim'
@@ -35,7 +38,6 @@ alias m='ncmpcpp -q'
 alias bf='bunnyfetch'
 alias pf='clear;pfetch'
 alias n='nnn -C -E -d -o -T e -a -x'
-alias r='ranger'
 alias f='lf'
 alias c='cava'
 alias p='pipes'
@@ -47,7 +49,7 @@ alias ping='ping -c 5'
 alias path='print -l $path'
 
 # bindkey help
-alias bkh='run-help bindkey'
+alias rhb='run-help bindkey'
 
 # last modified logs
 alias lml='ls -ltr /var/log | tail'

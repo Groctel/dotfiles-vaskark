@@ -1,2 +1,3 @@
-# Path to local bin
-export PATH=$HOME/.local/bin:$PATH
+typeset -U PATH path
+path=("$HOME/.local/bin" "$path[@]")
+export PATH
