@@ -3,13 +3,13 @@
 # Set startup apps
 wal -R -o wal-extras.sh &
 sxhkd -c $HOME/.config/berry/sxhkdrc &
-polybar-main.sh &
 redshift.sh &
 picom --config ~/.config/picom/picom-dk.conf >> /tmp/picom.log 2>&1 &
 libinput-gestures &
 /usr/lib/policykit-1-gnome/polkit-gnome-authentication-agent-1 &
 xclickroot -r xmenu.sh &
 xautolock -time 10 -locker 'lock.sh' -corners 00-+ &
+polybar-main.sh &
 
 # Set decoration geometry
 berryc border_width         0

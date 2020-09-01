@@ -50,6 +50,8 @@ super + F5
 # polybar
 super + semicolon
 	polybar-msg cmd toggle
+super + alt + semicolon
+	polybar-msg cmd restart
 super + shift + semicolon
 	polybar-menu.sh
 
