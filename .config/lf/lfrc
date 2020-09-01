@@ -113,4 +113,4 @@ map + :video_preview
 map ] $~/.config/lf/preview.sh "$f"
 
 set relativenumber
-set hidden
+# set hidden
