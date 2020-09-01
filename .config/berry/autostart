@@ -1,15 +1,15 @@
 #!/bin/sh
 
 # Set startup apps
-xclickroot -r xmenu.sh &
 wal -R -o wal-extras.sh &
 sxhkd -c $HOME/.config/berry/sxhkdrc &
 polybar-main.sh &
 redshift.sh &
-xautolock.sh &
-picom.sh &
+picom --config ~/.config/picom/picom-dk.conf >> /tmp/picom.log 2>&1 &
 libinput-gestures &
 /usr/lib/policykit-1-gnome/polkit-gnome-authentication-agent-1 &
+xclickroot -r xmenu.sh &
+xautolock -time 10 -locker 'lock.sh' -corners 00-+ &
 
 # Set decoration geometry
 berryc border_width         0
@@ -28,7 +28,7 @@ berryc text_focus_color     000000
 berryc text_unfocus_color   111111
 
 # Other options
-berryc smart_place "true"
+berryc smart_place "false"
 berryc draw_text   "true"
 berryc edge_lock   "true"
 berryc set_font    "scientifica-8:bold"
