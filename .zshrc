@@ -21,9 +21,6 @@ ZSH_THEME="p10k"
 # . ~/.spaceship
 # . ~/.powerlevel
 
-# Automatically cd into typed directory.
-setopt autocd
-
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
 # a theme from this variable instead of looking in $ZSH/themes/
@@ -90,10 +87,8 @@ zsh-syntax-highlighting
 
 source $ZSH/oh-my-zsh.sh
 
-# SSH
+# Environment vars
 export SSH_KEY_PATH="~/.ssh/id_rsa"
-
-# Editor
 export EDITOR='nvim'
 
 # Aliases
@@ -119,7 +114,7 @@ export PF_COL2=4
 (cat ~/.cache/wal/sequences &)
 
 # Vi
-#bindkey -v
+# bindkey -v
 
 # nnn
 export NNN_FIFO='/tmp/nnn.fifo' 
