@@ -9,9 +9,9 @@ configuration {
   lines:              	8;
   font:		"scientifica bold 8";
   columns:            	1;
-  modi: 	      	"drun,run,ssh,window,keys";
+  modi: 	      	"drun,run,ssh,keys";
   display-drun:       	"apps";
   display-window:     	"win";
-  terminal:           	"kitty";
+  terminal:           	"alacritty";
   theme:	      	"~/.cache/wal/colors-rofi-dark.rasi";
 }
