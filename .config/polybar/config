@@ -118,7 +118,7 @@ foreground =
 line-size =
 line-color =
 
-border-size = 10
+border-size = 15
 border-color = transparent
 
 padding-left = 0

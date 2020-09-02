@@ -58,6 +58,9 @@ alias lml='ls -ltr /var/log | tail'
 # suffix
 alias -s html=google-chrome-stable
 
+# bluetoothctl
+alias btc='bluetoothctl'
+
 # git
 alias gc='git commit -a'
 alias ga='git add'

@@ -20,6 +20,7 @@ btusb
 ccm
 cec
 cfg80211
+cmac
 coretemp
 crc32_pclmul
 crct10dif_pclmul
