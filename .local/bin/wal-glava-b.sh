@@ -10,4 +10,4 @@ sed -i "s|#define FLIP.*$|#define FLIP 0|g" ~/.config/glava/bars.glsl
 
 # restart glava
 killall -q glava
-glava -d -a fifo &
+glava -d -a fifo -e rc-i3.glsl &
