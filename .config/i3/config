@@ -165,7 +165,7 @@ for_window [class="Float"] floating enable
 for_window [class="farge"] floating enable
 
 # open apps on certain workspaces
-for_window [class="Sxiv"] move workspace $ws3
+# for_window [class="Sxiv"] move workspace $ws3
 
 # reload i3 configuration file
 bindsym $mod+Shift+c reload
