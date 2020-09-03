@@ -165,7 +165,7 @@ for_window [class="Float"] floating enable
 for_window [class="farge"] floating enable
 
 # open apps on certain workspaces
-#for_window [class="Gimp"] move workspace $ws3
+for_window [class="Sxiv"] move workspace $ws3
 
 # reload i3 configuration file
 bindsym $mod+Shift+c reload
@@ -196,7 +196,7 @@ bindsym $mod+r mode "Resize"
 
 # startup apps
 exec_always --no-startup-id polybar-i3.sh
-exec --no-startup-id picom --config ~/.config/picom/picom-dk.sh
+exec_always --no-startup-id picom --config ~/.config/picom/picom-dk.sh
 exec --no-startup-id redshift.sh
 exec --no-startup-id /usr/lib/policykit-1-gnome/polkit-gnome-authentication-agent-1
 exec --no-startup-id wal -R -o wal-berry.sh -o wal-cava.sh -o wal-dunst.sh -o wal-glava-b.sh

@@ -4,7 +4,7 @@
 . "${HOME}/.cache/wal/colors.sh"
 
 # vars for xyw
-b=10
+b=5
 width=$(xdotool getdisplaygeometry | awk '{print $1}')
 w=$(( width-(2*b) ))
 
