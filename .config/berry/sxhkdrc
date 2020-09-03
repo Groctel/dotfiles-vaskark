@@ -97,9 +97,9 @@ XF86MonBrightnessDown
 
 # wal
 super + F12
-	wal -f random_user -o wal-extras.sh
+	wal -f random_user -o wal-berry.sh -o wal-dunst.sh -o wal-glava.sh
 super + shift + F12
-	wal -R -o wal-extras.sh
+	wal -R -o wal-berry.sh -o wal-dunst.sh -o wal-glava.sh
     
 # xmenu
 super + z
