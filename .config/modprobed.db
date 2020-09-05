@@ -3,7 +3,10 @@ acpi_als
 acpi_pad
 acpi_thermal_rel
 aesni_intel
+af_alg
 ahci
+algif_hash
+algif_skcipher
 asus_nb_wmi
 asus_wireless
 asus_wmi
@@ -11,6 +14,7 @@ autofs4
 binfmt_misc
 blake2b_generic
 bluetooth
+bnep
 bpfilter
 btbcm
 btintel
