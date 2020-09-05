@@ -34,6 +34,6 @@ border-size = 15
 font-0 = "scientifica:bold:size=8;2"
 font-1 = "siji:size=8;2"
 
-modules-left = ewmh sep mpd-c
+modules-left = ewmh
 modules-center =
-modules-right = mpd sep pad2 wireless battery volume date pad2
+modules-right = mpd sep pad1 wireless battery volume date pad1

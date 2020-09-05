@@ -10,14 +10,6 @@ content-padding = 0
 type = custom/text
 content = " "
 
-content-background = ${colors.color5}
-content-foreground = transparent
-content-padding = 0
-
-[module/pad2]
-type = custom/text
-content = " "
-
 content-background = ${colors.color4}
 content-foreground = transparent
 content-padding = 0
@@ -193,8 +185,9 @@ ramp-volume-2 = 
 type = internal/date
 interval = 1
 
-time =  %I:%M %p
-time-alt =  %a %b %d %Y
+time = 
+time-alt =  %a %b %d %Y  %I:%M %p
+;time-alt =  %a %b %d %Y
 
 label = "%time%"
 
