@@ -186,7 +186,7 @@ type = internal/date
 interval = 1
 
 time = 
-time-alt =  %a %b %d %Y  %I:%M %p
+time-alt =  %I:%M %p
 ;time-alt =  %a %b %d %Y
 
 label = "%time%"

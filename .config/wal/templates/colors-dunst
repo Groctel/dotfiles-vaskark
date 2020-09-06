@@ -31,6 +31,9 @@ history_length = 2
 startup_notification = false
 corner_radius = 0
 
+max_icon_size = 12
+icon_position = left
+
 [shortcuts]
 close = ctrl+space
 close_all = ctrl+shift+space
@@ -41,15 +44,18 @@ context = ctrl+shift+period
 background = "{color10}"
 foreground = "{color0}"
 timeout = 10
+icon = ~/.config/dunst/normal-alt.png
 
 [urgency_normal]
 background = "{color2}"
 foreground = "{color0}"
 timeout = 10
+icon = ~/.config/dunst/normal-alt.png
 
 [urgency_critical]
 background = "{color1}"
 foreground = "{color0}"
 timeout = 20
+icon = ~/.config/dunst/critical.png
 
 # vim: ft=cfg
