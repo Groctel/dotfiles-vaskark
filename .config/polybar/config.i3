@@ -53,7 +53,7 @@ color15 = ${xrdb:color15:#dfdedd}
 [bar/main]
 ;monitor = ${env:MONITOR:eDP-1}
 width = 100%
-height = 30
+height = 28
 radius = 0
 fixed-center = true
 bottom = false
