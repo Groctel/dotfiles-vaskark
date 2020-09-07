@@ -147,11 +147,11 @@ super + m
 super + f
     berryc fullscreen
 
-#super +  p
-#    berryc snap_right
+super +  p
+    berryc snap_right
 
-#super + o 
-#    berryc snap_left
+super + o 
+    berryc snap_left
 
 super + n
     berryc toggle_decorations

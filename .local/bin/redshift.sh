@@ -1,10 +1,12 @@
 #!/usr/bin/env sh
 
-# Terminate
-killall -q redshift
+# If redshift is running, kill it to prevent multiple instances
+if ps -A | grep redshift; then
+	killall -q redshift
+fi
 
 # Wait until the processes have been shut down
-while pgrep -u $UID -x redshift >/dev/null; do sleep 1; done
+#sleep 0.05s
 
 # Launch
 redshift -c ~/.config/redshift/redshift.conf &
