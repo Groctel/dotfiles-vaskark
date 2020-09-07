@@ -99,9 +99,9 @@ kitty + complete setup zsh | source /dev/stdin
 # Pywal
 (cat ~/.cache/wal/sequences &)
 
-# Vi
-# bindkey -v
-# export KEYTIMEOUT=1
+# vi (v) or emacs (e)
+bindkey -v
+export KEYTIMEOUT=1
 
 # ncmpcpp (Alt+\)
 ncmpcppShow() {

@@ -1,5 +1,5 @@
 # general
-alias zr='clear && history -c && exec zsh'
+alias zr='history -c && clear && exec zsh'
 alias zs='exec zsh'
 alias hc='history -c'
 alias rm='rm -i'
