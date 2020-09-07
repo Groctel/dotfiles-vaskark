@@ -1,7 +1,9 @@
-#!/bin/zsh
+#!/usr/bin/env sh
 
 # Terminate already running bar instances
-killall -9 polybar
+if ps -A | grep polybar; then
+	killall -q polybar
+fi
 
 # Launch
 #echo "---" | tee -a /tmp/polybar1.log

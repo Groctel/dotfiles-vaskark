@@ -1,9 +1,9 @@
 #!/usr/bin/env sh
 
-## Add this to your wm startup file.
-
 # Terminate already running bar instances
-pkill polybar
+if ps -A | grep polybar; then
+	killall -q polybar
+fi
 
 # Launch
 echo "---" | tee -a /tmp/polybar.log
