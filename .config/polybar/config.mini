@@ -32,7 +32,7 @@ background = transparent
 border-size = 15
 
 font-0 = "scientifica:bold:size=8;2"
-font-1 = "siji:size=8;2"
+font-1 = "siji:size=9;2"
 
 modules-left = ewmh
 modules-center =

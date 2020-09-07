@@ -22,9 +22,9 @@ visualizer_output_name = "visualizer"
 visualizer_in_stereo = yes
 visualizer_sync_interval = 30
 #visualizer_look = ●●
-#visualizer_look = ▉▉
+visualizer_look = ▊▊
 #visualizer_look = ●▉
-visualizer_look = +|
+#visualizer_look = +|
 visualizer_color = green, blue
 visualizer_type = spectrum
 
