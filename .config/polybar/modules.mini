@@ -120,6 +120,33 @@ ramp-signal-2 = 
 
 ##################################################
 
+[module/wired]
+type = internal/network
+interface = enp3s0
+interval = 1.0
+accumulate-stats = true
+;unknown-as-up = true
+
+label-connected = ""
+
+format-connected = <label-connected>
+format-connected-background = ${colors.color4}
+format-connected-foreground = ${colors.color0}
+format-connected-padding = 1
+
+label-disconnected = ""
+
+format-disconnected = <label-disconnected>
+format-disconnected-background = ${colors.color4}
+format-disconnected-foreground = #666
+format-disconnected-padding = 1
+
+ramp-signal-0 = 
+ramp-signal-1 = 
+ramp-signal-2 = 
+
+##################################################
+
 [module/battery]
 type = internal/battery
 full-at = 98

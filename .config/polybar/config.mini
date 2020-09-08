@@ -36,4 +36,4 @@ font-1 = "siji:size=9;2"
 
 modules-left = ewmh
 modules-center =
-modules-right = mpd sep pad1 wireless battery volume date pad1
+modules-right = mpd sep pad1 wireless wired battery volume date pad1
