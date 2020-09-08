@@ -100,8 +100,8 @@ kitty + complete setup zsh | source /dev/stdin
 (cat ~/.cache/wal/sequences &)
 
 # vi (v) or emacs (e)
-bindkey -v
-export KEYTIMEOUT=1
+# bindkey -v
+# export KEYTIMEOUT=1
 
 # ncmpcpp (Alt+\)
 ncmpcppShow() {
