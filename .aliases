@@ -82,6 +82,9 @@ alias nf='clear;neofetch'
 alias nfo='clear;neofetch --off'
 alias nfs='clear;neofetch --config ~/.config/neofetch/config-small.conf'
 
+# p10k
+alias p10kc='p10k configure'
+
 # pywal
 alias wal='wal -o wal-berry.sh -o wal-dunst.sh -o wal-glava.sh'
 alias w1='wal -f random_user'
