@@ -3,7 +3,7 @@
 # Set startup apps
 sxhkd -c $HOME/.config/berry/sxhkdrc &
 redshift.sh &
-picom --experimental-backends --config ~/.config/picom/picom-dk.conf >> /tmp/picom.log 2>&1 &
+picom --experimental-backends --config ~/.config/picom/picom.conf >> /tmp/picom.log 2>&1 &
 libinput-gestures &
 /usr/lib/policykit-1-gnome/polkit-gnome-authentication-agent-1 &
 xclickroot -r xmenu.sh &
