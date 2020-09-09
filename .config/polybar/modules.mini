@@ -156,7 +156,7 @@ poll-interval = 2
 
 label-charging = %percentage%%
 
-format-charging = 
+format-charging = 
 format-charging-background = ${colors.color4}
 format-charging-foreground = ${colors.color0}
 format-charging-padding = 1
