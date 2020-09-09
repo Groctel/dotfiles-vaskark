@@ -12,4 +12,5 @@ sed -i "s|#define FLIP.*$|#define FLIP 0|g" ~/.config/glava/bars.glsl
 if ps -A | grep glava; then
 	killall -q glava
 fi
+
 glava -d -a fifo -e rc-i3.glsl &
