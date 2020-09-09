@@ -122,7 +122,7 @@ ramp-signal-2 = 
 
 [module/wired]
 type = internal/network
-interface = enp3s0
+interface = enp0s3
 interval = 1.0
 accumulate-stats = true
 ;unknown-as-up = true
