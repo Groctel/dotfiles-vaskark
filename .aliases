@@ -91,7 +91,7 @@ alias w1='wal -f random_user'
 alias w2='wal -f random'
 
 # system
-alias upd8='sudo apt update;sudo apt full-upgrade;sudo apt autoremove;sudo apt clean'
+alias ud8='sudo apt update;sudo apt full-upgrade;sudo apt autoremove;sudo apt clean'
 alias reboot='systemctl reboot'
 alias shut='systemctl poweroff -i'
 alias susp='systemctl suspend'
