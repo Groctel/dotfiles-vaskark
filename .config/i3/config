@@ -200,7 +200,7 @@ exec_always --no-startup-id picom --experimental-backends --config ~/.config/pic
 exec --no-startup-id redshift.sh
 exec --no-startup-id /usr/lib/policykit-1-gnome/polkit-gnome-authentication-agent-1
 exec --no-startup-id wal -R -o wal-berry.sh -o wal-dunst.sh -o wal-glava-b.sh
-exec --no-startup-id libinput-gestures
+exec --no-startup-id libinput-gestures -c ~/.config/libinput-gestures/default.conf
 exec --no-startup-id xautolock -time 10 -locker 'lock.sh' -corners 00-+
 
 # lock screen
