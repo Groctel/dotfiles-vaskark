@@ -196,10 +196,10 @@ bindsym $mod+r mode "Resize"
 
 # startup apps
 exec_always --no-startup-id polybar-i3.sh
-exec_always --no-startup-id picom --config ~/.config/picom/picom-dk.sh
+exec_always --no-startup-id picom --experimental-backends --config ~/.config/picom/picom.sh
 exec --no-startup-id redshift.sh
 exec --no-startup-id /usr/lib/policykit-1-gnome/polkit-gnome-authentication-agent-1
-exec --no-startup-id wal -R -o wal-berry.sh -o wal-cava.sh -o wal-dunst.sh -o wal-glava-b.sh
+exec --no-startup-id wal -R -o wal-berry.sh -o wal-dunst.sh -o wal-glava-b.sh
 exec --no-startup-id libinput-gestures
 exec --no-startup-id xautolock -time 10 -locker 'lock.sh' -corners 00-+
 

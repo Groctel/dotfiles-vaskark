@@ -74,3 +74,8 @@ xmenu.selbackground: {color2}
 xmenu.selforeground: {color0}
 xmenu.separator: {color2}
 xmenu.border: {color0}
+
+! sxiv
+Sxiv.background: {color0}
+Sxiv.foreground: {color7}
+Sxiv.font: scientifica-8;
