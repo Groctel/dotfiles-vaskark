@@ -8,8 +8,8 @@ libinput-gestures -c ~/.config/berry/gestures.conf &
 /usr/lib/policykit-1-gnome/polkit-gnome-authentication-agent-1 &
 xclickroot -r xmenu.sh &
 xautolock -time 10 -locker 'lock.sh' -corners 00-+ &
-wal -R -o wal-berry.sh -o wal-dunst.sh -o wal-glava.sh &
-polybar-main.sh &
+wal -R -o wal-berry.sh -o wal-dunst.sh &
+polybar -r -c ~/.config/polybar/config main &
 
 # Set decoration geometry
 berryc border_width         0

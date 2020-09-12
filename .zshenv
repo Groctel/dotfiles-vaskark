@@ -10,7 +10,25 @@ export VISUAL='nvim'
 export BROWSER='google-chrome-stable'
 
 # fzf
-export FZF_DEFAULT_OPTS='--border'
+#export FZF_DEFAULT_COMMAND="fd"
+#export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
+#export FZF_ALT_C_COMMAND="$FZF_DEFAULT_COMMAND --type d"
+export FZF_DEFAULT_OPTS="
+--layout=reverse-list
+--info=inline
+--height=50%
+--multi
+--border=sharp
+--preview-window=:hidden
+--preview '([[ -f {} ]] && (bat --style=numbers --color=always {} || cat {})) || ([[ -d {} ]] && (tree -C {} | less)) || echo {} 2> /dev/null | head -200'
+--prompt='∼ ' --pointer='▶' --marker='✓'
+--bind '?:toggle-preview'
+--bind 'ctrl-a:select-all'
+--bind 'ctrl-y:execute-silent(echo {+} | pbcopy)'
+--bind 'ctrl-e:execute(echo {+} | xargs -o vim)'
+"
+#--color='hl:148,hl+:154,pointer:032,marker:010,bg+:237,gutter:008'
+
 
 # pfetch
 export PF_INFO="os kernel uptime shell wm memory"

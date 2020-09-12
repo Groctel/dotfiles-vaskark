@@ -66,10 +66,6 @@ super + PrintScreen
 super + shift PrintScreen
 	screenshot.sh window
 
-# suspend
-super + alt + Delete
-	systemctl suspend
-
 # reboot
 super + shift + Delete
 	systemctl reboot
@@ -94,9 +90,9 @@ XF86MonBrightnessDown
 
 # wal
 super + F12
-	wal -f random_user -o wal-berry.sh -o wal-dunst.sh -o wal-glava.sh
+	wal -f random_user -o wal-berry.sh -o wal-dunst.sh
 super + shift + F12
-	wal -R -o wal-berry.sh -o wal-dunst.sh -o wal-glava.sh
+	wal -R -o wal-berry.sh -o wal-dunst.sh
     
 # xmenu
 super + z

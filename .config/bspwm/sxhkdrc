@@ -74,10 +74,6 @@ alt + F11
 	mpc toggle
 alt + F12
 	mpc next
-	
-# suspend
-super + alt + Delete
-	systemctl suspend
 
 # reboot
 super + shift + Delete
