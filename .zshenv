@@ -27,8 +27,6 @@ export FZF_DEFAULT_OPTS="
 --bind 'ctrl-y:execute-silent(echo {+} | pbcopy)'
 --bind 'ctrl-e:execute(echo {+} | xargs -o vim)'
 "
-#--color='hl:148,hl+:154,pointer:032,marker:010,bg+:237,gutter:008'
-
 
 # pfetch
 export PF_INFO="os kernel uptime shell wm memory"
