@@ -10,9 +10,9 @@ export VISUAL='nvim'
 export BROWSER='google-chrome-stable'
 
 # fzf
-#export FZF_DEFAULT_COMMAND="fd"
-#export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
-#export FZF_ALT_C_COMMAND="$FZF_DEFAULT_COMMAND --type d"
+export FZF_DEFAULT_COMMAND="fdfind"
+export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
+export FZF_ALT_C_COMMAND="$FZF_DEFAULT_COMMAND --type d"
 export FZF_DEFAULT_OPTS="
 --layout=reverse-list
 --info=inline
