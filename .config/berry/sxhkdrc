@@ -22,10 +22,7 @@ super + shift + r
 
 # lockscreen
 super + Escape
-#	betterlockscreen -l pixel
 	lock.sh
-#super + shift + Escape
-#	betterlockscreen -s pixel
 
 # file manager
 super + F1
@@ -37,7 +34,7 @@ super + F2
 
 # music
 super + F3
-	kitty -e ncmpcpp
+	alacritty -e ncmpcpp
 	
 # wp
 super + F4
