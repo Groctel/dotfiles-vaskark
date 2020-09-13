@@ -2,7 +2,7 @@
 
 
 # picom
-picom --config ~/.config/bspwm/picom.conf &
+picom --experimental-backends --config ~/.config/bspwm/picom.conf &
 
 # redshift
 killall -9 redshift
