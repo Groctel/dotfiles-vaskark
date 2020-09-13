@@ -11,8 +11,8 @@ export BROWSER='google-chrome-stable'
 
 # fzf
 export FZF_DEFAULT_COMMAND="fdfind"
-#export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
-#export FZF_ALT_C_COMMAND="$FZF_DEFAULT_COMMAND"
+export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
+export FZF_ALT_C_COMMAND="$FZF_DEFAULT_COMMAND"
 export FZF_DEFAULT_OPTS="
 --layout=reverse-list
 --info=inline
@@ -23,10 +23,11 @@ export FZF_DEFAULT_OPTS="
 --preview '([[ -f {} ]] && (bat --style=numbers --color=always {} || cat {})) || ([[ -d {} ]] && (tree -C {} | less)) || echo {} 2> /dev/null | head -200'
 --prompt='∼ ' --pointer='▶' --marker='✓'
 --bind '?:toggle-preview'
---bind 'ctrl-a:select-all'
---bind 'ctrl-y:execute-silent(echo {+} | pbcopy)'
---bind 'ctrl-e:execute(echo {+} | xargs -o vim)'
 "
+#--bind 'ctrl-a:select-all'
+#--bind 'ctrl-y:execute-silent(echo {+} | pbcopy)'
+#--bind 'ctrl-e:execute(echo {+} | xargs -o vim)'
+
 
 # pfetch
 export PF_INFO="os kernel uptime shell wm memory"
