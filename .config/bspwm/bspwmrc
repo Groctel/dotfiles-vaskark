@@ -27,9 +27,6 @@ pgrep -x sxhkd > /dev/null || sxhkd -c $HOME/.config/bspwm/sxhkdrc &
 # set cursor
 xsetroot -cursor_name left_ptr &
 
-# restore wallpaper
-# bash $HOME/.fehbg
-
 # monitors
 bspc monitor eDP-1 -d 1 2 3 4 5
 bspc monitor HDMI-2 -d 6 7 8 9 10
@@ -69,3 +66,8 @@ bspc rule -r "*"
 #bspc rule -a Google-chrome desktop='^2'
 #bspc rule -a mpv state=floating
 #bspc rule -a Screenkey manage=off
+
+# restore wp
+bash $HOME/.fehbg
+
+
