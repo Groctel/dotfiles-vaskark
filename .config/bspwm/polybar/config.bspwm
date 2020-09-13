@@ -116,9 +116,9 @@ format-padding = 0
 label-monocle = ""
 label-tiled = ""
 
-label-floating = " "
-label-pseudotiled = " "
-label-fullscreen = " "
+;label-floating = " F"
+;label-pseudotiled = " "
+;label-fullscreen = " "
 
 ;label-locked = " "
 label-sticky = " "
@@ -153,6 +153,8 @@ interface = wlp2s0
 interval = 1.0
 accumulate-stats = true
 unknown-as-up = true
+click-left = networkmanager_dmenu &
+click-right = nm-connection-editor &
 
 label-connected = %essid% [%downspeed%]
 format-connected = <ramp-signal> <label-connected>
@@ -179,6 +181,8 @@ interface = enp0s3
 interval = 1.0
 accumulate-stats = true
 unknown-as-up = true
+click-left = networkmanager_dmenu &
+click-right = nm-connection-editor &
 
 label-connected = %ifname% [%downspeed%]
 format-connected = <ramp-signal> <label-connected>
