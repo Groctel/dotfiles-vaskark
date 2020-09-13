@@ -82,6 +82,11 @@ pin-workspaces = true
 inline-mode = false
 enable-click = true
 
+label-monitor = %name%
+label-monitor-background = ${colors.color5}
+label-monitor-foreground = ${colors.color0}
+label-monitor-padding = 1
+
 format = <label-state>
 
 label-focused = %index%
