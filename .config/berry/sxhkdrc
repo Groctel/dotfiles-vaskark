@@ -27,6 +27,9 @@ super + Escape
 # file manager
 super + F1
 	nemo
+	
+super + shift + F1
+	pcmanfm
 
 # browser
 super + F2

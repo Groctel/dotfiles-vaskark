@@ -22,16 +22,10 @@ margin-bottom = 0
 
 [settings]
 screenchange-reload = true
-;compositing-background = xor
-;compositing-background = screen
-;compositing-foreground = source
-;compositing-border = over
 
 [colors]
-;xrdb, dkeg-skigh
 color0 = ${xrdb:color0:#252a32}
 color1 = ${xrdb:color1:#876058}
-;color1 = ${env:color1_alpha}
 color2 = ${xrdb:color2:#6f7f71}
 color3 = ${xrdb:color3:#b39580}
 color4 = ${xrdb:color4:#546780}
@@ -64,14 +58,14 @@ foreground = #666
 border-size = 4
 border-color = ${colors.color0}
 
-padding-left = 1
+padding-left = 0
 padding-right = 1
 
 module-margin-left = 0
-module-margin-right = 2
+module-margin-right = 1
 
-font-0 = "scientifica:size=8;1"
-font-1 = "siji:size=10;1"
+font-0 = "scientifica:size=8;2"
+font-1 = "siji:size=10;2"
 
 modules-left = bspwm
 modules-center = mpd
@@ -88,12 +82,7 @@ pin-workspaces = true
 inline-mode = false
 enable-click = true
 
-format = <label-mode>  <label-state>
-
-;label-mode = %mode%
-;label-mode-background = ${colors.color2}
-;label-mode-foreground = ${colors.color0}
-;label-mode-padding = 2
+format = <label-state>
 
 label-focused = %index%
 label-focused-background = ${colors.color2}
@@ -111,18 +100,24 @@ label-urgent-padding = 2
 label-empty = %index%
 label-empty-padding = 2
 
-label-monocle = 
-label-tiled = 
-label-fullscreen = 
-label-floating = 
-label-pseudotiled = P
-label-locked = L
-;label-locked-foreground = #bd2c40
-label-sticky = S
-;label-sticky-foreground = #fba922
-label-private = Pr
-;label-private-foreground = #bd2c40
-label-marked = M
+[module/mod]
+type = internal/bspwm
+
+format = <label-mode>
+format-background = ${colors.color0}
+format-foreground = ${colors.color4}
+format-padding = 1
+
+label-monocle = ""
+label-tiled = ""
+
+;label-floating = " "
+;label-pseudotiled = " "
+;label-fullscreen = " "
+
+;label-locked = " "
+;label-sticky = " "
+;label-private = ", P"
 
 ##################################################
 
@@ -264,13 +259,15 @@ ramp-capacity-4 = 
 [module/temp]
 type = internal/temperature
 thermal-zone = 0
-warn-temperature = 65
+base-temperature = 20
+warn-temperature = 70
 
 label = %temperature-c%
 format = <ramp> <label>
 
 label-warn = %temperature-c%
 format-warn = <ramp> <label-warn>
+label-warn-foreground = ${colors.color1}
 
 ramp-0 = 
 ramp-0-foreground = ${colors.color6}
@@ -290,7 +287,7 @@ time-alt = %A %B %d %Y
 label = %time%
 format = <label>
 
-format-prefix = " "
+format-prefix = " "
 format-prefix-foreground = ${colors.color3}
 
 ##################################################
