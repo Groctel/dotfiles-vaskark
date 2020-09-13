@@ -7,7 +7,7 @@ export PATH
 export SSH_KEY_PATH="~/.ssh/id_rsa"
 export EDITOR='nvim'
 export VISUAL='nvim'
-export BROWSER='google-chrome-stable'
+export BROWSER='google-chrome'
 
 # fzf
 export FZF_DEFAULT_COMMAND="fdfind"
