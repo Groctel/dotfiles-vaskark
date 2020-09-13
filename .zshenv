@@ -10,7 +10,7 @@ export VISUAL='nvim'
 export BROWSER='google-chrome'
 
 # fzf
-export FZF_DEFAULT_COMMAND="fdfind"
+export FZF_DEFAULT_COMMAND="fdfind -H"
 export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
 export FZF_ALT_C_COMMAND="$FZF_DEFAULT_COMMAND"
 export FZF_DEFAULT_OPTS="
