@@ -1,13 +1,8 @@
 #!/bin/sh
 
-# set cursor
-xsetroot -cursor_name left_ptr
-
-# restore wallpaper
-bash $HOME/.fehbg &
 
 # killall for reloading
-killall -9 redshift xautolock libinput-gestures polybar sxhkd
+killall -9 polybar redshift xautolock
 
 # picom
 picom --config ~/.config/bspwm/picom.conf &
@@ -19,7 +14,7 @@ redshift -c ~/.config/redshift/redshift.conf &
 xautolock -time 10 -locker 'lock.sh' -corners 00-+ &
 
 # gestures
-libinput-gestures -c ~/.config/bspwm/gestures.conf
+libinput-gestures -c ~/.config/bspwm/gestures.conf &
 
 # polkit
 /usr/lib/policykit-1-gnome/polkit-gnome-authentication-agent-1 &
@@ -28,7 +23,13 @@ libinput-gestures -c ~/.config/bspwm/gestures.conf
 polybar -r -c ~/.config/bspwm/polybar/config.bspwm main &
 
 # sxhkd
-sxhkd -c $HOME/.config/bspwm/sxhkdrc &
+pgrep -x sxhkd > /dev/null || sxhkd -c $HOME/.config/bspwm/sxhkdrc &
+
+# set cursor
+xsetroot -cursor_name left_ptr &
+
+# restore wallpaper
+bash $HOME/.fehbg &
 
 # monitors
 bspc monitor eDP-1 -d 1 2 3 4 5

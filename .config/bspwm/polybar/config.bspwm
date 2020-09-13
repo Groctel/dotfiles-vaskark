@@ -65,7 +65,7 @@ module-margin-left = 0
 module-margin-right = 2
 
 font-0 = "scientifica:size=8;2"
-font-1 = "siji:size=10;2"
+font-1 = "siji:size=8;2"
 
 modules-left = mod bspwm
 modules-center = mpd
@@ -110,7 +110,7 @@ type = internal/bspwm
 
 format = <label-mode>
 format-background = ${colors.color0}
-format-foreground = ${colors.color4}
+format-foreground = ${colors.color3}
 format-padding = 0
 
 label-monocle = ""
@@ -216,7 +216,7 @@ ramp-volume-foreground = ${colors.color4}
 label-muted = ---
 format-muted = <label-muted>
 
-format-muted-prefix =  
+format-muted-prefix = " "
 format-muted-prefix-foreground = ${colors.color4}
 
 ramp-volume-0 = 
@@ -296,7 +296,7 @@ time-alt = %A %B %d %Y
 label = %time%
 format = <label>
 
-format-prefix = " "
+format-prefix = " "
 format-prefix-foreground = ${colors.color3}
 
 ##################################################
