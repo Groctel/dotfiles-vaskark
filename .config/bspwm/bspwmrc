@@ -2,7 +2,7 @@
 
 
 # killall for reloading
-killall -9 polybar redshift xautolock
+killall -9 polybar redshift
 
 # picom
 picom --config ~/.config/bspwm/picom.conf &
@@ -29,7 +29,7 @@ pgrep -x sxhkd > /dev/null || sxhkd -c $HOME/.config/bspwm/sxhkdrc &
 xsetroot -cursor_name left_ptr &
 
 # restore wallpaper
-bash $HOME/.fehbg &
+bash $HOME/.fehbg
 
 # monitors
 bspc monitor eDP-1 -d 1 2 3 4 5
