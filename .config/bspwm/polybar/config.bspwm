@@ -70,7 +70,7 @@ font-2 = "siji:size=12;3"
 
 modules-left = mod bspwm
 modules-center = mpd
-modules-right = wireless wired uptime memory temp battery bt-headphones bt-volume volume date
+modules-right = wireless wired uptime memory temp battery bt-volume volume date
 
 ;scroll-up = bspwm-deskprev
 ;scroll-down = bspwm-desknext
@@ -210,17 +210,17 @@ format-volume = <ramp-volume> <label-volume>
 
 ramp-volume-foreground = ${colors.color4}
 
-label-muted = ---
-format-muted = <label-muted>
-
-format-muted-prefix = " "
-format-muted-prefix-foreground = ${colors.color4}
-
 ramp-volume-0 = 
 ramp-volume-1 = 
 ramp-volume-2 = 
 ramp-volume-3 = 
 ramp-volume-4 = 
+
+label-muted = ---
+format-muted = <label-muted>
+
+format-muted-prefix = " "
+format-muted-prefix-foreground = ${colors.color4}
 
 ##################################################
 
@@ -240,6 +240,41 @@ format-muted = <label-muted>
 
 format-muted-prefix = " "
 format-muted-prefix-foreground = ${colors.color2}
+
+##################################################
+
+[module/alsa]
+type = internal/alsa
+interval = 5
+mapped = true
+
+master-soundcard = hw:0
+speaker-soundcard = hw:0
+headphone-soundcard = hw:0
+
+master-mixer = Master
+speaker-mixer = Speaker
+headphone-mixer = Headphone
+
+headphone-id = 14
+
+format-volume = <ramp-volume> <label-volume>
+ramp-volume-foreground = ${colors.color4}
+
+ramp-volume-0 = 
+ramp-volume-1 = 
+ramp-volume-2 = 
+ramp-volume-3 = 
+ramp-volume-4 = 
+
+label-muted = ---
+format-muted = <label-muted>
+
+format-muted-prefix = " "
+format-muted-prefix-foreground = ${colors.color4}
+
+ramp-headphones-0 = 
+ramp-headphones-1 = 
 
 ##################################################
 
