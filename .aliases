@@ -13,12 +13,16 @@ alias cd..='cd ..'
 alias d='dirs -v | head -10'
 alias free='free -m'
 
+# list
 alias ls='lsd'
 alias l='ls -l'
 alias ll='ls -al'
 alias lt='lsd --tree --depth 2'
 
+# suffix
 alias -g G='| grep -i'
+alias -s html=google-chrome-stable
+alias -s md=google-chrome-stable
 
 alias vim='nvim'
 alias v='nvim'
@@ -52,10 +56,6 @@ alias rhb='run-help bindkey'
 
 # last modified logs
 alias lml='ls -ltr /var/log | tail'
-
-# suffix
-alias -s html=google-chrome-stable
-alias -s md=google-chrome-stable
 
 # bluetoothctl
 alias btc='bluetoothctl'
@@ -94,9 +94,9 @@ alias w2='wal -f random'
 
 # system
 alias upd8='sudo apt update;sudo apt full-upgrade;sudo apt autoremove;sudo apt clean'
-alias reboot='systemctl reboot'
+alias rbt='systemctl reboot'
 alias shut='systemctl poweroff -i'
-alias susp='systemctl suspend'
+alias sus='systemctl suspend'
 
 # networking
 alias rnm='sudo systemctl restart network-manager'
