@@ -9,6 +9,7 @@ Plug 'nelstrom/vim-markdown-folding'
 Plug 'dylanaraps/wal.vim'
 Plug 'preservim/nerdtree'
 Plug 'mcchrish/nnn.vim'
+Plug 'vim-syntastic/syntastic'
 call plug#end()
 
 " Highlight the line on which the cursor lives.
@@ -68,6 +69,16 @@ cmap <C-e> <end>
 map <C-n> :NERDTreeToggle<CR>
 " let g:NERDTreeDirArrowExpandable = ''
 " let g:NERDTreeDirArrowCollapsible = ''
+
+" Syntastic
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
 
 " Control-S Save
 nmap <C-S> :w<cr>
