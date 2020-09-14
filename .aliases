@@ -68,7 +68,7 @@ alias gl='git log'
 alias gs='git status'
 
 # fzf
-alias se='nvim $(fzf)' 
+alias ve='nvim $(fzf)' 
 
 # yadm
 alias yc='yadm commit -a'
