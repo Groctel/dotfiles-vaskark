@@ -162,7 +162,7 @@ format-connected = <ramp-signal> <label-connected>
 
 ramp-signal-foreground = ${colors.color4}
 
-label-disconnected = N/A
+label-disconnected = None
 format-disconnected = <label-disconnected>
 
 format-disconnected-prefix = " "
@@ -187,7 +187,7 @@ format-connected = <ramp-signal> <label-connected>
 
 ramp-signal-foreground = ${colors.color4}
 
-label-disconnected = N/A
+label-disconnected = None
 format-disconnected = <label-disconnected>
 
 format-disconnected-prefix = " "
@@ -214,7 +214,6 @@ ramp-volume-0 = 
 ramp-volume-1 = 
 ramp-volume-2 = 
 ramp-volume-3 = 
-ramp-volume-4 = 
 
 label-muted = ---
 format-muted = <label-muted>
@@ -265,7 +264,6 @@ ramp-volume-0 = 
 ramp-volume-1 = 
 ramp-volume-2 = 
 ramp-volume-3 = 
-ramp-volume-4 = 
 
 label-muted = ---
 format-muted = <label-muted>
@@ -327,9 +325,7 @@ ramp-capacity-foreground = ${colors.color5}
 
 ramp-capacity-0 = 
 ramp-capacity-1 = 
-ramp-capacity-2 = 
-ramp-capacity-3 = 
-ramp-capacity-4 = 
+ramp-capacity-2 = 
 
 ##################################################
 
@@ -346,10 +342,10 @@ label-warn = %temperature-c%
 format-warn = <ramp> <label-warn>
 label-warn-foreground = ${colors.color1}
 
-ramp-0 = 
+ramp-0 = 
 ramp-0-foreground = ${colors.color6}
 
-ramp-1 = 
+ramp-1 = 
 ramp-1-foreground = ${colors.color1}
 
 ##################################################
