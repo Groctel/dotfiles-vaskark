@@ -70,7 +70,7 @@ font-2 = "siji:size=12;3"
 
 modules-left = mod bspwm
 modules-center = mpd
-modules-right = wireless wired uptime memory temp battery volume date
+modules-right = wireless wired uptime memory temp battery bt-headphones volume date
 
 ;scroll-up = bspwm-deskprev
 ;scroll-down = bspwm-desknext
@@ -221,6 +221,25 @@ ramp-volume-1 = 
 ramp-volume-2 = 
 ramp-volume-3 = 
 ramp-volume-4 = 
+
+##################################################
+
+[module/bt-headphones]
+type = internal/pulseaudio
+sink = bluez_sink.10_E0_00_EE_08_9D.a2dp_sink
+click-right = pavucontrol &
+
+label-volume = %percentage%%
+format-volume = <label-volume>
+
+format-volume-prefix = " "
+format-volume-prefix-foreground = ${colors.color2}
+
+label-muted = ---
+format-muted = <label-muted>
+
+format-muted-prefix = " "
+format-muted-prefix-foreground = ${colors.color2}
 
 ##################################################
 

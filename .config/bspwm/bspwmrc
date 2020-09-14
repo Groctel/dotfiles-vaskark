@@ -2,7 +2,7 @@
 
 
 # picom
-killall -9 picom; sleep 0.05s
+#killall -9 picom; sleep 0.05s
 picom --experimental-backends --config ~/.config/bspwm/picom.conf &
 
 # redshift

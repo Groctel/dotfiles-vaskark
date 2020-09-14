@@ -28,7 +28,6 @@ export FZF_DEFAULT_OPTS="
 #--bind 'ctrl-y:execute-silent(echo {+} | pbcopy)'
 #--bind 'ctrl-e:execute(echo {+} | xargs -o vim)'
 
-
 # pfetch
 export PF_INFO="os kernel uptime shell wm memory"
 export PF_SEP=":"
@@ -39,6 +38,3 @@ export PF_COL2=4
 export NNN_FIFO='/tmp/nnn.fifo' 
 export NNN_COLORS='2356'
 export NNN_TRASH=1
-
-# zone
-export TZ=":/usr/share/zoneinfo/America/Toronto"
