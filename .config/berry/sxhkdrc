@@ -10,14 +10,14 @@ super + shift + Return
         kitty
 
 # program launcher
-super + d
-	rofi -no-lazy-grab -show drun
-
 super + x
-        dmenu.sh
+	dmenu.sh
 
-# make sxhkd reload its configuration files:
-super + shift + r
+super + d
+	rofi -show drun
+
+# reload sxhkd
+super + control + r
 	pkill -USR1 -x sxhkd
 
 # lockscreen
@@ -56,12 +56,8 @@ super + shift + semicolon
 	polybar-menu.sh
 
 # music
-alt + F10
-	mpc prev
-alt + F11
-	mpc toggle
-alt + F12
-	mpc next
+alt + {F10,F11,F12}
+	mpc -q {prev,toggle,next}
 
 # shots
 super + PrintScreen

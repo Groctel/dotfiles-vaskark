@@ -2,7 +2,7 @@
 # wm independent hotkeys
 #
 
-# terminal emulator
+# terminal emulators
 super + Return
 	alacritty
 
@@ -12,15 +12,18 @@ super + shift + Return
 # program launcher
 super + x
 	dmenu.sh
-	
-# rofi
+
 super + d
 	rofi -show drun
 
 # reload sxhkd
 super + control + r
 	pkill -USR1 -x sxhkd
-	
+
+# lockscreen
+super + Escape
+	lock.sh
+
 # file manager
 super + F1
 	nemo
@@ -50,7 +53,25 @@ super + semicolon
 super + control + semicolon
 	polybar-msg cmd restart
 super + shift + semicolon
-	polybar-menu.sh	
+	polybar-menu.sh
+
+# music
+alt + {F10,F11,F12}
+	mpc -q {prev,toggle,next}
+
+# shots
+super + PrintScreen
+	screenshot.sh full
+super + shift PrintScreen
+	screenshot.sh window
+
+# reboot
+super + shift + Delete
+	systemctl reboot
+
+# shutdown
+super + control + Delete
+	systemctl poweroff -i 
 
 # volume
 XF86AudioRaiseVolume
@@ -59,38 +80,22 @@ XF86AudioLowerVolume
 	pactl set-sink-volume @DEFAULT_SINK@ -5%
 XF86AudioMute
 	pactl set-sink-mute @DEFAULT_SINK@ toggle
-	
+
 # brightness
 XF86MonBrightnessUp
 	light -A 5
 XF86MonBrightnessDown
 	light -U 5
 
-# lockscreen
-super + Escape
-	lock.sh
-	
-# music
-alt + F10
-	mpc prev
-alt + F11
-	mpc toggle
-alt + F12
-	mpc next
-
-# reboot
-super + shift + Delete
-	systemctl reboot
-
-# shutdown
-super + control + Delete
-	systemctl poweroff -i
-	
 # wal
 super + F12
-	wal -f random_user -o wal-dunst.sh
+	wal -f random_user -o wal-berry.sh -o wal-dunst.sh
 super + shift + F12
-	wal -R -o wal-dunst.sh
+	wal -R -o wal-berry.sh -o wal-dunst.sh
+    
+# xmenu
+#super + z
+#	xmenu.sh
 
 #
 # bspwm hotkeys

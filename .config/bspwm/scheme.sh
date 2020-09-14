@@ -3,19 +3,19 @@
 if [ "$1" == "first_child" ]
 then
   bspc config automatic_scheme first_child
-  zenity --info --width=200 --height=100 --text "Switched to first_child mode!"
+  notify-send -t 3000 "Mode: first child"
   exit 0
 elif [ "$1" == "longest_side" ]
 then
   bspc config automatic_scheme longest_side
-  zenity --info --width=200 --height=100 --text "Switched to longest_side mode!"
+  notify-send -t 3000 "Mode: longest side"
   exit 0
 elif [ "$1" == "spiral" ]
 then
   bspc config automatic_scheme spiral
-  zenity --info --width=200 --height=100 --text "Switched to spiral mode!"
+  notify-send -t 3000 "Mode: spiral"
   exit 0
 else
-  zenity --info --width=200 --height=100 --text "Invalid mode!"
+  notify-send -t 3000 "Mode: invalid"
   exit 1
 fi
