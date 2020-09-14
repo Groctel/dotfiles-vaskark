@@ -2,13 +2,16 @@
 
 
 # picom
+killall -9 picom; sleep 0.05s
 picom --experimental-backends --config ~/.config/bspwm/picom.conf &
 
 # redshift
 killall -9 redshift
+redshift -x
 redshift -c ~/.config/redshift/redshift.conf &
 
 # locker
+killall -9 xautolock
 xautolock -time 10 -locker 'lock.sh' -corners 00-+ &
 
 # gestures
