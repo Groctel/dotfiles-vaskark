@@ -63,10 +63,6 @@ XF86MonBrightness{Up,Down}
 # wal
 super + {_,shift +} F12
 	wal {-f random_user -o wal-berry.sh -o wal-dunst.sh,-R -o wal-berry.sh -o wal-dunst.sh}
-    
-# xmenu
-super + z
-	xmenu.sh
 
 # reboot, shutdown
 super + {shift +,control +} Delete
