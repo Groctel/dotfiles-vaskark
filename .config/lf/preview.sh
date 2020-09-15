@@ -3,7 +3,7 @@
 LINES=30
 case "$1" in
     *.png|*.jpg|*.jpeg|*.mkv|*.mp4|*.m4v) mediainfo "$1";;
-    #*.md) glow -s dark "$1";;
+    *.md) glow -s dark "$1";;
     *.pdf) pdftotext "$1" -;;
     *.zip) zipinfo "$1";;
     *.tar.gz) tar -ztvf "$1";;

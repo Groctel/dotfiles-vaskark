@@ -41,6 +41,8 @@ super + F5
 # polybar
 super + {_,shift +} semicolon
 	polybar-msg cmd {toggle,restart}
+super + ctrl + semicolon
+	polybar-menu.sh
 
 # music
 alt + {F10,F11,F12}
@@ -65,5 +67,5 @@ super + {_,shift +} F12
 	wal {-f random_user -o wal-berry.sh -o wal-dunst.sh,-R -o wal-berry.sh -o wal-dunst.sh}
 
 # reboot, shutdown
-super + {shift +,control +} Delete
-	systemctl {reboot, poweroff -i}
+super + {shift,alt,ctrl} + Delete
+	systemctl {reboot,suspend,poweroff -i}

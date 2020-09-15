@@ -42,7 +42,6 @@ alias nvc='nvim ~/.vimrc'
 alias bf='bunnyfetch'
 alias pf='clear;pfetch'
 alias n='nnn -C -E -d -o -T e -a -x'
-alias f='lf'
 alias c='cava'
 alias p='pipes'
 alias mi='mediainfo'
@@ -88,15 +87,13 @@ alias nfs='clear;neofetch --config ~/.config/neofetch/config-small.conf'
 alias p10kc='p10k configure'
 
 # pywal
-alias wal='wal -o wal-berry.sh -o wal-dunst.sh -o wal-glava.sh'
+alias wal='wal -o wal-berry.sh -o wal-dunst.sh'
 alias w1='wal -f random_user'
 alias w2='wal -f random'
 
 # system
 alias upd8='sudo apt update;sudo apt full-upgrade;sudo apt autoremove;sudo apt clean'
-alias rbt='systemctl reboot'
 alias shut='systemctl poweroff -i'
-alias sus='systemctl suspend'
 
 # networking
 alias rnm='sudo systemctl restart network-manager'
