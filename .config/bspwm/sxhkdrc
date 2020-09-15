@@ -78,9 +78,11 @@ super + z
 super + {shift +,control +} Delete
 	systemctl {reboot, poweroff -i}
 
+
 #
 # bspwm hotkeys
 #
+
 
 # quit bspwm
 super + Delete

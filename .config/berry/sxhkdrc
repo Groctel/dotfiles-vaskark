@@ -2,19 +2,13 @@
 # wm independent hotkeys
 #
 
-# terminal emulators
-super + Return
-	alacritty
+# terminals
+super + {_,shift +} Return
+	{alacritty,kitty}
 
-super + shift + Return
-        kitty
-
-# program launcher
-super + x
-	dmenu.sh
-
-super + d
-	rofi -show drun
+# program launchers
+super + {_,shift +} d
+	{rofi -show drun,dmenu.sh}
 
 # reload sxhkd
 super + control + r
@@ -24,16 +18,13 @@ super + control + r
 super + Escape
 	lock.sh
 
-# file manager
-super + F1
-	nemo
-	
-super + shift + F1
-	pcmanfm
+# file managers
+super + {_,shift +} F1
+	{nemo,pcmanfm}
 
-# browser
-super + F2
-	google-chrome
+# browsers
+super + {_,shift +} F2
+	{google-chrome,firefox}
 
 # music
 super + F3
@@ -48,30 +39,16 @@ super + F5
 	date.sh
 
 # polybar
-super + semicolon
-	polybar-msg cmd toggle
-super + control + semicolon
-	polybar-msg cmd restart
-super + shift + semicolon
-	polybar-menu.sh
+super + {_,shift +} semicolon
+	polybar-msg cmd {toggle,restart}
 
 # music
 alt + {F10,F11,F12}
 	mpc -q {prev,toggle,next}
 
 # shots
-super + PrintScreen
-	screenshot.sh full
-super + shift PrintScreen
-	screenshot.sh window
-
-# reboot
-super + shift + Delete
-	systemctl reboot
-
-# shutdown
-super + control + Delete
-	systemctl poweroff -i 
+super + {_,shift +} PrintScreen
+	screenshot.sh {full,window}
 
 # volume
 XF86AudioRaiseVolume
@@ -96,6 +73,10 @@ super + shift + F12
 # xmenu
 super + z
 	xmenu.sh
+
+# reboot, shutdown
+super + {shift +,control +} Delete
+	systemctl {reboot, poweroff -i}
 
 
 #
