@@ -51,7 +51,7 @@ super + n
 super + Tab
     berryc cycle_focus
 
-super + q
+super + w
     berryc window_close
 
 super + r
