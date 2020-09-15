@@ -1,79 +1,4 @@
 #
-# wm independent hotkeys
-#
-
-# terminals
-super + {_,shift +} Return
-	{alacritty,kitty}
-
-# program launchers
-super + {_,shift +} d
-	{rofi -show drun,dmenu.sh}
-
-# reload sxhkd
-super + control + r
-	pkill -USR1 -x sxhkd
-
-# lockscreen
-super + Escape
-	lock.sh
-
-# file managers
-super + {_,shift +} F1
-	{nemo,pcmanfm}
-
-# browsers
-super + {_,shift +} F2
-	{google-chrome,firefox}
-
-# music
-super + F3
-	alacritty -e ncmpcpp
-	
-# wp
-super + F4
-	feh --randomize --bg-fill --recursive --no-fehbg ~/Pictures/*.(png|jpg)
-	
-# date
-super + F5
-	date.sh
-
-# polybar
-super + {_,shift +} semicolon
-	polybar-msg cmd {toggle,restart}
-
-# music
-alt + {F10,F11,F12}
-	mpc -q {prev,toggle,next}
-
-# shots
-super + {_,shift +} PrintScreen
-	screenshot.sh {full,window}
-
-# volume
-XF86Audio{RaiseVolume,LowerVolume}
-	pactl set-sink-volume {@DEFAULT_SINK@ +5%,@DEFAULT_SINK@ -5%}
-XF86AudioMute
-	pactl set-sink-mute @DEFAULT_SINK@ toggle
-
-# brightness
-XF86MonBrightness{Up,Down}
-	light {-A 5,-U 5}
-
-# wal
-super + {_,shift +} F12
-	wal {-f random_user -o wal-berry.sh -o wal-dunst.sh,-R -o wal-berry.sh -o wal-dunst.sh}
-    
-# xmenu
-super + z
-	xmenu.sh
-
-# reboot, shutdown
-super + {shift +,control +} Delete
-	systemctl {reboot, poweroff -i}
-
-
-#
 # bspwm hotkeys
 #
 
@@ -93,6 +18,10 @@ super + {c,q}
 # alternate between the tiled and monocle layout
 super + m
 	bspc desktop -l next
+	
+# show help
+control + F1
+    ~/.config/bspwm/sxhkd-help.sh
 
 #
 # state/flags
@@ -147,16 +76,22 @@ super + ctrl + shift + space
 #
 
 # expand a window by moving one of its side outward
-super + alt + {h,j,k,l}
-	bspc node -z {left -20 0,bottom 0 20,top 0 -20,right 20 0}
+#super + alt + {h,j,k,l}
+#	bspc node -z {left -20 0,bottom 0 20,top 0 -20,right 20 0}
 
 # contract a window by moving one of its side inward
-super + alt + shift + {h,j,k,l}
-	bspc node -z {right -20 0,top 0 20,bottom 0 -20,left 20 0}
+#super + alt + shift + {h,j,k,l}
+#	bspc node -z {right -20 0,top 0 20,bottom 0 -20,left 20 0}
 
 # move a floating window
-super + {Left,Down,Up,Right}
-	bspc node -v {-20 0,0 20,0 -20,20 0}
+#super + {Left,Down,Up,Right}
+#	bspc node -v {-20 0,0 20,0 -20,20 0}
+	
+# Expand/contract a window by moving one of its side outward/inward
+super + s : {h,j,k,l}
+    STEP=20; SELECTION={1,2,3,4}; \
+    bspc node -z $(echo "left -$STEP 0,bottom 0 $STEP,top 0 -$STEP,right $STEP 0" | cut -d',' -f$SELECTION) || \
+    bspc node -z $(echo "right -$STEP 0,top 0 $STEP,bottom 0 -$STEP,left $STEP 0" | cut -d',' -f$SELECTION)
 
 #
 # to change layouts

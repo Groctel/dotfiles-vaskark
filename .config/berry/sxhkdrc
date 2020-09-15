@@ -1,82 +1,9 @@
 #
-# wm independent hotkeys
-#
-
-# terminals
-super + {_,shift +} Return
-	{alacritty,kitty}
-
-# program launchers
-super + {_,shift +} d
-	{rofi -show drun,dmenu.sh}
-
-# reload sxhkd
-super + control + r
-	pkill -USR1 -x sxhkd
-
-# lockscreen
-super + Escape
-	lock.sh
-
-# file managers
-super + {_,shift +} F1
-	{nemo,pcmanfm}
-
-# browsers
-super + {_,shift +} F2
-	{google-chrome,firefox}
-
-# music
-super + F3
-	alacritty -e ncmpcpp
-	
-# wp
-super + F4
-	feh --randomize --bg-fill --recursive --no-fehbg ~/Pictures/*.(png|jpg)
-	
-# date
-super + F5
-	date.sh
-
-# polybar
-super + {_,shift +} semicolon
-	polybar-msg cmd {toggle,restart}
-
-# music
-alt + {F10,F11,F12}
-	mpc -q {prev,toggle,next}
-
-# shots
-super + {_,shift +} PrintScreen
-	screenshot.sh {full,window}
-
-# volume
-XF86Audio{RaiseVolume,LowerVolume}
-	pactl set-sink-volume {@DEFAULT_SINK@ +5%,@DEFAULT_SINK@ -5%}
-XF86AudioMute
-	pactl set-sink-mute @DEFAULT_SINK@ toggle
-
-# brightness
-XF86MonBrightness{Up,Down}
-	light {-A 5,-U 5}
-
-# wal
-super + {_,shift +} F12
-	wal {-f random_user -o wal-berry.sh -o wal-dunst.sh,-R -o wal-berry.sh -o wal-dunst.sh}
-    
-# xmenu
-super + z
-	xmenu.sh
-
-# reboot, shutdown
-super + {shift +,control +} Delete
-	systemctl {reboot, poweroff -i}
-
-
-#
 # berry hotkeys
 #
 
+control + F1
+    ~/.config/berry/sxhkd-help.sh
 
 super + {h, j, k, l}
     berryc window_move {-50 0, 0 50, 0 -50, 50 0}
