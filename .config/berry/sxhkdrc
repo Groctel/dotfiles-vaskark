@@ -51,24 +51,18 @@ super + {_,shift +} PrintScreen
 	screenshot.sh {full,window}
 
 # volume
-XF86AudioRaiseVolume
-	pactl set-sink-volume @DEFAULT_SINK@ +5%
-XF86AudioLowerVolume
-	pactl set-sink-volume @DEFAULT_SINK@ -5%
+XF86Audio{RaiseVolume,LowerVolume}
+	pactl set-sink-volume {@DEFAULT_SINK@ +5%,@DEFAULT_SINK@ -5%}
 XF86AudioMute
 	pactl set-sink-mute @DEFAULT_SINK@ toggle
 
 # brightness
-XF86MonBrightnessUp
-	light -A 5
-XF86MonBrightnessDown
-	light -U 5
+XF86MonBrightness{Up,Down}
+	light {-A 5,-U 5}
 
 # wal
-super + F12
-	wal -f random_user -o wal-berry.sh -o wal-dunst.sh
-super + shift + F12
-	wal -R -o wal-berry.sh -o wal-dunst.sh
+super + {_,shift +} F12
+	wal {-f random_user -o wal-berry.sh -o wal-dunst.sh,-R -o wal-berry.sh -o wal-dunst.sh}
     
 # xmenu
 super + z
