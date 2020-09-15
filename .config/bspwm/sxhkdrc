@@ -2,16 +2,13 @@
 # wm independent hotkeys
 #
 
-# terminal emulators
+# terminals
 super + {_,shift +} Return
 	{alacritty,kitty}
 
-# program launcher
-super + x
-	dmenu.sh
-
-super + d
-	rofi -show drun
+# program launchers
+super + {_,shift +} d
+	{rofi -show drun,dmenu.sh}
 
 # reload sxhkd
 super + control + r
@@ -21,7 +18,7 @@ super + control + r
 super + Escape
 	lock.sh
 
-# file manager
+# file managers
 super + {_,shift +} F1
 	{nemo,pcmanfm}
 
@@ -53,10 +50,6 @@ alt + {F10,F11,F12}
 super + {_,shift +} PrintScreen
 	screenshot.sh {full,window}
 
-# reboot, shutdown
-super + {shift +,control +} Delete
-	systemctl {reboot, poweroff -i}
-
 # volume
 XF86AudioRaiseVolume
 	pactl set-sink-volume @DEFAULT_SINK@ +5%
@@ -81,6 +74,9 @@ super + shift + F12
 super + z
 	xmenu.sh
 
+# reboot, shutdown
+super + {shift +,control +} Delete
+	systemctl {reboot, poweroff -i}
 
 #
 # bspwm hotkeys
