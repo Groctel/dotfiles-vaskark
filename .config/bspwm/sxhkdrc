@@ -3,11 +3,8 @@
 #
 
 # terminal emulators
-super + Return
-	alacritty
-
-super + shift + Return
-        kitty
+super + {_,shift +} Return
+	{alacritty,kitty}
 
 # program launcher
 super + x
@@ -25,11 +22,8 @@ super + Escape
 	lock.sh
 
 # file manager
-super + F1
-	nemo
-	
-super + shift + F1
-	pcmanfm
+super + {_,shift +} F1
+	{nemo,pcmanfm}
 
 # browser
 super + F2
@@ -48,30 +42,20 @@ super + F5
 	date.sh
 
 # polybar
-super + semicolon
-	polybar-msg cmd toggle
-super + control + semicolon
-	polybar-msg cmd restart
-super + shift + semicolon
-	polybar-menu.sh
+super + {_,shift +} semicolon
+	polybar-msg cmd {toggle,restart}
 
 # music
 alt + {F10,F11,F12}
 	mpc -q {prev,toggle,next}
 
 # shots
-super + PrintScreen
-	screenshot.sh full
-super + shift PrintScreen
-	screenshot.sh window
+super + {_,shift +} PrintScreen
+	screenshot.sh {full,window}
 
-# reboot
-super + shift + Delete
-	systemctl reboot
-
-# shutdown
-super + control + Delete
-	systemctl poweroff -i 
+# reboot, shutdown
+super + {shift +,control +} Delete
+	systemctl {reboot, poweroff -i}
 
 # volume
 XF86AudioRaiseVolume
@@ -94,8 +78,9 @@ super + shift + F12
 	wal -R -o wal-berry.sh -o wal-dunst.sh
     
 # xmenu
-#super + z
-#	xmenu.sh
+super + z
+	xmenu.sh
+
 
 #
 # bspwm hotkeys
