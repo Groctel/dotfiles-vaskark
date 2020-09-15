@@ -25,9 +25,9 @@ super + Escape
 super + {_,shift +} F1
 	{nemo,pcmanfm}
 
-# browser
-super + F2
-	google-chrome
+# browsers
+super + {_,shift +} F2
+	{google-chrome,firefox}
 
 # music
 super + F3
