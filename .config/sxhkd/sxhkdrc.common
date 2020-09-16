@@ -49,8 +49,8 @@ alt + {F10,F11,F12}
 	mpc -q {prev,toggle,next}
 
 # shots
-super + {_,shift +} PrintScreen
-	screenshot.sh {full,window}
+super + {_,shift +} Print
+        screenshot.sh {full,window}
 
 # volume
 XF86Audio{RaiseVolume,LowerVolume}
