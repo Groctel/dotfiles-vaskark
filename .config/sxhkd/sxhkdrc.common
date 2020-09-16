@@ -7,8 +7,8 @@ super + {_,shift +} Return
 	{alacritty,kitty}
 
 # program launchers
-super + {_,shift +} d
-	{rofi -show drun,dmenu.sh}
+super + {x,d}
+	{dmenu.sh,rofi -show drun}
 
 # reload sxhkd
 super + control + r
