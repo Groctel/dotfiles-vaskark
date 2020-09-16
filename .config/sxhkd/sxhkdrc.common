@@ -15,8 +15,8 @@ super + control + r
 	pkill -USR1 -x sxhkd
 
 # lockscreen
-super + Escape
-	lock.sh
+super + {_,shift +} Escape
+	{lock.sh, betterlockscreen -l pixel --off 30}
 
 # file managers
 super + {_,shift +} F1

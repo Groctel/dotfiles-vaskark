@@ -18,4 +18,4 @@ loginbox="$color0"ff
 font="scientifica"
 locktext=' Type password ...'
 lock_timeout=15
-wallpaper_cmd='nitrogen --set-zoom-fill'
+#wallpaper_cmd='nitrogen --set-zoom-fill'
