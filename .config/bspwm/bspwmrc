@@ -65,9 +65,7 @@ bspc rule -r "*"
 
 # rules
 #bspc rule -a Sxiv desktop='^3' state=floating follow=on
-#bspc rule -a Google-chrome desktop='^2'
-#bspc rule -a mpv state=floating
-#bspc rule -a Screenkey manage=off
+bspc rule -a farge state=floating
 
 # restore wp
 bash $HOME/.fehbg
