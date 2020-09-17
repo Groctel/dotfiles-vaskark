@@ -2,26 +2,26 @@
     "wallpaper": "/home/jason/Pictures/ngrobx7qbon51.jpg",
     "alpha": "100",
     "special": {
-        "background": "#1a1919",
-        "foreground": "#ffffff",
-        "cursor": "#ffffff"
+        "background": "#0e0b0b",
+        "foreground": "#f3e9eb",
+        "cursor": "#f3e9eb"
     },
     "colors": {
-        "color0": "#1a1919",
-        "color1": "#7a5057",
-        "color2": "#5f4b48",
-        "color3": "#c4b39f",
-        "color4": "#6d5751",
-        "color5": "#b39789",
-        "color6": "#8e716a",
-        "color7": "#c5c5c5",
-        "color8": "#333131",
-        "color9": "#ab5a68",
-        "color10": "#865952",
-        "color11": "#ffeab7",
-        "color12": "#996a5d",
-        "color13": "#fdbd9d",
-        "color14": "#c88979",
-        "color15": "#ffffff"
+        "color0": "#0e0b0b",
+        "color1": "#7a6b6c",
+        "color2": "#b46c78",
+        "color3": "#7b7469",
+        "color4": "#977870",
+        "color5": "#aaa595",
+        "color6": "#ac9a9c",
+        "color7": "#b6afb0",
+        "color8": "#2a2020",
+        "color9": "#ad7c7f",
+        "color10": "#fc798f",
+        "color11": "#ae9a79",
+        "color12": "#d59180",
+        "color13": "#f1e1ad",
+        "color14": "#f4b3ba",
+        "color15": "#f3e9eb"
     }
 }
