@@ -9,8 +9,8 @@ sed -i "s|#define COLOR.*$|#define COLOR @fg:mix($color2, $color10, clamp(d / GR
 sed -i "s|#define FLIP.*$|#define FLIP 1|g" ~/.config/glava/bars.glsl
 
 # restart glava
-if ps -A | grep glava; then
-	killall -q glava
-fi
+#if ps -A | grep glava; then
+#	killall -q glava
+#fi
 
-glava -d -a fifo &
+#glava -d -a fifo &
