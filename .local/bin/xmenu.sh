@@ -26,6 +26,7 @@ Audio
 	Easytag	easytag
 	PulseAudio	pavucontrol
 	Rhythmbox	rhythmbox
+	yMuse		ymuse
 Graphics
 	GIMP		gimp
 	Inkscape	inkscape
