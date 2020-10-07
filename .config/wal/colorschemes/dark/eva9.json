@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/jason/Pictures/rhznrzx31sq51-m.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#000000",
+        "foreground": "#fdfdfd",
+        "cursor": "#fdfdfd"
+    },
+    "colors": {
+        "color0": "#000000",
+        "color1": "#a06666",
+        "color2": "#888888",
+        "color3": "#dd9999",
+        "color4": "#999999",
+        "color5": "#aaaaaa",
+        "color6": "#5f8787",
+        "color7": "#c1c1c1",
+        "color8": "#191919",
+        "color9": "#e07373",
+        "color10": "#c29f9f",
+        "color11": "#ffaeae",
+        "color12": "#dab3b3",
+        "color13": "#f3c7c7",
+        "color14": "#6cbebe",
+        "color15": "#fdfdfd"
+    }
+}
