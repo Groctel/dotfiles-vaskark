@@ -15,7 +15,8 @@ killall -9 xautolock
 xautolock -time 10 -locker 'lock.sh' -corners 00-+ &
 
 # gestures
-libinput-gestures -c ~/.config/bspwm/gestures.conf &
+libinput-gestures-setup start &
+#libinput-gestures -c ~/.config/bspwm/gestures.conf &
 
 # polkit
 /usr/lib/policykit-1-gnome/polkit-gnome-authentication-agent-1 &
