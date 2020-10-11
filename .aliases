@@ -65,6 +65,7 @@ alias ga='git add'
 alias gp='git pull'
 alias gl='git log'
 alias gs='git status'
+alias gc1='git clone --depth=1'
 
 # fzf
 alias ve='nvim $(fzf)' 
