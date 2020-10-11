@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=Application
+Exec=gestures.sh
+Hidden=false
+NoDisplay=false
+X-GNOME-Autostart-enabled=true
+Name[en_CA]=Gestures
+Name=Gestures
+Comment[en_CA]=
+Comment=

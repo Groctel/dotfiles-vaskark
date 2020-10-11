@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=Application
+Exec=killall -9 redshift
+Hidden=false
+NoDisplay=false
+X-GNOME-Autostart-enabled=true
+Name[en_CA]=Kill-Redshift
+Name=Kill-Redshift
+Comment[en_CA]=Stop redshift on GNOME Desktop
+Comment=Stop redshift on GNOME Desktop
