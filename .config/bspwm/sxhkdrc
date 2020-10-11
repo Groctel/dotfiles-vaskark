@@ -18,10 +18,7 @@ super + {w,q}
 # alternate between the tiled and monocle layout
 super + m
 	bspc desktop -l next
-	
-# show help
-control + F1
-    ~/.config/bspwm/sxhkd-help.sh
+
 
 #
 # state/flags

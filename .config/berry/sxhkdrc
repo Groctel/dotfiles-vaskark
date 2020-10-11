@@ -66,10 +66,6 @@ super + Delete
 ~button1
      berryc pointer_focus
 
-# help
-control + F1
-    ~/.config/berry/sxhkd-help.sh
-
 # xmenu
 super + z
 	xmenu.sh
