@@ -9,7 +9,6 @@ Plug 'nelstrom/vim-markdown-folding'
 Plug 'dylanaraps/wal.vim'
 Plug 'preservim/nerdtree'
 Plug 'mcchrish/nnn.vim'
-Plug 'vim-syntastic/syntastic'
 call plug#end()
 
 " Highlight the line on which the cursor lives.
