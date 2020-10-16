@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/jason/Pictures/fifth-2560x1440.png",
+    "alpha": "100",
+    "special": {
+        "background": "#261905",
+        "foreground": "#fffff9",
+        "cursor": "#fffff9"
+    },
+    "colors": {
+        "color0": "#261905",
+        "color1": "#c27f1d",
+        "color2": "#ab8947",
+        "color3": "#c78d39",
+        "color4": "#7bc4ba",
+        "color5": "#9ea791",
+        "color6": "#56b3a9",
+        "color7": "#c8c5c0",
+        "color8": "#533609",
+        "color9": "#ffa717",
+        "color10": "#eeb74c",
+        "color11": "#ffba39",
+        "color12": "#8bffff",
+        "color13": "#d1eda8",
+        "color14": "#5ef9e9",
+        "color15": "#fffff9"
+    }
+}

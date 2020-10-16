@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/jason/Pictures/lines-2560x1440.png",
+    "alpha": "100",
+    "special": {
+        "background": "#272723",
+        "foreground": "#fffffe",
+        "cursor": "#fffffe"
+    },
+    "colors": {
+        "color0": "#272723",
+        "color1": "#aac7b8",
+        "color2": "#8db7ac",
+        "color3": "#c7c7b4",
+        "color4": "#9ac6b9",
+        "color5": "#bac7b6",
+        "color6": "#77c2b7",
+        "color7": "#c9c9c8",
+        "color8": "#41413a",
+        "color9": "#c5ffee",
+        "color10": "#a2ffe9",
+        "color11": "#ffffd1",
+        "color12": "#b1fff9",
+        "color13": "#e4ffd3",
+        "color14": "#86fffc",
+        "color15": "#fffffe"
+    }
+}
