@@ -85,6 +85,7 @@ extract
 colored-man-pages
 #zsh-autosuggestions
 zsh-syntax-highlighting
+systemadmin
 )
 
 source $ZSH/oh-my-zsh.sh

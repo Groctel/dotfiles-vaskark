@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/jason/Pictures/emma_watson_2017_new.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#090c11",
+        "foreground": "#e5edf9",
+        "cursor": "#e5edf9"
+    },
+    "colors": {
+        "color0": "#090c11",
+        "color1": "#7b5345",
+        "color2": "#a27457",
+        "color3": "#c9a888",
+        "color4": "#a8b5ab",
+        "color5": "#b68c73",
+        "color6": "#809297",
+        "color7": "#acb2bb",
+        "color8": "#192232",
+        "color9": "#ac654d",
+        "color10": "#e29360",
+        "color11": "#ffda9a",
+        "color12": "#c3ffd2",
+        "color13": "#ffb182",
+        "color14": "#94c8d6",
+        "color15": "#e5edf9"
+    }
+}
