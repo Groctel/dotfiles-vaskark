@@ -123,7 +123,7 @@ export VISUAL='nvim'
 export BROWSER='google-chrome'
 
 # Fzf
-export FZF_DEFAULT_COMMAND="fdfind --hidden --follow --exclude '.git'"
+export FZF_DEFAULT_COMMAND="fdfind --hidden --follow --exclude '.git' --exclude '.cache'"
 export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
 export FZF_ALT_C_COMMAND="$FZF_DEFAULT_COMMAND -t d"
 export FZF_DEFAULT_OPTS="
