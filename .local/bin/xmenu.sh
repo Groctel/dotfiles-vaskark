@@ -9,9 +9,9 @@ Apps
 	Bleachbit	bleachbit
 	Calculator	gnome-calculator
 	Calendar	gnome-calendar
-	Calibre	calibre
+	Calibre		calibre
 	Flameshot	flameshot gui
-	Foliate	foliate
+	Foliate		foliate
 	Font Manager	font-manager
 	Gitg		gitg
 	Meld		meld
@@ -19,11 +19,11 @@ Apps
 	Nemo		nemo
 	Plank		plank
 	Text Editor	gedit
-	Weather	gnome-weather
-	Zathura	zathura
+	Weather		gnome-weather
+	Zathura		zathura
 Audio
 	Audacity	audacity
-	Easytag	easytag
+	Easytag		easytag
 	PulseAudio	pavucontrol
 	Rhythmbox	rhythmbox
 	yMuse		ymuse
@@ -34,7 +34,7 @@ Graphics
 	YACReader	YACReader
 Internet
 	Chrome		google-chrome
-	Firefox	firefox
+	Firefox		firefox
 	Transmission	transmission-gtk
 Office
 	LibreOffice	libreoffice
@@ -42,7 +42,7 @@ Office
 	Base		lobase
 	Calc		localc
 	Draw		lodraw
-	Impress	loimpress
+	Impress		loimpress
 	Math		lomath
 	Writer		lowriter
 System
@@ -51,7 +51,7 @@ System
 	Firewall	gufw-pkexec
 	Logs		gnome-system-log-pkexec
 	Gnome Logs	gnome-logs
-	Monitor	gnome-system-monitor
+	Monitor		gnome-system-monitor
 	Nautilus	nautilus-pkexec
 	Nemo		nemo-pkexec
 	Stacer		stacer
@@ -61,11 +61,11 @@ Terms
 	Byobu		byobu
 	Kitty		kitty
 	St		st
-	Termite	termite
+	Termite		termite
 Video
 	Celluloid	celluloid
 	MKVToolnix	mkvtoolnix-gui
-	Peek		peek
+	MPV		mpv --player-operation-mode=pseudo-gui
 	VLC		vlc
 
 Logout			pkill x
