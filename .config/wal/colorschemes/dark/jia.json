@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/jason/Pictures/4501660-women-jia-lissa-women-outdoors-redhead-vivthomas-forest-nature-sunlight.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#160f0a",
+        "foreground": "#fffff6",
+        "cursor": "#fffff6"
+    },
+    "colors": {
+        "color0": "#160f0a",
+        "color1": "#B7AB95",
+        "color2": "#8C6656",
+        "color3": "#A1905B",
+        "color4": "#8B714F",
+        "color5": "#B9A356",
+        "color6": "#E2D5A4",
+        "color7": "#eceadd",
+        "color8": "#392619",
+        "color9": "#ffe4ac",
+        "color10": "#c47e61",
+        "color11": "#e1c365",
+        "color12": "#c29458",
+        "color13": "#ffdd5e",
+        "color14": "#ffffbb",
+        "color15": "#fffff6"
+    }
+}
