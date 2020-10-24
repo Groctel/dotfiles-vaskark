@@ -4,7 +4,7 @@ Plug 'itchyny/lightline.vim'
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-markdown'
 Plug 'machakann/vim-highlightedyank'
-Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+Plug '~/.fzf'
 Plug 'nelstrom/vim-markdown-folding'
 Plug 'dylanaraps/wal.vim'
 Plug 'preservim/nerdtree'
