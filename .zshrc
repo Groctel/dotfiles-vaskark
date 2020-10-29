@@ -116,6 +116,14 @@ ncmpcppShow() {
 zle -N ncmpcppShow
 bindkey '^[\' ncmpcppShow
 
+# lf (Alt+])
+lfShow() {
+  BUFFER="lf"
+  zle accept-line
+}
+zle -N lfShow
+bindkey '^[]' lfShow
+
 # Env
 export SSH_KEY_PATH="~/.ssh/id_rsa"
 export EDITOR='nvim'
