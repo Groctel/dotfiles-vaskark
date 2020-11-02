@@ -37,6 +37,10 @@ super + F4
 # date
 super + F5
 	date.sh
+	
+# networkmanager_dmenu
+super + F6
+	networkmanager_dmenu
 
 # polybar
 super + {_,shift +} semicolon
