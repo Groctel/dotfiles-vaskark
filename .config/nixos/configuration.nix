@@ -119,6 +119,7 @@
   	oh-my-zsh
   	paper-icon-theme
   	picom
+  	pipes
   	polybar
   	pywal
   	redshift
@@ -130,6 +131,7 @@
  	wpgtk
  	xautolock
  	xdotool
+ 	xmenu
  	zsh
  	zsh-powerlevel10k
   ];
