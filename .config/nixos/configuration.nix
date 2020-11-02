@@ -94,6 +94,7 @@
   	berry
 	bspwm
   	cinnamon.nemo
+  	colorz
   	dmenu
   	dunst
   	fd
