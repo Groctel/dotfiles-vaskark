@@ -47,7 +47,7 @@
   services.xserver.displayManager.gdm.enable = true;
   services.xserver.desktopManager.gnome3.enable = true;
   
-  # WM's
+  # Enable wm's
   services.xserver.windowManager.bspwm.enable = true;
   services.xserver.windowManager.berry.enable = true;
   services.xserver.windowManager.i3.package = pkgs.i3-gaps;
@@ -144,7 +144,7 @@
   # List services that you want to enable:
 
   # Enable the OpenSSH daemon.
-  # services.openssh.enable = true;
+  services.openssh.enable = true;
 
   # Open ports in the firewall.
   # networking.firewall.allowedTCPPorts = [ ... ];
