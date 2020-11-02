@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 # Query ~/.cache/wal/colors for colors:
 color0=$(awk 'NR==1 {print substr($1,2,7)}' ~/.cache/wal/colors)

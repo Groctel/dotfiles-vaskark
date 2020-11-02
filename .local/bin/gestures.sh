@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 libinput-gestures-setup stop
 sleep 0.1

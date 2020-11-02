@@ -1,4 +1,4 @@
-#!/usr/bin/env sh
+#!/bin/bash
 
 # If picom is running, kill it to prevent multiple instances
 if ps -A | grep picom; then

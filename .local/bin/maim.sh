@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 screenshot() {
 	case $1 in

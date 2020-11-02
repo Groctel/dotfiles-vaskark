@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 # get colors
 color2=$(sed -n 3p ~/.cache/wal/colors)FF

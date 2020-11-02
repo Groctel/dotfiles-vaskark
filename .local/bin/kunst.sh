@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 # Terminate
 killall -9 kunst
