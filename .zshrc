@@ -150,8 +150,7 @@ export FZF_DEFAULT_OPTS="
 #--bind 'ctrl-e:execute(echo {+} | xargs -o vim)'
 
 # Pfetch
-export PF_INFO="os kernel uptime shell wm memory" 
-export PF_SEP=":"
+export PF_INFO="os kernel uptime shell wm memory palette" 
 export PF_COL1=2
 export PF_COL2=4
 

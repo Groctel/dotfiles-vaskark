@@ -51,6 +51,7 @@
   services.xserver.windowManager.bspwm.enable = true;
   services.xserver.windowManager.berry.enable = true;
   services.xserver.windowManager.i3.package = pkgs.i3-gaps;
+  services.xserver.windowManager.i3.enable = true;
 
   # Configure keymap in X11
   services.xserver.layout = "us";
@@ -64,7 +65,7 @@
   hardware.pulseaudio.enable = true;
 
   # Enable touchpad support (enabled default in most desktopManager).
-  # services.xserver.libinput.enable = true;
+  services.xserver.libinput.enable = true;
 
   # Allow unfree apps
   nixpkgs.config.allowUnfree = true;
@@ -97,6 +98,7 @@
   	colorz
   	dmenu
   	dunst
+	feh
   	fd
   	font-manager
   	git
@@ -125,8 +127,9 @@
   	redshift
   	rofi
   	sxhkd
+	sxiv
   	vimix-gtk-themes
-     	wget
+    	wget
  	wmctrl
  	wpgtk
  	xautolock
