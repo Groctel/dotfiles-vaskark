@@ -99,7 +99,6 @@ source $ZSH/oh-my-zsh.sh
 kitty + complete setup zsh | source /dev/stdin
 
 # Fzf
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 # Pywal
 (cat ~/.cache/wal/sequences &)
@@ -131,6 +130,8 @@ export VISUAL='nvim'
 export BROWSER='google-chrome'
 
 # Fzf
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
 export FZF_DEFAULT_COMMAND="fd -H -L -E '.git' -E '.cache'"
 export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
 export FZF_ALT_C_COMMAND="$FZF_DEFAULT_COMMAND -t d"
