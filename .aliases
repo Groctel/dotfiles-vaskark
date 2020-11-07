@@ -14,10 +14,10 @@ alias d='dirs -v | head -10'
 alias free='free -m'
 
 # list
-alias ls='lsd'
-alias l='ls -l'
-alias ll='ls -al'
-alias lt='lsd --tree --depth 2'
+alias ls='lsd --group-dirs first'
+alias l='ls -l --group-dirs first'
+alias ll='ls -al --group-dirs first'
+alias lt='lsd --tree --depth 2 --group-dirs first'
 
 # suffix
 alias -g G='| grep -i'

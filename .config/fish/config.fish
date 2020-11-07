@@ -109,8 +109,8 @@ end
 
 ### DEFAULT EMACS MODE OR VI MODE ###
 function fish_user_key_bindings
-  fish_default_key_bindings
-  # fish_vi_key_bindings
+  # fish_default_key_bindings
+  fish_vi_key_bindings
 end
 ### END OF VI MODE ###
 
@@ -132,10 +132,16 @@ alias em='/usr/bin/emacs -nw'
 alias emacs="emacsclient -c -a 'emacs'"
 
 # Changing "ls" to "exa"
-alias ls='exa -al --color=always --group-directories-first' # my preferred listing
-alias la='exa -a --color=always --group-directories-first'  # all files and dirs
-alias ll='exa -l --color=always --group-directories-first'  # long format
-alias lt='exa -aT --color=always --group-directories-first' # tree listing
+#alias ls='exa -al --color=always --group-directories-first' # my preferred listing
+#alias la='exa -a --color=always --group-directories-first'  # all files and dirs
+#alias ll='exa -l --color=always --group-directories-first'  # long format
+#alias lt='exa -aT --color=always --group-directories-first' # tree listing
+
+# list
+alias ls='lsd --group-dirs first'
+alias l='ls -l --group-dirs first'
+alias ll='ls -al --group-dirs first'
+alias lt='lsd --tree --depth 2 --group-dirs first'
 
 # pacman and yay
 alias pacsyu='sudo pacman -Syyu'                 # update only standard pkgs
