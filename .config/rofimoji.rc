@@ -1,3 +1,3 @@
-prompt = EMOJI:
+prompt = Emoji:
 skin-tone = light
-max-recent = 5
+max-recent = 0

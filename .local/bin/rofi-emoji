@@ -72,7 +72,7 @@ function download() {
 }
 
 function rofi_menu() { # {{{
-	rofi -width 15 -lines 10 -dmenu -i -p 'EMOJI' \
+	rofi -width 15 -lines 10 -dmenu -i -p 'Emoji:' \
 		-kb-row-tab '' \
 		-kb-row-select Tab \
 		-kb-custom-1 Ctrl+c

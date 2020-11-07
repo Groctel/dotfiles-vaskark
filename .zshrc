@@ -128,6 +128,7 @@ export SSH_KEY_PATH="~/.ssh/id_rsa"
 export EDITOR='nvim'
 export VISUAL='nvim'
 export BROWSER='google-chrome'
+export BKM_DIR=~/.bookmarks
 
 # Fzf
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh

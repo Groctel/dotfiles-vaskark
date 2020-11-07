@@ -5,7 +5,7 @@
 #define DEFAULT_FONT "Monospace 10"
 
 /* DO NOT CHANGE ANYTHING BELOW THIS COMMENT */
-#define WORKSPACE_NUMBER 5
+#define WORKSPACE_NUMBER 10
 
 #define BORDER_WIDTH 3
 #define INTERNAL_BORDER_WIDTH 3
@@ -46,7 +46,7 @@
 
 #define DECORATE_NEW true
 #define MOVE_MASK Mod4Mask
-#define RESIZE_MASK Mod4Mask|ShiftMask
+#define RESIZE_MASK Mod1Mask
 #define POINTER_INTERVAL 0
 
 #endif
