@@ -11,7 +11,7 @@ libinput-gestures &
 wal -R -o wal-berry.sh -o wal-dunst.sh &
 xclickroot -r xmenu.sh &
 
-# relaunch sowm if the binary changes, otherwise bail
+## relaunch sowm if the binary changes, otherwise bail
 csum=$(sha1sum $(which sowm))
 new_csum=""
 while true
