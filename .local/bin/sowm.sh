@@ -6,7 +6,8 @@
 picom --experimental-backends --config ~/.config/picom/picom.conf &
 redshift.sh &
 xautolock.sh &
-libinput-gestures &
+libinput-gestures-setup stop
+libinput-gestures -c ~/.config/berry/gestures.conf &
 /usr/lib/policykit-1-gnome/polkit-gnome-authentication-agent-1 &
 wal -R -o wal-berry.sh -o wal-dunst.sh &
 xclickroot -r xmenu.sh &
