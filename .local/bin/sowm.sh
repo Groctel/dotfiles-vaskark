@@ -2,7 +2,6 @@
 
 ## autostart
 # polybar-main.sh &
-dunst -config ~/.config/dunst/dunstrc-extra &
 picom --experimental-backends --config ~/.config/picom/picom.conf &
 redshift.sh &
 xautolock.sh &

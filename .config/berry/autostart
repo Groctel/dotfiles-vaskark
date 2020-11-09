@@ -3,7 +3,6 @@
 # Set startup apps
 sxhkd -c $HOME/.config/berry/sxhkdrc $HOME/.config/sxhkd/sxhkdrc.common &
 redshift.sh &
-dunst -config ~/.config/dunst/dunstrc-extra &
 picom --experimental-backends --config ~/.config/picom/picom.conf >> /tmp/picom.log 2>&1 &
 libinput-gestures-setup stop
 libinput-gestures -c ~/.config/libinput-gestures/gestures-wm.conf &
