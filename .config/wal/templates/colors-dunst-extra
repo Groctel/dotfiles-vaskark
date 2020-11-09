@@ -1,0 +1,61 @@
+[global]
+monitor = 0
+follow = mouse
+geometry = "0x0-20+20"
+indicate_hidden = no
+shrink = yes
+transparency = 0
+separator_height = 2
+padding = 10 
+horizontal_padding = 10
+frame_width = 2
+frame_color = "{color2}"
+separator_color = frame
+sort = yes
+idle_threshold = 10
+
+font = scientifica 8
+line_height = 20
+markup = yes
+format = "%s %b"
+alignment = center
+show_age_threshold = 1000
+word_wrap = yes
+ellipsize = end
+ignore_newline = yes
+show_indicators = yes
+
+sticky_history = yes
+history_length = 2
+
+startup_notification = false
+corner_radius = 0
+
+max_icon_size = 12
+icon_position = left
+
+[shortcuts]
+close = ctrl+space
+close_all = ctrl+shift+space
+history = ctrl+grave
+context = ctrl+shift+period
+
+[urgency_low]
+background = "{color10}"
+foreground = "{color0}"
+timeout = 10
+icon = ~/.config/dunst/normal-alt.png
+
+[urgency_normal]
+background = "{color2}"
+foreground = "{color0}"
+timeout = 10
+icon = ~/.config/dunst/normal-alt.png
+
+[urgency_critical]
+background = "{color1}"
+foreground = "{color0}"
+timeout = 20
+icon = ~/.config/dunst/critical.png
+
+# vim: ft=cfg
