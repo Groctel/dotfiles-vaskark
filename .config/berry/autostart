@@ -5,7 +5,7 @@ sxhkd -c $HOME/.config/berry/sxhkdrc $HOME/.config/sxhkd/sxhkdrc.common &
 redshift.sh &
 picom --experimental-backends --config ~/.config/picom/picom.conf >> /tmp/picom.log 2>&1 &
 libinput-gestures-setup stop
-libinput-gestures -c ~/.config/berry/gestures.conf &
+libinput-gestures -c ~/.config/libinput-gestures/gestures-wm.conf &
 /usr/lib/policykit-1-gnome/polkit-gnome-authentication-agent-1 &
 xclickroot -r xmenu.sh &
 xautolock -time 10 -locker 'lock.sh' -corners 00-+ &
