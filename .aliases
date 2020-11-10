@@ -124,3 +124,7 @@ alias mla='sudo reflector --country 'United States' --protocol https --latest 5 
 
 alias pmi='pacman -Slq | fzf --multi --preview 'pacman -Si {1}' | xargs -ro sudo pacman -S'
 alias yi='yay -Slq | fzf --multi --preview 'yay -Si {1}' | xargs -ro yay -S'
+
+# nixos
+alias nix-upd8='sudo nix-channel --update && sudo nixos-rebuild switch'
+alias nix-clean='sudo nix-collect-garbage -d'
