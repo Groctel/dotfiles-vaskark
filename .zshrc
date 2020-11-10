@@ -80,6 +80,7 @@ HIST_STAMPS="yyyy-mm-dd"
 plugins=(
 #git
 command-not-found
+emoji
 extract
 #themes
 colored-man-pages

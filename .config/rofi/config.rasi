@@ -9,7 +9,7 @@ configuration {
   lines:              	8;
   font:		"scientifica bold 8";
   columns:            	1;
-  modi: 	      	"drun,run,ssh,keys";
+  modi: 	      	"drun,run,ssh,emoji,keys";
   display-drun:       	"apps";
   display-window:     	"win";
   terminal:           	"alacritty";
