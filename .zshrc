@@ -79,12 +79,13 @@ HIST_STAMPS="yyyy-mm-dd"
 # Plugins
 plugins=(
 #git
+colored-man-pages
 command-not-found
 emoji
 extract
 #themes
-colored-man-pages
-#zsh-autosuggestions
+#zsh-autocomplete
+zsh-autosuggestions
 zsh-syntax-highlighting
 )
 
@@ -134,6 +135,7 @@ export BKM_DIR=~/.bookmarks
 # Fzf
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
+# Fzf options
 export FZF_DEFAULT_COMMAND="fd -H -L -E '.git' -E '.cache'"
 export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
 export FZF_ALT_C_COMMAND="$FZF_DEFAULT_COMMAND -t d"
