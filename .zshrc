@@ -1,1 +1,1 @@
-/home/jason/.zshrc.default
+.zshrc.lsxyz
