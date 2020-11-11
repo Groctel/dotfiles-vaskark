@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/jason/Pictures/pc0jahe159r41.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#161819",
+        "foreground": "#feffff",
+        "cursor": "#feffff"
+    },
+    "colors": {
+        "color0": "#161819",
+        "color1": "#703736",
+        "color2": "#bd6131",
+        "color3": "#8b5a32",
+        "color4": "#5f666f",
+        "color5": "#4c555f",
+        "color6": "#434b59",
+        "color7": "#c4c5c5",
+        "color8": "#2d3133",
+        "color9": "#9c3d3b",
+        "color10": "#ff7930",
+        "color11": "#c17334",
+        "color12": "#6e829d",
+        "color13": "#576d86",
+        "color14": "#4d5e7d",
+        "color15": "#feffff"
+    }
+}
