@@ -5,9 +5,6 @@ if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]
   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
 fi
 
-# Path
-PATH="$HOME/.local/bin${PATH:+:${PATH}}"
-
 # Path to your oh-my-zsh installation.
 export ZSH="/usr/share/oh-my-zsh"
 
@@ -126,7 +123,6 @@ export SSH_KEY_PATH="~/.ssh/id_rsa"
 export EDITOR='nvim'
 export VISUAL='nvim'
 export BROWSER='google-chrome'
-export BKM_DIR=~/.bookmarks
 
 # Fzf
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
