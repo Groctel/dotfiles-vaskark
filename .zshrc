@@ -1,1 +1,1 @@
-.zshrc.lsxyz
+.zshrc.default
