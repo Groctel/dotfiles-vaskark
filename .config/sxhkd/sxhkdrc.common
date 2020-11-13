@@ -53,8 +53,8 @@ alt + {F10,F11,F12}
 	mpc -q {prev,toggle,next}
 
 # shots
-super + {_,shift +} Print
-        maim.sh {full,select}
+super + Print
+        flameshot gui
 
 # volume
 XF86Audio{Raise,Lower}Volume
