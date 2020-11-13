@@ -47,6 +47,10 @@ super + {_,shift +} semicolon
 	polybar-msg cmd {toggle,restart}
 super + ctrl + semicolon
 	polybar-menu.sh
+	
+# glava toggle
+super + g
+	glava.sh
 
 # music
 alt + {F10,F11,F12}

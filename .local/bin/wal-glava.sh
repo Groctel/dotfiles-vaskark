@@ -13,8 +13,8 @@ sed -i "s|#define FLIP.*$|#define FLIP 1|g" ~/.config/glava/bars.glsl
 sed -i "s|#request setgeometry.*$|#request setgeometry 560 0 800 1080|g" ~/.config/glava/rc.glsl
 
 # restart glava
-if ps -A | grep glava; then
-	killall -q glava
-fi
+#if ps -A | grep glava; then
+#	killall -q glava
+#fi
 
-glava -d -a fifo &
+#glava -d -a fifo &
