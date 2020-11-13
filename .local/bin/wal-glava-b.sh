@@ -13,4 +13,4 @@ if ps -A | grep glava; then
 	killall -q glava
 fi
 
-glava -d -a fifo -e rc-b.glsl &
+glava -d -a fifo &
