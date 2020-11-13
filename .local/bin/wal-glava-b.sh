@@ -9,8 +9,8 @@ sed -i "s|#define COLOR.*$|#define COLOR @fg:mix($color2, $color10, clamp(d / GR
 sed -i "s|#define FLIP.*$|#define FLIP 0|g" ~/.config/glava/bars.glsl
 
 # write geometry to rc.glsl
-#sed -i "s|#request setgeometry.*$|#request setgeometry 0 0 1920 1080" ~/.config/glava/rc.glsl
-#sed -i "s|#request setgeometry.*$|#request setgeometry 560 0 800 1080" ~/.config/glava/rc.glsl
+sed -i "s|#request setgeometry.*$|#request setgeometry 0 0 1920 1080|g" ~/.config/glava/rc.glsl
+#sed -i "s|#request setgeometry.*$|#request setgeometry 560 0 800 1080|g" ~/.config/glava/rc.glsl
 
 # restart glava
 if ps -A | grep glava; then
