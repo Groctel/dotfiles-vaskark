@@ -13,8 +13,5 @@ sed -i "s|#request setgeometry.*$|#request setgeometry 0 0 1920 1080|g" ~/.confi
 #sed -i "s|#request setgeometry.*$|#request setgeometry 560 0 800 1080|g" ~/.config/glava/rc.glsl
 
 # restart glava
-if ps -A | grep glava; then
-	killall -q glava
-fi
-
-glava -d -a fifo &
+killall -q glava
+glava -d -a fifo
