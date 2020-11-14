@@ -9,7 +9,6 @@ separator_height = 2
 padding = 10 
 horizontal_padding = 10
 frame_width = 2
-frame_color = "{color4}"
 separator_color = frame
 sort = yes
 idle_threshold = 10
@@ -43,18 +42,21 @@ context = ctrl+shift+period
 [urgency_low]
 background = "{color4}"
 foreground = "{color0}"
+frame_color = "{color4}"
 timeout = 10
 icon = ~/.config/dunst/normal-alt.png
 
 [urgency_normal]
 background = "{color4}"
 foreground = "{color0}"
+frame_color = "{color4}"
 timeout = 10
 icon = ~/.config/dunst/normal-alt.png
 
 [urgency_critical]
-background = "{color4}"
+background = "{color1}"
 foreground = "{color0}"
+frame_color = "{color1}"
 timeout = 20
 icon = ~/.config/dunst/critical.png
 

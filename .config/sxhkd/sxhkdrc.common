@@ -49,7 +49,7 @@ super + ctrl + semicolon
 	polybar-menu.sh
 	
 # glava toggle
-super + g
+super + apostrophe
 	glava.sh
 
 # music
