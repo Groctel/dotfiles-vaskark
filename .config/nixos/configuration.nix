@@ -76,14 +76,14 @@
   # Enable oh-my-zsh
   programs.zsh.ohMyZsh = {
   	enable = true;
-	plugins = [ "git" "command-not-found" "extract" "colored-man-pages" "systemadmin" "themes" ];
+	plugins = [ "colored-man-pages" "command-not-found" "emoji" "extract" "themes" ];
 	theme = "agnoster";
   };
 
   # Define a user account. Don't forget to set a password with ‘passwd’.
   users.users.jason = {
     isNormalUser = true;
-    extraGroups = [ "wheel" "vboxsf" ]; # Enable ‘sudo’ for the user.
+    extraGroups = [ "wheel" "input" "vboxsf" ]; # Enable ‘sudo’ for the user.
     shell = pkgs.zsh;  
 };
 
@@ -100,6 +100,7 @@
   	dunst
 	feh
   	fd
+	flameshot
   	font-manager
   	git
   	gnome3.gnome-tweaks
@@ -120,16 +121,18 @@
   	nnn
   	oh-my-zsh
   	paper-icon-theme
+	pfetch
   	picom
   	pipes
   	polybar
   	pywal
   	redshift
   	rofi
+	#rofi-emoji
   	sxhkd
 	sxiv
   	vimix-gtk-themes
-    	wget
+     	wget
  	wmctrl
  	wpgtk
  	xautolock
