@@ -200,7 +200,7 @@ exec_always --no-startup-id picom --experimental-backends --config ~/.config/pic
 exec --no-startup-id redshift.sh
 exec --no-startup-id /usr/lib/policykit-1-gnome/polkit-gnome-authentication-agent-1
 exec --no-startup-id wal -R -o wal-berry.sh -o wal-dunst.sh -o wal-glava-b.sh
-exec --no-startup-id libinput-gestures -c ~/.config/libinput-gestures/gestures-wm.conf
+exec --no-startup-id libinput-gestures -c ~/.config/libinput-gestures/libinput-gestures.conf
 exec --no-startup-id xautolock -time 10 -locker 'lock.sh' -corners 00-+
 
 # lock screen
@@ -210,6 +210,8 @@ bindsym $mod+Escape exec lock.sh
 bindsym $mod+F1 exec --no-startup-id nautilus
 bindsym $mod+F2 exec --no-startup-id google-chrome-stable
 bindsym $mod+F3 exec --no-startup-id $term --class Float -e ncmpcpp
+bindsym $mod+F4 exec --no-startup-id feh --randomize --bg-fill --recursive --no-fehbg ~/Pictures/*.(png|jpg)
+bindsym $mod+F5 exec --no-startup-id date.sh
 bindsym $mod+Shift+e exec --no-startup-id gedit ~/.config/i3/config
 
 # mpd controls
@@ -222,8 +224,8 @@ bindsym $mod+F12 exec --no-startup-id wal -f random_user -o wal-berry.sh -o wal-
 bindsym $mod+Shift+F12 exec --no-startup-id wal -R -o wal-berry.sh -o wal-dunst.sh -o wal-glava-b.sh 
 
 # shot controls
-bindsym --release $mod+Print exec --no-startup-id screenshot.sh full
-bindsym --release $mod+Shift+Print exec --no-startup-id screenshot.sh window
+bindsym --release $mod+Print exec --no-startup-id flameshot gui -p ~/Screenshots
+bindsym --release $mod+Shift+Print exec --no-startup-id flameshot full -p ~/Screenshots -d 3000
 
 # polybar controls
 bindsym $mod+semicolon exec --no-startup-id polybar-msg cmd toggle
