@@ -58,7 +58,6 @@ System
 	Synaptic	synaptic-pkexec
 Terms
 	Alacritty	alacritty
-	Byobu		byobu
 	Kitty		kitty
 	St		st
 	Termite		termite
