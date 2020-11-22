@@ -27,6 +27,7 @@ height = 28
 fixed-center = true
 enable-ipc = true
 bottom = true
+cursor-click = pointer
 
 background = transparent
 border-size = 15
