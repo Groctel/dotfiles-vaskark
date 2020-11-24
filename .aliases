@@ -38,12 +38,12 @@ alias zc='nvim ~/.zshrc'
 alias h='htop -u $USER'
 alias xc="nvim ~/.Xresources"
 alias xu='xrdb ~/.Xresources'
-alias nvc='nvim ~/.vimrc'
+alias nvc='nvim ~/.config/nvim/init.vim'
 alias bf='bunnyfetch'
 alias pf='clear;pfetch'
 alias n='nnn -C -E -d -o -T e -a -x'
 alias c='cava'
-alias p='pipes'
+alias p='pipes.sh'
 alias mi='mediainfo'
 alias grep='grep --color=auto'
 alias egrep='egrep --color=auto'
@@ -97,6 +97,10 @@ alias w2='wal -f random'
 # system
 alias upd8='sudo apt update;sudo apt full-upgrade;sudo apt autoremove;sudo apt clean'
 alias shut='systemctl poweroff -i'
+
+# kernel
+alias mkc='make LSMOD=$HOME/.config/modprobed.db localmodconfig'
+alias mkp='make deb-pkg -j4 LOCALVERSION=-custom'
 
 # networking
 alias rnm='sudo systemctl restart network-manager'
