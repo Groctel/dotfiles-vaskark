@@ -2,26 +2,26 @@
     "wallpaper": "/home/jason/Pictures/calvin_and_hobbes.png",
     "alpha": "100",
     "special": {
-        "background": "#1e1c1d",
-        "foreground": "#ffffff",
-        "cursor": "#ffffff"
+        "background": "#0a0b0e",
+        "foreground": "#e5ffff",
+        "cursor": "#e5ffff"
     },
     "colors": {
-        "color0": "#1e1c1d",
-        "color1": "#8a6363",
-        "color2": "#938272",
-        "color3": "#cc8a73",
-        "color4": "#c3af8e",
-        "color5": "#d4c690",
-        "color6": "#a09d90",
-        "color7": "#c6c6c6",
-        "color8": "#373436",
-        "color9": "#c27171",
-        "color10": "#d0a883",
-        "color11": "#ffa980",
-        "color12": "#ffe8a2",
-        "color13": "#ffffa4",
-        "color14": "#e3d8a7",
-        "color15": "#ffffff"
+        "color0": "#0a0b0e",
+        "color1": "#985862",
+        "color2": "#c38d74",
+        "color3": "#b390a5",
+        "color4": "#86b8c5",
+        "color5": "#aeb1b7",
+        "color6": "#d2c68c",
+        "color7": "#b8d2e0",
+        "color8": "#1e212b",
+        "color9": "#d56274",
+        "color10": "#ffaf82",
+        "color11": "#fda6da",
+        "color12": "#98fbff",
+        "color13": "#cbdeff",
+        "color14": "#ffff9f",
+        "color15": "#e5ffff"
     }
 }
