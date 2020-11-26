@@ -35,14 +35,6 @@ super + {t,shift + t,shift + f,f}
 	bspc node -t {tiled,pseudo_tiled,floating,fullscreen}
 
 # set the node flags
-super + ctrl + {m,x,s,z}
-	bspc node -g {marked,locked,sticky,private}
-
-# 
-# nodes
-#
-
-# set the node flags
 super + n ; f ; {l,s,p}
     bspc node -g {locked,sticky,private}
 
@@ -95,19 +87,11 @@ super + ctrl + shift + space
 # move/resize
 #
 
-# expand a window by moving one of its side outward
-super + alt + {h,j,k,l}
-	bspc node -z {left -20 0,bottom 0 20,top 0 -20,right 20 0}
-
-# contract a window by moving one of its side inward
-super + alt + shift + {h,j,k,l}
-	bspc node -z {right -20 0,top 0 20,bottom 0 -20,left 20 0}
-
 # move a floating window
 super + {Left,Down,Up,Right}
 	bspc node -v {-20 0,0 20,0 -20,20 0}
 	
-# Expand/contract a window by moving one of its side outward/inward
+# expand/contract a window by moving one of its side outward/inward
 super + s : {h,j,k,l}
     STEP=20; SELECTION={1,2,3,4}; \
     bspc node -z $(echo "left -$STEP 0,bottom 0 $STEP,top 0 -$STEP,right $STEP 0" | cut -d',' -f$SELECTION) || \
