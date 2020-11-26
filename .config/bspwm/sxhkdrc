@@ -9,6 +9,7 @@ super + F12
 super + shift + F12
         wal -R -o wal-berry.sh -o wal-dunst.sh -o wal-glava-b.sh
 
+
 #
 # bspwm hotkeys
 #
