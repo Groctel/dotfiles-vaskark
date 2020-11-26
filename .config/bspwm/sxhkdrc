@@ -1,3 +1,8 @@
+#
+# common
+#
+
+
 # wal
 super + F12
 	wal -f random_user -o wal-berry.sh -o wal-dunst.sh -o wal-glava-b.sh
