@@ -38,6 +38,18 @@ super + {t,shift + t,shift + f,f}
 super + ctrl + {m,x,s,z}
 	bspc node -g {marked,locked,sticky,private}
 
+# 
+# nodes
+#
+
+# set the node flags
+super + n ; f ; {l,s,p}
+    bspc node -g {locked,sticky,private}
+
+# make node split ratios equal or balanced
+super + n ; s ; {e,b}
+	bspc node @/ {--equalize,--balance}
+
 #
 # focus/swap
 #
