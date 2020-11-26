@@ -42,9 +42,11 @@ super + n ; f ; {l,s,p}
 super + n ; s ; {e,b}
 	bspc node @/ {--equalize,--balance}
 
+
 #
 # focus/swap
 #
+
 
 # focus the node in the given direction
 super + {_,shift + }{h,j,k,l}
@@ -67,6 +69,7 @@ super + {_,shift + }r
 # preselect
 #
 
+
 # preselect the direction
 super + ctrl + {h,j,k,l}
 	bspc node -p {west,south,north,east}
@@ -83,9 +86,11 @@ super + ctrl + space
 super + ctrl + shift + space
 	bspc query -N -d | xargs -I id -n 1 bspc node id -p cancel
 
+
 #
 # move/resize
 #
+
 
 # move a floating window
 super + {Left,Down,Up,Right}
@@ -97,9 +102,11 @@ super + s : {h,j,k,l}
     bspc node -z $(echo "left -$STEP 0,bottom 0 $STEP,top 0 -$STEP,right $STEP 0" | cut -d',' -f$SELECTION) || \
     bspc node -z $(echo "right -$STEP 0,top 0 $STEP,bottom 0 -$STEP,left $STEP 0" | cut -d',' -f$SELECTION)
 
+
 #
 # gaps
 #
+
 
 # switch between gap presets
 super + shift + {y,u,i,o}
