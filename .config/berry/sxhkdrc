@@ -1,3 +1,8 @@
+#
+# commmon
+#
+
+
 # wal
 super + F12
 	wal -f random_user -o wal-berry.sh -o wal-dunst.sh -o wal-glava.sh
@@ -7,6 +12,7 @@ super + shift + F12
 # xmenu
 super + z
 	xmenu.sh
+
 
 #
 # berry hotkeys
