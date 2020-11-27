@@ -16,15 +16,15 @@ super + control + r
 
 # lockscreen
 super + {_,shift +} Escape
-	{lock.sh, betterlockscreen -l pixel --off 30}
+	{lock.sh,betterlockscreen -l pixel --off 30}
 
 # file managers
 super + {_,shift +} F1
-	{nemo,pcmanfm}
+	{nemo,pkexec nemo}
 
 # browsers
 super + {_,shift +} F2
-	{google-chrome,firefox}
+	{google-chrome-stable,firefox}
 
 # music
 super + F3
@@ -74,4 +74,4 @@ XF86MonBrightness{Up,Down}
 
 # reboot, shutdown
 super + {shift,alt,ctrl} + Delete
-	systemctl {reboot,suspend,poweroff -i}
+	systemctl {reboot,suspend,poweroff}
