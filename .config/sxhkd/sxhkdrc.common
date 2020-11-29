@@ -73,5 +73,5 @@ XF86MonBrightness{Up,Down}
 	light {-A 5,-U 5}
 
 # reboot, shutdown
-super + {shift,alt,ctrl} + Delete
-	/sbin/shutdown {-r now,-s now,-h now}
+super + {shift,ctrl} + Delete
+	/sbin/shutdown {-r now,-h now}
