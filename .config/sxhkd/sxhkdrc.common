@@ -75,4 +75,3 @@ XF86MonBrightness{Up,Down}
 # reboot, shutdown
 super + {shift,ctrl} + Delete
 	{reboot,poweroff}
-#	/sbin/shutdown {-r now,-h now}

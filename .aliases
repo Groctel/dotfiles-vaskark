@@ -97,7 +97,7 @@ alias w2='wal -f random'
 
 # system
 alias upd8='sudo apt update;sudo apt full-upgrade;sudo apt autoremove;sudo apt clean'
-alias shut='systemctl poweroff -i'
+alias shut='poweroff'
 
 # kernel
 alias mkc='make LSMOD=$HOME/.config/modprobed.db localmodconfig'
