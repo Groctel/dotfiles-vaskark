@@ -65,20 +65,13 @@ alias btc='bluetoothctl'
 alias gc='git commit -a'
 alias ga='git add'
 alias gp='git pull'
-alias gpom='git push -u origin master'
+alias gpush='git push'
 alias gl='git log'
 alias gs='git status'
 alias gc1='git clone --depth=1'
 
 # fzf
 alias ve='nvim $(fzf)' 
-
-# yadm
-alias yc='yadm commit -a'
-alias ya='yadm add'
-alias yp='yadm push -u origin master'
-alias yl='yadm log'
-alias ys='yadm status'
 
 # neofetch
 alias nf0='clear;neofetch --config none'
