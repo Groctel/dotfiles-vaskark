@@ -1,9 +1,0 @@
-[Desktop Entry]
-Type=Application
-NoDisplay=true
-Terminal=false
-Name=Libinput Gestures
-Exec=gnome-gestures.sh
-Icon=libinput-gestures
-Comment=Background application to intercept and action libinput gestures from touchpad.
-Categories=System;
