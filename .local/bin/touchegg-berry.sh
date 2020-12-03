@@ -4,4 +4,4 @@ rm -f $HOME/.config/touchegg/touchegg.conf
 ln -s $HOME/.config/touchegg/touchegg-berry.conf $HOME/.config/touchegg/touchegg.conf
 
 killall -9 touchegg &> /dev/null
-touchegg &> /dev/null
+touchegg &> /dev/null &
