@@ -2,8 +2,8 @@
 type = custom/text
 content = " "
 
-content-background = transparent
-content-foreground = transparent
+content-background = ${colors.trans}
+content-foreground = ${colors.trans}
 content-padding = 0
 
 [module/pad1]
@@ -53,7 +53,8 @@ label-empty-padding = 2
 
 [module/mpd]
 type = internal/mpd
-include-file = "~/.config/polybar/mpd.ini"
+host = 127.0.0.1
+port = 6600
 
 label-song = %{A1:mpc toggle:}%{A2:kitty -e ncmpcpp:}%{A3:mpc next:}%{A8:mpc prev:}%artist% // %title%%{A}%{A}%{A}%{A}
 
@@ -81,7 +82,8 @@ label-song-ellipsis = true
 
 [module/mpd-c]
 type = internal/mpd
-include-file = "~/.config/polybar/mpd.ini"
+host = 127.0.0.1
+port = 6600
 
 format-online = <toggle>
 format-online-background = ${colors.color0}

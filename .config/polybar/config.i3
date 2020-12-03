@@ -47,6 +47,8 @@ color13 = ${xrdb:color13:#84787d}
 color14 = ${xrdb:color14:#556f86}
 color15 = ${xrdb:color15:#dfdedd}
 
+trans = #00000000
+
 ##############################################
 ##############################################
 
@@ -62,14 +64,14 @@ enable-ipc = true
 ;offset-x = 2%
 ;offset-y = 1.8%
 
-background = transparent
+background = ${colors.trans}
 foreground =
 
 line-size =
 line-color =
 
 border-size = 5
-border-color = transparent
+border-color = ${colors.trans}
 
 padding-left = 0
 padding-right = 0
@@ -109,8 +111,8 @@ cursor-click = pointer
 type = custom/text
 content = " "
 
-content-background = transparent
-content-foreground = transparent
+content-background = ${colors.trans}
+content-foreground = ${colors.trans}
 content-padding = 0
 
 ##################################################
@@ -257,7 +259,8 @@ label-empty-padding = 2
 
 [module/mpd]
 type = internal/mpd
-include-file = "~/.config/polybar/mpd.ini"
+host = 127.0.0.1
+port = 6600
 
 label-song = %{A1:mpc toggle:}%{A2:kitty -e ncmpcpp:}%{A3:mpc next:}%{A8:mpc prev:}%artist% // %title%%{A}%{A}%{A}%{A}
 
@@ -285,7 +288,8 @@ label-song-ellipsis = true
 
 [module/mpd-t]
 type = internal/mpd
-include-file = "~/.config/polybar/mpd.ini"
+host = 127.0.0.1
+port = 6600
 
 label-time = [%elapsed%/%total%]
 
@@ -298,7 +302,8 @@ format-online-padding = 2
 
 [module/mpd-c]
 type = internal/mpd
-include-file = "~/.config/polybar/mpd.ini"
+host = 127.0.0.1
+port = 6600
 
 format-online = <icon-prev>  <toggle>  <icon-next>
 format-online-background = ${colors.color2}

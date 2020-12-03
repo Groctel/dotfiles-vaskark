@@ -20,6 +20,7 @@ color13 = ${xrdb:color13:#84787d}
 color14 = ${xrdb:color14:#556f86}
 color15 = ${xrdb:color15:#dfdedd}
 
+trans = #00000000
 
 [bar/default]
 width = 100%
@@ -29,7 +30,7 @@ enable-ipc = true
 bottom = true
 cursor-click = pointer
 
-background = transparent
+background = ${colors.trans}
 border-size = 15
 
 font-0 = "scientifica:bold:size=8;2"
