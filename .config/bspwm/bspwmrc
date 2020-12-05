@@ -4,7 +4,7 @@
 touchegg-bspwm.sh
 
 # picom
-killall -9 picom; sleep 0.01s
+killall -9 picom; sleep 0.1s
 picom --experimental-backends --config ~/.config/bspwm/picom.conf &
 
 # redshift
@@ -12,16 +12,15 @@ killall -9 redshift
 redshift -x
 redshift -c ~/.config/redshift/redshift.conf &
 
-# locker
+# lock
 killall -9 xautolock
 xautolock -time 10 -locker 'lock.sh' -corners 00-+ &
 
-# gestures
-#libinput-gestures-setup stop
-#libinput-gestures -c ~/.config/bspwm/gestures.conf &
-
 # polkit
+# ubuntu
 /usr/lib/policykit-1-gnome/polkit-gnome-authentication-agent-1 &
+# arch
+#/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
 
 # polybar
 killall -9 polybar
