@@ -1,0 +1,19 @@
+# Don't print a new line at the start of the prompt
+add_newline = true
+
+[battery]
+full_symbol = "🔋"
+charging_symbol = "⚡️"
+discharging_symbol = "💀"
+
+[character]
+error_symbol = "[✗](bold red) "
+
+[hostname]
+ssh_only = true
+format =  "[$hostname](bold red) "
+disabled = false
+
+# Disable the package module, hiding it from the prompt completely
+[package]
+disabled = true
