@@ -1,5 +1,4 @@
 # prompt
-format = "$all"
 add_newline = true
 
 [battery]
@@ -12,8 +11,10 @@ threshold = 30
 style = "bold red"
 
 [character]
-error_symbol = "[✗](bold red) "
-#vicmd_symbol = "[V](bold green) "
+success_symbol = "[❯](bold green)"
+error_symbol = "[❯](bold red) "
+vicmd_symbol = "[❮](bold green)"
+disabled = false
 
 [directory]
 read_only = " "
@@ -25,21 +26,19 @@ behind = "⇣${count}"
 
 [hostname]
 ssh_only = true
-format =  "[$hostname](bold red) "
+format =  "on [$hostname](bold red) "
 disabled = false
 
 [memory_usage]
-disabled = true
 threshold = -1
+format = "$symbol [${ram_pct}]($style) "
 style = "bold dimmed green"
-symbol = " "
+symbol = ""
+disabled = true
 
 [python]
 symbol = " "
 
 [username]
-style_user = "white bold"
-style_root = "black bold"
-format = "user: [$user]($style) "
-disabled = true
-show_always = true
+format = "[$user]($style) "
+disabled = false
