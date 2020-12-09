@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=Application
+Exec=wal -R
+Hidden=false
+NoDisplay=false
+X-GNOME-Autostart-enabled=true
+Name[en_US]=wal
+Name=wal Reload
+Comment[en_US]=Reload current wal theme
+Comment=Reload current wal theme

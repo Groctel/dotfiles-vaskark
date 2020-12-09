@@ -1,0 +1,9 @@
+[Desktop Entry]
+Type=Application
+Name=Redshift
+Exec=killall -9 redshift
+Hidden=false
+NoDisplay=false
+X-GNOME-Autostart-enabled=true
+Comment=Stop redshift from loading in Gnome
+Name[en_US]=redshift.desktop
