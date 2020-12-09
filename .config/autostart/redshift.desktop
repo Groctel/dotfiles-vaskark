@@ -6,4 +6,4 @@ Hidden=false
 NoDisplay=false
 X-GNOME-Autostart-enabled=true
 Comment=Stop redshift from loading in Gnome
-Name[en_US]=redshift.desktop
+Name[en_US]=Redshift
