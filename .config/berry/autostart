@@ -1,14 +1,33 @@
 #!/bin/sh
 
-# Set startup apps
+# sxhkd
 sxhkd -c $HOME/.config/berry/sxhkdrc $HOME/.config/sxhkd/sxhkdrc.common &
+
+# redshift
 redshift.sh &
-picom --experimental-backends --config ~/.config/picom/picom.conf >> /tmp/picom.log 2>&1 &
+
+# picom
+picom --experimental-backends --config ~/.config/picom/picom.conf &
+
+# touchegg
 touchegg-berry.sh &
+
+# polkit
+# ubuntu
 /usr/lib/policykit-1-gnome/polkit-gnome-authentication-agent-1 &
-wal -R -o wal-berry.sh -o wal-dunst.sh &
+# arch
+#/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
+
+# xmenu
 xclickroot -r xmenu.sh &
+
+# lock
 xautolock -time 10 -locker 'lock.sh' -corners 00-+ &
+
+# wal
+wal -R -o wal-berry.sh -o wal-dunst.sh &
+
+# polybar
 polybar -r -c ~/.config/polybar/config bottom &
 
 # Set decoration geometry
