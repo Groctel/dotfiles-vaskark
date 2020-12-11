@@ -67,6 +67,7 @@ alias ga='git add'
 alias gp='git pull'
 alias gpush='git push'
 alias gl='git log'
+alias gl1='git log --oneline'
 alias gs='git status'
 alias gc1='git clone --depth=1'
 
@@ -101,6 +102,7 @@ alias rnm='sudo systemctl restart network-manager'
 alias up='nmcli c u'
 alias dn='nmcli c d'
 alias ndw='nmcli d wifi'
+alias i='ip -br -c a'
 
 # windscribe
 alias wsc='windscribe connect'
