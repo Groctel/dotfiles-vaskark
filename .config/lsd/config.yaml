@@ -80,7 +80,7 @@ recursion:
 # == Size ==
 # Specifies the format of the size column.
 # Possible values: default, short, bytes
-size: default
+size: short
 
 # == Sorting ==
 sorting:
@@ -98,9 +98,9 @@ sorting:
 # == No Symlink ==
 # Whether to omit showing symlink targets
 # Possible values: false, true
-no-symlink: false
+no-symlink: true
 
 # == Total size ==
 # Whether to display the total size of directories.
 # Possible values: false, true
-total-size: false
+total-size: true
