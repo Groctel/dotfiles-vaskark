@@ -159,7 +159,7 @@ export NNN_TRASH=1
 # qt5
 export QT_QPA_PLATFORMTHEME=qt5ct
 
-# starship prompt
+# starship
 #export STARSHIP_CONFIG=~/.config/starship/starship.toml
 #export STARSHIP_CACHE=~/.cache/starship
 #eval "$(starship init zsh)"
