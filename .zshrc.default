@@ -102,15 +102,15 @@ kitty + complete setup zsh | source /dev/stdin
 # bindkey -v
 # export KEYTIMEOUT=1
 
-# ncmpcpp (Alt+\)
+# ncmpcpp (ctrl+\)
 ncmpcppShow() {
   BUFFER="ncmpcpp"
   zle accept-line
 }
 zle -N ncmpcppShow
-bindkey '^[\' ncmpcppShow
+bindkey '^\' ncmpcppShow
 
-# lfcd
+# lfcd (ctrl+o)
 lfcd="$HOME/.config/lf/lfcd.sh"
     if [ -f "$lfcd" ]; then
     source "$lfcd"
