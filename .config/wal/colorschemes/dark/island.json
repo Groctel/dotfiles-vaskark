@@ -2,26 +2,26 @@
     "wallpaper": "/home/jason/Pictures/iswanto-arif-qWPKK3oh794-unsplash-m.jpg",
     "alpha": "100",
     "special": {
-        "background": "#16161c",
-        "foreground": "#fdfdff",
-        "cursor": "#fdfdff"
+        "background": "#2a2725",
+        "foreground": "#f6eee0",
+        "cursor": "#f6eee0"
     },
     "colors": {
-        "color0": "#16161c",
-        "color1": "#873a49",
-        "color2": "#93b6aa",
-        "color3": "#7d8888",
-        "color4": "#cc7652",
-        "color5": "#819e9d",
-        "color6": "#1c6b8c",
-        "color7": "#c4c4c6",
-        "color8": "#2b2b38",
-        "color9": "#bc3e57",
-        "color10": "#a9ffe3",
-        "color11": "#91c1c1",
-        "color12": "#ff9157",
-        "color13": "#95dfdd",
-        "color14": "#198fc1",
-        "color15": "#fdfdff"
+        "color0": "#2a2725",
+        "color1": "#8e6f64",
+        "color2": "#849385",
+        "color3": "#64697f",
+        "color4": "#757580",
+        "color5": "#bdac8c",
+        "color6": "#4c5467",
+        "color7": "#b8b2a7",
+        "color8": "#443f3c",
+        "color9": "#c88872",
+        "color10": "#99d19d",
+        "color11": "#737fb3",
+        "color12": "#8888b6",
+        "color13": "#ffe6a0",
+        "color14": "#576891",
+        "color15": "#f6eee0"
     }
 }
