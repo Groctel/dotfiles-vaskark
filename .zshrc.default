@@ -123,11 +123,11 @@ export EDITOR='nvim'
 export VISUAL='nvim'
 export BROWSER='google-chrome'
 
-# Fzf
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
-
 # lf icons
 #[ -f ~/.lf_icons ] && source ~/.lf_icons
+
+# Fzf
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 # Fzf options
 export FZF_DEFAULT_COMMAND="fd -H -L -E '.git' -E '.cache'"
