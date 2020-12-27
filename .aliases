@@ -37,7 +37,7 @@ alias cls='clear'
 alias zc='nvim ~/.zshrc'
 alias h='htop -u $USER'
 alias xc="nvim ~/.Xresources"
-alias xu='xrdb ~/.Xresources'
+alias xu='xrdb -merge ~/.Xresources'
 alias nvc='nvim ~/.config/nvim/init.vim'
 alias bf='bunnyfetch'
 alias pf='clear;pfetch'
@@ -80,6 +80,9 @@ alias nf1='clear;neofetch --off --config none'
 alias nf='clear;neofetch'
 alias nfo='clear;neofetch --off'
 alias nfs='clear;neofetch --config ~/.config/neofetch/config-small.conf'
+
+# onefetch
+alias of='clear;onefetch'
 
 # p10k
 alias p10kc='p10k configure'

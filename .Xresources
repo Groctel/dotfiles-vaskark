@@ -1,28 +1,3 @@
-!! Appearance
-URxvt*termName: rxvt-unicode-256
-
-URxvt*font: xft:scientifica:size=8
-
-!URxvt*font: xft:Monospace:size=8, xft:MesloLGS NF:size=8
-!URxvt*boldFont: xft:Monospace:bold:size=8, xft:MesloLGS NF:bold:size=8
-!URxvt*italicFont: xft:Monospace:italic:size=8, xft:MesloLGS NF:italic:size=8
-!URxvt*boldItalicFont: xft:Monospace:bolditalic:size=8, xft:MesloLGS NF:bolditalic:size=8
-
-!URxvt.keysym.M-C-1: command:\033]710;xft:agave Nerd Font Mono:size=9\007\033]711;xft:agave Nerd Font Mono:bold:size=9\007\033]712;xft:agave Nerd Font Mono:italic:size=9\007\033]713;xft:agave Nerd Font Mono:bolditalic:size=9\007
-!URxvt.keysym.M-C-2: command:\033]710;xft:TerminessTTF Nerd Font Mono:size=10\007\033]711;xft:TerminessTTF Nerd Font Mono:bold:size=10\007\033]712;xft:TerminessTTF Nerd Font Mono:italic:size=10\007\033]713;xft:TerminessTTF Nerd Font Mono:bolditalic:size=10\007
-
-URxvt*letterSpace: 0
-URxvt*lineSpace: 1
-URxvt*geometry: 94x24
-URxvt*internalBorder: 20
-URxvt*cursorBlink: false
-URxvt*cursorUnderline: true
-URxvt.saveLines: 2000
-URxvt*scrollBar: false
-URxvt.urgentOnBell: true
-URxvt.depth: 32
-URxvt.iso14755: true
-
 !! Xft
 Xft.dpi: 96
 Xft.antialias: 1
@@ -32,7 +7,28 @@ Xft.autohint: 1
 Xft.hintstyle: hintfull
 Xft.lcdfilter: lcddefault
 
-!! Navigation Keys
+!! URxvt
+URxvt*termName: rxvt-unicode-256
+URxvt*font: xft:scientifica:size=8
+
+!URxvt*font: xft:Monospace:size=8, xft:MesloLGS NF:size=8
+!URxvt*boldFont: xft:Monospace:bold:size=8, xft:MesloLGS NF:bold:size=8
+!URxvt*italicFont: xft:Monospace:italic:size=8, xft:MesloLGS NF:italic:size=8
+!URxvt*boldItalicFont: xft:Monospace:bolditalic:size=8, xft:MesloLGS NF:bolditalic:size=8
+
+URxvt*letterSpace: 0
+URxvt*lineSpace: 1
+URxvt*geometry: 94x24
+URxvt*internalBorder: 20
+URxvt*cursorBlink: false
+URxvt*cursorUnderline: true
+URxvt*saveLines: 2000
+URxvt*scrollBar: false
+URxvt*urgentOnBell: true
+URxvt.depth: 32
+URxvt*iso14755: true
+
+!! URxvt Navigation Keys
 URxvt.keysym.M-Up: command:\033]720;1\007
 URxvt.keysym.M-k: command:\033]720;1\007
 URxvt.keysym.M-Down: command:\033]721;1\007
@@ -40,21 +36,34 @@ URxvt.keysym.M-j: command:\033]721;1\007
 URxvt.keysym.C-Right: \033[1;5C
 URxvt.keysym.C-Left: \033[1;5D
 
-!! Extensions
-URxvt.perl-ext-common: default,selection-to-clipboard,keyboard-select,url-select,resize-font,bell-command
-URxvt.keysym.M-c: eval:selection_to_clipboard
-URxvt.keysym.M-v: eval:paste_clipboard
-URxvt.keysym.M-Escape: perl:keyboard-select:activate
-URxvt.keysym.M-s: perl:keyboard-select:search
-URxvt.keysym.M-u: perl:url-select:select_next
-URvxt.url-select.button: 2
-URxvt.url-select.launcher: xdg-open 
-URxvt.url-select.underline: true
-URxvt.resize-font.smaller: M-minus
-URxvt.resize-font.bigger:  M-equal
-URxvt.resize-font.reset:   M-0
-URxvt.resize-font.show:    M-slash
-URxvt.bell-command: canberra-gtk-play -i bell
+!! URxvt Extensions
+!URxvt.perl-ext-common: default,selection-to-clipboard,keyboard-select,url-select,resize-font,bell-command
+!URxvt.keysym.M-c: eval:selection_to_clipboard
+!URxvt.keysym.M-v: eval:paste_clipboard
+!URxvt.keysym.M-Escape: perl:keyboard-select:activate
+!URxvt.keysym.M-s: perl:keyboard-select:search
+!URxvt.keysym.M-u: perl:url-select:select_next
+!URvxt.url-select.button: 2
+!URxvt.url-select.launcher: xdg-open 
+!URxvt.url-select.underline: true
+!URxvt.resize-font.smaller: M-minus
+!URxvt.resize-font.bigger:  M-equal
+!URxvt.resize-font.reset:   M-0
+!URxvt.resize-font.show:    M-slash
+!URxvt.bell-command: canberra-gtk-play -i bell
+
+!! XTerm
+XTerm*termName: xterm-256color
+XTerm*locale: true
+XTerm*scrollBar: false
+XTerm*geometry: 90x26
+XTerm*borderWidth: 0
+XTerm*internalBorder: 20
+XTerm*renderFont: true
+XTerm*faceName: UbuntuMono Nerd Font Mono
+XTerm*faceSize: 8
+XTerm*on2Clicks: word
+XTerm*on3Clicks: line
 
 !! Colours
 #include ".cache/wal/colors.Xresources"
