@@ -32,20 +32,25 @@ URxvt.keysym.C-Right: \033[1;5C
 URxvt.keysym.C-Left: \033[1;5D
 
 !! URxvt Extensions
-!URxvt.perl-ext-common: default,selection-to-clipboard,keyboard-select,url-select,resize-font,bell-command
-!URxvt.keysym.M-c: eval:selection_to_clipboard
-!URxvt.keysym.M-v: eval:paste_clipboard
-!URxvt.keysym.M-Escape: perl:keyboard-select:activate
-!URxvt.keysym.M-s: perl:keyboard-select:search
-!URxvt.keysym.M-u: perl:url-select:select_next
+URxvt.perl-ext-common: default,selection-to-clipboard,keyboard-select,url-select,resize-font,bell-command
+! selection-to-clipboard
+URxvt.keysym.C-S-c: eval:selection_to_clipboard
+URxvt.keysym.C-S-v: eval:paste_clipboard
+! selection-to-keyboard
+URxvt.keysym.M-Escape: perl:keyboard-select:activate
+URxvt.keysym.M-s: perl:keyboard-select:search
+URxvt.keysym.M-u: perl:url-select:select_next
+! url-select
 !URvxt.url-select.button: 2
 !URxvt.url-select.launcher: xdg-open 
 !URxvt.url-select.underline: true
-!URxvt.resize-font.smaller: M-minus
-!URxvt.resize-font.bigger:  M-equal
-!URxvt.resize-font.reset:   M-0
-!URxvt.resize-font.show:    M-slash
-!URxvt.bell-command: canberra-gtk-play -i bell
+! resize-font
+URxvt.resize-font.smaller: C-minus
+URxvt.resize-font.bigger: C-equal
+URxvt.resize-font.reset: C-0
+URxvt.resize-font.show: C-slash
+! bell-command
+URxvt.bell-command: canberra-gtk-play -i bell
 
 !! XTerm
 XTerm*termName: xterm-256color
