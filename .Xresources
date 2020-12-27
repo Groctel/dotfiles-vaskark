@@ -63,7 +63,7 @@ XTerm*vt100.faceSize: 8
 XTerm*vt100.on2Clicks: word
 XTerm*vt100.on3Clicks: line
 XTerm*vt100.dynamicColors: On
-XTerm*vt100.saveLines: 4096
+XTerm*vt100.saveLines: 2000
 XTerm*vt100.bellIsUrgent: true
 XTerm*vt100.visualBell: true
 XTerm*vt100.visualBellLine: true
