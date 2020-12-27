@@ -10,13 +10,12 @@ Xft.lcdfilter: lcddefault
 !! URxvt
 URxvt*termName: rxvt-unicode-256color
 URxvt*font: xft:scientifica:size=8, xft:UbuntuMono Nerd Font Mono:size=8
-
 URxvt*letterSpace: 0
 URxvt*lineSpace: 0
 URxvt*geometry: 90x26
 URxvt*internalBorder: 20
 URxvt*cursorBlink: false
-URxvt*cursorUnderline: true
+URxvt*cursorUnderline: false
 URxvt*saveLines: 2000
 URxvt*scrollBar: false
 URxvt*urgentOnBell: true
@@ -53,17 +52,29 @@ URxvt.resize-font.show: C-slash
 URxvt.bell-command: canberra-gtk-play -i bell
 
 !! XTerm
-XTerm*termName: xterm-256color
-XTerm*locale: true
-XTerm*scrollBar: false
-XTerm*geometry: 90x26
-XTerm*borderWidth: 0
-XTerm*internalBorder: 20
-XTerm*renderFont: true
-XTerm*faceName: UbuntuMono Nerd Font Mono 
-XTerm*faceSize: 8
-XTerm*on2Clicks: word
-XTerm*on3Clicks: line
+XTerm*vt100.termName: xterm-256color
+XTerm*vt100.scrollBar: false
+XTerm*vt100.geometry: 90x26
+XTerm*vt100.borderWidth: 0
+XTerm*vt100.internalBorder: 20
+XTerm*vt100.renderFont: true
+XTerm*vt100.faceName: xft:UbuntuMono Nerd Font Mono 
+XTerm*vt100.faceSize: 8
+XTerm*vt100.on2Clicks: word
+XTerm*vt100.on3Clicks: line
+XTerm*vt100.dynamicColors: On
+XTerm*vt100.saveLines: 4096
+XTerm*vt100.bellIsUrgent: true
+XTerm*vt100.visualBell: true
+XTerm*vt100.visualBellLine: true
+XTerm*vt100.selectToClipboard: true
+
+!! XTerm Keybindings
+XTerm*vt100.translations: #override \n\
+  Ctrl <Key> minus: smaller-vt-font() \n\
+  Ctrl <Key> plus: larger-vt-font() \n\
+  Ctrl Shift <Key>C: copy-selection(SELECT) \n\
+  Ctrl Shift <Key>V: insert-selection(SELECT) \n\
 
 !! Colours
 #include ".cache/wal/colors.Xresources"
