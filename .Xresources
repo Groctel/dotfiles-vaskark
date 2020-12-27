@@ -58,7 +58,7 @@ XTerm*vt100.geometry: 90x26
 XTerm*vt100.borderWidth: 0
 XTerm*vt100.internalBorder: 20
 XTerm*vt100.renderFont: true
-XTerm*vt100.faceName: xft:UbuntuMono Nerd Font Mono 
+XTerm*vt100.faceName: UbuntuMono Nerd Font Mono 
 XTerm*vt100.faceSize: 8
 XTerm*vt100.on2Clicks: word
 XTerm*vt100.on3Clicks: line
