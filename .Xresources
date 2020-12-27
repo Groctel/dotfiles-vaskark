@@ -40,9 +40,9 @@ URxvt.keysym.M-Escape: perl:keyboard-select:activate
 URxvt.keysym.M-s: perl:keyboard-select:search
 URxvt.keysym.M-u: perl:url-select:select_next
 ! url-select
-!URvxt.url-select.button: 2
-!URxvt.url-select.launcher: xdg-open 
-!URxvt.url-select.underline: true
+URvxt.url-select.button: 2
+URxvt.url-select.launcher: xdg-open 
+URxvt.url-select.underline: true
 ! resize-font
 URxvt.resize-font.smaller: C-minus
 URxvt.resize-font.bigger: C-equal
