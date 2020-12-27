@@ -8,24 +8,19 @@ Xft.hintstyle: hintfull
 Xft.lcdfilter: lcddefault
 
 !! URxvt
-URxvt*termName: rxvt-unicode-256
-URxvt*font: xft:scientifica:size=8
-
-!URxvt*font: xft:Monospace:size=8, xft:MesloLGS NF:size=8
-!URxvt*boldFont: xft:Monospace:bold:size=8, xft:MesloLGS NF:bold:size=8
-!URxvt*italicFont: xft:Monospace:italic:size=8, xft:MesloLGS NF:italic:size=8
-!URxvt*boldItalicFont: xft:Monospace:bolditalic:size=8, xft:MesloLGS NF:bolditalic:size=8
+URxvt*termName: rxvt-unicode-256color
+URxvt*font: xft:scientifica:size=8, xft:UbuntuMono Nerd Font Mono:size=8
 
 URxvt*letterSpace: 0
-URxvt*lineSpace: 1
-URxvt*geometry: 94x24
+URxvt*lineSpace: 0
+URxvt*geometry: 90x26
 URxvt*internalBorder: 20
 URxvt*cursorBlink: false
 URxvt*cursorUnderline: true
 URxvt*saveLines: 2000
 URxvt*scrollBar: false
 URxvt*urgentOnBell: true
-URxvt.depth: 32
+URxvt*depth: 32
 URxvt*iso14755: true
 
 !! URxvt Navigation Keys
@@ -60,7 +55,7 @@ XTerm*geometry: 90x26
 XTerm*borderWidth: 0
 XTerm*internalBorder: 20
 XTerm*renderFont: true
-XTerm*faceName: UbuntuMono Nerd Font Mono
+XTerm*faceName: UbuntuMono Nerd Font Mono 
 XTerm*faceSize: 8
 XTerm*on2Clicks: word
 XTerm*on3Clicks: line
