@@ -31,7 +31,7 @@ URxvt.keysym.C-Right: \033[1;5C
 URxvt.keysym.C-Left: \033[1;5D
 
 !! URxvt Extensions
-URxvt.perl-ext-common: default,selection-to-clipboard,keyboard-select,url-select,resize-font,bell-command
+URxvt.perl-ext-common: default,matcher,selection-to-clipboard,keyboard-select,resize-font,bell-command
 ! selection-to-clipboard
 URxvt.keysym.C-S-c: eval:selection_to_clipboard
 URxvt.keysym.C-S-v: eval:paste_clipboard
@@ -39,10 +39,14 @@ URxvt.keysym.C-S-v: eval:paste_clipboard
 URxvt.keysym.M-Escape: perl:keyboard-select:activate
 URxvt.keysym.M-s: perl:keyboard-select:search
 URxvt.keysym.M-u: perl:url-select:select_next
-! url-select
-URvxt.url-select.button: 2
-URxvt.url-select.launcher: xdg-open 
-URxvt.url-select.underline: true
+! matcher
+URxvt.url-launcher:       sensible-browser
+URxvt.keysym.C-Delete:    matcher:last
+URxvt.keysym.M-Delete:    matcher:list
+URxvt.matcher.button:     1
+URxvt.matcher.pattern.1:  \\bwww\\.[\\w-]+\\.[\\w./?&@#-]*[\\w/-]
+URxvt.matcher.pattern.2:  \\B(/\\S+?):(\\d+)(?=:|$)
+URxvt.matcher.launcher.2: gvim +$2 $1
 ! resize-font
 URxvt.resize-font.smaller: C-minus
 URxvt.resize-font.bigger: C-equal
@@ -58,7 +62,8 @@ XTerm*vt100.geometry: 90x26
 XTerm*vt100.borderWidth: 0
 XTerm*vt100.internalBorder: 20
 XTerm*vt100.renderFont: true
-XTerm*vt100.faceName: UbuntuMono Nerd Font Mono 
+XTerm*vt100.faceName: UbuntuMono Nerd Font Mono
+!XTerm*vt100.faceName: scientifica
 XTerm*vt100.faceSize: 8
 XTerm*vt100.on2Clicks: word
 XTerm*vt100.on3Clicks: line
