@@ -3,7 +3,7 @@ Xft.dpi: 96
 Xft.antialias: 1
 Xft.hinting: 1
 Xft.rgba: rgb
-Xft.autohint: 1
+!Xft.autohint: 1
 Xft.hintstyle: hintfull
 Xft.lcdfilter: lcddefault
 
@@ -15,7 +15,7 @@ URxvt*lineSpace: 0
 URxvt*geometry: 90x26
 URxvt*internalBorder: 20
 URxvt*cursorBlink: false
-URxvt*cursorUnderline: false
+URxvt*cursorUnderline: true
 URxvt*saveLines: 2000
 URxvt*scrollBar: false
 URxvt*urgentOnBell: true
