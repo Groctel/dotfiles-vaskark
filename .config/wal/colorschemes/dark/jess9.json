@@ -1,27 +1,27 @@
 {
-    "wallpaper": "/home/jason/Pictures/T98cxoNC9yYmunFw.jpg",
+    "wallpaper": "/home/jason/Pictures/jc-Town_and_Country_US_December_2017_4.jpg",
     "alpha": "100",
     "special": {
-        "background": "#2b2b2b",
-        "foreground": "#f8f8f8",
-        "cursor": "#f8f8f8"
+        "background": "#1b161b",
+        "foreground": "#fffdff",
+        "cursor": "#fffdff"
     },
     "colors": {
-        "color0": "#2b2b2b",
-        "color1": "#7f4643",
-        "color2": "#6c8672",
-        "color3": "#aa8662",
-        "color4": "#446275",
-        "color5": "#8a595a",
-        "color6": "#4a6f72",
-        "color7": "#c7c7c7",
-        "color8": "#444343",
-        "color9": "#b14f4b",
-        "color10": "#7abc8e",
-        "color11": "#efaf6e",
-        "color12": "#4d81a5",
-        "color13": "#c26567",
-        "color14": "#549ba0",
-        "color15": "#f8f8f8"
+        "color0": "#1b161b",
+        "color1": "#663548",
+        "color2": "#b27165",
+        "color3": "#e6c29e",
+        "color4": "#93605f",
+        "color5": "#c1948c",
+        "color6": "#937588",
+        "color7": "#c6c4c6",
+        "color8": "#362c36",
+        "color9": "#8e3a5b",
+        "color10": "#f98671",
+        "color11": "#fffcb4",
+        "color12": "#ce6d6b",
+        "color13": "#ffb1a0",
+        "color14": "#d087b5",
+        "color15": "#fffdff"
     }
 }
