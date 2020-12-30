@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/jason/.config/wpg/wallpapers/white-dress-jessica-chastain-actress-m.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#07060e",
+        "foreground": "#ffffec",
+        "cursor": "#ffffec"
+    },
+    "colors": {
+        "color0": "#07060e",
+        "color1": "#754855",
+        "color2": "#99716c",
+        "color3": "#b48c5c",
+        "color4": "#d3b893",
+        "color5": "#a9a7b6",
+        "color6": "#86c1a3",
+        "color7": "#dad9bc",
+        "color8": "#171332",
+        "color9": "#a45169",
+        "color10": "#d7857b",
+        "color11": "#fbb765",
+        "color12": "#fff2a7",
+        "color13": "#cbc2ff",
+        "color14": "#98ffd3",
+        "color15": "#ffffec"
+    }
+}

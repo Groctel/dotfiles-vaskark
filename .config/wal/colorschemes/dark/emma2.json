@@ -1,27 +1,27 @@
 {
-    "wallpaper": "/home/jason/Pictures/5t8hzw6ffas51.jpg",
+    "wallpaper": "/home/jason/Pictures/emma_watson_2017_new.jpg",
     "alpha": "100",
     "special": {
-        "background": "#09090a",
-        "foreground": "#e6e7ea",
-        "cursor": "#e6e7ea"
+        "background": "#090c11",
+        "foreground": "#e5edf9",
+        "cursor": "#e5edf9"
     },
     "colors": {
-        "color0": "#09090a",
-        "color1": "#9f7c68",
-        "color2": "#c4844c",
-        "color3": "#8798a6",
-        "color4": "#68767d",
-        "color5": "#55626d",
-        "color6": "#aeaaa2",
-        "color7": "#abacae",
-        "color8": "#202024",
-        "color9": "#df9c76",
-        "color10": "#ffaa51",
-        "color11": "#9cc7eb",
-        "color12": "#789eb1",
-        "color13": "#61809a",
-        "color14": "#f7e4bc",
-        "color15": "#e6e7ea"
+        "color0": "#090c11",
+        "color1": "#7b5345",
+        "color2": "#a27457",
+        "color3": "#c9a888",
+        "color4": "#a8b5ab",
+        "color5": "#b68c73",
+        "color6": "#809297",
+        "color7": "#acb2bb",
+        "color8": "#192232",
+        "color9": "#ac654d",
+        "color10": "#e29360",
+        "color11": "#ffda9a",
+        "color12": "#c3ffd2",
+        "color13": "#ffb182",
+        "color14": "#94c8d6",
+        "color15": "#e5edf9"
     }
 }
