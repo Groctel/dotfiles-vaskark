@@ -1,5 +1,5 @@
 # XScreenSaver Preferences File
-# Written by xscreensaver-demo 5.45 for jason on Thu Dec 31 15:36:17 2020.
+# Written by xscreensaver-demo 5.45 for jason on Thu Dec 31 17:40:43 2020.
 # https://www.jwz.org/xscreensaver/
 
 timeout:	0:10:00
@@ -9,7 +9,7 @@ lockTimeout:	0:00:00
 passwdTimeout:	0:00:30
 visualID:	default
 installColormap:    True
-verbose:	False
+verbose:	True
 timestamp:	True
 splash:		False
 splashDuration:	0:00:05
@@ -17,9 +17,9 @@ demoCommand:	xscreensaver-demo
 prefsCommand:	xscreensaver-demo -prefs
 nice:		10
 memoryLimit:	0
-fade:		False
+fade:		True
 unfade:		False
-fadeSeconds:	0:00:03
+fadeSeconds:	0:00:01
 fadeTicks:	20
 captureStderr:	False
 ignoreUninstalledPrograms:False
@@ -29,16 +29,16 @@ dpmsQuickOff:	False
 dpmsStandby:	2:00:00
 dpmsSuspend:	2:00:00
 dpmsOff:	4:00:00
-grabDesktopImages:  True
+grabDesktopImages:  False
 grabVideoFrames:    False
-chooseRandomImages: False
+chooseRandomImages: True
 imageDirectory:	/home/jason/Pictures
 
 mode:		one
-selected:	90
+selected:	16
 
-textMode:	url
-textLiteral:	XScreenSaver
+textMode:	date
+textLiteral:	XScreensaver
 textFile:	
 textProgram:	fortune
 textURL:	https://feeds.feedburner.com/ubuntu-news
@@ -133,7 +133,7 @@ programs:								      \
 				wander -root				    \n\
 -				webcollage -root			    \n\
 				xflame -root				    \n\
-				xmatrix -root				    \n\
+				xmatrix -root -small -no-trace		    \n\
   GL: 				gflux -root -speed 0.05			    \n\
 -				nerverot -root				    \n\
 				xrayswarm -root				    \n\
@@ -186,7 +186,7 @@ programs:								      \
 				fontglide -root				    \n\
   GL: 				gleidescope -root			    \n\
   GL: 				glknots -root				    \n\
-  GL: 				glmatrix -root				    \n\
+  GL: 				glmatrix -root -speed 4.1795 -no-rotate	    \n\
 - GL: 				glslideshow -root			    \n\
   GL: 				hypertorus -root			    \n\
 - GL: 				jigglypuff -root			    \n\
@@ -282,7 +282,7 @@ programs:								      \
   GL: 				deepstars -root				    \n\
   GL: 				gravitywell -root			    \n\
   GL: 				beats -root				    \n\
-  GL: 				covid19 -root				    \n\
+  GL: 				covid19 -root -count 322		    \n\
   GL: 				etruscanvenus -root			    \n\
   GL: 				gibson -root				    \n\
   GL: 				headroom -root				    \n\

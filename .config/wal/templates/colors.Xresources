@@ -64,8 +64,23 @@ XClock*hourColor:   rgba:{color15.xrgba}
 XClock*minuteColor: rgba:{color15.xrgba}
 XClock*secondColor: rgba:{color15.xrgba}
 
-! Set depth to make transparency work.
-URxvt*depth: 32
+! XScreensaver
+xscreensaver.Dialog.foreground:         {color7}
+xscreensaver.Dialog.background:         {color0}
+xscreensaver.Dialog.topShadowColor:     {color8}
+xscreensaver.Dialog.bottomShadowColor:  {color8}
+xscreensaver.Dialog.Button.foreground:  {color7}
+xscreensaver.Dialog.Button.background:  {color0}
+
+xscreensaver.Dialog.text.foreground:     {color0}
+xscreensaver.Dialog.text.background:     {color2}
+xscreensaver.Dialog.internalBorderWidth: 24
+xscreensaver.Dialog.borderWidth:         0
+xscreensaver.Dialog.shadowThickness:     1
+
+xscreensaver.passwd.thermometer.foreground:  {color2}
+xscreensaver.passwd.thermometer.background:  {color8}
+xscreensaver.passwd.thermometer.width:       8
 
 ! xmenu
 xmenu.background: {color0}
