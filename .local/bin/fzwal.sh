@@ -6,6 +6,8 @@
 
 cp -f ~/.cache/wal/colors.json /tmp/fzwal-backup.json
 
+SCRIPTS='-o wal-berry.sh -o wal-dunst.sh -o wal-xss.sh'
+
 if [ -n "$1" ]; then
     IS_LIGHT=TRUE
     THEME=$(wal --theme |
@@ -22,12 +24,12 @@ fi
 
 if [ -n "$THEME" ]; then
     if [ -n "$IS_LIGHT" ]; then
-        wal -ql --theme $THEME -o wal-berry.sh -o wal-dunst.sh -o wal-xss.sh
+        wal -ql --theme $THEME $SCRIPTS
     else
-        wal -q --theme $THEME -o wal-berry.sh -o wal-dunst.sh -o wal-xss.sh
+        wal -q --theme $THEME $SCRIPTS
     fi
 else
-    wal -q --theme /tmp/fzwal-backup.json -o wal-berry.sh -o wal-dunst.sh -o wal-xss.sh
+    wal -q --theme /tmp/fzwal-backup.json $SCRIPTS
 fi
 
 if [ -n "$FZWAL_RESET_CURSOR" ]; then
