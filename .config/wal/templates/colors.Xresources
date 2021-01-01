@@ -65,15 +65,16 @@ XClock*minuteColor: rgba:{color15.xrgba}
 XClock*secondColor: rgba:{color15.xrgba}
 
 ! XScreensaver
-xscreensaver.Dialog.foreground:         {color7}
+xscreensaver.Dialog.foreground:         #888888
 xscreensaver.Dialog.background:         {color0}
 xscreensaver.Dialog.topShadowColor:     {color8}
 xscreensaver.Dialog.bottomShadowColor:  {color8}
-xscreensaver.Dialog.Button.foreground:  {color7}
+xscreensaver.Dialog.Button.foreground:  #888888
 xscreensaver.Dialog.Button.background:  {color0}
 
 xscreensaver.Dialog.text.foreground:     {color0}
 xscreensaver.Dialog.text.background:     {color2}
+
 xscreensaver.Dialog.internalBorderWidth: 24
 xscreensaver.Dialog.borderWidth:         0
 xscreensaver.Dialog.shadowThickness:     1
