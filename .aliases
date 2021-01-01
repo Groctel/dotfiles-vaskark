@@ -50,7 +50,6 @@ alias egrep='egrep --color=auto'
 alias ping='ping -c 5'
 alias path='print -l $path'
 alias fr='feh --randomize --bg-fill --recursive --no-fehbg ~/Pictures/*.(png|jpg)'
-alias fw='feh --randomize --bg-fill --recursive --no-fehbg ~/Pictures/*.(png|jpg) && wal -f random'
 
 # bindkey help
 alias rhb='run-help bindkey'
