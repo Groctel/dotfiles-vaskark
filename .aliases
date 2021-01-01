@@ -88,7 +88,7 @@ alias of='clear;onefetch'
 alias p10kc='p10k configure'
 
 # pywal
-alias wal='wal -o wal-berry.sh -o wal-dunst.sh'
+alias wal='wal -o wal-berry.sh -o wal-dunst.sh -o wal-xss.sh'
 alias w1='wal -f random_user'
 alias w2='wal -f random'
 
