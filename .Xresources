@@ -89,8 +89,7 @@ xscreensaver.Dialog.unameFont: -*-terminus-*-*-*-*-12-*-*-*-*-*-*-*
 xscreensaver.Dialog.buttonFont: -*-terminus-*-*-*-*-12-*-*-*-*-*-*-*
 xscreensaver.Dialog.dateFont: -*-terminus-*-*-*-*-12-*-*-*-*-*-*-*
 xscreensaver.passwd.passwdFont: -*-terminus-*-*-*-*-12-*-*-*-*-*-*-*
-
-xscreensaver.dateFormat: %I:%M %p, %b %d %Y
+xscreensaver.dateFormat: %-I:%M %P, %b %d %Y
 
 !! Colours
 #include ".cache/wal/colors.Xresources"
