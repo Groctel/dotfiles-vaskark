@@ -82,13 +82,13 @@ XTerm*vt100.translations: #override \n\
   Ctrl Shift <Key>V: insert-selection(SELECT) \n\
 
 !! XScreensaver
-xscreensaver.Dialog.headingFont: -*-terminus-*-*-*-*-12-*-*-*-*-*-*-*
-xscreensaver.Dialog.bodyFont: -*-terminus-*-*-*-*-12-*-*-*-*-*-*-*
-xscreensaver.Dialog.labelFont: -*-terminus-*-*-*-*-12-*-*-*-*-*-*-*
-xscreensaver.Dialog.unameFont: -*-terminus-*-*-*-*-12-*-*-*-*-*-*-*
-xscreensaver.Dialog.buttonFont: -*-terminus-*-*-*-*-12-*-*-*-*-*-*-*
-xscreensaver.Dialog.dateFont: -*-terminus-*-*-*-*-12-*-*-*-*-*-*-*
-xscreensaver.passwd.passwdFont: -*-terminus-*-*-*-*-12-*-*-*-*-*-*-*
+xscreensaver.Dialog.headingFont: -*-scientifica-*-*-*-*-11-*-*-*-*-*-*-*
+xscreensaver.Dialog.bodyFont: -*-scientifica-*-*-*-*-11-*-*-*-*-*-*-*
+xscreensaver.Dialog.labelFont: -*-scientifica-*-*-*-*-11-*-*-*-*-*-*-*
+xscreensaver.Dialog.unameFont: -*-scientifica-*-*-*-*-11-*-*-*-*-*-*-*
+xscreensaver.Dialog.buttonFont: -*-scientifica-*-*-*-*-11-*-*-*-*-*-*-*
+xscreensaver.Dialog.dateFont: -*-scientifica-*-*-*-*-11-*-*-*-*-*-*-*
+xscreensaver.passwd.passwdFont: -*-scientifica-*-*-*-*-11-*-*-*-*-*-*-*
 xscreensaver.dateFormat: %-I:%M %P, %b %d %Y
 
 !! Colours
