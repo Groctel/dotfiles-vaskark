@@ -73,6 +73,7 @@ alias gc1='git clone --depth=1'
 
 # fzf
 alias ve='nvim $(fzf)' 
+alias fw='fzwal.sh'
 
 # neofetch
 alias nf0='clear;neofetch --config none'
