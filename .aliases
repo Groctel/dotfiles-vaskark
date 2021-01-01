@@ -96,6 +96,9 @@ alias w2='wal -f random'
 alias upd8='sudo apt update;sudo apt full-upgrade;sudo apt autoremove;sudo apt clean'
 alias shut='poweroff'
 
+# doas
+# alias sudo='doas'
+
 # kernel
 alias mkc='make LSMOD=$HOME/.config/modprobed.db localmodconfig'
 alias mkp='make deb-pkg -j4 LOCALVERSION=-custom'
