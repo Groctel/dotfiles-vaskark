@@ -11,6 +11,9 @@ HISTSIZE=10000
 SAVEHIST=10000
 HISTFILE=~/.zsh_history
 
+# exports
+export EDITOR=nvim
+
 # Load aliases and shortcuts if existent.
 [ -f "$HOME/.aliases" ] && source "$HOME/.aliases"
 
