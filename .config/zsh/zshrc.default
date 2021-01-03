@@ -151,20 +151,14 @@ eval "$(starship init zsh)"
 ### functions ###
 
 # git helper
-acp() {
+gacp() {
   git add .
   git commit -m "$1"
   git push
 }
 
-# fe: open selected file with default editor
+#  fe: open selected file with default editor
 fe() {
-  IFS=$'\n' files=($(fzf-tmux --query="$1" --multi --select-1 --exit-0))
-  [[ -n "$files" ]] && ${EDITOR:-vim} "${files[@]}"
-}
-
-# same with keybindings
-fo() {
   IFS=$'\n' out=("$(fzf-tmux --query="$1" --exit-0 --expect=ctrl-o,ctrl-e)")
   key=$(head -1 <<< "$out")
   file=$(head -2 <<< "$out" | tail -1)
@@ -173,7 +167,7 @@ fo() {
   fi
 }
 
-# fk: kill processes - list only the ones you can kill
+# fk: kill processes (list only the ones you can kill)
 fk() {
     local pid 
     if [ "$UID" != "0" ]; then
@@ -186,15 +180,6 @@ fk() {
     then
         echo $pid | xargs kill -${1:-9}
     fi  
-}
-
-# fmpc
-fmpc() {
-  local song_position
-  song_position=$(mpc -f "%position%) %artist% - %title%" playlist | \
-    fzf-tmux --query="$1" --reverse --select-1 --exit-0 | \
-    sed -n 's/^\([0-9]\+\)).*/\1/p') || return 1
-  [ -n "$song_position" ] && mpc -q play $song_position
 }
 
 # fman
