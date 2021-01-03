@@ -87,7 +87,7 @@ zsh-syntax-highlighting
 source $ZSH/oh-my-zsh.sh
 
 # Aliases
-[ -f "$HOME/.aliases" ] && source "$HOME/.aliases"
+[ -f "$ZDOTDIR/aliases" ] && source "$ZDOTDIR/aliases"
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh

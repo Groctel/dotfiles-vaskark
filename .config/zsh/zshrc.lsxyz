@@ -10,13 +10,10 @@ stty stop undef         # Disable ctrl-s to freeze terminal.
 # History in cache directory:
 HISTSIZE=10000
 SAVEHIST=10000
-HISTFILE=~/.zsh_history
-
-# exports
-export EDITOR=nvim
+HISTFILE=$ZDOTDIR/.zhistory
 
 # Load aliases and shortcuts if existent.
-[ -f "$HOME/.aliases" ] && source "$HOME/.aliases"
+[ -f "$ZDOTDIR/aliases" ] && source "$ZDOTDIR/aliases"
 
 # Fzf
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
@@ -109,12 +106,6 @@ kitty + complete setup zsh | source /dev/stdin
 
 # Pywal
 (cat ~/.cache/wal/sequences &)
-
-# Pfetch
-export PF_INFO="os kernel uptime shell wm memory palette" 
-export PF_COL1=2
-export PF_COL2=4
-export PF_COLOR=1
 
 # extract
 source /usr/share/oh-my-zsh/plugins/extract/extract.plugin.zsh 2>/dev/null
