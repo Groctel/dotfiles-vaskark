@@ -24,21 +24,22 @@ alias -g G='| grep -i'
 alias -s html=google-chrome-stable
 alias -s md=google-chrome-stable
 
-alias vim='nvim'
-alias v='nvim'
+alias vim=$EDITOR
+alias v=$EDITOR
 alias t="tty-clock -cst -C 2 -f '%B %d %Y'"
 alias mount='mount | column -t'
 alias u='unimatrix -c green -a -f -n -s 98'
 alias kc='kitty +kitten icat'
 alias kd='kitty +kitten diff'
 alias mpc='mpc --host=127.0.0.1 --port=6600'
-alias wttr='curl -s "wttr.in/Hamilton?format="+%C+%t""'
 alias cls='clear'
-alias zc='nvim $ZDOTDIR/.zshrc'
+alias zc="$EDITOR $ZDOTDIR/.zshrc"
+alias zca="$EDITOR $ZDOTDIR/aliases"
+alias zce="$EDITOR $HOME/.zshenv"
 alias h='htop -u $USER'
-alias xc="nvim ~/.Xresources"
+alias xc="$EDITOR ~/.Xresources"
 alias xu='xrdb ~/.Xresources'
-alias nvc='nvim ~/.config/nvim/init.vim'
+alias nvc="$EDITOR ~/.config/nvim/init.vim"
 alias bf='bunnyfetch'
 alias pf='clear;pfetch'
 alias af='clear;afetch'
@@ -74,7 +75,7 @@ alias gs='git status'
 alias gc1='git clone --depth=1'
 
 # fzf
-alias ve='nvim $(fzf)' 
+alias ve='$EDITOR $(fzf)'
 alias fw='fzwal.sh'
 
 # neofetch
