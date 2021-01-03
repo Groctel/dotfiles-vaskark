@@ -117,13 +117,6 @@ lfcd="$HOME/.config/lf/lfcd.sh"
 fi
 bindkey -s '^]' 'lfcd\n'
 
-# git helper
-acp() {
-  git add .
-  git commit -m "$1"
-  git push
-}
-
 # Edit line in vim with ctrl-e:
 autoload edit-command-line; zle -N edit-command-line
 bindkey '^e' edit-command-line
@@ -155,7 +148,14 @@ export FZF_DEFAULT_OPTS="
 export STARSHIP_CACHE=~/.cache/starship
 eval "$(starship init zsh)"
 
-### more fzf functions ###
+### functions ###
+
+# git helper
+acp() {
+  git add .
+  git commit -m "$1"
+  git push
+}
 
 # fe: open selected file with default editor
 fe() {
