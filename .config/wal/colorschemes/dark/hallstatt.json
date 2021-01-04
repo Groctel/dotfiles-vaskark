@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/jason/Pictures/hallstatt.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#19191a",
+        "foreground": "#ffffff",
+        "cursor": "#ffffff"
+    },
+    "colors": {
+        "color0": "#19191a",
+        "color1": "#6b3e3d",
+        "color2": "#cd908f",
+        "color3": "#c7a1b1",
+        "color4": "#505866",
+        "color5": "#474e5b",
+        "color6": "#786d79",
+        "color7": "#c5c5c5",
+        "color8": "#313133",
+        "color9": "#964644",
+        "color10": "#ffa5a3",
+        "color11": "#ffb9e2",
+        "color12": "#5c6f90",
+        "color13": "#516280",
+        "color14": "#a87eac",
+        "color15": "#ffffff"
+    }
+}
