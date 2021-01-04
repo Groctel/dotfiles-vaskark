@@ -31,7 +31,7 @@ xclickroot -r xmenu.sh &
 xscreensaver &
 
 # lock
-xautolock -time 5 -locker 'xscreensaver-command -lock' -corners 00-+ &
+xautolock -time 10 -locker 'xscreensaver-command -lock' -corners 00-+ &
 
 # wal
 wal -R -o wal-berry.sh -o wal-dunst.sh &
