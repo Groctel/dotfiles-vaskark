@@ -5,3 +5,6 @@
 	name = vaskark
 [alias]
 	last = log -1 HEAD
+	br = branch
+	co = checkout
+	sw = switch
