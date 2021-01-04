@@ -1,27 +1,27 @@
 {
-    "wallpaper": "/home/jason/Pictures/hallstatt.jpg",
+    "wallpaper": "/home/jason/Pictures/hallstatt-m.jpg",
     "alpha": "100",
     "special": {
-        "background": "#19191a",
+        "background": "#18191a",
         "foreground": "#ffffff",
         "cursor": "#ffffff"
     },
     "colors": {
-        "color0": "#19191a",
-        "color1": "#6b3e3d",
-        "color2": "#cd908f",
-        "color3": "#c7a1b1",
-        "color4": "#505866",
-        "color5": "#474e5b",
-        "color6": "#786d79",
+        "color0": "#18191a",
+        "color1": "#684044",
+        "color2": "#c7938a",
+        "color3": "#7b6c75",
+        "color4": "#624f5c",
+        "color5": "#e8b392",
+        "color6": "#494c5c",
         "color7": "#c5c5c5",
-        "color8": "#313133",
-        "color9": "#964644",
-        "color10": "#ffa5a3",
-        "color11": "#ffb9e2",
-        "color12": "#5c6f90",
-        "color13": "#516280",
-        "color14": "#a87eac",
+        "color8": "#2f3234",
+        "color9": "#92484f",
+        "color10": "#ffaf9d",
+        "color11": "#ae7d9b",
+        "color12": "#8a5b7b",
+        "color13": "#ffe2a5",
+        "color14": "#545b82",
         "color15": "#ffffff"
     }
 }
