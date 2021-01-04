@@ -16,7 +16,7 @@ super + control + r
 
 # lockscreen
 super + {_,shift +} Escape
-	{lock.sh,betterlockscreen -l pixel --off 30}
+	{lock.sh,xscreensaver-command -lock}
 
 # file managers
 super + {_,shift +} F1
@@ -47,10 +47,6 @@ super + {_,shift +} semicolon
 	polybar-msg cmd {toggle,restart}
 super + ctrl + semicolon
 	polybar-menu.sh
-	
-# glava toggle
-super + apostrophe
-	glava.sh
 
 # music
 alt + {F10,F11,F12}
