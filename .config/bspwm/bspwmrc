@@ -1,5 +1,8 @@
 #!/bin/sh
 
+# xrdb
+xrdb $HOME/.Xresources &
+
 # gestures
 touchegg-bspwm.sh
 

@@ -1,5 +1,11 @@
 #!/bin/sh
 
+# xfonts
+xset fp+ /usr/local/share/fonts/scientifica &
+
+# xrdb
+xrdb ~/.Xresources &
+
 # sxhkd
 sxhkd -c $HOME/.config/berry/sxhkdrc $HOME/.config/sxhkd/sxhkdrc.common &
 
@@ -21,8 +27,11 @@ touchegg-berry.sh &
 # xmenu
 xclickroot -r xmenu.sh &
 
+# xscreensaver
+xscreensaver &
+
 # lock
-xautolock -time 10 -locker 'lock.sh' -corners 00-+ &
+xautolock -time 5 -locker 'xscreensaver-command -lock' -corners 00-+ &
 
 # wal
 wal -R -o wal-berry.sh -o wal-dunst.sh &
