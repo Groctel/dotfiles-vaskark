@@ -3,3 +3,5 @@
 [user]
 	email = vaskark@gmail.com
 	name = vaskark
+[alias]
+	last = log -1 HEAD
