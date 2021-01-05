@@ -1,7 +1,7 @@
 #!/bin/sh
 
 # xfonts
-xset fp+ /usr/local/share/fonts/scientifica &
+xset fp+ /usr/local/share/fonts/bitmaps &
 
 # xrdb
 xrdb ~/.Xresources &
@@ -14,9 +14,6 @@ redshift.sh &
 
 # picom
 picom --experimental-backends --config ~/.config/picom/picom.conf &
-
-# touchegg
-touchegg-berry.sh &
 
 # polkit
 # ubuntu
@@ -31,13 +28,16 @@ xclickroot -r xmenu.sh &
 xscreensaver &
 
 # lock
-xautolock -time 10 -locker 'xscreensaver-command -lock' -corners 00-+ &
+xautolock -time 10 -locker 'lock.sh' -corners 00-+ &
 
 # wal
 wal -R -o wal-berry.sh -o wal-dunst.sh &
 
 # polybar
 polybar -r -c ~/.config/polybar/config bottom &
+
+# touchegg
+touchegg-berry.sh &
 
 # Set decoration geometry
 berryc border_width         0
