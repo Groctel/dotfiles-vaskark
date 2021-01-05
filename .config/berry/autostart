@@ -1,5 +1,26 @@
 #!/bin/sh
 
+# Set decoration geometry
+berryc border_width         0
+berryc inner_border_width   0
+berryc title_height         24
+berryc edge_gap             0 60 0 0
+berryc decorate_new 	    "true"
+
+# Set decoration colors
+berryc focus_color          
+berryc unfocus_color        
+berryc inner_focus_color    565679
+berryc inner_unfocus_color  3D3D56
+berryc text_focus_color     000000
+berryc text_unfocus_color   111111
+
+# Other options
+berryc smart_place "true"
+berryc draw_text   "true"
+berryc edge_lock   "true"
+berryc set_font    "scientifica-8:bold"
+
 # xfonts
 xset fp+ /usr/local/share/fonts/bitmaps &
 
@@ -30,49 +51,11 @@ xscreensaver &
 # lock
 xautolock -time 10 -locker 'lock.sh' -corners 00-+ &
 
-# wal
-wal -R -o wal-berry.sh -o wal-dunst.sh &
+# touchegg
+#touchegg-berry.sh &
 
 # polybar
 polybar -r -c ~/.config/polybar/config bottom &
 
-# touchegg
-touchegg-berry.sh &
-
-# Set decoration geometry
-berryc border_width         0
-berryc inner_border_width   0
-berryc title_height         24
-berryc edge_gap             0 60 0 0
-berryc decorate_new 	    "true"
-
-# Set decoration colors
-berryc focus_color          
-berryc unfocus_color        
-berryc inner_focus_color    565679
-berryc inner_unfocus_color  3D3D56
-berryc text_focus_color     000000
-berryc text_unfocus_color   111111
-
-# Other options
-berryc smart_place "true"
-berryc draw_text   "true"
-berryc edge_lock   "true"
-berryc set_font    "scientifica-8:bold"
-
-
-# Relaunch berry if the binary changes, otherwise bail
-csum=$(sha1sum $(which berry))
-new_csum=""
-while true
-do
-    if [ "$csum" != "$new_csum" ]
-    then
-        csum=$new_csum
-        berry
-    else
-        exit 0
-    fi
-    new_csum=$(sha1sum $(which berry))
-    sleep 0.5
-done
+# wal
+wal -R -o wal-berry.sh -o wal-dunst.sh -o wal-xss.sh &
