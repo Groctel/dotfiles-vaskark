@@ -3,8 +3,8 @@
 # xrdb
 xrdb $HOME/.Xresources &
 
-# gestures
-touchegg-bspwm.sh
+# touchegg
+#touchegg-bspwm.sh
 
 # picom
 killall -9 picom; sleep 0.1s
