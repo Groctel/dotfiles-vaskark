@@ -22,6 +22,7 @@ URxvt*scrollBar: false
 URxvt*urgentOnBell: true
 URxvt*depth: 32
 URxvt*iso14755: false
+URxvt*iso14755_52: false
 
 !! URxvt Navigation Keys
 URxvt.keysym.M-Up: command:\033]720;1\007
@@ -34,9 +35,9 @@ URxvt.keysym.C-Left: \033[1;5D
 !! URxvt Extensions
 URxvt.perl-ext-common: default,matcher,selection-to-clipboard,keyboard-select,resize-font,bell-command
 ! selection-to-clipboard
-URxvt.keysym.C-S-c: eval:selection_to_clipboard
-URxvt.keysym.C-S-v: eval:paste_clipboard
-! selection-to-keyboard
+URxvt.keysym.C-S-C: eval:selection_to_clipboard
+URxvt.keysym.C-S-V: eval:paste_clipboard
+! keyboard-select
 URxvt.keysym.M-Escape: perl:keyboard-select:activate
 URxvt.keysym.M-s: perl:keyboard-select:search
 URxvt.keysym.M-u: perl:url-select:select_next
