@@ -22,7 +22,7 @@ berryc edge_lock   "true"
 berryc set_font    "scientifica-8:bold"
 
 # xfonts
-xset fp+ /usr/local/share/fonts/bitmaps &
+xset +fp /usr/local/share/fonts/misc &
 
 # xrdb
 xrdb ~/.Xresources &
