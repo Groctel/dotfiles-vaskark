@@ -29,3 +29,6 @@ export NNN_TRASH=1
 
 # qt5
 export QT_QPA_PLATFORMTHEME=qt5ct
+
+# bitmap fonts
+export xset +fp /usr/local/share/fonts/misc

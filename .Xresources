@@ -13,7 +13,7 @@ URxvt*termName: rxvt-unicode-256color
 URxvt*font: -*-rissole-*, -*-sundae-*
 URxvt*letterSpace: 0
 URxvt*lineSpace: 0
-URxvt*geometry: 84x26
+URxvt*geometry: 80x24
 URxvt*internalBorder: 20
 URxvt*cursorBlink: false
 URxvt*cursorUnderline: true
