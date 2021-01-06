@@ -21,8 +21,8 @@ alias lt='lsd --tree --depth 2 --group-dirs first'
 
 # suffix
 alias -g G='| grep -i'
-alias -s html=google-chrome-stable
-alias -s md=google-chrome-stable
+alias -s html='google-chrome-stable'
+alias -s md='$EDITOR'
 
 alias vim=$EDITOR
 alias v=$EDITOR
@@ -92,16 +92,15 @@ alias of='clear;onefetch'
 alias p10kc='p10k configure'
 
 # pywal
-alias wal='wal -o wal-berry.sh -o wal-dunst.sh -o wal-xss.sh'
-alias w1='wal -f random_user'
-alias w2='wal -f random'
+alias w1='wal -f random_user -o wal-berry.sh -o wal-dunst.sh -o wal-xss.sh'
+alias w2='wal -f random -o wal-berry.sh -o wal-dunst.sh -o wal-xss.sh'
 
 # system
 alias upd8='sudo apt update;sudo apt full-upgrade;sudo apt autoremove;sudo apt clean'
 alias shut='poweroff'
 
 # doas
-# alias sudo='doas'
+#alias sudo='doas'
 
 # kernel
 alias mkc='make LSMOD=$HOME/.config/modprobed.db localmodconfig'
