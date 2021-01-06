@@ -21,7 +21,7 @@ URxvt*saveLines: 2000
 URxvt*scrollBar: false
 URxvt*urgentOnBell: true
 URxvt*depth: 32
-URxvt*iso14755: true
+URxvt*iso14755: false
 
 !! URxvt Navigation Keys
 URxvt.keysym.M-Up: command:\033]720;1\007
@@ -57,30 +57,32 @@ URxvt.resize-font.show: C-slash
 URxvt.bell-command: canberra-gtk-play -i bell
 
 !! XTerm
-XTerm*vt100.termName: xterm-256color
-XTerm*vt100.scrollBar: false
-XTerm*vt100.geometry: 90x26
-XTerm*vt100.borderWidth: 0
-XTerm*vt100.internalBorder: 20
-XTerm*vt100.renderFont: true
-XTerm*vt100.faceName: UbuntuMono Nerd Font Mono
-XTerm*vt100.faceSize: 8
-XTerm*vt100.on2Clicks: word
-XTerm*vt100.on3Clicks: line
-XTerm*vt100.dynamicColors: On
-XTerm*vt100.saveLines: 2000
-XTerm*vt100.bellIsUrgent: true
-XTerm*vt100.visualBell: true
-XTerm*vt100.visualBellLine: true
-XTerm*vt100.selectToClipboard: true
+xterm*termName: xterm-256color
+xterm*scrollBar: false
+xterm*geometry: 84x26
+xterm*borderWidth: 0
+xterm*internalBorder: 20
+xterm*renderFont: true
+xterm*allowBoldFonts: false
+!xterm*faceName: UbuntuMono Nerd Font Mono
+!xterm*faceSize: 8
+xterm*font: -*-sundae-*
+xterm*on2Clicks: word
+xterm*on3Clicks: line
+xterm*dynamicColors: On
+xterm*saveLines: 2000
+xterm*bellIsUrgent: true
+xterm*visualBell: true
+xterm*visualBellLine: true
+xterm*selectToClipboard: true
 
 !! XTerm Keybindings
-XTerm*vt100.translations: #override \n\
+xterm*translations: #override \n\
   Ctrl <Key> minus: smaller-vt-font() \n\
   Ctrl <Key> plus: larger-vt-font() \n\
   Ctrl <Key> 0: set-vt-font(d) \n\
-  Ctrl Shift <Key>C: copy-selection(SELECT) \n\
-  Ctrl Shift <Key>V: insert-selection(SELECT) \n\
+  Ctrl Shift <Key> C: copy-selection(SELECT) \n\
+  Ctrl Shift <Key> V: insert-selection(SELECT) \n\
 
 !! XScreensaver
 xscreensaver.Dialog.headingFont: -*-scientifica-*-*-*-*-11-*-*-*-*-*-*-*
