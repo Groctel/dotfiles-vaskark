@@ -67,7 +67,7 @@ xterm*renderFont: true
 xterm*allowBoldFonts: false
 !xterm*faceName: UbuntuMono Nerd Font Mono
 !xterm*faceSize: 8
-xterm*font: -*-sundae-*
+xterm*font: -*-lemon-*
 xterm*on2Clicks: word
 xterm*on3Clicks: line
 xterm*dynamicColors: On
