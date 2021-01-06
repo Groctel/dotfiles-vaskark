@@ -3,8 +3,11 @@
 # xrdb
 xrdb $HOME/.Xresources &
 
+# xfonts
+xset +fp /usr/local/share/fonts/misc &
+
 # touchegg
-#touchegg-bspwm.sh
+#touchegg-bspwm.sh &
 
 # picom
 killall -9 picom; sleep 0.1s
