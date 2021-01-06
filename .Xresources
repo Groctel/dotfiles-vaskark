@@ -9,10 +9,11 @@ Xft.lcdfilter: lcddefault
 
 !! URxvt
 URxvt*termName: rxvt-unicode-256color
-URxvt*font: xft:scientifica:size=8, xft:UbuntuMono Nerd Font Mono:size=8
+!URxvt*font: xft:scientifica:size=8, xft:UbuntuMono Nerd Font Mono:size=8
+URxvt*font: -*-rissole-*, -*-sundae-*
 URxvt*letterSpace: 0
 URxvt*lineSpace: 0
-URxvt*geometry: 90x26
+URxvt*geometry: 84x26
 URxvt*internalBorder: 20
 URxvt*cursorBlink: false
 URxvt*cursorUnderline: true
@@ -62,7 +63,6 @@ XTerm*vt100.geometry: 90x26
 XTerm*vt100.borderWidth: 0
 XTerm*vt100.internalBorder: 20
 XTerm*vt100.renderFont: true
-!XTerm*vt100.font: -*-scientifica-*-*-*-*-11-*-*-*-*-*-*-*
 XTerm*vt100.faceName: UbuntuMono Nerd Font Mono
 XTerm*vt100.faceSize: 8
 XTerm*vt100.on2Clicks: word
