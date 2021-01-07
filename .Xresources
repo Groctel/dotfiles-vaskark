@@ -9,11 +9,12 @@ Xft.lcdfilter: lcddefault
 
 !! URxvt
 URxvt*termName: rxvt-unicode-256color
-!URxvt*font: xft:scientifica:size=8, xft:UbuntuMono Nerd Font Mono:size=8
-URxvt*font: -*-rissole-*, -*-sundae-*
-URxvt*letterSpace: 0
+URxvt*font: xft:lemon:size=8, xft:UbuntuMono Nerd Font Mono:size=8
+URxvt*boldFont: 
+!URxvt*font: -*-rissole-*, -*-sundae-*
+URxvt*letterSpace: -1
 URxvt*lineSpace: 0
-URxvt*geometry: 80x24
+URxvt*geometry: 90x24
 URxvt*internalBorder: 20
 URxvt*cursorBlink: false
 URxvt*cursorUnderline: true
