@@ -9,12 +9,13 @@ Xft.lcdfilter: lcddefault
 
 !! URxvt
 URxvt*termName: rxvt-unicode-256color
-URxvt*font: xft:lemon:size=8, xft:UbuntuMono Nerd Font Mono:size=8
-URxvt*boldFont: 
-!URxvt*font: -*-rissole-*, -*-sundae-*
-URxvt*letterSpace: -1
+!URxvt*font: xft:scientifica:size=8, xft:MesloLGS Nerd Font Mono:size=8
+URxvt*font: -nerdypepper-scientifica-medium-r-normal--11-80-100-100-c-50-iso10646-1
+URxvt*boldFont: -nerdypepper-scientifica-bold-r-normal--11-80-100-100-c-50-iso10646-1
+URxvt*italicFont: -nerdypepper-scientifica-medium-i-normal--11-80-100-100-c-50-iso10646-1
+URxvt*letterSpace: -6
 URxvt*lineSpace: 0
-URxvt*geometry: 90x24
+URxvt*geometry: 90x26
 URxvt*internalBorder: 20
 URxvt*cursorBlink: false
 URxvt*cursorUnderline: true
@@ -61,14 +62,14 @@ URxvt.bell-command: canberra-gtk-play -i bell
 !! XTerm
 xterm*termName: xterm-256color
 xterm*scrollBar: false
-xterm*geometry: 84x26
+xterm*geometry: 80x24
 xterm*borderWidth: 0
 xterm*internalBorder: 20
 xterm*renderFont: true
 xterm*allowBoldFonts: false
-!xterm*faceName: UbuntuMono Nerd Font Mono
+!xterm*faceName: lemon
 !xterm*faceSize: 8
-xterm*font: -*-lemon-*
+xterm*font: -*-sundae-*
 xterm*on2Clicks: word
 xterm*on3Clicks: line
 xterm*dynamicColors: On
