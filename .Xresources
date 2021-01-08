@@ -12,7 +12,6 @@ URxvt*termName: rxvt-unicode-256color
 !URxvt*font: xft:scientifica:size=8, xft:MesloLGS Nerd Font Mono:size=8
 URxvt*font: -nerdypepper-scientifica-medium-r-normal--11-80-100-100-c-50-iso10646-1
 URxvt*boldFont: -nerdypepper-scientifica-bold-r-normal--11-80-100-100-c-50-iso10646-1
-URxvt*italicFont: -nerdypepper-scientifica-medium-i-normal--11-80-100-100-c-50-iso10646-1
 URxvt*letterSpace: -6
 URxvt*lineSpace: 0
 URxvt*geometry: 90x26
