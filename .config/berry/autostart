@@ -56,6 +56,3 @@ polybar -r -c ~/.config/polybar/config bottom &
 
 # wal
 wal -R -o wal-berry.sh -o wal-dunst.sh -o wal-xss.sh &
-
-# touchegg
-touchegg-berry.sh &
