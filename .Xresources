@@ -10,11 +10,11 @@ Xft.lcdfilter: lcddefault
 !! URxvt
 URxvt*termName: rxvt-unicode-256color
 !URxvt*font: xft:scientifica:size=8, xft:MesloLGS Nerd Font Mono:size=8
-URxvt*font: -nerdypepper-scientifica-medium-r-normal--11-80-100-100-c-50-iso10646-1
-URxvt*boldFont: -nerdypepper-scientifica-bold-r-normal--11-80-100-100-c-50-iso10646-1
-URxvt*letterSpace: -6
+URxvt*font: -*-lemon-*
+URxvt*boldFont:
+URxvt*letterSpace: 0
 URxvt*lineSpace: 0
-URxvt*geometry: 90x26
+URxvt*geometry: 90x28
 URxvt*internalBorder: 20
 URxvt*cursorBlink: false
 URxvt*cursorUnderline: true
@@ -66,9 +66,9 @@ xterm*borderWidth: 0
 xterm*internalBorder: 20
 xterm*renderFont: true
 xterm*allowBoldFonts: false
-!xterm*faceName: lemon
-!xterm*faceSize: 8
-xterm*font: -*-sundae-*
+!xterm*faceName: 
+!xterm*faceSize: 
+xterm*font: -*-lemon-*
 xterm*on2Clicks: word
 xterm*on3Clicks: line
 xterm*dynamicColors: On
