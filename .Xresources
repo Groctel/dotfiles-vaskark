@@ -88,13 +88,13 @@ xterm*translations: #override \n\
   Ctrl Shift <Key> V: insert-selection(SELECT) \n\
 
 !! XScreensaver
-xscreensaver.Dialog.headingFont: -*-scientifica-*-*-*-*-11-*-*-*-*-*-*-*
-xscreensaver.Dialog.bodyFont: -*-scientifica-*-*-*-*-11-*-*-*-*-*-*-*
-xscreensaver.Dialog.labelFont: -*-scientifica-*-*-*-*-11-*-*-*-*-*-*-*
-xscreensaver.Dialog.unameFont: -*-scientifica-*-*-*-*-11-*-*-*-*-*-*-*
-xscreensaver.Dialog.buttonFont: -*-scientifica-*-*-*-*-11-*-*-*-*-*-*-*
-xscreensaver.Dialog.dateFont: -*-scientifica-*-*-*-*-11-*-*-*-*-*-*-*
-xscreensaver.passwd.passwdFont: -*-scientifica-*-*-*-*-11-*-*-*-*-*-*-*
+xscreensaver.Dialog.headingFont: -*-scientifica-*
+xscreensaver.Dialog.bodyFont: -*-scientifica-*
+xscreensaver.Dialog.labelFont: -*-scientifica-*
+xscreensaver.Dialog.unameFont: -*-scientifica-*
+xscreensaver.Dialog.buttonFont: -*-scientifica-*
+xscreensaver.Dialog.dateFont: -*-scientifica-*
+xscreensaver.passwd.passwdFont: -*-scientifica-*
 xscreensaver.dateFormat: %-I:%M %P, %b %d %Y
 
 !! Colours
