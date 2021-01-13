@@ -45,9 +45,6 @@ picom --experimental-backends --config ~/.config/picom/picom.conf &
 # xmenu
 xclickroot -r xmenu.sh &
 
-# xscreensaver
-xscreensaver &
-
 # lock
 xautolock -time 10 -locker 'lock.sh' -corners 00-+ &
 

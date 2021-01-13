@@ -68,7 +68,7 @@ xterm*renderFont: true
 xterm*allowBoldFonts: false
 !xterm*faceName: 
 !xterm*faceSize: 
-xterm*font: -*-lemon-*
+xterm*font: -*-cinnamonroll-*
 xterm*on2Clicks: word
 xterm*on3Clicks: line
 xterm*dynamicColors: On
