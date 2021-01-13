@@ -16,6 +16,7 @@ i3lock \
 \
 -u \
 -b \
+-n \
 \
 --clock \
 --timestr="%-I:%M %P" \
