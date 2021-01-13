@@ -46,7 +46,7 @@ picom --experimental-backends --config ~/.config/picom/picom.conf &
 xclickroot -r xmenu.sh &
 
 # lock
-xautolock -time 10 -locker 'lock.sh' -corners 00-+ &
+xautolock -time 10 -locker 'lock.sh' -killer 'systemctl suspend' -corners 00-+ &
 
 # polybar
 polybar -r -c ~/.config/polybar/config bottom &
