@@ -2,12 +2,6 @@
 # commmon
 #
 
-
-# wal
-super + F12
-	wal -f random_user -o wal-berry.sh -o wal-dunst.sh -o wal-glava.sh
-super + shift + F12
-        wal -R -o wal-berry.sh -o wal-dunst.sh -o wal-glava.sh
         
 # xmenu
 super + z
