@@ -118,3 +118,12 @@ super + shift + {y,u,i,o}
 # dynamic gaps
 super + shift + bracket{left,right}
 	bspc config -d focused window_gap $((`bspc config -d focused window_gap` {-,+} 5 ))
+
+
+#
+# pics
+#
+
+
+super + shift + equal
+	sxiv -rt "$HOME/Pictures"
