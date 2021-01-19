@@ -7,6 +7,7 @@ Web		google-chrome-stable
 Apps
 	Appearance	lxappearance
 	Bleachbit	bleachbit
+	Birdfont	birdfont
 	Calculator	gnome-calculator
 	Calendar	gnome-calendar
 	Calibre		calibre
@@ -61,6 +62,8 @@ Terms
 	Kitty		kitty
 	St		st
 	Termite		termite
+	URxvt		urxvt
+	XTerm		xterm
 Video
 	Celluloid	celluloid
 	MKVToolnix	mkvtoolnix-gui
