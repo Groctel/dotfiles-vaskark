@@ -21,11 +21,16 @@ export PF_INFO="os kernel uptime shell wm memory palette"
 export PF_COL1=2
 export PF_COL2=4
 export PF_COLOR=1
+export PF_ASCII="darwin"
 
 # nnn
 export NNN_FIFO='/tmp/nnn.fifo' 
 export NNN_COLORS='2345'
 export NNN_TRASH=1
 
-# qt5
-export QT_QPA_PLATFORMTHEME=qt5ct
+# pure
+export PURE_PROMPT_SYMBOL='❯'
+export PURE_PROMPT_VICMD_SYMBOL='❮'
+export PURE_GIT_DOWN_ARROW='∨'
+export PURE_GIT_UP_ARROW='∧'
+export PURE_GIT_STASH_SYMBOL='∓'
