@@ -73,6 +73,10 @@ super + F12
 	wal -f random_user -o wal-berry.sh -o wal-dunst.sh -o wal-xss.sh
 super + shift + F12
         wal -R -o wal-berry.sh -o wal-dunst.sh -o wal-xss.sh
+        
+# sxiv
+super + shift +equal
+	sxiv -rt "$HOME/Pictures/wow"
 
 # reboot, shutdown
 super + {shift,ctrl} + Delete
