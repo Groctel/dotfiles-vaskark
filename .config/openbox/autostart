@@ -1,0 +1,23 @@
+# bitmaps
+xset +fp /usr/local/share/fonts/misc &
+
+# picom
+picom --experimental-backends --config ~/.config/picom/picom.conf &
+
+# polkit
+/usr/lib/policykit-1-gnome/polkit-gnome-authentication-agent-1 &
+
+# redshift
+redshift.sh &
+
+# lock
+xautolock -time 10 -locker 'lock.sh' -killer 'systemctl suspend' -corners 00-+ &
+
+# wal
+wal -R &
+
+# wallpaper
+$HOME/.fehbg &
+
+# xsettings
+xsettingsd &
