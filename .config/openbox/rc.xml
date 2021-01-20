@@ -39,7 +39,7 @@
 		the active window is -->
   </placement>
   <theme>
-    <name>wal</name>
+    <name>Vermello-Wal</name>
     <titleLayout>DLIMC</titleLayout>
     <!--
 		Available characters are NDSLIMC, each can occur at most once.
@@ -451,17 +451,17 @@
 		So, I use custom script instead -->
     <keybind key="XF86AudioRaiseVolume">
       <action name="Execute">
-        <command>pulsevol --up</command>
+        <command>pulsevol.sh --up</command>
       </action>
     </keybind>
     <keybind key="XF86AudioLowerVolume">
       <action name="Execute">
-        <command>pulsevol --down</command>
+        <command>pulsevol.sh --down</command>
       </action>
     </keybind>
     <keybind key="XF86AudioMute">
       <action name="Execute">
-        <command>pulsevol --mute</command>
+        <command>pulsevol.sh --mute</command>
       </action>
     </keybind>
     <!-- wal -->

@@ -84,4 +84,4 @@ osd.label.bg.color: {color0}
 osd.hilight.bg: flat solid
 osd.hilight.bg.color: {color2}
 osd.unhilight.bg: flat solid
-osd.unhilight.bg.color: #4d5066
+osd.unhilight.bg.color: {color8}
