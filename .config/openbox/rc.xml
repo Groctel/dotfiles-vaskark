@@ -114,13 +114,14 @@
 		already set by other applications, or saved in your session.
 		Use obconf if you want to change these without having to log out
 		and back in -->
-    <number>4</number>
+    <number>5</number>
     <firstdesk>1</firstdesk>
     <names>
       <name>1</name>
       <name>2</name>
       <name>3</name>
       <name>4</name>
+      <name>5</name>
     </names>
     <popupTime>1000</popupTime>
     <!-- The number of milliseconds to show the popup for when switching
@@ -147,7 +148,7 @@
 	Many programs reserve space automatically, but you can use this in other
 	cases. -->
   <margins>
-    <top>48</top>
+    <top>16</top>
     <bottom>16</bottom>
     <left>16</left>
     <right>16</right>
@@ -390,9 +391,9 @@
         <command>alacritty</command>
       </action>
     </keybind>
-    <keybind key="W-F2">
+    <keybind key="W-Escape">
       <action name="Execute">
-        <command>google-chrome</command>
+        <command>lock.sh</command>
       </action>
     </keybind>
     <keybind key="W-F1">
@@ -400,14 +401,14 @@
         <command>nemo</command>
       </action>
     </keybind>
+    <keybind key="W-F2">
+      <action name="Execute">
+        <command>google-chrome</command>
+      </action>
+    </keybind>
     <keybind key="W-F5">
       <action name="Execute">
         <command>date.sh</command>
-      </action>
-    </keybind>
-    <keybind key="W-v">
-      <action name="Execute">
-        <command>pavucontrol</command>
       </action>
     </keybind>
     <!-- Take a screenshot, say "Cheeeese!" -->
@@ -422,14 +423,14 @@
       </action>
     </keybind>
     <!-- Multimedia keys-->
-    <keybind key="A-F11">
-      <action name="Execute">
-        <command>mpc toggle</command>
-      </action>
-    </keybind>
     <keybind key="A-F10">
       <action name="Execute">
         <command>mpc prev</command>
+      </action>
+    </keybind>
+    <keybind key="A-F11">
+      <action name="Execute">
+        <command>mpc toggle</command>
       </action>
     </keybind>
     <keybind key="A-F12">
@@ -464,15 +465,26 @@
         <command>pulsevol.sh --mute</command>
       </action>
     </keybind>
+    <!-- polybar -->
+    <keybind key="W-semicolon">
+      <action name="Execute">
+        <command>polybar-msg cmd toggle</command>
+      </action>
+    </keybind>
+    <keybind key="W-C-semicolon">
+      <action name="Execute">
+        <command>polybar-menu.sh</command>
+      </action>
+    </keybind>
     <!-- wal -->
     <keybind key="W-F12">
       <action name="Execute">
-        <command>wal -f random_user -o wal-berry.sh -o wal-dunst.sh -o wal-openbox.sh -o wal-xss.sh</command>
+        <command>wal -f random_user -o wal-extras.sh</command>
       </action>
     </keybind>
     <keybind key="W-S-F12">
       <action name="Execute">
-        <command>wal -R -o wal-berry.sh -o wal-dunst.sh -o wal-openbox.sh -o wal-xss.sh</command>
+        <command>wal -R -o wal-extras.sh</command>
       </action>
     </keybind>
     <!-- Reload and Exit keybinds -->
@@ -481,6 +493,16 @@
     </keybind>
     <keybind key="W-S-r">
       <action name="Reconfigure"/>
+    </keybind>
+    <keybind key="W-S-Delete">
+      <action name="Execute">
+        <command>reboot</command>
+      </action>
+    </keybind>
+    <keybind key="W-C-Delete">
+      <action name="Execute">
+        <command>poweroff</command>
+      </action>
     </keybind>
     <keybind key="W-Delete">
       <action name="Exit"/>
@@ -720,7 +742,7 @@
 		submenu will not be hidden until a different submenu is opened -->
     <showIcons>no</showIcons>
     <!-- controls if icons appear in the client-list-(combined-)menu -->
-    <manageDesktops>yes</manageDesktops>
+    <manageDesktops>no</manageDesktops>
     <!-- show the manage desktops section in the client-list-(combined-)menu -->
   </menu>
 </openbox_config>

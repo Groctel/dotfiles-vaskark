@@ -1,8 +1,5 @@
 #!/bin/sh
 
-# xrdb
-xrdb $HOME/.Xresources &
-
 # xfonts
 xset +fp /usr/local/share/fonts/misc &
 

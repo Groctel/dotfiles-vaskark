@@ -12,7 +12,7 @@ static struct Config config = {
 
 	/* sizes in pixels */
 	.width_pixels = 130,        /* minimum width of a menu */
-	.height_pixels = 20,        /* height of a single menu item */
+	.height_pixels = 15,        /* height of a single menu item */
 	.border_pixels = 5,         /* menu border */
 	.separator_pixels = 15,      /* space around separator */
 	.gap_pixels = 10,            /* gap between menus */

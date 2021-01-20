@@ -55,7 +55,7 @@ window.inactive.button.disabled.image.color: {color0}
 
 !! borders
 window.active.border.color: {color2}
-window.inactive.border.color: #ea545c
+window.inactive.border.color: {color8}
 padding.width: 8
 padding.height: 8
 window.client.padding.width: 0

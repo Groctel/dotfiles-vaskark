@@ -24,9 +24,6 @@ berryc set_font    "scientifica-8:bold"
 # xfonts
 xset +fp /usr/local/share/fonts/misc &
 
-# xrdb
-xrdb ~/.Xresources &
-
 # sxhkd
 sxhkd -c $HOME/.config/berry/sxhkdrc $HOME/.config/sxhkd/sxhkdrc.common &
 
@@ -52,7 +49,7 @@ xautolock -time 10 -locker 'lock.sh' -killer 'systemctl suspend' -corners 00-+ &
 polybar -r -c ~/.config/polybar/config bottom &
 
 # wal
-wal -R -o wal-berry.sh -o wal-dunst.sh -o wal-xss.sh &
+wal -R -o wal-extras.sh &
 
 # touchegg
 rm -f $HOME/.config/touchegg/touchegg.conf

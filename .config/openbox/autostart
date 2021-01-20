@@ -18,6 +18,3 @@ wal -R &
 
 # wallpaper
 $HOME/.fehbg &
-
-# xsettings
-xsettingsd &
