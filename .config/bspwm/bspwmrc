@@ -76,6 +76,5 @@ bash $HOME/.fehbg
 xsetroot -cursor_name left_ptr &
 
 # touchegg
-rm -f $HOME/.config/touchegg/touchegg.conf
-ln -s $HOME/.config/touchegg/touchegg-bspwm.conf $HOME/.config/touchegg/touchegg.conf
+touchegg-wm.sh &
 touchegg &

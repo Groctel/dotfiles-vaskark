@@ -52,6 +52,5 @@ polybar -r -c ~/.config/polybar/config bottom &
 wal -R -o wal-extras.sh &
 
 # touchegg
-rm -f $HOME/.config/touchegg/touchegg.conf
-ln -s $HOME/.config/touchegg/touchegg-berry.conf $HOME/.config/touchegg/touchegg.conf
+touchegg-wm.sh &
 touchegg &

@@ -1,5 +1,8 @@
 #!/bin/sh
 
+# remove lock
+rm -f $HOME/.config/touchegg/.touchegg.lock
+
 # remove symlink
 rm -f $HOME/.config/touchegg/touchegg.conf
 
