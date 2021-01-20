@@ -391,6 +391,11 @@
         <command>alacritty</command>
       </action>
     </keybind>
+    <keybind key="W-S-Return">
+      <action name="Execute">
+        <command>kitty</command>
+      </action>
+    </keybind>
     <keybind key="W-Escape">
       <action name="Execute">
         <command>lock.sh</command>

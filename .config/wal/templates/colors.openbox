@@ -74,7 +74,7 @@ window.inactive.grip.bg: flat
 window.inactive.grip.bg.color: #141c21
 
 !! on-screen displays
-osd.border.width: 1
+osd.border.width: 2
 osd.border.color: {color0}
 osd.label.text.color: {color2}
 osd.bg: flat solid
