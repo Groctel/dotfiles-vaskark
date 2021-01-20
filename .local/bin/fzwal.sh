@@ -6,7 +6,7 @@
 
 cp -f ~/.cache/wal/colors.json /tmp/fzwal-backup.json
 
-SCRIPTS='-o wal-berry.sh -o wal-dunst.sh -o wal-openbox.sh -o wal-xss.sh'
+SCRIPTS='-o wal-extras.sh'
 
 if [ -n "$1" ]; then
     IS_LIGHT=TRUE
