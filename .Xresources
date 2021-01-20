@@ -14,7 +14,7 @@ URxvt*font: -*-uushi-*
 URxvt*boldFont: 
 URxvt*letterSpace: 0
 URxvt*lineSpace: 0
-URxvt*geometry: 80x26
+URxvt*geometry: 78x26
 URxvt*internalBorder: 20
 URxvt*cursorBlink: false
 URxvt*cursorUnderline: true
