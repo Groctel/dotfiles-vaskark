@@ -148,10 +148,10 @@
 	Many programs reserve space automatically, but you can use this in other
 	cases. -->
   <margins>
-    <top>16</top>
-    <bottom>16</bottom>
-    <left>16</left>
-    <right>16</right>
+    <top>10</top>
+    <bottom>10</bottom>
+    <left>10</left>
+    <right>10</right>
   </margins>
   <dock>
     <position>TopLeft</position>
