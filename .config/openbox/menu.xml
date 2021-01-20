@@ -5,7 +5,7 @@
         xsi:schemaLocation="http://openbox.org/
                 file:///usr/share/openbox/menu.xsd">
 
-<menu id="root-menu" label="Openbox 3">
+<menu id="root-menu" label="Menu">
   <item label="Term">
     <action name="Execute"><execute>alacritty</execute></action>
   </item>

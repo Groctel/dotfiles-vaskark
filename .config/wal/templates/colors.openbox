@@ -47,14 +47,14 @@ window.inactive.button.*.hover.bg: parentrelative
 window.*.button.*.pressed.bg: flat
 window.active.button.*.hover.bg.color: {color2}
 window.active.button.*.hover.image.color: {color0}
-window.active.button.*.pressed.bg.color: #ea545c
-window.active.button.*.image.color: #ea545c
-window.active.button.disabled.image.color: #a1a1a1
-window.inactive.button.*.image.color: #263640
-window.inactive.button.disabled.image.color: #a1a1a1
+window.active.button.*.pressed.bg.color: {color2}
+window.active.button.*.image.color: {color2}
+window.active.button.disabled.image.color: {color0}
+window.inactive.button.*.image.color: {color0}
+window.inactive.button.disabled.image.color: {color0}
 
 !! borders
-window.active.border.color: #ea545c
+window.active.border.color: {color2}
 window.inactive.border.color: #ea545c
 padding.width: 8
 padding.height: 8
@@ -75,13 +75,13 @@ window.inactive.grip.bg.color: #141c21
 
 !! on-screen displays
 osd.border.width: 1
-osd.border.color: #141c21
-osd.label.text.color: #a1a1a1
+osd.border.color: {color0}
+osd.label.text.color: {color2}
 osd.bg: flat solid
-osd.bg.color: #141c21
+osd.bg.color: {color0}
 osd.label.bg: flat solid
-osd.label.bg.color: #141c21
+osd.label.bg.color: {color0}
 osd.hilight.bg: flat solid
-osd.hilight.bg.color: #f0544c
+osd.hilight.bg.color: {color2}
 osd.unhilight.bg: flat solid
 osd.unhilight.bg.color: #4d5066

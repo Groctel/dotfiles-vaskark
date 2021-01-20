@@ -39,8 +39,8 @@
 		the active window is -->
   </placement>
   <theme>
-    <name>Bonzo</name>
-    <titleLayout>NDLIMC</titleLayout>
+    <name>wal</name>
+    <titleLayout>DLIMC</titleLayout>
     <!--
 		Available characters are NDSLIMC, each can occur at most once.
 		N: window icon
@@ -185,19 +185,6 @@
         <wrap>no</wrap>
       </action>
     </keybind>
-    <!-- Sent window to next or previous workspace -->
-    <keybind key="W-S-Left">
-      <action name="SendToDesktop">
-        <to>left</to>
-        <wrap>no</wrap>
-      </action>
-    </keybind>
-    <keybind key="W-S-Right">
-      <action name="SendToDesktop">
-        <to>right</to>
-        <wrap>no</wrap>
-      </action>
-    </keybind>
     <!-- Switch to another workspace -->
     <keybind key="W-1">
       <action name="GoToDesktop">
@@ -219,7 +206,7 @@
         <to>4</to>
       </action>
     </keybind>
-    <!-- Sent window to worspace number -->
+    <!-- Send window to workspace number -->
     <keybind key="W-S-1">
       <action name="SendToDesktop">
         <to>1</to>
@@ -243,49 +230,6 @@
         <to>4</to>
         <wrap>no</wrap>
       </action>
-    </keybind>
-    <!-- Keybindings for Aero Snap -->
-    <keybind key="W-Right">
-      <action name="UnmaximizeFull"/>
-      <action name="MoveResizeTo">
-        <x>-0</x>
-        <y>+0</y>
-        <width>50/100</width>
-        <height>100/100</height>
-      </action>
-    </keybind>
-    <keybind key="W-Left">
-      <action name="UnmaximizeFull"/>
-      <action name="MoveResizeTo">
-        <x>+0</x>
-        <y>+0</y>
-        <width>50/100</width>
-        <height>100/100</height>
-      </action>
-    </keybind>
-    <keybind key="W-Up">
-      <action name="UnmaximizeFull"/>
-      <action name="MoveResizeTo">
-        <width>75/100</width>
-        <height>75/100</height>
-      </action>
-      <action name="MoveToCenter"/>
-    </keybind>
-    <keybind key="W-Down">
-      <action name="UnmaximizeFull"/>
-      <action name="MoveResizeTo">
-        <width>50/100</width>
-        <height>50/100</height>
-      </action>
-      <action name="MoveToCenter"/>
-    </keybind>
-    <keybind key="W-S-Up">
-      <action name="UnmaximizeFull"/>
-      <action name="MoveResizeTo">
-        <width>75/100</width>
-        <height>75/100</height>
-      </action>
-      <action name="MoveToCenter"/>
     </keybind>
     <!-- Keybindings for moving window to edge -->
     <keybind key="W-C-Right">
@@ -417,10 +361,15 @@
         <dialog>no</dialog>
       </action>
     </keybind>
-    <!-- Keybindings for startmenu	-->
+    <!-- Keybindings for startmenu -->
     <keybind key="W-d">
       <action name="Execute">
         <command>rofi -show drun</command>
+      </action>
+    </keybind>
+    <keybind key="W-x">
+      <action name="Execute">
+        <command>dmenu.sh</command>
       </action>
     </keybind>
     <keybind key="W-Tab">
@@ -449,38 +398,23 @@
         <command>nemo</command>
       </action>
     </keybind>
-    <keybind key="W-g">
-      <action name="Execute">
-        <command>geany</command>
-      </action>
-    </keybind>
     <keybind key="W-v">
       <action name="Execute">
         <command>pavucontrol</command>
       </action>
     </keybind>
     <!-- Take a screenshot, say "Cheeeese!" -->
-    <keybind key="Print">
+    <keybind key="W-Print">
       <action name="Execute">
-        <command>screeny</command>
+        <command>flameshot gui -p ~/Screenshots</command>
       </action>
     </keybind>
-    <keybind key="A-Print">
+    <keybind key="W-S-Print">
       <action name="Execute">
-        <command>screeny -f</command>
-      </action>
-    </keybind>
-    <keybind key="C-Print">
-      <action name="Execute">
-        <command>screeny -s</command>
+        <command>flameshot full -p ~/Screenshots -d 3000</command>
       </action>
     </keybind>
     <!-- Multimedia keys-->
-    <keybind key="XF86AudioStop">
-      <action name="Execute">
-        <command>mpc stop</command>
-      </action>
-    </keybind>
     <keybind key="A-F11">
       <action name="Execute">
         <command>mpc toggle</command>
@@ -498,12 +432,12 @@
     </keybind>
     <keybind key="XF86MonBrightnessDown">
       <action name="Execute">
-        <command>light -dec 5</command>
+        <command>light -U 5</command>
       </action>
     </keybind>
     <keybind key="XF86MonBrightnessUp">
       <action name="Execute">
-        <command>light -inc 5</command>
+        <command>light -A 5</command>
       </action>
     </keybind>
     <!-- I'm not satisfied with PulseAudio default volume controller. 
@@ -521,6 +455,17 @@
     <keybind key="XF86AudioMute">
       <action name="Execute">
         <command>pulsevol --mute</command>
+      </action>
+    </keybind>
+    <!-- wal -->
+    <keybind key="W-F12">
+      <action name="Execute">
+        <command>wal -f random_user -o wal-berry.sh -o wal-dunst.sh -o wal-openbox.sh -o wal-xss.sh</command>
+      </action>
+    </keybind>
+    <keybind key="W-S-F12">
+      <action name="Execute">
+        <command>wal -R -o wal-berry.sh -o wal-dunst.sh -o wal-openbox.sh -o wal-xss.sh</command>
       </action>
     </keybind>
     <!-- Reload and Exit keybinds -->
