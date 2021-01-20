@@ -463,24 +463,22 @@
         <command>light -A 5</command>
       </action>
     </keybind>
-    <!-- I'm not satisfied with PulseAudio default volume controller. 
-		So, I use custom script instead -->
     <keybind key="XF86AudioRaiseVolume">
       <action name="Execute">
-        <command>pulsevol.sh --up</command>
+        <command>pactl set-sink-volume @DEFAULT_SINK@ +5%</command>
       </action>
     </keybind>
     <keybind key="XF86AudioLowerVolume">
       <action name="Execute">
-        <command>pulsevol.sh --down</command>
+        <command>pactl set-sink-volume @DEFAULT_SINK@ -5%</command>
       </action>
     </keybind>
     <keybind key="XF86AudioMute">
       <action name="Execute">
-        <command>pulsevol.sh --mute</command>
+        <command>pactl set-sink-mute @DEFAULT_SINK@ toggle</command>
       </action>
     </keybind>
-    <!-- polybar -->
+    <!-- Polybar -->
     <keybind key="W-semicolon">
       <action name="Execute">
         <command>polybar-msg cmd toggle</command>
@@ -491,7 +489,7 @@
         <command>polybar-menu.sh</command>
       </action>
     </keybind>
-    <!-- wal -->
+    <!-- Pywal -->
     <keybind key="W-F12">
       <action name="Execute">
         <command>wal -f random_user -o wal-extras.sh</command>
@@ -733,11 +731,13 @@
           <menu>root-menu</menu>
         </action>
       </mousebind>
+      <!--
       <mousebind button="Left" action="DoubleClick">
         <action name="ShowMenu">
           <menu>client-list-combined-menu</menu>
         </action>
       </mousebind>
+      -->
     </context>
   </mouse>
   <menu>
