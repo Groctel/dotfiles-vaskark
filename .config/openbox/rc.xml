@@ -398,6 +398,11 @@
         <command>nemo</command>
       </action>
     </keybind>
+    <keybind key="W-F5">
+      <action name="Execute">
+        <command>date.sh</command>
+      </action>
+    </keybind>
     <keybind key="W-v">
       <action name="Execute">
         <command>pavucontrol</command>
