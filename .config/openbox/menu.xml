@@ -18,7 +18,7 @@
   <!-- This requires the presence of the 'obamenu' package to work -->
   <menu id="/Debian" />
   <separator />
-  <menu id="applications-menu" label="Applications" execute="/usr/bin/obamenu"/>
+  <menu id="applications-menu" label="Programs" execute="/usr/bin/obamenu"/>
   <separator />
   <item label="Config">
     <action name="Execute"><execute>obconf</execute></action>
