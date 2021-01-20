@@ -9,4 +9,4 @@
 	co = checkout
 	sw = switch
 [credential]
-	helper = cache --timeout=18000
+	helper = cache --timeout=3600
