@@ -411,9 +411,19 @@
         <command>google-chrome</command>
       </action>
     </keybind>
+    <keybind key="W-F4">
+      <action name="Execute">
+        <command>farge.sh</command>
+      </action>
+    </keybind>
     <keybind key="W-F5">
       <action name="Execute">
         <command>date.sh</command>
+      </action>
+    </keybind>
+    <keybind key="W-F6">
+      <action name="Execute">
+        <command>networkmanager_dmenu</command>
       </action>
     </keybind>
     <!-- Take a screenshot, say "Cheeeese!" -->
