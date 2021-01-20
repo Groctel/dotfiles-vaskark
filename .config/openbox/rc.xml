@@ -263,9 +263,6 @@
     <keybind key="W-f">
       <action name="ToggleMaximize"/>
     </keybind>
-    <keybind key="W-z">
-      <action name="Iconify"/>
-    </keybind>
     <keybind key="W-u">
       <action name="ToggleShade"/>
     </keybind>
@@ -380,6 +377,11 @@
     <keybind key="W-space">
       <action name="ShowMenu">
         <menu>root-menu</menu>
+      </action>
+    </keybind>
+    <keybind key="W-z">
+      <action name="Execute">
+        <command>xmenu.sh</command>
       </action>
     </keybind>
     <!-- Keybindings for running applications -->
