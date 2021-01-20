@@ -7,7 +7,6 @@ Web		google-chrome-stable
 Apps
 	Appearance	lxappearance
 	Bleachbit	bleachbit
-	Birdfont	birdfont
 	Calculator	gnome-calculator
 	Calendar	gnome-calendar
 	Calibre		calibre
@@ -30,6 +29,7 @@ Audio
 	yMuse		ymuse
 Graphics
 	GIMP		gimp
+	Birdfont	birdfont
 	Inkscape	inkscape
 	Pick		pick-colour-picker
 	YACReader	YACReader
