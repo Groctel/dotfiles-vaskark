@@ -258,7 +258,7 @@
     </keybind>
     <!-- Keybindings for undecorate, fullscreen, minimize,
 		roll-up, stick, resize, move, close, and window menu -->
-    <keybind key="W-t">
+    <keybind key="W-n">
       <action name="ToggleDecorations"/>
     </keybind>
     <keybind key="W-f">
