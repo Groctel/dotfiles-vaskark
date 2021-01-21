@@ -27,10 +27,3 @@ export PF_ASCII="darwin"
 export NNN_FIFO='/tmp/nnn.fifo' 
 export NNN_COLORS='2345'
 export NNN_TRASH=1
-
-# pure
-export PURE_PROMPT_SYMBOL='❯'
-export PURE_PROMPT_VICMD_SYMBOL='❮'
-export PURE_GIT_DOWN_ARROW='∨'
-export PURE_GIT_UP_ARROW='∧'
-export PURE_GIT_STASH_SYMBOL='∓'
