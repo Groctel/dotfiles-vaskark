@@ -50,7 +50,3 @@ polybar -r -c ~/.config/polybar/config bottom &
 
 # wal
 wal -R -o wal-extras.sh &
-
-# touchegg
-touchegg-wm.sh &
-touchegg &

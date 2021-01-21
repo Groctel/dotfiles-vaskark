@@ -74,7 +74,3 @@ bash $HOME/.fehbg
 
 # set cursor
 xsetroot -cursor_name left_ptr &
-
-# touchegg
-touchegg-wm.sh &
-touchegg &
