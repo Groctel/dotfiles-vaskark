@@ -85,18 +85,17 @@ alias nf='clear;neofetch'
 alias nfo='clear;neofetch --off'
 alias nfs='clear;neofetch --config ~/.config/neofetch/config-small.conf'
 
-# fonttosfnt
+# fonts
 alias fonttosfnt='fonttosfnt -v -r -b -c -g 2 -m 2 -o'
-
-# onefetch
-alias of='clear;onefetch'
+alias fcc='fc-cache -fv'
+alias fcl='fc-list'
 
 # p10k
 alias p10kc='p10k configure'
 
 # pywal
-alias w1='wal -f random_user -o wal-berry.sh -o wal-dunst.sh -o wal-xss.sh'
-alias w2='wal -f random -o wal-berry.sh -o wal-dunst.sh -o wal-xss.sh'
+alias w1='wal -f random_user -o wal-extras.sh'
+alias w2='wal -f random -o wal-extras.sh'
 
 # system
 alias upd8='sudo apt update;sudo apt full-upgrade;sudo apt autoremove;sudo apt clean'
@@ -144,7 +143,3 @@ alias mla='sudo reflector --country 'United States' --protocol https --latest 10
 
 alias pi='pacman -Slq | fzf --multi --preview 'pacman -Si {1}' | xargs -ro sudo pacman -S'
 alias yi='yay -Slq | fzf --multi --preview 'yay -Si {1}' | xargs -ro yay -S'
-
-# nixos
-alias nix-upd8='sudo nix-channel --update && sudo nixos-rebuild switch'
-alias nix-clean='sudo nix-collect-garbage -d'
