@@ -76,7 +76,7 @@ alias gc1='git clone --depth=1'
 
 # fzf
 alias ve='$EDITOR $(fzf)'
-alias fw='fzwal.sh'
+alias fw='fz-wal.sh'
 
 # neofetch
 alias nf0='clear;neofetch --config none'

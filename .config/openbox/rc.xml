@@ -114,14 +114,13 @@
 		already set by other applications, or saved in your session.
 		Use obconf if you want to change these without having to log out
 		and back in -->
-    <number>5</number>
+    <number>4</number>
     <firstdesk>1</firstdesk>
     <names>
       <name>1</name>
       <name>2</name>
       <name>3</name>
       <name>4</name>
-      <name>5</name>
     </names>
     <popupTime>1750</popupTime>
     <!-- The number of milliseconds to show the popup for when switching
@@ -493,6 +492,11 @@
     <keybind key="W-F12">
       <action name="Execute">
         <command>wal -f random_user -o wal-extras.sh</command>
+      </action>
+    </keybind>
+    <keybind key="W-C-F12">
+      <action name="Execute">
+        <command>wal -f random_dark -o wal-extras.sh</command>
       </action>
     </keybind>
     <keybind key="W-S-F12">
