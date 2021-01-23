@@ -6,7 +6,7 @@
                 file:///usr/share/openbox/menu.xsd">
 
 <menu id="root-menu" label="Openbox">
-  <separator label="--- O P E N B O X ---" />
+  <separator label="OPENBOX" />
   <item label="Term">
     <action name="Execute"><execute>alacritty</execute></action>
   </item>

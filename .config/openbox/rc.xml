@@ -114,13 +114,14 @@
 		already set by other applications, or saved in your session.
 		Use obconf if you want to change these without having to log out
 		and back in -->
-    <number>4</number>
+    <number>5</number>
     <firstdesk>1</firstdesk>
     <names>
       <name>1</name>
       <name>2</name>
       <name>3</name>
       <name>4</name>
+      <name>5</name>
     </names>
     <popupTime>1750</popupTime>
     <!-- The number of milliseconds to show the popup for when switching
@@ -206,6 +207,11 @@
         <to>4</to>
       </action>
     </keybind>
+    <keybind key="W-5">
+      <action name="GoToDesktop">
+        <to>5</to>
+      </action>
+    </keybind>
     <!-- Send window to workspace number -->
     <keybind key="W-S-1">
       <action name="SendToDesktop">
@@ -228,6 +234,12 @@
     <keybind key="W-S-4">
       <action name="SendToDesktop">
         <to>4</to>
+        <wrap>no</wrap>
+      </action>
+    </keybind>
+    <keybind key="W-S-5">
+      <action name="SendToDesktop">
+        <to>5</to>
         <wrap>no</wrap>
       </action>
     </keybind>
@@ -281,6 +293,9 @@
     <keybind key="W-w">
       <action name="Close"/>
     </keybind>
+  <keybind key="W-h">
+    <action name="ToggleShowDesktop"/>
+  </keybind>
     <keybind key="A-space">
       <action name="ShowMenu">
         <menu>client-menu</menu>
@@ -369,11 +384,13 @@
         <command>dmenu.sh</command>
       </action>
     </keybind>
+<!--
     <keybind key="W-Tab">
       <action name="ShowMenu">
         <menu>client-list-combined-menu</menu>
       </action>
     </keybind>
+-->
     <keybind key="W-space">
       <action name="ShowMenu">
         <menu>root-menu</menu>

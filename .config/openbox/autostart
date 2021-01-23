@@ -10,11 +10,11 @@ picom --experimental-backends --config ~/.config/picom/picom.conf &
 # lock
 xautolock -time 10 -locker 'lock.sh' -killer 'systemctl suspend' -corners 00-+ &
 
+# redshift
+redshift.sh &
+
 # wal
 wal -R -o wal-extras.sh &
 
 # wallpaper
 $HOME/.fehbg &
-
-# redshift
-sleep 1s && redshift.sh &
