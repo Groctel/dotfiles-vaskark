@@ -88,7 +88,7 @@ xmenu.background: {color0}
 xmenu.foreground: #888888
 xmenu.selbackground: {color2}
 xmenu.selforeground: {color0}
-xmenu.separator: {color2}
+xmenu.separator: {color5}
 xmenu.border: {color0}
 
 ! sxiv
