@@ -293,9 +293,9 @@
     <keybind key="W-w">
       <action name="Close"/>
     </keybind>
-  <keybind key="W-h">
-    <action name="ToggleShowDesktop"/>
-  </keybind>
+    <keybind key="W-h">
+      <action name="ToggleShowDesktop"/>
+    </keybind>
     <keybind key="A-space">
       <action name="ShowMenu">
         <menu>client-menu</menu>
@@ -381,10 +381,10 @@
     </keybind>
     <keybind key="W-x">
       <action name="Execute">
-        <command>dmenu.sh</command>
+        <command>dmenu2.sh</command>
       </action>
     </keybind>
-<!--
+    <!--
     <keybind key="W-Tab">
       <action name="ShowMenu">
         <menu>client-list-combined-menu</menu>
