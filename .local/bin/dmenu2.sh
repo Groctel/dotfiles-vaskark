@@ -12,7 +12,7 @@ w=$(( width-(2*b) ))
 dmenu_run \
 -p ' dmenu ' \
 -fn 'scientifica-8:bold' \
--h 22 \
+-h 24 \
 -nb "$color2" \
 -nf "$color0" \
 -sb "$color0" \
