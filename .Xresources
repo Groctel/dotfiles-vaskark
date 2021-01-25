@@ -33,22 +33,17 @@ URxvt.keysym.C-Right: \033[1;5C
 URxvt.keysym.C-Left: \033[1;5D
 
 !! URxvt Extensions
-URxvt.perl-ext-common: default,matcher,selection-to-clipboard,keyboard-select,resize-font,bell-command
+URxvt.perl-ext-common: default,selection-to-clipboard,keyboard-select,url-select,resize-font,bell-command
 ! selection-to-clipboard
 URxvt.keysym.C-S-C: eval:selection_to_clipboard
 URxvt.keysym.C-S-V: eval:paste_clipboard
 ! keyboard-select
 URxvt.keysym.M-Escape: perl:keyboard-select:activate
 URxvt.keysym.M-s: perl:keyboard-select:search
+! url-select
 URxvt.keysym.M-u: perl:url-select:select_next
-! matcher
-URxvt.url-launcher:       sensible-browser
-URxvt.keysym.C-Delete:    matcher:last
-URxvt.keysym.M-Delete:    matcher:list
-URxvt.matcher.button:     1
-URxvt.matcher.pattern.1:  \\bwww\\.[\\w-]+\\.[\\w./?&@#-]*[\\w/-]
-URxvt.matcher.pattern.2:  \\B(/\\S+?):(\\d+)(?=:|$)
-URxvt.matcher.launcher.2: gvim +$2 $1
+URxvt.url-select.autocopy: true
+URxvt.url-select.underline: true
 ! resize-font
 URxvt.resize-font.smaller: C-minus
 URxvt.resize-font.bigger: C-equal
