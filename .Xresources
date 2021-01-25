@@ -9,9 +9,8 @@ Xft.lcdfilter: lcddefault
 
 !! URxvt
 URxvt*termName: rxvt-unicode-256color
-!URxvt*font: xft:scientifica:size=8
 URxvt*font: -*-scientifica-medium-r-*
-URxvt*boldFont: -*-scientifica-bold-*
+URxvt*boldFont: -*-scientifica-bold-r-*
 URxvt*letterSpace: -6
 URxvt*lineSpace: 0
 URxvt*geometry: 90x26
