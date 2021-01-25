@@ -86,7 +86,7 @@ alias nfo='clear;neofetch --off'
 alias nfs='clear;neofetch --config ~/.config/neofetch/config-small.conf'
 
 # fonts
-alias fonttosfnt='fonttosfnt -v -r -b -c -g 2 -m 2 -o'
+alias f2s='fonttosfnt -v -r -b -c -g 2 -m 2 -o'
 alias fcc='fc-cache -fv'
 alias fcl='fc-list'
 
