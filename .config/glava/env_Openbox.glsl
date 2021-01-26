@@ -1,1 +1,1 @@
-#request setxwintype "desktop", "below"
+#request setxwintype "!-", "below"
