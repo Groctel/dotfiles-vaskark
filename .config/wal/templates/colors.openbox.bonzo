@@ -1,0 +1,84 @@
+!! Bonzo by Addy
+!! Inspired by Onyx by Dana Jansens
+
+!! Menu background
+menu.items.bg: flat
+menu.items.bg.color: {color0}
+menu.overlap.x: -4
+
+!! Menu text
+menu.items.text.color: {color7}
+menu.items.justify: left
+menu.items.disabled.text.color: #8a8a8a
+
+!! Menu separator
+menu.separator.padding.height: 2
+menu.separator.color: {color0}
+
+!! Menu border
+menu.border.width: 10
+menu.border.color: {color0}
+
+!! Menu headers
+menu.title.bg: flat
+menu.title.bg.color: {color5}
+menu.title.text.color: {color0}
+menu.title.text.justify: center
+
+!! Selected menu item
+menu.items.active.bg: flat
+menu.items.active.bg.color: {color2}
+menu.items.active.text.color: {color0}
+
+!! Titlebar
+window.active.title.bg: flat
+window.active.title.bg.color: {color2}
+window.inactive.title.bg: flat
+window.inactive.title.bg.color: {color0}
+
+!! Titlebar text
+window.label.text.justify: center
+window.active.label.bg: parentrelative
+window.active.label.text.color: {color0}
+window.inactive.label.bg: parentrelative
+window.inactive.label.text.color: {color8}
+
+!! Window buttons
+window.*.button.*.bg: parentrelative
+window.active.button.*.hover.bg: flat
+window.inactive.button.*.hover.bg: parentrelative
+window.*.button.*.pressed.bg: flat
+
+window.active.button.*.hover.bg.color: {color2}
+window.active.button.*.pressed.bg.color: {color2}
+window.inactive.button.*.pressed.bg.color: #4ab5ff
+
+window.active.button.*.image.color: {color0}
+window.active.button.disabled.image.color: #aaaaaa
+window.inactive.button.*.image.color: {color8}
+window.inactive.button.disabled.image.color: {color8}
+
+!! Borders
+window.active.border.color: #2f343f
+window.inactive.border.color: #ffffff
+border.width: 0
+padding.width: 4
+padding.height: 8
+window.handle.width: 0
+window.active.client.color:  #2f343f
+window.inactive.client.color:  #ffffff
+window.client.padding.width: 0
+window.client.padding.height: 0
+
+!! On-screen displays
+osd.border.width: 1
+osd.border.color: {color0}
+osd.label.text.color: {color2}
+osd.bg: flat solid
+osd.bg.color: {color0}
+osd.label.bg: flat solid
+osd.label.bg.color: {color0}
+osd.hilight.bg: flat solid
+osd.hilight.bg.color: {color2}
+osd.unhilight.bg: flat solid
+osd.unhilight.bg.color: {color8}

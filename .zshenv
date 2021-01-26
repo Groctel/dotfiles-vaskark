@@ -14,7 +14,7 @@ export EDITOR='nvim'
 export VISUAL='nvim'
 
 # path
-export PATH="$HOME/.local/bin:$PATH"
+# export PATH="$HOME/.local/bin:$PATH"
 
 # pfetch
 export PF_INFO="os kernel uptime shell wm memory palette" 
