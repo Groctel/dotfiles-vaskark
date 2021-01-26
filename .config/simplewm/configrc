@@ -1,0 +1,69 @@
+#-----------------------#
+#--- SimpleWM Config ---#
+#-----------------------#
+
+#--- Main Configurations -----
+n_tags = 5
+tag_names = One;Two;Three;Four;Five
+
+border_width = 2
+sloppy_focus = true
+moveresize_step = 30
+
+#               focus   unfocus urgent  marked  fixed
+border_colour = #ff9800 #303030 #d81765 #97d01a #0fdcb6
+
+#--- Key Bindings -----
+KEY = Mod4+Delete QUIT 0
+KEY = Mod4+w CLIENT kill
+KEY = Mod4+f CLIENT fix
+KEY = Mod4+i CLIENT iconify
+KEY = Mod4+m CLIENT mark
+KEY = Mod4+Tab CLIENT cycle
+#--- Spawns
+KEY = Mod4+Return SPAWN urxvt
+KEY = Mod4+d SPAWN rofi -show drun
+KEY = Mod4+x SPAWN dmenu2.sh
+KEY = Mod4+z SPAWN xmenu.sh
+KEY = Mod4+Escape SPAWN lock.sh
+KEY = Mod4+F1 SPAWN nemo
+KEY = Mod4+F2 SPAWN google-chrome
+KEY = Mod4+F4 SPAWN farge.sh
+KEY = Mod4+F5 SPAWN date.sh
+KEY = Mod4+F6 SPAWN networkmanager_dmenu
+KEY = Mod4+F12 SPAWN wal -f random_user -o wal-extras.sh
+KEY = Mod4+Shift+F12 SPAWN wal -R -o wal-extras.sh
+KEY = Mod4+Control+F12 SPAWN wal -f random -o wal-extras.sh
+KEY = Mod1+F10 SPAWN mpc prev
+KEY = Mod1+F11 SPAWN mpc toggle
+KEY = Mod1+F12 SPAWN mpc next
+KEY = XF86AudioRaiseVolume SPAWN pactl set-sink-volume @DEFAULT_SINK@ +5%
+KEY = XF86AudioLowerVolume SPAWN pactl set-sink-volume @DEFAULT_SINK@ -5%
+KEY = XF86AudioMute SPAWN pactl set-sink-mute @DEFAULT_SINK@ toggle
+KEY = Mod4+semicolon SPAWN polybar-msg cmd toggle
+KEY = Mod4+Control+semicolon SPAWN polybar-menu.sh
+#--- Tags
+KEY = Mod4+1 TAG select
+KEY = Mod4+2 TAG select
+KEY = Mod4+3 TAG select
+KEY = Mod4+4 TAG select
+KEY = Mod4+5 TAG select
+KEY = Mod4+Shift+1 CLIENT send_to_tag
+KEY = Mod4+Shift+2 CLIENT send_to_tag
+KEY = Mod4+Shift+3 CLIENT send_to_tag
+KEY = Mod4+Shift+4 CLIENT send_to_tag
+KEY = Mod4+Shift+5 CLIENT send_to_tag
+#--- Move/Resize
+KEY = Mod1+Left CLIENT move
+KEY = Mod1+Right CLIENT move
+KEY = Mod1+Up CLIENT move
+KEY = Mod1+Down CLIENT move
+KEY = Mod1+Shift+Left CLIENT resize
+KEY = Mod1+Shift+Right CLIENT resize
+KEY = Mod1+Shift+Up CLIENT resize
+KEY = Mod1+Shift+Down CLIENT resize
+
+#--- Mouse Bindings -----
+MOUSE = Mod4+Button1 CLIENT move
+MOUSE = Mod4+Button3 CLIENT resize
+MOUSE = Button1 ROOT test

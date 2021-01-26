@@ -2,6 +2,7 @@
 
 cat <<EOF | xmenu | sh &
 Term		alacritty
+Files		nemo
 Web		google-chrome-stable
 
 Apps
