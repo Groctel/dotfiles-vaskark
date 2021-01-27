@@ -21,6 +21,7 @@ color15=$(sed -n 16p ~/.cache/wal/colors)
 ## berry
 berry00=$(awk 'NR==1 {print substr($1,2,7)}' ~/.cache/wal/colors)
 berry02=$(awk 'NR==3 {print substr($1,2,7)}' ~/.cache/wal/colors)
+
 berryc inner_focus_color   $berry02
 berryc text_focus_color    $berry00
 berryc inner_unfocus_color $berry00
@@ -39,7 +40,6 @@ glava10=$(sed -n 11p ~/.cache/wal/colors)AA
 
 sed -i "s|#define COLOR.*$|#define COLOR @fg:mix($glava02, $glava10, clamp(d / GRADIENT, 0, 1))|g" ~/.config/glava/bars.glsl
 #sed -i "s|#define FLIP.*$|#define FLIP 1|g" ~/.config/glava/bars.glsl
-#sed -i "s|#request setgeometry.*$|#request setgeometry 560 0 800 1080|g" ~/.config/glava/rc.glsl
 
 if ps -A | grep glava; then
 	killall -9 glava
