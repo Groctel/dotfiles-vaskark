@@ -1,15 +1,13 @@
-#!/bin/bash
+#!/bin/sh
 
 ## autostart
-# polybar-main.sh &
 picom --experimental-backends --config ~/.config/picom/picom.conf &
 redshift.sh &
 xautolock.sh &
-libinput-gestures-setup stop
-libinput-gestures -c ~/.config/libinput-gestures/gestures-wm.conf &
 /usr/lib/policykit-1-gnome/polkit-gnome-authentication-agent-1 &
-wal -R -o wal-berry.sh -o wal-dunst.sh &
+wal -R -o wal-extras.sh &
 xclickroot -r xmenu.sh &
+polybar-main.sh &
 
 ## relaunch sowm if the binary changes, otherwise bail
 csum=$(sha1sum $(which sowm))
