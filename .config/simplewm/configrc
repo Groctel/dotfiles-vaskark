@@ -6,12 +6,12 @@
 n_tags = 5
 tag_names = One;Two;Three;Four;Five
 
-border_width = 2
+border_width = 1
 sloppy_focus = true
 moveresize_step = 30
 
 #               focus   unfocus urgent  marked  fixed
-border_colour = #ff9800 #303030 #d81765 #97d01a #0fdcb6
+border_colour = #B36F0E #515151 #E04229 #265c78 #68c4f5
 
 #--- Key Bindings -----
 KEY = Mod4+Delete QUIT 0
@@ -22,6 +22,7 @@ KEY = Mod4+m CLIENT mark
 KEY = Mod4+Tab CLIENT cycle
 #--- Spawns
 KEY = Mod4+Return SPAWN urxvt
+KEY = Mod4+Shift+Return SPAWN kitty
 KEY = Mod4+d SPAWN rofi -show drun
 KEY = Mod4+x SPAWN dmenu2.sh
 KEY = Mod4+z SPAWN xmenu.sh
