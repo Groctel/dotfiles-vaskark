@@ -1,0 +1,14 @@
+#! perl -w
+
+# I-Beam cursor in urxvt
+# 5 (blink), 6 (no blink)
+
+use strict;
+use warnings;
+
+sub on_start
+{
+    my ($self) = @_;
+    my $cmd = "\033[6 q\r";
+    $self->cmd_parse ($cmd);
+}
