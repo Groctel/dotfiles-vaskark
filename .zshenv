@@ -13,9 +13,6 @@ export SAVEHIST=10000
 export EDITOR='nvim'
 export VISUAL='nvim'
 
-# path
-# export PATH="$HOME/.local/bin:$PATH"
-
 # pfetch
 export PF_INFO="os kernel uptime shell wm memory palette" 
 export PF_COL1=2
