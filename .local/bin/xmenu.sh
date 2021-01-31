@@ -10,12 +10,9 @@ Apps
 	Bleachbit	bleachbit
 	Calculator	gnome-calculator
 	Calendar	gnome-calendar
-	Calibre		calibre
 	Flameshot	flameshot gui
 	Foliate		foliate
 	Font Manager	font-manager
-	Gitg		gitg
-	Meld		meld
 	Nautilus	nautilus
 	Nemo		nemo
 	Plank		plank
@@ -28,6 +25,11 @@ Audio
 	PulseAudio	pavucontrol
 	Rhythmbox	rhythmbox
 	yMuse		ymuse
+Dev
+	Gitg		gitg
+	Meld		meld
+	Sublime Text	subl
+	Sublime Merge	smerge
 Graphics
 	GIMP		gimp
 	Birdfont	birdfont
