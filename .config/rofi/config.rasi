@@ -2,16 +2,20 @@ configuration {
   show-icons:         	false;
   cycle:              	true;
   location:	      	0;
-  sidebar-mode:	false;	
+  sidebar-mode:		false;	
   hide-scrollbar:     	true;
   disable-history:    	false;
-  width: 	      	16;
+  width: 	      	12;
   lines:              	8;
-  font:		"scientifica bold 8";
+  font:			"scientifica bold 8";
   columns:            	1;
   modi: 	      	"drun,run,ssh,emoji,keys";
   display-drun:       	"apps";
+  display-run:       	"run";
+  display-ssh:     	"ssh";
   display-window:     	"win";
+  display-emoji:     	"emoji";
+  display-keys:     	"keys";
   terminal:           	"alacritty";
   theme:	      	"~/.cache/wal/colors-rofi-dark.rasi";
 }

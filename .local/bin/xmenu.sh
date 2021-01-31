@@ -1,9 +1,9 @@
 #!/bin/bash
 
 cat <<EOF | xmenu | sh &
-Term		alacritty
 Files		nemo
-Web		google-chrome-stable
+Term		alacritty
+Web		google-chrome
 
 Apps
 	Appearance	lxappearance
