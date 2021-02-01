@@ -7,7 +7,6 @@ picom --experimental-backends --config ~/.config/picom/picom.conf &
 xautolock -time 10 -locker 'lock.sh' -killer 'systemctl suspend' -corners 00-+ &
 redshift.sh &
 wal -R -o wal-extras.sh &
-$HOME/.fehbg &
 
 
 ## relaunch if the binary changes, otherwise bail

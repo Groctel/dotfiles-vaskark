@@ -16,6 +16,3 @@ redshift.sh &
 
 # wal
 wal -R -o wal-extras.sh &
-
-# wallpaper
-$HOME/.fehbg &
