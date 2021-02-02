@@ -4,9 +4,9 @@ configuration {
   location:	      	0;
   sidebar-mode:		false;	
   hide-scrollbar:     	true;
-  disable-history:    	false;
+  disable-history:    	true;
   width: 	      	12;
-  lines:              	8;
+  lines:              	6;
   font:			"scientifica bold 8";
   columns:            	1;
   modi: 	      	"drun,run,ssh,emoji,keys";
