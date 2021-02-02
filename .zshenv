@@ -24,4 +24,3 @@ export PF_ASCII="darwin"
 export NNN_FIFO='/tmp/nnn.fifo' 
 export NNN_COLORS='2345'
 export NNN_TRASH=1
-
