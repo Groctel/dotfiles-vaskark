@@ -4,7 +4,7 @@
 . "${HOME}/.cache/wal/colors.sh"
 
 # vars for xyw
-b=5
+b=4
 width=$(xdotool getdisplaygeometry | awk '{print $1}')
 w=$(( width-(2*b) ))
 
@@ -12,7 +12,7 @@ w=$(( width-(2*b) ))
 dmenu_run \
 -p ' dmenu ' \
 -fn 'scientifica-8:bold' \
--h 26 \
+-h 22 \
 -nb "$color2" \
 -nf "$color0" \
 -sb "$color0" \
