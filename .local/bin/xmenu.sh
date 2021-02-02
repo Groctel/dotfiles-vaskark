@@ -32,7 +32,6 @@ Dev
 	Sublime Merge	smerge
 Graphics
 	GIMP		gimp
-	Birdfont	birdfont
 	Inkscape	inkscape
 	Pick		pick-colour-picker
 	YACReader	YACReader
