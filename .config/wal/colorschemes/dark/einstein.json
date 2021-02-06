@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/jason/Pictures/einstein.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#011c1f",
+        "foreground": "#f2dbdb",
+        "cursor": "#f2dbdb"
+    },
+    "colors": {
+        "color0": "#011c1f",
+        "color1": "#683432",
+        "color2": "#328383",
+        "color3": "#8c655f",
+        "color4": "#86b4bc",
+        "color5": "#824339",
+        "color6": "#93bec2",
+        "color7": "#bba9a9",
+        "color8": "#094646",
+        "color9": "#8e3c35",
+        "color10": "#34afb3",
+        "color11": "#c2746b",
+        "color12": "#97ecec",
+        "color13": "#b34e3b",
+        "color14": "#a5ebeb",
+        "color15": "#f2dbdb"
+    }
+}
