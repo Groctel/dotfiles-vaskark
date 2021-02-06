@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 #   Source: https://gist.github.com/Tadly/0741821d3694deaec1ee454a95c591fa
 #
 #   Use rofi to pick emoji because that's what this
@@ -72,7 +72,7 @@ function download() {
 }
 
 function rofi_menu() { # {{{
-	rofi -width 15 -lines 10 -dmenu -i -p 'Emoji:' \
+	rofi -width 25 -lines 7 -dmenu -i -p 'emoji: ' \
 		-kb-row-tab '' \
 		-kb-row-select Tab \
 		-kb-custom-1 Ctrl+c

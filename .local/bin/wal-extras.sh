@@ -35,15 +35,15 @@ sed -i "s|gradient_color_1.*$|gradient_color_1 = '$color02'|g" ~/.config/cava/co
 sed -i "s|gradient_color_2.*$|gradient_color_2 = '$color10'|g" ~/.config/cava/config
 
 ## glava
-glava02=$(sed -n 3p ~/.cache/wal/colors)FF
-glava10=$(sed -n 11p ~/.cache/wal/colors)AA
+glava_dark=$(sed -n 3p ~/.cache/wal/colors)FF
+glava_light=$(sed -n 11p ~/.cache/wal/colors)AA
 
-sed -i "s|#define COLOR.*$|#define COLOR @fg:mix($glava02, $glava10, clamp(d / GRADIENT, 0, 1))|g" ~/.config/glava/bars.glsl
+sed -i "s|#define COLOR.*$|#define COLOR @fg:mix($glava_dark, $glava_light, clamp(d / GRADIENT, 0, 1))|g" ~/.config/glava/bars.glsl
 #sed -i "s|#define FLIP.*$|#define FLIP 1|g" ~/.config/glava/bars.glsl
 
 if ps -A | grep glava; then
 	killall -9 glava
-        glava -d -a fifo
+        glava -d
     else
         killall -9 glava
 fi
