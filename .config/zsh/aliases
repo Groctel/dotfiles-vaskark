@@ -43,6 +43,7 @@ alias nvc="$EDITOR ~/.config/nvim/init.vim"
 alias bf='bunnyfetch'
 alias pf='clear;pfetch'
 alias af='clear;afetch'
+alias kf='kittyfetch'
 alias n='nnn -C -E -d -o -T e -a -x'
 alias c='cava'
 alias p='pipes.sh'
