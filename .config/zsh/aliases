@@ -13,11 +13,18 @@ alias cd..='cd ..'
 alias d='dirs -v | head -10'
 alias free='free -m'
 
-# list
+# lsd
 alias ls='lsd --group-dirs first'
-alias l='ls -l --group-dirs first'
-alias ll='ls -al --group-dirs first'
+alias l='lsd -l --group-dirs first'
+alias ll='lsd -al --group-dirs first'
 alias lt='lsd --tree --depth 2 --group-dirs first'
+
+# exa
+#alias ls='exa'
+#alias l1='exa -1'
+#alias l='exa -l'
+#alias ll='exa -al'
+#alias lt='exa -T -L 2'
 
 # suffix
 alias -g G='| grep -i'
