@@ -148,10 +148,10 @@
 	Many programs reserve space automatically, but you can use this in other
 	cases. -->
   <margins>
-    <top>10</top>
-    <bottom>10</bottom>
-    <left>10</left>
-    <right>10</right>
+    <top>0</top>
+    <bottom>0</bottom>
+    <left>0</left>
+    <right>0</right>
   </margins>
   <dock>
     <position>TopLeft</position>
@@ -424,7 +424,12 @@
     </keybind>
     <keybind key="W-F2">
       <action name="Execute">
-        <command>google-chrome</command>
+        <command>google-chrome-stable</command>
+      </action>
+    </keybind>
+    <keybind key="W-F3">
+      <action name="Execute">
+        <command>feh --randomize --bg-fill --recursive --no-fehbg $HOME/Pictures/*.(png|jpg)</command>
       </action>
     </keybind>
     <keybind key="W-F4">
@@ -454,6 +459,11 @@
       </action>
     </keybind>
     <!-- Multimedia keys-->
+<keybind key="A-S-F10">
+      <action name="Execute">
+        <command>mpc seek -00:00:10</command>
+      </action>
+    </keybind>
     <keybind key="A-F10">
       <action name="Execute">
         <command>mpc prev</command>
@@ -467,6 +477,11 @@
     <keybind key="A-F12">
       <action name="Execute">
         <command>mpc next</command>
+      </action>
+    </keybind>
+    <keybind key="A-S-F12">
+      <action name="Execute">
+        <command>mpc seek +00:00:10</command>
       </action>
     </keybind>
     <keybind key="XF86MonBrightnessDown">
