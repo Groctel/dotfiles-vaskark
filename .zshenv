@@ -14,7 +14,7 @@ export EDITOR='nvim'
 export VISUAL='nvim'
 
 # pfetch
-export PF_INFO="kernel uptime shell de memory palette" 
+export PF_INFO="kernel uptime shell wm memory palette" 
 export PF_COL1=2
 export PF_COL2=4
 #export PF_ASCII="darwin"
