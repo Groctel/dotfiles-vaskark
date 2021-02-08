@@ -14,12 +14,17 @@ export EDITOR='nvim'
 export VISUAL='nvim'
 
 # pfetch
-export PF_INFO="ascii os kernel uptime shell wm memory palette" 
+export PF_INFO="kernel uptime shell de memory palette" 
 export PF_COL1=2
 export PF_COL2=4
-export PF_ASCII="darwin"
+#export PF_ASCII="darwin"
 
 # nnn
 export NNN_FIFO='/tmp/nnn.fifo' 
 export NNN_COLORS='2345'
 export NNN_TRASH=1
+
+# path
+typeset -U PATH path
+path=("$HOME/.local/bin" "$path[@]")
+export PATH
