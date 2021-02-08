@@ -2,26 +2,26 @@
     "wallpaper": "/home/jason/Pictures/jessica-chastain-la-rousse-sulfureuse-du-festival-de-cannes-photo-6.jpg",
     "alpha": "100",
     "special": {
-        "background": "#202746",
-        "foreground": "#cdd5f5",
-        "cursor": "#cdd5f5"
+        "background": "#15232c",
+        "foreground": "#fed1d1",
+        "cursor": "#fed1d1"
     },
     "colors": {
-        "color0": "#202746",
-        "color1": "#c94922",
-        "color2": "#ac9739",
-        "color3": "#c08b30",
-        "color4": "#3d8fd1",
-        "color5": "#6679cc",
-        "color6": "#22a2c9",
-        "color7": "#979db4",
-        "color8": "#2f3968",
-        "color9": "#ff561c",
-        "color10": "#eecd3b",
-        "color11": "#ffb82e",
-        "color12": "#3dbbff",
-        "color13": "#7090ff",
-        "color14": "#1cdaff",
-        "color15": "#cdd5f5"
+        "color0": "#15232c",
+        "color1": "#ed4e50",
+        "color2": "#7ac541",
+        "color3": "#e2b21a",
+        "color4": "#50c8af",
+        "color5": "#9f60d2",
+        "color6": "#30b2de",
+        "color7": "#be9a9a",
+        "color8": "#253d4d",
+        "color9": "#fc5253",
+        "color10": "#9bfc43",
+        "color11": "#fcf210",
+        "color12": "#55fdeb",
+        "color13": "#d26bfd",
+        "color14": "#2cf1fd",
+        "color15": "#fed1d1"
     }
 }
