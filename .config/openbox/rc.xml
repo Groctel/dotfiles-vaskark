@@ -459,7 +459,7 @@
       </action>
     </keybind>
     <!-- Multimedia keys-->
-<keybind key="A-S-F10">
+<keybind key="W-A-F10">
       <action name="Execute">
         <command>mpc seek -00:00:10</command>
       </action>
@@ -479,7 +479,7 @@
         <command>mpc next</command>
       </action>
     </keybind>
-    <keybind key="A-S-F12">
+    <keybind key="W-A-F12">
       <action name="Execute">
         <command>mpc seek +00:00:10</command>
       </action>
