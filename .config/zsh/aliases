@@ -133,7 +133,8 @@ alias s2='sudo make PREFIX=/usr/local install'
 alias s3='sudo ninja -C build install'
 
 # journal
-alias jctl='journalctl -p 3 -xe'
+alias jcb='journalctl -p 3 -xb'
+alias jce='journalctl -p 3 -xe'
 
 # logs
 alias ldpkg='tail -f /var/log/dpkg.log | bat --paging=never -l log'
