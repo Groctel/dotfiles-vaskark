@@ -75,7 +75,7 @@ super + shift + F12
         wal -R -o wal-extras.sh
         
 # sxiv
-super + shift +equal
+super + shift + equal
 	sxiv -rt "$HOME/Pictures/wow"
 
 # reboot, shutdown
