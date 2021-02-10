@@ -36,7 +36,7 @@ sed -i "s|gradient_color_2.*$|gradient_color_2 = '$color10'|g" ~/.config/cava/co
 
 ## glava
 glava1=$(sed -n 9p ~/.cache/wal/colors)FF
-glava2=$(sed -n 11p ~/.cache/wal/colors)FF
+glava2=$(sed -n 3p ~/.cache/wal/colors)FF
 
 sed -i "s|#define COLOR.*$|#define COLOR @fg:mix($glava1, $glava2, clamp(d / GRADIENT, 0, 1))|g" ~/.config/glava/bars.glsl
 #sed -i "s|#define FLIP.*$|#define FLIP 1|g" ~/.config/glava/bars.glsl
