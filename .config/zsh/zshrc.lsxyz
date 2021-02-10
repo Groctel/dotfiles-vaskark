@@ -101,6 +101,7 @@ kitty + complete setup zsh | source /dev/stdin
 
 # Pywal
 (cat ~/.cache/wal/sequences &)
+source ~/.cache/wal/colors-tty.sh
 
 # extract
 source /usr/share/oh-my-zsh/plugins/extract/extract.plugin.zsh 2>/dev/null
