@@ -7,6 +7,14 @@ PS1="%B%{$fg[red]%}[%{$fg[yellow]%}%n%{$fg[green]%}@%{$fg[blue]%}%M %{$fg[magent
 setopt autocd		# Automatically cd into typed directory.
 stty stop undef         # Disable ctrl-s to freeze terminal.
 
+# pure
+#fpath+=$HOME/work/pure
+#autoload -U promptinit; promptinit
+#zstyle :prompt:pure:git:stash show yes
+#zstyle :prompt:pure:path color blue
+#zstyle ':prompt:pure:prompt:*' color cyan
+#prompt pure
+
 # Load aliases and shortcuts if existent.
 [ -f "$ZDOTDIR/aliases" ] && source "$ZDOTDIR/aliases"
 
@@ -89,9 +97,6 @@ lfcd () {
 }
 bindkey -s '^]' 'lfcd\n'
 
-# Use fzf to change dir and bind to ctrl-f
-bindkey -s '^f' 'cd "$(dirname "$(fzf)")"\n'
-
 # Edit line in vim with ctrl-e:
 autoload edit-command-line; zle -N edit-command-line
 bindkey '^e' edit-command-line
@@ -109,5 +114,5 @@ source /usr/share/oh-my-zsh/plugins/extract/extract.plugin.zsh 2>/dev/null
 # auto-suggestions
 source /usr/share/oh-my-zsh/custom/plugins/zsh-autosuggestions/zsh-autosuggestions.plugin.zsh 2>/dev/null
 
-# syntax highlighting; should be last.
+# syntax highlighting; should be last
 source /usr/share/oh-my-zsh/custom/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.plugin.zsh 2>/dev/null
