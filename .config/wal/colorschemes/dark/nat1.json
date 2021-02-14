@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/jason/Pictures/dql98jnq3d031-m.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#201b14",
+        "foreground": "#eae0cf",
+        "cursor": "#5c738c"
+    },
+    "colors": {
+        "color0": "#201b14",
+        "color1": "#8c755c",
+        "color2": "#5c8c75",
+        "color3": "#758c5c",
+        "color4": "#735c8c",
+        "color5": "#8c5c75",
+        "color6": "#5c738c",
+        "color7": "#aba297",
+        "color8": "#3e3428",
+        "color9": "#c4976a",
+        "color10": "#6ac497",
+        "color11": "#97c46a",
+        "color12": "#946ac4",
+        "color13": "#c46a97",
+        "color14": "#6a94c4",
+        "color15": "#eae0cf"
+    }
+}
