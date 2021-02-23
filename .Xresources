@@ -9,9 +9,9 @@ Xft.lcdfilter: lcddefault
 
 !! URxvt
 URxvt*termName: rxvt-unicode-256color
-URxvt*font: -*-scientifica-medium-r-*
-URxvt*boldFont: -*-scientifica-bold-r-*
-URxvt*letterSpace: -6
+URxvt*font: -*-lemon-*
+URxvt*boldFont: -*-lemon-*
+URxvt*letterSpace: 0
 URxvt*lineSpace: 0
 URxvt*geometry: 90x26
 URxvt*internalBorder: 20
@@ -57,14 +57,14 @@ URxvt.bell-command: canberra-gtk-play -i bell
 !! XTerm
 xterm*termName: xterm-256color
 xterm*scrollBar: false
-xterm*geometry: 76x24
+xterm*geometry: 90x26
 xterm*borderWidth: 0
 xterm*internalBorder: 20
 xterm*renderFont: true
 xterm*allowBoldFonts: false
 !xterm*faceName: lemon
-!xterm*faceSize: 8
-xterm*font: -*-sundae-*
+!xterm*faceSize: 7.5
+xterm*font: -*-lemon-*
 xterm*on2Clicks: word
 xterm*on3Clicks: line
 xterm*dynamicColors: On
