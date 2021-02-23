@@ -65,8 +65,7 @@ padding-right = 1
 module-margin = 1
 
 font-0 = "scientifica:bold:size=8;2"
-font-1 = "siji:size=10;2"
-font-2 = "siji:size=12;3"
+font-1 = "siji:size=9;2"
 
 modules-left = mod bspwm
 modules-center = mpd
@@ -109,7 +108,6 @@ label-empty-padding = 1
 
 [module/mod]
 type = internal/bspwm
-format-font = 3
 
 format = <label-mode>
 format-background = ${colors.color0}
