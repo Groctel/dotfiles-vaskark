@@ -1,3 +1,6 @@
+# term
+export TERM="xterm-256color"
+
 # xdg
 export XDG_CONFIG_HOME=$HOME/.config
 export XDG_DATA_HOME=$HOME/.local/share
@@ -12,6 +15,10 @@ export SAVEHIST=10000
 # editor
 export EDITOR='nvim'
 export VISUAL='nvim'
+
+# man
+# export MANPAGER="sh -c 'col -bx | bat -l man -p'"
+export MANPAGER="nvim -c 'set ft=man' -"
 
 # pfetch
 export PF_INFO="kernel uptime shell wm memory palette" 
