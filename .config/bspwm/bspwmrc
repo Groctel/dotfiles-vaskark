@@ -67,7 +67,7 @@ bspc rule -r "*"
 
 # rules
 #bspc rule -a Sxiv desktop='^3' state=floating follow=on
-bspc rule -a farge state=floating
+bspc rule -a Pick-colour-picker state=floating
 
 # restore wp
 bash $HOME/.fehbg
