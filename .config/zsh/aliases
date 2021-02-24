@@ -20,11 +20,11 @@ alias ll='lsd -al --group-dirs first'
 alias lt='lsd --tree --depth 2 --group-dirs first'
 
 # exa
-#alias ls='exa'
-#alias l1='exa -1'
-#alias l='exa -l'
-#alias ll='exa -al'
-#alias lt='exa -T -L 2'
+#alias ls='exa --group-directories-first'
+#alias l1='exa -1 --group-directories-first'
+#alias l='exa -l --group-directories-first'
+#alias ll='exa -al --group-directories-first'
+#alias lt='exa -T -L 2 --group-directories-first'
 
 # suffix
 alias -g G='| grep -i'
@@ -85,6 +85,9 @@ alias gc1='git clone --depth=1'
 # fzf
 alias ve='$EDITOR $(fzf)'
 alias fw='fz-wal.sh'
+
+# skim
+alias se='$EDITOR $(sk)'
 
 # neofetch
 alias nf0='clear;neofetch --config none'
