@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/jason/Pictures/Ml1dKUI.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#19171c",
+        "foreground": "#c6c0d0",
+        "cursor": "#c6c0d0"
+    },
+    "colors": {
+        "color0": "#19171c",
+        "color1": "#be4678",
+        "color2": "#2a9292",
+        "color3": "#a06e3b",
+        "color4": "#576ddb",
+        "color5": "#955ae7",
+        "color6": "#398bc6",
+        "color7": "#8b8792",
+        "color8": "#312d37",
+        "color9": "#ff4a99",
+        "color10": "#2acaca",
+        "color11": "#de8f3e",
+        "color12": "#5d80ff",
+        "color13": "#be60ff",
+        "color14": "#39b7ff",
+        "color15": "#c6c0d0"
+    }
+}
