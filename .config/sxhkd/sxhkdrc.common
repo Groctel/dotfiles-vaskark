@@ -51,6 +51,8 @@ super + ctrl + semicolon
 # music
 alt + {F10,F11,F12}
 	mpc -q {prev,toggle,next}
+alt + shift + {F10,F12}
+	mpc seek {-00:00:10,+00:00:10}
 
 # shots
 super + Print
