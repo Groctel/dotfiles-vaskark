@@ -7,6 +7,7 @@
 	last = log -1 HEAD
 	br = branch
 	co = checkout
+	re = remote
 	sw = switch
 [credential]
 	helper = cache --timeout=3600
