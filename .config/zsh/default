@@ -7,9 +7,6 @@ fi
 
 # path
 typeset -U PATH path
-if [ -d "$HOME/.local/bin" ] ;
-  then PATH="$HOME/.local/bin:$PATH"
-fi
 
 # omz fix
 export ZSH_DISABLE_COMPFIX=true
