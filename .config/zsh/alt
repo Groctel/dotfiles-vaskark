@@ -119,3 +119,8 @@ source /usr/share/oh-my-zsh/custom/plugins/zsh-autosuggestions/zsh-autosuggestio
 
 # syntax highlighting; should be last
 source /usr/share/oh-my-zsh/custom/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.plugin.zsh 2>/dev/null
+
+# functions
+source ~/.config/zsh/functions/fzf-edit 2>/dev/null
+source ~/.config/zsh/functions/fzf-kill 2>/dev/null
+source ~/.config/zsh/functions/fzf-man 2>/dev/null
