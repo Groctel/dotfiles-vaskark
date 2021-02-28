@@ -18,7 +18,7 @@ export ZSH_DISABLE_COMPFIX=true
 export ZSH="/usr/share/oh-my-zsh"
 
 # zsh theme
-#ZSH_THEME="p10k"
+ZSH_THEME="p10k"
 
 # case-sensitive completion
 #CASE_SENSITIVE="true"
@@ -87,12 +87,12 @@ export FZF_DEFAULT_OPTS="
 #eval "$(starship init zsh)"
 
 # pure
-fpath+=$HOME/work/pure
-autoload -U promptinit; promptinit
-zstyle :prompt:pure:git:stash show yes
+#fpath+=$HOME/work/pure
+#autoload -U promptinit; promptinit
+#zstyle :prompt:pure:git:stash show yes
 #zstyle :prompt:pure:path color blue
 #zstyle ':prompt:pure:prompt:*' color cyan
-prompt pure
+#prompt pure
 
 # xterm/urxvt cursor (beam)
 # 35 (blink), 36 (no blink)

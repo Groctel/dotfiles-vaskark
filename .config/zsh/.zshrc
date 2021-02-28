@@ -1,1 +1,1 @@
-/home/jason/dotfiles/.config/zsh/zshrc.default
+/home/jason/dotfiles/.config/zsh/default
