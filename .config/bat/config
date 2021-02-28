@@ -28,5 +28,5 @@
 --color=always
 
 # Style
-#--style=full
---style="numbers,changes,header"
+--style=full
+#--style="numbers,changes,header"
