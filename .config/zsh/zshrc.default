@@ -98,10 +98,6 @@ prompt pure
 # 35 (blink), 36 (no blink)
 echo -e -n "\x1b[\x36 q"
 
-#################
-### functions ###
-#################
-
 # ncmpcpp (ctrl+\)
 ncmpcppShow() {
   BUFFER="ncmpcpp"
@@ -124,32 +120,7 @@ gacp() {
   git push
 }
 
-#  fe: open selected file with default editor
-fe() {
-  IFS=$'\n' out=("$(fzf-tmux --query="$1" --exit-0 --expect=ctrl-o,ctrl-e)")
-  key=$(head -1 <<< "$out")
-  file=$(head -2 <<< "$out" | tail -1)
-  if [ -n "$file" ]; then
-    [ "$key" = ctrl-o ] && open "$file" || ${EDITOR:-vim} "$file"
-  fi
-}
-
-# fk: kill processes (list only the ones you can kill)
-fk() {
-    local pid 
-    if [ "$UID" != "0" ]; then
-        pid=$(ps -f -u $UID | sed 1d | fzf -m | awk '{print $2}')
-    else
-        pid=$(ps -ef | sed 1d | fzf -m | awk '{print $2}')
-    fi  
-
-    if [ "x$pid" != "x" ]
-    then
-        echo $pid | xargs kill -${1:-9}
-    fi  
-}
-
-# fm: manual
-fm() {
-    man -k . | fzf -q "$1" --prompt='man> '  --preview $'echo {} | tr -d \'()\' | awk \'{printf "%s ", $2} {print $1}\' | xargs -r man' | tr -d '()' | awk '{printf "%s ", $2} {print $1}' | xargs -r man
-}
+# functions
+source ~/.config/zsh/functions/fzf-edit 2>/dev/null
+source ~/.config/zsh/functions/fzf-kill 2>/dev/null
+source ~/.config/zsh/functions/fzf-man 2>/dev/null
