@@ -3,7 +3,7 @@ call plug#begin('~/.config/nvim/plugged')
 Plug 'itchyny/lightline.vim'
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-markdown'
-Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() }, 'for': ['markdown', 'vim-plug']}
+"Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() }, 'for': ['markdown', 'vim-plug']}
 Plug 'machakann/vim-highlightedyank'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --no-bash' }
 Plug 'nelstrom/vim-markdown-folding'
@@ -298,7 +298,7 @@ let g:lightline.component = {
     \ 'sep1': ''
     \}
 
-"set g:lightline.mode_map = {
+"let g:lightline.mode_map = {
 "    \ 'n' : 'N',
 "    \ 'i' : 'I',
 "    \ 'R' : 'R',
