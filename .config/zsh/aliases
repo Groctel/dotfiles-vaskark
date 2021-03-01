@@ -1,6 +1,6 @@
 # general
 alias zr='history -c && clear && exec zsh'
-alias dzr='rm -f ~/.config/zsh/.zhistory && clear && exec zsh'
+alias zra='rm -f ~/.config/zsh/.zhistory && clear && exec zsh'
 alias zs='exec zsh'
 alias hc='history -c'
 alias rm='rm -i'
