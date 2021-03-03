@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/jason/Pictures/wo778w1xupk61.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#171819",
+        "foreground": "#ffffff",
+        "cursor": "#2e3f4f"
+    },
+    "colors": {
+        "color0": "#171819",
+        "color1": "#7f3c3d",
+        "color2": "#63444c",
+        "color3": "#3d5c6e",
+        "color4": "#df6238",
+        "color5": "#b44335",
+        "color6": "#2e3f4f",
+        "color7": "#c5c5c5",
+        "color8": "#2e3133",
+        "color9": "#b14143",
+        "color10": "#8b4d5d",
+        "color11": "#447a9a",
+        "color12": "#ff7636",
+        "color13": "#f94b35",
+        "color14": "#33526e",
+        "color15": "#ffffff"
+    }
+}
