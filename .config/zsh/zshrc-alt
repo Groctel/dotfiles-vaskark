@@ -124,3 +124,6 @@ source /usr/share/oh-my-zsh/custom/plugins/zsh-syntax-highlighting/zsh-syntax-hi
 source ~/.config/zsh/functions/fzf-edit 2>/dev/null
 source ~/.config/zsh/functions/fzf-kill 2>/dev/null
 source ~/.config/zsh/functions/fzf-man 2>/dev/null
+
+# gitstatus
+# export POWERLEVEL9K_DISABLE_GITSTATUS=true
