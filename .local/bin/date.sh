@@ -1,3 +1,3 @@
 #!/bin/bash
 
-notify-send "`date`" -t 3000
+notify-send "`date +"%A %B %d %Y -- %-I:%M:%S %p %Z"`" -t 3000
