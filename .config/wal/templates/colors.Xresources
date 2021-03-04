@@ -12,9 +12,9 @@ UXTerm*foreground:  {foreground}
 URxvt*background:   {background.alpha}
 XTerm*background:   {background}
 UXTerm*background:  {background}
-URxvt*cursorColor:  {cursor}
-XTerm*cursorColor:  {cursor}
-UXTerm*cursorColor: {cursor}
+URxvt*cursorColor:  {color6}
+XTerm*cursorColor:  {color6}
+UXTerm*cursorColor: {color6}
 URxvt*borderColor:  {background.alpha}
 
 ! Colors 0-15.
