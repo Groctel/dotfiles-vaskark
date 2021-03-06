@@ -3,7 +3,7 @@
     "alpha": "100",
     "special": {
         "background": "#060708",
-        "foreground": "#e0e4e5",
+        "foreground": "#a5a8a9",
         "cursor": "#899599"
     },
     "colors": {
