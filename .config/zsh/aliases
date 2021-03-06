@@ -54,7 +54,7 @@ alias af='clear;afetch'
 alias kf='kittyfetch'
 alias n='nnn -C -E -o -T e -a -x'
 alias c='cava'
-alias p='pipes.sh'
+alias p='pipes-rs'
 alias mi='mediainfo'
 alias grep='grep --color=auto'
 alias egrep='egrep --color=auto'
@@ -106,8 +106,9 @@ alias fcl='fc-list'
 alias p10kc='p10k configure'
 
 # pywal
-alias w1='wal -f random_user -o wal-extras.sh'
-alias w2='wal -f random -o wal-extras.sh'
+alias wal='wal -o wal-extras.sh'
+alias w1='wal -f random_user'
+alias w2='wal -f random'
 
 # system
 alias upd8='sudo apt update;sudo apt full-upgrade;sudo apt autoremove;sudo apt clean'

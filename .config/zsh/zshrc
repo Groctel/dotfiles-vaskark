@@ -46,7 +46,10 @@ kitty + complete setup zsh | source /dev/stdin
 
 # pywal
 (cat ~/.cache/wal/sequences &)
-source ~/.cache/wal/colors-tty.sh
+#source ~/.cache/wal/colors-tty.sh
+
+# wpg
+(cat ~/.config/wpg/sequences &)
 
 # vi (v) or emacs (e)
 #bindkey -v
