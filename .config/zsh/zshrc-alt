@@ -109,7 +109,10 @@ kitty + complete setup zsh | source /dev/stdin
 
 # pywal
 (cat ~/.cache/wal/sequences &)
-source ~/.cache/wal/colors-tty.sh
+#source ~/.cache/wal/colors-tty.sh
+
+# wpg
+(cat ~/.config/wpg/sequences &)
 
 # extract
 source /usr/share/oh-my-zsh/plugins/extract/extract.plugin.zsh 2>/dev/null
