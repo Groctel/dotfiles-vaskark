@@ -1,5 +1,5 @@
 {
-    "wallpaper": "/home/jason/Pictures/ana_de_armas-4-m.jpg",
+    "wallpaper": "/home/jason/.config/wpg/wallpapers/ana_de_armas-4-m.jpg",
     "alpha": "100",
     "special": {
         "background": "#1b1818",
@@ -15,13 +15,13 @@
         "color5": "#8464c4",
         "color6": "#5485b6",
         "color7": "#8a8585",
-        "color8": "#655d5d",
-        "color9": "#ca4949",
-        "color10": "#4b8b8b",
-        "color11": "#a06e3b",
-        "color12": "#7272ca",
-        "color13": "#8464c4",
-        "color14": "#5485b6",
-        "color15": "#f4ecec"
+        "color8": "#352f2f",
+        "color9": "#ff4c4c",
+        "color10": "#53c2c2",
+        "color11": "#de8f3e",
+        "color12": "#7f7fff",
+        "color13": "#a56eff",
+        "color14": "#5bacfd",
+        "color15": "#c7bfbf"
     }
 }
