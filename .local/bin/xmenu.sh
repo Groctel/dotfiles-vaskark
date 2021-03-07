@@ -15,6 +15,7 @@ Apps
 	Font Manager	font-manager
 	Nautilus	nautilus
 	Nemo		nemo
+	Nemo (Admin)		nemo-pkexec
 	Plank		plank
 	Text Editor	gedit
 	Weather		gnome-weather
@@ -49,7 +50,7 @@ Office
 	Math		lomath
 	Writer		lowriter
 System
-	Bleachbit	pkexec bleachbit
+	Bleachbit (Admin)	bleachbit-pkexec
 	Boxes		gnome-boxes
 	Firewall	gufw-pkexec
 	Logs		gnome-system-log-pkexec
