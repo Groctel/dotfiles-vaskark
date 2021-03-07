@@ -17,6 +17,9 @@ export ZSH="/usr/share/oh-my-zsh"
 # zsh theme
 ZSH_THEME="p10k"
 
+# Uncomment the following line to disable bi-weekly auto-update checks.
+DISABLE_AUTO_UPDATE="true"
+
 # case-sensitive completion
 #CASE_SENSITIVE="true"
 
@@ -46,7 +49,7 @@ kitty + complete setup zsh | source /dev/stdin
 
 # pywal
 (cat ~/.cache/wal/sequences &)
-#source ~/.cache/wal/colors-tty.sh
+source ~/.cache/wal/colors-tty.sh
 
 # vi (v) or emacs (e)
 #bindkey -v
