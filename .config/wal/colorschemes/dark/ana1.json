@@ -2,26 +2,26 @@
     "wallpaper": "/home/jason/Pictures/ana_de_armas-4.jpg",
     "alpha": "100",
     "special": {
-        "background": "#0A1011",
-        "foreground": "#d2dcdb",
-        "cursor": "#A6AA99"
+        "background": "#2c373d",
+        "foreground": "#baad8a",
+        "cursor": "#7b9899"
     },
     "colors": {
-        "color0": "#0A1011",
-        "color1": "#BFA675",
-        "color2": "#4D858B",
-        "color3": "#C6BDA5",
-        "color4": "#AA966D",
-        "color5": "#A29064",
-        "color6": "#A6AA99",
-        "color7": "#d2dcdb",
-        "color8": "#1c2d31",
-        "color9": "#ffde84",
-        "color10": "#56b8c2",
-        "color11": "#ffffbe",
-        "color12": "#efc97b",
-        "color13": "#e3c270",
-        "color14": "#e2f1b1",
-        "color15": "#f9ffff"
+        "color0": "#2c373d",
+        "color1": "#a67979",
+        "color2": "#809f7b",
+        "color3": "#baad8a",
+        "color4": "#6d7575",
+        "color5": "#8e7d79",
+        "color6": "#7b9899",
+        "color7": "#c4c0bb",
+        "color8": "#40515a",
+        "color9": "#ea8a8a",
+        "color10": "#99e08d",
+        "color11": "#ffea9e",
+        "color12": "#7fa6a6",
+        "color13": "#c9978c",
+        "color14": "#8ed6d8",
+        "color15": "#fffcf5"
     }
 }
