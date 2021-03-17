@@ -71,7 +71,7 @@ set linenumbers
 # set matchbrackets "(<[{)>]}"
 
 ## Use the blank line below the title bar as extra editing space.
-# set morespace
+set morespace
 
 ## Enable mouse support, if available for your system.  When enabled,
 ## mouse clicks can be used to place the cursor, set the mark (with a
@@ -94,7 +94,7 @@ set linenumbers
 # set nopauses
 
 ## Don't add newlines to the ends of files.
-# set nonewlines
+set nonewlines
 
 ## Don't wrap text at all.
 # set nowrap
