@@ -100,7 +100,7 @@ echo -e -n "\x1b[\x36 q"
 
 # ncmpcpp (ctrl+\)
 ncmpcppShow() {
-  BUFFER="ncmpcpp"
+  BUFFER="ncmpcpp -q"
   zle accept-line
 }
 zle -N ncmpcppShow

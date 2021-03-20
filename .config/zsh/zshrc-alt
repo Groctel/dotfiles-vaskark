@@ -82,7 +82,7 @@ preexec() { echo -ne '\e[5 q' ;} # Use beam shape cursor for each new prompt.
 
 # ncmpcpp (ctrl+\)
 ncmpcppShow() {
-  BUFFER="ncmpcpp"
+  BUFFER="ncmpcpp -q"
   zle accept-line
 }
 zle -N ncmpcppShow
