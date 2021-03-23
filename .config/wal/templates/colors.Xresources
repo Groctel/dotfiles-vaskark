@@ -92,6 +92,13 @@ xmenu.separator: {color5}
 xmenu.border: {color0}
 
 ! sxiv
+Sxiv.font: scientifica-8
 Sxiv.background: {color0}
 Sxiv.foreground: {color7}
-Sxiv.font: scientifica-8;
+
+! dmenu
+dmenu.font: scientifica-8
+dmenu.background: {color2}
+dmenu.foreground: {color0}
+dmenu.selbackground: {color0}
+dmenu.selforeground: {color2}
