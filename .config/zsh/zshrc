@@ -12,7 +12,7 @@ typeset -U PATH path
 export ZSH_DISABLE_COMPFIX=true
 
 # oh-my-zsh path
-export ZSH="/usr/share/oh-my-zsh"
+export ZSH="/usr/local/oh-my-zsh"
 
 # zsh theme
 #ZSH_THEME="p10k"
@@ -81,13 +81,8 @@ export FZF_DEFAULT_OPTS="
 #--bind 'ctrl-y:execute-silent(echo {+} | pbcopy)'
 #--bind 'ctrl-e:execute(echo {+} | xargs -o vim)'
 
-# starship
-#export STARSHIP_CONFIG=~/.config/starship/starship.toml
-#export STARSHIP_CACHE=~/.cache/starship
-#eval "$(starship init zsh)"
-
 # pure
-fpath+=$HOME/work/pure
+fpath+=/usr/local/pure
 autoload -U promptinit; promptinit
 zstyle :prompt:pure:git:stash show yes
 #zstyle :prompt:pure:path color blue
