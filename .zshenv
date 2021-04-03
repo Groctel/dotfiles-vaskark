@@ -14,16 +14,18 @@ export EDITOR='nvim'
 export VISUAL='nvim'
 
 # man
-# export MANPAGER="sh -c 'col -bx | bat -l man -p'"
+#export MANPAGER="sh -c 'col -bx | bat -l man -p'"
 export MANPAGER="nvim -c 'set ft=man' -"
 
 # pfetch
 export PF_INFO="kernel uptime shell wm memory palette" 
 export PF_COL1=2
 export PF_COL2=4
-#export PF_ASCII="darwin"
 
 # nnn
 export NNN_FIFO='/tmp/nnn.fifo' 
 export NNN_COLORS='2345'
 export NNN_TRASH=1
+export NNN_OPENER=$HOME/.config/nnn/plugins/nuke
+export NNN_FCOLORS='c1e2272e006033f7c6d6abc4'
+export NNN_PLUG='f:fzcd;o:fzopen;d:diffs;i:ipinfo;v:imgview;m:mediainf;n:nuke;w:wall'
