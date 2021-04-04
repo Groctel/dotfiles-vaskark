@@ -375,7 +375,7 @@ format-connected-background = ${colors.color0}
 format-connected-foreground = ${colors.color2}
 format-connected-padding = 2
 
-label-disconnected =  Disconnected
+label-disconnected =  ---
 
 format-disconnected = <label-disconnected>
 format-disconnected-background = ${colors.color0}
@@ -404,7 +404,7 @@ format-connected-background = ${colors.color0}
 format-connected-foreground = ${colors.color2}
 format-connected-padding = 2
 
-label-disconnected =  Disconnected
+label-disconnected =  ---
 
 format-disconnected = <label-disconnected>
 format-disconnected-background = ${colors.color0}
@@ -602,7 +602,7 @@ label-padding = 2
 type = custom/script
 exec = ~/.config/polybar/scripts/openweathermap-detailed.sh
 #exec = curl -s "wttr.in/Hamilton?format="+%C+%t""
-click-left = gnome-weather &
+click-right = pkill gnome-weather || gnome-weather
 interval = 600
 
 label = %output%
@@ -631,7 +631,7 @@ label-padding = 2
 type = custom/text
 content = " "
 click-left = networkmanager_dmenu &
-click-right = nm-connection-editor &
+click-right = pkill nm-connection-editor || nm-connection-editor
 
 content-background = ${colors.color4}
 content-foreground = ${colors.color0}
