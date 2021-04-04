@@ -1,7 +1,6 @@
 [section/base]
 include-file = ~/.config/polybar/modules.mini
 
-
 [colors]
 color0 = ${xrdb:color0:#252a32}
 color1 = ${xrdb:color1:#876058}
