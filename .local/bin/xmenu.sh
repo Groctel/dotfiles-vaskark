@@ -50,6 +50,7 @@ Office
 	Math			lomath
 	Writer			lowriter
 System
+	ARandR			arandr
 	Bleachbit (Admin)	bleachbit-pkexec
 	Boxes			gnome-boxes
 	Firewall		gufw-pkexec
