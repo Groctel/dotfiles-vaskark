@@ -132,7 +132,7 @@ font-2 = "Weather Icons:size=8;2"
 
 modules-left = ewmh
 modules-center =
-modules-right = mpd uptime battery wireless wired volume sep nmc wpg
+modules-right = mpd uptime battery wireless volume sep nmc wpg
 
 ;dim-value = 0.8
 
@@ -158,64 +158,6 @@ content = " "
 content-background = ${colors.trans}
 content-foreground = ${colors.trans}
 content-padding = 0
-
-##################################################
-
-[module/i3]
-type = internal/i3
-index-sort = true
-wrapping-scroll = false
-enable-click = true
-enable-scroll = false
-reverse-scroll = false
-
-; workspace icons
-ws-icon-0 = 1;
-ws-icon-1 = 2;
-ws-icon-2 = 3;
-ws-icon-3 = 4;
-ws-icon-4 = 5;
-ws-icon-5 = 6;
-ws-icon-6 = 7;
-ws-icon-7 = 8;
-ws-icon-8 = 9;
-ws-icon-9 = 10;
-
-; Only show workspaces on the same output as the bar
-pin-workspaces = true
-
-format = <label-state> <label-mode>
-
-label-mode = %mode%
-label-mode-padding = 2
-label-mode-foreground = ${colors.color0}
-label-mode-background = ${colors.color2}
-
-; focused = Active workspace on focused monitor
-label-focused = %index%
-label-focused-foreground = ${colors.color0}
-label-focused-background = ${colors.color2}
-label-focused-padding = 2
-
-; unfocused = Inactive workspace on any monitor
-label-unfocused = %index%
-label-unfocused-foreground = ${colors.color2}
-label-unfocused-background = ${colors.color0}
-label-unfocused-padding = 2
-
-; visible = Active workspace on unfocused monitor
-label-visible = %index%
-label-visible-padding = 2
-
-; urgent = Workspace with urgency hint set
-label-urgent = %index%
-label-urgent-foreground = ${colors.color0}
-label-urgent-background = ${colors.color1}
-label-urgent-padding = 2
-
-label-separator =
-label-separator-foreground =
-label-separator-padding =
 
 ##################################################
 
@@ -304,7 +246,7 @@ label-empty-padding = 2
 [module/mpd]
 type = internal/mpd
 host = 127.0.0.1
-port = 6600
+#port = 6600
 
 label-song = %{A1:mpc toggle:}%{A2:kitty -e ncmpcpp:}%{A3:mpc next:}%{A8:mpc prev:}%artist% // %title%%{A}%{A}%{A}%{A}
 
@@ -333,7 +275,7 @@ label-song-ellipsis = true
 [module/mpd-t]
 type = internal/mpd
 host = 127.0.0.1
-port = 6600
+#port = 6600
 
 label-time = [%elapsed%/%total%]
 
@@ -347,7 +289,7 @@ format-online-padding = 2
 [module/mpd-c]
 type = internal/mpd
 host = 127.0.0.1
-port = 6600
+#port = 6600
 
 format-online = <icon-prev>  <toggle>  <icon-next>
 format-online-background = ${colors.color2}
@@ -471,7 +413,6 @@ ramp-volume-2 = 
 ramp-volume-3 = 
 ramp-volume-4 = 
 
-
 ##################################################
 
 [module/memory]
@@ -585,19 +526,6 @@ label-padding = 2
 
 ##################################################
 
-[module/kernel]
-type = custom/script
-exec = uname -r
-interval = 1024
-
-label =  %output%
-
-label-background = ${colors.color2}
-label-foreground = ${colors.color0}
-label-padding = 2
-
-##################################################
-
 [module/weather]
 type = custom/script
 exec = ~/.config/polybar/scripts/openweathermap-detailed.sh
@@ -606,20 +534,6 @@ click-right = pkill gnome-weather || gnome-weather
 interval = 600
 
 label = %output%
-
-label-background = ${colors.color2}
-label-foreground = ${colors.color0}
-label-padding = 2
-
-##################################################
-
-[module/apt]
-type = custom/script
-exec = ~/.config/polybar/scripts/updates-apt.sh
-click-left = synaptic-pkexec &
-interval = 600
-
-label =  %output%
 
 label-background = ${colors.color2}
 label-foreground = ${colors.color0}
