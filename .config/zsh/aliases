@@ -15,17 +15,19 @@ alias d='dirs -v | head -10'
 alias free='free -m'
 
 # lsd
-alias ls='lsd --group-dirs first'
-alias l='lsd -l --group-dirs first'
-alias ll='lsd -al --group-dirs first'
-alias lt='lsd --tree --depth 2 --group-dirs first'
+alias lsd='lsd --group-dirs first'
+alias ls='lsd'
+alias l='lsd -l'
+alias ll='lsd -al'
+alias lt='lsd --tree --depth 2'
 
 # exa
-#alias ls='exa --group-directories-first'
-#alias l1='exa -1 --group-directories-first'
-#alias l='exa -l --group-directories-first'
-#alias ll='exa -al --group-directories-first'
-#alias lt='exa -T -L 2 --group-directories-first'
+#alias exa='exa --icons --git --group-directories-first'
+#alias ls='exa'
+#alias l1='exa -1'
+#alias l='exa -l'
+#alias ll='exa -al'
+#alias lt='exa -T -L 2'
 
 # suffix
 alias -g G='| grep -i'
