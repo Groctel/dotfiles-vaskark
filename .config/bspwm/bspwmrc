@@ -17,9 +17,7 @@ pkill xautolock
 xautolock -time 10 -locker 'lock.sh' -killer 'systemctl suspend' -corners 00-+ &
 
 # polkit
-# ubuntu
 /usr/lib/policykit-1-gnome/polkit-gnome-authentication-agent-1 &
-# arch
 #/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
 
 # polybar
@@ -37,11 +35,11 @@ xsetroot -cursor_name left_ptr &
 
 # monitors
 bspc monitor eDP-1 -d 1 2 3 4 5
-bspc monitor HDMI-2 -d 6 7 8 9 10
+#bspc monitor HDMI-2 -d 6 7 8 9 10
 
 # desktop
-bspc config automatic_scheme 	        automatic
-bspc config pointer_modifier 		Mod4
+bspc config automatic_scheme 	        alternate
+bspc config pointer_modifier 		mod4
 bspc config initial_polarity        	second_child
 bspc config split_ratio          	0.50
 
@@ -49,7 +47,7 @@ bspc config borderless_monocle   	true
 bspc config gapless_monocle      	false
 bspc config single_monocle		true
 bspc config focus_follows_pointer 	true
-bspc config click_to_focus		false
+bspc config click_to_focus		none
 bspc config presel_feedback		true
 
 bspc config top_padding 		0
@@ -65,8 +63,7 @@ bspc config window_gap			20
 bspc config normal_border_color 	"$color8"
 bspc config active_border_color 	"$color2"
 bspc config focused_border_color 	"$color2"
-bspc config presel_feedback_color	"$color2"     
-bspc config urgent_border_color		"$color1"
+bspc config presel_feedback_color	"$color2"
 
 # reset all rules
 bspc rule -r "*"
