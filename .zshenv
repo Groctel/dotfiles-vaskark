@@ -29,3 +29,20 @@ export NNN_TRASH=1
 export NNN_OPENER=$HOME/.config/nnn/plugins/nuke
 export NNN_FCOLORS='c1e2272e006033f7c6d6abc4'
 export NNN_PLUG='f:fzcd;o:fzopen;d:diffs;i:ipinfo;v:imgview;m:mediainf;n:nuke;w:wall'
+
+# fzf
+export FZF_DEFAULT_COMMAND="fd --hidden --follow --exclude '.git' --exclude '.cache'"
+export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND --type f"
+export FZF_ALT_C_COMMAND="$FZF_DEFAULT_COMMAND --type d"
+export FZF_DEFAULT_OPTS="
+--layout=reverse-list
+--info=inline
+--height=50%
+--multi
+--border=sharp
+--preview-window=:hidden
+--preview '([[ -f {} ]] && (bat --style=numbers --color=always {} || cat {})) || ([[ -d {} ]] && (tree -C {} | less)) || echo {} 2> /dev/null | head -200'
+--prompt='∼ ' --pointer='▶' --marker='✓'
+--bind '?:toggle-preview'
+--bind 'ctrl-a:select-all'
+"
