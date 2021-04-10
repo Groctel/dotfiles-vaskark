@@ -63,9 +63,9 @@ bindkey '^x^e' edit-command-line
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 # fzf options
-export FZF_DEFAULT_COMMAND="fd -H -L -E '.git' -E '.cache'"
+export FZF_DEFAULT_COMMAND="fd --hidden --follow --exclude '.git' --ecclude '.cache'"
 export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
-export FZF_ALT_C_COMMAND="$FZF_DEFAULT_COMMAND -t d"
+export FZF_ALT_C_COMMAND="$FZF_DEFAULT_COMMAND --type d"
 export FZF_DEFAULT_OPTS="
 --layout=reverse-list
 --info=inline
