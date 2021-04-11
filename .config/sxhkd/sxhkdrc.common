@@ -20,7 +20,7 @@ super + {_,shift +} Escape
 
 # file managers
 super + {_,shift +} F1
-	{nemo,pkexec nemo}
+	{nemo,nemo-pkexec}
 
 # browsers
 super + {_,shift +} F2
@@ -71,10 +71,8 @@ XF86MonBrightness{Up,Down}
 	light {-A 5,-U 5}
 	
 # wal
-super + F12
-	wal -f random_user -o wal-extras.sh
-super + shift + F12
-        wal -R -o wal-extras.sh
+super + {_,shift +} F12
+	wal -o wal-extras.sh {-f random_user,-R}
         
 # sxiv
 super + shift + equal
