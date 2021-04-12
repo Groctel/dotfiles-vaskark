@@ -1,0 +1,29 @@
+--- a/sound/pci/hda/patch_realtek.c	2020-08-24 20:00:05.752727969 +0300
++++ b/sound/pci/hda/patch_realtek.c	2020-08-24 20:17:14.184536126 +0300
+@@ -7132,7 +7132,7 @@
+ 			{ }
+ 		},
+ 		.chained = true,
+-		.chain_id = ALC269_FIXUP_HEADSET_MIC
++		.chain_id = ALC269_FIXUP_HEADSET_MODE_NO_HP_MIC
+ 	},
+ 	[ALC294_FIXUP_ASUS_HEADSET_MIC] = {
+ 		.type = HDA_FIXUP_PINS,
+@@ -7141,7 +7141,7 @@
+ 			{ }
+ 		},
+ 		.chained = true,
+-		.chain_id = ALC269_FIXUP_HEADSET_MIC
++		.chain_id = ALC269_FIXUP_HEADSET_MODE_NO_HP_MIC
+ 	},
+ 	[ALC294_FIXUP_ASUS_SPK] = {
+ 		.type = HDA_FIXUP_VERBS,
+@@ -7149,8 +7149,6 @@
+ 			/* Set EAPD high */
+ 			{ 0x20, AC_VERB_SET_COEF_INDEX, 0x40 },
+ 			{ 0x20, AC_VERB_SET_PROC_COEF, 0x8800 },
+-			{ 0x20, AC_VERB_SET_COEF_INDEX, 0x0f },
+-			{ 0x20, AC_VERB_SET_PROC_COEF, 0x7774 },
+ 			{ }
+ 		},
+ 		.chained = true,
