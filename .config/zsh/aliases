@@ -22,7 +22,10 @@ alias ll='lsd -al'
 alias lt='lsd --tree --depth 2'
 
 # exa
-alias exa='exa --icons --git --group-directories-first'
+alias exa='exa --icons --git -g --group-directories-first'
+alias lx1='exa -1'
+alias lx='exa -l'
+alias lxl='exa -la'
 #alias ls='exa'
 #alias l1='exa -1'
 #alias l='exa -l'
@@ -54,7 +57,7 @@ alias bf='bunnyfetch'
 alias pf='clear;pfetch'
 alias af='clear;afetch'
 alias kf='kittyfetch'
-alias n='nnn -C -E -o -T e -a -x'
+alias n='nnn -D -C -E -o -T e -a -x'
 alias c='cava'
 alias p='pipes-rs'
 alias mi='mediainfo'
@@ -116,9 +119,6 @@ alias w2='wal -f random'
 alias upd8='sudo apt update;sudo apt full-upgrade;sudo apt autoremove;sudo apt clean'
 alias shut='poweroff'
 
-# doas
-#alias sudo='doas'
-
 # kernel
 alias mkc='make LSMOD=$HOME/.config/modprobed.db localmodconfig'
 alias mkp='make deb-pkg -j4 LOCALVERSION=-custom'
@@ -143,14 +143,6 @@ alias s3='sudo ninja -C build install'
 alias jcb='journalctl -p 3 -xb'
 alias jce='journalctl -p 3 -xe'
 
-# logs
-alias ldpkg='tail -f /var/log/dpkg.log | bat --paging=never -l log'
-alias ldmesg='tail -f /var/log/dmesg | bat --paging=never -l log'
-alias lkern='tail -f /var/log/kern.log | bat --paging=never -l log'
-alias lsys='tail -f /var/log/syslog | bat --paging=never -l log'
-alias lufw='tail -f /var/log/ufw.log | bat --paging=never -l log'
-alias lauth='tail -f /var/log/auth.log | bat --paging=never -l log'
-
 # arch
 alias unlock='sudo rm /var/lib/pacman/db.lck'
 alias cleanup='sudo pacman -Rns $(pacman -Qtdq)'
@@ -158,4 +150,4 @@ alias mlr='sudo reflector --country 'United States' --protocol https --latest 10
 alias mla='sudo reflector --country 'United States' --protocol https --latest 10 --sort age --save /etc/pacman.d/mirrorlist'
 
 alias pi='pacman -Slq | fzf --multi --preview 'pacman -Si {1}' | xargs -ro sudo pacman -S'
-alias yi='yay -Slq | fzf --multi --preview 'yay -Si {1}' | xargs -ro yay -S'
+alias pai='paru -Slq | fzf --multi --preview 'paru -Si {1}' | xargs -ro paru -S'
