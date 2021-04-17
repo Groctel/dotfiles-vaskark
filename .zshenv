@@ -31,7 +31,7 @@ export NNN_COLORS='2345'
 export NNN_TRASH=1
 export NNN_OPENER=$HOME/.config/nnn/plugins/nuke
 export NNN_FCOLORS='c1e2272e006033f7c6d6abc4'
-export NNN_PLUG='f:fzcd;o:fzopen;d:diffs;i:ipinfo;v:imgview;m:mediainf;n:nuke;w:wall'
+export NNN_PLUG='d:diffs;f:fzcd;m:mediainf;n:nuke;o:fzopen;v:imgview;w:wall'
 
 # fzf
 export FZF_DEFAULT_COMMAND="fd --hidden --follow --exclude '.git' --exclude '.cache'"
