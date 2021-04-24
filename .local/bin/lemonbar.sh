@@ -21,5 +21,5 @@ Mpc() {
 # load bar
 while true; do
     echo "%{c}$(Mpc) %{r}$(Battery) $(Clock) "
-        sleep 1
+        sleep 0.1
 done
