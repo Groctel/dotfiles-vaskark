@@ -29,11 +29,11 @@ w=$(( width-(2*x) ))
 # height
 h=24
 
-# load
+# bar
 lemonbar.sh \
 | lemonbar -p \
--f "scientifica-7.5" \
--f "siji-7.5" \
+-f "scientifica-7.5:bold" \
+-f "siji-7.5:bold" \
 -g "$w"x"$h"+"$x"+"$y" \
 -B "$color00" \
 -F "#555555" \
