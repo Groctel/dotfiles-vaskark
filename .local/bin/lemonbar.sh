@@ -67,8 +67,9 @@ Sound(){
 
 ##########
 
-# bar
 while true; do
-    echo -e "%{c}$(Mpc) %{r} $(Wifi) $(Battery) $(Sound) $(Clock) "
-        sleep 0.1
+    echo -e \
+    "%{c}%{A:mpc toggle 1>/dev/null:}%{A2:mpc prev 1>/dev/null:}%{A3:mpc next 1>/dev/null:}$(Mpc)%{A}%{A}%{A} \
+    %{r} $(Wifi) $(Battery) $(Sound) $(Clock) "
+    sleep 0.1
 done
