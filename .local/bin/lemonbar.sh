@@ -49,6 +49,6 @@ Sound(){
 
 # load bar
 while true; do
-    echo "%{c}$(Mpc) %{r} $(Wifi) $(Battery) $(Sound) $(Clock) "
+    echo -e "%{c}$(Mpc) %{r} $(Wifi) $(Battery) $(Sound) $(Clock) "
         sleep 0.1
 done
