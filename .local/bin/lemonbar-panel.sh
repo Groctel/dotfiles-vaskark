@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 # colors
 color00=$(sed -n 1p ~/.cache/wal/colors)
