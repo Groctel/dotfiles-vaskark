@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 
 # clock
 Clock() {
@@ -25,7 +25,7 @@ Wifi(){
 		WIFISTR=$(( ${WIFISTR} * 100 / 70))
 		ESSID=$(iwconfig wlp2s0 | grep ESSID | sed 's/ //g' | sed 's/.*://' | cut -d "\"" -f 2)
 		if [ $WIFISTR -ge 1 ] ; then
-			echo -e " ${WIFISTR}% ${ESSID}"
+			echo -e "${WIFISTR}%  ${ESSID}"
 		fi
 	fi
 }
@@ -47,7 +47,9 @@ Sound(){
 	fi
 }
 
-# load bar
+##########
+
+# bar
 while true; do
     echo -e "%{c}$(Mpc) %{r} $(Wifi) $(Battery) $(Sound) $(Clock) "
         sleep 0.1
