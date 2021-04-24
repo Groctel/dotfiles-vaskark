@@ -2,7 +2,7 @@
 
 # clock
 Clock() {
-        DATETIME=$(date "+%I:%M %p")
+        DATETIME=$(date "+%-I:%M %p")
         echo -n " $DATETIME"
 }
 

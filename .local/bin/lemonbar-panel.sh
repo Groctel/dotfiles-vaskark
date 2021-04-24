@@ -1,6 +1,6 @@
-#!/bin/bash
+#!/bin/sh
 
-# get pywal colors
+# colors
 color00=$(sed -n 1p ~/.cache/wal/colors)
 color01=$(sed -n 2p ~/.cache/wal/colors)
 color02=$(sed -n 3p ~/.cache/wal/colors)

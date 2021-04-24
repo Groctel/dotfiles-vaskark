@@ -51,9 +51,6 @@ fi
 ## openbox
 openbox --reconfigure
 
-## simplewm
-sed -i "s|border_colour.*$|border_colour = $color02 $color08 $color01 $color04 $color06|g" ~/.config/simplewm/configrc
-
 ## xss
 #pkill xscreensaver
 #xscreensaver &
