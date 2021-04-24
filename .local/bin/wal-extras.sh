@@ -35,21 +35,29 @@ sed -i "s|gradient_color_1.*$|gradient_color_1 = '$color02'|g" ~/.config/cava/co
 sed -i "s|gradient_color_2.*$|gradient_color_2 = '$color10'|g" ~/.config/cava/config
 
 ## glava
-glava1=$(sed -n 9p ~/.cache/wal/colors)FF
-glava2=$(sed -n 3p ~/.cache/wal/colors)FF
+#glava1=$(sed -n 9p ~/.cache/wal/colors)FF
+#glava2=$(sed -n 3p ~/.cache/wal/colors)FF
 
-sed -i "s|#define COLOR.*$|#define COLOR @fg:mix($glava1, $glava2, clamp(d / GRADIENT, 0, 1))|g" ~/.config/glava/bars.glsl
+#sed -i "s|#define COLOR.*$|#define COLOR @fg:mix($glava1, $glava2, clamp(d / GRADIENT, 0, 1))|g" ~/.config/glava/bars.glsl
 #sed -i "s|#define FLIP.*$|#define FLIP 1|g" ~/.config/glava/bars.glsl
 
-if ps -A | grep glava; then
-	killall -9 glava 2>/dev/null
-        glava -d
-    else
-        killall -9 glava 2>/dev/null
-fi
+#if ps -A | grep glava; then
+#	killall -9 glava 2>/dev/null
+#        glava -d
+#    else
+#        killall -9 glava 2>/dev/null
+#fi
 
 ## openbox
 openbox --reconfigure
+
+## lemonbar
+#if ps -A | grep lemonbar; then
+#        pkill lemonbar 2> /dev/null
+#        lemonbar-panel.sh
+#   else
+#        pkill lemonbar 2> /dev/null
+#fi
 
 ## xss
 #pkill xscreensaver
