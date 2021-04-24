@@ -30,4 +30,10 @@ w=$(( width-(2*x) ))
 h=24
 
 # load
-lemonbar.sh | lemonbar -p -f "scientifica-8" -f "siji-8" -g "$w"x"$h"+"$x"+"$y" -B "$color00" -F "#555555" -o 0
+lemonbar.sh \
+| lemonbar -p \
+-f "scientifica-7.5" \
+-f "siji-7.5" \
+-g "$w"x"$h"+"$x"+"$y" \
+-B "$color00" \
+-F "#555555" \
