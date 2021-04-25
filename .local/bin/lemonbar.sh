@@ -1,6 +1,7 @@
 #!/bin/bash
 
-# colors
+## colors
+
 color00=$(sed -n 1p ~/.cache/wal/colors)
 color01=$(sed -n 2p ~/.cache/wal/colors)
 color02=$(sed -n 3p ~/.cache/wal/colors)
@@ -18,25 +19,23 @@ color13=$(sed -n 14p ~/.cache/wal/colors)
 color14=$(sed -n 15p ~/.cache/wal/colors)
 color15=$(sed -n 16p ~/.cache/wal/colors)
 
-# clock
+## modules
+
 Clock() {
         DATETIME=$(date "+%-I:%M %p")
         echo -n "%{F"$color02"}%{F-} $DATETIME"
 }
 
-# battery
 Battery() {
         BATPERC=$(acpi --battery | cut -d, -f2)
         echo "%{F"$color03"}%{F-}$BATPERC"
 }
 
-# mpc
 Mpc() {
 	MPCCUR=$(mpc current)
 	echo "%{F"$color04"}%{F-} $MPCCUR"
 }
 
-# wifi
 Wifi(){
 	WIFISTR=$( iwconfig wlp2s0 | grep "Link" | sed 's/ //g' | sed 's/LinkQuality=//g' | sed 's/\/.*//g')
 	if [ ! -z $WIFISTR ] ; then
@@ -48,8 +47,7 @@ Wifi(){
 	fi
 }
 
-# sound
-Sound(){
+Volume() {
 	NOTMUTED=$( amixer sget Master | grep "\[on\]" )
 	if [[ ! -z $NOTMUTED ]] ; then
 		VOL=$(awk -F"[][]" '/dB/ { print $2 }' <(amixer sget Master) | sed 's/%//g')
@@ -65,11 +63,22 @@ Sound(){
 	fi
 }
 
-##########
+Memory() {
+	mem=$(free -m | awk 'NR==2 {print $3}')
+	echo -e "%{F"$color01"}%{F-} $mem Mb"
+}
+
+Session() {
+	session=$(echo $DESKTOP_SESSION)
+	echo -e "%{F"$color00"}%{B"$color02"}  $session  %{B-}%{F-}"
+}
+
+## bar
 
 while true; do
-    echo -e \
-    "%{c}%{A:mpc toggle 1>/dev/null:}%{A2:mpc prev 1>/dev/null:}%{A3:mpc next 1>/dev/null:}$(Mpc)%{A}%{A}%{A} \
-    %{r} $(Wifi)  $(Battery)  $(Sound)  $(Clock) "
+    echo -e "\
+    %{l}$(Session) \
+    %{c}%{A:mpc toggle 1>/dev/null:}%{A2:mpc prev 1>/dev/null:}%{A3:mpc next 1>/dev/null:}$(Mpc)%{A}%{A}%{A} \
+    %{r}$(Wifi)  $(Battery)  $(Memory)  $(Volume)  $(Clock) "
     sleep 0.1
 done
