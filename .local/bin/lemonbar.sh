@@ -21,14 +21,9 @@ color15=$(sed -n 16p ~/.cache/wal/colors)
 
 ## modules
 
-Clock() {
-        DATETIME=$(date "+%-I:%M %p")
-        echo -n "%{F"$color00"}%{B"$color02"}   $DATETIME  %{B-}%{F-}"
-}
-
-Battery() {
-        BATPERC=$(acpi --battery | cut -d, -f2)
-        echo "%{F"$color03"}%{F-}$BATPERC"
+Session() {
+	session=$(echo $DESKTOP_SESSION)
+	echo -e "%{F#000000}%{B"$color01"}  $session  %{B-}%{F-}"
 }
 
 Mpc() {
@@ -47,20 +42,9 @@ Wifi(){
 	fi
 }
 
-Volume() {
-	NOTMUTED=$( amixer sget Master | grep "\[on\]" )
-	if [[ ! -z $NOTMUTED ]] ; then
-		VOL=$(awk -F"[][]" '/dB/ { print $2 }' <(amixer sget Master) | sed 's/%//g')
-		if [ $VOL -ge 85 ] ; then
-			echo -e "%{F"$color06"}%{F-} ${VOL}%"
-		elif [ $VOL -ge 50 ] ; then
-			echo -e "%{F"$color07"}%{F-} ${VOL}%"
-		else
-			echo -e "%{F"$color07"}%{F-} ${VOL}%"
-		fi
-	else
-		echo -e "%{F"$color08"}%{F-} M"
-	fi
+Battery() {
+        BATPERC=$(acpi --battery | cut -d, -f2)
+        echo "%{F"$color03"}%{F-}$BATPERC"
 }
 
 Memory() {
@@ -68,10 +52,27 @@ Memory() {
 	echo -e "%{F"$color01"}%{F-} $mem Mb"
 }
 
-Session() {
-	session=$(echo $DESKTOP_SESSION)
-	echo -e "%{F"$color00"}%{B"$color02"}  $session  %{B-}%{F-}"
+Volume() {
+	NOTMUTED=$( amixer sget Master | grep "\[on\]" )
+	if [[ ! -z $NOTMUTED ]] ; then
+		VOL=$(awk -F"[][]" '/dB/ { print $2 }' <(amixer sget Master) | sed 's/%//g')
+		if [ $VOL -ge 85 ] ; then
+			echo -e "%{F"$color06"}%{F-} ${VOL}%"
+		elif [ $VOL -ge 50 ] ; then
+			echo -e "%{F"$color06"}%{F-} ${VOL}%"
+		else
+			echo -e "%{F"$color06"}%{F-} ${VOL}%"
+		fi
+	else
+		echo -e "%{F#555555}%{F-} M"
+	fi
 }
+
+Clock() {
+        DATETIME=$(date "+%-I:%M %p")
+        echo -n "%{F#000000}%{B"$color02"}   $DATETIME  %{B-}%{F-}"
+}
+
 
 ## bar
 

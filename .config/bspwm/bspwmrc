@@ -4,8 +4,7 @@
 xset +fp /usr/local/share/fonts/misc &
 
 # picom
-pkill picom; sleep 0.1
-picom --experimental-backends --config ~/.config/bspwm/picom.conf &
+pgrep -x picom || picom --experimental-backends --config ~/.config/bspwm/picom.conf &
 
 # redshift
 pkill redshift
@@ -13,8 +12,7 @@ redshift -x
 redshift -c ~/.config/redshift/redshift.conf &
 
 # lock
-pkill xautolock
-xautolock -time 10 -locker 'lock.sh' -killer 'systemctl suspend' -corners 00-+ &
+pgrep -x xautolock || xautolock -time 10 -locker 'lock.sh' -killer 'systemctl suspend' -corners 00-+ &
 
 # polkit
 /usr/lib/policykit-1-gnome/polkit-gnome-authentication-agent-1 &
@@ -25,7 +23,7 @@ pkill polybar
 polybar -r -c ~/.config/bspwm/polybar/config.bspwm main &
 
 # sxhkd
-pgrep -x sxhkd > /dev/null || sxhkd -c $HOME/.config/bspwm/sxhkdrc $HOME/.config/sxhkd/sxhkdrc.common &
+pgrep -x sxhkd || sxhkd -c $HOME/.config/bspwm/sxhkdrc &
 
 # restore wp
 bash $HOME/.fehbg

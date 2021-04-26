@@ -4,7 +4,7 @@
 xset +fp /usr/local/share/fonts/misc &
 
 # sxhkd
-sxhkd -c $HOME/.config/berry/sxhkdrc $HOME/.config/sxhkd/sxhkdrc.common &
+sxhkd -c $HOME/.config/berry/sxhkdrc &
 
 # redshift
 pkill redshift
@@ -29,8 +29,8 @@ xautolock -time 10 -locker 'lock.sh' -killer 'systemctl suspend' -corners 00-+ &
 # wal
 wal -R -o wal-extras.sh &
 
-# polybar
-polybar -r -c ~/.config/polybar/config bottom &
+# lemonbar
+lemonbar-panel.sh &
 
 # Set decoration geometry
 berryc border_width         0

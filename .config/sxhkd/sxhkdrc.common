@@ -42,12 +42,6 @@ super + F5
 super + F6
 	networkmanager_dmenu
 
-# polybar
-super + {_,shift +} semicolon
-	polybar-msg cmd {toggle,restart}
-super + ctrl + semicolon
-	polybar-menu.sh
-
 # music
 alt + {F10,F11,F12}
 	mpc -q {prev,toggle,next}
