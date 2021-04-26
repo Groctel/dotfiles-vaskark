@@ -23,7 +23,7 @@ color15=$(sed -n 16p ~/.cache/wal/colors)
 
 Clock() {
         DATETIME=$(date "+%-I:%M %p")
-        echo -n "%{F"$color02"}%{F-} $DATETIME"
+        echo -n "%{F"$color00"}%{B"$color02"}   $DATETIME  %{B-}%{F-}"
 }
 
 Battery() {
@@ -79,6 +79,6 @@ while true; do
     echo -e "\
     %{l}$(Session) \
     %{c}%{A:mpc toggle 1>/dev/null:}%{A2:mpc prev 1>/dev/null:}%{A3:mpc next 1>/dev/null:}$(Mpc)%{A}%{A}%{A} \
-    %{r}$(Wifi)  $(Battery)  $(Memory)  $(Volume)  $(Clock) "
-    sleep 0.1
+    %{r}$(Wifi)  $(Battery)  $(Memory)  $(Volume)  $(Clock)"
+    sleep 0.5
 done

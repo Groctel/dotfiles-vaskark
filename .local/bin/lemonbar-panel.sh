@@ -36,5 +36,6 @@ lemonbar.sh \
 -f "siji-8:bold" \
 -g "$w"x"$h"+"$x"+"$y" \
 -B "$color00" \
--F "#555555" \
+-F "#666666" \
+-d \
 | sh
