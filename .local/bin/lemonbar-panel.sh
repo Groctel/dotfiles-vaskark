@@ -32,9 +32,13 @@ h=28
 # bar
 lemonbar.sh \
 | lemonbar -p \
--f "scientifica-7.5:bold" \
--f "siji-8:bold" \
+-f "-*-scientifica-bold-r-*" \
+-f "-*-siji-*" \
 -g "$w"x"$h"+"$x"+"$y" \
 -B "$color00" \
 -F "#666666" \
 | sh
+
+# xft
+#-f "scientifica-7.5:bold" \
+#-f "siji-8:bold" \
