@@ -27,7 +27,7 @@ width=$(xdotool getdisplaygeometry | awk '{print $1}')
 w=$(( width-(2*x) ))
 
 # height
-h=30
+h=28
 
 # bar
 lemonbar.sh \
@@ -37,5 +37,4 @@ lemonbar.sh \
 -g "$w"x"$h"+"$x"+"$y" \
 -B "$color00" \
 -F "#666666" \
--d \
 | sh

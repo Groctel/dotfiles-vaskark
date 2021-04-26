@@ -64,7 +64,7 @@ Volume() {
 			echo -e "%{F"$color06"}%{F-} ${VOL}%"
 		fi
 	else
-		echo -e "%{F#555555}%{F-} M"
+		echo -e "%{F#555555}%{F-} --%"
 	fi
 }
 
