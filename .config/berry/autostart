@@ -4,7 +4,7 @@
 xset +fp /usr/local/share/fonts/misc &
 
 # sxhkd
-sxhkd -c $HOME/.config/berry/sxhkdrc &
+sxhkd -c $HOME/.config/berry/sxhkdrc $HOME/.config/sxhkd/sxhkdrc.common &
 
 # redshift
 pkill redshift

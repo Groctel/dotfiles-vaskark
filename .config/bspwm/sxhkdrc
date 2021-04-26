@@ -2,86 +2,15 @@
 # wm independent hotkeys
 #
 
-
-# terminals
-super + {_,shift +} Return
-	{alacritty,kitty}
-
-# program launchers
-super + {x,d}
-	{dmenu.sh,rofi -show drun}
-
-# reload sxhkd
-super + control + r
-	pkill -USR1 -x sxhkd
-
-# lockscreen
-super + {_,shift +} Escape
-	{lock.sh,xscreensaver-command -lock}
-
-# file managers
-super + {_,shift +} F1
-	{nemo,nemo-pkexec}
-
-# browsers
-super + {_,shift +} F2
-	{google-chrome-stable,firefox}
-
-# music
-super + F3
-	alacritty -e ncmpcpp
-	
-# wp
-super + F4
-	feh --randomize --bg-fill --recursive --no-fehbg ~/Pictures/*.(png|jpg)
-	
-# date
-super + F5
-	date.sh
-	
-# networkmanager_dmenu
-super + F6
-	networkmanager_dmenu
-
-# music
-alt + {F10,F11,F12}
-	mpc -q {prev,toggle,next}
-alt + shift + {F10,F12}
-	mpc seek {-00:00:05,+00:00:05}
-
-# shots
-super + Print
-        flameshot gui -p ~/Screenshots
-super + shift + Print
-	flameshot full -p ~/Screenshots -d 3000
-
-# volume
-XF86Audio{Raise,Lower}Volume
-	pactl set-sink-volume {@DEFAULT_SINK@ +5%,@DEFAULT_SINK@ -5%}
-XF86AudioMute
-	pactl set-sink-mute @DEFAULT_SINK@ toggle
-
-# brightness
-XF86MonBrightness{Up,Down}
-	light {-A 5,-U 5}
-	
 # wal
 super + {_,shift +} F12
 	wal -o wal-extras.sh {-f random_user,-R}
-        
-# sxiv
-super + shift + equal
-	sxiv -rt "$HOME/Pictures/wow"
 
 # polybar
 super + {_,shift +} semicolon
 	polybar-msg cmd {toggle,restart}
 super + ctrl + semicolon
 	killall -9 polybar || polybar -r -c ~/.config/bspwm/polybar/config.bspwm main
-
-# reboot, shutdown
-super + {shift,ctrl} + Delete
-	{reboot,poweroff}
 
 
 #

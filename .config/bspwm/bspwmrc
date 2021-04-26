@@ -23,7 +23,7 @@ pkill polybar
 polybar -r -c ~/.config/bspwm/polybar/config.bspwm main &
 
 # sxhkd
-pgrep -x sxhkd || sxhkd -c $HOME/.config/bspwm/sxhkdrc &
+pgrep -x sxhkd || sxhkd -c $HOME/.config/bspwm/sxhkdrc $HOME/.config/sxhkd/sxhkdrc.common &
 
 # restore wp
 bash $HOME/.fehbg
