@@ -73,8 +73,7 @@ Clock() {
         echo -n "%{F#000000}%{B"$color02"}   $DATETIME  %{B-}%{F-}"
 }
 
-
-## bar
+####################
 
 while true; do
     echo -e "\
