@@ -79,9 +79,7 @@ super + z
 
 # lemonbar
 super + semicolon
-	lemonbar-start.sh
-super + control + semicolon
-	lemonbar-menu.sh
+	killall -p lemonbar 2>/dev/null || lemonbar-panel.sh
 
 # reboot, shutdown
 super + {shift,ctrl} + Delete
