@@ -77,7 +77,7 @@ super + shift + equal
 super + {_,shift +} semicolon
 	polybar-msg cmd {toggle,restart}
 super + ctrl + semicolon
-	polybar-menu.sh
+	killall -9 polybar || polybar -r -c ~/.config/bspwm/polybar/config.bspwm main
 
 # reboot, shutdown
 super + {shift,ctrl} + Delete

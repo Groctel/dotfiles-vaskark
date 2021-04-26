@@ -80,6 +80,7 @@ super + z
 # lemonbar
 super + semicolon
 	killall -p lemonbar 2>/dev/null || lemonbar-panel.sh
+	#killall -9 polybar || polybar -r -c ~/.config/polybar/config bottom
 
 # reboot, shutdown
 super + {shift,ctrl} + Delete
