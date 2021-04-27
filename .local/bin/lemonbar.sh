@@ -24,7 +24,7 @@ color15=$(sed -n 16p ~/.cache/wal/colors)
 # session
 Session() {
 	session=$(echo $DESKTOP_SESSION)
-	echo -e "%{F#000000}%{B"$color04"}  $session  %{B-}%{F-}"
+	echo -e "%{F#000000}%{B"$color02"}  $session  %{B-}%{F-}"
 }
 
 
@@ -48,7 +48,7 @@ Wifi(){
 		WIFISTR=$(( ${WIFISTR} * 100 / 70))
 		ESSID=$(iwconfig wlp2s0 | grep ESSID | sed 's/ //g' | sed 's/.*://' | cut -d "\"" -f 2)
 		if [ $WIFISTR -ge 1 ] ; then
-			echo -e "%{F"$color02"}%{F-} ${ESSID}"
+			echo -e "%{F"$color06"}%{F-} ${ESSID}"
 		fi
 	fi
 }
@@ -58,7 +58,7 @@ Wifi(){
 Uptime() {
 	up=$(uptime --pretty | sed 's/up //' | sed 's/\ years\?,/y/' | sed 's/\ weeks\?,/w/' | sed 's/\ days\?,/d/' | sed 's/\ hours\?,\?/h/' | sed 's/\ minutes\?/m/')
 	
-	echo -e "%{F"$color03"}%{F-} $up"
+	echo -e "%{F"$color05"}%{F-} $up"
 }
 
 
@@ -77,7 +77,7 @@ Memory() {
 	c=$(cat /proc/meminfo | grep Cached | awk 'NR==1 {print $2}')
 
 	current=$(( 100*($t - $f - $b - $c) / $t ))
-	echo -e "%{F"$color05"}%{F-} $current%"
+	echo -e "%{F"$color03"}%{F-} $current%"
 }
 
 
@@ -87,11 +87,11 @@ Volume() {
 	if [[ ! -z $NOTMUTED ]] ; then
 		VOL=$(awk -F"[][]" '/dB/ { print $2 }' <(amixer sget Master) | sed 's/%//g')
 		if [ $VOL -ge 85 ] ; then
-			echo -e "%{F"$color06"}%{F-} ${VOL}%"
+			echo -e "%{F"$color01"}%{F-} ${VOL}%"
 		elif [ $VOL -ge 50 ] ; then
-			echo -e "%{F"$color06"}%{F-} ${VOL}%"
+			echo -e "%{F"$color01"}%{F-} ${VOL}%"
 		else
-			echo -e "%{F"$color06"}%{F-} ${VOL}%"
+			echo -e "%{F"$color01"}%{F-} ${VOL}%"
 		fi
 	else
 		echo -e "%{F#555555}%{F-} --%"
@@ -102,7 +102,7 @@ Volume() {
 # date/time
 Clock() {
         DATETIME=$(date "+%-I:%M %p")
-        echo -n "%{F#000000}%{B"$color04"}   $DATETIME  %{B-}%{F-}"
+        echo -n "%{F#000000}%{B"$color02"}   $DATETIME  %{B-}%{F-}"
 }
 
 
