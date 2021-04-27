@@ -50,7 +50,7 @@ Uptime() {
 
 Battery() {
         BATPERC=$(acpi --battery | cut -d, -f2)
-        echo "%{F"$color03"}%{F-}$BATPERC"
+        echo "%{F"$color03"}%{F-}$BATPERC"
 }
 
 Memory() {
