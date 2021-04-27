@@ -24,7 +24,7 @@ color15=$(sed -n 16p ~/.cache/wal/colors)
 # session
 Session() {
 	session=$(echo $DESKTOP_SESSION)
-	echo -e "%{F#000000}%{B"$color02"}  $session  %{B-}%{F-}"
+	echo -e "%{F#000000}%{B"$color01"}  $session  %{B-}%{F-}"
 }
 
 
