@@ -28,7 +28,7 @@ Session() {
 
 Mpc() {
 	MPCCUR=$(mpc current)
-	echo "%{F"$color04"}%{F-} $MPCCUR"
+	echo "%{F"$color02"}%{F-} $MPCCUR"
 }
 
 Wifi(){
@@ -37,7 +37,7 @@ Wifi(){
 		WIFISTR=$(( ${WIFISTR} * 100 / 70))
 		ESSID=$(iwconfig wlp2s0 | grep ESSID | sed 's/ //g' | sed 's/.*://' | cut -d "\"" -f 2)
 		if [ $WIFISTR -ge 1 ] ; then
-			echo -e "%{F"$color05"}%{F-} ${ESSID}"
+			echo -e "%{F"$color02"}%{F-} ${ESSID}"
 		fi
 	fi
 }
@@ -45,12 +45,12 @@ Wifi(){
 Uptime() {
 	up=$(uptime --pretty | sed 's/up //' | sed 's/\ years\?,/y/' | sed 's/\ weeks\?,/w/' | sed 's/\ days\?,/d/' | sed 's/\ hours\?,\?/h/' | sed 's/\ minutes\?/m/')
 	
-	echo -e "%{F"$color06"}%{F-} $up"
+	echo -e "%{F"$color03"}%{F-} $up"
 }
 
 Battery() {
         BATPERC=$(acpi --battery | cut -d, -f2)
-        echo "%{F"$color03"}%{F-}$BATPERC"
+        echo "%{F"$color04"}%{F-}$BATPERC"
 }
 
 Memory() {
@@ -60,7 +60,7 @@ Memory() {
 	c=$(cat /proc/meminfo | grep Cached | awk 'NR==1 {print $2}')
 
 	current=$(( 100*($t - $f - $b - $c) / $t ))
-	echo -e "%{F"$color01"}%{F-} $current%"
+	echo -e "%{F"$color05"}%{F-} $current%"
 }
 
 Volume() {
