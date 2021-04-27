@@ -43,13 +43,14 @@ Hostname() {
 Weather() {
 	wtr=$($HOME/.config/polybar/scripts/openweathermap-detailed.sh)
 	echo -e "$wtr"
+        sleep 5
 }
 
 
 # mpd
 Mpc() {
-	MPCCUR=$(mpc current)
-	echo "%{F"$color02"}%{F-} $MPCCUR"
+	MPCCUR=$(mpc current -f "%artist% >> %title%")
+	echo "%{A:mpc toggle 1>/dev/null:}%{A2:mpc prev 1>/dev/null:}%{A3:mpc next 1>/dev/null:}%{F"$color02"}%{F-} $MPCCUR%{A}%{A}%{A}"
 }
 
 
@@ -70,7 +71,7 @@ Wifi() {
 Uptime() {
 	up=$(uptime --pretty | sed 's/up //' | sed 's/\ years\?,/y/' | sed 's/\ weeks\?,/w/' | sed 's/\ days\?,/d/' | sed 's/\ hours\?,\?/h/' | sed 's/\ minutes\?/m/')
 	
-	echo -e "%{F"$color05"}%{F-} $up"
+    echo -e "%{F#000000}%{B"$color01"}   $up  %{B-}%{F-}"
 }
 
 
@@ -99,11 +100,11 @@ Volume() {
 	if [[ ! -z $NOTMUTED ]] ; then
 		VOL=$(awk -F"[][]" '/dB/ { print $2 }' <(amixer sget Master) | sed 's/%//g')
 		if [ $VOL -ge 85 ] ; then
-			echo -e "%{F"$color01"}%{F-} ${VOL}%"
+			echo -e "%{F"$color01"}%{F-} ${VOL}%"
 		elif [ $VOL -ge 50 ] ; then
-			echo -e "%{F"$color01"}%{F-} ${VOL}%"
+			echo -e "%{F"$color01"}%{F-} ${VOL}%"
 		else
-			echo -e "%{F"$color01"}%{F-} ${VOL}%"
+			echo -e "%{F"$color01"}%{F-} ${VOL}%"
 		fi
 	else
 		echo -e "%{F#555555}%{F-} --%"
@@ -123,8 +124,8 @@ Clock() {
 
 while true; do
     echo -e "\
-        %{l}$(Session)  $(Weather) \
-    %{c}%{A:mpc toggle 1>/dev/null:}%{A2:mpc prev 1>/dev/null:}%{A3:mpc next 1>/dev/null:}$(Mpc)%{A}%{A}%{A} \
-    %{r}$(Wifi)  $(Uptime)  $(Battery)  $(Memory)  $(Volume)  $(Clock)"
+    %{l}$(Uptime) \
+    %{c}$(Mpc) \
+    %{r}$(Wifi)  $(Battery)  $(Memory)  $(Volume)  $(Clock)"
     sleep 0.5
 done
