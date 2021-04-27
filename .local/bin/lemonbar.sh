@@ -39,10 +39,17 @@ Hostname() {
 }
 
 
+# weather
+Weather() {
+	wtr=$($HOME/.config/polybar/scripts/openweathermap-detailed.sh)
+	echo -e "$wtr"
+}
+
+
 # mpd
 Mpc() {
 	MPCCUR=$(mpc current)
-	echo "%{F"$color02"}%{F-} $MPCCUR"
+	echo "%{F"$color02"}%{F-} $MPCCUR"
 }
 
 
@@ -92,14 +99,14 @@ Volume() {
 	if [[ ! -z $NOTMUTED ]] ; then
 		VOL=$(awk -F"[][]" '/dB/ { print $2 }' <(amixer sget Master) | sed 's/%//g')
 		if [ $VOL -ge 85 ] ; then
-			echo -e "%{F"$color01"}%{F-} ${VOL}%"
+			echo -e "%{F"$color01"}%{F-} ${VOL}%"
 		elif [ $VOL -ge 50 ] ; then
-			echo -e "%{F"$color01"}%{F-} ${VOL}%"
+			echo -e "%{F"$color01"}%{F-} ${VOL}%"
 		else
-			echo -e "%{F"$color01"}%{F-} ${VOL}%"
+			echo -e "%{F"$color01"}%{F-} ${VOL}%"
 		fi
 	else
-		echo -e "%{F#555555}%{F-} --%"
+		echo -e "%{F#555555}%{F-} --%"
 	fi
 }
 
@@ -116,7 +123,7 @@ Clock() {
 
 while true; do
     echo -e "\
-        %{l}$(Session)$(Hostname) \
+        %{l}$(Session)  $(Weather) \
     %{c}%{A:mpc toggle 1>/dev/null:}%{A2:mpc prev 1>/dev/null:}%{A3:mpc next 1>/dev/null:}$(Mpc)%{A}%{A}%{A} \
     %{r}$(Wifi)  $(Uptime)  $(Battery)  $(Memory)  $(Volume)  $(Clock)"
     sleep 0.5
