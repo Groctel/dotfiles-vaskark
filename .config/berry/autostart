@@ -15,9 +15,7 @@ redshift -c ~/.config/redshift/redshift.conf &
 picom --experimental-backends --config ~/.config/picom/picom.conf &
 
 # polkit
-# ubuntu
 /usr/lib/policykit-1-gnome/polkit-gnome-authentication-agent-1 &
-# arch
 #/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
 
 # xmenu
@@ -31,6 +29,9 @@ wal -R -o wal-extras.sh &
 
 # lemonbar
 lemonbar-panel.sh &
+
+# touchegg
+#touchegg-wm.sh &
 
 # Set decoration geometry
 berryc border_width         0
