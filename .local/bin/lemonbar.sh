@@ -48,8 +48,13 @@ Battery() {
 }
 
 Memory() {
-	mem=$(free -m | awk 'NR==2 {print $3}')
-	echo -e "%{F"$color01"}%{F-} $mem Mb"
+	t=$(cat /proc/meminfo | grep MemTotal | awk '{print $2}')
+	f=$(cat /proc/meminfo | grep MemFree | awk '{print $2}')
+	b=$(cat /proc/meminfo | grep Buffers | awk '{print $2}')
+	c=$(cat /proc/meminfo | grep Cached | awk 'NR==1 {print $2}')
+
+	current=$(( 100*($t - $f - $b - $c) / $t ))
+	echo -e "%{F"$color01"}%{F-} $current""%"
 }
 
 Volume() {
