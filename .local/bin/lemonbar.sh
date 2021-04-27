@@ -42,6 +42,12 @@ Wifi(){
 	fi
 }
 
+Uptime() {
+	up=$(uptime --pretty | sed 's/up //' | sed 's/\ years\?,/y/' | sed 's/\ weeks\?,/w/' | sed 's/\ days\?,/d/' | sed 's/\ hours\?,\?/h/' | sed 's/\ minutes\?/m/')
+	
+	echo -e "%{F"$color06"}%{F-} $up"
+}
+
 Battery() {
         BATPERC=$(acpi --battery | cut -d, -f2)
         echo "%{F"$color03"}%{F-}$BATPERC"
@@ -84,6 +90,6 @@ while true; do
     echo -e "\
         %{l}$(Session) \
     %{c}%{A:mpc toggle 1>/dev/null:}%{A2:mpc prev 1>/dev/null:}%{A3:mpc next 1>/dev/null:}$(Mpc)%{A}%{A}%{A} \
-    %{r}$(Wifi)  $(Battery)  $(Memory)  $(Volume)  $(Clock)"
+    %{r}$(Wifi)  $(Uptime)  $(Battery)  $(Memory)  $(Volume)  $(Clock)"
     sleep 0.5
 done
