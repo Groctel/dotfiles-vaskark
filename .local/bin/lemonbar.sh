@@ -21,16 +21,27 @@ color15=$(sed -n 16p ~/.cache/wal/colors)
 
 ## modules
 
+# session
 Session() {
 	session=$(echo $DESKTOP_SESSION)
-	echo -e "%{F#000000}%{B"$color01"}  $session  %{B-}%{F-}"
+	echo -e "%{F#000000}%{B"$color04"}  $session  %{B-}%{F-}"
 }
 
+
+# user
+User() {
+        echo -n "%{F#000000}%{B"$color04"}  $USER  %{B-}%{F-}"
+}
+
+
+# mpd
 Mpc() {
 	MPCCUR=$(mpc current)
 	echo "%{F"$color02"}%{F-} $MPCCUR"
 }
 
+
+# wifi
 Wifi(){
 	WIFISTR=$( iwconfig wlp2s0 | grep "Link" | sed 's/ //g' | sed 's/LinkQuality=//g' | sed 's/\/.*//g')
 	if [ ! -z $WIFISTR ] ; then
@@ -42,17 +53,23 @@ Wifi(){
 	fi
 }
 
+
+# uptime
 Uptime() {
 	up=$(uptime --pretty | sed 's/up //' | sed 's/\ years\?,/y/' | sed 's/\ weeks\?,/w/' | sed 's/\ days\?,/d/' | sed 's/\ hours\?,\?/h/' | sed 's/\ minutes\?/m/')
 	
 	echo -e "%{F"$color03"}%{F-} $up"
 }
 
+
+# battery
 Battery() {
         BATPERC=$(acpi --battery | cut -d, -f2)
         echo "%{F"$color04"}%{F-}$BATPERC"
 }
 
+
+# memory
 Memory() {
 	t=$(cat /proc/meminfo | grep MemTotal | awk '{print $2}')
 	f=$(cat /proc/meminfo | grep MemFree | awk '{print $2}')
@@ -63,6 +80,8 @@ Memory() {
 	echo -e "%{F"$color05"}%{F-} $current%"
 }
 
+
+# volume
 Volume() {
 	NOTMUTED=$( amixer sget Master | grep "\[on\]" )
 	if [[ ! -z $NOTMUTED ]] ; then
@@ -79,12 +98,16 @@ Volume() {
 	fi
 }
 
+
+# date/time
 Clock() {
         DATETIME=$(date "+%-I:%M %p")
-        echo -n "%{F#000000}%{B"$color02"}   $DATETIME  %{B-}%{F-}"
+        echo -n "%{F#000000}%{B"$color04"}   $DATETIME  %{B-}%{F-}"
 }
 
+
 ####################
+
 
 while true; do
     echo -e "\

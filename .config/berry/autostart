@@ -28,7 +28,7 @@ xautolock -time 10 -locker 'lock.sh' -killer 'systemctl suspend' -corners 00-+ &
 wal -R -o wal-extras.sh &
 
 # lemonbar
-lemonbar-panel.sh &
+lemonbar-start.sh &
 
 # touchegg
 #touchegg-wm.sh &
@@ -37,7 +37,7 @@ lemonbar-panel.sh &
 berryc border_width         0
 berryc inner_border_width   0
 berryc title_height         24
-berryc edge_gap             0 60 0 0
+berryc edge_gap             30 0 0 0
 berryc decorate_new 	    "true"
 
 # Set decoration colors
