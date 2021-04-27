@@ -13,7 +13,7 @@ super + {_,shift +} F12
 
 # lemonbar
 super + semicolon
-	killall -p lemonbar 2>/dev/null || lemonbar-panel.sh
+	killall -p lemonbar 2>/dev/null || lemonbar-start.sh
 	#killall -9 polybar || polybar -r -c ~/.config/polybar/config bottom
 
 
