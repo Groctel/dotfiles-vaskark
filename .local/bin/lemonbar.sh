@@ -49,7 +49,7 @@ Weather() {
 # mpd
 Mpc() {
 	MPCCUR=$(mpc current)
-	echo "%{F"$color02"}%{F-} $MPCCUR"
+	echo "%{F"$color02"}%{F-} $MPCCUR"
 }
 
 
