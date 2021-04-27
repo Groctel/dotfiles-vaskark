@@ -54,7 +54,7 @@ Memory() {
 	c=$(cat /proc/meminfo | grep Cached | awk 'NR==1 {print $2}')
 
 	current=$(( 100*($t - $f - $b - $c) / $t ))
-	echo -e "%{F"$color01"}%{F-} $current""%"
+	echo -e "%{F"$color01"}%{F-} $current%"
 }
 
 Volume() {
