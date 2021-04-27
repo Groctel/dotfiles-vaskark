@@ -27,7 +27,7 @@ width=$(xdotool getdisplaygeometry | awk '{print $1}')
 w=$(( width-(2*x) ))
 
 # height
-h=28
+h=30
 
 # stop lemonbar (if on)
 killall -9 lemonbar 2> /dev/null
@@ -35,9 +35,9 @@ killall -9 lemonbar 2> /dev/null
 # start lemonbar
 lemonbar.sh \
 | lemonbar -p \
--f "-*-scientifica-bold-r-*" \
 -f "-*-siji-*" \
+-f "-*-scientifica-bold-r-*" \
 -g "$w"x"$h"+"$x"+"$y" \
 -B "$color00" \
--F "#666666" \
+-F "#555" \
 | sh
