@@ -77,7 +77,7 @@ Clock() {
 
 while true; do
     echo -e "\
-    %{l}$(Session) \
+        %{l}$(Session) \
     %{c}%{A:mpc toggle 1>/dev/null:}%{A2:mpc prev 1>/dev/null:}%{A3:mpc next 1>/dev/null:}$(Mpc)%{A}%{A}%{A} \
     %{r}$(Wifi)  $(Battery)  $(Memory)  $(Volume)  $(Clock)"
     sleep 0.5
