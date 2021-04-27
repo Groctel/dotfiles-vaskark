@@ -23,14 +23,19 @@ color15=$(sed -n 16p ~/.cache/wal/colors)
 
 # session
 Session() {
-	session=$(echo $DESKTOP_SESSION)
-	echo -e "%{F#000000}%{B"$color01"}  $session  %{B-}%{F-}"
+	echo -e "%{F#000000}%{B"$color01"}  $DESKTOP_SESSION  %{B-}%{F-}"
 }
 
 
 # user
 User() {
         echo -n "%{F#000000}%{B"$color04"}  $USER  %{B-}%{F-}"
+}
+
+
+# hostname
+Hostname() {
+        echo -n "%{F#000000}%{B"$color04"}  $(hostname)  %{B-}%{F-}"
 }
 
 
@@ -42,7 +47,7 @@ Mpc() {
 
 
 # wifi
-Wifi(){
+Wifi() {
 	WIFISTR=$( iwconfig wlp2s0 | grep "Link" | sed 's/ //g' | sed 's/LinkQuality=//g' | sed 's/\/.*//g')
 	if [ ! -z $WIFISTR ] ; then
 		WIFISTR=$(( ${WIFISTR} * 100 / 70))
@@ -111,7 +116,7 @@ Clock() {
 
 while true; do
     echo -e "\
-        %{l}$(Session) \
+        %{l}$(Session)$(Hostname) \
     %{c}%{A:mpc toggle 1>/dev/null:}%{A2:mpc prev 1>/dev/null:}%{A3:mpc next 1>/dev/null:}$(Mpc)%{A}%{A}%{A} \
     %{r}$(Wifi)  $(Uptime)  $(Battery)  $(Memory)  $(Volume)  $(Clock)"
     sleep 0.5
