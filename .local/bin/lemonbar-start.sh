@@ -29,7 +29,7 @@ w=$(( width-(2*x) ))
 # height
 h=28
 
-# stop lemonbar
+# stop lemonbar (if on)
 killall -9 lemonbar 2> /dev/null
 
 # start lemonbar
