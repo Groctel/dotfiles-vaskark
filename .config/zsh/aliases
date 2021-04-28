@@ -1,8 +1,6 @@
 # general
-alias zr='history -c && clear && exec zsh'
-alias zra='rm -f ~/.config/zsh/.zhistory && clear && exec zsh'
+alias zr='rm -rf ~/.config/zsh/.zhistory && clear && exec zsh'
 alias zs='exec zsh'
-alias hc='history -c'
 alias rm='rm -i'
 alias cp='cp -i'
 alias mv='mv -i'
@@ -45,7 +43,6 @@ alias u='unimatrix -c green -a -f -n -s 98'
 alias kc='kitty +kitten icat'
 alias kd='kitty +kitten diff'
 alias mpc='mpc --host=127.0.0.1 --port=6600'
-alias cls='clear'
 alias zc="$EDITOR $ZDOTDIR/.zshrc"
 alias zca="$EDITOR $ZDOTDIR/aliases"
 alias zce="$EDITOR $HOME/.zshenv"
@@ -72,6 +69,10 @@ alias rhb='run-help bindkey'
 
 # last modified logs
 alias lml='ls -ltr /var/log | tail'
+
+# journal
+alias jcb='journalctl -p 3 -xb'
+alias jce='journalctl -p 3 -xe'
 
 # bluetoothctl
 alias btc='bluetoothctl'
@@ -138,10 +139,6 @@ alias wsd='windscribe disconnect'
 alias s1='sudo make install'
 alias s2='sudo make PREFIX=/usr/local install'
 alias s3='sudo ninja -C build install'
-
-# journal
-alias jcb='journalctl -p 3 -xb'
-alias jce='journalctl -p 3 -xe'
 
 # arch
 alias unlock='sudo rm /var/lib/pacman/db.lck'

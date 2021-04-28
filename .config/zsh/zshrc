@@ -1,48 +1,19 @@
-# Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
-# Initialization code that may require console input (password prompts, [y/n]
-# confirmations, etc.) must go above this block; everything else may go below.
-if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
-  source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
-fi
-
 # path
 typeset -U PATH path
 
-# omz fix
-export ZSH_DISABLE_COMPFIX=true
-
-# oh-my-zsh path
-export ZSH="/usr/local/oh-my-zsh"
-
-# zsh theme
-#ZSH_THEME="p10k"
-
-# Uncomment the following line to disable bi-weekly auto-update checks.
-DISABLE_AUTO_UPDATE="true"
-
-# case-sensitive completion
-#CASE_SENSITIVE="true"
+# pure
+fpath+=/usr/local/pure
+autoload -U promptinit; promptinit
+zstyle :prompt:pure:git:stash show yes
+#zstyle :prompt:pure:path color blue
+#zstyle ':prompt:pure:prompt:*' color cyan
+prompt pure
 
 # history
 HIST_STAMPS="yyyy-mm-dd"
 
-# plugins
-plugins=(
-#colored-man-pages
-command-not-found
-extract
-#zsh-autocomplete
-zsh-autosuggestions
-zsh-syntax-highlighting
-)
-
-source $ZSH/oh-my-zsh.sh
-
 # aliases
 [ -f "$ZDOTDIR/aliases" ] && source "$ZDOTDIR/aliases"
-
-# to customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
-[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
 # completion for kitty
 kitty + complete setup zsh | source /dev/stdin
@@ -61,14 +32,6 @@ bindkey '^x^e' edit-command-line
 
 # fzf
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
-
-# pure
-fpath+=/usr/local/pure
-autoload -U promptinit; promptinit
-zstyle :prompt:pure:git:stash show yes
-#zstyle :prompt:pure:path color blue
-#zstyle ':prompt:pure:prompt:*' color cyan
-prompt pure
 
 # xterm/urxvt cursor (beam)
 # 35 (blink), 36 (no blink)
@@ -89,17 +52,14 @@ lfcd="$HOME/.config/lf/lfcd.sh"
 fi
 bindkey -s '^]' 'lfcd\n'
 
-# git helper
-gacp() {
-  git add .
-  git commit -m "$1"
-  git push
-}
-
 # functions
 source ~/.config/zsh/functions/fzf-edit 2>/dev/null
 source ~/.config/zsh/functions/fzf-kill 2>/dev/null
 source ~/.config/zsh/functions/fzf-man 2>/dev/null
 
-# gitstatus
-# export POWERLEVEL9K_DISABLE_GITSTATUS=true
+# plugins
+source /usr/local/oh-my-zsh/plugins/extract/extract.plugin.zsh 2>/dev/null
+source /usr/local/oh-my-zsh/plugins/command-not-found/command-not-found.plugin.zsh 2>/dev/null
+#source /usr/local/oh-my-zsh/custom/plugins/zsh-autocompletions/zsh-autocompletions.plugin.zsh 2>/dev/null
+source /usr/local/oh-my-zsh/custom/plugins/zsh-autosuggestions/zsh-autosuggestions.plugin.zsh 2>/dev/null
+source /usr/local/oh-my-zsh/custom/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.plugin.zsh 2>/dev/null

@@ -6,17 +6,17 @@ typeset -U PATH path
 
 # enable colors and change prompt:
 autoload -U colors && colors	# Load colors
-#PS1="%B%{$fg[red]%}[%{$fg[yellow]%}%n%{$fg[green]%}@%{$fg[blue]%}%M %{$fg[magenta]%}%~%{$fg[red]%}]%{$reset_color%}$%b "
+PS1="%B%{$fg[red]%}[%{$fg[yellow]%}%n%{$fg[green]%}@%{$fg[blue]%}%M %{$fg[magenta]%}%~%{$fg[red]%}]%{$reset_color%}$%b "
 setopt autocd		# Automatically cd into typed directory.
 stty stop undef		# Disable ctrl-s to freeze terminal.
 
 # pure
-fpath+=/usr/local/pure
-autoload -U promptinit; promptinit
-zstyle :prompt:pure:git:stash show yes
+#fpath+=/usr/local/pure
+#autoload -U promptinit; promptinit
+#zstyle :prompt:pure:git:stash show yes
 #zstyle :prompt:pure:path color blue
 #zstyle ':prompt:pure:prompt:*' color cyan
-prompt pure
+#prompt pure
 
 # aliases
 [ -f "$ZDOTDIR/aliases" ] && source "$ZDOTDIR/aliases"
@@ -92,21 +92,15 @@ kitty + complete setup zsh | source /dev/stdin
 
 # pywal
 (cat ~/.cache/wal/sequences &)
-#source ~/.cache/wal/colors-tty.sh
-
-# extract
-source /usr/local/oh-my-zsh/plugins/extract/extract.plugin.zsh 2>/dev/null
-
-# auto-suggestions
-source /us/local/oh-my-zsh/custom/plugins/zsh-autosuggestions/zsh-autosuggestions.plugin.zsh 2>/dev/null
-
-# syntax highlighting (should be last)
-source /usr/local/oh-my-zsh/custom/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.plugin.zsh 2>/dev/null
 
 # functions
 source ~/.config/zsh/functions/fzf-edit 2>/dev/null
 source ~/.config/zsh/functions/fzf-kill 2>/dev/null
 source ~/.config/zsh/functions/fzf-man 2>/dev/null
 
-# gitstatus
-# export POWERLEVEL9K_DISABLE_GITSTATUS=true
+# plugins
+source /usr/local/oh-my-zsh/plugins/extract/extract.plugin.zsh 2>/dev/null
+source /usr/local/oh-my-zsh/plugins/command-not-found/command-not-found.plugin.zsh 2>/dev/null
+#source /usr/local/oh-my-zsh/custom/plugins/zsh-autocompletions/zsh-autocompletions.plugin.zsh 2>/dev/null
+source /usr/local/oh-my-zsh/custom/plugins/zsh-autosuggestions/zsh-autosuggestions.plugin.zsh 2>/dev/null
+source /usr/local/oh-my-zsh/custom/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.plugin.zsh 2>/dev/null
