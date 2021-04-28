@@ -1,5 +1,6 @@
 # path
 export PATH="$HOME/.local/bin:$PATH"
+typeset -U PATH path
 
 # xdg
 export XDG_CONFIG_HOME=$HOME/.config

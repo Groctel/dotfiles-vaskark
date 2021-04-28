@@ -1,4 +1,5 @@
 # path
+export PATH="$HOME/.local/bin:$PATH"
 typeset -U PATH path
 
 # enable colors and change prompt:
