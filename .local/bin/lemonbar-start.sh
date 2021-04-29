@@ -29,15 +29,8 @@ w=$(( width-(2*x) ))
 # height
 h=30
 
-# stop lemonbar (if on)
+# stop
 killall -9 lemonbar 2> /dev/null
 
-# start lemonbar
-lemonbar.sh \
-| lemonbar -p \
--f "-*-siji-*" \
--f "-*-scientifica-bold-r-*" \
--g "$w"x"$h"+"$x"+"$y" \
--B "$color00" \
--F "#555" \
-| sh
+# start
+lemonbar.sh | lemonbar -p -f "-*-siji-*" -f "-*-scientifica-bold-r-*" -g "$w"x"$h"+"$x"+"$y" -B "$color00" -F "#555" | sh

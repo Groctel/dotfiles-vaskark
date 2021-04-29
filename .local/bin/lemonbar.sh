@@ -1,7 +1,6 @@
 #!/bin/bash
 
-## colors
-
+# colors
 color00=$(sed -n 1p ~/.cache/wal/colors)
 color01=$(sed -n 2p ~/.cache/wal/colors)
 color02=$(sed -n 3p ~/.cache/wal/colors)
@@ -19,25 +18,26 @@ color13=$(sed -n 14p ~/.cache/wal/colors)
 color14=$(sed -n 15p ~/.cache/wal/colors)
 color15=$(sed -n 16p ~/.cache/wal/colors)
 
-## modules
-
 # session
 Session() {
-	echo -e "%{F#000000}%{B"$color01"}  $DESKTOP_SESSION  %{B-}%{F-}"
+	echo -e "%{F#000}%{B"$color01"}  $DESKTOP_SESSION  %{B-}%{F-}"
 }
-
 
 # user
 User() {
-        echo -n "%{F#000000}%{B"$color04"}  $USER  %{B-}%{F-}"
+        echo -n "%{F#000}%{B"$color04"}  $USER  %{B-}%{F-}"
 }
-
 
 # hostname
 Hostname() {
-        echo -n "%{F#000000}%{B"$color04"}  $(hostname)  %{B-}%{F-}"
+        echo -n "%{F#000}%{B"$color04"}  $(hostname)  %{B-}%{F-}"
 }
 
+# uptime
+Uptime() {
+	up=$($HOME/.config/polybar/scripts/uptime.sh)
+    echo -e "%{F#000}%{B"$color01"}   $up  %{B-}%{F-}"
+}
 
 # weather
 Weather() {
@@ -46,13 +46,11 @@ Weather() {
         sleep 5
 }
 
-
 # mpd
 Mpc() {
 	MPCCUR=$(mpc current -f "%artist% >> %title%")
 	echo "%{A:mpc toggle 1>/dev/null:}%{A2:mpc prev 1>/dev/null:}%{A3:mpc next 1>/dev/null:}%{F"$color02"}%{F-} $MPCCUR%{A}%{A}%{A}"
 }
-
 
 # wifi
 Wifi() {
@@ -61,32 +59,22 @@ Wifi() {
 		WIFISTR=$(( ${WIFISTR} * 100 / 70))
 		ESSID=$(iwconfig wlp2s0 | grep ESSID | sed 's/ //g' | sed 's/.*://' | cut -d "\"" -f 2)
 		if [ $WIFISTR -ge 1 ] ; then
-			echo -e "%{F"$color06"}%{F-} ${ESSID}"
+			echo -e "%{F"$color04"}%{F-} ${ESSID}"
 		fi
 	fi
 }
 
-
-# uptime
-Uptime() {
-	up=$($HOME/.config/polybar/scripts/uptime.sh)
-    echo -e "%{F#000000}%{B"$color01"}   $up  %{B-}%{F-}"
-}
-
-
 # cpu
 Cpu() {
 	temp=$($HOME/.config/polybar/scripts/cpu.sh)
-	echo -e "%{F"$color02"}%{F-} $temp"
+	echo -e "%{F"$color04"}%{F-} $temp"
 }
-
 
 # battery
 Battery() {
         BATPERC=$(acpi --battery | cut -d, -f2)
         echo "%{F"$color04"}%{F-}$BATPERC"
 }
-
 
 # memory
 Memory() {
@@ -96,9 +84,8 @@ Memory() {
 	c=$(cat /proc/meminfo | grep Cached | awk 'NR==1 {print $2}')
 
 	current=$(( 100*($t - $f - $b - $c) / $t ))
-	echo -e "%{F"$color03"}%{F-} $current%"
+	echo -e "%{F"$color04"}%{F-} $current%"
 }
-
 
 # volume
 Volume() {
@@ -106,27 +93,24 @@ Volume() {
 	if [[ ! -z $NOTMUTED ]] ; then
 		VOL=$(awk -F"[][]" '/dB/ { print $2 }' <(amixer sget Master) | sed 's/%//g')
 		if [ $VOL -ge 85 ] ; then
-			echo -e "%{F"$color01"}%{F-} ${VOL}%"
+			echo -e "%{F"$color04"}%{F-} ${VOL}%"
 		elif [ $VOL -ge 50 ] ; then
-			echo -e "%{F"$color01"}%{F-} ${VOL}%"
+			echo -e "%{F"$color04"}%{F-} ${VOL}%"
 		else
-			echo -e "%{F"$color01"}%{F-} ${VOL}%"
+			echo -e "%{F"$color04"}%{F-} ${VOL}%"
 		fi
 	else
-		echo -e "%{F#555555}%{F-} --%"
+		echo -e "%{F#555}%{F-} --%"
 	fi
 }
 
-
-# date/time
+# clock
 Clock() {
         DATETIME=$(date "+%-I:%M %p")
-        echo -n "%{F#000000}%{B"$color02"}   $DATETIME  %{B-}%{F-}"
+        echo -n "%{F#000}%{B"$color02"}   $DATETIME  %{B-}%{F-}"
 }
 
-
 ####################
-
 
 while true; do
     echo -e "\
