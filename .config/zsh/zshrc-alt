@@ -29,9 +29,13 @@ zmodload zsh/complist
 compinit
 _comp_options+=(globdots)		# Include hidden files.
 
-# vi mode
+# mode: vi (v) or emacs (e)
 bindkey -v
 export KEYTIMEOUT=1
+
+# edit line in vim with ctrl-e:
+autoload edit-command-line; zle -N edit-command-line
+bindkey '^e' edit-command-line
 
 # use vim keys in tab complete menu:
 bindkey -M menuselect 'h' vi-backward-char
@@ -80,10 +84,6 @@ lfcd () {
     fi
 }
 bindkey -s '^]' 'lfcd\n'
-
-# edit line in vim with ctrl-e:
-autoload edit-command-line; zle -N edit-command-line
-bindkey '^e' edit-command-line
 
 # kitty completion
 kitty + complete setup zsh | source /dev/stdin

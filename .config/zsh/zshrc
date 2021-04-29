@@ -29,7 +29,7 @@ kitty + complete setup zsh | source /dev/stdin
 # pywal
 (cat ~/.cache/wal/sequences &)
 
-# vi (v) or emacs (e)
+# mode: vi (v) or emacs (e)
 bindkey -e
 export KEYTIMEOUT=1
 
