@@ -20,23 +20,23 @@ color15=$(sed -n 16p ~/.cache/wal/colors)
 
 # session
 Session() {
-	echo -e "%{F#000}%{B"$color01"}  $DESKTOP_SESSION  %{B-}%{F-}"
+	echo -n "%{F#000}%{B"$color01"}  $DESKTOP_SESSION  %{B-}%{F-}"
 }
 
 # user
 User() {
-        echo -n "%{F#000}%{B"$color05"}  $USER  %{B-}%{F-}"
+        echo -n "%{F#000}%{B"$color04"}  $USER  %{B-}%{F-}"
 }
 
 # hostname
 Hostname() {
-        echo -n "%{F#000}%{B"$color05"}  $(hostname)  %{B-}%{F-}"
+        echo -n "%{F#000}%{B"$color04"}  $(hostname)  %{B-}%{F-}"
 }
 
 # uptime
 Uptime() {
 	up=$($HOME/.config/polybar/scripts/uptime.sh)
-    echo -e "%{F#000}%{B"$color01"}   $up  %{B-}%{F-}"
+        echo -e "%{F#000}%{B"$color01"}   $up  %{B-}%{F-}"
 }
 
 # weather
@@ -59,7 +59,7 @@ Wifi() {
 		WIFISTR=$(( ${WIFISTR} * 100 / 70))
 		ESSID=$(iwconfig wlp2s0 | grep ESSID | sed 's/ //g' | sed 's/.*://' | cut -d "\"" -f 2)
 		if [ $WIFISTR -ge 1 ] ; then
-			echo -e "%{F"$color05"}%{F-} ${ESSID}"
+			echo -e "%{F"$color04"}%{F-} ${ESSID}"
 		fi
 	fi
 }
@@ -67,13 +67,13 @@ Wifi() {
 # cpu
 Cpu() {
 	temp=$($HOME/.config/polybar/scripts/cpu.sh)
-	echo -e "%{F"$color05"}%{F-} $temp"
+	echo -e "%{F"$color04"}%{F-} $temp"
 }
 
 # battery
 Battery() {
         BATPERC=$(acpi --battery | cut -d, -f2)
-        echo "%{F"$color05"}%{F-}$BATPERC"
+        echo -e "%{F"$color04"}%{F-}$BATPERC"
 }
 
 # memory
@@ -84,7 +84,7 @@ Memory() {
 	c=$(cat /proc/meminfo | grep Cached | awk 'NR==1 {print $2}')
 
 	current=$(( 100*($t - $f - $b - $c) / $t ))
-	echo -e "%{F"$color05"}%{F-} $current%"
+	echo -e "%{F"$color04"}%{F-} $current%"
 }
 
 # volume
@@ -93,11 +93,11 @@ Volume() {
 	if [[ ! -z $NOTMUTED ]] ; then
 		VOL=$(awk -F"[][]" '/dB/ { print $2 }' <(amixer sget Master) | sed 's/%//g')
 		if [ $VOL -ge 85 ] ; then
-			echo -e "%{F"$color05"}%{F-} ${VOL}%"
+			echo -e "%{F"$color04"}%{F-} ${VOL}%"
 		elif [ $VOL -ge 50 ] ; then
-			echo -e "%{F"$color05"}%{F-} ${VOL}%"
+			echo -e "%{F"$color04"}%{F-} ${VOL}%"
 		else
-			echo -e "%{F"$color05"}%{F-} ${VOL}%"
+			echo -e "%{F"$color04"}%{F-} ${VOL}%"
 		fi
 	else
 		echo -e "%{F#555}%{F-} --%"
