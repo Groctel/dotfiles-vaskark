@@ -19,7 +19,7 @@ color14=$(sed -n 15p ~/.cache/wal/colors)
 color15=$(sed -n 16p ~/.cache/wal/colors)
 
 # offset
-x=0
+x=100
 y=0
 
 # width of desktop
@@ -33,4 +33,10 @@ h=30
 killall -9 lemonbar 2> /dev/null
 
 # start
-lemonbar.sh | lemonbar -p -f "-*-siji-*" -f "-*-scientifica-bold-r-*" -g "$w"x"$h"+"$x"+"$y" -B "$color00" -F "#555" | sh
+lemonbar.sh | lemonbar -p \
+-f "-*-siji-*" \
+-f "-*-scientifica-bold-r-*" \
+-g "$w"x"$h"+"$x"+"$y" \
+-B "$color00" \
+-F "#555" \
+| sh
