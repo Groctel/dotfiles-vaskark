@@ -30,8 +30,8 @@ kitty + complete setup zsh | source /dev/stdin
 (cat ~/.cache/wal/sequences &)
 
 # vi (v) or emacs (e)
-#bindkey -v
-#export KEYTIMEOUT=1
+bindkey -e
+export KEYTIMEOUT=1
 
 # edit line in vim with ctrl-X, ctrl-e:
 autoload edit-command-line; zle -N edit-command-line
