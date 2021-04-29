@@ -77,7 +77,7 @@ Uptime() {
 # cpu
 Cpu() {
 	temp=$($HOME/.config/polybar/scripts/cpu.sh)
-	echo -e "%{F"$color02"}%{F-} $temp"
+	echo -e "%{F"$color02"}%{F-} $temp"
 }
 
 
