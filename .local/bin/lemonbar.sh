@@ -70,8 +70,14 @@ Wifi() {
 # uptime
 Uptime() {
 	up=$($HOME/.config/polybar/scripts/uptime.sh)
-	
     echo -e "%{F#000000}%{B"$color01"}   $up  %{B-}%{F-}"
+}
+
+
+# cpu
+Cpu() {
+	temp=$($HOME/.config/polybar/scripts/cpu.sh)
+	echo -e "%{F"$color02"}%{F-} $temp"
 }
 
 
@@ -126,6 +132,6 @@ while true; do
     echo -e "\
     %{l}$(Uptime) \
     %{c}$(Mpc) \
-    %{r}$(Wifi)  $(Battery)  $(Memory)  $(Volume)  $(Clock)"
+    %{r}$(Wifi)  $(Cpu)  $(Battery)  $(Memory)  $(Volume)  $(Clock)"
     sleep 0.5
 done
