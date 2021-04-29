@@ -69,7 +69,7 @@ font-1 = "siji:size=9;2"
 
 modules-left = mod bspwm
 modules-center = mpd
-modules-right = wireless wired uptime memory temp battery bt-volume volume date
+modules-right = wireless uptime memory temp battery volume date
 
 ;scroll-up = bspwm-deskprev
 ;scroll-down = bspwm-desknext
@@ -353,7 +353,7 @@ type = internal/date
 interval = 1
 
 time = %I:%M %p
-time-alt = %A %B %d %Y
+time-alt = %a %b %d %Y
 
 label = %time%
 format = <label>
@@ -365,7 +365,7 @@ format-prefix-foreground = ${colors.color3}
 
 [module/uptime]
 type = custom/script
-exec = ~/.config/polybar/scripts/system-uptime-pretty.sh
+exec = ~/.config/polybar/scripts/uptime.sh
 interval = 30
 
 label = %output%
