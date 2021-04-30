@@ -14,8 +14,8 @@ prompt pure
 [ -f "$ZDOTDIR/aliases" ] && source "$ZDOTDIR/aliases"
 
 # tab completion
-autoload -U compinit
-zstyle ':completion:*' matcher-list 'm:{a-zA-Z}={A-Za-z}'
+autoload -Uz compinit
+zstyle ':completion:*' matcher-list 'm:{a-zA-Z}={A-Za-z}' 'r:|?=**'
 zmodload zsh/complist
 compinit
 _comp_options+=(globdots)		# Include hidden files.
