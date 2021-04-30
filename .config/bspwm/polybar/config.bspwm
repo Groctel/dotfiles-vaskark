@@ -132,7 +132,7 @@ type = internal/mpd
 host = 127.0.0.1
 port = 6600
 
-label-song = %{A1:mpc -q toggle:}%{A2:mpc -q prev:}%{A3:mpc -q next:}%artist% // %title%%{A}%{A}%{A}
+label-song = %{A1:mpc -q toggle:}%{A2:mpc -q prev:}%{A3:mpc -q next:}%artist% >> %title%%{A}%{A}%{A}
 format-online = <label-song>
 
 format-online-foreground = ${colors.color6}
