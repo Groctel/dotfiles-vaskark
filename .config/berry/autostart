@@ -7,9 +7,7 @@ xset +fp /usr/local/share/fonts/misc &
 sxhkd -c $HOME/.config/berry/sxhkdrc $HOME/.config/sxhkd/sxhkdrc.common &
 
 # redshift
-pkill redshift
-redshift -x
-redshift -c ~/.config/redshift/redshift.conf &
+redshift.sh &
 
 # picom
 picom --experimental-backends --config ~/.config/picom/picom.conf &
