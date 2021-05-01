@@ -19,7 +19,7 @@ color14=$(sed -n 15p ~/.cache/wal/colors)
 color15=$(sed -n 16p ~/.cache/wal/colors)
 
 # offset
-x=100
+x=0
 y=0
 
 # width of desktop
@@ -30,7 +30,7 @@ w=$(( width-(2*x) ))
 h=30
 
 # stop
-killall -9 lemonbar 2> /dev/null
+killall -9 lemonbar 2>/dev/null
 
 # start
 lemonbar.sh | lemonbar -p \
