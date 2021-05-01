@@ -459,7 +459,7 @@
       </action>
     </keybind>
     <!-- Multimedia keys-->
-<keybind key="W-A-F10">
+    <keybind key="W-A-F10">
       <action name="Execute">
         <command>mpc seek -00:00:05</command>
       </action>
@@ -509,31 +509,31 @@
         <command>pactl set-sink-mute @DEFAULT_SINK@ toggle</command>
       </action>
     </keybind>
-    <!-- Polybar -->
+    <!-- Lemonbar -->
     <keybind key="W-semicolon">
       <action name="Execute">
-        <command>polybar-msg cmd toggle</command>
+        <command>sh -c 'killall -9 lemonbar 2>/dev/null || lemonbar-start.sh'</command>
       </action>
     </keybind>
     <keybind key="W-C-semicolon">
       <action name="Execute">
-        <command>polybar-menu.sh</command>
+        <command/>
       </action>
     </keybind>
     <!-- Pywal -->
     <keybind key="W-F12">
       <action name="Execute">
-        <command>wal -f random_user -o wal-extras.sh</command>
+        <command>wal -f random_user -o wal-extras.sh -o lemonbar-start.sh</command>
       </action>
     </keybind>
     <keybind key="W-C-F12">
       <action name="Execute">
-        <command>wal -f random_dark -o wal-extras.sh</command>
+        <command>wal -f random_dark -o wal-extras.sh -o lemonbar-start.sh</command>
       </action>
     </keybind>
     <keybind key="W-S-F12">
       <action name="Execute">
-        <command>wal -R -o wal-extras.sh</command>
+        <command>wal -R -o wal-extras.sh -o lemonbar-start.sh</command>
       </action>
     </keybind>
     <!-- sxiv -->
