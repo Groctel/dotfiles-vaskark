@@ -7,9 +7,7 @@ xset +fp /usr/local/share/fonts/misc &
 pgrep -x picom || picom --experimental-backends --config ~/.config/bspwm/picom.conf &
 
 # redshift
-pkill redshift
-redshift -x
-redshift -c ~/.config/redshift/redshift.conf &
+redshift.sh &
 
 # lock
 pgrep -x xautolock || xautolock -time 10 -locker 'lock.sh' -killer 'systemctl suspend' -corners 00-+ &
