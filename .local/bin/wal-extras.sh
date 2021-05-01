@@ -18,17 +18,6 @@ color13=$(sed -n 14p ~/.cache/wal/colors)
 color14=$(sed -n 15p ~/.cache/wal/colors)
 color15=$(sed -n 16p ~/.cache/wal/colors)
 
-## berry
-berry00=$(awk 'NR==1 {print substr($1,2,7)}' ~/.cache/wal/colors)
-berry02=$(awk 'NR==3 {print substr($1,2,7)}' ~/.cache/wal/colors)
-
-if ps -A | grep berry; then
-	berryc inner_focus_color   $berry02
-	berryc text_focus_color    $berry00
-	berryc inner_unfocus_color $berry00
-	berryc text_unfocus_color  44444
-fi
-
 ## dunst
 systemctl --user restart dunst
 
@@ -44,10 +33,10 @@ sed -i "s|gradient_color_2.*$|gradient_color_2 = '$color10'|g" ~/.config/cava/co
 #sed -i "s|#define FLIP.*$|#define FLIP 1|g" ~/.config/glava/bars.glsl
 
 #if ps -A | grep glava; then
-#	killall -9 glava 2>/dev/null
-#        glava -d
-#    else
-#        killall -9 glava 2>/dev/null
+#		killall -9 glava 2>/dev/null
+#		glava -d
+#	else
+#		killall -9 glava 2>/dev/null
 #fi
 
 ## openbox
