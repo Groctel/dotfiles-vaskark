@@ -30,7 +30,9 @@ w=$(( width-(2*x) ))
 h=30
 
 # stop
-killall -9 lemonbar 2>/dev/null
+if ps -A | grep lemonbar; then
+	killall -q lemonbar 2>/dev/null
+fi
 
 # start
 lemonbar.sh | lemonbar -p \
