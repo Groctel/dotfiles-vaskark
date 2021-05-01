@@ -9,7 +9,7 @@
 	
 # wal
 super + {_,shift +} F12
-	wal -o wal-extras.sh -o ~/.config/berry/wal.sh -o lemonbar-start.sh {-f random_user,-R}
+	wal -o wal-extras.sh -o lemonbar-start.sh {-f random_user,-R}
 
 # lemonbar
 super + semicolon

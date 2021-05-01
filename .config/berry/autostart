@@ -25,7 +25,7 @@ picom --experimental-backends --config ~/.config/picom/picom.conf &
 xautolock -time 10 -locker 'lock.sh' -killer 'systemctl suspend' -corners 00-+ &
 
 # wal
-wal -R -o wal-extras.sh -o ~/.config/berry/wal.sh &
+wal -R -o wal-extras.sh &
 
 # lemonbar
 lemonbar-start.sh &
