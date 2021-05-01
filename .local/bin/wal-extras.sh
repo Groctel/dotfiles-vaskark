@@ -1,6 +1,6 @@
 #!/bin/sh
 
-# get pywal colors
+# colors
 color00=$(sed -n 1p ~/.cache/wal/colors)
 color01=$(sed -n 2p ~/.cache/wal/colors)
 color02=$(sed -n 3p ~/.cache/wal/colors)
@@ -22,10 +22,12 @@ color15=$(sed -n 16p ~/.cache/wal/colors)
 berry00=$(awk 'NR==1 {print substr($1,2,7)}' ~/.cache/wal/colors)
 berry02=$(awk 'NR==3 {print substr($1,2,7)}' ~/.cache/wal/colors)
 
-berryc inner_focus_color   $berry02
-berryc text_focus_color    $berry00
-berryc inner_unfocus_color $berry00
-berryc text_unfocus_color  444444
+if ps -A | grep berry; then
+	berryc inner_focus_color   $berry02
+	berryc text_focus_color    $berry00
+	berryc inner_unfocus_color $berry00
+	berryc text_unfocus_color  44444
+fi
 
 ## dunst
 systemctl --user restart dunst
@@ -50,15 +52,3 @@ sed -i "s|gradient_color_2.*$|gradient_color_2 = '$color10'|g" ~/.config/cava/co
 
 ## openbox
 openbox --reconfigure
-
-## lemonbar
-#if ps -A | grep lemonbar; then
-#        pkill lemonbar 2> /dev/null
-#        lemonbar-panel.sh
-#   else
-#        pkill lemonbar 2> /dev/null
-#fi
-
-## xss
-#pkill xscreensaver
-#xscreensaver &
