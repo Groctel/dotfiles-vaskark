@@ -9,7 +9,7 @@ super + {_,shift +} Return
 
 # program launchers
 super + {x,d}
-	{dmenu.sh,rofi -show drun}
+	rofi -show {run,drun}
 
 # reload sxhkd
 super + control + r
