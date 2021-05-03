@@ -28,8 +28,15 @@ if ps -A | grep berry; then
 	berryc text_unfocus_color  444444
 fi
 
+## openbox
+if ps -A | grep openbox; then
+	openbox --reconfigure
+fi
+
 ## dunst
-systemctl --user restart dunst
+if ps -A | grep dunst; then
+	systemctl --user restart dunst
+fi
 
 ## cava
 sed -i "s|gradient_color_1.*$|gradient_color_1 = '$color02'|g" ~/.config/cava/config
@@ -49,5 +56,3 @@ sed -i "s|gradient_color_2.*$|gradient_color_2 = '$color10'|g" ~/.config/cava/co
 #		killall -9 glava 2>/dev/null
 #fi
 
-## openbox
-openbox --reconfigure
