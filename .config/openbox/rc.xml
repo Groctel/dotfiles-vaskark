@@ -523,12 +523,12 @@
     <!-- Pywal -->
     <keybind key="W-F12">
       <action name="Execute">
-        <command>wal -f random_user -o wal-extras.sh -o lemonbar-start.sh</command>
+        <command>wal -f random_user -o wal-extras.sh</command>
       </action>
     </keybind>
     <keybind key="W-C-F12">
       <action name="Execute">
-        <command>wal -f random_dark -o wal-extras.sh - olemonbar-start.sh</command>
+        <command>wal -f random_dark -o wal-extras.sh</command>
       </action>
     </keybind>
     <keybind key="W-S-F12">

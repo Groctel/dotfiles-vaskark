@@ -29,11 +29,6 @@ w=$(( width-(2*x) ))
 # height
 h=30
 
-# stop
-if ps -A | grep lemonbar; then
-	killall -q lemonbar 2>/dev/null
-fi
-
 # start
 lemonbar.sh | lemonbar -p \
 -f "-*-siji-*" \

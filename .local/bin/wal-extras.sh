@@ -38,6 +38,12 @@ if ps -A | grep dunst; then
 	systemctl --user restart dunst
 fi
 
+## lemonbar
+if ps -A | grep lemonbar; then
+	killall -q lemonbar 2>/dev/null
+	lemonbar-start.sh
+fi
+
 ## cava
 sed -i "s|gradient_color_1.*$|gradient_color_1 = '$color02'|g" ~/.config/cava/config
 sed -i "s|gradient_color_2.*$|gradient_color_2 = '$color10'|g" ~/.config/cava/config
