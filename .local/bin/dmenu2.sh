@@ -1,7 +1,7 @@
 #!/bin/sh
 
 # Import wal colors 
-. "${HOME}/.cache/wal/colors.sh"
+#. "${HOME}/.cache/wal/colors.sh"
 
 # vars for xyw
 b=4
@@ -11,14 +11,7 @@ w=$(( width-(2*b) ))
 # dmenu
 dmenu_run \
 -p ' dmenu ' \
--fn 'scientifica-8:bold' \
 -h 22 \
--nb "$color2" \
--nf "$color0" \
--sb "$color0" \
--sf "$color2" \
 -x $b \
 -y $b \
 -w $w \
-
-# border is n so h = h-2n
