@@ -27,13 +27,13 @@ super + {_,shift +} F1
 super + {_,shift +} F2
 	{google-chrome-stable,firefox}
 
-# music
-super + F3
-	alacritty -e ncmpcpp
-	
 # wp
+super + F3
+	sh -c 'feh --randomize --bg-fill --recursive --no-fehbg ~/Pictures/*.(png|jpg)'
+	
+# farge
 super + F4
-	feh --randomize --bg-fill --recursive --no-fehbg ~/Pictures/*.(png|jpg)
+	farge.sh
 	
 # date
 super + F5

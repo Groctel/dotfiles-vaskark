@@ -381,7 +381,7 @@
     </keybind>
     <keybind key="W-x">
       <action name="Execute">
-        <command>dmenu2.sh</command>
+        <command>rofi -show run</command>
       </action>
     </keybind>
     <!--
@@ -429,7 +429,7 @@
     </keybind>
     <keybind key="W-F3">
       <action name="Execute">
-        <command>feh --randomize --bg-fill --recursive --no-fehbg $HOME/Pictures/*.(png|jpg)</command>
+        <command>sh -c 'feh --randomize --bg-fill --recursive --no-fehbg $HOME/Pictures/*.(png|jpg)'</command>
       </action>
     </keybind>
     <keybind key="W-F4">
@@ -517,7 +517,7 @@
     </keybind>
     <keybind key="W-C-semicolon">
       <action name="Execute">
-        <command/>
+        <command></command>
       </action>
     </keybind>
     <!-- Pywal -->
@@ -528,7 +528,7 @@
     </keybind>
     <keybind key="W-C-F12">
       <action name="Execute">
-        <command>wal -f random_dark -o wal-extras.sh -o lemonbar-start.sh</command>
+        <command>wal -f random_dark -o wal-extras.sh - olemonbar-start.sh</command>
       </action>
     </keybind>
     <keybind key="W-S-F12">
