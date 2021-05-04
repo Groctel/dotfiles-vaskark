@@ -35,13 +35,13 @@ Hostname() {
 
 # uptime
 Uptime() {
-	up=$($HOME/.config/polybar/scripts/uptime.sh)
+	up=$($HOME/.config/scripts/system-uptime-pretty.sh)
         echo -e "%{F#000}%{B"$color01"}   $up  %{B-}%{F-}"
 }
 
 # weather
 Weather() {
-	wtr=$($HOME/.config/polybar/scripts/openweathermap-detailed.sh)
+	wtr=$($HOME/.config/scripts/openweathermap-detailed.sh)
 	echo -e "$wtr"
         sleep 5
 }
@@ -66,7 +66,7 @@ Wifi() {
 
 # cpu
 Cpu() {
-	temp=$($HOME/.config/polybar/scripts/cpu.sh)
+	temp=$($HOME/.config/scripts/cpu.sh)
 	echo -e "%{F"$color04"}%{F-} $temp"
 }
 

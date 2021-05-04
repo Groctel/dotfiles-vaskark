@@ -503,7 +503,7 @@ format-padding = 2
 
 [module/uptime]
 type = custom/script
-exec = ~/.config/polybar/scripts/uptime.sh
+exec = ~/.config/scripts/uptime.sh
 interval = 30
 
 label =  %output%
@@ -528,7 +528,7 @@ label-padding = 2
 
 [module/weather]
 type = custom/script
-exec = ~/.config/polybar/scripts/openweathermap-detailed.sh
+exec = ~/.config/scripts/openweathermap-detailed.sh
 #exec = curl -s "wttr.in/Hamilton?format="+%C+%t""
 click-right = pkill gnome-weather || gnome-weather
 interval = 600
