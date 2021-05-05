@@ -99,6 +99,5 @@ source ~/.config/zsh/functions/fzf-man 2>/dev/null
 # plugins
 source /usr/local/oh-my-zsh/plugins/extract/extract.plugin.zsh 2>/dev/null
 source /usr/local/oh-my-zsh/plugins/command-not-found/command-not-found.plugin.zsh 2>/dev/null
-#source /usr/local/oh-my-zsh/custom/plugins/zsh-autocompletions/zsh-autocompletions.plugin.zsh 2>/dev/null
 source /usr/local/oh-my-zsh/custom/plugins/zsh-autosuggestions/zsh-autosuggestions.plugin.zsh 2>/dev/null
 source /usr/local/oh-my-zsh/custom/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.plugin.zsh 2>/dev/null
