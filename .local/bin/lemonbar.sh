@@ -121,7 +121,7 @@ Time() {
 
 while true; do
     echo -e "\
-	%{l}$(Session)  $(Window) \
+	%{l}$(Session)  $(WindowName) \
 	%{c}$(Mpc) \
 	%{r}$(Wifi)  $(Cpu)  $(Battery)  $(Memory)  $(Volume)  $(Time)"
     sleep 0.1
