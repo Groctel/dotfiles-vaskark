@@ -36,4 +36,4 @@ lemonbar.sh | lemonbar -p \
 -g "$w"x"$h"+"$x"+"$y" \
 -B "$color00" \
 -F "#555" \
-| sh
+| $SHELL

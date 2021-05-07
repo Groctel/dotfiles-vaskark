@@ -43,7 +43,7 @@ Uptime() {
 Weather() {
 	wtr=$($HOME/.config/scripts/openweathermap-detailed.sh)
 	echo -e "$wtr"
-        sleep 5
+        sleep 300
 }
 
 # mpd
@@ -67,7 +67,7 @@ Wifi() {
 # cpu
 Cpu() {
 	temp=$($HOME/.config/scripts/cpu.sh)
-	echo -e "%{F"$color04"}%{F-} $temp"
+	echo -e "%{F"$color04"}%{F-} $temp"
 }
 
 # battery
@@ -89,9 +89,9 @@ Memory() {
 
 # volume
 Volume() {
-	NOTMUTED=$( amixer sget Master | grep "\[on\]" )
+	NOTMUTED=$( amixer -D pulse sget Master | grep "\[on\]" )
 	if [[ ! -z $NOTMUTED ]] ; then
-		VOL=$(awk -F"[][]" '/dB/ { print $2 }' <(amixer sget Master) | sed 's/%//g')
+		VOL=$(awk -F"[][]" '/Left:/ { print $2 }' <(amixer -D pulse sget Master) | sed 's/%//g')
 		if [ $VOL -ge 85 ] ; then
 			echo -e "%{F"$color04"}%{F-} ${VOL}%"
 		elif [ $VOL -ge 50 ] ; then
@@ -117,5 +117,5 @@ while true; do
     %{l}$(Uptime) \
     %{c}$(Mpc) \
     %{r}$(Wifi)  $(Cpu)  $(Battery)  $(Memory)  $(Volume)  $(Clock)"
-    sleep 0.5
+    sleep 0.1
 done
