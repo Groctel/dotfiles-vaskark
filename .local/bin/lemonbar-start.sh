@@ -19,8 +19,8 @@ color14=$(sed -n 15p ~/.cache/wal/colors)
 color15=$(sed -n 16p ~/.cache/wal/colors)
 
 # offset
-x=0
-y=0
+x=100
+y=10
 
 # width of desktop
 width=$(xdotool getdisplaygeometry | awk '{print $1}')
@@ -36,4 +36,5 @@ lemonbar.sh | lemonbar -p \
 -g "$w"x"$h"+"$x"+"$y" \
 -B "$color00" \
 -F "#555" \
+-d \
 | $SHELL

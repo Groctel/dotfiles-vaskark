@@ -8,14 +8,6 @@ PS1="%B%{$fg[red]%}[%{$fg[yellow]%}%n%{$fg[green]%}@%{$fg[blue]%}%M %{$fg[magent
 setopt autocd		# Automatically cd into typed directory.
 stty stop undef		# Disable ctrl-s to freeze terminal.
 
-# pure
-#fpath+=/usr/local/pure
-#autoload -U promptinit; promptinit
-#zstyle :prompt:pure:git:stash show yes
-#zstyle :prompt:pure:path color blue
-#zstyle ':prompt:pure:prompt:*' color cyan
-#prompt pure
-
 # aliases
 [ -f "$ZDOTDIR/aliases" ] && source "$ZDOTDIR/aliases"
 

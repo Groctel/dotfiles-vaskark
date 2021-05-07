@@ -30,26 +30,27 @@ User() {
 
 # hostname
 Hostname() {
-        echo -n "%{F#000}%{B"$color04"}  $(hostname)  %{B-}%{F-}"
+        host=$(uname -n)
+        echo -n "%{F#000}%{B"$color04"}  $(host)  %{B-}%{F-}"
 }
 
 # uptime
 Uptime() {
 	up=$($HOME/.config/scripts/system-uptime-pretty.sh)
-        echo -e "%{F#000}%{B"$color01"}   $up  %{B-}%{F-}"
+        echo -n "%{F#000}%{B"$color01"}   $up  %{B-}%{F-}"
 }
 
 # weather
 Weather() {
 	wtr=$($HOME/.config/scripts/openweathermap-detailed.sh)
-	echo -e "$wtr"
+	echo -n "$wtr"
         sleep 300
 }
 
 # mpd
 Mpc() {
 	MPCCUR=$(mpc current -f "%artist% >> %title%")
-	echo "%{A:mpc toggle 1>/dev/null:}%{A2:mpc prev 1>/dev/null:}%{A3:mpc next 1>/dev/null:}%{F"$color02"}%{F-} $MPCCUR%{A}%{A}%{A}"
+	echo -n "%{A:mpc toggle 1>/dev/null:}%{A2:mpc prev 1>/dev/null:}%{A3:mpc next 1>/dev/null:}%{F"$color02"}%{F-} $MPCCUR%{A}%{A}%{A}"
 }
 
 # wifi
@@ -67,13 +68,13 @@ Wifi() {
 # cpu
 Cpu() {
 	temp=$($HOME/.config/scripts/cpu.sh)
-	echo -e "%{F"$color04"}%{F-} $temp"
+	echo -n "%{F"$color04"}%{F-} $temp"
 }
 
 # battery
 Battery() {
-        BATPERC=$(acpi --battery | cut -d, -f2)
-        echo -e "%{F"$color04"}%{F-}$BATPERC"
+        BAT=$(acpi --battery | cut -d, -f2)
+        echo -n "%{F"$color04"}%{F-}$BAT"
 }
 
 # memory
@@ -92,16 +93,16 @@ Volume() {
 	NOTMUTED=$( amixer -D pulse sget Master | grep "\[on\]" )
 	if [[ ! -z $NOTMUTED ]] ; then
 		VOL=$(awk -F"[][]" '/Left:/ { print $2 }' <(amixer -D pulse sget Master) | sed 's/%//g')
-		if [ $VOL -ge 85 ] ; then
-			echo -e "%{F"$color04"}%{F-} ${VOL}%"
-		elif [ $VOL -ge 50 ] ; then
-			echo -e "%{F"$color04"}%{F-} ${VOL}%"
-		else
-			echo -e "%{F"$color04"}%{F-} ${VOL}%"
-		fi
+		echo -e "%{F"$color04"}%{F-} ${VOL}%"
 	else
 		echo -e "%{F#555}%{F-} --%"
 	fi
+}
+
+# window name
+Window() {
+    name=$(xdotool getwindowfocus getwindowname)
+    echo -n " $name"
 }
 
 # clock
@@ -114,7 +115,7 @@ Clock() {
 
 while true; do
     echo -e "\
-    %{l}$(Uptime) \
+        %{l}$(Session)  $(Window) \
     %{c}$(Mpc) \
     %{r}$(Wifi)  $(Cpu)  $(Battery)  $(Memory)  $(Volume)  $(Clock)"
     sleep 0.1
