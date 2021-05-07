@@ -19,8 +19,8 @@ color14=$(sed -n 15p ~/.cache/wal/colors)
 color15=$(sed -n 16p ~/.cache/wal/colors)
 
 # offset
-x=100
-y=10
+x=0
+y=0
 
 # width of desktop
 width=$(xdotool getdisplaygeometry | awk '{print $1}')
