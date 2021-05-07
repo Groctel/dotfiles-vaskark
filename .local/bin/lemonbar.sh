@@ -23,34 +23,34 @@ Session() {
 	echo -n "%{F#000}%{B"$color01"}  $DESKTOP_SESSION  %{B-}%{F-}"
 }
 
-# user
+# luser
 User() {
-        echo -n "%{F#000}%{B"$color04"}  $USER  %{B-}%{F-}"
+	echo -n "%{F#000}%{B"$color04"}  $USER  %{B-}%{F-}"
 }
 
 # hostname
 Hostname() {
-        host=$(uname -n)
-        echo -n "%{F#000}%{B"$color04"}  $(host)  %{B-}%{F-}"
+	HOST=$(uname -n)
+	echo -n "%{F#000}%{B"$color04"}  $(HOST)  %{B-}%{F-}"
 }
 
 # uptime
 Uptime() {
-	up=$($HOME/.config/scripts/system-uptime-pretty.sh)
-        echo -n "%{F#000}%{B"$color01"}   $up  %{B-}%{F-}"
+	UPTIME=$($HOME/.config/scripts/system-uptime-pretty.sh)
+	echo -n "%{F#000}%{B"$color01"}   $UPTIME  %{B-}%{F-}"
 }
 
 # weather
 Weather() {
-	wtr=$($HOME/.config/scripts/openweathermap-detailed.sh)
-	echo -n "$wtr"
-        sleep 300
+	WEATHER=$($HOME/.config/scripts/openweathermap-detailed.sh)
+	echo -n "$WEATHER"
+	sleep 300
 }
 
-# mpd
+# mpc
 Mpc() {
-	MPCCUR=$(mpc current -f "%artist% >> %title%")
-	echo -n "%{A:mpc toggle 1>/dev/null:}%{A2:mpc prev 1>/dev/null:}%{A3:mpc next 1>/dev/null:}%{F"$color02"}%{F-} $MPCCUR%{A}%{A}%{A}"
+	MPC=$(mpc current -f "%artist% >> %title%")
+	echo -n "%{A:mpc toggle 1>/dev/null:}%{A2:mpc prev 1>/dev/null:}%{A3:mpc next 1>/dev/null:}%{F"$color02"}%{F-} $MPC%{A}%{A}%{A}"
 }
 
 # wifi
@@ -67,25 +67,25 @@ Wifi() {
 
 # cpu
 Cpu() {
-	temp=$($HOME/.config/scripts/cpu.sh)
-	echo -n "%{F"$color04"}%{F-} $temp"
+	CPU=$($HOME/.config/scripts/cpu.sh)
+	echo -n "%{F"$color04"}%{F-} $CPU"
 }
 
 # battery
 Battery() {
-        BAT=$(acpi --battery | cut -d, -f2)
-        echo -n "%{F"$color04"}%{F-}$BAT"
+    BAT=$(acpi --battery | cut -d, -f2)
+    echo -n "%{F"$color04"}%{F-}$BAT"
 }
 
 # memory
 Memory() {
-	t=$(cat /proc/meminfo | grep MemTotal | awk '{print $2}')
-	f=$(cat /proc/meminfo | grep MemFree | awk '{print $2}')
-	b=$(cat /proc/meminfo | grep Buffers | awk '{print $2}')
-	c=$(cat /proc/meminfo | grep Cached | awk 'NR==1 {print $2}')
+	T=$(cat /proc/meminfo | grep MemTotal | awk '{print $2}')
+	F=$(cat /proc/meminfo | grep MemFree | awk '{print $2}')
+	B=$(cat /proc/meminfo | grep Buffers | awk '{print $2}')
+	C=$(cat /proc/meminfo | grep Cached | awk 'NR==1 {print $2}')
 
-	current=$(( 100*($t - $f - $b - $c) / $t ))
-	echo -e "%{F"$color04"}%{F-} $current%"
+	USED=$(( 100*($T - $F - $B - $C) / $T ))
+	echo -e "%{F"$color04"}%{F-} $USED%"
 }
 
 # volume
@@ -93,30 +93,36 @@ Volume() {
 	NOTMUTED=$( amixer -D pulse sget Master | grep "\[on\]" )
 	if [[ ! -z $NOTMUTED ]] ; then
 		VOL=$(awk -F"[][]" '/Left:/ { print $2 }' <(amixer -D pulse sget Master) | sed 's/%//g')
-		echo -e "%{F"$color04"}%{F-} ${VOL}%"
+		echo -e "%{F"$color04"}%{F-} $VOL%"
 	else
 		echo -e "%{F#555}%{F-} --%"
 	fi
 }
 
 # window name
-Window() {
-    name=$(xdotool getwindowfocus getwindowname)
-    echo -n " $name"
+WindowName() {
+    WINDOWNAME=$(xdotool getwindowfocus getwindowname)
+    echo -n " $WINDOWNAME"
 }
 
-# clock
-Clock() {
-        DATETIME=$(date "+%-I:%M %p")
-        echo -n "%{F#000}%{B"$color02"}   $DATETIME  %{B-}%{F-}"
+# date
+Date() {
+    DATE=$(date +"%a %b %d %Y")
+    echo -n "%{F#000}%{B"$color02"}   $DATE  %{B-}%{F-}"
+}
+
+# time
+Time() {
+    TIME=$(date +"%-I:%M %p")
+    echo -n "%{F#000}%{B"$color02"}   $TIME  %{B-}%{F-}"
 }
 
 ##########
 
 while true; do
     echo -e "\
-        %{l}$(Session)  $(Window) \
-    %{c}$(Mpc) \
-    %{r}$(Wifi)  $(Cpu)  $(Battery)  $(Memory)  $(Volume)  $(Clock)"
+	%{l}$(Session)  $(Window) \
+	%{c}$(Mpc) \
+	%{r}$(Wifi)  $(Cpu)  $(Battery)  $(Memory)  $(Volume)  $(Time)"
     sleep 0.1
 done
