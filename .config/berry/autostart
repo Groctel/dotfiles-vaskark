@@ -7,7 +7,8 @@ xset +fp /usr/local/share/fonts/misc &
 sxhkd -c $HOME/.config/berry/sxhkdrc $HOME/.config/sxhkd/sxhkdrc.common &
 
 # redshift
-redshift.sh &
+systemctl --user import-environment; systemctl --user start graphical-session.target
+systemctl --user restart redshift
 
 # picom
 picom --experimental-backends --config ~/.config/picom/picom.conf &
@@ -27,9 +28,6 @@ wal -R -o wal-extras.sh &
 
 # lemonbar
 lemonbar-start.sh &
-
-# touchegg
-#touchegg-wm.sh &
 
 # Set decoration geometry
 berryc border_width         0

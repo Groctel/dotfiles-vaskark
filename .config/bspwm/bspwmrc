@@ -7,7 +7,8 @@ xset +fp /usr/local/share/fonts/misc &
 pgrep -x picom || picom --experimental-backends --config ~/.config/bspwm/picom.conf &
 
 # redshift
-redshift.sh &
+systemctl --user import-environment; systemctl --user start graphical-session.target
+systemctl --user restart redshift.service
 
 # lock
 pgrep -x xautolock || xautolock -time 10 -locker 'lock.sh' -killer 'systemctl suspend' -corners 00-+ &
@@ -31,7 +32,7 @@ xsetroot -cursor_name left_ptr &
 
 # monitors
 bspc monitor eDP-1 -d 1 2 3 4 5
-#bspc monitor HDMI-2 -d 6 7 8 9 10
+bspc monitor HDMI-2 -d 6 7 8 9 10
 
 # desktop
 bspc config automatic_scheme 	        alternate

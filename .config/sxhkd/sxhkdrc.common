@@ -8,8 +8,8 @@ super + {_,shift +} Return
 	{alacritty,kitty}
 
 # program launchers
-super + {x,d}
-	rofi -show {run,drun}
+super + d
+	rofi -show drun
 
 # reload sxhkd
 super + control + r
