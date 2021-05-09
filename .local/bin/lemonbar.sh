@@ -20,37 +20,37 @@ color15=$(sed -n 16p ~/.cache/wal/colors)
 
 # session
 Session() {
-	echo -n "%{F#000}%{B"$color01"}  $DESKTOP_SESSION  %{B-}%{F-}"
+	echo "%{F#000}%{B"$color01"}  $DESKTOP_SESSION  %{B-}%{F-}"
 }
 
 # luser
 User() {
-	echo -n "%{F#000}%{B"$color04"}  $USER  %{B-}%{F-}"
+	echo "%{F#000}%{B"$color04"}  $USER  %{B-}%{F-}"
 }
 
 # hostname
 Hostname() {
 	HOST=$(uname -n)
-	echo -n "%{F#000}%{B"$color04"}  $(HOST)  %{B-}%{F-}"
+	echo "%{F#000}%{B"$color04"}  $(HOST)  %{B-}%{F-}"
 }
 
 # uptime
 Uptime() {
 	UPTIME=$($HOME/.config/scripts/system-uptime-pretty.sh)
-	echo -n "%{F#000}%{B"$color01"}   $UPTIME  %{B-}%{F-}"
+	echo "%{F#000}%{B"$color01"}   $UPTIME  %{B-}%{F-}"
 }
 
 # weather
 Weather() {
 	WEATHER=$($HOME/.config/scripts/openweathermap-detailed.sh)
-	echo -n "$WEATHER"
+	echo "$WEATHER"
 	sleep 300
 }
 
 # mpc
 Mpc() {
 	MPC=$(mpc current -f "%artist% >> %title%")
-	echo -n "%{A:mpc toggle 1>/dev/null:}%{A2:mpc prev 1>/dev/null:}%{A3:mpc next 1>/dev/null:}%{F"$color02"}%{F-} $MPC%{A}%{A}%{A}"
+	echo "%{A:mpc toggle 1>/dev/null:}%{A2:mpc prev 1>/dev/null:}%{A3:mpc next 1>/dev/null:}%{F"$color02"}%{F-} $MPC%{A}%{A}%{A}"
 }
 
 # wifi
@@ -60,7 +60,7 @@ Wifi() {
 		WIFISTR=$(( ${WIFISTR} * 100 / 70))
 		ESSID=$(iwconfig wlp2s0 | grep ESSID | sed 's/ //g' | sed 's/.*://' | cut -d "\"" -f 2)
 		if [ $WIFISTR -ge 1 ] ; then
-			echo -e "%{F"$color04"}%{F-} ${ESSID}"
+			echo "%{F"$color04"}%{F-} ${ESSID}"
 		fi
 	fi
 }
@@ -68,13 +68,13 @@ Wifi() {
 # cpu
 Cpu() {
 	CPU=$($HOME/.config/scripts/cpu.sh)
-	echo -n "%{F"$color04"}%{F-} $CPU"
+	echo "%{F"$color04"}%{F-} $CPU"
 }
 
 # battery
 Battery() {
     BAT=$(acpi --battery | cut -d, -f2)
-    echo -n "%{F"$color04"}%{F-}$BAT"
+    echo "%{F"$color04"}%{F-}$BAT"
 }
 
 # memory
@@ -85,7 +85,7 @@ Memory() {
 	C=$(cat /proc/meminfo | grep Cached | awk 'NR==1 {print $2}')
 
 	USED=$(( 100*($T - $F - $B - $C) / $T ))
-	echo -e "%{F"$color04"}%{F-} $USED%"
+	echo "%{F"$color04"}%{F-} $USED%"
 }
 
 # volume
@@ -93,28 +93,28 @@ Volume() {
 	NOTMUTED=$( amixer -D pulse sget Master | grep "\[on\]" )
 	if [[ ! -z $NOTMUTED ]] ; then
 		VOL=$(awk -F"[][]" '/Left:/ { print $2 }' <(amixer -D pulse sget Master) | sed 's/%//g')
-		echo -e "%{F"$color04"}%{F-} $VOL%"
+		echo "%{F"$color04"}%{F-} $VOL%"
 	else
-		echo -e "%{F#555}%{F-} --%"
+		echo "%{F#555}%{F-} --%"
 	fi
 }
 
 # window name
 WindowName() {
     WINDOWNAME=$(xdotool getwindowfocus getwindowname)
-    echo -n " $WINDOWNAME"
+    echo " $WINDOWNAME"
 }
 
 # date
 Date() {
     DATE=$(date +"%a %b %d %Y")
-    echo -n "%{F#000}%{B"$color02"}   $DATE  %{B-}%{F-}"
+    echo "%{F#000}%{B"$color02"}   $DATE  %{B-}%{F-}"
 }
 
 # time
 Time() {
     TIME=$(date +"%-I:%M %p")
-    echo -n "%{F#000}%{B"$color02"}   $TIME  %{B-}%{F-}"
+    echo "%{F#000}%{B"$color02"}   $TIME  %{B-}%{F-}"
 }
 
 ##########
