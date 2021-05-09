@@ -93,9 +93,9 @@ Volume() {
 	NOTMUTED=$( amixer -D pulse sget Master | grep "\[on\]" )
 	if [[ ! -z $NOTMUTED ]] ; then
 		VOL=$(awk -F"[][]" '/Left:/ { print $2 }' <(amixer -D pulse sget Master) | sed 's/%//g')
-		echo -e "%{F"$color04"}%{F-} $VOL%"
+		echo -e "%{F"$color04"}%{F-} $VOL%"
 	else
-		echo -e "%{F#555}%{F-} --%"
+		echo -e "%{F#555}%{F-} --%"
 	fi
 }
 
