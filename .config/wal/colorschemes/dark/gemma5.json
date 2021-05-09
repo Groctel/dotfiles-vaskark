@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/jason/Pictures/gemma-arterton-empire-magazine-2020-br-m.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#1f252d",
+        "foreground": "#a2a8ba",
+        "cursor": "#8c9abe"
+    },
+    "colors": {
+        "color0": "#1f252d",
+        "color1": "#cb8d56",
+        "color2": "#8ba089",
+        "color3": "#a79c46",
+        "color4": "#8e9aba",
+        "color5": "#b190af",
+        "color6": "#8c9abe",
+        "color7": "#a2a8ba",
+        "color8": "#333d4a",
+        "color9": "#ffb65c",
+        "color10": "#a4e39e",
+        "color11": "#e8d64b",
+        "color12": "#a3beff",
+        "color13": "#faa6f5",
+        "color14": "#a0beff",
+        "color15": "#d9e1fa"
+    }
+}

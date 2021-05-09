@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/jason/Pictures/fcjc7vgvtyx61.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#211d1b",
+        "foreground": "#c7c6c6",
+        "cursor": "#a8a5a3"
+    },
+    "colors": {
+        "color0": "#211d1b",
+        "color1": "#aa7a5f",
+        "color2": "#578baa",
+        "color3": "#c3b9b1",
+        "color4": "#aa958a",
+        "color5": "#96a2a9",
+        "color6": "#a8a5a3",
+        "color7": "#c7c6c6",
+        "color8": "#3c3531",
+        "color9": "#ee996a",
+        "color10": "#60b8ed",
+        "color11": "#ffedce",
+        "color12": "#f0bb9f",
+        "color13": "#aed8f0",
+        "color14": "#efd2be",
+        "color15": "#fffefe"
+    }
+}
