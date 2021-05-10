@@ -19,6 +19,7 @@ s=$d$f0$sep$t
 
 w=
 wifiname="$(iwgetid | cut -d \" -f2)"
+[[ -z $wifiname ]] && wifiname="--"
 
 h=
 wmname="$(echo $DESKTOP_SESSION)"

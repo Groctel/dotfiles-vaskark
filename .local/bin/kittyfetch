@@ -18,7 +18,7 @@ s=$d$f0$sep$t
 
 w=
 netname="$(nmcli -g common | grep -m 1 connected | awk '{print($4)}')"
-[[ -z $netname ]] && netname="n/a"
+[[ -z $netname ]] && netname="--"
 
 h=
 #wmname="$(xprop -id $(xprop -root -notype | awk '$1=="_NET_SUPPORTING_WM_CHECK:"{print $5}') -notype -f _NET_WM_NAME 8t | grep -m 1 "WM_NAME" | cut -f2 -d \")"
