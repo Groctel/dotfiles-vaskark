@@ -9,9 +9,9 @@ Xft.lcdfilter: lcddefault
 
 !! URxvt
 URxvt*termName: rxvt-unicode-256color
-URxvt*font: -*-lemon-*
-URxvt*boldFont: -*-lemon-*
-URxvt*letterSpace: 0
+URxvt*font: -*-scientifica-medium-r-*
+URxvt*boldFont: -*-scientifica-bold-r-*
+URxvt*letterSpace: -6
 URxvt*lineSpace: 0
 URxvt*geometry: 90x26
 URxvt*internalBorder: 20
@@ -86,7 +86,7 @@ xterm*translations: #override \n\
 !! XScreensaver
 xscreensaver.Dialog.headingFont: -*-scientifica-medium-r-*
 xscreensaver.Dialog.bodyFont: -*-scientifica-medium-r-*
-xscreensaver.Dialog.labelFont:-*-scientifica-medium-r-*
+xscreensaver.Dialog.labelFont: -*-scientifica-medium-r-*
 xscreensaver.Dialog.unameFont: -*-scientifica-medium-r-*
 xscreensaver.Dialog.buttonFont: -*-scientifica-medium-r-*
 xscreensaver.Dialog.dateFont: -*-scientifica-medium-r-*
