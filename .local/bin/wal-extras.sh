@@ -40,7 +40,7 @@ fi
 
 ## lemonbar
 if ps -A | grep lemonbar; then
-	killall -q lemonbar 2>/dev/null
+	pkill lemonbar 2>/dev/null
 	lemonbar-start.sh
 fi
 
@@ -61,4 +61,3 @@ sed -i "s|gradient_color_2.*$|gradient_color_2 = '$color10'|g" ~/.config/cava/co
 #	else
 #		killall -9 glava 2>/dev/null
 #fi
-
