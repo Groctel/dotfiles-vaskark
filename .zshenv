@@ -17,7 +17,7 @@ export SAVEHIST=10000
 export SSH_AUTH_SOCK="$XDG_RUNTIME_DIR/ssh-agent.socket"
 
 # mpd
-export MPD_HOST="$HOME/.mpd/socket"
+#export MPD_HOST="$HOME/.mpd/socket"
 
 # editor
 export EDITOR='nvim'
