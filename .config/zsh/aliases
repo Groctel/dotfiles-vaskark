@@ -1,5 +1,5 @@
 # general
-alias zr='rm -rf ~/.config/zsh/.zhistory && clear && exec zsh'
+alias zr='history -c && clear && exec zsh'
 alias zs='exec zsh'
 alias rm='rm -i'
 alias cp='cp -i'
@@ -42,7 +42,6 @@ alias mount='mount | column -t'
 alias u='unimatrix -c green -a -f -n -s 98'
 alias kc='kitty +kitten icat'
 alias kd='kitty +kitten diff'
-alias mpc='mpc --host=127.0.0.1 --port=6600'
 alias zc="$EDITOR $ZDOTDIR/.zshrc"
 alias zca="$EDITOR $ZDOTDIR/aliases"
 alias zce="$EDITOR $HOME/.zshenv"
@@ -76,6 +75,9 @@ alias jce='journalctl -p 3 -xe'
 
 # bluetoothctl
 alias btc='bluetoothctl'
+
+# pipewire
+alias rpw='systemctl --user restart pipewire{,-pulse}.{socket,service} pipewire-media-session.service'
 
 # git
 alias gc='git commit -a'
