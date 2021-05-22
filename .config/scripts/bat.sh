@@ -13,8 +13,11 @@ case $(uname -s) in
 	OpenBSD*)
 		p=$(apm | awk 'NR==1 { print $4 }')
 		;;
+	FreeBSD*)
+		p=$(apm | awk 'NR==5 { print $4 }')
+		;;
 	*)
-		echo "Unsupported os: $(uname -s)" >&2
+		#echo "Unsupported os: $(uname -s)" >&2
         	exit 1
     		;;
 esac
