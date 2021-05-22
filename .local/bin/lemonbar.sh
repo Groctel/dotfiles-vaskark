@@ -36,7 +36,7 @@ Hostname() {
 
 # uptime
 Uptime() {
-	UPTIME=$($HOME/.config/scripts/system-uptime-pretty.sh)
+	UPTIME=$($HOME/.config/scripts/uptime.sh)
 	echo "%{F#000}%{B"$color01"}   $UPTIME  %{B-}%{F-}"
 }
 
@@ -73,8 +73,8 @@ Cpu() {
 
 # battery
 Battery() {
-    BAT=$(acpi --battery | cut -d, -f2)
-    echo "%{F"$color04"}%{F-}$BAT"
+    BAT=$($HOME/.config/scripts/bat.sh)
+    echo "%{F"$color04"}%{F-} $BAT"
 }
 
 # memory
@@ -113,7 +113,7 @@ Date() {
 
 # time
 Time() {
-    TIME=$(date +"%-I:%M %p")
+    TIME=$(date +"%I:%M %p")
     echo "%{F#000}%{B"$color02"}   $TIME  %{B-}%{F-}"
 }
 
@@ -121,8 +121,8 @@ Time() {
 
 while true; do
     echo -e "\
-	%{l}$(Session)  $(WindowName) \
+	%{l}$(Uptime)  $(WindowName) \
 	%{c}$(Mpc) \
-	%{r}$(Wifi)  $(Cpu)  $(Battery)  $(Memory)  $(Volume)  $(Time)"
+	%{r}$(Battery)  $(Time)"
     sleep 0.1
 done
