@@ -8,7 +8,7 @@ p=
 
 case $(uname -s) in
 	Linux*)
-		p=$(acpi --battery | cut -d, -f2)
+		p=$(acpi | awk 'NR==1 { print $5 }')
 		;;
 	OpenBSD*)
 		p=$(apm | awk 'NR==1 { print $4 }')
