@@ -113,7 +113,7 @@ Date() {
 
 # time
 Time() {
-    TIME=$(date +"%I:%M %p")
+    TIME=$(date +"%-I:%M %p")
     echo "%{F#000}%{B"$color02"}   $TIME  %{B-}%{F-}"
 }
 
@@ -123,6 +123,6 @@ while true; do
     echo -e "\
 	%{l}$(Uptime)  $(WindowName) \
 	%{c}$(Mpc) \
-	%{r}$(Battery)  $(Time)"
+	%{r}$(Wifi)  $(Cpu)  $(Battery)  $(Memory)  $(Volume)  $(Time)"
     sleep 0.1
 done
