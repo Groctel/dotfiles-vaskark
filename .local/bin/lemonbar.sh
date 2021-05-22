@@ -31,7 +31,7 @@ User() {
 # hostname
 Hostname() {
 	HOST=$(uname -n)
-	echo "%{F#000}%{B"$color04"}  $(HOST)  %{B-}%{F-}"
+	echo "%{F#000}%{B"$color04"}  $HOST  %{B-}%{F-}"
 }
 
 # uptime
@@ -121,7 +121,7 @@ Time() {
 
 while true; do
     echo -e "\
-	%{l}$(Session)  $(WindowName) \
+	%{l}$(Hostname)  $(WindowName) \
 	%{c}$(Mpc) \
 	%{r}$(Wifi)  $(Cpu)  $(Battery)  $(Memory)  $(Volume)  $(Time)"
     sleep 0.1
