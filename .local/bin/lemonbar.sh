@@ -113,7 +113,7 @@ Date() {
 
 # time
 Time() {
-    TIME=$(date +"%-I:%M %p")
+    TIME=$($HOME/.config/scripts/time.sh)
     echo "%{F#000}%{B"$color02"}   $TIME  %{B-}%{F-}"
 }
 
@@ -121,7 +121,7 @@ Time() {
 
 while true; do
     echo -e "\
-	%{l}$(Uptime)  $(WindowName) \
+	%{l}$(Session)  $(WindowName) \
 	%{c}$(Mpc) \
 	%{r}$(Wifi)  $(Cpu)  $(Battery)  $(Memory)  $(Volume)  $(Time)"
     sleep 0.1
