@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/jason/Pictures/arya.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#1d1d1d",
+        "foreground": "#898989",
+        "cursor": "#767676"
+    },
+    "colors": {
+        "color0": "#1d1d1d",
+        "color1": "#9c684f",
+        "color2": "#4f8366",
+        "color3": "#8c8421",
+        "color4": "#687f61",
+        "color5": "#6e7e3a",
+        "color6": "#767676",
+        "color7": "#898989",
+        "color8": "#363636",
+        "color9": "#d78459",
+        "color10": "#56bc83",
+        "color11": "#c4b61e",
+        "color12": "#7fb271",
+        "color13": "#95af43",
+        "color14": "#8ea49d",
+        "color15": "#c4c4c4"
+    }
+}

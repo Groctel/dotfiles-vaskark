@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/jason/Pictures/meh.ro11799_4.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#030506",
+        "foreground": "#9fa4a5",
+        "cursor": "#76a7aa"
+    },
+    "colors": {
+        "color0": "#030506",
+        "color1": "#b24936",
+        "color2": "#3c6e67",
+        "color3": "#6a7468",
+        "color4": "#264f61",
+        "color5": "#50879a",
+        "color6": "#76a7aa",
+        "color7": "#9fa4a5",
+        "color8": "#112129",
+        "color9": "#f65437",
+        "color10": "#429a8d",
+        "color11": "#80a578",
+        "color12": "#286a86",
+        "color13": "#58b6d7",
+        "color14": "#86e9ef",
+        "color15": "#d9e0e2"
+    }
+}
