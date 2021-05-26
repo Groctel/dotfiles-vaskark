@@ -1,3 +1,6 @@
+# path
+export PATH="$HOME/.local/bin:$PATH"
+
 # pure
 fpath+=/usr/local/pure
 autoload -U promptinit; promptinit
