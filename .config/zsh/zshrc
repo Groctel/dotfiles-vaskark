@@ -1,5 +1,6 @@
 # path
 export PATH="$HOME/.local/bin:$PATH"
+typeset -U PATH path
 
 # pure
 fpath+=/usr/local/pure

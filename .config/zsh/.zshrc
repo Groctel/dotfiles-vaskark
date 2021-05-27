@@ -1,5 +1,6 @@
 # path
 export PATH="$HOME/.local/bin:$PATH"
+typeset -U PATH path
 
 # Path to your oh-my-zsh installation.
 export ZSH=/usr/local/oh-my-zsh
