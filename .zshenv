@@ -1,7 +1,3 @@
-# path
-export PATH="$HOME/.local/bin:$PATH"
-typeset -U PATH path
-
 # xdg
 export XDG_CONFIG_HOME=$HOME/.config
 export XDG_DATA_HOME=$HOME/.local/share
@@ -14,10 +10,10 @@ export HISTSIZE=10000
 export SAVEHIST=10000
 
 # ssh
-export SSH_AUTH_SOCK="$XDG_RUNTIME_DIR/ssh-agent.socket"
-
-# mpd
-#export MPD_HOST="$HOME/.mpd/socket"
+if [ -n "$DESKTOP_SESSION" ];then
+    eval $(ssh-agent -s)
+    export SSH_AUTH_SOCK
+fi
 
 # editor
 export EDITOR='nvim'
@@ -26,6 +22,9 @@ export VISUAL='nvim'
 # man
 #export MANPAGER="sh -c 'col -bx | bat -l man -p'"
 export MANPAGER="nvim -c 'set ft=man' -"
+
+# scaling
+export QT_AUTO_SCREEN_SCALE_FACTOR=0
 
 # pfetch
 export PF_INFO="kernel uptime shell wm memory palette" 
