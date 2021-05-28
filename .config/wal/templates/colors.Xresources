@@ -97,8 +97,8 @@ Sxiv.background: {color0}
 Sxiv.foreground: {color7}
 
 ! dmenu
-dmenu.font: scientifica-8
-dmenu.background: {color2}
-dmenu.foreground: {color0}
+dmenu.font: scientifica-8:bold
+dmenu.background: {color0}
+dmenu.foreground: #555
 dmenu.selbackground: {color0}
 dmenu.selforeground: {color2}
