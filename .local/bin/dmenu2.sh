@@ -14,4 +14,4 @@ dmenu_run \
 -h 22 \
 -x $b \
 -y $b \
--w $w \
+-z $w \

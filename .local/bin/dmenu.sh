@@ -10,8 +10,8 @@ w=$(( width-(2*b) ))
 
 # dmenu
 dmenu_run \
--p ' dmenu ' \
+-p ' dmenu' \
 -h 28 \
 -x $b \
 -y $b \
--w $w \
+-z $w \
