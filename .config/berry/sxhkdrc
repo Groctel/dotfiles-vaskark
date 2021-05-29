@@ -3,18 +3,9 @@
 #
 
 
-# xmenu
-#super + z
-#	xmenu.sh
-	
-# wal
-super + {_,shift +} F12
-	wal -f random_user -o wal-extras.sh {-f random_user,-R}
-
 # lemonbar
 super + semicolon
-	killall -9 lemonbar 2>/dev/null || lemonbar-start.sh
-	#killall -9 polybar || polybar -r -c ~/.config/polybar/config bottom
+	pkill lemonbar 2>/dev/null || lemonbar-start.sh
 
 
 #

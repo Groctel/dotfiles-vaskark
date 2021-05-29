@@ -11,14 +11,14 @@ systemctl --user import-environment; systemctl --user start graphical-session.ta
 systemctl --user restart redshift
 
 # picom
-picom --experimental-backends --config ~/.config/picom/picom.conf &
+picom --experimental-backends --config ~/.config/berry/picom.conf &
 
 # polkit
 /usr/lib/policykit-1-gnome/polkit-gnome-authentication-agent-1 &
-#/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
+# /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
 
 # xmenu
-#xclickroot -r xmenu.sh &
+# xclickroot -r xmenu.sh &
 
 # lock
 xautolock -time 10 -locker 'lock.sh' -killer 'systemctl suspend' -corners 00-+ &
@@ -28,6 +28,9 @@ wal -R -o wal-extras.sh &
 
 # lemonbar
 lemonbar-start.sh &
+
+# polybar
+# polybar -r -c ~/.config/polybar/config main &
 
 # Set decoration geometry
 berryc border_width         0
