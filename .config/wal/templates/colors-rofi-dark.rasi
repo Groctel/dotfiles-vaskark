@@ -154,12 +154,12 @@
 #entry {{
     spacing: 0;
     text-color: @normal-foreground;
-    padding: 4px;
+    padding: 6px;
 }}
 
 #prompt {{
     spacing: 0;
     text-color: {color0};
     background-color: {color1};
-    padding: 4px;
+    padding: 6px 8px 6px 8px;
 }}
