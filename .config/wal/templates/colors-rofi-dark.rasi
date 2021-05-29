@@ -160,6 +160,6 @@
 #prompt {{
     spacing: 0;
     text-color: {color0};
-    background-color: {color5};
+    background-color: {color1};
     padding: 4px;
 }}
