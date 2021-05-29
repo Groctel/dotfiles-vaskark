@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/jason/Pictures/63-631741_shelby-cobra-wallpaper-hd-m.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#0b0907",
+        "foreground": "#adb6b9",
+        "cursor": "#9098ad"
+    },
+    "colors": {
+        "color0": "#0b0907",
+        "color1": "#d15b58",
+        "color2": "#7a7a76",
+        "color3": "#a3866b",
+        "color4": "#5b6077",
+        "color5": "#afaba8",
+        "color6": "#9098ad",
+        "color7": "#adb6b9",
+        "color8": "#2a2219",
+        "color9": "#ff635f",
+        "color10": "#aeae89",
+        "color11": "#e5ad79",
+        "color12": "#6874a8",
+        "color13": "#f9dbc4",
+        "color14": "#a6bcf5",
+        "color15": "#e6f3f7"
+    }
+}

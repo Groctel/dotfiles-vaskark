@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/jason/Pictures/fgvKe0O-skyfall.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#191a1a",
+        "foreground": "#c5c5c5",
+        "cursor": "#5d686c"
+    },
+    "colors": {
+        "color0": "#191a1a",
+        "color1": "#6b554a",
+        "color2": "#3e5e65",
+        "color3": "#6a858d",
+        "color4": "#5a7882",
+        "color5": "#5a4840",
+        "color6": "#5d686c",
+        "color7": "#c5c5c5",
+        "color8": "#313333",
+        "color9": "#966a54",
+        "color10": "#46808d",
+        "color11": "#79b5c7",
+        "color12": "#66a3b7",
+        "color13": "#7e5949",
+        "color14": "#6b8d99",
+        "color15": "#ffffff"
+    }
+}
