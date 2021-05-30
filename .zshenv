@@ -9,12 +9,6 @@ export HISTFILE="$ZDOTDIR/zhistory"
 export HISTSIZE=10000
 export SAVEHIST=10000
 
-# ssh
-if [ -n "$DESKTOP_SESSION" ];then
-    eval $(ssh-agent -s)
-    export SSH_AUTH_SOCK
-fi
-
 # editor
 export EDITOR='nvim'
 export VISUAL='nvim'

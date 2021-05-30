@@ -8,8 +8,8 @@ super + {_,shift +} Return
 	{alacritty,kitty}
 
 # program launchers
-super + d
-	rofi -show drun
+super + {d,x}
+	{rofi -show drun,dmenu.sh}
 
 # reload sxhkd
 super + control + r
@@ -20,8 +20,10 @@ super + {_,shift +} Escape
 	{lock.sh,xscreensaver-command -lock}
 
 # file managers
+#super + {_,shift +} F1
+#	{nemo,nemo-pkexec}
 super + {_,shift +} F1
-	{nemo,nemo-pkexec}
+	{thunar,thunar-pkexec}
 
 # browsers
 super + {_,shift +} F2
@@ -67,12 +69,14 @@ XF86MonBrightness{Up,Down}
 
 # wal
 super + {_,shift +} F12
-	wal -o wal-extras.sh {-f random_user,-R}
+	wal {-f random_user,-R} -o wal-extras.sh 
         
 # sxiv
 super + shift + equal
 	sxiv -rt "$HOME/Pictures/wow"
 
 # reboot, shutdown
-super + {shift,ctrl} + Delete
-	{reboot,poweroff}
+#super + {shift,ctrl} + Delete
+#	{reboot,poweroff}
+super + shift + Delete
+	exit.sh
