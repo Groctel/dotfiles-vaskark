@@ -5,8 +5,9 @@ configuration {
   sidebar-mode:		false;	
   hide-scrollbar:     	true;
   disable-history:    	true;
+  width: 	      	12;
+  lines:              	6;
   font:			"scientifica bold 8";
-  lines:            5;
   columns:            	1;
   modi: 	      	"drun,run,ssh,emoji,keys";
   display-drun:       	"Apps:";
@@ -18,5 +19,5 @@ configuration {
   display-keys:     	"Keys:";
   terminal:           	"alacritty";
   matching:             "normal";
-  theme:          "~/.config/rofi/themes/drun.rasi";
+  theme:	      	"~/.cache/wal/colors-rofi-dark.rasi";
 }

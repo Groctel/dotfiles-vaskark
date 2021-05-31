@@ -1,7 +1,8 @@
-/**
+/*
  * This theme is intended for a simple display of a 5
  * items list on a 1366x768 pixels resolution.
  */
+
 * {
   /* Variables */
   accent:           #2A9C94;
@@ -12,43 +13,51 @@
   /* Settings */
   background-color: @background;
   text-color:       @foreground;
-  font:             "Comfortaa Bold 12";
+  font:             "scientifica bold 8";
 }
-#window {
-  width: 500px;
-  height: 410px;
+
+#window { 
+  width: 400px; 
   /*       vertical   horizontal */
   padding: 20px;
 }
+
 /* Input window */
 inputbar,
 prompt,
 textbox-prompt-colon,
+
 entry {
   background-color: @background-light;
 }
+
 #inputbar {
   children: [ prompt, textbox-prompt-colon, entry ];
   /*      vertical    horizontal */
   margin: 4px         0px;
 }
+
 #prompt {
   /*       vertical   horizontal */
   padding: 10px       20px;
   background-color: @accent;
   text-color: @background;
 }
+
 #textbox-prompt-colon {
   expand: false;
-  str: "  : :  ";
+  str: ">>";
   padding: 10px;
 }
+
 #entry {
   text-color: @accent;
   /*       top    right   bottom  left */
   padding: 10px   10px    10px    0px;
 }
+
 /* List of entries */
+
 #element {
   padding: 12px;
   /*      vertical    horizontal */
@@ -58,6 +67,7 @@ entry {
   background-color: @background-light;
   border-color: @background-light;
 }
+
 #element.selected {
   background-color: @background-focus;
   text-color: @accent;
