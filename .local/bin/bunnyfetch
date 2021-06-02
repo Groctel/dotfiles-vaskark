@@ -2,6 +2,7 @@
 # Tiny colored fetch script
 # Requires Typicons Font to display the icons
 # elenapan @ github
+# modified
 
 f=3 b=4
 for j in f b; do
@@ -18,15 +19,14 @@ sep=
 s=$d$f0$sep$t
 
 w=
-wifiname="$(iwgetid | cut -d \" -f2)"
-[[ -z $wifiname ]] && wifiname="..."
+netname="$(nmcli -g common | grep -m 1 connected | awk '{print($4)}')"
+[[ -z $netname ]] && netname="..."
 
 h=
 wmname="$(echo $DESKTOP_SESSION)"
 
 k=
 kernel="$(uname -r | cut -d '-' -f1)"
-#kernel="$(uname -r)"
 
 r=
 resolution="$(xwininfo -root | grep geometry | awk '{print $2}' | cut -d + -f1)"
@@ -48,6 +48,6 @@ cat << EOF
   (\ /)     $f3$k  $t$kernel
   ( $d. .$t)    $f2$sh  $t$shell
   c($f1"$t)($f1"$t)   $f5$r  $t$resolution
-            $f4$w  $t$wifiname
+            $f4$w  $t$netname
 
 EOF
