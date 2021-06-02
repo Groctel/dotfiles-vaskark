@@ -2,15 +2,12 @@
 # wm independent hotkeys
 #
 
-# wal
-super + {_,shift +} F12
-	wal -o wal-extras.sh {-f random_user,-R}
 
 # polybar
 super + {_,shift +} semicolon
 	polybar-msg cmd {toggle,restart}
 super + ctrl + semicolon
-	killall -9 polybar || polybar -r -c ~/.config/bspwm/polybar/config.bspwm main
+	pkill polybar || polybar -r -c ~/.config/bspwm/polybar/config.bspwm main
 
 
 #

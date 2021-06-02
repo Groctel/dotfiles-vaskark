@@ -6,6 +6,8 @@
 # lemonbar
 super + semicolon
 	pkill lemonbar 2>/dev/null || lemonbar-start.sh
+super + control + semicolon
+    killall -9 lemonbar
 
 
 #

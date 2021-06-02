@@ -47,7 +47,7 @@ color15 = ${xrdb:color15:#dfdedd}
 [bar/main]
 ;monitor = ${env:MONITOR:eDP-1}
 width = 100%
-height = 20
+height = 18
 bottom = false
 fixed-center = true
 enable-ipc = true
@@ -67,7 +67,7 @@ module-margin = 1
 font-0 = "scientifica:bold:size=8;2"
 font-1 = "siji:size=9;2"
 
-modules-left = bspwm-i
+modules-left = mod bspwm
 modules-center = mpd
 modules-right = wireless uptime memory temp battery volume date
 
@@ -151,8 +151,8 @@ format-background = ${colors.color0}
 format-foreground = ${colors.color5}
 format-padding = 0
 
-label-monocle = ""
-label-tiled = ""
+label-monocle = " "
+label-tiled = " "
 
 ;label-floating = " "
 ;label-pseudotiled = " "
