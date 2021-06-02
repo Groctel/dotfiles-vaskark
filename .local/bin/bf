@@ -20,7 +20,7 @@ s=$d$f0$sep$t
 
 w=
 netname="$(nmcli -g common | grep -m 1 connected | awk '{print($4)}')"
-[[ -z $netname ]] && netname="..."
+[[ -z $netname ]] && netname="--"
 
 h=
 wmname="$(echo $DESKTOP_SESSION)"
