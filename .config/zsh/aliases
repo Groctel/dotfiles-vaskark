@@ -49,10 +49,7 @@ alias h='htop -u $USER'
 alias xc="$EDITOR ~/.Xresources"
 alias xu='xrdb ~/.Xresources'
 alias nvc="$EDITOR ~/.config/nvim/init.vim"
-alias bf='bunnyfetch'
 alias pf='clear;pfetch'
-alias af='clear;afetch'
-alias kf='kittyfetch'
 alias n='nnn -D -C -E -o -T e -a -x'
 alias c='cava'
 alias p='pipes-rs'
@@ -62,6 +59,7 @@ alias egrep='egrep --color=auto'
 alias ping='ping -c 5'
 alias path='print -l $path'
 alias fr='feh --randomize --bg-fill --recursive --no-fehbg ~/Pictures/*.(png|jpg)'
+alias rmpd='systemctl --user daemon-reload; systemctl --user restart mpd'
 
 # bindkey help
 alias rhb='run-help bindkey'
