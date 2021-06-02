@@ -44,15 +44,15 @@ entry {{
 
 #textbox-prompt-colon {{
   expand: false;
-  str: "🔎";
-  padding: 10px;
+  str: ">>";
+  padding: 8px;
   text-color: @accent;
 }}
 
 #entry {{
   text-color: @accent;
   /*       top    right   bottom  left */
-  padding: 10px   10px    10px    0px;
+  padding: 8px   10px    8px    0px;
 }}
 
 /* List of entries */
