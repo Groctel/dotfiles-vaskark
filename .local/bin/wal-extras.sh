@@ -41,7 +41,7 @@ fi
 ## lemonbar
 if ps -A | grep lemonbar; then
 	pkill lemonbar 2>/dev/null
-	lemonbar-start.sh
+	lemonbar-start.sh &
 fi
 
 ## cava
@@ -49,7 +49,7 @@ sed -i "s|gradient_color_1.*$|gradient_color_1 = '$color02'|g" ~/.config/cava/co
 sed -i "s|gradient_color_2.*$|gradient_color_2 = '$color10'|g" ~/.config/cava/config
 
 ## glava
-sed -i "s|#define COLOR @fg.*$|#define COLOR @fg:mix("$color02"FF, "$color02"FF, clamp(d / GRADIENT, 0, 1))|g" ~/.config/glava/bars.glsl
+sed -i "s|#define COLOR @fg.*$|#define COLOR @fg:mix("$color02"FF, "$color02"AA, clamp(d / GRADIENT, 0, 1))|g" ~/.config/glava/bars.glsl
 if ps -A | grep glava; then
 	pkill glava 2>/dev/null
 	glava -d &

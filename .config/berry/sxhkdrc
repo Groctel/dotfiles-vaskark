@@ -7,11 +7,15 @@
 super + semicolon
 	pkill lemonbar 2>/dev/null || lemonbar-start.sh
 super + control + semicolon
-    killall -9 lemonbar
+    killall -9 lemonbar 2>/dev/null
 
 # glava
 super + g
     pkill glava 2>/dev/null || glava -d
+
+# viz
+super + v
+    viz.sh
 
 
 #
