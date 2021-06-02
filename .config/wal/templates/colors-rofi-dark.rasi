@@ -14,7 +14,7 @@
 }}
 
 #window {{
-  width: 320px; 
+  width: 250px; 
   /*       vertical   horizontal */
   padding: 20px;
 
