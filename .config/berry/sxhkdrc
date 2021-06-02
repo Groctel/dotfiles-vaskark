@@ -9,6 +9,10 @@ super + semicolon
 super + control + semicolon
     killall -9 lemonbar
 
+# glava
+super + g
+    pkill glava 2>/dev/null || glava -d
+
 
 #
 # berry hotkeys
