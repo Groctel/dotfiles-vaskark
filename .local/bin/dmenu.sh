@@ -7,6 +7,7 @@
 x=0
 y=0
 w=$(( $(xdotool getdisplaygeometry | awk '{print $1}') - (2*x) ))
+h=30
 
 # prompts
 #-p '  ' \
@@ -15,7 +16,7 @@ w=$(( $(xdotool getdisplaygeometry | awk '{print $1}') - (2*x) ))
 # dmenu
 dmenu_run \
 -p '  ' \
--h 28 \
+-h $h \
 -x $x \
 -y $y \
 -z $w \

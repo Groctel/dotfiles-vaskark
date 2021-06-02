@@ -1,43 +1,30 @@
 #!/bin/bash
 
-# colors
-color00=$(sed -n 1p ~/.cache/wal/colors)
-color01=$(sed -n 2p ~/.cache/wal/colors)
-color02=$(sed -n 3p ~/.cache/wal/colors)
-color03=$(sed -n 4p ~/.cache/wal/colors)
-color04=$(sed -n 5p ~/.cache/wal/colors)
-color05=$(sed -n 6p ~/.cache/wal/colors)
-color06=$(sed -n 7p ~/.cache/wal/colors)
-color07=$(sed -n 8p ~/.cache/wal/colors)
-color08=$(sed -n 9p ~/.cache/wal/colors)
-color09=$(sed -n 10p ~/.cache/wal/colors)
-color10=$(sed -n 11p ~/.cache/wal/colors)
-color11=$(sed -n 12p ~/.cache/wal/colors)
-color12=$(sed -n 13p ~/.cache/wal/colors)
-color13=$(sed -n 14p ~/.cache/wal/colors)
-color14=$(sed -n 15p ~/.cache/wal/colors)
-color15=$(sed -n 16p ~/.cache/wal/colors)
+# wal
+. "${HOME}/.cache/wal/colors.sh"
+
+##########
 
 # session
 Session() {
-	echo "%{F#000}%{B"$color01"}  $DESKTOP_SESSION  %{B-}%{F-}"
+	echo "%{F#000}%{B"$color1"}  $DESKTOP_SESSION  %{B-}%{F-}"
 }
 
 # luser
 User() {
-	echo "%{F#000}%{B"$color04"}  $USER  %{B-}%{F-}"
+	echo "%{F#000}%{B"$color4"}  $USER  %{B-}%{F-}"
 }
 
 # hostname
 Hostname() {
 	HOST=$(uname -n)
-	echo "%{F#000}%{B"$color04"}  $HOST  %{B-}%{F-}"
+	echo "%{F#000}%{B"$color4"}  $HOST  %{B-}%{F-}"
 }
 
 # uptime
 Uptime() {
 	UPTIME=$($HOME/.config/scripts/uptime.sh)
-	echo "%{F#000}%{B"$color01"}   $UPTIME  %{B-}%{F-}"
+	echo "%{F#000}%{B"$color1"}   $UPTIME  %{B-}%{F-}"
 }
 
 # weather
@@ -50,7 +37,7 @@ Weather() {
 # mpc
 Mpc() {
 	MPC=$(mpc current -f "%artist% >> %title%")
-	echo "%{A:mpc toggle 1>/dev/null:}%{A2:mpc prev 1>/dev/null:}%{A3:mpc next 1>/dev/null:}%{F"$color02"}%{F-} $MPC%{A}%{A}%{A}"
+	echo "%{A:mpc toggle 1>/dev/null:}%{A2:mpc prev 1>/dev/null:}%{A3:mpc next 1>/dev/null:}%{F"$color2"}%{F-} $MPC%{A}%{A}%{A}"
 }
 
 # wifi
@@ -60,7 +47,7 @@ Wifi() {
 		WIFISTR=$(( ${WIFISTR} * 100 / 70))
 		ESSID=$(iwconfig wlp2s0 | grep ESSID | sed 's/ //g' | sed 's/.*://' | cut -d "\"" -f 2)
 		if [ $WIFISTR -ge 1 ] ; then
-			echo "%{F"$color04"}%{F-} ${ESSID}"
+			echo "%{F"$color4"}%{F-} ${ESSID}"
 		fi
 	fi
 }
@@ -68,13 +55,13 @@ Wifi() {
 # cpu
 Cpu() {
 	CPU=$($HOME/.config/scripts/cpu.sh)
-	echo "%{F"$color04"}%{F-} $CPU"
+	echo "%{F"$color4"}%{F-} $CPU"
 }
 
 # battery
 Battery() {
     BAT=$($HOME/.config/scripts/bat.sh)
-    echo "%{F"$color04"}%{F-} $BAT"
+    echo "%{F"$color4"}%{F-} $BAT"
 }
 
 # memory
@@ -85,7 +72,7 @@ Memory() {
 	C=$(cat /proc/meminfo | grep Cached | awk 'NR==1 {print $2}')
 
 	USED=$(( 100*($T - $F - $B - $C) / $T ))
-	echo "%{F"$color04"}%{F-} $USED%"
+	echo "%{F"$color4"}%{F-} $USED%"
 }
 
 # volume
@@ -93,7 +80,7 @@ Volume() {
 	NOTMUTED=$( amixer -D pulse sget Master | grep "\[on\]" )
 	if [[ ! -z $NOTMUTED ]] ; then
 		VOL=$(awk -F"[][]" '/Left:/ { print $2 }' <(amixer -D pulse sget Master) | sed 's/%//g')
-		echo "%{F"$color04"}%{F-} $VOL%"
+		echo "%{F"$color4"}%{F-} $VOL%"
 	else
 		echo "%{F#555}%{F-} --%"
 	fi
@@ -105,16 +92,22 @@ WindowName() {
     echo " $WINDOWNAME"
 }
 
+# reddit
+Reddit() {
+	n=$($HOME/.config/scripts/reddit.sh)
+    echo "%{F"$color4"}%{F-} $n"
+}
+
 # date
 Date() {
     DATE=$(date +"%a %b %d %Y")
-    echo "%{F#000}%{B"$color02"}   $DATE  %{B-}%{F-}"
+    echo "%{F#000}%{B"$color2"}   $DATE  %{B-}%{F-}"
 }
 
 # time
 Time() {
     TIME=$($HOME/.config/scripts/time.sh)
-    echo "%{F#000}%{B"$color02"}   $TIME  %{B-}%{F-}"
+    echo "%{A3:gnome-clocks:}%{F#000}%{B"$color2"}   $TIME  %{B-}%{F-}%{A}"
 }
 
 ##########
