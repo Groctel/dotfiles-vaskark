@@ -2,10 +2,10 @@
 
 ## autostart
 xset +fp /usr/local/share/fonts/misc &
-wal -R -o wal-extras.sh &
 picom --experimental-backends --config ~/.config/picom/picom.conf &
 xautolock -time 10 -locker 'lock.sh' -killer 'systemctl suspend' -corners 00-+ &
 /usr/lib/policykit-1-gnome/polkit-gnome-authentication-agent-1 &
+wal -R -o wal-extras.sh &
 lemonbar-start.sh &
 
 ## relaunch sowm if the binary changes, otherwise bail

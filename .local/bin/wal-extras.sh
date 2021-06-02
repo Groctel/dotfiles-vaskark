@@ -1,6 +1,6 @@
 #!/bin/sh
 
-# colors
+## colors
 color00=$(sed -n 1p ~/.cache/wal/colors)
 color01=$(sed -n 2p ~/.cache/wal/colors)
 color02=$(sed -n 3p ~/.cache/wal/colors)
@@ -18,7 +18,7 @@ color13=$(sed -n 14p ~/.cache/wal/colors)
 color14=$(sed -n 15p ~/.cache/wal/colors)
 color15=$(sed -n 16p ~/.cache/wal/colors)
 
-# berry
+## berry
 if ps -A | grep berry; then
 	berry00=$(awk 'NR==1 {print substr($1,2,7)}' ~/.cache/wal/colors)
 	berry02=$(awk 'NR==3 {print substr($1,2,7)}' ~/.cache/wal/colors)
@@ -47,17 +47,3 @@ fi
 ## cava
 sed -i "s|gradient_color_1.*$|gradient_color_1 = '$color02'|g" ~/.config/cava/config
 sed -i "s|gradient_color_2.*$|gradient_color_2 = '$color10'|g" ~/.config/cava/config
-
-## glava
-#glava1=$(sed -n 9p ~/.cache/wal/colors)FF
-#glava2=$(sed -n 3p ~/.cache/wal/colors)FF
-
-#sed -i "s|#define COLOR.*$|#define COLOR @fg:mix($glava1, $glava2, clamp(d / GRADIENT, 0, 1))|g" ~/.config/glava/bars.glsl
-#sed -i "s|#define FLIP.*$|#define FLIP 1|g" ~/.config/glava/bars.glsl
-
-#if ps -A | grep glava; then
-#		killall -9 glava 2>/dev/null
-#		glava -d
-#	else
-#		killall -9 glava 2>/dev/null
-#fi

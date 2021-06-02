@@ -1,33 +1,28 @@
 #!/bin/bash
 
-# format colours
-color0=$(awk 'NR==1 {print substr($1,2,7)}' ~/.cache/wal/colors)
-color0a="${color0}dd"
-color2=$(awk 'NR==3 {print substr($1,2,7)}' ~/.cache/wal/colors)
-color2a="${color2}ff"
+# colors
+color0=$(awk 'NR==1 {print substr($1,2,7)}' ~/.cache/wal/colors)dd
+color2=$(awk 'NR==3 {print substr($1,2,7)}' ~/.cache/wal/colors)ff
 
-# -i /tmp/lockblur.jpg \
-# --greeterpos="965:510" \
-
-# i3lock command
+# i3lock
 i3lock \
 \
--c $color0a \
+-c $color0 \
 \
--u \
 -b \
 -n \
+-u \
 \
 --clock \
---timestr="%-I:%M %P" \
+--time-str="%-I:%M %P" \
 --time-font="scientifica:bold" \
---timesize=20 \
---timecolor=$color2a \
+--time-size=20 \
+--time-color=$color2 \
 \
---datestr="" \
+--date-str="" \
 \
---greetertext="Locked!" \
---greeter-font="scientifica:bold" \
---greetersize=40 \
---greetercolor=$color2a \
---greeterpos="960:510" \
+--greeter-text="Locked!" \
+--greeter-font="rufscript" \
+--greeter-size=60 \
+--greeter-color=$color2 \
+--greeter-pos="960:510" \

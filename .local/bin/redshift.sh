@@ -9,4 +9,5 @@ fi
 #sleep 0.05s
 
 # Launch
+redshift -x
 redshift -c ~/.config/redshift/redshift.conf &
