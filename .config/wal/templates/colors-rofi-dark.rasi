@@ -37,7 +37,7 @@ entry {{
 
 #prompt {{
   /*       vertical   horizontal */
-  padding: 10px       20px;
+  padding: 8px       20px;
   background-color: @accent;
   text-color: @background;
 }}
@@ -58,7 +58,7 @@ entry {{
 /* List of entries */
 
 #element {{
-  padding: 12px;
+  padding: 8px;
   /*      vertical    horizontal */
   margin: 4px         0px;
   /*      top     right   bottom  left */
