@@ -26,9 +26,10 @@
     border-color: @background;
     spacing: 2;
 
-    font:             "scientifica bold 8";
-    lines:            6;
-    columns:          1;
+    font:       "scientifica bold 8";
+    lines:      6;
+    columns:    1;
+    width:      220px;        
 
 }}
 
