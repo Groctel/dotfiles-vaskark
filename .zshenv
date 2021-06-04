@@ -25,6 +25,9 @@ export PF_INFO="kernel uptime shell wm memory palette"
 export PF_COL1=2
 export PF_COL2=4
 
+# rg
+export RIPGREP_CONFIG_PATH="$XDG_CONFIG_HOME/ripgrep" 
+
 # nnn
 export NNN_FIFO='/tmp/nnn.fifo' 
 export NNN_COLORS='2345'

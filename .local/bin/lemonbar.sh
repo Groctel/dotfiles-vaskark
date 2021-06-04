@@ -47,7 +47,7 @@ Wifi() {
 		WIFISTR=$(( ${WIFISTR} * 100 / 70))
 		ESSID=$(iwconfig wlp2s0 | grep ESSID | sed 's/ //g' | sed 's/.*://' | cut -d "\"" -f 2)
 		if [ $WIFISTR -ge 1 ] ; then
-			echo "%{F"$color4"}%{F-} ${ESSID}"
+			echo "%{F"$color4"}%{F-} ${ESSID} "
 		fi
 	fi
 }
@@ -55,13 +55,13 @@ Wifi() {
 # cpu
 Cpu() {
 	CPU=$($HOME/.config/scripts/cpu.sh)
-	echo "%{F"$color4"}%{F-} $CPU"
+	echo "%{F"$color4"}%{F-} $CPU "
 }
 
 # battery
 Battery() {
     BAT=$($HOME/.config/scripts/bat.sh)
-    echo "%{F"$color4"}%{F-} $BAT"
+    echo "%{F"$color4"}%{F-} $BAT "
 }
 
 # memory
@@ -71,8 +71,8 @@ Memory() {
 	B=$(cat /proc/meminfo | grep Buffers | awk '{print $2}')
 	C=$(cat /proc/meminfo | grep Cached | awk 'NR==1 {print $2}')
 
-	USED=$(( 100*($T - $F - $B - $C) / $T ))
-	echo "%{F"$color4"}%{F-} $USED%"
+	USED=$((100*($T - $F - $B - $C) / $T))
+	echo "%{F"$color4"}%{F-} $USED%"
 }
 
 # volume
@@ -80,16 +80,16 @@ Volume() {
 	NOTMUTED=$( amixer -D pulse sget Master | grep "\[on\]" )
 	if [[ ! -z $NOTMUTED ]] ; then
 		VOL=$(awk -F"[][]" '/Left:/ { print $2 }' <(amixer -D pulse sget Master) | sed 's/%//g')
-		echo "%{F"$color4"}%{F-} $VOL%"
+		echo "%{F"$color4"}%{F-} $VOL% "
 	else
-		echo "%{F#555}%{F-} --%"
+		echo "%{F#555}%{F-} --% "
 	fi
 }
 
 # window name
 WindowName() {
     WINDOWNAME=$(xdotool getwindowfocus getwindowname)
-    echo " $WINDOWNAME"
+    echo "  $WINDOWNAME "
 }
 
 # reddit
@@ -101,21 +101,21 @@ Reddit() {
 # date
 Date() {
     DATE=$(date +"%a %b %d %Y")
-    echo "%{F#000}%{B"$color2"}   $DATE  %{B-}%{F-}"
+    echo "%{F#000}%{B"$color2"}  $DATE %{B-}%{F-}"
 }
 
 # time
 Time() {
     TIME=$($HOME/.config/scripts/time.sh)
-    echo "%{A3:gnome-clocks:}%{F#000}%{B"$color2"}   $TIME  %{B-}%{F-}%{A}"
+    echo "%{A3:gnome-clocks:}%{F#000}%{B"$color2"}  $TIME %{B-}%{F-}%{A}"
 }
 
 ##########
 
 while true; do
     echo -e "\
-	%{l}$(Uptime)  $(WindowName) \
+	%{l}$(Uptime) $(WindowName) \
 	%{c}$(Mpc) \
-	%{r}$(Wifi)  $(Cpu)  $(Battery)  $(Memory)  $(Volume)  $(Time)"
+	%{r}$(Wifi) $(Cpu) $(Battery) $(Memory) $(Volume) $(Time)"
     sleep 0.1
 done
