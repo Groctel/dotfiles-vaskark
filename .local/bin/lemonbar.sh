@@ -72,12 +72,12 @@ Memory() {
 	C=$(cat /proc/meminfo | grep Cached | awk 'NR==1 {print $2}')
 
 	USED=$((100*($T - $F - $B - $C) / $T))
-	echo "%{F"$color4"}%{F-} $USED%"
+	echo "%{F"$color4"}%{F-} $USED% "
 }
 
 # volume
 Volume() {
-	NOTMUTED=$( amixer -D pulse sget Master | grep "\[on\]" )
+	NOTMUTED=$(amixer -D pulse sget Master | grep "\[on\]")
 	if [[ ! -z $NOTMUTED ]] ; then
 		VOL=$(awk -F"[][]" '/Left:/ { print $2 }' <(amixer -D pulse sget Master) | sed 's/%//g')
 		echo "%{F"$color4"}%{F-} $VOL% "
