@@ -101,13 +101,13 @@ Reddit() {
 # date
 Date() {
     DATE=$(date +"%a %b %d %Y")
-    echo "%{F#000}%{B"$color2"}  $DATE %{B-}%{F-}"
+    echo "%{F#000}%{B"$color2"}   $DATE  %{B-}%{F-}"
 }
 
 # time
 Time() {
     TIME=$($HOME/.config/scripts/time.sh)
-    echo "%{A3:gnome-clocks:}%{F#000}%{B"$color2"}  $TIME %{B-}%{F-}%{A}"
+    echo "%{A3:gnome-clocks:}%{F#000}%{B"$color2"}   $TIME  %{B-}%{F-}%{A}"
 }
 
 ##########
