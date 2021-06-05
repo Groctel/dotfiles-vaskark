@@ -1,14 +1,17 @@
-#!/bin/sh
+#!/bin/bash
 
 # get battery charge (%)
 
-[ -z "$1" ] && set -- '${p}'
-
-p=
-
 case $(uname -s) in
 	Linux*)
-		p=$(acpi | awk 'NR==1 { print $5 }')
+		NC=$(acpi | grep "Not charging")
+		if [[ ! $NC ]] ; then
+    		# charging/discharging
+    		p=$(acpi | awk 'NR==1 { print $4 }' | sed 's/,//g')
+		else
+    		# not charging (full)
+    		p=$(acpi | awk 'NR==1 { print $5 }')
+		fi
 		;;
 	OpenBSD*)
 		p=$(apm | awk 'NR==1 { print $4 }')
@@ -18,8 +21,10 @@ case $(uname -s) in
 		;;
 	*)
 		#echo "Unsupported os: $(uname -s)" >&2
-        	exit 1
-    		;;
+        exit 1
+
+    	;;
 esac
 
-eval echo "$1"
+echo "$p"
+
