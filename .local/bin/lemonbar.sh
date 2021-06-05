@@ -24,7 +24,7 @@ Hostname() {
 # uptime
 Uptime() {
 	UPTIME=$($HOME/.config/scripts/uptime.sh)
-	echo "%{F#000}%{B"$color1"}   $UPTIME  %{B-}%{F-}"
+	echo "%{F#000}%{B"$color1"}   $UPTIME  %{B-}%{F-}"
 }
 
 # weather
@@ -72,7 +72,7 @@ Memory() {
 	C=$(cat /proc/meminfo | grep Cached | awk 'NR==1 {print $2}')
 
 	USED=$((100*($T - $F - $B - $C) / $T))
-	echo "%{F"$color4"}%{F-} $USED% "
+	echo "%{F"$color4"}%{F-} $USED%"
 }
 
 # volume
@@ -90,12 +90,6 @@ Volume() {
 WindowName() {
     WINDOWNAME=$(xdotool getwindowfocus getwindowname)
     echo "  $WINDOWNAME "
-}
-
-# reddit
-Reddit() {
-	n=$($HOME/.config/scripts/reddit.sh)
-    echo "%{F"$color4"}%{F-} $n"
 }
 
 # date
