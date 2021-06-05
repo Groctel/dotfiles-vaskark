@@ -1,16 +1,16 @@
 #!/bin/bash
 
-# get battery charge (%)
+# battery charge (%)
 
 case $(uname -s) in
 	Linux*)
 		NC=$(acpi | grep "Not charging")
 		if [[ ! $NC ]] ; then
     		# charging/discharging
-    		p=$(acpi | awk 'NR==1 { print $4 }' | sed 's/,//g')
+    		p=$(acpi | awk '{ print $4 }' | sed 's/,//g')
 		else
     		# not charging (full)
-    		p=$(acpi | awk 'NR==1 { print $5 }')
+    		p=$(acpi | awk '{ print $5 }')
 		fi
 		;;
 	OpenBSD*)
