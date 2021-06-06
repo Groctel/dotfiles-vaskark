@@ -1,21 +1,15 @@
 configuration {
-  show-icons:         	false;
-  cycle:              	true;
-  location:	      	0;
-  sidebar-mode:		false;	
-  hide-scrollbar:     	true;
-  disable-history:    	true;
-  hover-select:       true;
-  modi: 	      	"drun,run,ssh,emoji,keys";
-  display-drun:       	"Apps:";
-  display-run:       	"Bin:";
-  display-file-browser: "Files:";
-  display-ssh:     	"SSH:";
-  display-window:     	"Win:";
-  display-emoji:     	"Emoji:";
-  display-keys:     	"Keys:";
-  terminal:           	"alacritty";
-  matching:             "normal";
-  font:             "scientifica bold 8";
-  theme:	      	"~/.cache/wal/colors-rofi-dark.rasi";
+  modi: "drun,run,ssh,emoji,keys";
+  display-drun: "";
+  display-run: "";
+  terminal: "alacritty";
+  matching: "normal";
+  show-icons: false;
+  cycle: true;
+  location: 0;
+  sidebar-mode: false;	
+  hide-scrollbar: true;
+  disable-history: true;
+  hover-select: false;
+  theme: "~/.cache/wal/colors-rofi-dark.rasi";
 }
