@@ -12,19 +12,19 @@ Session() {
 
 # luser
 User() {
-	echo "%{F#000}%{B"$color4"}  $USER  %{B-}%{F-}"
+	echo "%{F#000}%{B"$color1"}  $USER  %{B-}%{F-}"
 }
 
 # hostname
 Hostname() {
 	HOST=$(uname -n)
-	echo "%{F#000}%{B"$color4"}  $HOST  %{B-}%{F-}"
+	echo "%{F#000}%{B"$color1"}  $HOST  %{B-}%{F-}"
 }
 
 # uptime
 Uptime() {
 	UPTIME=$($HOME/.config/scripts/uptime.sh)
-	echo "%{F#000}%{B"$color1"}   $UPTIME  %{B-}%{F-}"
+	echo "%{F#000}%{B"$color1"}   $UPTIME  %{B-}%{F-}"
 }
 
 # weather
@@ -37,7 +37,7 @@ Weather() {
 # mpc
 Mpc() {
 	MPC=$(mpc current -f "%artist% >> %title%")
-	echo "%{A:mpc toggle 1>/dev/null:}%{A2:mpc prev 1>/dev/null:}%{A3:mpc next 1>/dev/null:}%{F"$color2"}%{F-} $MPC%{A}%{A}%{A}"
+	echo "%{A:mpc toggle 1>/dev/null:}%{A2:mpc prev 1>/dev/null:}%{A3:mpc next 1>/dev/null:}%{F"$color4"}ﭵ%{F-} $MPC%{A}%{A}%{A}"
 }
 
 # wifi
@@ -47,7 +47,7 @@ Wifi() {
 		WIFISTR=$(( ${WIFISTR} * 100 / 70))
 		ESSID=$(iwconfig wlp2s0 | grep ESSID | sed 's/ //g' | sed 's/.*://' | cut -d "\"" -f 2)
 		if [ $WIFISTR -ge 1 ] ; then
-			echo "%{F"$color4"}%{F-} ${ESSID} "
+			echo "%{F"$color2"}說%{F-} ${ESSID} "
 		fi
 	fi
 }
@@ -55,13 +55,13 @@ Wifi() {
 # cpu
 Cpu() {
 	CPU=$($HOME/.config/scripts/cpu.sh)
-	echo "%{F"$color4"}%{F-} $CPU "
+	echo "%{F"$color2"}﬙%{F-} $CPU "
 }
 
 # battery
 Battery() {
     BAT=$($HOME/.config/scripts/bat.sh)
-    echo "%{F"$color4"}%{F-} $BAT "
+    echo "%{F"$color2"}%{F-} $BAT "
 }
 
 # memory
@@ -72,7 +72,7 @@ Memory() {
 	C=$(cat /proc/meminfo | grep Cached | awk 'NR==1 {print $2}')
 
 	USED=$((100*($T - $F - $B - $C) / $T))
-	echo "%{F"$color4"}%{F-} $USED% "
+	echo "%{F"$color2"}%{F-} $USED% "
 }
 
 # volume
@@ -80,28 +80,28 @@ Volume() {
 	NOTMUTED=$(amixer -D pulse sget Master | grep "\[on\]")
 	if [[ ! -z $NOTMUTED ]] ; then
 		VOL=$(awk -F"[][]" '/Left:/ { print $2 }' <(amixer -D pulse sget Master) | sed 's/%//g')
-		echo "%{F"$color4"}%{F-} $VOL% "
+		echo "%{F"$color2"}墳%{F-} $VOL% "
 	else
-		echo "%{F#555}%{F-} --% "
+		echo "%{F#555}婢%{F-} --% "
 	fi
 }
 
 # window name
 WindowName() {
     WINDOWNAME=$(xdotool getwindowfocus getwindowname)
-    echo "  $WINDOWNAME "
+    echo " 类 $WINDOWNAME "
 }
 
 # date
 Date() {
     DATE=$(date +"%a %b %d %Y")
-    echo "%{F#000}%{B"$color2"}   $DATE  %{B-}%{F-}"
+    echo "%{F#000}%{B"$color2"}   $DATE  %{B-}%{F-}"
 }
 
 # time
 Time() {
     TIME=$($HOME/.config/scripts/time.sh)
-    echo "%{A3:gnome-clocks:}%{F#000}%{B"$color2"}   $TIME  %{B-}%{F-}%{A}"
+    echo "%{A3:gnome-clocks:}%{F#000}%{B"$color2"}  祥 $TIME  %{B-}%{F-}%{A}"
 }
 
 ##########

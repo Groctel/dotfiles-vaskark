@@ -10,9 +10,11 @@ w=$(( $(xdotool getdisplaygeometry | awk '{print $1}') - (2*x) ))
 h=30
 
 # start
-lemonbar.sh | lemonbar -p \
+lemonbar-nf.sh | lemonbar -p \
+-o -2 \
 -f "-*-scientifica-bold-r-*" \
--f "-*-siji-*" \
+-o 0 \
+-f "Symbols Nerd Font:size=10" \
 -g "$w"x"$h"+"$x"+"$y" \
 -B "$color0" \
 -F "#555" \
