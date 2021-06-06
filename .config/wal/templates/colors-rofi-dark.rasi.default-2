@@ -1,0 +1,70 @@
+* {{
+  accent:           {color2};
+  accent-alt:       {color1};
+  background:       {color0};
+  foreground:       #555;
+  foreground-alt:   @background;
+
+  background-color: @background;
+  text-color:       @foreground;
+  font:             "scientifica bold 8";
+  lines:            5;
+  columns:          1;
+}}
+
+#window {{
+  width: 275px; 
+  padding: 12px;
+}}
+
+/* Input window */
+inputbar,
+prompt,
+textbox-prompt-colon,
+
+entry {{
+  background-color: @accent-alt;
+}}
+
+#inputbar {{
+  children: [ prompt, entry ];
+  margin: 4px     0px     4px     0px;
+  border: 1px     1px     1px     1px;
+  border-color: @accent-alt;
+  padding: 5px 0px;
+}}
+
+#prompt {{
+  padding: 8px    5px     8px     10px;
+  background-color: @accent-alt;
+  text-color: @foreground-alt;
+}}
+
+#textbox-prompt-colon {{
+  expand: false;
+  str: ">>";
+  padding: 8px;
+  text-color: @foreground;
+}}
+
+#entry {{
+  text-color: @foreground-alt;
+  padding: 8px   10px    8px    0px;
+}}
+
+/* List of entries */
+
+#element {{
+  padding: 8px;
+  margin: 4px     0px     4px     0px; 
+  border: 0px     0px     0px     1px;
+  background-color: @background;
+  border-color: @background;
+}}
+
+#element.selected {{
+  background-color: @background;
+  text-color: @accent;
+  border-color: @accent;
+}}
+
