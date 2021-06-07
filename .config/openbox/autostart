@@ -1,5 +1,5 @@
-# bitmaps
-xset +fp /usr/local/share/fonts/misc &
+# wal
+wal -R -o wal-extras.sh &
 
 # picom
 picom --experimental-backends --config ~/.config/picom/picom.conf &
@@ -12,7 +12,8 @@ picom --experimental-backends --config ~/.config/picom/picom.conf &
 xautolock -time 10 -locker 'lock.sh' -killer 'systemctl suspend' -corners 00-+ &
 
 # redshift
-redshift.sh &
+systemctl --user import-environment; systemctl --user start graphical-session.target
+systemctl --user restart redshift.service
 
-# wal
-wal -R -o wal-extras.sh &
+# lemonbar
+lemonbar-start.sh &

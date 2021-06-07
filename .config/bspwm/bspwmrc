@@ -1,8 +1,5 @@
 #!/bin/sh
 
-# xfonts
-xset +fp /usr/local/share/fonts/misc &
-
 # picom
 pgrep -x picom || picom --experimental-backends --config ~/.config/bspwm/picom.conf &
 
@@ -67,4 +64,4 @@ bspc rule -r "*"
 
 # rules
 #bspc rule -a Sxiv desktop='^3' state=floating follow=on
-bspc rule -a Pick-colour-picker state=floating
+bspc rule -a St state=floating

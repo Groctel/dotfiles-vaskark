@@ -4,14 +4,14 @@
 
 
 # lemonbar
-super + semicolon
-	pkill lemonbar 2>/dev/null || lemonbar-start.sh
+super +  semicolon
+	pkill lemonbar 2>/dev/null || lemonbar-start-nf.sh
 super + control + semicolon
     killall -9 lemonbar 2>/dev/null
 
 # glava
 super + g
-    pkill glava 2>/dev/null || glava -d
+    pkill glava 2>/dev/null || glava -d -a fifo
 
 # viz
 super + v

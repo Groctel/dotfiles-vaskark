@@ -419,7 +419,7 @@
     </keybind>
     <keybind key="W-F1">
       <action name="Execute">
-        <command>nemo</command>
+        <command>thunar</command>
       </action>
     </keybind>
     <keybind key="W-F2">
@@ -512,7 +512,7 @@
     <!-- Lemonbar -->
     <keybind key="W-semicolon">
       <action name="Execute">
-        <command>sh -c 'killall -9 lemonbar 2>/dev/null || lemonbar-start.sh'</command>
+        <command>sh -c 'pkill lemonbar 2>/dev/null || lemonbar-start.sh'</command>
       </action>
     </keybind>
     <keybind key="W-C-semicolon">
