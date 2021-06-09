@@ -57,14 +57,13 @@ URxvt.bell-command: canberra-gtk-play -i bell
 !! XTerm
 xterm*termName: xterm-256color
 xterm*scrollBar: false
-xterm*geometry: 90x26
+xterm*geometry: 90x28
 xterm*borderWidth: 0
 xterm*internalBorder: 20
 xterm*renderFont: true
 xterm*allowBoldFonts: false
-!xterm*faceName: lemon
-!xterm*faceSize: 7.5
-xterm*font: -*-lemon-*
+!xterm*font: -cmvnd-lemon-medium-r-normal--10-110-75-75-m-50-iso10646-1
+xterm*font: lemon
 xterm*on2Clicks: word
 xterm*on3Clicks: line
 xterm*dynamicColors: On

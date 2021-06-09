@@ -8,13 +8,13 @@ t=
 
 case $(uname -s) in
 	Linux*)
-		t=$(date +"%-I:%M %P")
+		t=$(date +"%-I:%M %p")
 		;;
 	FreeBSD*)
-		t=$(date +"%-I:%M %P")
+		t=$(date +"%-I:%M %p")
 		;;
 	OpenBSD*)
-		t=$(date +"%I:%M %P")
+		t=$(date +"%I:%M %p")
 		;;
 	*)
 		#echo "Unsupported os: $(uname -s)" >&2

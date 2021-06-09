@@ -11,7 +11,9 @@ h=30
 
 # start
 lemonbar.sh | lemonbar -p \
+-o 0 \
 -f "-*-scientifica-bold-r-*" \
+-o 0 \
 -f "-*-siji-*" \
 -g "$w"x"$h"+"$x"+"$y" \
 -B "$color0" \

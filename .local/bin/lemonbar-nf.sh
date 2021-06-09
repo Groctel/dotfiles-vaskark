@@ -37,7 +37,7 @@ Weather() {
 # mpc
 Mpc() {
 	MPC=$(mpc current -f "%artist% >> %title%")
-	echo "%{A:mpc toggle 1>/dev/null:}%{A2:mpc prev 1>/dev/null:}%{A3:mpc next 1>/dev/null:}%{F"$color4"}ﭵ%{F-} $MPC%{A}%{A}%{A}"
+	echo "%{A:mpc toggle 1>/dev/null:}%{A2:mpc prev 1>/dev/null:}%{A3:mpc next 1>/dev/null:}%{F"$color6"}ﭵ%{F-} $MPC%{A}%{A}%{A}"
 }
 
 # wifi
@@ -47,7 +47,7 @@ Wifi() {
 		WIFISTR=$(( ${WIFISTR} * 100 / 70))
 		ESSID=$(iwconfig wlp2s0 | grep ESSID | sed 's/ //g' | sed 's/.*://' | cut -d "\"" -f 2)
 		if [ $WIFISTR -ge 1 ] ; then
-			echo "%{F"$color2"}說%{F-} ${ESSID} "
+			echo "%{F"$color4"}說%{F-} ${ESSID} "
 		fi
 	fi
 }
@@ -55,13 +55,13 @@ Wifi() {
 # cpu
 Cpu() {
 	CPU=$($HOME/.config/scripts/cpu.sh)
-	echo "%{F"$color2"}﬙%{F-} $CPU "
+	echo "%{F"$color4"}﬙%{F-} $CPU "
 }
 
 # battery
 Battery() {
     BAT=$($HOME/.config/scripts/bat.sh)
-    echo "%{F"$color2"}%{F-} $BAT "
+    echo "%{F"$color4"}%{F-} $BAT "
 }
 
 # memory
@@ -72,7 +72,7 @@ Memory() {
 	C=$(cat /proc/meminfo | grep Cached | awk 'NR==1 {print $2}')
 
 	USED=$((100*($T - $F - $B - $C) / $T))
-	echo "%{F"$color2"}%{F-} $USED% "
+	echo "%{F"$color4"}%{F-} $USED% "
 }
 
 # volume
@@ -80,7 +80,7 @@ Volume() {
 	NOTMUTED=$(amixer -D pulse sget Master | grep "\[on\]")
 	if [[ ! -z $NOTMUTED ]] ; then
 		VOL=$(awk -F"[][]" '/Left:/ { print $2 }' <(amixer -D pulse sget Master) | sed 's/%//g')
-		echo "%{F"$color2"}墳%{F-} $VOL% "
+		echo "%{F"$color4"}墳%{F-} $VOL% "
 	else
 		echo "%{F#555}婢%{F-} --% "
 	fi

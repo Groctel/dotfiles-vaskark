@@ -1,2 +1,3 @@
-xset +fp /usr/local/share/fonts/misc &
+#!/bin/sh
 
+xset +fp /usr/local/share/fonts/misc &
