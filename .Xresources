@@ -57,7 +57,7 @@ URxvt.bell-command: canberra-gtk-play -i bell
 !! XTerm
 xterm*termName: xterm-256color
 xterm*scrollBar: false
-xterm*geometry: 90x28
+xterm*geometry: 84x26
 xterm*borderWidth: 0
 xterm*internalBorder: 20
 xterm*renderFont: true
