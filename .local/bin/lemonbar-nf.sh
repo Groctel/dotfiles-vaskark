@@ -7,24 +7,32 @@
 
 # session
 Session() {
-	echo "%{F#000}%{B"$color1"}  $DESKTOP_SESSION  %{B-}%{F-}"
+	ICON=" "
+	#ICON=""
+	echo "%{F#000}%{B"$color1"}  $ICON$DESKTOP_SESSION  %{B-}%{F-}"
 }
 
 # luser
 User() {
-	echo "%{F#000}%{B"$color1"}  $USER  %{B-}%{F-}"
+	ICON=" "
+	#ICON=""
+	echo "%{F#000}%{B"$color1"}  $ICON$USER  %{B-}%{F-}"
 }
 
 # hostname
 Hostname() {
 	HOST=$(uname -n)
-	echo "%{F#000}%{B"$color1"}  $HOST  %{B-}%{F-}"
+	ICON=" "
+	#ICON=""
+	echo "%{F#000}%{B"$color1"}  $ICON$HOST  %{B-}%{F-}"
 }
 
 # uptime
 Uptime() {
 	UPTIME=$($HOME/.config/scripts/uptime.sh)
-	echo "%{F#000}%{B"$color1"}   $UPTIME  %{B-}%{F-}"
+	ICON=" "
+	#ICON=""
+	echo "%{F#000}%{B"$color1"}  $ICON$UPTIME  %{B-}%{F-}"
 }
 
 # weather
@@ -89,19 +97,23 @@ Volume() {
 # window name
 WindowName() {
     WINDOWNAME=$(xdotool getwindowfocus getwindowname)
-    echo " 类 $WINDOWNAME "
+    echo "  $WINDOWNAME "
 }
 
 # date
 Date() {
     DATE=$(date +"%a %b %d %Y")
-    echo "%{F#000}%{B"$color2"}   $DATE  %{B-}%{F-}"
+    ICON=" "
+    #ICON=""
+    echo "%{F#000}%{B"$color2"}  $ICON$DATE  %{B-}%{F-}"
 }
 
 # time
 Time() {
     TIME=$($HOME/.config/scripts/time.sh)
-    echo "%{A3:gnome-clocks:}%{F#000}%{B"$color2"}  祥 $TIME  %{B-}%{F-}%{A}"
+    ICON=" "
+    #ICON=""
+    echo "%{A3:gnome-clocks:}%{F#000}%{B"$color2"}  $ICON$TIME  %{B-}%{F-}%{A}"
 }
 
 ##########
