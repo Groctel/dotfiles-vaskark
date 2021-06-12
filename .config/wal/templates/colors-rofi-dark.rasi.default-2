@@ -1,6 +1,6 @@
 * {{
   accent:           {color2};
-  accent-alt:       {color1};
+  accent-alt:       {color5};
   background:       {color0};
   foreground:       #555;
   foreground-alt:   @background;
@@ -23,21 +23,21 @@ prompt,
 textbox-prompt-colon,
 
 entry {{
-  background-color: @accent-alt;
+  background-color: @background;
 }}
 
 #inputbar {{
   children: [ prompt, entry ];
   margin: 4px     0px     4px     0px;
-  border: 1px     1px     1px     1px;
+  border: 0px     0px     0px     0px;
   border-color: @accent-alt;
   padding: 5px 0px;
 }}
 
 #prompt {{
   padding: 8px    5px     8px     10px;
-  background-color: @accent-alt;
-  text-color: @foreground-alt;
+  background-color: @background;
+  text-color: @accent-alt;
 }}
 
 #textbox-prompt-colon {{
@@ -48,8 +48,10 @@ entry {{
 }}
 
 #entry {{
-  text-color: @foreground-alt;
+  text-color: @accent-alt;
   padding: 8px   10px    8px    0px;
+  blink: false;
+  /*placeholder: "...";*/
 }}
 
 /* List of entries */
