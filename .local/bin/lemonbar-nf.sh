@@ -5,18 +5,24 @@
 
 ##########
 
+# start
+Cmd() {
+	ICON=""
+	echo "%{F#000}%{B"$color1"}%{A:wal -f random_user -o wal-extras.sh:}  $ICON  %{A}%{B-}%{F-}"
+}
+
 # session
 Session() {
 	ICON=" "
 	#ICON=""
-	echo "%{F#000}%{B"$color1"}  $ICON$DESKTOP_SESSION  %{B-}%{F-}"
+	echo "%{F#000}%{B"$color5"}  $ICON$DESKTOP_SESSION  %{B-}%{F-}"
 }
 
 # luser
 User() {
 	ICON=" "
 	#ICON=""
-	echo "%{F#000}%{B"$color1"}  $ICON$USER  %{B-}%{F-}"
+	echo "%{F#000}%{B"$color5"}  $ICON$USER  %{B-}%{F-}"
 }
 
 # hostname
@@ -24,7 +30,7 @@ Hostname() {
 	HOST=$(uname -n)
 	ICON=" "
 	#ICON=""
-	echo "%{F#000}%{B"$color1"}  $ICON$HOST  %{B-}%{F-}"
+	echo "%{F#000}%{B"$color5"}  $ICON$HOST  %{B-}%{F-}"
 }
 
 # uptime
@@ -32,7 +38,7 @@ Uptime() {
 	UPTIME=$($HOME/.config/scripts/uptime.sh)
 	ICON=" "
 	#ICON=""
-	echo "%{F#000}%{B"$color1"}  $ICON$UPTIME  %{B-}%{F-}"
+	echo "%{F#000}%{B"$color5"}  $ICON$UPTIME  %{B-}%{F-}"
 }
 
 # weather
@@ -45,7 +51,7 @@ Weather() {
 # mpc
 Mpc() {
 	MPC=$(mpc current -f "%artist% >> %title%")
-	echo "%{A:mpc toggle 1>/dev/null:}%{A2:mpc prev 1>/dev/null:}%{A3:mpc next 1>/dev/null:}%{F"$color6"}ﭵ%{F-} $MPC%{A}%{A}%{A}"
+	echo "%{F"$color6"}%{F-} %{A:mpc toggle 1>/dev/null:}%{A2:mpc prev 1>/dev/null:}%{A3:mpc next 1>/dev/null:}$MPC%{A}%{A}%{A}"
 }
 
 # wifi
@@ -120,7 +126,7 @@ Time() {
 
 while true; do
     echo -e "\
-	%{l}$(Uptime) $(WindowName) \
+	%{l}$(Cmd)$(Uptime) $(WindowName) \
 	%{c}$(Mpc) \
 	%{r}$(Wifi) $(Cpu) $(Battery) $(Memory) $(Volume) $(Time)"
     sleep 0.1
