@@ -6,8 +6,8 @@
 # lemonbar
 super +  semicolon
 	pkill lemonbar 2>/dev/null || lemonbar-current
-super + control + semicolon
-    killall -9 lemonbar 2>/dev/null
+super + shift + semicolon
+    lemonbar-menu.sh
 
 # glava
 super + g
