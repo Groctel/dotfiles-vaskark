@@ -14,9 +14,10 @@ lemonbar-nf.sh | lemonbar -p \
 -o -2 \
 -f "-*-scientifica-bold-r-*" \
 -o 0 \
--f "Symbols Nerd Font:size=10" \
+-f "Symbols Nerd Font-10" \
 -g "$w"x"$h"+"$x"+"$y" \
 -B "$color0" \
 -F "#555" \
 -d \
 | $SHELL
+
