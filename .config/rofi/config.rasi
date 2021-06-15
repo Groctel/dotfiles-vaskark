@@ -8,8 +8,7 @@ configuration {
   cycle: true;
   location: 0;
   sidebar-mode: false;	
-  hide-scrollbar: true;
   disable-history: true;
   hover-select: false;
-  theme: "~/.cache/wal/colors-rofi-dark.rasi";
+  theme: "~/.cache/wal/colors-rofi-dark.rasi.default-2";
 }
