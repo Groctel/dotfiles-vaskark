@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/jason/Pictures/tpguh45-m.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#222222",
+        "foreground": "#DDDDDD",
+        "cursor": "#6D878D"
+    },
+    "colors": {
+        "color0": "#222222",
+        "color1": "#E84F4F",
+        "color2": "#FEA63C",
+        "color3": "#B7416E",
+        "color4": "#66AABB",
+        "color5": "#B7CE42",
+        "color6": "#6D878D",
+        "color7": "#DDDDDD",
+        "color8": "#3b3b3b",
+        "color9": "#ff5252",
+        "color10": "#ffd939",
+        "color11": "#fe448b",
+        "color12": "#71e8ff",
+        "color13": "#f9ff44",
+        "color14": "#7db9c7",
+        "color15": "#ffffff"
+    }
+}

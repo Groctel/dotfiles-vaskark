@@ -1,27 +1,27 @@
 {
-    "wallpaper": "/home/jason/Pictures/Diane_Kruger-003(TheWallpapers.org)(1920x1440).jpg",
+    "wallpaper": "/home/jason/Pictures/ifzrm6xfluq51-m.jpg",
     "alpha": "100",
     "special": {
-        "background": "#322f30",
-        "foreground": "#c0bfbf",
-        "cursor": "#5b697e"
+        "background": "#021012",
+        "foreground": "#80deea",
+        "cursor": "#16c1d9"
     },
     "colors": {
-        "color0": "#322f30",
-        "color1": "#654c51",
-        "color2": "#7f8281",
-        "color3": "#7b6b75",
-        "color4": "#7d8592",
-        "color5": "#8d7766",
-        "color6": "#5b697e",
-        "color7": "#c0bfbf",
-        "color8": "#4b4748",
-        "color9": "#8e5762",
-        "color10": "#94b9ad",
-        "color11": "#ae7c9b",
-        "color12": "#90a8cf",
-        "color13": "#c79874",
-        "color14": "#6885b1",
-        "color15": "#fcfafa"
+        "color0": "#021012",
+        "color1": "#00bcd4",
+        "color2": "#00acc1",
+        "color3": "#26c6da",
+        "color4": "#095b67",
+        "color5": "#4dd0e1",
+        "color6": "#16c1d9",
+        "color7": "#80deea",
+        "color8": "#043941",
+        "color9": "#01f3ff",
+        "color10": "#01def9",
+        "color11": "#20ffff",
+        "color12": "#047b8d",
+        "color13": "#50ffff",
+        "color14": "#0cffff",
+        "color15": "#aaffff"
     }
 }

@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/jason/Pictures/calvin_and_hobbes.png",
+    "alpha": "100",
+    "special": {
+        "background": "#1e1c1d",
+        "foreground": "#c6c6c6",
+        "cursor": "#938272"
+    },
+    "colors": {
+        "color0": "#1e1c1d",
+        "color1": "#8a6363",
+        "color2": "#cc8a73",
+        "color3": "#d4c690",
+        "color4": "#a09d90",
+        "color5": "#c3af8e",
+        "color6": "#938272",
+        "color7": "#c6c6c6",
+        "color8": "#373436",
+        "color9": "#c27171",
+        "color10": "#ffa980",
+        "color11": "#ffffa4",
+        "color12": "#e3d8a7",
+        "color13": "#ffe8a2",
+        "color14": "#d0a883",
+        "color15": "#ffffff"
+    }
+}
