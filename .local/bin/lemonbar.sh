@@ -5,26 +5,32 @@
 
 ##########
 
+# cmd
+Cmd() {
+	ICON=""
+	echo "%{F#000}%{B"$color1"}%{A:wal -f random_user -o wal-extras.sh:}  $ICON  %{A}%{B-}%{F-}"
+}
+
 # session
 Session() {
-	echo "%{F#000}%{B"$color1"}  $DESKTOP_SESSION  %{B-}%{F-}"
+	echo "%{F#000}%{B"$color5"}  $DESKTOP_SESSION  %{B-}%{F-}"
 }
 
 # luser
 User() {
-	echo "%{F#000}%{B"$color4"}  $USER  %{B-}%{F-}"
+	echo "%{F#000}%{B"$color5"}  $USER  %{B-}%{F-}"
 }
 
 # hostname
 Hostname() {
 	HOST=$(uname -n)
-	echo "%{F#000}%{B"$color4"}  $HOST  %{B-}%{F-}"
+	echo "%{F#000}%{B"$color5"}  $HOST  %{B-}%{F-}"
 }
 
 # uptime
 Uptime() {
 	UPTIME=$($HOME/.config/scripts/uptime.sh)
-	echo "%{F#000}%{B"$color1"}   $UPTIME  %{B-}%{F-}"
+	echo "%{F#000}%{B"$color5"}   $UPTIME  %{B-}%{F-}"
 }
 
 # weather
@@ -108,7 +114,7 @@ Time() {
 
 while true; do
     echo -e "\
-	%{l}$(Uptime) $(WindowName) \
+	%{l}$(Cmd)$(Uptime) $(WindowName) \
 	%{c}$(Mpc) \
 	%{r}$(Wifi) $(Cpu) $(Battery) $(Memory) $(Volume) $(Time)"
     sleep 0.1
