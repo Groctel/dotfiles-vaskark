@@ -2,26 +2,26 @@
     "wallpaper": "/home/jason/Pictures/wp1830528-scarlett-johansson-wallpaper.jpg",
     "alpha": "100",
     "special": {
-        "background": "#012732",
-        "foreground": "#9a9a9a",
-        "cursor": "#3087c4"
+        "background": "#0a0f14",
+        "foreground": "#98d1ce",
+        "cursor": "#edb54b"
     },
     "colors": {
-        "color0": "#012732",
-        "color1": "#cd3d3a",
-        "color2": "#7f9005",
-        "color3": "#aa8207",
-        "color4": "#797cb3",
-        "color5": "#33958d",
-        "color6": "#3087c4",
-        "color7": "#9a9a9a",
-        "color8": "#044d60",
-        "color9": "#ee3d38",
-        "color10": "#a3ba08",
-        "color11": "#ddaa0a",
-        "color12": "#8990ea",
-        "color13": "#33d0c3",
-        "color14": "#2eb0ee",
-        "color15": "#d5d5d5"
+        "color0": "#0a0f14",
+        "color1": "#c33027",
+        "color2": "#26a98b",
+        "color3": "#33859d",
+        "color4": "#4e5165",
+        "color5": "#195465",
+        "color6": "#edb54b",
+        "color7": "#98d1ce",
+        "color8": "#1a2735",
+        "color9": "#ff3023",
+        "color10": "#23e9bc",
+        "color11": "#34b4d9",
+        "color12": "#59608e",
+        "color13": "#18718b",
+        "color14": "#fff14d",
+        "color15": "#caffff"
     }
 }
