@@ -2,7 +2,7 @@
 
 ## Lemonbar menu
 
-MENU="$(rofi -sep "|" -dmenu -i -p 'Lemonbars:' -location 0 -width 10 -line-padding 4 -padding 20 -lines 4 <<< "Default|NF|Feather|OFF")"
+MENU="$(rofi -sep "|" -dmenu -i -p 'Lemonbars:' -location 0 -width 10 -line-padding 4 -padding 20 -lines 3 <<< "Default|NF|OFF")"
 
 case "$MENU" in
 	
@@ -16,13 +16,6 @@ case "$MENU" in
 	*NF)
 		rm -f $HOME/.local/bin/lemonbar-current 2>/dev/null
 		ln -s $HOME/.local/bin/lemonbar-nf-start.sh $HOME/.local/bin/lemonbar-current
-		killall -9 lemonbar 2>/dev/null
-		lemonbar-current &
-	;;
-
-	*Feather)
-		rm -f $HOME/.local/bin/lemonbar-current 2>/dev/null
-		ln -s $HOME/.local/bin/lemonbar-fr-start.sh $HOME/.local/bin/lemonbar-current
 		killall -9 lemonbar 2>/dev/null
 		lemonbar-current &
 	;;
