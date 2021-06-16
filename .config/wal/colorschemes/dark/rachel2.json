@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/jason/Pictures/Rachel-Weisz-HD-Background-Wallpaper-40327.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#1C2023",
+        "foreground": "#C7CCD1",
+        "cursor": "#95AEC7"
+    },
+    "colors": {
+        "color0": "#1C2023",
+        "color1": "#C795AE",
+        "color2": "#C7AE95",
+        "color3": "#95C7AE",
+        "color4": "#AEC795",
+        "color5": "#AE95C7",
+        "color6": "#95AEC7",
+        "color7": "#C7CCD1",
+        "color8": "#32393e",
+        "color9": "#ffabe2",
+        "color10": "#ffe2ab",
+        "color11": "#abffe2",
+        "color12": "#e2ffab",
+        "color13": "#e2abff",
+        "color14": "#abe2ff",
+        "color15": "#f8ffff"
+    }
+}
