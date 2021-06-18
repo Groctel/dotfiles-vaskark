@@ -10,7 +10,8 @@ w=$(( $(xdotool getdisplaygeometry | awk '{print $1}') - (2*x) ))
 h=30
 
 # start
-lemonbar-nf.sh | lemonbar -p \
+lemonbar-nf.sh | lemonbar \
+-p \
 -o -2 \
 -f "-*-scientifica-bold-r-*" \
 -o 0 \

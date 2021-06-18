@@ -5,9 +5,9 @@
 
 ##########
 
-# start
+# cmd
 Cmd() {
-	ICON=""
+	ICON="ﲵ"
 	echo "%{F#000}%{B"$color1"}%{A:wal -f random_user -o wal-extras.sh:}  $ICON  %{A}%{B-}%{F-}"
 }
 
@@ -51,7 +51,8 @@ Weather() {
 # mpc
 Mpc() {
 	MPC=$(mpc current -f "%artist% >> %title%")
-	echo "%{F"$color6"}%{F-} %{A:mpc toggle 1>/dev/null:}%{A2:mpc prev 1>/dev/null:}%{A3:mpc next 1>/dev/null:}$MPC%{A}%{A}%{A}"
+	ICON="ﭵ"
+	echo "%{F"$color6"}$ICON%{F-}%{A:mpc toggle 1>/dev/null:}%{A2:mpc prev 1>/dev/null:}%{A3:mpc next 1>/dev/null:} $MPC%{A}%{A}%{A}"
 }
 
 # wifi
