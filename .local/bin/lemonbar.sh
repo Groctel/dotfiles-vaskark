@@ -14,29 +14,38 @@
 # cmd
 Cmd() {
 	ICON=""
-	echo "%{F#000}%{B"$color1"}%{A:wal -f random_user -o wal-extras.sh:}  $ICON  %{A}%{B-}%{F-}"
+	SP=" "
+	echo "%{F#000}%{B"$color1"}%{A:wal -f random_user -o wal-extras.sh:}$SP$SP$ICON$SP$SP%{A}%{B-}%{F-}"
 }
 
 # session
 Session() {
-	echo "%{F#000}%{B"$color5"}  $DESKTOP_SESSION  %{B-}%{F-}"
+	ICON=""
+	SP=" "
+	echo "%{F#000}%{B"$color5"}$SP$SP$ICON$SP$DESKTOP_SESSION$SP$SP%{B-}%{F-}"
 }
 
 # luser
 User() {
-	echo "%{F#000}%{B"$color5"}  $USER  %{B-}%{F-}"
+	ICON=""
+	SP=" "
+	echo "%{F#000}%{B"$color5"}$SP$SP$ICON$SP$USER$SP$SP%{B-}%{F-}"
 }
 
 # hostname
 Hostname() {
 	HOST=$(uname -n)
-	echo "%{F#000}%{B"$color5"}  $HOST  %{B-}%{F-}"
+	ICON=""
+	SP=" "
+	echo "%{F#000}%{B"$color5"}$SP$SP$ICON$SP$HOST$SP$SP%{B-}%{F-}"
 }
 
 # uptime
 Uptime() {
 	UPTIME=$($HOME/.config/scripts/uptime.sh)
-	echo "%{F#000}%{B"$color5"}   $UPTIME  %{B-}%{F-}"
+	ICON=""
+	SP=" "
+	echo "%{F#000}%{B"$color5"}$SP$SP$ICON$SP$UPTIME$SP$SP%{B-}%{F-}"
 }
 
 # weather
@@ -48,8 +57,10 @@ Weather() {
 
 # mpc
 Mpc() {
-	MPC=$(mpc current -f "%artist% >> %title%")
-	echo "%{A:mpc toggle 1>/dev/null:}%{A2:mpc prev 1>/dev/null:}%{A3:mpc next 1>/dev/null:}%{F"$color2"}%{F-} $MPC%{A}%{A}%{A}"
+    MPC=$(mpc current -f "%artist% >> %title%")
+	ICON=""
+	SP=" "
+	echo "%{A:mpc toggle 1>/dev/null:}%{A2:mpc prev 1>/dev/null:}%{A3:mpc next 1>/dev/null:}%{F"$color2"}$ICON%{F-}$SP$MPC%{A}%{A}%{A}"
 }
 
 # wifi
@@ -67,13 +78,17 @@ Wifi() {
 # cpu
 Cpu() {
 	CPU=$($HOME/.config/scripts/cpu.sh)
-	echo "%{F"$color4"}%{F-} $CPU "
+	ICON=""
+	SP=" "
+	echo "%{F"$color4"}$ICON%{F-}$SP$CPU$SP"
 }
 
 # battery
 Battery() {
     BAT=$($HOME/.config/scripts/bat.sh)
-    echo "%{F"$color4"}%{F-} $BAT "
+    ICON=""
+    SP=" "
+    echo "%{F"$color4"}$ICON%{F-}$SP$BAT$SP"
 }
 
 # memory
@@ -84,7 +99,9 @@ Memory() {
 	C=$(cat /proc/meminfo | grep Cached | awk 'NR==1 {print $2}')
 
 	USED=$((100*($T - $F - $B - $C) / $T))
-	echo "%{F"$color4"}%{F-} $USED% "
+	ICON=""
+	SP=" "
+	echo "%{F"$color4"}$ICON%{F-}$SP$USED%$SP"
 }
 
 # volume
@@ -92,35 +109,45 @@ Volume() {
 	NOTMUTED=$(amixer -D pulse sget Master | grep "\[on\]")
 	if [[ ! -z $NOTMUTED ]] ; then
 		VOL=$(awk -F"[][]" '/Left:/ { print $2 }' <(amixer -D pulse sget Master) | sed 's/%//g')
-		echo "%{F"$color4"}%{F-} $VOL% "
+		ICON=""
+		SP=" "
+		echo "%{F"$color4"}$ICON%{F-}$SP$VOL%$SP"
 	else
-		echo "%{F#555}%{F-} --% "
+		ICON=""
+		SP=" "
+		echo "%{F#555}$ICON%{F-}$SP--%$SP"
 	fi
 }
 
 # window name
 WindowName() {
     WINDOWNAME=$(xdotool getwindowfocus getwindowname)
-    echo "  $WINDOWNAME "
+    ICON=""
+    SP=" "
+    echo "$SP$SP$ICON$SP$WINDOWNAME$SP"
 }
 
 # date
 Date() {
     DATE=$(date +"%a %b %d %Y")
-    echo "%{F#000}%{B"$color2"}   $DATE  %{B-}%{F-}"
+    ICON=""
+    SP=" "
+    echo "%{F#000}%{B"$color2"}$SP$SP$ICON$SP$DATE$SP$SP%{B-}%{F-}"
 }
 
 # time
 Time() {
     TIME=$($HOME/.config/scripts/time.sh)
-    echo "%{A3:gnome-clocks:}%{F#000}%{B"$color2"}   $TIME  %{B-}%{F-}%{A}"
+    ICON=""
+    SP=" "
+    echo "%{A3:gnome-clocks:}%{F#000}%{B"$color2"}$SP$SP$ICON$SP$TIME$SP$SP%{B-}%{F-}%{A}"
 }
 
 ##########
 
 while true; do
     echo -e "\
-	%{l}$(Cmd)$(Uptime) $(WindowName) \
+	%{l}$(Cmd)$(Uptime)$(WindowName) \
 	%{c}$(Mpc) \
 	%{r}$(Wifi) $(Cpu) $(Battery) $(Memory) $(Volume) $(Time)"
     sleep 0.1
