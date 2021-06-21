@@ -512,12 +512,18 @@
     <!-- Lemonbar -->
     <keybind key="W-semicolon">
       <action name="Execute">
-        <command>sh -c 'pkill lemonbar 2>/dev/null || lemonbar-start.sh'</command>
+        <command>sh -c 'pkill lemonbar 2&gt;/dev/null || lemonbar-start.sh'</command>
+      </action>
+    </keybind>
+    <!-- GLava -->
+    <keybind key="W-g">
+      <action name="Execute">
+        <command>sh -c 'pkill glava 2>/dev/null || glava -d -a fifo'</command>
       </action>
     </keybind>
     <keybind key="W-C-semicolon">
       <action name="Execute">
-        <command></command>
+        <command/>
       </action>
     </keybind>
     <!-- Pywal -->

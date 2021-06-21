@@ -1,7 +1,7 @@
 #!/bin/sh
 
 # picom
-pgrep -x picom || picom --experimental-backends --config ~/.config/bspwm/picom.conf &
+pgrep -x picom || picom --experimental-backends --config ~/.config/picom/picom.conf &
 
 # redshift
 systemctl --user import-environment; systemctl --user start graphical-session.target

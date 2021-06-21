@@ -16,4 +16,4 @@ systemctl --user import-environment; systemctl --user start graphical-session.ta
 systemctl --user restart redshift.service
 
 # lemonbar
-lemonbar-start.sh &
+lemonbar-current &

@@ -11,7 +11,7 @@ super + shift + semicolon
 
 # glava
 super + g
-    pkill glava 2>/dev/null || glava -d -a fifo
+    pkill glava 2>/dev/null || glava -d
 
 # viz
 super + v

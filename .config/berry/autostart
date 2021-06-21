@@ -1,7 +1,7 @@
 #!/bin/sh
 
 # bitmaps
-xset +fp ~/.local/share/fonts/misc &
+xset +fp /usr/local/share/fonts/misc &
 
 # sxhkd
 sxhkd -c $HOME/.config/berry/sxhkdrc $HOME/.config/sxhkd/sxhkdrc.common &
@@ -11,8 +11,8 @@ systemctl --user import-environment; systemctl --user start graphical-session.ta
 systemctl --user restart redshift
 
 # picom
-picom --experimental-backends --config ~/.config/berry/picom.conf &
-#picom --config ~/.config/berry/picom-xr.conf &
+picom --experimental-backends --config ~/.config/picom/picom.conf &
+#picom --config ~/.config/picom/picom-xr.conf &
 
 # polkit
 /usr/lib/policykit-1-gnome/polkit-gnome-authentication-agent-1 &
