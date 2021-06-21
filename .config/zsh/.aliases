@@ -1,6 +1,4 @@
 # general
-alias zr='history -c && clear && exec zsh'
-alias zs='exec zsh'
 alias rm='rm -i'
 alias cp='cp -i'
 alias mv='mv -i'
@@ -11,30 +9,6 @@ alias du='du -d 1 -h -c'
 alias cd..='cd ..'
 alias d='dirs -v | head -10'
 alias free='free -m'
-
-# lsd
-alias lsd='lsd --group-dirs first'
-alias ls='lsd'
-alias l='lsd -l'
-alias ll='lsd -al'
-alias lt='lsd --tree --depth 2'
-
-# exa
-alias exa='exa --icons --git -g --group-directories-first'
-alias lx1='exa -1'
-alias lx='exa -l'
-alias lxl='exa -la'
-#alias ls='exa'
-#alias l1='exa -1'
-#alias l='exa -l'
-#alias ll='exa -al'
-#alias lt='exa -T -L 2'
-
-# suffix
-alias -g G='| grep -i'
-alias -s html='google-chrome-stable'
-alias -s md='$EDITOR'
-
 alias vim=$EDITOR
 alias v=$EDITOR
 alias t="tty-clock -cst -C 2 -f '%B %d %Y'"
@@ -42,12 +16,7 @@ alias mount='mount | column -t'
 alias u='unimatrix -c green -a -f -n -s 98'
 alias kc='kitty +kitten icat'
 alias kd='kitty +kitten diff'
-alias zc="$EDITOR $ZDOTDIR/.zshrc"
-alias zca="$EDITOR $ZDOTDIR/aliases"
-alias zce="$EDITOR $HOME/.zshenv"
 alias h='htop -u $USER'
-alias xc="$EDITOR ~/.Xresources"
-alias xu='xrdb ~/.Xresources'
 alias nvc="$EDITOR ~/.config/nvim/init.vim"
 alias pf='clear;pfetch'
 alias n='nnn -D -C -E -o -T e -a -x'
@@ -60,6 +29,39 @@ alias ping='ping -c 5'
 alias path='print -l $path'
 alias fr='feh --randomize --bg-fill --recursive --no-fehbg ~/Pictures/*.(png|jpg)'
 alias rmpd='systemctl --user daemon-reload; systemctl --user restart mpd'
+alias lf="$HOME/.local/bin/lf.sh"
+
+# lsd
+alias lsd='lsd --group-dirs first'
+#alias ls='lsd'
+#alias l='lsd -l'
+#alias ll='lsd -al'
+#alias lt='lsd --tree --depth 2'
+
+# exa
+alias exa='exa --icons --git -g --time-style default --group-directories-first'
+alias ls='exa'
+alias l1='exa -1'
+alias l='exa -l'
+alias ll='exa -al'
+alias lt='exa -T -L 2'
+
+# suffix
+alias -g G='| grep -i'
+alias -s html='google-chrome-stable'
+alias -s md='$EDITOR'
+
+# zsh
+alias zc="$EDITOR $ZDOTDIR/.zshrc"
+alias za="$EDITOR $ZDOTDIR/.aliases"
+alias ze="$EDITOR $HOME/.zshenv"
+#alias zr='history -c && clear && exec zsh'
+alias zr='rm -f ~/.config/zsh/.zsh_history && clear && exec zsh'
+alias zs='exec zsh'
+
+# xrdb
+alias xc="$EDITOR ~/.Xresources"
+alias xu='xrdb ~/.Xresources'
 
 # bindkey help
 alias rhb='run-help bindkey'
@@ -75,7 +77,7 @@ alias jce='journalctl -p 3 -xe'
 alias btc='bluetoothctl'
 
 # pipewire
-alias rpw='systemctl --user restart pipewire{,-pulse}.{socket,service} pipewire-media-session.service'
+alias rpw='systemctl --user daemon-reload;systemctl --user restart pipewire{,-pulse}.{socket,service} pipewire-media-session.service'
 
 # git
 alias gc='git commit -a'
@@ -93,15 +95,10 @@ alias gc1='git clone --depth=1'
 alias ve='$EDITOR $(fzf)'
 alias fw='fz-wal.sh'
 
-# skim
-alias se='$EDITOR $(sk)'
-
 # neofetch
 alias nf0='clear;neofetch --config none'
-alias nf1='clear;neofetch --off --config none'
 alias nf='clear;neofetch'
 alias nfo='clear;neofetch --off'
-alias nfs='clear;neofetch --config ~/.config/neofetch/config-small.conf'
 
 # fonts
 alias f2s='fonttosfnt -v -r -b -c -g 2 -m 2 -o'
@@ -110,6 +107,11 @@ alias fcl='fc-list'
 
 # p10k
 alias p10kc='p10k configure'
+
+# zimfw
+alias zfu='zimfw update'
+alias zfe="$EDITOR $ZDOTDIR/.zimrc"
+alias zfc='zimfw clean'
 
 # pywal
 alias wal='wal -o wal-extras.sh'
