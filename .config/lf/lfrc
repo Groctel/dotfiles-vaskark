@@ -59,11 +59,11 @@ cmd delete ${{
      printf "$fx\n"
      printf "delete?[y/n]"
      read ans
-     [ $ans = "y" ] && rm -rf $fx
+     [ $ans = "y" ] && rm -rf $fx ~/.local/share/Trash/files
 }}
 
 # use '<delete>' key for either 'trash' or 'delete' command
-map <delete> trash
+# map <delete> trash
 # map <delete> delete
 
 # extract the current file with the right command
@@ -99,16 +99,24 @@ cmd zip ${{
 }}
 
 # preview
-map - $/home/jason/.config/lf/draw_img.sh $f
+#map - $~/.config/lf/draw_img.sh "$f"
 
 # video preview
-cmd video_preview ${{
-    CACHE=$(mktemp /tmp/thumb_cache.XXXXX)
-    ffmpegthumbnailer -i "$f" -o $CACHE -s 0
-    /home/jason/.config/lf/draw_img.sh $CACHE && rm $CACHE
-}}
-map + :video_preview
+#cmd video_preview ${{
+#    cache="$(mktemp "${TMPDIR:-/tmp}/thumb_cache.XXXXX")"
+#    ffmpegthumbnailer -i "$f" -o "$cache" -s 0
+#    ~/.config/lf/draw_img.sh "$cache"
+#}}
+#map + :video_preview
 
-# misc
-set icons false
-set relativenumber true
+set previewer ~/.config/lf/previewer.sh
+set cleaner ~/.config/lf/clear_img.sh
+
+# settings
+set relativenumber
+set dircounts
+set autoquit
+set icons
+
+# mappings
+map . set hidden!
