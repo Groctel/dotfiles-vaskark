@@ -1,133 +1,172 @@
 #!/bin/bash
 
-# wal
+##
+## Lemonbar
+## Fonts: scientifica (bdf), nerd font (ttf)
+##
+
+
 . "${HOME}/.cache/wal/colors.sh"
 
 ##########
 
-# cmd
+
 Cmd() {
+
 	ICON="ﲵ"
 	echo "%{F#000}%{B"$color1"}%{A:wal -f random_user -o wal-extras.sh:}  $ICON  %{A}%{B-}%{F-}"
+
 }
 
-# session
 Session() {
+
 	ICON=" "
-	#ICON=""
-	echo "%{F#000}%{B"$color5"}  $ICON$DESKTOP_SESSION  %{B-}%{F-}"
+	echo "%{F#000}%{B"$color5"}  $ICON $DESKTOP_SESSION  %{B-}%{F-}"
+
 }
 
-# luser
 User() {
+
 	ICON=" "
-	#ICON=""
-	echo "%{F#000}%{B"$color5"}  $ICON$USER  %{B-}%{F-}"
+	echo "%{F#000}%{B"$color5"}  $ICON $USER  %{B-}%{F-}"
+
 }
 
-# hostname
 Hostname() {
+
 	HOST=$(uname -n)
 	ICON=" "
-	#ICON=""
-	echo "%{F#000}%{B"$color5"}  $ICON$HOST  %{B-}%{F-}"
+	echo "%{F#000}%{B"$color5"}  $ICON $HOST  %{B-}%{F-}"
+
 }
 
-# uptime
 Uptime() {
+
 	UPTIME=$($HOME/.config/scripts/uptime.sh)
 	ICON=" "
-	#ICON=""
-	echo "%{F#000}%{B"$color5"}  $ICON$UPTIME  %{B-}%{F-}"
+	echo "%{F#000}%{B"$color5"}  $ICON $UPTIME  %{B-}%{F-}"
+
 }
 
-# weather
 Weather() {
+
 	WEATHER=$($HOME/.config/scripts/openweathermap-detailed.sh)
 	echo "$WEATHER"
 	sleep 300
+
 }
 
-# mpc
 Mpc() {
+
 	MPC=$(mpc current -f "%artist% >> %title%")
 	ICON="ﭵ"
-	echo "%{F"$color6"}$ICON%{F-}%{A:mpc toggle 1>/dev/null:}%{A2:mpc prev 1>/dev/null:}%{A3:mpc next 1>/dev/null:} $MPC%{A}%{A}%{A}"
+	echo "%{A:mpc toggle 1>/dev/null:}%{A2:mpc prev 1>/dev/null:}%{A3:mpc next 1>/dev/null:}%{F"$color2"}$ICON%{F-} $MPC%{A}%{A}%{A}"
+
 }
 
-# wifi
 Wifi() {
-	WIFISTR=$( iwconfig wlp2s0 | grep "Link" | sed 's/ //g' | sed 's/LinkQuality=//g' | sed 's/\/.*//g')
+
+    INTERFACE=$(ip addr | awk '/state UP/ {print $2}' | sed 's/://g')
+	WIFISTR=$(iwconfig $INTERFACE | grep "Link" | sed 's/ //g' | sed 's/LinkQuality=//g' | sed 's/\/.*//g')
+
 	if [ ! -z $WIFISTR ] ; then
-		WIFISTR=$(( ${WIFISTR} * 100 / 70))
-		ESSID=$(iwconfig wlp2s0 | grep ESSID | sed 's/ //g' | sed 's/.*://' | cut -d "\"" -f 2)
+		WIFISTR=$(( ${WIFISTR} * 100 / 70 ))
+		ESSID=$(iwconfig $INTERFACE | grep ESSID | sed 's/ //g' | sed 's/.*://g' | sed 's/\"//g')
 		if [ $WIFISTR -ge 1 ] ; then
-			echo "%{F"$color4"}說%{F-} ${ESSID} "
+			R1=`cat /sys/class/net/$INTERFACE/statistics/rx_bytes`
+			sleep 1
+     		R2=`cat /sys/class/net/$INTERFACE/statistics/rx_bytes`
+     		RBPS=`expr $R2 - $R1`
+     	    RKBPS=`expr $RBPS / 1024`
+     	    MKBPS=`expr $RKBPS / 1024`
+     	    ICON="說"
+			echo "%{F"$color4"}$ICON%{F-} $ESSID [ $RKBPS Kb/s ] "
 		fi
 	fi
+
 }
 
-# cpu
 Cpu() {
+
 	CPU=$($HOME/.config/scripts/cpu.sh)
-	echo "%{F"$color4"}﬙%{F-} $CPU "
+	ICON="﬙"
+	echo "%{F"$color4"}$ICON%{F-} $CPU "
+
 }
 
-# battery
 Battery() {
-    BAT=$($HOME/.config/scripts/bat.sh)
-    echo "%{F"$color4"}%{F-} $BAT "
+
+	CHARGE=$(acpi | grep "Not charging")
+	CAPACITY=$(cat /sys/class/power_supply/BAT0/capacity)
+
+	if [[ ! -z $CHARGE ]] ; then
+		ICON=""
+		echo "%{F"$color4"}$ICON%{F-} $CAPACITY% "
+	else
+  		ICON=""
+  		echo "%{F"$color4"}$ICON%{F-} $CAPACITY% "
+	fi
+
 }
 
-# memory
 Memory() {
+
 	T=$(cat /proc/meminfo | grep MemTotal | awk '{print $2}')
 	F=$(cat /proc/meminfo | grep MemFree | awk '{print $2}')
 	B=$(cat /proc/meminfo | grep Buffers | awk '{print $2}')
 	C=$(cat /proc/meminfo | grep Cached | awk 'NR==1 {print $2}')
 
 	USED=$((100*($T - $F - $B - $C) / $T))
-	echo "%{F"$color4"}%{F-} $USED% "
+	ICON=""
+	echo "%{F"$color4"}$ICON%{F-} $USED% "
+
 }
 
-# volume
 Volume() {
+
 	NOTMUTED=$(amixer -D pulse sget Master | grep "\[on\]")
+
 	if [[ ! -z $NOTMUTED ]] ; then
 		VOL=$(awk -F"[][]" '/Left:/ { print $2 }' <(amixer -D pulse sget Master) | sed 's/%//g')
-		echo "%{F"$color4"}墳%{F-} $VOL% "
+		ICON=""
+		echo "%{F"$color4"}$ICON%{F-} $VOL% "
 	else
-		echo "%{F#555}婢%{F-} --% "
+		ICON="ﱝ"
+		echo "%{F#555}$ICON%{F-} --% "
 	fi
+
 }
 
-# window name
-WindowName() {
-    WINDOWNAME=$(xdotool getwindowfocus getwindowname)
-    echo "  $WINDOWNAME "
+Window() {
+
+    WINDOW=$(xdotool getwindowfocus getwindowname)
+    echo "   $WINDOW "
+
 }
 
-# date
 Date() {
+
     DATE=$(date +"%a %b %d %Y")
-    ICON=" "
-    #ICON=""
-    echo "%{F#000}%{B"$color2"}  $ICON$DATE  %{B-}%{F-}"
+    ICON=""
+    echo "%{F#000}%{B"$color2"}  $ICON $DATE  %{B-}%{F-}"
+
 }
 
-# time
 Time() {
+
     TIME=$($HOME/.config/scripts/time.sh)
-    ICON=" "
-    #ICON=""
-    echo "%{A3:gnome-clocks:}%{F#000}%{B"$color2"}  $ICON$TIME  %{B-}%{F-}%{A}"
+    ICON=""
+    echo "%{A3:gnome-clocks:}%{F#000}%{B"$color2"}  $ICON $TIME  %{B-}%{F-}%{A}"
+
 }
+
 
 ##########
 
+
 while true; do
     echo -e "\
-	%{l}$(Cmd)$(Uptime) $(WindowName) \
+	%{l}$(Cmd)$(Uptime) $(Window) \
 	%{c}$(Mpc) \
 	%{r}$(Wifi) $(Cpu) $(Battery) $(Memory) $(Volume) $(Time)"
     sleep 0.1
