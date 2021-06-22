@@ -121,7 +121,8 @@ Wifi() {
      	    RKBPS=`expr $RBPS / 1024`
      	    MKBPS=`expr $RKBPS / 1024`
      	    ICON=""
-			echo "%{F"$color4"}$ICON%{F-} $ESSID [ $RKBPS Kb/s ] "
+     	    ICON_DOWN=""
+			echo "%{F"$color4"}$ICON%{F-} $ESSID [ %{F"$color4"}$ICON_DOWN%{F-} $RKBPS Kb/s ] "
 
 		fi
 
@@ -132,7 +133,7 @@ Wifi() {
 Cpu() {
 
 	CPU=$($HOME/.config/scripts/cpu.sh)
-	ICON=""
+	ICON=""
 	echo "%{F"$color4"}$ICON%{F-} $CPU "
 
 }
@@ -177,7 +178,7 @@ Battery() {
 		echo "Unsupported os: $(uname -s)" >&2
         exit 1
 
-	,,
+	;;
 
 	esac
 
@@ -241,7 +242,7 @@ Time() {
 
 while true; do
     echo -e "\
-	%{l}$(Uptime) $(Window) \
+	%{l}$(Cmd)$(Uptime) $(Window) \
 	%{c}$(Mpc) \
 	%{r}$(Wifi) $(Cpu) $(Battery) $(Memory) $(Volume) $(Time)"
     sleep 0.1
