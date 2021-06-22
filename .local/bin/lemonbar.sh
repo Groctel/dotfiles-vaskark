@@ -58,18 +58,47 @@ Weather() {
 
 Mpc() {
 
-	# freebsd uses musicpd and musicpc
+	case $(uname -s) in
 
-	MPD=$(systemctl --user status mpd | grep inactive)
+	Linux*)
 
-	if [[ ! -z $MPD ]] ; then
-		ICON=""
-		echo "%{F"#555"}$ICON%{F-} mpd offline"
-	else
+		MPD=$(systemctl --user status mpd | grep inactive)
+
+		if [[ ! -z $MPD ]] ; then
+			ICON=""
+			echo "%{F"#555"}$ICON%{F-} mpd offline"
+		else
+			MPC=$(mpc current -f "%artist% >> %title%")
+			ICON=""
+			echo "%{A:mpc toggle 1>/dev/null:}%{A2:mpc prev 1>/dev/null:}%{A3:mpc next 1>/dev/null:}%{F"$color2"}$ICON%{F-} $MPC%{A}%{A}%{A}"
+		fi
+
+	;;
+
+	OpenBSD*)
+		
 		MPC=$(mpc current -f "%artist% >> %title%")
 		ICON=""
 		echo "%{A:mpc toggle 1>/dev/null:}%{A2:mpc prev 1>/dev/null:}%{A3:mpc next 1>/dev/null:}%{F"$color2"}$ICON%{F-} $MPC%{A}%{A}%{A}"
-	fi
+		
+	;;
+
+	FreeBSD*)
+
+		MUSICPC=$(musicpc current -f "%artist% >> %title%")
+		ICON=""
+		echo "%{A:musicpc toggle 1>/dev/null:}%{A2:musicpc prev 1>/dev/null:}%{A3:musicpc next 1>/dev/null:}%{F"$color2"}$ICON%{F-} $MUSICPC%{A}%{A}%{A}"
+
+	;;
+
+	*)
+
+		echo "Unsupported os: $(uname -s)" >&2
+		exit 1
+
+	;;
+
+	esac
 
 }
 
@@ -110,16 +139,47 @@ Cpu() {
 
 Battery() {
 
-	CHARGE=$(acpi | grep "Not charging")
-	CAPACITY=$(cat /sys/class/power_supply/BAT0/capacity)
+	case $(uname -s) in
 
-	if [[ ! -z $CHARGE ]] ; then
-		ICON=""
-		echo "%{F"$color4"}$ICON%{F-} $CAPACITY% "
-	else
-  		ICON=""
+	Linux*)
+
+		CHARGE=$(acpi | grep "Not charging")
+		CAPACITY=$(cat /sys/class/power_supply/BAT0/capacity)
+
+		if [[ ! -z $CHARGE ]] ; then
+			ICON=""
+			echo "%{F"$color4"}$ICON%{F-} $CAPACITY% "
+		else
+  			ICON=""
+  			echo "%{F"$color4"}$ICON%{F-} $CAPACITY% "
+		fi
+
+	;;
+
+	OpenBSD*)
+
+		CAPACITY=$(apm | awk 'NR==1 { print $4 }')
+	  	ICON=""
   		echo "%{F"$color4"}$ICON%{F-} $CAPACITY% "
-	fi
+
+	;;
+
+	FreebSD*)
+
+		CAPACITY=$(apm | awk 'NR==5 { print $4 }')
+		ICON=""
+  		echo "%{F"$color4"}$ICON%{F-} $CAPACITY% "
+
+  	;;
+
+  	*)
+		
+		echo "Unsupported os: $(uname -s)" >&2
+        exit 1
+
+	,,
+
+	esac
 
 }
 
