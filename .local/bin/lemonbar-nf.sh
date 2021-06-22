@@ -20,14 +20,14 @@ Cmd() {
 
 Session() {
 
-	ICON=" "
+	ICON=""
 	echo "%{F#000}%{B"$color5"}  $ICON $DESKTOP_SESSION  %{B-}%{F-}"
 
 }
 
 User() {
 
-	ICON=" "
+	ICON=""
 	echo "%{F#000}%{B"$color5"}  $ICON $USER  %{B-}%{F-}"
 
 }
@@ -35,7 +35,7 @@ User() {
 Hostname() {
 
 	HOST=$(uname -n)
-	ICON=" "
+	ICON=""
 	echo "%{F#000}%{B"$color5"}  $ICON $HOST  %{B-}%{F-}"
 
 }
@@ -43,7 +43,7 @@ Hostname() {
 Uptime() {
 
 	UPTIME=$($HOME/.config/scripts/uptime.sh)
-	ICON=" "
+	ICON=""
 	echo "%{F#000}%{B"$color5"}  $ICON $UPTIME  %{B-}%{F-}"
 
 }
@@ -58,9 +58,18 @@ Weather() {
 
 Mpc() {
 
-	MPC=$(mpc current -f "%artist% >> %title%")
-	ICON="ﭵ"
-	echo "%{A:mpc toggle 1>/dev/null:}%{A2:mpc prev 1>/dev/null:}%{A3:mpc next 1>/dev/null:}%{F"$color2"}$ICON%{F-} $MPC%{A}%{A}%{A}"
+	# Note: freebsd uses musicpd and musicpc
+
+	MPD=$(systemctl --user status mpd | grep inactive)
+
+	if [[ ! -z $MPD ]] ; then
+		ICON="ﭵ"
+		echo "%{F"#555"}$ICON%{F-} mpd offline"
+	else
+		MPC=$(mpc current -f "%artist% >> %title%")
+		ICON="ﭵ"
+		echo "%{A:mpc toggle 1>/dev/null:}%{A2:mpc prev 1>/dev/null:}%{A3:mpc next 1>/dev/null:}%{F"$color2"}$ICON%{F-} $MPC%{A}%{A}%{A}"
+	fi
 
 }
 
@@ -70,9 +79,12 @@ Wifi() {
 	WIFISTR=$(iwconfig $INTERFACE | grep "Link" | sed 's/ //g' | sed 's/LinkQuality=//g' | sed 's/\/.*//g')
 
 	if [ ! -z $WIFISTR ] ; then
+
 		WIFISTR=$(( ${WIFISTR} * 100 / 70 ))
 		ESSID=$(iwconfig $INTERFACE | grep ESSID | sed 's/ //g' | sed 's/.*://g' | sed 's/\"//g')
+
 		if [ $WIFISTR -ge 1 ] ; then
+
 			R1=`cat /sys/class/net/$INTERFACE/statistics/rx_bytes`
 			sleep 1
      		R2=`cat /sys/class/net/$INTERFACE/statistics/rx_bytes`
@@ -81,7 +93,9 @@ Wifi() {
      	    MKBPS=`expr $RKBPS / 1024`
      	    ICON="說"
 			echo "%{F"$color4"}$ICON%{F-} $ESSID [ $RKBPS Kb/s ] "
+
 		fi
+
 	fi
 
 }
@@ -132,7 +146,7 @@ Volume() {
 		echo "%{F"$color4"}$ICON%{F-} $VOL% "
 	else
 		ICON="ﱝ"
-		echo "%{F#555}$ICON%{F-} --% "
+		echo "%{F#555}$ICON%{F-} --% " 
 	fi
 
 }
@@ -140,7 +154,7 @@ Volume() {
 Window() {
 
     WINDOW=$(xdotool getwindowfocus getwindowname)
-    echo "   $WINDOW "
+    echo "  $WINDOW "
 
 }
 
@@ -166,7 +180,7 @@ Time() {
 
 while true; do
     echo -e "\
-	%{l}$(Cmd)$(Uptime) $(Window) \
+	%{l}$(Uptime) $(Window) \
 	%{c}$(Mpc) \
 	%{r}$(Wifi) $(Cpu) $(Battery) $(Memory) $(Volume) $(Time)"
     sleep 0.1

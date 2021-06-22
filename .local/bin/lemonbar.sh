@@ -58,9 +58,18 @@ Weather() {
 
 Mpc() {
 
-    MPC=$(mpc current -f "%artist% >> %title%")
-	ICON=""
-	echo "%{A:mpc toggle 1>/dev/null:}%{A2:mpc prev 1>/dev/null:}%{A3:mpc next 1>/dev/null:}%{F"$color2"}$ICON%{F-} $MPC%{A}%{A}%{A}"
+	# freebsd uses musicpd and musicpc
+
+	MPD=$(systemctl --user status mpd | grep inactive)
+
+	if [[ ! -z $MPD ]] ; then
+		ICON=""
+		echo "%{F"#555"}$ICON%{F-} mpd offline"
+	else
+		MPC=$(mpc current -f "%artist% >> %title%")
+		ICON=""
+		echo "%{A:mpc toggle 1>/dev/null:}%{A2:mpc prev 1>/dev/null:}%{A3:mpc next 1>/dev/null:}%{F"$color2"}$ICON%{F-} $MPC%{A}%{A}%{A}"
+	fi
 
 }
 
@@ -70,9 +79,12 @@ Wifi() {
 	WIFISTR=$(iwconfig $INTERFACE | grep "Link" | sed 's/ //g' | sed 's/LinkQuality=//g' | sed 's/\/.*//g')
 
 	if [ ! -z $WIFISTR ] ; then
+
 		WIFISTR=$(( ${WIFISTR} * 100 / 70 ))
 		ESSID=$(iwconfig $INTERFACE | grep ESSID | sed 's/ //g' | sed 's/.*://g' | sed 's/\"//g')
+
 		if [ $WIFISTR -ge 1 ] ; then
+
 			R1=`cat /sys/class/net/$INTERFACE/statistics/rx_bytes`
 			sleep 1
      		R2=`cat /sys/class/net/$INTERFACE/statistics/rx_bytes`
@@ -81,7 +93,9 @@ Wifi() {
      	    MKBPS=`expr $RKBPS / 1024`
      	    ICON=""
 			echo "%{F"$color4"}$ICON%{F-} $ESSID [ $RKBPS Kb/s ] "
+
 		fi
+
 	fi
 
 }
@@ -141,7 +155,7 @@ Window() {
 
     WINDOW=$(xdotool getwindowfocus getwindowname)
     ICON=""
-    echo "  $ICON $WINDOW "
+    echo " $ICON $WINDOW "
 
 }
 
@@ -167,7 +181,7 @@ Time() {
 
 while true; do
     echo -e "\
-	%{l}$(Uptime)$(Window) \
+	%{l}$(Uptime) $(Window) \
 	%{c}$(Mpc) \
 	%{r}$(Wifi) $(Cpu) $(Battery) $(Memory) $(Volume) $(Time)"
     sleep 0.1
