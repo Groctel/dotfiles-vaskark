@@ -70,7 +70,7 @@ Mpc() {
 		else
 			MPC=$(mpc current -f "%artist% >> %title%")
 			ICON=""
-			echo "%{A:mpc toggle 1>/dev/null:}%{A2:mpc prev 1>/dev/null:}%{A3:mpc next 1>/dev/null:}%{F"$color2"}$ICON%{F-} $MPC%{A}%{A}%{A}"
+			echo "%{A:mpc toggle 1>/dev/null:}%{A2:mpc prev 1>/dev/null:}%{A3:mpc next 1>/dev/null:}%{F"$color6"}$ICON%{F-} $MPC%{A}%{A}%{A}"
 		fi
 
 	;;
@@ -85,9 +85,9 @@ Mpc() {
 
 	FreeBSD*)
 
-		MUSICPC=$(musicpc current -f "%artist% >> %title%")
+		MPC=$(musicpc current -f "%artist% >> %title%")
 		ICON=""
-		echo "%{A:musicpc toggle 1>/dev/null:}%{A2:musicpc prev 1>/dev/null:}%{A3:musicpc next 1>/dev/null:}%{F"$color2"}$ICON%{F-} $MUSICPC%{A}%{A}%{A}"
+		echo "%{A:mpc toggle 1>/dev/null:}%{A2:mpc prev 1>/dev/null:}%{A3:mpc next 1>/dev/null:}%{F"$color2"}$ICON%{F-} $MUSICPC%{A}%{A}%{A}"
 
 	;;
 
@@ -199,16 +199,44 @@ Memory() {
 
 Volume() {
 
-	NOTMUTED=$(amixer -D pulse sget Master | grep "\[on\]")
+	case $(uname -s) in
 
-	if [[ ! -z $NOTMUTED ]] ; then
-		VOL=$(awk -F"[][]" '/Left:/ { print $2 }' <(amixer -D pulse sget Master) | sed 's/%//g')
+	Linux*)
+
+		NOTMUTED=$(amixer -D pulse sget Master | grep "\[on\]")
+
+		if [[ ! -z $NOTMUTED ]] ; then
+			VOL=$(awk -F"[][]" '/Left:/ { print $2 }' <(amixer -D pulse sget Master) | sed 's/%//g')
+			ICON=""
+			echo "%{F"$color4"}$ICON%{F-} $VOL% "
+		else
+			ICON=""
+			echo "%{F#555}$ICON%{F-} --% "
+		fi
+
+	;;
+
+	FreeBSD*)
+	
+		VOL=$(mixer | grep 'vol' | awk '{ print $7 }' | sed 's/.*://')
 		ICON=""
 		echo "%{F"$color4"}$ICON%{F-} $VOL% "
-	else
-		ICON=""
-		echo "%{F#555}$ICON%{F-} --% "
-	fi
+
+	;;
+
+	OpenBSD*)
+
+
+	;;
+
+	*)
+
+		echo "Unsupported os: $(uname -s)" >&2
+        exit 1
+
+	;;
+
+	esac
 
 }
 
@@ -242,7 +270,7 @@ Time() {
 
 while true; do
     echo -e "\
-	%{l}$(Cmd)$(Uptime) $(Window) \
+	%{l}$(Uptime) $(Window) \
 	%{c}$(Mpc) \
 	%{r}$(Wifi) $(Cpu) $(Battery) $(Memory) $(Volume) $(Time)"
     sleep 0.1
