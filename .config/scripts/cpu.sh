@@ -10,10 +10,6 @@
 c=
 
 case $(uname -s) in
-    OpenBSD*)
-        c=$(sysctl -n hw.sensors.cpu0.temp0)
-        c="${c%.*}"
-    ;;
     Linux*)
         path=/sys/class/thermal/thermal_zone0/temp
         if [ -f $path ]
@@ -25,6 +21,14 @@ case $(uname -s) in
         fi
 
         c="${c%???}"
+    ;;
+    OpenBSD*)
+        c=$(sysctl -n hw.sensors.cpu0.temp0)
+        c="${c%.*}"
+    ;;
+    FreeBSD*)
+        c=$(sysctl -a dev.cpu.0.temperature)
+        c="${c%.*}"
     ;;
     *)
         echo "unsupported os: $(uname -s)" >&2
