@@ -176,7 +176,7 @@ Battery() {
   	*)
 		
 		echo "Unsupported os: $(uname -s)" >&2
-        exit 1
+        	exit 1
 
 	;;
 
@@ -225,14 +225,17 @@ Volume() {
 	;;
 
 	OpenBSD*)
-
+		
+		VOL=$(pactl list sinks | awk '/Volume: front-left/ { print $5 }' | sed 's/,//')
+		ICON=""
+		echo "%{F"$color4"}$ICON%{F-} $VOL% "
 
 	;;
 
 	*)
 
 		echo "Unsupported os: $(uname -s)" >&2
-        exit 1
+        	exit 1
 
 	;;
 
@@ -242,25 +245,25 @@ Volume() {
 
 Window() {
 
-    WINDOW=$(xdotool getwindowfocus getwindowname)
-    ICON=""
-    echo " $ICON $WINDOW "
+    	WINDOW=$(xdotool getwindowfocus getwindowname)
+    	ICON=""
+    	echo " $ICON $WINDOW "
 
 }
 
 Date() {
 
-    DATE=$(date +"%a %b %d %Y")
-    ICON=""
-    echo "%{F#000}%{B"$color2"}  $ICON $DATE  %{B-}%{F-}"
+    	DATE=$(date +"%a %b %d %Y")
+    	ICON=""
+    	echo "%{F#000}%{B"$color2"}  $ICON $DATE  %{B-}%{F-}"
 
 }
 
 Time() {
 
-    TIME=$($HOME/.config/scripts/time.sh)
-    ICON=""
-    echo "%{A3:gnome-clocks:}%{F#000}%{B"$color2"}  $ICON $TIME  %{B-}%{F-}%{A}"
+    	TIME=$($HOME/.config/scripts/time.sh)
+    	ICON=""
+    	echo "%{A3:gnome-clocks:}%{F#000}%{B"$color2"}  $ICON $TIME  %{B-}%{F-}%{A}"
 
 }
 
@@ -272,6 +275,6 @@ while true; do
     echo -e "\
 	%{l}$(Uptime) $(Window) \
 	%{c}$(Mpc) \
-	%{r}$(Wifi) $(Cpu) $(Battery) $(Memory) $(Volume) $(Time)"
+	%{r}$(Battery) $(Volume) $(Time)"
     sleep 0.1
 done
