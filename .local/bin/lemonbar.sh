@@ -165,7 +165,7 @@ Battery() {
 
 	;;
 
-	FreebSD*)
+	FreeBSD*)
 
 		CAPACITY=$(apm | awk 'NR==5 { print $4 }')
 		ICON=""
