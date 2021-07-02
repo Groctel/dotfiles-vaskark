@@ -85,7 +85,7 @@ Mpc() {
 
 	FreeBSD*)
 
-		MPC=$(musicpc current -f "%artist% >> %title%")
+		MPC=$(mpc current -f "%artist% >> %title%")
 		ICON=""
 		echo "%{A:mpc toggle 1>/dev/null:}%{A2:mpc prev 1>/dev/null:}%{A3:mpc next 1>/dev/null:}%{F"$color2"}$ICON%{F-} $MUSICPC%{A}%{A}%{A}"
 
