@@ -53,5 +53,5 @@ sed -i "s|#define COLOR @fg.*$|#define COLOR @fg:mix("$color02"ff, "$color10"aa,
 sed -i "s|#define COLOR @fg.*$|#define COLOR @fg:mix("$color02"ff, "$color10"aa, clamp(d / GRADIENT, 0, 1))|g" ~/.config/glava/radial.glsl
 if ps -A | grep glava; then
 	pkill glava 2>/dev/null
-	glava -d -a fifo &
+	glava -d &
 fi

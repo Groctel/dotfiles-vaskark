@@ -246,8 +246,9 @@ Volume() {
 Window() {
 
     	WINDOW=$(xdotool getwindowfocus getwindowname)
+        SHORT=${WINDOW:0:75}
     	ICON=""
-    	echo " $ICON $WINDOW "
+    	echo " $ICON $SHORT "
 
 }
 
@@ -275,6 +276,6 @@ while true; do
     echo -e "\
 	%{l}$(Uptime) $(Window) \
 	%{c}$(Mpc) \
-	%{r}$(Battery) $(Volume) $(Time)"
+	%{r}$(Wifi) $(Cpu) $(Memory) $(Battery) $(Volume) $(Time)"
     sleep 0.1
 done

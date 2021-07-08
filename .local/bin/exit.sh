@@ -3,7 +3,7 @@
 # exit script
 # note: must be in 'operators' group on *bsd
 
-MENU="$(rofi -sep "|" -dmenu -i -p 'Exit:' -location 0 -width 8 -hide-scrollbar -line-padding 4 -padding 20 -lines 4 -font "scientifica bold 8" <<< "Lock|Logout|Restart|Shutdown|Cancel")"
+MENU="$(rofi -sep "|" -dmenu -i -p 'Exit:' -location 0 -width 8 -hide-scrollbar -line-padding 4 -padding 20 -lines 5 -font "scientifica bold 8" <<< "Lock|Logout|Restart|Shutdown|Cancel")"
 
 case $(uname -s) in
 	Linux*)
