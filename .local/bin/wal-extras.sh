@@ -20,8 +20,8 @@ color15=$(sed -n 16p ~/.cache/wal/colors)
 
 ## berry
 if ps -A | grep berry; then
-	berry00=$(awk 'NR==1 {print substr($1,2,7)}' ~/.cache/wal/colors)
-	berry02=$(awk 'NR==3 {print substr($1,2,7)}' ~/.cache/wal/colors)
+	berry00=$(sed -n 1p ~/.cache/wal/colors | sed 's/#//')
+	berry02=$(sed -n 3p ~/.cache/wal/colors | sed 's/#//')
 	berryc inner_focus_color   $berry02
 	berryc text_focus_color    $berry00
 	berryc inner_unfocus_color $berry00
