@@ -9,20 +9,24 @@ Xft.lcdfilter: lcddefault
 
 !! URxvt
 URxvt*termName: rxvt-unicode-256color
-URxvt*font: -*-scientifica-medium-r-*
+URxvt*font: -*-scientifica-medium-r-*, xft:UbuntuMono Nerd Font Mono:size=9            
 URxvt*boldFont: -*-scientifica-bold-r-*
 URxvt*letterSpace: -6
 URxvt*lineSpace: 0
-URxvt*geometry: 90x26
+URxvt*geometry: 88x24
 URxvt*internalBorder: 20
 URxvt*cursorBlink: false
-URxvt*cursorUnderline: true
 URxvt*saveLines: 2000
 URxvt*scrollBar: false
 URxvt*urgentOnBell: true
 URxvt*depth: 32
 URxvt*iso14755: false
 URxvt*iso14755_52: false
+URxvt*pointerBlank: true
+URxvt*fading: 20
+
+!! Change font on-the-fly
+URxvt.keysym.C-M-1: command:\033]710;xft:Monospace:size=8\007\033]711;xft:Monospace:bold:size=8\007
 
 !! URxvt Navigation Keys
 URxvt.keysym.M-Up: command:\033]720;1\007
@@ -33,7 +37,7 @@ URxvt.keysym.C-Right: \033[1;5C
 URxvt.keysym.C-Left: \033[1;5D
 
 !! URxvt Extensions
-URxvt.perl-ext-common: default,matcher,selection-to-clipboard,keyboard-select,resize-font,bell-command
+URxvt.perl-ext-common: default,url-select,selection-to-clipboard,keyboard-select,resize-font,bell-command,option-popup
 ! selection-to-clipboard
 URxvt.keysym.C-S-C: eval:selection_to_clipboard
 URxvt.keysym.C-S-V: eval:paste_clipboard
@@ -41,11 +45,10 @@ URxvt.keysym.C-S-V: eval:paste_clipboard
 URxvt.keysym.M-Escape: perl:keyboard-select:activate
 URxvt.keysym.M-s: perl:keyboard-select:search
 URxvt.keyboard-select.clipboard: true
-! matcher
-URxvt.keysym.C-Delete:    matcher:last
-URxvt.keysym.M-Delete:    matcher:list
-URxvt.keysym.C-M-Delete:  matcher:select
-URxvt.matcher.button:     1
+! url-select
+URxvt.keysym.M-u: perl:url-select:select_next
+URxvt.url-select.underline: true
+URxvt.url-select.autocopy: true
 ! resize-font
 URxvt.resize-font.smaller: C-minus
 URxvt.resize-font.bigger: C-equal
@@ -57,13 +60,12 @@ URxvt.bell-command: canberra-gtk-play -i bell
 !! XTerm
 xterm*termName: xterm-256color
 xterm*scrollBar: false
-xterm*geometry: 84x26
+xterm*geometry: 74x22
 xterm*borderWidth: 0
 xterm*internalBorder: 20
 xterm*renderFont: true
-xterm*allowBoldFonts: false
-!xterm*font: -cmvnd-lemon-medium-r-normal--10-110-75-75-m-50-iso10646-1
-xterm*font: lemon
+xterm*faceName: spleen:pixelsize=12:antialias=false
+!xterm*font: spleem-6x12
 xterm*on2Clicks: word
 xterm*on3Clicks: line
 xterm*dynamicColors: On
