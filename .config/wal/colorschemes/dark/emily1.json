@@ -2,26 +2,26 @@
     "wallpaper": "/home/jason/Pictures/emily-blunt-sweater-tender-hairstyle-m.jpg",
     "alpha": "100",
     "special": {
-        "background": "#353234",
-        "foreground": "#c3c1b8",
-        "cursor": "#97a293"
+        "background": "#222222",
+        "foreground": "#DDDDDD",
+        "cursor": "#66AABB"
     },
     "colors": {
-        "color0": "#353234",
-        "color1": "#97544d",
-        "color2": "#78746c",
-        "color3": "#c29f6f",
-        "color4": "#5e606c",
-        "color5": "#7a6054",
-        "color6": "#97a293",
-        "color7": "#c3c1b8",
-        "color8": "#4e4a4d",
-        "color9": "#d36155",
-        "color10": "#aa9b7d",
-        "color11": "#ffd17c",
-        "color12": "#6d7399",
-        "color13": "#ab775f",
-        "color14": "#bae6ab",
-        "color15": "#fffef2"
+        "color0": "#222222",
+        "color1": "#E84F4F",
+        "color2": "#FEA63C",
+        "color3": "#B7CE42",
+        "color4": "#6D878D",
+        "color5": "#B7416E",
+        "color6": "#66AABB",
+        "color7": "#DDDDDD",
+        "color8": "#3b3b3b",
+        "color9": "#ff5252",
+        "color10": "#ffd939",
+        "color11": "#f9ff44",
+        "color12": "#7db9c7",
+        "color13": "#fe448b",
+        "color14": "#71e8ff",
+        "color15": "#ffffff"
     }
 }
