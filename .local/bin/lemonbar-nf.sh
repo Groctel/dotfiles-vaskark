@@ -183,6 +183,6 @@ while true; do
     echo -e "\
 	%{l}$(Uptime) $(Window) \
 	%{c}$(Mpc) \
-	%{r}$(Wifi) $(Cpu) $(Battery) $(Memory) $(Volume) $(Time)"
+	%{r}$(Wifi) $(Cpu) $(Memory) $(Battery) $(Volume) $(Time)"
     sleep 0.1
 done
