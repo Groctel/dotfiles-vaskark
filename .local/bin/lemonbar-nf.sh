@@ -68,7 +68,7 @@ Mpc() {
 	else
 		MPC=$(mpc current -f "%artist% >> %title%")
 		ICON="ﭵ"
-		echo "%{A:mpc toggle 1>/dev/null:}%{A2:mpc prev 1>/dev/null:}%{A3:mpc next 1>/dev/null:}%{F"$color2"}$ICON%{F-} $MPC%{A}%{A}%{A}"
+		echo "%{A:mpc toggle 1>/dev/null:}%{A2:mpc prev 1>/dev/null:}%{A3:mpc next 1>/dev/null:}%{F"$color6"}$ICON%{F-} $MPC%{A}%{A}%{A}"
 	fi
 
 }
