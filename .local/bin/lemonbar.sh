@@ -48,6 +48,13 @@ Uptime() {
 
 }
 
+Workspaces() {
+
+	WORKSPACES=$($HOME/bin/lemonbar_workspaces.sh)
+	echo "  $WORKSPACES  "
+
+}
+
 Weather() {
 
 	WEATHER=$($HOME/.config/scripts/openweathermap-detailed.sh)
@@ -87,7 +94,7 @@ Mpc() {
 
 		MPC=$(mpc current -f "%artist% >> %title%")
 		ICON=""
-		echo "%{A:mpc toggle 1>/dev/null:}%{A2:mpc prev 1>/dev/null:}%{A3:mpc next 1>/dev/null:}%{F"$color2"}$ICON%{F-} $MUSICPC%{A}%{A}%{A}"
+		echo "%{A:mpc toggle 1>/dev/null:}%{A2:mpc prev 1>/dev/null:}%{A3:mpc next 1>/dev/null:}%{F"$color2"}$ICON%{F-} $MPC%{A}%{A}%{A}"
 
 	;;
 
