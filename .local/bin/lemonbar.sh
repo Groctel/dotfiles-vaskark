@@ -48,21 +48,6 @@ Uptime() {
 
 }
 
-Workspaces() {
-
-	WORKSPACES=$($HOME/bin/lemonbar_workspaces.sh)
-	echo "  $WORKSPACES  "
-
-}
-
-Weather() {
-
-	WEATHER=$($HOME/.config/scripts/openweathermap-detailed.sh)
-	echo "$WEATHER"
-	sleep 300
-
-}
-
 Mpc() {
 
 	case $(uname -s) in
