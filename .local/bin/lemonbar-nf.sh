@@ -48,28 +48,49 @@ Uptime() {
 
 }
 
-Weather() {
-
-	WEATHER=$($HOME/.config/scripts/openweathermap-detailed.sh)
-	echo "$WEATHER"
-	sleep 300
-
-}
-
 Mpc() {
 
-	# Note: freebsd uses musicpd and musicpc
+	case $(uname -s) in
 
-	MPD=$(systemctl --user status mpd | grep inactive)
+	Linux*)
 
-	if [[ ! -z $MPD ]] ; then
-		ICON="ﭵ"
-		echo "%{F"#555"}$ICON%{F-} mpd offline"
-	else
+		MPD=$(systemctl --user status mpd | grep inactive)
+
+		if [[ ! -z $MPD ]] ; then
+			ICON="ﭵ"
+			echo "%{F"#555"}$ICON%{F-} mpd offline"
+		else
+			MPC=$(mpc current -f "%artist% >> %title%")
+			ICON="ﭵ"
+			echo "%{A:mpc toggle 1>/dev/null:}%{A2:mpc prev 1>/dev/null:}%{A3:mpc next 1>/dev/null:}%{F"$color6"}$ICON%{F-} $MPC%{A}%{A}%{A}"
+		fi
+
+	;;
+
+	OpenBSD*)
+		
 		MPC=$(mpc current -f "%artist% >> %title%")
 		ICON="ﭵ"
-		echo "%{A:mpc toggle 1>/dev/null:}%{A2:mpc prev 1>/dev/null:}%{A3:mpc next 1>/dev/null:}%{F"$color6"}$ICON%{F-} $MPC%{A}%{A}%{A}"
-	fi
+		echo "%{A:mpc toggle 1>/dev/null:}%{A2:mpc prev 1>/dev/null:}%{A3:mpc next 1>/dev/null:}%{F"$color2"}$ICON%{F-} $MPC%{A}%{A}%{A}"
+		
+	;;
+
+	FreeBSD*)
+
+		MPC=$(mpc current -f "%artist% >> %title%")
+		ICON="ﭵ"
+		echo "%{A:mpc toggle 1>/dev/null:}%{A2:mpc prev 1>/dev/null:}%{A3:mpc next 1>/dev/null:}%{F"$color2"}$ICON%{F-} $MPC%{A}%{A}%{A}"
+
+	;;
+
+	*)
+
+		echo "Unsupported os: $(uname -s)" >&2
+		exit 1
+
+	;;
+
+	esac
 
 }
 
@@ -111,16 +132,47 @@ Cpu() {
 
 Battery() {
 
-	CHARGE=$(acpi | grep "Not charging")
-	CAPACITY=$(cat /sys/class/power_supply/BAT0/capacity)
+	case $(uname -s) in
 
-	if [[ ! -z $CHARGE ]] ; then
-		ICON=""
-		echo "%{F"$color4"}$ICON%{F-} $CAPACITY% "
-	else
-  		ICON=""
+	Linux*)
+
+		CHARGE=$(acpi | grep "Not charging")
+		CAPACITY=$(cat /sys/class/power_supply/BAT0/capacity)
+
+		if [[ ! -z $CHARGE ]] ; then
+			ICON=""
+			echo "%{F"$color4"}$ICON%{F-} $CAPACITY% "
+		else
+  			ICON=""
+  			echo "%{F"$color4"}$ICON%{F-} $CAPACITY% "
+		fi
+
+	;;
+
+	OpenBSD*)
+
+		CAPACITY=$(apm | awk 'NR==1 { print $4 }')
+	  	ICON=""
   		echo "%{F"$color4"}$ICON%{F-} $CAPACITY% "
-	fi
+
+	;;
+
+	FreeBSD*)
+
+		CAPACITY=$(apm | awk 'NR==5 { print $4 }')
+		ICON=""
+  		echo "%{F"$color4"}$ICON%{F-} $CAPACITY% "
+
+  	;;
+
+  	*)
+		
+		echo "Unsupported os: $(uname -s)" >&2
+        	exit 1
+
+	;;
+
+	esac
 
 }
 
@@ -139,39 +191,72 @@ Memory() {
 
 Volume() {
 
-	NOTMUTED=$(amixer -D pulse sget Master | grep "\[on\]")
+	case $(uname -s) in
 
-	if [[ ! -z $NOTMUTED ]] ; then
-		VOL=$(awk -F"[][]" '/Left:/ { print $2 }' <(amixer -D pulse sget Master) | sed 's/%//g')
+	Linux*)
+
+		NOTMUTED=$(amixer -D pulse sget Master | grep "\[on\]")
+
+		if [[ ! -z $NOTMUTED ]] ; then
+			VOL=$(awk -F"[][]" '/Left:/ { print $2 }' <(amixer -D pulse sget Master) | sed 's/%//g')
+			ICON=""
+			echo "%{F"$color4"}$ICON%{F-} $VOL% "
+		else
+			ICON="ﱝ"
+			echo "%{F#555}$ICON%{F-} --% "
+		fi
+
+	;;
+
+	FreeBSD*)
+	
+		VOL=$(mixer | grep 'vol' | awk '{ print $7 }' | sed 's/.*://')
 		ICON=""
 		echo "%{F"$color4"}$ICON%{F-} $VOL% "
-	else
-		ICON="ﱝ"
-		echo "%{F#555}$ICON%{F-} --% " 
-	fi
+
+	;;
+
+	OpenBSD*)
+		
+		VOL=$(pactl list sinks | awk '/Volume: front-left/ { print $5 }' | sed 's/,//')
+		ICON=""
+		echo "%{F"$color4"}$ICON%{F-} $VOL% "
+
+	;;
+
+	*)
+
+		echo "Unsupported os: $(uname -s)" >&2
+        	exit 1
+
+	;;
+
+	esac
 
 }
 
 Window() {
 
-    WINDOW=$(xdotool getwindowfocus getwindowname)
-    echo "  $WINDOW "
+    	WINDOW=$(xdotool getwindowfocus getwindowname)
+        SHORT=${WINDOW:0:75}
+    	ICON=""
+    	echo " $ICON $SHORT "
 
 }
 
 Date() {
 
-    DATE=$(date +"%a %b %d %Y")
-    ICON=""
-    echo "%{F#000}%{B"$color2"}  $ICON $DATE  %{B-}%{F-}"
+    	DATE=$(date +"%a %b %d %Y")
+    	ICON=""
+    	echo "%{F#000}%{B"$color2"}  $ICON $DATE  %{B-}%{F-}"
 
 }
 
 Time() {
 
-    TIME=$($HOME/.config/scripts/time.sh)
-    ICON=""
-    echo "%{A3:gnome-clocks:}%{F#000}%{B"$color2"}  $ICON $TIME  %{B-}%{F-}%{A}"
+    	TIME=$($HOME/.config/scripts/time.sh)
+    	ICON=""
+    	echo "%{A3:gnome-clocks:}%{F#000}%{B"$color2"}  $ICON $TIME  %{B-}%{F-}%{A}"
 
 }
 
