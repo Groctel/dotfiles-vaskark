@@ -4,12 +4,12 @@
 
 
 # terminals
-super + {_,shift +} Return
-	{alacritty,kitty}
+super + {_,shift +,ctrl +} Return
+	{alacritty,kitty,urxvt}
 
 # program launchers
 super + {d,x}
-	{rofi -show drun,dmenu.sh}
+	{rofi -show drun -lines 5,dmenu.sh}
 
 # reload sxhkd
 super + control + r
@@ -68,8 +68,10 @@ XF86MonBrightness{Up,Down}
 	light {-A 5,-U 5}
 
 # wal
-super + {_,shift +} F12
-	wal {-f random_user,-R} -o wal-extras.sh 
+super + F12
+	wal -f random_user -o wal-extras.sh
+super + shift + F12
+	wal -Rq -o wal-extras.sh 
         
 # sxiv
 super + shift + equal
@@ -78,5 +80,5 @@ super + shift + equal
 # reboot, shutdown
 #super + {shift,ctrl} + Delete
 #	{reboot,poweroff}
-super + shift + Delete
+super + control + Delete
 	exit.sh

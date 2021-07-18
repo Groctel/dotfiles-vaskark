@@ -8,7 +8,6 @@
   background-color: @background;
   text-color:       @foreground;
   font:             "scientifica bold 8";
-  lines:            5;
   columns:          1;
 }}
 
