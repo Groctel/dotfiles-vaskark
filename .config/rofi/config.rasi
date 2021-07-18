@@ -9,6 +9,5 @@ configuration {
   location: 0;
   sidebar-mode: false;	
   disable-history: true;
-  hover-select: false;
-  theme: "~/.cache/wal/colors-rofi-dark.rasi.default-2";
+  theme: "~/.cache/wal/colors-rofi-dark.rasi.default";
 }
