@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/jason/Pictures/wp4700204-m.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#181717",
+        "foreground": "#c5c5c5",
+        "cursor": "#d06335"
+    },
+    "colors": {
+        "color0": "#181717",
+        "color1": "#823f2a",
+        "color2": "#d08766",
+        "color3": "#158fa8",
+        "color4": "#72c6c7",
+        "color5": "#32b6c1",
+        "color6": "#d06335",
+        "color7": "#c5c5c5",
+        "color8": "#312f2f",
+        "color9": "#b44c2b",
+        "color10": "#ffa770",
+        "color11": "#0ec2e6",
+        "color12": "#7fffff",
+        "color13": "#31faff",
+        "color14": "#ff7933",
+        "color15": "#ffffff"
+    }
+}
