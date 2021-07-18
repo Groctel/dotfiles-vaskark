@@ -44,7 +44,7 @@ Uptime() {
 
 	UPTIME=$($HOME/.config/scripts/uptime.sh)
 	ICON=""
-	echo "%{F#000}%{B"$color5"}  $ICON $UPTIME  %{B-}%{F-}"
+	echo "%{F#000}%{B"$color5"}%{A:wal -f random_user -o wal-extras.sh:}  $ICON $UPTIME  %{A}%{B-}%{F-}"
 
 }
 
@@ -168,7 +168,7 @@ Battery() {
   	*)
 		
 		echo "Unsupported os: $(uname -s)" >&2
-        	exit 1
+        exit 1
 
 	;;
 
