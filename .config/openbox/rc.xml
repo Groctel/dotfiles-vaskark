@@ -376,12 +376,12 @@
     <!-- Keybindings for startmenu -->
     <keybind key="W-d">
       <action name="Execute">
-        <command>rofi -show drun</command>
+        <command>rofi -show drun -lines 5</command>
       </action>
     </keybind>
     <keybind key="W-x">
       <action name="Execute">
-        <command>rofi -show run</command>
+        <command>dmenu.sh</command>
       </action>
     </keybind>
     <!--
@@ -512,7 +512,12 @@
     <!-- Lemonbar -->
     <keybind key="W-semicolon">
       <action name="Execute">
-        <command>sh -c 'pkill lemonbar 2&gt;/dev/null || lemonbar-start.sh'</command>
+        <command>sh -c 'pkill lemonbar 2&gt;/dev/null || lemonbar-current'</command>
+      </action>
+    </keybind>
+    <keybind key="W-S-semicolon">
+      <action name="Execute">
+        <command>lemonbar-menu.sh</command>
       </action>
     </keybind>
     <!-- GLava -->

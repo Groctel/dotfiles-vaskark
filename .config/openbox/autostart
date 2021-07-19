@@ -3,6 +3,7 @@ wal -R -o wal-extras.sh &
 
 # picom
 picom --experimental-backends --config ~/.config/picom/picom.conf &
+#picom --config ~/.config/picom/picom-xr.conf &
 
 # polkit
 /usr/lib/policykit-1-gnome/polkit-gnome-authentication-agent-1 &
