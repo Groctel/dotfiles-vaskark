@@ -75,7 +75,7 @@ super + shift + F12
         
 # sxiv
 super + shift + equal
-	sxiv -rt "$HOME/Pictures/wow"
+	ls -t $HOME/Pictures/wow/* | xargs sxiv -rt
 
 # reboot, shutdown
 #super + {shift,ctrl} + Delete
