@@ -1,6 +1,3 @@
-# path
-export PATH="$HOME/.local/bin:$PATH"
-
 # ssh-agent
 if [ ! -S ~/.ssh/ssh_auth_sock ]; then
     eval `ssh-agent`
