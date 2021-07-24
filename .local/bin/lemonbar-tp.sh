@@ -206,26 +206,26 @@ Volume() {
 
 Window() {
 
-    	WINDOW=$(xdotool getwindowfocus getwindowname)
-        SHORT=${WINDOW:0:75}
-    	ICON=""
-    	echo " $ICON $SHORT "
+    WINDOW=$(xdotool getwindowfocus getwindowname)
+    SHORT=${WINDOW:0:75}
+    ICON=""
+    echo " $ICON $SHORT "
 
 }
 
 Date() {
 
-    	DATE=$(date +"%a %b %d %Y")
-    	ICON=""
-    	echo "%{F#000}%{B"$color2"}  $ICON $DATE  %{B-}%{F-}"
+    DATE=$(date +"%a %b %d %Y")
+    ICON=""
+    echo "%{F#000}%{B"$color2"}  $ICON $DATE  %{B-}%{F-}"
 
 }
 
 Time() {
 
-    	TIME=$($HOME/.config/scripts/time.sh)
-    	ICON=""
-    	echo "%{A3:gnome-clocks:}%{F#000}%{B"$color2"}  $ICON $TIME  %{B-}%{F-}%{A}"
+    TIME=$($HOME/.config/scripts/time.sh)
+    ICON=""
+    echo "%{A3:gnome-clocks:}%{F#000}%{B"$color2"}  $ICON $TIME  %{B-}%{F-}%{A}"
 
 }
 
@@ -238,5 +238,5 @@ while true; do
 	%{l}$(Uptime) $(Window) \
 	%{c}$(Mpc) \
 	%{r}$(Wifi) $(Cpu) $(Memory) $(Battery) $(Volume) $(Time)"
-    sleep 0.1
+    sleep 0.05
 done
