@@ -72,14 +72,20 @@ source $ZDOTDIR/functions/fzf-kill 2>/dev/null
 source $ZDOTDIR/functions/fzf-man 2>/dev/null
 
 # plugins
-source $ZDOTDIR/plugins/extract/extract.plugin.zsh 2>/dev/null
-source $ZDOTDIR/plugins/command-not-found/command-not-found.plugin.zsh 2>/dev/null
+source $ZDOTDIR/plugins/zsh-extract/extract.plugin.zsh 2>/dev/null
 source $ZDOTDIR/plugins/zsh-autosuggestions/zsh-autosuggestions.plugin.zsh 2>/dev/null
 source $ZDOTDIR/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.plugin.zsh 2>/dev/null
+source $ZDOTDIR/plugins/zsh-history-substring-search/zsh-history-substring-search.plugin.zsh 2>/dev/null
 
-# highlights
+# syntax-highlighting
 ZSH_HIGHLIGHT_HIGHLIGHTERS=(main brackets pattern cursor)
 ZSH_HIGHLIGHT_PATTERNS+=('rm -rf *' 'fg=white,bold,bg=red')
+
+# history-substring-search keys
+bindkey "$terminfo[kcuu1]" history-substring-search-up
+bindkey "$terminfo[kcud1]" history-substring-search-down
+bindkey -M vicmd 'k' history-substring-search-up
+bindkey -M vicmd 'j' history-substring-search-down
 
 # fzf
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
