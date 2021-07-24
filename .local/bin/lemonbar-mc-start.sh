@@ -10,12 +10,12 @@ w=$(( $(xdotool getdisplaygeometry | awk '{print $1}') - (2*x) ))
 h=34
 
 # start
-lemonbar.sh | lemonbar \
+lemonbar-mc.sh | lemonbar \
 -p \
 -o -1 \
 -f "-*-scientifica-bold-r-*" \
 -o 0 \
--f "Siji-10" \
+-f "Microns-10" \
 -g "$w"x"$h"+"$x"+"$y" \
 -B "$color0" \
 -F "#555" \

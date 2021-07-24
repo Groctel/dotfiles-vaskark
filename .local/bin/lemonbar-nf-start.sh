@@ -12,9 +12,9 @@ h=34
 # start
 lemonbar-nf.sh | lemonbar \
 -p \
--o -2 \
+-o -1 \
 -f "-*-scientifica-bold-r-*" \
--o 0 \
+-o 1 \
 -f "Symbols Nerd Font-10" \
 -g "$w"x"$h"+"$x"+"$y" \
 -B "$color0" \
