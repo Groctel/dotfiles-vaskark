@@ -50,54 +50,23 @@ Uptime() {
 
 Mpc() {
 
-	case $(uname -s) in
+	MPD=$(ps -A | grep mpd)
 
-	Linux*)
-
-		MPD=$(systemctl --user status mpd | grep inactive)
-
-		if [[ ! -z $MPD ]] ; then
-			ICON=""
-			echo "%{F"#555"}$ICON%{F-} mpd offline"
-		else
-			MPC=$(mpc current -f "%artist% >> %title%")
-			ICON=""
-			echo "%{A:mpc toggle 1>/dev/null:}%{A2:mpc prev 1>/dev/null:}%{A3:mpc next 1>/dev/null:}%{F"$color6"}$ICON%{F-} $MPC%{A}%{A}%{A}"
-		fi
-
-	;;
-
-	OpenBSD*)
-		
+	if [[ -z $MPD ]] ; then
+		ICON=""
+		echo "%{F"#555"}$ICON%{F-} mpd offline"
+	else
 		MPC=$(mpc current -f "%artist% >> %title%")
 		ICON=""
-		echo "%{A:mpc toggle 1>/dev/null:}%{A2:mpc prev 1>/dev/null:}%{A3:mpc next 1>/dev/null:}%{F"$color2"}$ICON%{F-} $MPC%{A}%{A}%{A}"
-		
-	;;
-
-	FreeBSD*)
-
-		MPC=$(mpc current -f "%artist% >> %title%")
-		ICON=""
-		echo "%{A:mpc toggle 1>/dev/null:}%{A2:mpc prev 1>/dev/null:}%{A3:mpc next 1>/dev/null:}%{F"$color2"}$ICON%{F-} $MPC%{A}%{A}%{A}"
-
-	;;
-
-	*)
-
-		echo "Unsupported os: $(uname -s)" >&2
-		exit 1
-
-	;;
-
-	esac
+		echo "%{A:mpc toggle 1>/dev/null:}%{A2:mpc prev 1>/dev/null:}%{A3:mpc next 1>/dev/null:}%{F"$color6"}$ICON%{F-} $MPC%{A}%{A}%{A}"
+	fi
 
 }
 
 Wifi() {
 
     INTERFACE=$(ip addr | awk '/state UP/ {print $2}' | sed 's/://g')
-	WIFISTR=$(iwconfig $INTERFACE | grep "Link" | sed 's/ //g' | sed 's/LinkQuality=//g' | sed 's/\/.*//g')
+	WIFISTR=$(iwconfig $INTERFACE | grep "Link" | sed 's/ //g' | sed 's/LinkQuality=//g' | sed 's/\/.*//g') 
 
 	if [ ! -z $WIFISTR ] ; then
 
@@ -199,10 +168,10 @@ Volume() {
 
 		if [[ ! -z $NOTMUTED ]] ; then
 			VOL=$(awk -F"[][]" '/Left:/ { print $2 }' <(amixer -D pulse sget Master) | sed 's/%//g')
-			ICON=""
+			ICON=""
 			echo "%{F"$color4"}$ICON%{F-} $VOL% "
 		else
-			ICON=""
+			ICON=""
 			echo "%{F#555}$ICON%{F-} --% "
 		fi
 
@@ -211,7 +180,7 @@ Volume() {
 	FreeBSD*)
 	
 		VOL=$(mixer | grep 'vol' | awk '{ print $7 }' | sed 's/.*://')
-		ICON=""
+		ICON=""
 		echo "%{F"$color4"}$ICON%{F-} $VOL% "
 
 	;;
@@ -219,7 +188,7 @@ Volume() {
 	OpenBSD*)
 		
 		VOL=$(pactl list sinks | awk '/Volume: front-left/ { print $5 }' | sed 's/,//')
-		ICON=""
+		ICON=""
 		echo "%{F"$color4"}$ICON%{F-} $VOL% "
 
 	;;
@@ -269,5 +238,5 @@ while true; do
 	%{l}$(Uptime) $(Window) \
 	%{c}$(Mpc) \
 	%{r}$(Wifi) $(Cpu) $(Memory) $(Battery) $(Volume) $(Time)"
-    sleep 0.1
+    sleep 0.05
 done

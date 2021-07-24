@@ -41,7 +41,7 @@ fi
 ## lemonbar
 if ps -A | grep lemonbar; then
 	pkill lemonbar 2>/dev/null
-	lemonbar-current &
+	lemonbar-current 2>/dev/null &
 fi
 
 ## cava

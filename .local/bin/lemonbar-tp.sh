@@ -2,7 +2,7 @@
 
 ##
 ## Lemonbar
-## Fonts: scientifica (bdf), nerd font (ttf)
+## Fonts: scientifica (bdf), siji (bdf)
 ##
 
 
@@ -13,21 +13,21 @@
 
 Cmd() {
 
-	ICON="ﲵ"
+	ICON=""
 	echo "%{F#000}%{B"$color1"}%{A:wal -f random_user -o wal-extras.sh:}  $ICON  %{A}%{B-}%{F-}"
 
 }
 
 Session() {
 
-	ICON=""
+	ICON=""
 	echo "%{F#000}%{B"$color5"}  $ICON $DESKTOP_SESSION  %{B-}%{F-}"
 
 }
 
 User() {
 
-	ICON=""
+	ICON=""
 	echo "%{F#000}%{B"$color5"}  $ICON $USER  %{B-}%{F-}"
 
 }
@@ -35,7 +35,7 @@ User() {
 Hostname() {
 
 	HOST=$(uname -n)
-	ICON=""
+	ICON=""
 	echo "%{F#000}%{B"$color5"}  $ICON $HOST  %{B-}%{F-}"
 
 }
@@ -43,7 +43,7 @@ Hostname() {
 Uptime() {
 
 	UPTIME=$($HOME/.config/scripts/uptime.sh)
-	ICON=""
+	ICON=""
 	echo "%{F#000}%{B"$color5"}%{A:wal -f random_user -o wal-extras.sh:}  $ICON $UPTIME  %{A}%{B-}%{F-}"
 
 }
@@ -53,11 +53,11 @@ Mpc() {
 	MPD=$(ps -A | grep mpd)
 
 	if [[ -z $MPD ]] ; then
-		ICON="ﱙ"
+		ICON=""
 		echo "%{F"#555"}$ICON%{F-} mpd offline"
 	else
 		MPC=$(mpc current -f "%artist% >> %title%")
-		ICON="ﱘ"
+		ICON=""
 		echo "%{A:mpc toggle 1>/dev/null:}%{A2:mpc prev 1>/dev/null:}%{A3:mpc next 1>/dev/null:}%{F"$color6"}$ICON%{F-} $MPC%{A}%{A}%{A}"
 	fi
 
@@ -81,8 +81,8 @@ Wifi() {
      		RBPS=`expr $R2 - $R1`
      	    RKBPS=`expr $RBPS / 1024`
      	    MKBPS=`expr $RKBPS / 1024`
-     	    ICON="說"
-     	    ICON_DOWN=""
+     	    ICON=""
+     	    ICON_DOWN=""
 			echo "%{F"$color4"}$ICON%{F-} $ESSID [ %{F"$color4"}$ICON_DOWN%{F-} $RKBPS Kb/s ] "
 
 		fi
@@ -94,7 +94,7 @@ Wifi() {
 Cpu() {
 
 	CPU=$($HOME/.config/scripts/cpu.sh)
-	ICON="﬙"
+	ICON=""
 	echo "%{F"$color4"}$ICON%{F-} $CPU "
 
 }
@@ -109,10 +109,10 @@ Battery() {
 		CAPACITY=$(cat /sys/class/power_supply/BAT0/capacity)
 
 		if [[ ! -z $CHARGE ]] ; then
-			ICON=""
+			ICON=""
 			echo "%{F"$color4"}$ICON%{F-} $CAPACITY% "
 		else
-  			ICON=""
+  			ICON=""
   			echo "%{F"$color4"}$ICON%{F-} $CAPACITY% "
 		fi
 
@@ -121,7 +121,7 @@ Battery() {
 	OpenBSD*)
 
 		CAPACITY=$(apm | awk 'NR==1 { print $4 }')
-	  	ICON=""
+	  	ICON=""
   		echo "%{F"$color4"}$ICON%{F-} $CAPACITY% "
 
 	;;
@@ -129,7 +129,7 @@ Battery() {
 	FreeBSD*)
 
 		CAPACITY=$(apm | awk 'NR==5 { print $4 }')
-		ICON=""
+		ICON=""
   		echo "%{F"$color4"}$ICON%{F-} $CAPACITY% "
 
   	;;
@@ -137,7 +137,7 @@ Battery() {
   	*)
 		
 		echo "Unsupported os: $(uname -s)" >&2
-        exit 1
+        	exit 1
 
 	;;
 
@@ -153,7 +153,7 @@ Memory() {
 	C=$(cat /proc/meminfo | grep Cached | awk 'NR==1 {print $2}')
 
 	USED=$((100*($T - $F - $B - $C) / $T))
-	ICON=""
+	ICON=""
 	echo "%{F"$color4"}$ICON%{F-} $USED% "
 
 }
@@ -168,10 +168,10 @@ Volume() {
 
 		if [[ ! -z $NOTMUTED ]] ; then
 			VOL=$(awk -F"[][]" '/Left:/ { print $2 }' <(amixer -D pulse sget Master) | sed 's/%//g')
-			ICON=""
+			ICON=""
 			echo "%{F"$color4"}$ICON%{F-} $VOL% "
 		else
-			ICON="ﱝ"
+			ICON=""
 			echo "%{F#555}$ICON%{F-} --% "
 		fi
 
@@ -180,7 +180,7 @@ Volume() {
 	FreeBSD*)
 	
 		VOL=$(mixer | grep 'vol' | awk '{ print $7 }' | sed 's/.*://')
-		ICON=""
+		ICON=""
 		echo "%{F"$color4"}$ICON%{F-} $VOL% "
 
 	;;
@@ -188,7 +188,7 @@ Volume() {
 	OpenBSD*)
 		
 		VOL=$(pactl list sinks | awk '/Volume: front-left/ { print $5 }' | sed 's/,//')
-		ICON=""
+		ICON=""
 		echo "%{F"$color4"}$ICON%{F-} $VOL% "
 
 	;;
@@ -196,7 +196,7 @@ Volume() {
 	*)
 
 		echo "Unsupported os: $(uname -s)" >&2
-        	exit 1
+        exit 1
 
 	;;
 
@@ -208,7 +208,7 @@ Window() {
 
     	WINDOW=$(xdotool getwindowfocus getwindowname)
         SHORT=${WINDOW:0:75}
-    	ICON=""
+    	ICON=""
     	echo " $ICON $SHORT "
 
 }
@@ -216,7 +216,7 @@ Window() {
 Date() {
 
     	DATE=$(date +"%a %b %d %Y")
-    	ICON=""
+    	ICON=""
     	echo "%{F#000}%{B"$color2"}  $ICON $DATE  %{B-}%{F-}"
 
 }
@@ -224,7 +224,7 @@ Date() {
 Time() {
 
     	TIME=$($HOME/.config/scripts/time.sh)
-    	ICON=""
+    	ICON=""
     	echo "%{A3:gnome-clocks:}%{F#000}%{B"$color2"}  $ICON $TIME  %{B-}%{F-}%{A}"
 
 }

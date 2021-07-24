@@ -5,7 +5,7 @@
 
 # lemonbar
 super +  semicolon
-	pkill lemonbar 2>/dev/null || lemonbar-current
+	pkill lemonbar 2>/dev/null || lemonbar-current 2>/dev/null
 super + shift + semicolon
     lemonbar-menu.sh
 
