@@ -52,13 +52,13 @@ Mpc() {
 
 	MPD=$(ps -A | grep mpd)
 
-	if [[ -z $MPD ]] ; then
-		ICON=""
-		echo "%{F"#555"}$ICON%{F-} mpd offline"
-	else
+	if [[ ! -z $MPD ]] ; then
 		MPC=$(mpc current -f "%artist% >> %title%")
 		ICON=""
 		echo "%{A:mpc toggle 1>/dev/null:}%{A2:mpc prev 1>/dev/null:}%{A3:mpc next 1>/dev/null:}%{F"$color6"}$ICON%{F-} $MPC%{A}%{A}%{A}"
+	else
+		ICON=""
+		echo "%{F"#555"}$ICON%{F-} mpd offline"
 	fi
 
 }
@@ -223,7 +223,7 @@ Date() {
 
 Time() {
 
-    TIME=$($HOME/.config/scripts/time.sh)
+    TIME=$(date +"%-I:%M %p")
     ICON=""
     echo "%{A3:gnome-clocks:}%{F#000}%{B"$color2"}  $ICON $TIME  %{B-}%{F-}%{A}"
 
