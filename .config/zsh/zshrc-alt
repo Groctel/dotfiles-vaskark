@@ -1,5 +1,4 @@
 # path
-export PATH="$HOME/.local/bin:$PATH"
 typeset -U PATH path
 
 # enable colors and change prompt:
@@ -9,7 +8,7 @@ setopt autocd		# Automatically cd into typed directory.
 stty stop undef		# Disable ctrl-s to freeze terminal.
 
 # aliases
-[ -f "$ZDOTDIR/aliases" ] && source "$ZDOTDIR/aliases"
+[ -f "$ZDOTDIR/.aliases" ] && source "$ZDOTDIR/.aliases"
 
 # fzf
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
@@ -82,6 +81,7 @@ kitty + complete setup zsh | source /dev/stdin
 
 # pywal
 (cat ~/.cache/wal/sequences &)
+source ~/.cache/wal/colors-tty.sh
 
 # functions
 source ~/.config/zsh/functions/fzf-edit 2>/dev/null

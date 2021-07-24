@@ -1,133 +1,18 @@
-# Start configuration added by Zim install {{{
-#
-# User configuration sourced by interactive shells
-#
-
-# -----------------
-# Zsh configuration
-# -----------------
-
-#
-# History
-#
-
-# Remove older command from the history if a duplicate is to be added.
-setopt HIST_IGNORE_ALL_DUPS
-
-#
-# Input/output
-#
-
-# Set editor default keymap to emacs (`-e`) or vi (`-v`)
-bindkey -e
-
-# Prompt for spelling correction of commands.
-# setopt CORRECT
-
-# Customize spelling correction prompt.
-# SPROMPT='zsh: correct %F{red}%R%f to %F{green}%r%f [nyae]? '
-
-# Remove path separator from WORDCHARS.
-WORDCHARS=${WORDCHARS//[\/]}
-
-
-# --------------------
-# Module configuration
-# --------------------
-
-#
-# completion
-#
-
-# Set a custom path for the completion dump file.
-# If none is provided, the default ${ZDOTDIR:-${HOME}}/.zcompdump is used.
-zstyle ':zim:completion' dumpfile "${ZDOTDIR:-${HOME}}/.zcompdump-${ZSH_VERSION}"
-
-#
-# git
-#
-
-# Set a custom prefix for the generated aliases. The default prefix is 'G'.
-zstyle ':zim:git' aliases-prefix 'g'
-
-#
-# input
-#
-
-# Append `../` to your input for each `.` you type after an initial `..`
-zstyle ':zim:input' double-dot-expand yes
-
-#
-# termtitle
-#
-
-# Set a custom terminal title format using prompt expansion escape sequences.
-# See http://zsh.sourceforge.net/Doc/Release/Prompt-Expansion.html#Simple-Prompt-Escapes
-# If none is provided, the default '%n@%m: %~' is used.
-zstyle ':zim:termtitle' format '%1~'
-
-#
-# zsh-autosuggestions
-#
-
-# Customize the style that the suggestions are shown with.
-# See https://github.com/zsh-users/zsh-autosuggestions/blob/master/README.md#suggestion-highlight-style
-ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=242'
-
-#
-# zsh-syntax-highlighting
-#
-
-# Set what highlighters will be used.
-# See https://github.com/zsh-users/zsh-syntax-highlighting/blob/master/docs/highlighters.md
-ZSH_HIGHLIGHT_HIGHLIGHTERS=(main brackets)
-
-# Customize the main highlighter styles.
-# See https://github.com/zsh-users/zsh-syntax-highlighting/blob/master/docs/highlighters/main.md#how-to-tweak-it
-typeset -A ZSH_HIGHLIGHT_STYLES
-ZSH_HIGHLIGHT_STYLES[comment]='fg=242'
-
-# ------------------
-# Initialize modules
-# ------------------
-
-if [[ ! ${ZIM_HOME}/init.zsh -nt ${ZDOTDIR:-${HOME}}/.zimrc ]]; then
-  # Update static initialization script if it does not exist or it's outdated, before sourcing it
-  source ${ZIM_HOME}/zimfw.zsh init -q
-fi
-source ${ZIM_HOME}/init.zsh
-
-# ------------------------------
-# Post-init module configuration
-# ------------------------------
-
-#
-# zsh-history-substring-search
-#
-
-# Bind ^[[A/^[[B manually so up/down works both before and after zle-line-init
-bindkey '^[[A' history-substring-search-up
-bindkey '^[[B' history-substring-search-down
-
-# Bind up and down keys
-zmodload -F zsh/terminfo +p:terminfo
-if [[ -n ${terminfo[kcuu1]} && -n ${terminfo[kcud1]} ]]; then
-  bindkey ${terminfo[kcuu1]} history-substring-search-up
-  bindkey ${terminfo[kcud1]} history-substring-search-down
-fi
-
-bindkey '^P' history-substring-search-up
-bindkey '^N' history-substring-search-down
-bindkey -M vicmd 'k' history-substring-search-up
-bindkey -M vicmd 'j' history-substring-search-down
-# }}} End configuration added by Zim install
-
-# -----
-# Misc.
-# -----
-
 # path
 typeset -U PATH path
+
+# dir complete
+setopt autocd autopushd
+
+# ctrl-s off
+stty stop undef
+
+# basic auto/tab complete:
+autoload -Uz compinit
+zstyle ':completion:*' matcher-list 'm:{a-zA-Z}={A-Za-z}' 'r:|?=**'
+zmodload zsh/complist
+compinit
+_comp_options+=(globdots)       # Include hidden files.
 
 # kitty completion
 kitty + complete setup zsh | source /dev/stdin
@@ -136,21 +21,19 @@ kitty + complete setup zsh | source /dev/stdin
 (cat ~/.cache/wal/sequences &)
 source ~/.cache/wal/colors-tty.sh
 
-# fzf
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
-
 # aliases
 [ -f "$ZDOTDIR/.aliases" ] && source "$ZDOTDIR/.aliases"
 
-# lf
-[ -f "$XDG_CONFIG_HOME/lf/icons" ] && source "$XDG_CONFIG_HOME/lf/icons"
-source ~/.config/lf/lfcd.sh
-bindkey -s '^]' 'lfcd\n'
+# mode: vi (v) or emacs (e)
+bindkey -e
+export KEYTIMEOUT=1
 
 # xterm/urxvt cursor (beam)
-# 35 (blink)
-# 36 (no blink)
+# 35 (blink), 36 (no blink)
 echo -e -n "\x1b[\x36 q"
+
+# clifm
+bindkey -s '^]' 'clifm\n'
 
 # ncmpcpp
 ncmpcppShow() {
@@ -160,10 +43,39 @@ ncmpcppShow() {
 zle -N ncmpcppShow
 bindkey '^\' ncmpcppShow
 
-# functions
-source ~/.config/zsh/functions/fzf-edit 2>/dev/null
-source ~/.config/zsh/functions/fzf-kill 2>/dev/null
-source ~/.config/zsh/functions/fzf-man 2>/dev/null
+# shfm
+shfm() {
+    cd "$(command shfm "$@")"
+}
+
+# fff
+f() {
+    fff "$@"
+    cd "$(cat "${XDG_CACHE_HOME:=${HOME}/.cache}/fff/.fff_d")"
+}
 
 # pure
-#zstyle ':prompt:pure:prompt:*' color green
+fpath+=/usr/local/pure
+autoload -U promptinit; promptinit
+zstyle :prompt:pure:git:stash show yes
+#zstyle :prompt:pure:path color blue
+#zstyle ':prompt:pure:prompt:*' color cyan
+prompt pure
+
+# functions
+source $ZDOTDIR/functions/fzf-edit 2>/dev/null
+source $ZDOTDIR/functions/fzf-kill 2>/dev/null
+source $ZDOTDIR/functions/fzf-man 2>/dev/null
+
+# plugins
+source $ZDOTDIR/plugins/extract/extract.plugin.zsh 2>/dev/null
+source $ZDOTDIR/plugins/command-not-found/command-not-found.plugin.zsh 2>/dev/null
+source $ZDOTDIR/plugins/zsh-autosuggestions/zsh-autosuggestions.plugin.zsh 2>/dev/null
+source $ZDOTDIR/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.plugin.zsh 2>/dev/null
+
+# highlights
+ZSH_HIGHLIGHT_HIGHLIGHTERS=(main brackets pattern cursor)
+ZSH_HIGHLIGHT_PATTERNS+=('rm -rf *' 'fg=white,bold,bg=red')
+
+# fzf
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh

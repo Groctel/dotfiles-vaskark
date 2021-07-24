@@ -4,14 +4,14 @@ alias cp='cp -i'
 alias mv='mv -i'
 alias md='mkdir -pv'
 alias rd='rmdir -pv'
-alias df='df -H'
+alias df='df -HT'
 alias du='du -d 1 -h -c'
 alias cd..='cd ..'
 alias d='dirs -v | head -10'
 alias free='free -m'
 alias vim=$EDITOR
 alias v=$EDITOR
-alias t="tty-clock -cst -C 2 -f '%B %d %Y'"
+alias t="tty-clock -cst -C 2 -f '%A %B %d %Y'"
 alias mount='mount | column -t'
 alias u='unimatrix -c green -a -f -n -s 98'
 alias kc='kitty +kitten icat'
@@ -20,6 +20,7 @@ alias h='htop -u $USER'
 alias nvc="$EDITOR ~/.config/nvim/init.vim"
 alias pf='clear;pfetch'
 alias n='nnn -D -C -E -o -T e -a -x'
+alias cf='clifm'
 alias c='cava'
 alias p='pipes-rs'
 alias mi='mediainfo'
@@ -32,19 +33,19 @@ alias rmpd='systemctl --user daemon-reload; systemctl --user restart mpd'
 alias lf="$HOME/.local/bin/lf.sh"
 
 # lsd
-alias lsd='lsd --group-dirs first'
-#alias ls='lsd'
-#alias l='lsd -l'
-#alias ll='lsd -al'
-#alias lt='lsd --tree --depth 2'
+alias lsd='lsd -h --group-dirs first'
+alias ls='lsd'
+alias l='lsd -l'
+alias ll='lsd -al'
+alias lt='lsd --tree --depth 2'
 
 # exa
-alias exa='exa --icons --git -g --time-style default --group-directories-first'
-alias ls='exa'
-alias l1='exa -1'
-alias l='exa -l'
-alias ll='exa -al'
-alias lt='exa -T -L 2'
+alias exa='exa --icons --git -g --time-style long-iso --group-directories-first'
+#alias ls='exa'
+#alias l1='exa -1'
+#alias l='exa -l'
+#alias ll='exa -al'
+#alias lt='exa -T -L 2'
 
 # suffix
 alias -g G='| grep -i'
@@ -55,8 +56,7 @@ alias -s md='$EDITOR'
 alias zc="$EDITOR $ZDOTDIR/.zshrc"
 alias za="$EDITOR $ZDOTDIR/.aliases"
 alias ze="$EDITOR $HOME/.zshenv"
-#alias zr='history -c && clear && exec zsh'
-alias zr='rm -f ~/.config/zsh/.zsh_history && clear && exec zsh'
+alias zr='rm -f ~/.config/zsh/.zhistory && clear && exec zsh'
 alias zs='exec zsh'
 
 # xrdb
@@ -67,7 +67,7 @@ alias xu='xrdb ~/.Xresources'
 alias rhb='run-help bindkey'
 
 # last modified logs
-alias lml='ls -ltr /var/log | tail'
+alias lml='ls -lt /var/log | tail'
 
 # journal
 alias jcb='journalctl -p 3 -xb'
@@ -99,6 +99,7 @@ alias fw='fz-wal.sh'
 alias nf0='clear;neofetch --config none'
 alias nf='clear;neofetch'
 alias nfo='clear;neofetch --off'
+alias nfs='clear;neofetch --config ~/.config/neofetch/config-small.conf'
 
 # fonts
 alias f2s='fonttosfnt -v -r -b -c -g 2 -m 2 -o'
@@ -107,11 +108,6 @@ alias fcl='fc-list'
 
 # p10k
 alias p10kc='p10k configure'
-
-# zimfw
-alias zfu='zimfw update'
-alias zfe="$EDITOR $ZDOTDIR/.zimrc"
-alias zfc='zimfw clean'
 
 # pywal
 alias wal='wal -o wal-extras.sh'
