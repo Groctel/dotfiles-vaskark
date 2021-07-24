@@ -24,7 +24,7 @@ source ~/.cache/wal/colors-tty.sh
 # aliases
 [ -f "$ZDOTDIR/.aliases" ] && source "$ZDOTDIR/.aliases"
 
-# mode: vi (v) or emacs (e)
+# mode
 bindkey -e
 export KEYTIMEOUT=1
 
@@ -46,17 +46,6 @@ ncmpcppShow() {
 }
 zle -N ncmpcppShow
 bindkey '^\' ncmpcppShow
-
-# shfm
-shfm() {
-    cd "$(command shfm "$@")"
-}
-
-# fff
-f() {
-    fff "$@"
-    cd "$(cat "${XDG_CACHE_HOME:=${HOME}/.cache}/fff/.fff_d")"
-}
 
 # pure
 fpath+=/usr/local/pure
@@ -84,8 +73,6 @@ ZSH_HIGHLIGHT_PATTERNS+=('rm -rf *' 'fg=white,bold,bg=red')
 # history-substring-search keys
 bindkey "$terminfo[kcuu1]" history-substring-search-up
 bindkey "$terminfo[kcud1]" history-substring-search-down
-bindkey -M vicmd 'k' history-substring-search-up
-bindkey -M vicmd 'j' history-substring-search-down
 
 # fzf
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
