@@ -4,7 +4,7 @@ typeset -U PATH path
 # dir complete
 setopt autocd autopushd
 
-# ctrl-s off
+# ctrl-s/q off
 stty stop undef
 
 # basic auto/tab complete:
@@ -27,6 +27,10 @@ source ~/.cache/wal/colors-tty.sh
 # mode: vi (v) or emacs (e)
 bindkey -e
 export KEYTIMEOUT=1
+
+# edit line in vim with ctrl-e:
+autoload edit-command-line; zle -N edit-command-line
+bindkey '^e' edit-command-line
 
 # xterm/urxvt cursor (beam)
 # 35 (blink), 36 (no blink)
