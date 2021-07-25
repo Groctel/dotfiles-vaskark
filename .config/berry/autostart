@@ -11,8 +11,8 @@ systemctl --user import-environment; systemctl --user start graphical-session.ta
 systemctl --user restart redshift
 
 # picom
-picom --experimental-backends --config ~/.config/picom/picom.conf &
-#picom --config ~/.config/picom/picom-xr.conf &
+#picom --experimental-backends --config ~/.config/picom/picom.conf &
+picom --config ~/.config/picom/picom-xr.conf &
 
 # polkit
 /usr/lib/policykit-1-gnome/polkit-gnome-authentication-agent-1 &
@@ -25,7 +25,7 @@ xautolock -time 10 -locker 'lock.sh' -killer 'systemctl suspend' -corners 00-+ &
 wal -R -o wal-extras.sh &
 
 # lemonbar
-lemonbar-start.sh &
+lemonbar-current &
 
 # polybar
 # polybar -r -c ~/.config/polybar/config main &
@@ -34,7 +34,7 @@ lemonbar-start.sh &
 berryc border_width         0
 berryc inner_border_width   0
 berryc title_height         24
-berryc edge_gap             40 0 0 0
+berryc edge_gap             0 55 0 0
 berryc decorate_new 	    "true"
 
 # Set decoration colors

@@ -10,28 +10,28 @@ case "$MENU" in
 		rm -f $HOME/.local/bin/lemonbar-current 2>/dev/null
 		ln -s $HOME/.local/bin/lemonbar-start.sh $HOME/.local/bin/lemonbar-current
 		killall -9 lemonbar 2>/dev/null
-		lemonbar-current 2>/dev/null &
+		lemonbar-current &
 	;;
 
 	*NF)
 		rm -f $HOME/.local/bin/lemonbar-current 2>/dev/null
 		ln -s $HOME/.local/bin/lemonbar-nf-start.sh $HOME/.local/bin/lemonbar-current
 		killall -9 lemonbar 2>/dev/null
-		lemonbar-current 2>/dev/null &
+		lemonbar-current &
 	;;
 
 	*Typicons)
 		rm -f $HOME/.local/bin/lemonbar-current 2>/dev/null
 		ln -s $HOME/.local/bin/lemonbar-tp-start.sh $HOME/.local/bin/lemonbar-current
 		killall -9 lemonbar 2>/dev/null
-		lemonbar-current 2>/dev/null &
+		lemonbar-current &
 	;;
 
 	*Microns)
 		rm -f $HOME/.local/bin/lemonbar-current 2>/dev/null
 		ln -s $HOME/.local/bin/lemonbar-mc-start.sh $HOME/.local/bin/lemonbar-current
 		killall -9 lemonbar 2>/dev/null
-		lemonbar-current 2>/dev/null &
+		lemonbar-current &
 	;;
 
 	*OFF)
