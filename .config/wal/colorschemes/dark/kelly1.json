@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/jason/Pictures/Kelly-Brook-Wallpapers-for-PC.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#191a19",
+        "foreground": "#c5c5c5",
+        "cursor": "#82a9ad"
+    },
+    "colors": {
+        "color0": "#191a19",
+        "color1": "#684642",
+        "color2": "#42727c",
+        "color3": "#7b8d8a",
+        "color4": "#225361",
+        "color5": "#9abcbc",
+        "color6": "#82a9ad",
+        "color7": "#c5c5c5",
+        "color8": "#313331",
+        "color9": "#92524a",
+        "color10": "#499cad",
+        "color11": "#8ec8be",
+        "color12": "#237086",
+        "color13": "#b2ffff",
+        "color14": "#95ebf4",
+        "color15": "#ffffff"
+    }
+}

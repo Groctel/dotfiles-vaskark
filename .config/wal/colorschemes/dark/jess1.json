@@ -2,12 +2,12 @@
     "wallpaper": "/home/jason/Pictures/wallhaven-627826.jpg",
     "alpha": "100",
     "special": {
-        "background": "#000000",
+        "background": "#1c1c1c",
         "foreground": "#c1c1c1",
         "cursor": "#aaaaaa"
     },
     "colors": {
-        "color0": "#000000",
+        "color0": "#1c1c1c",
         "color1": "#a06666",
         "color2": "#5f8787",
         "color3": "#888888",

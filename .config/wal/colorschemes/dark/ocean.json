@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/jason/Pictures/9alylz3ut5471-m.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#171e22",
+        "foreground": "#c5c6c7",
+        "cursor": "#7dbdd7"
+    },
+    "colors": {
+        "color0": "#171e22",
+        "color1": "#65554a",
+        "color2": "#807970",
+        "color3": "#9c897c",
+        "color4": "#326f91",
+        "color5": "#5c9ebf",
+        "color6": "#7dbdd7",
+        "color7": "#c5c6c7",
+        "color8": "#2b3840",
+        "color9": "#8e6c54",
+        "color10": "#b59f82",
+        "color11": "#dcae8f",
+        "color12": "#3493c9",
+        "color13": "#65d3ff",
+        "color14": "#8cffff",
+        "color15": "#fdffff"
+    }
+}
