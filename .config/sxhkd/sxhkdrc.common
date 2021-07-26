@@ -31,15 +31,15 @@ super + {_,shift +} F2
 
 # wp
 super + F3
-	sh -c 'feh --randomize --bg-fill --recursive --no-fehbg ~/Pictures/*.(png|jpg)'
+	feh --randomize --bg-fill --recursive --no-fehbg ~/Pictures/*.(png|jpg)
 	
 # farge
 super + F4
-	farge.sh
+	farge --image-viewer sxiv
 	
 # date
 super + F5
-	date.sh
+	dunstify "`date +"%A %B %d %Y -- %-I:%M:%S %p %Z"`" -t 3000
 	
 # networkmanager_dmenu
 super + F6
@@ -76,7 +76,7 @@ super + control + F12
 	wal -f random -o wal-extras.sh
         
 # sxiv
-super + shift + equal
+super + equal
 	ls -t $HOME/Pictures/* | head -25 | xargs sxiv -rt
 
 # reboot, shutdown
