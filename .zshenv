@@ -23,7 +23,7 @@ export MANPAGER="nvim -c 'set ft=man' -"
 export QT_AUTO_SCREEN_SCALE_FACTOR=0
 
 # pfetch
-export PF_INFO="kernel uptime shell wm memory palette" 
+export PF_INFO="os kernel uptime shell wm memory palette" 
 export PF_COL1=2
 export PF_COL2=4
 
@@ -54,3 +54,13 @@ export FZF_DEFAULT_OPTS="
 --bind '?:toggle-preview'
 --bind 'ctrl-a:select-all'
 "
+
+# shfm
+export SHFM_OPENER=$HOME/.config/shfm/opener.sh
+
+# fff
+export FFF_COL1=2   # dir
+export FFF_COL2=5   # status bg
+export FFF_COL3=4   # sel
+export FFF_COL4=5   # cursor
+export FFF_COL5=0   # status fg

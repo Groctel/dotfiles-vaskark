@@ -56,8 +56,8 @@ alias -s md='$EDITOR'
 alias zc="$EDITOR $ZDOTDIR/.zshrc"
 alias za="$EDITOR $ZDOTDIR/.aliases"
 alias ze="$EDITOR $HOME/.zshenv"
-alias zr='rm -f ~/.config/zsh/.zhistory && clear && exec zsh'
-alias zs='exec zsh'
+alias zr='rm -f ~/.config/zsh/.zhistory && clear && exec zsh' 
+alias zs='clear && exec zsh'
 
 # xrdb
 alias xc="$EDITOR ~/.Xresources"

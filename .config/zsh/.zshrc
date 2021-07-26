@@ -47,6 +47,17 @@ ncmpcppShow() {
 zle -N ncmpcppShow
 bindkey '^\' ncmpcppShow
 
+# shfm
+shfm() {
+    cd "$(command shfm "$@")"
+}
+
+# fff
+f() {
+    fff "$@"
+    cd "$(cat "${XDG_CACHE_HOME:=${HOME}/.cache}/fff/.fff_d")"
+}
+
 # pure
 fpath+=/usr/local/pure
 autoload -U promptinit; promptinit
@@ -66,14 +77,14 @@ source $ZDOTDIR/plugins/zsh-autosuggestions/zsh-autosuggestions.plugin.zsh 2>/de
 source $ZDOTDIR/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.plugin.zsh 2>/dev/null
 source $ZDOTDIR/plugins/zsh-history-substring-search/zsh-history-substring-search.plugin.zsh 2>/dev/null
 
-## autosuggestions
+# autosuggestions
 bindkey '^ ' autosuggest-toggle
 
-## syntax-highlighting
+# syntax-highlighting
 ZSH_HIGHLIGHT_HIGHLIGHTERS=(main brackets pattern cursor)
-ZSH_HIGHLIGHT_PATTERNS+=('rm -rf *' 'fg=white,bold,bg=red')
+ZSH_HIGHLIGHT_PATTERNS+=('rm -rf *' 'fg=black,bold,bg=red')
 
-## history-substring-search keys
+# history-substring-search keys
 bindkey "$terminfo[kcuu1]" history-substring-search-up
 bindkey "$terminfo[kcud1]" history-substring-search-down
 
