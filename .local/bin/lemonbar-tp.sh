@@ -11,13 +11,6 @@
 ##########
 
 
-Cmd() {
-
-	ICON=""
-	echo "%{F#000}%{B"$color1"}%{A:wal -f random_user -o wal-extras.sh:}  $ICON  %{A}%{B-}%{F-}"
-
-}
-
 Session() {
 
 	ICON=""

@@ -11,17 +11,10 @@
 ##########
 
 
-Cmd() {
-
-	ICON="ﲵ"
-	echo "%{F#000}%{B"$color1"}%{A:wal -f random_user -o wal-extras.sh:}  $ICON  %{A}%{B-}%{F-}"
-
-}
-
 Session() {
 
 	ICON=""
-	echo "%{F#000}%{B"$color5"}  $ICON $DESKTOP_SESSION  %{B-}%{F-}"
+	echo "%{F#000}%{B"$color5"}  $DESKTOP_SESSION  %{B-}%{F-}"
 
 }
 
@@ -235,7 +228,7 @@ Time() {
 
 while true; do
     echo -e "\
-	%{l}$(Uptime) $(Window) \
+	%{l}$(Session) $(Window) \
 	%{c}$(Mpc) \
 	%{r}$(Wifi) $(Cpu) $(Memory) $(Battery) $(Volume) $(Time)"
     sleep 0.05
