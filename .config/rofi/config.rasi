@@ -1,13 +1,11 @@
 configuration {
   modi: "drun,run,ssh,emoji,keys";
+  terminal: "alacritty";
+  theme: "~/.cache/wal/colors-rofi-dark.rasi-default";
+  /*theme: "themes/default.rasi";*/
+}
+
+/*
   display-drun: "";
   display-run: "";
-  terminal: "alacritty";
-  matching: "normal";
-  show-icons: false;
-  cycle: true;
-  location: 0;
-  sidebar-mode: false;	
-  disable-history: true;
-  theme: "~/.cache/wal/colors-rofi-dark.rasi.default";
-}
+*/
