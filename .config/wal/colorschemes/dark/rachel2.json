@@ -2,26 +2,26 @@
     "wallpaper": "/home/jason/Pictures/Rachel-Weisz-HD-Background-Wallpaper-40327.jpg",
     "alpha": "100",
     "special": {
-        "background": "#0a0c0e",
-        "foreground": "#b4c3bd",
-        "cursor": "#a59986"
+        "background": "#191b1c",
+        "foreground": "#c5c6c6",
+        "cursor": "#a2c0c4"
     },
     "colors": {
-        "color0": "#0a0c0e",
-        "color1": "#cc8c88",
-        "color2": "#788881",
-        "color3": "#aeb2b6",
-        "color4": "#97afb2",
-        "color5": "#5e737c",
-        "color6": "#a59986",
-        "color7": "#b4c3bd",
-        "color8": "#1e242b",
-        "color9": "#ffa29a",
-        "color10": "#8bc1a9",
-        "color11": "#cbe7ff",
-        "color12": "#aef4fc",
-        "color13": "#6c9baf",
-        "color14": "#e9cb9a",
-        "color15": "#edfff9"
+        "color0": "#191b1c",
+        "color1": "#77665b",
+        "color2": "#8b8372",
+        "color3": "#bfac97",
+        "color4": "#98a39a",
+        "color5": "#cac2b0",
+        "color6": "#a2c0c4",
+        "color7": "#c5c6c6",
+        "color8": "#303436",
+        "color9": "#a88168",
+        "color10": "#c5b083",
+        "color11": "#ffe0ae",
+        "color12": "#b1e8bb",
+        "color13": "#ffffcc",
+        "color14": "#bbffff",
+        "color15": "#feffff"
     }
 }

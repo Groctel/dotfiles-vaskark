@@ -2,26 +2,26 @@
     "wallpaper": "/home/jason/Pictures/trail.jpg",
     "alpha": "100",
     "special": {
-        "background": "#080805",
-        "foreground": "#a9aaa3",
-        "cursor": "#909c9e"
+        "background": "#1a1b1b",
+        "foreground": "#c5c6c6",
+        "cursor": "#757e7c"
     },
     "colors": {
-        "color0": "#080805",
-        "color1": "#363f3f",
-        "color2": "#73625a",
-        "color3": "#849b7d",
-        "color4": "#6e7475",
-        "color5": "#587159",
-        "color6": "#909c9e",
-        "color7": "#a9aaa3",
-        "color8": "#272717",
-        "color9": "#3e5959",
-        "color10": "#a27a67",
-        "color11": "#a1db90",
-        "color12": "#80a1a6",
-        "color13": "#659f67",
-        "color14": "#a7d8e0",
-        "color15": "#e5e7dd"
+        "color0": "#1a1b1b",
+        "color1": "#6a5a59",
+        "color2": "#556e59",
+        "color3": "#6c7760",
+        "color4": "#5a656c",
+        "color5": "#6c666d",
+        "color6": "#757e7c",
+        "color7": "#c5c6c6",
+        "color8": "#323434",
+        "color9": "#966967",
+        "color10": "#619b6b",
+        "color11": "#8da86e",
+        "color12": "#688699",
+        "color13": "#96769b",
+        "color14": "#88b3a9",
+        "color15": "#feffff"
     }
 }
