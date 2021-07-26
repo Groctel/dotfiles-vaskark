@@ -1,9 +1,9 @@
 * {{
   accent:           {color2};
-  accent-alt:       {color5};
   background:       {color0};
+  background-alt:   {color1};
   foreground:       #555;
-  foreground-alt:   @background;
+  foreground-alt:   {color0};
 
   background-color: @background;
   text-color:       @foreground;
@@ -12,8 +12,10 @@
 }}
 
 #window {{
-  width: 275px; 
-  padding: 12px;
+  /*width: 275px;*/ 
+  /*       vertical   horizontal */
+  padding: 16px;
+
 }}
 
 /* Input window */
@@ -26,17 +28,16 @@ entry {{
 }}
 
 #inputbar {{
-  children: [ prompt, entry ];
-  margin: 4px     0px     4px     0px;
-  border: 0px     0px     0px     0px;
-  border-color: @accent-alt;
-  padding: 5px 0px;
+  children: [ prompt, textbox-prompt-colon, entry ];
+  /*      vertical    horizontal */
+  margin: 4px         0px;
 }}
 
 #prompt {{
-  padding: 8px    5px     8px     10px;
-  background-color: @background;
-  text-color: @accent-alt;
+  /*       vertical   horizontal */
+  padding: 8px       12px;
+  background-color: @background-alt;
+  text-color: @foreground-alt;
 }}
 
 #textbox-prompt-colon {{
@@ -47,18 +48,19 @@ entry {{
 }}
 
 #entry {{
-  text-color: @accent-alt;
+  text-color: @foreground;
+  /*       top    right   bottom  left */
   padding: 8px   10px    8px    0px;
-  blink: false;
-  /*placeholder: "...";*/
 }}
 
 /* List of entries */
 
 #element {{
   padding: 8px;
-  margin: 4px     0px     4px     0px; 
-  border: 1px     1px     1px     1px;
+  /*      vertical    horizontal */
+  margin: 4px         0px;
+  /*      top     right   bottom  left */
+  border: 0px     0px     0px     4px;
   background-color: @background;
   border-color: @background;
 }}
