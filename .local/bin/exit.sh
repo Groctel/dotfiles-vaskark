@@ -14,8 +14,22 @@ MENU="$(rofi -sep "|" \
 	-font "scientifica bold 8" \
 	<<< "Logout|Restart|Shutdown")"
 
-case "$MENU" in
-	*Logout) pkill x ;;
-	*Restart) shutdown -r now ;;
-	*Shutdown) shutdown -p now ;;
+case "$(uname -s)" in
+	
+	Linux*)
+		case "$MENU" in
+			*Logout) pkill x ;;
+			*Restart) shutdown -r now ;;
+			*Shutdown) shutdown -P now ;;
+		esac
+	;;
+
+	OpenBSD*)
+		case "$MENU" in
+			*Logout) pkill x ;;
+			*Restart) shutdown -r now ;;
+			*Shutdown) shutdown -p now ;;
+		esac
+	;;
+
 esac
