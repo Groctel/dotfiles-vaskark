@@ -9,10 +9,6 @@ y=0
 w=$(( $(xdotool getdisplaygeometry | awk '{print $1}') - (2*x) ))
 h=28
 
-# prompts
-#-p '  ' \
-#-p ' ❯ ' \
-
 # dmenu
 dmenu_run \
 -p '  ' \

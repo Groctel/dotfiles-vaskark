@@ -14,7 +14,7 @@
 Session() {
 
 	ICON=""
-	echo "%{F#000}%{B"$color5"}  $DESKTOP_SESSION  %{B-}%{F-}"
+	echo "%{F#000}%{B"$color5"}  $ICON $DESKTOP_SESSION  %{B-}%{F-}"
 
 }
 
@@ -228,7 +228,7 @@ Time() {
 
 while true; do
     echo -e "\
-	%{l}$(Session) $(Window) \
+	%{l}$(Uptime) $(Window) \
 	%{c}$(Mpc) \
 	%{r}$(Wifi) $(Cpu) $(Memory) $(Battery) $(Volume) $(Time)"
     sleep 0.05

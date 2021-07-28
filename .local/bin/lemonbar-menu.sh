@@ -2,7 +2,7 @@
 
 ## Lemonbar menu
 
-MENU="$(rofi -sep "|" -dmenu -i -p 'Lemonbars:' -location 0 -width 10 -line-padding 4 -padding 20 -lines 5 <<< "Siji|NF|Typicons|Microns|OFF")"
+MENU="$(rofi -sep "|" -dmenu -i -p 'Lemonbars:' -location 0 -width 10 -lines 4 -font 'scientifica bold 8' <<< "Siji|NF|Typicons|OFF")"
 
 case "$MENU" in
 	
@@ -23,13 +23,6 @@ case "$MENU" in
 	*Typicons)
 		rm -f $HOME/.local/bin/lemonbar-current 2>/dev/null
 		ln -s $HOME/.local/bin/lemonbar-tp-start.sh $HOME/.local/bin/lemonbar-current
-		killall -9 lemonbar 2>/dev/null
-		lemonbar-current &
-	;;
-
-	*Microns)
-		rm -f $HOME/.local/bin/lemonbar-current 2>/dev/null
-		ln -s $HOME/.local/bin/lemonbar-mc-start.sh $HOME/.local/bin/lemonbar-current
 		killall -9 lemonbar 2>/dev/null
 		lemonbar-current &
 	;;

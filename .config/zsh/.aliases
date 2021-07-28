@@ -19,6 +19,7 @@ alias kd='kitty +kitten diff'
 alias h='htop -u $USER'
 alias nvc="$EDITOR ~/.config/nvim/init.vim"
 alias pf='clear;pfetch'
+alias af='clear;afetch'
 alias n='nnn -D -C -E -o -T e -a -x'
 alias cf='clifm'
 alias c='cava'
@@ -33,19 +34,19 @@ alias rmpd='systemctl --user daemon-reload; systemctl --user restart mpd'
 alias lf="$HOME/.local/bin/lf.sh"
 
 # lsd
-alias lsd='lsd -h --group-dirs first'
-alias ls='lsd'
-alias l='lsd -l'
-alias ll='lsd -al'
-alias lt='lsd --tree --depth 2'
+alias lsd='lsd -h --group-dirs first --no-symlink --total-size'
+#alias ls='lsd'
+#alias l='ls -l'
+#alias ll='ls -Al'
+#alias lt='ls --tree --depth 2'
 
 # exa
-alias exa='exa --icons --git -g --time-style long-iso --group-directories-first'
-#alias ls='exa'
-#alias l1='exa -1'
-#alias l='exa -l'
-#alias ll='exa -al'
-#alias lt='exa -T -L 2'
+alias exa='exa --icons --git -g --time-style long-iso --group-directories-first --git-ignore'
+alias ls='exa'
+alias l1='ls -1'
+alias l='ls -l'
+alias ll='ls -al'
+alias lt='ls -T -L 2'
 
 # suffix
 alias -g G='| grep -i'
@@ -67,7 +68,8 @@ alias xu='xrdb ~/.Xresources'
 alias rhb='run-help bindkey'
 
 # last modified logs
-alias lml='ls -lt /var/log | tail'
+#alias lml='ls -lt /var/log | tail'
+alias lml='exa -l -r -s time /var/log | tail'
 
 # journal
 alias jcb='journalctl -p 3 -xb'

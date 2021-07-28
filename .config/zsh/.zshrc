@@ -1,10 +1,8 @@
 # path
 typeset -U PATH path
 
-# dir complete
-setopt autocd autopushd
-
-# ctrl-s/q off
+# set
+setopt autocd histignorealldups
 stty stop undef
 
 # basic auto/tab complete:
@@ -14,7 +12,7 @@ zmodload zsh/complist
 compinit
 _comp_options+=(globdots)       # Include hidden files.
 
-# kitty completion
+# kitty
 kitty + complete setup zsh | source /dev/stdin
 
 # pywal
@@ -28,12 +26,11 @@ source ~/.cache/wal/colors-tty.sh
 bindkey -e
 export KEYTIMEOUT=1
 
-# edit line in vim with ctrl-e:
+# edit line vim (ctrl-e), emacs (ctrl-x, ctrl-e):
 autoload edit-command-line; zle -N edit-command-line
-bindkey '^e' edit-command-line
+bindkey '^x^e' edit-command-line
 
-# xterm/urxvt cursor (beam)
-# 35 (blink), 36 (no blink)
+# urxvt/xterm: 35 (blink), 36 (no blink)
 echo -e -n "\x1b[\x36 q"
 
 # clifm
@@ -58,13 +55,14 @@ f() {
     cd "$(cat "${XDG_CACHE_HOME:=${HOME}/.cache}/fff/.fff_d")"
 }
 
-# pure
-fpath+=/usr/local/pure
-autoload -U promptinit; promptinit
-zstyle :prompt:pure:git:stash show yes
-#zstyle :prompt:pure:path color blue
-#zstyle ':prompt:pure:prompt:*' color cyan
-prompt pure
+# lf
+LFCD="$HOME/.config/lf/lfcd.sh"
+if [ -f "$LFCD" ]; then
+    source "$LFCD"
+fi
+bindkey -s '^o' 'lfcd\n'
+
+[ -f "$HOME/.config/lf/icons" ] && source "$HOME/.config/lf/icons"
 
 # functions
 source $ZDOTDIR/functions/fzf-edit 2>/dev/null
@@ -90,3 +88,9 @@ bindkey "$terminfo[kcud1]" history-substring-search-down
 
 # fzf
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+# pure
+fpath+=/usr/local/pure
+autoload -U promptinit; promptinit
+zstyle :prompt:pure:git:stash show yes
+prompt pure

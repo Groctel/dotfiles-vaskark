@@ -376,7 +376,7 @@
     <!-- Keybindings for startmenu -->
     <keybind key="W-d">
       <action name="Execute">
-        <command>rofi -show drun -lines 5</command>
+        <command>rofi.sh</command>
       </action>
     </keybind>
     <keybind key="W-x">

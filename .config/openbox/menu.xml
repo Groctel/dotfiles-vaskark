@@ -9,7 +9,7 @@
     </item>
     <item label="Files">
       <action name="Execute">
-        <execute>nemo</execute>
+        <execute>thunar</execute>
       </action>
     </item>
     <item label="Web">
@@ -19,6 +19,7 @@
     </item>
     <separator />
     <menu id="applications-menu" label="Programs" execute="/usr/bin/obamenu" />
+    <menu id="menu-1307193" label="Favs" />
     <separator />
     <item label="Config">
       <action name="Execute">
@@ -36,7 +37,7 @@
       <item label="Logout">
         <action name="Execute">
           <execute>pkill x</execute>
-        </action>  
+        </action>
       </item>
       <item label="Suspend">
         <action name="Execute">

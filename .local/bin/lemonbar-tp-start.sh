@@ -12,10 +12,10 @@ h=34
 # start
 lemonbar-tp.sh | lemonbar \
 -p \
--o -1 \
+-o -2 \
 -f "-*-scientifica-bold-r-*" \
 -o 1 \
--f "Typicons-10" \
+-f "Typicons-12" \
 -g "$w"x"$h"+"$x"+"$y" \
 -B "$color0" \
 -F "#555" \
