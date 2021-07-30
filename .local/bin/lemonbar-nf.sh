@@ -76,7 +76,7 @@ Wifi() {
      	    MKBPS=`expr $RKBPS / 1024`
      	    ICON="說"
      	    ICON_DOWN=""
-			echo "%{F"$color4"}$ICON%{F-} $ESSID [ %{F"$color4"}$ICON_DOWN%{F-} $RKBPS Kb/s ] "
+			echo "%{F"$color4"}$ICON%{F-} $ESSID [%{F"$color4"}$ICON_DOWN%{F-} $RKBPS Kb/s] "
 
 		fi
 
