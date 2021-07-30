@@ -9,4 +9,5 @@ fi
 
 xset +fp /usr/local/share/fonts/misc &
 xrdb -merge ~/.Xresources
-exec dbus-launch --sh-syntax berry
+#exec dbus-launch --sh-syntax berry
+exec berry
