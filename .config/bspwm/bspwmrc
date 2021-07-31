@@ -1,5 +1,8 @@
 #!/bin/sh
 
+# fonts
+xset +fp /usr/local/share/fonts/misc &
+
 # picom
 pgrep -x picom || picom --experimental-backends --config ~/.config/picom/picom.conf &
 
@@ -15,14 +18,16 @@ pgrep -x xautolock || xautolock -time 10 -locker 'lock.sh' -killer 'systemctl su
 #/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
 
 # polybar
-pkill polybar
-polybar -r -c ~/.config/bspwm/polybar/config.bspwm main &
+pgrep -x polybar || polybar -r -c ~/.config/bspwm/polybar/config.bspwm main &
 
 # sxhkd
 pgrep -x sxhkd || sxhkd -c $HOME/.config/bspwm/sxhkdrc $HOME/.config/sxhkd/sxhkdrc.common &
 
-# restore wp
+# wp
 bash $HOME/.fehbg
+
+# dunst
+pgrep -x dunst || dunst &
 
 # cursor
 xsetroot -cursor_name left_ptr &

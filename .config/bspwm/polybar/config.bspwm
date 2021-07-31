@@ -47,7 +47,7 @@ color15 = ${xrdb:color15:#dfdedd}
 [bar/main]
 ;monitor = ${env:MONITOR:eDP-1}
 width = 100%
-height = 18
+height = 20
 bottom = false
 fixed-center = true
 enable-ipc = true
@@ -121,7 +121,7 @@ ws-icon-default = 
 ;ws-icon-4 = 4;
 
 label-monitor = %name%
-label-monitor-background = ${colors.color5}
+;label-monitor-background = ${colors.color5}
 label-monitor-foreground = ${colors.color0}
 label-monitor-padding = 1
 
@@ -133,7 +133,7 @@ label-focused-foreground = ${colors.color2}
 label-focused-padding = 1
 
 label-occupied = %icon%
-label-occupied-foreground = ${colors.color4}
+label-occupied-foreground = ${colors.color6}
 label-occupied-padding = 1
 
 label-urgent = %icon%
@@ -187,7 +187,7 @@ label-song-ellipsis = true
 
 [module/wireless]
 type = internal/network
-interface = wlp2s0
+interface = wlan0
 interval = 1.0
 accumulate-stats = true
 unknown-as-up = true
