@@ -63,6 +63,7 @@ alias zs='clear && exec zsh'
 # xrdb
 alias xc="$EDITOR ~/.Xresources"
 alias xu='xrdb ~/.Xresources'
+alias xx="$EDITOR ~/.xinitrc"
 
 # bindkey help
 alias rhb='run-help bindkey'

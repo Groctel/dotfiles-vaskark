@@ -17,13 +17,13 @@ kitty + complete setup zsh | source /dev/stdin
 
 # pywal
 (cat ~/.cache/wal/sequences &)
-source ~/.cache/wal/colors-tty.sh
+#source ~/.cache/wal/colors-tty.sh
 
 # aliases
 [ -f "$ZDOTDIR/.aliases" ] && source "$ZDOTDIR/.aliases"
 
 # mode
-bindkey -e
+bindkey -v
 export KEYTIMEOUT=1
 
 # edit line vim (ctrl-e), emacs (ctrl-x, ctrl-e):
