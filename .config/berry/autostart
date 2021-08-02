@@ -1,35 +1,5 @@
 #!/bin/sh
 
-# bitmaps
-xset +fp /usr/local/share/fonts/misc &
-
-# sxhkd
-sxhkd -c $HOME/.config/berry/sxhkdrc $HOME/.config/sxhkd/sxhkdrc.common &
-
-# redshift
-systemctl --user import-environment; systemctl --user start graphical-session.target
-systemctl --user restart redshift
-
-# picom
-#picom --experimental-backends --config ~/.config/picom/picom.conf &
-picom --config ~/.config/picom/picom-xr.conf &
-
-# polkit
-/usr/lib/policykit-1-gnome/polkit-gnome-authentication-agent-1 &
-# /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
-
-# lock
-xautolock -time 10 -locker 'lock.sh' -killer 'systemctl suspend' -corners 00-+ &
-
-# wal
-wal -R -o wal-extras.sh &
-
-# lemonbar
-lemonbar-current &
-
-# polybar
-# polybar -r -c ~/.config/polybar/config main &
-
 # Set decoration geometry
 berryc border_width         0
 berryc inner_border_width   0
@@ -50,3 +20,32 @@ berryc smart_place "true"
 berryc draw_text   "true"
 berryc edge_lock   "true"
 berryc set_font    "scientifica-8:bold"
+
+# wal
+wal -R -o wal-extras.sh &
+
+# bitmaps
+
+# sxhkd
+sxhkd -c $HOME/.config/berry/sxhkdrc $HOME/.config/sxhkd/sxhkdrc.common &
+
+# redshift
+systemctl --user import-environment; systemctl --user start graphical-session.target
+systemctl --user restart redshift
+
+# picom
+picom --experimental-backends --config ~/.config/picom/picom.conf &
+# picom --config ~/.config/picom/picom-xr.conf &
+
+# polkit
+/usr/lib/policykit-1-gnome/polkit-gnome-authentication-agent-1 &
+# /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
+
+# lock
+xautolock -time 10 -locker 'lock.sh' -killer 'systemctl suspend' -corners 00-+ &
+
+# dunst
+dunst &
+
+# lemonbar
+lemonbar-current &

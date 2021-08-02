@@ -20,8 +20,6 @@ super + {_,shift +} Escape
 	{lock.sh,xscreensaver-command -lock}
 
 # file managers
-#super + {_,shift +} F1
-#	{nemo,nemo-pkexec}
 super + {_,shift +} F1
 	{thunar,thunar-pkexec}
 
@@ -39,7 +37,7 @@ super + F4
 	
 # date
 super + F5
-	dunstify "`date +"%A %B %d %Y -- %-I:%M:%S %p %Z"`" -t 3000
+	date.sh
 	
 # networkmanager_dmenu
 super + F6
@@ -71,13 +69,13 @@ XF86MonBrightness{Up,Down}
 super + F12
 	wal -f random_user -o wal-extras.sh
 super + shift + F12
-	wal -Rq -o wal-extras.sh 
+	wal -R -o wal-extras.sh
 super + control + F12
 	wal -f random -o wal-extras.sh
         
 # sxiv
 super + equal
-	ls -t $HOME/Pictures/* | head -25 | xargs sxiv -rt
+	ls -t $HOME/Pictures/* | head -20 | xargs sxiv -rt
 
 # reboot, shutdown
 #super + {shift,ctrl} + Delete
