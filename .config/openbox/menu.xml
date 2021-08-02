@@ -19,7 +19,9 @@
     </item>
     <separator />
     <menu id="applications-menu" label="Programs" execute="/usr/bin/obamenu" />
+    
     <menu id="menu-1307193" label="Favs" />
+        
     <separator />
     <item label="Config">
       <action name="Execute">

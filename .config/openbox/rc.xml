@@ -149,7 +149,7 @@
 	cases. -->
   <margins>
     <top>0</top>
-    <bottom>0</bottom>
+    <bottom>30</bottom>
     <left>0</left>
     <right>0</right>
   </margins>
@@ -523,7 +523,7 @@
     <!-- GLava -->
     <keybind key="W-g">
       <action name="Execute">
-        <command>sh -c 'pkill glava 2>/dev/null || glava -d -a fifo'</command>
+        <command>sh -c 'pkill glava 2&gt;/dev/null || glava -d -a fifo'</command>
       </action>
     </keybind>
     <keybind key="W-C-semicolon">
@@ -572,7 +572,7 @@
     </keybind>
     <keybind key="W-Delete">
       <action name="Execute">
-        <command>pkill x</command>
+        <command>pkill Xorg</command>
       </action>
     </keybind>
   </keyboard>
