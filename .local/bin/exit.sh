@@ -18,7 +18,7 @@ case "$(uname -s)" in
 	
 	Linux*)
 		case "$MENU" in
-			*Logout) pkill x ;;
+			*Logout) pkill Xorg ;;
 			*Restart) shutdown -r now ;;
 			*Shutdown) shutdown -P now ;;
 		esac
@@ -26,7 +26,7 @@ case "$(uname -s)" in
 
 	OpenBSD*)
 		case "$MENU" in
-			*Logout) pkill x ;;
+			*Logout) pkill Xorg ;;
 			*Restart) shutdown -r now ;;
 			*Shutdown) shutdown -p now ;;
 		esac

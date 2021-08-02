@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 ## autostart
 xset +fp /usr/local/share/fonts/misc &

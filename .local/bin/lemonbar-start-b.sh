@@ -4,10 +4,10 @@
 . "${HOME}/.cache/wal/colors.sh"
 
 # offset
-x=0
-y=0
+x=300
+y=10
 w=$(( $(xdotool getdisplaygeometry | awk '{print $1}') - (2*x) ))
-h=30
+h=32
 
 # start
 lemonbar.sh | lemonbar \
@@ -20,4 +20,5 @@ lemonbar.sh | lemonbar \
 -B "$color0" \
 -F "#555" \
 -d \
+-b \
 | $SHELL

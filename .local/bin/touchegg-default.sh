@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 rm -f $HOME/.config/touchegg/.touchegg.lock
 rm -f $HOME/.config/touchegg/touchegg.conf

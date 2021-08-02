@@ -4,20 +4,22 @@
 . "${HOME}/.cache/wal/colors.sh"
 
 # offset
-x=0
-y=0
+x=300
+y=10
 w=$(( $(xdotool getdisplaygeometry | awk '{print $1}') - (2*x) ))
-h=30
+h=32
 
 # start
-lemonbar.sh | lemonbar \
+lemonbar-nf.sh | lemonbar \
 -p \
 -o -1 \
 -f "-*-scientifica-bold-r-*" \
--o 0 \
--f "Siji-10" \
+-o 1 \
+-f "Symbols Nerd Font-10" \
 -g "$w"x"$h"+"$x"+"$y" \
 -B "$color0" \
 -F "#555" \
 -d \
+-b \
 | $SHELL
+

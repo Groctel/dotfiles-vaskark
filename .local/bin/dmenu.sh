@@ -7,7 +7,7 @@
 x=0
 y=0
 w=$(( $(xdotool getdisplaygeometry | awk '{print $1}') - (2*x) ))
-h=28
+h=30
 
 # dmenu
 dmenu_run \
