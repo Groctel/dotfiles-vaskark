@@ -64,3 +64,6 @@ export FFF_COL2=5   # status bg
 export FFF_COL3=4   # sel
 export FFF_COL4=5   # cursor
 export FFF_COL5=0   # status fg
+
+# pure
+export PURE_PROMPT_SYMBOL=''
