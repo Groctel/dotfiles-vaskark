@@ -27,13 +27,13 @@ case "$1" in
 "C-c")      while read file; do xclip -selection clipboard -target image/png "$file"; done ;;
 "C-e")      while read file; do urxvt -bg "#444" -fg "#eee" -sl 0 -title "$file" -e sh -c "exiv2 pr -q -pa '$file' | less" & done ;;
 "C-g")      while read file; do gimp "$file" & done;;
-"C-r")      while read file; do rawtherapee "$file" & done ;;
+"C-w")	  	while read file; do xwallpaper --zoom "$file" & done;;
 "C-comma")  rotate 270 ;;
 "C-period") rotate  90 ;;
 "C-slash")  rotate 180 ;;
-"1")      while read file; do wal -i "$file" --backend colorthief;wal-extras.sh & done;;
-"2")      while read file; do wal -i "$file" --backend colorz;wal-extras.sh & done;;
-"3")      while read file; do wal -i "$file" --backend haishoku;wal-extras.sh & done;;
-"4")      while read file; do wal -i "$file" --backend wal;wal-extras.sh & done;;
+"1")      	while read file; do wal -i "$file" --backend colorthief;wal-extras.sh & done;;
+"2")      	while read file; do wal -i "$file" --backend colorz;wal-extras.sh & done;;
+"3")      	while read file; do wal -i "$file" --backend haishoku;wal-extras.sh & done;;
+"4")      	while read file; do wal -i "$file" --backend wal;wal-extras.sh & done;;
 esac
 
