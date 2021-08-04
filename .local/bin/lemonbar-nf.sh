@@ -13,8 +13,9 @@
 
 Session() {
 
+	WM="$(xprop -id $(xprop -root -notype | awk '$1=="_NET_SUPPORTING_WM_CHECK:"{print $5}') -notype -f _NET_WM_NAME 8t | grep "WM_NAME" | cut -f2 -d \")"
 	ICON=""
-	echo "%{F#000}%{B"$color5"}  $ICON $DESKTOP_SESSION  %{B-}%{F-}"
+	echo "%{F#000}%{B"$color5"}  $ICON $WM  %{B-}%{F-}"
 
 }
 
