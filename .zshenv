@@ -12,6 +12,12 @@ export HISTFILE="$ZDOTDIR/.zhistory"
 export HISTSIZE=10000
 export SAVEHIST=10000
 
+# xuath
+export XAUTHORITY="$XDG_RUNTIME_DIR/Xauthority"
+
+# less
+export LESSHISTFILE=""
+
 # editor
 export EDITOR='nvim'
 export VISUAL='nvim'
