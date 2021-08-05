@@ -21,11 +21,6 @@ berryc draw_text   "true"
 berryc edge_lock   "true"
 berryc set_font    "scientifica-8:bold"
 
-# wal
-wal -R -o wal-extras.sh &
-
-# bitmaps
-
 # sxhkd
 sxhkd -c $HOME/.config/berry/sxhkdrc $HOME/.config/sxhkd/sxhkdrc.common &
 

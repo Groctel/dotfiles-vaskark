@@ -5,7 +5,7 @@
 
 # terminals
 super + {_,shift +,ctrl +} Return
-	{alacritty,kitty,urxvt}
+	{alacritty,kitty,st}
 
 # program launchers
 super + {d,x}
@@ -21,11 +21,11 @@ super + {_,shift +} Escape
 
 # file managers
 super + {_,shift +} F1
-	{thunar,thunar-pkexec}
+	{nemo,nemo-pkexec}
 
 # browsers
 super + {_,shift +} F2
-	{google-chrome-stable,firefox}
+	{google-chrome,firefox}
 
 # wp
 super + F3
