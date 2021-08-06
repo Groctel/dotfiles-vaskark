@@ -12,8 +12,11 @@ export HISTFILE="$ZDOTDIR/.zhistory"
 export HISTSIZE=10000
 export SAVEHIST=10000
 
-# xuath
-export XAUTHORITY="$XDG_RUNTIME_DIR/Xauthority"
+# gtk-2.0
+export GTK2_RC_FILES="${XDG_CONFIG_HOME:-$HOME/.config}/gtk-2.0/gtkrc-2.0"
+
+# xauth (might break some DM's)
+#export XAUTHORITY="$XDG_RUNTIME_DIR/Xauthority"
 
 # less
 export LESSHISTFILE=""

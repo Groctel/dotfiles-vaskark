@@ -1,6 +1,6 @@
 # Directories #
-ncmpcpp_directory = ~/.ncmpcpp
-lyrics_directory  = ~/.lyrics
+ncmpcpp_directory = ~/.config/ncmpcpp
+lyrics_directory  = ~/.local/share/lyrics
 
 # MPD stuff #
 mpd_host = "127.0.0.1"
@@ -9,7 +9,7 @@ mpd_music_dir = "~/Music"
 mpd_connection_timeout = "5"
 
 # Behaviour #
-execute_on_song_change = 
+execute_on_song_change =
 message_delay_time = 1
 autocenter_mode = "yes"
 centered_cursor = "yes"
@@ -21,10 +21,9 @@ visualizer_data_source = /tmp/mpd.fifo
 visualizer_output_name = "visualizer"
 visualizer_in_stereo = yes
 #visualizer_look = ●●
-visualizer_look = ▉▉
-#visualizer_look = ●▉
+visualizer_look = ██
 #visualizer_look = +|
-visualizer_color = green, blue
+visualizer_color = green
 visualizer_type = spectrum
 
 # Appearance #
