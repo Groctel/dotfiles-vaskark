@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/jason/.config/wpg/wallpapers/ze53inbd37f71-m.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#151515",
+        "foreground": "#ffffff",
+        "cursor": "#88aadd"
+    },
+    "colors": {
+        "color0": "#151515",
+        "color1": "#bf7979",
+        "color2": "#cdcda1",
+        "color3": "#97b26b",
+        "color4": "#4a5463",
+        "color5": "#9c3885",
+        "color6": "#88aadd",
+        "color7": "#ffffff",
+        "color8": "#2e2e2e",
+        "color9": "#ff8989",
+        "color10": "#ffffb9",
+        "color11": "#c8f978",
+        "color12": "#556a8b",
+        "color13": "#d83ab4",
+        "color14": "#99d8ff",
+        "color15": "#ffffff"
+    }
+}

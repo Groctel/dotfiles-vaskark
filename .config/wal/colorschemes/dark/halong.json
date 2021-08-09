@@ -2,12 +2,12 @@
     "wallpaper": "/home/jason/Pictures/eckfdfehgnm11-m.jpg",
     "alpha": "100",
     "special": {
-        "background": "#0b0b0a",
+        "background": "#1d1d1c",
         "foreground": "#b1b0ad",
         "cursor": "#6a564d"
     },
     "colors": {
-        "color0": "#0b0b0a",
+        "color0": "#1d1d1c",
         "color1": "#9e8c8c",
         "color2": "#5c9c8c",
         "color3": "#828274",
@@ -15,7 +15,7 @@
         "color5": "#72734b",
         "color6": "#6a564d",
         "color7": "#b1b0ad",
-        "color8": "#252521",
+        "color8": "#363634",
         "color9": "#e0a2a2",
         "color10": "#67dabe",
         "color11": "#b8b886",

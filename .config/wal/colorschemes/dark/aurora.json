@@ -2,26 +2,26 @@
     "wallpaper": "/home/jason/Pictures/astotin_lake_northern_lights_5k-5120x2880.jpg",
     "alpha": "100",
     "special": {
-        "background": "#0D1922",
-        "foreground": "#a1c3ca",
-        "cursor": "#5F6990"
+        "background": "#17191a",
+        "foreground": "#c5c5c5",
+        "cursor": "#4884a0"
     },
     "colors": {
-        "color0": "#0D1922",
-        "color1": "#C47C8D",
-        "color2": "#3D9890",
-        "color3": "#348C6D",
-        "color4": "#957398",
-        "color5": "#396C89",
-        "color6": "#5F6990",
-        "color7": "#a1c3ca",
-        "color8": "#1a3346",
-        "color9": "#ff8cac",
-        "color10": "#41d3c6",
-        "color11": "#37c291",
-        "color12": "#d084d6",
-        "color13": "#3d8fbe",
-        "color14": "#6c7fca",
-        "color15": "#d6ffff"
+        "color0": "#17191a",
+        "color1": "#7a6288",
+        "color2": "#35666b",
+        "color3": "#275847",
+        "color4": "#2f3d5f",
+        "color5": "#817aa2",
+        "color6": "#4884a0",
+        "color7": "#c5c5c5",
+        "color8": "#2e3234",
+        "color9": "#a270bf",
+        "color10": "#3a8d95",
+        "color11": "#2a7a5e",
+        "color12": "#334b84",
+        "color13": "#9b8ce5",
+        "color14": "#4eb1df",
+        "color15": "#ffffff"
     }
 }

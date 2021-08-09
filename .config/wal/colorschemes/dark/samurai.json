@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/jason/Pictures/sflkt13b75e71.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#161515",
+        "foreground": "#c4c4c4",
+        "cursor": "#c9b1a1"
+    },
+    "colors": {
+        "color0": "#161515",
+        "color1": "#654239",
+        "color2": "#92746e",
+        "color3": "#835d4a",
+        "color4": "#bda6ac",
+        "color5": "#b7998d",
+        "color6": "#c9b1a1",
+        "color7": "#c4c4c4",
+        "color8": "#2f2d2d",
+        "color9": "#8d4f3f",
+        "color10": "#ce8b7e",
+        "color11": "#b77452",
+        "color12": "#ffc0d4",
+        "color13": "#ffbda2",
+        "color14": "#ffe1b9",
+        "color15": "#ffffff"
+    }
+}

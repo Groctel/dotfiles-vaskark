@@ -2,12 +2,12 @@
     "wallpaper": "/home/jason/Pictures/lhhriy92cmu21.jpg",
     "alpha": "100",
     "special": {
-        "background": "#080708",
+        "background": "#191819",
         "foreground": "#aaa7a9",
         "cursor": "#76513d"
     },
     "colors": {
-        "color0": "#080708",
+        "color0": "#191819",
         "color1": "#523430",
         "color2": "#3f737a",
         "color3": "#cb8778",
@@ -15,7 +15,7 @@
         "color5": "#4585a6",
         "color6": "#76513d",
         "color7": "#aaa7a9",
-        "color8": "#221e22",
+        "color8": "#323032",
         "color9": "#733d35",
         "color10": "#459eaa",
         "color11": "#ffa287",
