@@ -1,27 +1,27 @@
 {
-    "wallpaper": "/home/jason/.config/wpg/wallpapers/wallpapersden.com_hayley-atwell-black-and-white_1920x1200.jpg",
+    "wallpaper": "/home/jason/Pictures/wallpapersden.com_hayley-atwell-black-and-white_1920x1200.jpg",
     "alpha": "100",
     "special": {
         "background": "#222222",
         "foreground": "#DDDDDD",
-        "cursor": "#66AABB"
+        "cursor": "#6D878D"
     },
     "colors": {
         "color0": "#222222",
         "color1": "#E84F4F",
         "color2": "#B7CE42",
         "color3": "#FEA63C",
-        "color4": "#6D878D",
+        "color4": "#66AABB",
         "color5": "#B7416E",
-        "color6": "#66AABB",
+        "color6": "#6D878D",
         "color7": "#DDDDDD",
-        "color8": "#3b3b3b",
-        "color9": "#ff5252",
-        "color10": "#f9ff44",
-        "color11": "#ffd939",
-        "color12": "#7db9c7",
-        "color13": "#fe448b",
-        "color14": "#71e8ff",
-        "color15": "#ffffff"
+        "color8": "#666666",
+        "color9": "#E84F4F",
+        "color10": "#B7CE42",
+        "color11": "#FEA63C",
+        "color12": "#66AABB",
+        "color13": "#B7416E",
+        "color14": "#6D878D",
+        "color15": "#DDDDDD"
     }
 }
