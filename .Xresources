@@ -9,7 +9,7 @@ Xft.lcdfilter: lcddefault
 
 !! URxvt
 URxvt*termName: rxvt-unicode-256color
-URxvt*font: -*-scientifica-medium-r-*
+URxvt*font: -*-scientifica-medium-r-*,xft:UbuntuMono Nerd Font Mono:size=9
 URxvt*boldFont: -*-scientifica-bold-r-*
 URxvt*letterSpace: -6
 URxvt*lineSpace: 0
