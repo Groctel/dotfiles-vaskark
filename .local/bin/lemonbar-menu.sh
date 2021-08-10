@@ -7,8 +7,8 @@ MENU="$(rofi -sep "|" -dmenu -i -p 'Lemonbars:' -location 0 -width 10 -lines 5 -
 case "$MENU" in
 	
 	*Siji)
-		rm -f $HOME/.local/bin/lemonbar-current 2>/dev/null
-		ln -s $HOME/.local/bin/lemonbar-start.sh $HOME/.local/bin/lemonbar-current
+		rm -f "$HOME"/.local/bin/lemonbar-current 2>/dev/null
+		ln -s "$HOME"/.local/bin/lemonbar-start.sh "$HOME"/.local/bin/lemonbar-current
 		killall -9 lemonbar 2>/dev/null
 		lemonbar-current &
 		sed -i "s|geometry = .*$|geometry = \"0x0-15+45\"|g" ~/.cache/wal/colors-dunst
@@ -18,8 +18,8 @@ case "$MENU" in
 	;;
 
 	*Siji-b)
-		rm -f $HOME/.local/bin/lemonbar-current 2>/dev/null
-		ln -s $HOME/.local/bin/lemonbar-start-b.sh $HOME/.local/bin/lemonbar-current
+		rm -f "$HOME"/.local/bin/lemonbar-current 2>/dev/null
+		ln -s "$HOME"/.local/bin/lemonbar-start-b.sh "$HOME"/.local/bin/lemonbar-current
 		killall -9 lemonbar 2>/dev/null
 		lemonbar-current &
 		sed -i "s|geometry = .*$|geometry = \"0x0-15+15\"|g" ~/.cache/wal/colors-dunst
@@ -29,8 +29,8 @@ case "$MENU" in
 	;;
 
 	*NF)
-		rm -f $HOME/.local/bin/lemonbar-current 2>/dev/null
-		ln -s $HOME/.local/bin/lemonbar-nf-start.sh $HOME/.local/bin/lemonbar-current
+		rm -f "$HOME"/.local/bin/lemonbar-current 2>/dev/null
+		ln -s "$HOME"/.local/bin/lemonbar-nf-start.sh "$HOME"/.local/bin/lemonbar-current
 		killall -9 lemonbar 2>/dev/null
 		lemonbar-current &
 		sed -i "s|geometry = .*$|geometry = \"0x0-15+45\"|g" ~/.cache/wal/colors-dunst
@@ -40,8 +40,8 @@ case "$MENU" in
 	;;
 
 	*NF-b)
-		rm -f $HOME/.local/bin/lemonbar-current 2>/dev/null
-		ln -s $HOME/.local/bin/lemonbar-nf-start-b.sh $HOME/.local/bin/lemonbar-current
+		rm -f "$HOME"/.local/bin/lemonbar-current 2>/dev/null
+		ln -s "$HOME"/.local/bin/lemonbar-nf-start-b.sh "$HOME"/.local/bin/lemonbar-current
 		killall -9 lemonbar 2>/dev/null
 		lemonbar-current &
 		sed -i "s|geometry = .*$|geometry = \"0x0-15+15\"|g" ~/.cache/wal/colors-dunst
