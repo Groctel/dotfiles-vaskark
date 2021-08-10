@@ -13,7 +13,7 @@
 
 Session() {
 
-	WM="$(xprop -id $(xprop -root -notype | awk '$1=="_NET_SUPPORTING_WM_CHECK:"{print $5}') -notype -f _NET_WM_NAME 8t | grep "WM_NAME" | cut -f2 -d \")"
+	WM="$(xprop -id "$(xprop -root -notype | awk '$1=="_NET_SUPPORTING_WM_CHECK:"{print $5}')" -notype -f _NET_WM_NAME 8t | grep "WM_NAME" | cut -f2 -d \")"
 	ICON=""
 	echo "%{F#000}%{B$color5}  $ICON $WM  %{B-}%{F-}"
 
@@ -74,10 +74,15 @@ Wifi() {
      		R2=$(cat /sys/class/net/"$INTERFACE"/statistics/rx_bytes)
      		RBPS=$(( R2 - R1 ))
      	    RKBPS=$(( RBPS / 1024 ))
-     	    #MKBPS=$(( RKBPS / 1024 ))
+     	    MKBPS=$(( RKBPS / 1024 ))
      	    ICON="說"
      	    ICON_DOWN=""
-			echo "%{F$color4}$ICON%{F-} $ESSID [%{F$color4}$ICON_DOWN%{F-} $RKBPS Kb/s] "
+
+     	    if [ "$RKBPS" -le 999 ]; then
+				echo "%{F$color4}$ICON%{F-} $ESSID [%{F$color4}$ICON_DOWN%{F-} $RKBPS Kb/s] "
+			else
+				echo "%{F$color4}$ICON%{F-} $ESSID [%{F$color4}$ICON_DOWN%{F-} $MKBPS Mb/s] "
+			fi
 
 		fi
 

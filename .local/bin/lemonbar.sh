@@ -74,10 +74,15 @@ Wifi() {
      		R2=$(cat /sys/class/net/"$INTERFACE"/statistics/rx_bytes)
      		RBPS=$(( R2 - R1 ))
      	    RKBPS=$(( RBPS / 1024 ))
-     	    #MKBPS=$(( RKBPS / 1024 ))
+     	    MKBPS=$(( RKBPS / 1024 ))
      	    ICON=""
      	    ICON_DOWN=""
-			echo "%{F$color4}$ICON%{F-} $ESSID [%{F$color4}$ICON_DOWN%{F-} $RKBPS Kb/s] "
+
+     	    if [ "$RKBPS" -le 999 ]; then
+				echo "%{F$color4}$ICON%{F-} $ESSID [%{F$color4}$ICON_DOWN%{F-} $RKBPS Kb/s] "
+			else
+				echo "%{F$color4}$ICON%{F-} $ESSID [%{F$color4}$ICON_DOWN%{F-} $MKBPS Mb/s] "
+			fi
 
 		fi
 
