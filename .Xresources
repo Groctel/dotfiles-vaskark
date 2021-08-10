@@ -9,7 +9,7 @@ Xft.lcdfilter: lcddefault
 
 !! URxvt
 URxvt*termName: rxvt-unicode-256color
-URxvt*font: -*-scientifica-medium-r-*, xft:UbuntuMono Nerd Font Mono:size=9            
+URxvt*font: -*-scientifica-medium-r-*
 URxvt*boldFont: -*-scientifica-bold-r-*
 URxvt*letterSpace: -6
 URxvt*lineSpace: 0
@@ -24,9 +24,6 @@ URxvt*iso14755: false
 URxvt*iso14755_52: false
 URxvt*pointerBlank: true
 URxvt*fading: 20
-
-!! Change font on-the-fly
-URxvt.keysym.C-M-1: command:\033]710;xft:Monospace:size=8\007\033]711;xft:Monospace:bold:size=8\007
 
 !! URxvt Navigation Keys
 URxvt.keysym.M-Up: command:\033]720;1\007
@@ -75,6 +72,9 @@ xterm*visualBell: true
 xterm*visualBellLine: true
 xterm*selectToClipboard: true
 xterm*metaSendsEscape: true
+xterm*eightBitInput: false
+xterm*modifyCursorKeys: 1
+xterm*modifyFunctionKeys: 1
 
 !! XTerm Keybindings
 xterm*translations: #override \n\
@@ -84,21 +84,5 @@ xterm*translations: #override \n\
   Ctrl Shift <Key> C: copy-selection(SELECT) \n\
   Ctrl Shift <Key> V: insert-selection(SELECT) \n\
 
-!! XScreensaver
-xscreensaver.Dialog.headingFont: -*-scientifica-medium-r-*
-xscreensaver.Dialog.bodyFont: -*-scientifica-medium-r-*
-xscreensaver.Dialog.labelFont: -*-scientifica-medium-r-*
-xscreensaver.Dialog.unameFont: -*-scientifica-medium-r-*
-xscreensaver.Dialog.buttonFont: -*-scientifica-medium-r-*
-xscreensaver.Dialog.dateFont: -*-scientifica-medium-r-*
-xscreensaver.passwd.passwdFont: -*-scientifica-medium-r-*
-xscreensaver.dateFormat: %-I:%M %P, %b %d %Y
-
 !! Colours
 #include ".cache/wal/colors.Xresources"
-
-XTerm*eightBitInput: false
-
-XTerm*modifyCursorKeys: 1
-
-XTerm*modifyFunctionKeys: 1
