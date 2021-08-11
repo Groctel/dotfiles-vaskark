@@ -23,7 +23,7 @@ kitty + complete setup zsh | source /dev/stdin
 [ -f "$ZDOTDIR/.aliases" ] && source "$ZDOTDIR/.aliases"
 
 # mode
-bindkey -v
+bindkey -e
 export KEYTIMEOUT=1
 
 # edit line vim (ctrl-e), emacs (ctrl-x, ctrl-e):
@@ -44,11 +44,6 @@ ncmpcppShow() {
 zle -N ncmpcppShow
 bindkey '^\' ncmpcppShow
 
-# shfm
-shfm() {
-    cd "$(command shfm "$@")"
-}
-
 # fff
 f() {
     fff "$@"
@@ -60,7 +55,7 @@ LFCD="$HOME/.config/lf/lfcd.sh"
 if [ -f "$LFCD" ]; then
     source "$LFCD"
 fi
-bindkey -s '^o' 'lfcd\n'
+bindkey -s '^[' 'lfcd\n'
 
 [ -f "$HOME/.config/lf/icons" ] && source "$HOME/.config/lf/icons"
 
