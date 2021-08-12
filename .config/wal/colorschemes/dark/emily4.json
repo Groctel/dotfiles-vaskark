@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/jason/Pictures/Emily-Blunt-Desktop-Wallpaper-m.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#1d2021",
+        "foreground": "#95c085",
+        "cursor": "#8ba59b"
+    },
+    "colors": {
+        "color0": "#1d2021",
+        "color1": "#fb543f",
+        "color2": "#95c085",
+        "color3": "#fac03b",
+        "color4": "#0d6678",
+        "color5": "#8f4673",
+        "color6": "#8ba59b",
+        "color7": "#a89984",
+        "color8": "#34393b",
+        "color9": "#ff5d3d",
+        "color10": "#cbffb6",
+        "color11": "#ffff38",
+        "color12": "#088aa4",
+        "color13": "#c74d98",
+        "color14": "#a1eace",
+        "color15": "#edca98"
+    }
+}
