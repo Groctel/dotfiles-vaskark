@@ -133,13 +133,6 @@ Battery() {
 
   	;;
 
-  	*)
-		
-		echo "Unsupported os: $(uname -s)" >&2
-        	exit 1
-
-	;;
-
 	esac
 
 }
@@ -189,13 +182,6 @@ Volume() {
 		VOL=$(pactl list sinks | awk '/Volume: front-left/ { print $5 }' | sed 's/,//')
 		ICON=""
 		echo "%{F$color4}$ICON%{F-} $VOL% "
-
-	;;
-
-	*)
-
-		echo "Unsupported os: $(uname -s)" >&2
-        exit 1
 
 	;;
 
