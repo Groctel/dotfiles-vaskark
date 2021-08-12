@@ -16,4 +16,4 @@ dmenu_run \
 -x $x \
 -y $y \
 -z $w \
--l 0 \
+-l 0

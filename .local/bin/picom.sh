@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # If picom is running, kill it to prevent multiple instances
-if ps -A | grep picom; then
+if pgrep -x picom; then
 	killall -9 picom
 fi
 

@@ -7,7 +7,7 @@ color2=$(awk 'NR==3 {print substr($1,2,7)}' ~/.cache/wal/colors)ff
 # i3lock
 i3lock \
 \
--c $color0 \
+-c "$color0" \
 \
 -b \
 -n \
@@ -17,12 +17,12 @@ i3lock \
 --time-str="%-I:%M %P" \
 --time-font="scientifica:bold" \
 --time-size=20 \
---time-color=$color2 \
+--time-color="$color2" \
 \
 --date-str="" \
 \
 --greeter-text="Locked!" \
 --greeter-font="rufscript" \
 --greeter-size=60 \
---greeter-color=$color2 \
---greeter-pos="960:510" \
+--greeter-color="$color2" \
+--greeter-pos="960:510"

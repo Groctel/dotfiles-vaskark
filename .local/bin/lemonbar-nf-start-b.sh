@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # wal
-. "${HOME}/.cache/wal/colors.sh"
+. "$HOME"/.cache/wal/colors.sh
 
 # offset
 x=300
