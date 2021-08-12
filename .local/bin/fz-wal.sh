@@ -24,12 +24,12 @@ fi
 
 if [ -n "$THEME" ]; then
     if [ -n "$IS_LIGHT" ]; then
-        wal -ql --theme "$THEME" "$SCRIPTS"
+        wal -ql --theme "$THEME" $SCRIPTS
     else
-        wal -q --theme "$THEME" "$SCRIPTS"
+        wal -q --theme "$THEME" $SCRIPTS
     fi
 else
-    wal -q --theme /tmp/fzwal-backup.json "$SCRIPTS"
+    wal -q --theme /tmp/fzwal-backup.json $SCRIPTS
 fi
 
 if [ -n "$FZWAL_RESET_CURSOR" ]; then
