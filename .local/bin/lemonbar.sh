@@ -46,7 +46,7 @@ Mpc() {
 
 	MPD=$(pgrep -x mpd)
 
-	if [[ -n $MPD ]] ; then
+	if [ -n "$MPD" ] ; then
 		MPC=$(mpc current -f "%artist% >> %title%")
 		ICON=""
 		echo "%{A:mpc toggle 1>/dev/null:}%{A2:mpc prev 1>/dev/null:}%{A3:mpc next 1>/dev/null:}%{F$color6}$ICON%{F-} $MPC%{A}%{A}%{A}"
@@ -62,7 +62,7 @@ Wifi() {
     INTERFACE=$(ip addr | awk '/state UP/ {print $2}' | sed 's/://g')
 	WIFISTR=$(iwconfig "$INTERFACE" | grep "Link" | sed 's/ //g' | sed 's/LinkQuality=//g' | sed 's/\/.*//g') 
 
-	if [[ -n "$WIFISTR" ]] ; then
+	if [ -n "$WIFISTR" ] ; then
 
 		WIFISTR=$(( WIFISTR * 100 / 70 ))
 		ESSID=$(iwconfig "$INTERFACE" | grep ESSID | sed 's/ //g' | sed 's/.*://g' | sed 's/\"//g')
@@ -107,7 +107,7 @@ Battery() {
 		CHARGE=$(acpi | grep "Not charging")
 		CAPACITY=$(cat /sys/class/power_supply/BAT0/capacity)
 
-		if [[ -n $CHARGE ]] ; then
+		if [ -n "$CHARGE" ] ; then
 			ICON=""
 			echo "%{F$color4}$ICON%{F-} $CAPACITY% "
 		else
@@ -158,7 +158,7 @@ Volume() {
 
 		NOTMUTED=$(amixer -D pulse sget Master | grep "\[on\]")
 
-		if [[ -n $NOTMUTED ]] ; then
+		if [ -n "$NOTMUTED" ] ; then
 			VOL=$(awk -F"[][]" '/Left:/ { print $2 }' <(amixer -D pulse sget Master) | sed 's/%//g')
 			ICON=""
 			echo "%{F$color4}$ICON%{F-} $VOL% "
