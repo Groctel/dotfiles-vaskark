@@ -22,7 +22,7 @@ i3lock \
 --date-str="" \
 \
 --greeter-text="Locked!" \
---greeter-font="rufscript" \
+--greeter-font="scientifica:bold" \
 --greeter-size=60 \
 --greeter-color="$color2" \
 --greeter-pos="960:510"

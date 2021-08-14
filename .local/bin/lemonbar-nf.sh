@@ -14,7 +14,7 @@
 Session() {
 
 	WM="$(xprop -id "$(xprop -root -notype | awk '$1=="_NET_SUPPORTING_WM_CHECK:"{print $5}')" -notype -f _NET_WM_NAME 8t | grep "WM_NAME" | cut -f2 -d \")"
-	ICON=""
+	ICON=""
 	echo "%{F#000}%{B$color5}  $ICON $WM  %{B-}%{F-}"
 
 }
@@ -48,7 +48,7 @@ Mpc() {
 
 	if [[ -n $MPD ]] ; then
 		MPC=$(mpc current -f "%artist% >> %title%")
-		ICON="ﭵ"
+		ICON="蓼"
 		echo "%{A:mpc toggle 1>/dev/null:}%{A2:mpc prev 1>/dev/null:}%{A3:mpc next 1>/dev/null:}%{F$color6}$ICON%{F-} $MPC%{A}%{A}%{A}"
 	else
 		ICON="ﭵ"
@@ -160,10 +160,10 @@ Volume() {
 
 		if [[ -n $NOTMUTED ]] ; then
 			VOL=$(awk -F"[][]" '/Left:/ { print $2 }' <(amixer -D pulse sget Master) | sed 's/%//g')
-			ICON=""
+			ICON="墳"
 			echo "%{F$color4}$ICON%{F-} $VOL% "
 		else
-			ICON="ﱝ"
+			ICON="婢"
 			echo "%{F#555}$ICON%{F-} --% "
 		fi
 
@@ -193,7 +193,7 @@ Window() {
 
     WINDOW=$(xdotool getwindowfocus getwindowname)
     SHORT=${WINDOW:0:75}
-    ICON=""
+    ICON=""
     echo " $ICON $SHORT "
 
 }
