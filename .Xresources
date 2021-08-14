@@ -13,7 +13,7 @@ URxvt*font: -*-scientifica-medium-r-*, xft:UbuntuMono Nerd Font Mono:size=8
 URxvt*boldFont: -*-scientifica-bold-r-*
 URxvt*letterSpace: -6
 URxvt*lineSpace: 0
-URxvt*geometry: 80x22
+URxvt*geometry: 76x20
 URxvt*internalBorder: 20
 URxvt*cursorBlink: false
 URxvt*saveLines: 2000
