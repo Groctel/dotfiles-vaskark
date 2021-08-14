@@ -9,8 +9,8 @@ alias du='du -d 1 -h -c'
 alias cd..='cd ..'
 alias d='dirs -v | head -10'
 alias free='free -m'
-alias vim=$EDITOR
 alias v=$EDITOR
+#alias vim=$EDITOR
 alias t="tty-clock -cst -C 2 -f '%A %B %d %Y'"
 alias mount='mount | column -t'
 alias u='unimatrix -c green -a -f -n -s 98'
@@ -32,21 +32,22 @@ alias path='print -l $path'
 alias fr='feh --randomize --bg-fill --recursive --no-fehbg ~/Pictures/*.(png|jpg)'
 alias rmpd='systemctl --user daemon-reload; systemctl --user restart mpd'
 alias lf="$HOME/.local/bin/lf.sh"
+alias ed='ed -p ": "'
 
 # lsd
-alias lsd='lsd -h --group-dirs first --no-symlink --total-size'
-#alias ls='lsd'
-#alias l='ls -l'
-#alias ll='ls -Al'
-#alias lt='ls --tree --depth 2'
+alias lsd='lsd -h --group-dirs first --no-symlink'
+alias ls='lsd'
+alias l='ls -l'
+alias ll='ls -Al'
+alias lt='ls --tree --depth 2'
 
 # exa
 alias exa='exa --icons --git -g --time-style long-iso --group-directories-first --git-ignore'
-alias ls='exa'
-alias l1='ls -1'
-alias l='ls -l'
-alias ll='ls -al'
-alias lt='ls -T -L 2'
+#alias ls='exa'
+#alias l1='ls -1'
+#alias l='ls -l'
+#alias ll='ls -al'
+#alias lt='ls -T -L 2'
 
 # suffix
 alias -g G='| grep -i'
@@ -87,6 +88,7 @@ alias gc='git commit -a'
 alias ga='git add'
 alias gp='git pull'
 alias gpom='git pull origin master'
+alias gpvm='git pull vaskark master'
 alias gpush='git push'
 alias gl='git log'
 alias gls='git log --stat'
@@ -113,9 +115,8 @@ alias fcl='fc-list'
 alias p10kc='p10k configure'
 
 # pywal
-alias wal='wal -o wal-extras.sh'
-alias w1='wal -f random_user'
-alias w2='wal -f random'
+alias w1='wal -f random_user -o wal-extras.sh'
+alias w2='wal -f random -o wal-extras.sh'
 
 # system
 alias upd8='sudo apt update;sudo apt full-upgrade;sudo apt autoremove;sudo apt clean'
