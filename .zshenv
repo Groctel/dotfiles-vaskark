@@ -12,9 +12,6 @@ export HISTFILE="$ZDOTDIR/.zhistory"
 export HISTSIZE=10000
 export SAVEHIST=10000
 
-# gtk-2.0
-export GTK2_RC_FILES="${XDG_CONFIG_HOME:-$HOME/.config}/gtk-2.0/gtkrc-2.0"
-
 # xauth (might break some DM's)
 #export XAUTHORITY="$XDG_RUNTIME_DIR/Xauthority"
 
@@ -41,11 +38,11 @@ export RIPGREP_CONFIG_PATH="$XDG_CONFIG_HOME/ripgrep"
 
 # nnn
 export NNN_FIFO='/tmp/nnn.fifo' 
-export NNN_COLORS='2345'
-export NNN_TRASH=1
+export NNN_COLORS='2356'
+export NNN_TRASH=2
 export NNN_OPENER=$HOME/.config/nnn/plugins/nuke
 export NNN_FCOLORS='c1e2272e006033f7c6d6abc4'
-export NNN_PLUG='d:diffs;f:fzcd;m:mediainf;n:nuke;o:fzopen;v:imgview;w:wall'
+export NNN_PLUG='d:diffs;k:pskill;n:nuke;o:fzopen;p:preview-tui;v:imgview;w:wall'
 
 # fzf
 export FZF_DEFAULT_COMMAND="fd --hidden --follow --exclude '.git' --exclude '.cache'"

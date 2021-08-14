@@ -48,10 +48,10 @@ Mpc() {
 
 	if [[ -n $MPD ]] ; then
 		MPC=$(mpc current -f "%artist% >> %title%")
-		ICON="ﱘ"
+		ICON="ﭵ"
 		echo "%{A:mpc toggle 1>/dev/null:}%{A2:mpc prev 1>/dev/null:}%{A3:mpc next 1>/dev/null:}%{F$color6}$ICON%{F-} $MPC%{A}%{A}%{A}"
 	else
-		ICON="ﱙ"
+		ICON="ﭵ"
 		echo "%{F#555}$ICON%{F-} mpd offline"
 	fi
 
@@ -220,7 +220,7 @@ Time() {
 
 while true; do
     echo -e "\
-	%{l}$(Uptime) $(Window) \
+	%{l}$(Session) $(Window) \
 	%{c}$(Mpc) \
 	%{r}$(Wifi) $(Cpu) $(Memory) $(Battery) $(Volume) $(Time)"
     sleep 0.05
