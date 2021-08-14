@@ -35,7 +35,7 @@ sed -i "s|gradient_color_1.*$|gradient_color_1 = "\'$color2\'"|g" ~/.config/cava
 sed -i "s|gradient_color_2.*$|gradient_color_2 = "\'$color10\'"|g" ~/.config/cava/config
 
 # glava
-sed -i "s|#define COLOR @fg.*$|#define COLOR @fg:mix(\"$color2\"ff, \"$color10\"aa, clamp(d / GRADIENT, 0, 1))|g" ~/.config/glava/bars.glsl
+sed -i "s|#define COLOR @fg.*$|#define COLOR @fg:mix("$color2"ff, "$color10"aa, clamp(d / GRADIENT, 0, 1))|g" ~/.config/glava/bars.glsl
 if pgrep -x glava; then
 	pkill glava 2>/dev/null
 	glava -d &
