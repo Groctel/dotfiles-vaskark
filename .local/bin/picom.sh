@@ -2,7 +2,7 @@
 
 # If picom is running, kill it to prevent multiple instances
 if pgrep -x picom; then
-	pkill picom
+	killall -q picom
 fi
 
 # Wait until the processes have been shut down
