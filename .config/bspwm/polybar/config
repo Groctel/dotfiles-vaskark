@@ -45,13 +45,14 @@ color15 = ${xrdb:color15:#dfdedd}
 ##############################################
 
 [bar/main]
-;monitor = ${env:MONITOR:eDP-1}
+monitor = ${env:MONITOR:eDP-1}
 width = 100%
 height = 20
 bottom = false
 fixed-center = true
 enable-ipc = true
 cursor-click = pointer
+;override-redirect = true
 
 background = ${colors.color0}
 foreground = #666
@@ -67,12 +68,47 @@ module-margin = 1
 font-0 = "scientifica:bold:size=8;2"
 font-1 = "siji:size=9;2"
 
-modules-left = mod bspwm
+modules-left = bspwm
 modules-center = mpd
 modules-right = wireless uptime memory temp battery volume date
 
 ;scroll-up = bspwm-deskprev
 ;scroll-down = bspwm-desknext
+
+;wm-restack = bspwm
+
+[bar/ext]
+monitor = HDMI-2
+width = 100%
+height = 20
+bottom = false
+fixed-center = true
+enable-ipc = true
+cursor-click = pointer
+override-redirect = true
+
+background = ${colors.color0}
+foreground = #666
+
+border-size = 5
+border-color = ${colors.color0}
+
+padding-left = 0
+padding-right = 1
+
+module-margin = 1
+
+font-0 = "scientifica:bold:size=8;2"
+font-1 = "siji:size=9;2"
+
+modules-left = bspwm
+modules-center = mpd
+modules-right = wireless uptime memory temp battery volume date
+
+;scroll-up = bspwm-deskprev
+;scroll-down = bspwm-desknext
+
+wm-restack = bspwm
 
 ##################################################
 ##################################################
@@ -88,7 +124,7 @@ label-monitor-background = ${colors.color5}
 label-monitor-foreground = ${colors.color0}
 label-monitor-padding = 1
 
-format = <label-state>
+format = <label-monitor> <label-state>
 
 label-focused = %index%
 label-focused-background = ${colors.color2}
@@ -197,11 +233,11 @@ format-connected = <ramp-signal> <label-connected>
 
 ramp-signal-foreground = ${colors.color4}
 
-label-disconnected = ---
-format-disconnected = <label-disconnected>
+;label-disconnected = ---
+;format-disconnected = <label-disconnected>
 
-format-disconnected-prefix = " "
-format-disconnected-prefix-foreground = ${colors.color4}
+;format-disconnected-prefix = " "
+;format-disconnected-prefix-foreground = ${colors.color4}
 
 ramp-signal-0 = 
 ramp-signal-1 = 
@@ -222,11 +258,11 @@ format-connected = <ramp-signal> <label-connected>
 
 ramp-signal-foreground = ${colors.color4}
 
-label-disconnected = ---
-format-disconnected = <label-disconnected>
+;label-disconnected = ---
+;format-disconnected = <label-disconnected>
 
-format-disconnected-prefix = " "
-format-disconnected-prefix-foreground = ${colors.color4}
+;format-disconnected-prefix = " "
+;format-disconnected-prefix-foreground = ${colors.color4}
 
 ramp-signal-0 = 
 ramp-signal-1 = 

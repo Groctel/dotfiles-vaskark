@@ -7,7 +7,7 @@
 super + {_,shift +} semicolon
 	polybar-msg cmd {toggle,restart}
 super + ctrl + semicolon
-	pkill polybar || polybar -r -c ~/.config/bspwm/polybar/config.bspwm main
+	pkill polybar || polybar -r -c ~/.config/bspwm/polybar/current main
 
 
 #

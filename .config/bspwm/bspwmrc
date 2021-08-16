@@ -1,7 +1,7 @@
 #!/bin/sh
 
-# fonts
-#xset +fp /usr/local/share/fonts/misc &
+# xrdb
+xrdb $HOME/.Xresources &
 
 # picom
 pgrep -x picom || picom --experimental-backends --config ~/.config/picom/picom.conf &
@@ -17,8 +17,15 @@ pgrep -x xautolock || xautolock -time 10 -locker 'lock.sh' -killer 'systemctl su
 pgrep -x /usr/lib/policykit-1-gnome/polkit-gnome-authentication-agent-1 || /usr/lib/policykit-1-gnome/polkit-gnome-authentication-agent-1 &
 #/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
 
+# dual monitors (?)
+if [ -x $HOME/.config/bspwm/dual_monitors.sh ]; then
+    $HOME/.config/bspwm/dual_monitors.sh
+fi
+
 # polybar
-pgrep -x polybar || polybar -r -c ~/.config/bspwm/polybar/config.bspwm main &
+if [ -x /usr/local/bin/polybar ]; then
+    bash $HOME/.config/bspwm/launch_polybar.sh
+fi
 
 # sxhkd
 pgrep -x sxhkd || sxhkd -c $HOME/.config/bspwm/sxhkdrc $HOME/.config/sxhkd/sxhkdrc.common &
