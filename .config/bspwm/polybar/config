@@ -47,7 +47,7 @@ color15 = ${xrdb:color15:#dfdedd}
 [bar/main]
 monitor = ${env:MONITOR:eDP-1}
 width = 100%
-height = 20
+height = 18
 bottom = false
 fixed-center = true
 enable-ipc = true
@@ -57,7 +57,7 @@ cursor-click = pointer
 background = ${colors.color0}
 foreground = #666
 
-border-size = 5
+border-size = 6
 border-color = ${colors.color0}
 
 padding-left = 0
@@ -78,9 +78,9 @@ modules-right = wireless uptime memory temp battery volume date
 ;wm-restack = bspwm
 
 [bar/ext]
-monitor = HDMI-2
+monitor = ${env:MONITOR:HDMI-2}
 width = 100%
-height = 20
+height = 18
 bottom = false
 fixed-center = true
 enable-ipc = true
@@ -90,7 +90,7 @@ override-redirect = true
 background = ${colors.color0}
 foreground = #666
 
-border-size = 5
+border-size = 6
 border-color = ${colors.color0}
 
 padding-left = 0
