@@ -48,10 +48,10 @@ Mpc() {
 
 	if [ -n "$MPD" ] ; then
 		MPC=$(mpc current -f "%artist% >> %title%")
-		ICON="蓼"
+		ICON="ﱘ"
 		echo "%{A:mpc toggle 1>/dev/null:}%{A2:mpc prev 1>/dev/null:}%{A3:mpc next 1>/dev/null:}%{F$color6}$ICON%{F-} $MPC%{A}%{A}%{A}"
 	else
-		ICON="ﭵ"
+		ICON="ﱙ"
 		echo "%{F#555}$ICON%{F-} mpd offline"
 	fi
 
@@ -94,6 +94,7 @@ Cpu() {
 
 	CPU=$("$HOME"/.config/scripts/cpu.sh)
 	ICON="﬙"
+        #ICON="﨎"
 	echo "%{F$color4}$ICON%{F-} $CPU "
 
 }
@@ -202,7 +203,7 @@ Date() {
 
     DATE=$(date +"%a %b %d %Y")
     ICON=""
-    echo "%{F#000}%{B$color2}  $ICON $DATE  %{B-}%{F-}"
+    echo "%{F#000}%{B$color6}  $ICON $DATE  %{B-}%{F-}"
 
 }
 
@@ -210,7 +211,7 @@ Time() {
 
     TIME=$("$HOME"/.config/scripts/time.sh)
     ICON=""
-    echo "%{A3:gnome-clocks:}%{F#000}%{B$color2}  $ICON $TIME  %{B-}%{F-}%{A}"
+    echo "%{F#000}%{B$color2}  $ICON $TIME  %{B-}%{F-}"
 
 }
 
@@ -220,8 +221,8 @@ Time() {
 
 while true; do
     echo -e "\
-	%{l}$(Session) $(Window) \
+	%{l}$(Uptime) $(Window) \
 	%{c}$(Mpc) \
-	%{r}$(Wifi) $(Cpu) $(Memory) $(Battery) $(Volume) $(Time)"
-    sleep 0.05
+    %{r}$(Wifi) $(Cpu) $(Memory) $(Battery) $(Volume) $(Time)"
+    sleep 0.1
 done

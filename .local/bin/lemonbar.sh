@@ -202,7 +202,7 @@ Date() {
 
     DATE=$(date +"%a %b %d %Y")
     ICON=""
-    echo "%{F#000}%{B$color2}  $ICON $DATE  %{B-}%{F-}"
+    echo "%{F#000}%{B$color6}  $ICON $DATE  %{B-}%{F-}"
 
 }
 
@@ -210,7 +210,7 @@ Time() {
 
     TIME=$("$HOME"/.config/scripts/time.sh)
     ICON=""
-    echo "%{A3:gnome-clocks:}%{F#000}%{B$color2}  $ICON $TIME  %{B-}%{F-}%{A}"
+    echo "%{F#000}%{B$color2}  $ICON $TIME  %{B-}%{F-}"
 
 }
 
