@@ -9,6 +9,10 @@ super +  semicolon
 super + shift + semicolon
     lemonbar-menu.sh
 
+# polybar
+#super + {_,shift +} semicolon
+#    polybar-msg cmd {toggle,restart}
+
 # glava
 super + g
     pkill glava 2>/dev/null || glava -d

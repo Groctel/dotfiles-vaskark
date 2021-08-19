@@ -1,13 +1,17 @@
 #!/bin/sh
 
+# bitmaps
+xset +fp /usr/local/share/fonts/misc &
+
 # xrdb
-xrdb $HOME/.Xresources &
+xrdb $HOME/.Xresources
 
 # picom
 pgrep -x picom || picom --experimental-backends --config ~/.config/picom/picom.conf &
 
 # redshift
-systemctl --user import-environment; systemctl --user start graphical-session.target
+systemctl --user import-environment
+#systemctl --user start graphical-session.target
 systemctl --user restart redshift.service
 
 # lock
@@ -31,7 +35,7 @@ fi
 pgrep -x sxhkd || sxhkd -c $HOME/.config/bspwm/sxhkdrc $HOME/.config/sxhkd/sxhkdrc.common &
 
 # wp
-bash $HOME/.fehbg
+bash $HOME/.fehbg &
 
 # dunst
 pgrep -x dunst || dunst &

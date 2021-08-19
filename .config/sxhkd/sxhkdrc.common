@@ -21,7 +21,7 @@ super + {_,shift +} Escape
 
 # file managers
 super + {_,shift +} F1
-	{nemo,nemo-pkexec}
+	{thunar,thunar-pkexec}
 
 # browsers
 super + {_,shift +} F2
@@ -42,6 +42,10 @@ super + F5
 # networkmanager_dmenu
 super + F6
 	networkmanager_dmenu
+
+# man2pdf
+super + F7
+	man2pdf.sh
 
 # music
 alt + {F10,F11,F12}
