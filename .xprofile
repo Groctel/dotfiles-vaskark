@@ -7,4 +7,5 @@ export SSH_AUTH_SOCK=~/.ssh/ssh_auth_sock
 
 # start
 xset +fp /usr/local/share/fonts/misc &
-xrdb ~/.Xresources &
+xset fp rehash &
+xrdb ~/.Xresources

@@ -122,6 +122,9 @@ alias w2='wal -f random -o wal-extras.sh'
 alias upd8='sudo apt update;sudo apt full-upgrade;sudo apt autoremove;sudo apt clean'
 alias shut='poweroff'
 
+# startx
+alias startx='startx $HOME/.xinitrc'
+
 # kernel
 alias mkc='make LSMOD=$HOME/.config/modprobed.db localmodconfig'
 alias mkp='make deb-pkg -j4 LOCALVERSION=-custom'

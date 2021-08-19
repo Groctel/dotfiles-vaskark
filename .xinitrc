@@ -12,4 +12,13 @@ fi
 [ -f ~/.xprofile ] && . ~/.xprofile
 
 # wm
-exec berry 2> /tmp/xinitrc.log
+#exec berry 2>/tmp/xinitrc.log
+
+session=${1:-berry}
+case $session in
+    berry) exec /usr/local/bin/berry ;;
+    bspwm) exec /usr/bin/bspwm ;;
+    openbox) exec /usr/bin/openbox-session ;;
+    gnome) exec /usr/bin/gnome-session ;;
+    *) exec $1;;
+esac

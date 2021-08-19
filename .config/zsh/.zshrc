@@ -17,7 +17,7 @@ kitty + complete setup zsh | source /dev/stdin
 
 # pywal
 (cat ~/.cache/wal/sequences &)
-#source ~/.cache/wal/colors-tty.sh
+source ~/.cache/wal/colors-tty.sh
 
 # aliases
 [ -f "$ZDOTDIR/.aliases" ] && source "$ZDOTDIR/.aliases"
