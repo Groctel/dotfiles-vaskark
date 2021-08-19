@@ -2,12 +2,12 @@
     "wallpaper": "/home/jason/Pictures/jl-1920-584072.jpg",
     "alpha": "100",
     "special": {
-        "background": "#2a2725",
+        "background": "#1c1c1c",
         "foreground": "#b8b2a7",
         "cursor": "#bdac8c"
     },
     "colors": {
-        "color0": "#2a2725",
+        "color0": "#1c1c1c",
         "color1": "#8e6f64",
         "color2": "#849385",
         "color3": "#757580",
@@ -15,7 +15,7 @@
         "color5": "#64697f",
         "color6": "#bdac8c",
         "color7": "#b8b2a7",
-        "color8": "#443f3c",
+        "color8": "#1f1f1f",
         "color9": "#c88872",
         "color10": "#99d19d",
         "color11": "#8888b6",
