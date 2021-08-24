@@ -61,9 +61,6 @@ export FZF_DEFAULT_OPTS="
 --bind 'ctrl-a:select-all'
 "
 
-# shfm
-export SHFM_OPENER=$HOME/.config/shfm/opener.sh
-
 # fff
 export FFF_COL1=2   # dir
 export FFF_COL2=5   # status bg
