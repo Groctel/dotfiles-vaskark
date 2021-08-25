@@ -4,18 +4,26 @@
 
 
 # lemonbar
-super +  semicolon
-    pkill lemonbar 2>/dev/null || lemonbar-current 
-super + shift + semicolon
-    lemonbar-menu.sh
+#super +  semicolon
+#    pkill lemonbar 2>/dev/null || lemonbar-current 
+#super + shift + semicolon
+#    lemonbar-menu.sh
 
 # polybar
-#super + {_,shift +} semicolon
-#    polybar-msg cmd {toggle,restart}
+super + {_,shift +} semicolon
+    polybar-msg cmd {toggle,restart} 1>/dev/null
 
 # glava
 super + g
-    pkill glava 2>/dev/null || glava -d
+    pkill glava &>/dev/null || glava -d
+
+# wal
+super + F12
+    wal -f random_user -o $HOME/.config/berry/wal/extras.sh
+super + shift + F12
+    wal -R -o $HOME/.config/berry/wal/extras.sh
+super + control + F12
+    wal -f random -o $HOME/.config/berry/wal/extras.sh
 
 # viz
 super + v

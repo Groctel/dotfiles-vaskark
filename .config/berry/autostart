@@ -29,7 +29,7 @@ sxhkd -c $HOME/.config/berry/sxhkdrc $HOME/.config/sxhkd/sxhkdrc.common &
 
 # redshift
 systemctl --user import-environment
-#systemctl --user start graphical-session.target
+# systemctl --user start graphical-session.target
 systemctl --user restart redshift
 
 # picom
@@ -38,7 +38,7 @@ picom --experimental-backends --config ~/.config/picom/picom.conf &
 
 # polkit
 /usr/lib/policykit-1-gnome/polkit-gnome-authentication-agent-1 &
-#/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
+# /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
 
 # lock
 xautolock -time 10 -locker 'lock.sh' -killer 'systemctl suspend' -corners 00-+ &
@@ -47,7 +47,7 @@ xautolock -time 10 -locker 'lock.sh' -killer 'systemctl suspend' -corners 00-+ &
 dunst &
 
 # lemonbar
-lemonbar-current &
+# lemonbar-current &
 
 # polybar
-#polybar -r -c ~/.config/berry/polybar/config main &
+pb1.sh &

@@ -144,7 +144,7 @@ label-urgent-padding = 1
 
 label-empty = %icon%
 label-empty-background = ${colors.color0}
-label-empty-foreground = #555
+label-empty-foreground = #444
 label-empty-padding = 1
 
 ##################################################
@@ -156,8 +156,6 @@ port = 6600
 
 label-song = %{A1:mpc -q toggle:}%{A2:mpc -q prev:}%{A3:mpc -q next:}%artist% >> %title%%{A}%{A}%{A}
 format-online = <label-song>
-
-format-online-foreground = #555
 
 format-online-prefix = " "
 format-online-prefix-foreground = ${colors.color6}
@@ -295,7 +293,7 @@ type = internal/date
 interval = 1
 
 time = %I:%M %p
-time-alt = %a %b %d %Y
+time-alt = %A %B %d %Y
 
 label = %time%
 format =  <label>
