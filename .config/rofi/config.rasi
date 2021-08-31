@@ -1,7 +1,8 @@
 configuration {
   modi: "drun,run,ssh,emoji,keys";
   terminal: "alacritty";
-  theme: "~/.cache/wal/colors-rofi-dark.rasi-default";
+  font: "scientifica bold 8";
+  theme: "~/.cache/wal/colors-rofi-dark-new.rasi";
   /*theme: "themes/default.rasi";*/
 }
 

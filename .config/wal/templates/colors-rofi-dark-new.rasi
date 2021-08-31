@@ -7,12 +7,11 @@
 
   background-color: @background;
   text-color:       @foreground;
-  font:             "scientifica bold 8";
   columns:          1;
 }}
 
 #window {{
-  /*width: 275px;*/ 
+  /*width: 275px;*/
   /*       vertical   horizontal */
   padding: 16px;
 
