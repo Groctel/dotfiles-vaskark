@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/jason/Pictures/scarlett-johansson-beautiful-hairstyle-face-blue-eyes-4k.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#191919",
+        "foreground": "#c5c5c5",
+        "cursor": "#8a7777"
+    },
+    "colors": {
+        "color0": "#191919",
+        "color1": "#6c4c44",
+        "color2": "#bd9082",
+        "color3": "#ceb89f",
+        "color4": "#8a674f",
+        "color5": "#b87641",
+        "color6": "#8a7777",
+        "color7": "#c5c5c5",
+        "color8": "#323232",
+        "color9": "#975b4c",
+        "color10": "#ffb094",
+        "color11": "#fff0b7",
+        "color12": "#c18358",
+        "color13": "#ff9744",
+        "color14": "#c48a8a",
+        "color15": "#ffffff"
+    }
+}

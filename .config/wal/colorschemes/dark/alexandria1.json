@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/jason/Pictures/alexandra-daddario-4k-m.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#181717",
+        "foreground": "#c5c5c5",
+        "cursor": "#7b726d"
+    },
+    "colors": {
+        "color0": "#181717",
+        "color1": "#7b484f",
+        "color2": "#a78985",
+        "color3": "#a99b92",
+        "color4": "#5a5047",
+        "color5": "#5d403f",
+        "color6": "#7b726d",
+        "color7": "#c5c5c5",
+        "color8": "#312f2f",
+        "color9": "#ac505d",
+        "color10": "#eca399",
+        "color11": "#f0c5a9",
+        "color12": "#7f6751",
+        "color13": "#824947",
+        "color14": "#ae8f7e",
+        "color15": "#ffffff"
+    }
+}
