@@ -47,7 +47,7 @@ color15 = ${xrdb:color15:#dfdedd}
 [bar/main]
 ;monitor = ${env:MONITOR:eDP-1}
 width = 80%
-height = 32
+height = 30
 offset-x = 10%
 offset-y = 10
 bottom = true
@@ -67,7 +67,7 @@ padding-right = 0
 module-margin = 1
 
 font-0 = "scientifica:bold:size=8;2"
-font-1 = "siji:medium:size=9;2"
+font-1 = "siji:size=9;2"
 
 modules-left = uptime mpd
 modules-center = ewmh-i
@@ -294,7 +294,7 @@ type = internal/date
 interval = 1
 
 time = %I:%M %p
-time-alt = %A %B %d %Y
+time-alt = %a %b %d %Y
 
 label = %time%
 format =  <label>
