@@ -22,7 +22,7 @@ berryc edge_lock   "true"
 berryc set_font    "scientifica-8:bold"
 
 # wal
-wal -R -o wal-extras.sh &
+wal -R -o $HOME/.config/berry/wal/extras.sh &
 
 # sxhkd
 sxhkd -c $HOME/.config/berry/sxhkdrc $HOME/.config/sxhkd/sxhkdrc.common &
@@ -44,10 +44,10 @@ picom --experimental-backends --config ~/.config/picom/picom.conf &
 xautolock -time 10 -locker 'lock.sh' -killer 'systemctl suspend' -corners 00-+ &
 
 # dunst
-dunst &
+# dunst &
 
 # lemonbar
 # lemonbar-current &
 
 # polybar
-pb1.sh &
+pb.sh &
