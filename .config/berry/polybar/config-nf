@@ -71,7 +71,7 @@ font-1 = "Symbols Nerd Font:size=9;2"
 
 modules-left = ewmh-i
 modules-center = mpd
-modules-right = wireless temp cpu memory battery volume date
+modules-right = wireless uptime-alt temp cpu memory battery volume date
 
 ##################################################
 ##################################################
@@ -206,12 +206,12 @@ warn-temperature = 75
 
 label = %temperature-c%
 format = <label>
-format-prefix = "﨏 "
+format-prefix = "﨎 "
 format-prefix-foreground = ${colors.color4}
 
 label-warn = %temperature-c%
 format-warn = <label-warn>
-format-warn-prefix = "﨏 "
+format-warn-prefix = "﨎 "
 format-warn-foreground = ${colors.color1}
 
 ##################################################
@@ -295,7 +295,7 @@ format-muted-prefix-foreground = #555
 type = internal/date
 interval = 1
 
-time = 愈 %I:%M %p
+time =  %I:%M %p
 time-alt =  %a %b %d %Y
 
 label = %time%
@@ -318,6 +318,18 @@ format = <label>
 format-background = ${colors.color1}
 format-foreground = ${colors.color0}
 format-padding = 2 
+
+##################################################
+
+[module/uptime-alt]
+type = custom/script
+exec = ~/.config/scripts/uptime.sh
+interval = 1
+
+label = %output%
+format = <label>
+format-prefix = " "
+format-prefix-foreground = ${colors.color4}
 
 ##################################################
 ##################################################
