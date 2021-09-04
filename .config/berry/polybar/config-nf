@@ -67,7 +67,7 @@ padding-right = 0
 module-margin = 1
 
 font-0 = "scientifica:bold:size=8;2"
-font-1 = "siji:size=9;2"
+font-1 = "Symbols Nerd Font:size=9;2"
 
 modules-left = ewmh-i
 modules-center = mpd
@@ -121,16 +121,16 @@ enable-scroll = false
 #icon-2 = 2;
 #icon-3 = 3;
 #icon-4 = 4;
-icon-default = 
+icon-default = ﱡ
 
 format = <label-monitor> <label-state>
 
-label-monitor =  %name%
+label-monitor =  %name%
 label-monitor-background = ${colors.color5}
 label-monitor-foreground = ${colors.color0}
 label-monitor-padding = 2
 
-label-active = 
+label-active = ﱢ
 label-active-background = ${colors.color0}
 label-active-foreground = ${colors.color2}
 label-active-padding = 1
@@ -159,7 +159,7 @@ port = 6600
 
 label-song = %{A1:mpc -q toggle:}%{A2:mpc -q prev:}%{A3:mpc -q next:}%artist% >> %title%%{A}%{A}%{A}
 format-online = <label-song>
-format-online-prefix = " "
+format-online-prefix = "ﱘ "
 format-online-prefix-foreground = ${colors.color4}
 
 label-offline = mpd offline :(
@@ -178,14 +178,9 @@ accumulate-stats = true
 unknown-as-up = true
 
 label-connected = %essid% [%downspeed%]
-format-connected = <ramp-signal> <label-connected>
-
-ramp-signal-foreground = ${colors.color4}
-
-ramp-signal-0 = 
-ramp-signal-1 = 
-ramp-signal-2 = 
-ramp-signal-3 = 
+format-connected-prefix = "說 "
+format-connected = <label-connected>
+format-connected-prefix-foreground = ${colors.color4}
 
 ##################################################
 
@@ -197,14 +192,9 @@ accumulate-stats = true
 unknown-as-up = true
 
 label-connected = %ifname% [%downspeed%]
-format-connected = <ramp-signal> <label-connected>
-
-ramp-signal-foreground = ${colors.color4}
-
-ramp-signal-0 = 
-ramp-signal-1 = 
-ramp-signal-2 = 
-ramp-signal-3 = 
+format-connected-prefix = "說 "
+format-connected = <label-connected>
+format-connected-prefix-foreground = ${colors.color4}
 
 ##################################################
 
@@ -212,16 +202,16 @@ ramp-signal-3 = 
 type = internal/temperature
 thermal-zone = 0
 base-temperature = 20
-warn-temperature = 70
+warn-temperature = 75
 
 label = %temperature-c%
 format = <label>
-format-prefix = " "
+format-prefix = "﨏 "
 format-prefix-foreground = ${colors.color4}
 
 label-warn = %temperature-c%
 format-warn = <label-warn>
-format-warn-prefix = " "
+format-warn-prefix = "﨏 "
 format-warn-foreground = ${colors.color1}
 
 ##################################################
@@ -232,7 +222,7 @@ interval = 0.5
 
 label = %percentage%%
 format = <label>
-format-prefix = " "
+format-prefix = "﬙ "
 format-prefix-foreground = ${colors.color4}
 
 ##################################################
@@ -243,7 +233,7 @@ interval = 1
 
 label = %percentage_used%%
 format = <label>
-format-prefix = " "
+format-prefix = " "
 format-prefix-foreground = ${colors.color4}
 
 ##################################################
@@ -257,7 +247,7 @@ poll-interval = 1
 
 label-charging = %percentage%%
 format-charging = <label-charging>
-format-charging-prefix = " "
+format-charging-prefix = " "
 format-charging-prefix-foreground = ${colors.color4}
 
 label-discharging = %percentage%%
@@ -265,15 +255,15 @@ format-discharging = <ramp-capacity> <label-discharging>
 
 label-full = %percentage%%
 format-full = <label-full>
-format-full-prefix = " "
+format-full-prefix = " "
 format-full-prefix-foreground = ${colors.color4}
 
 ramp-capacity-foreground = ${colors.color4}
 
-ramp-capacity-0 = 
-ramp-capacity-1 = 
-ramp-capacity-2 = 
-ramp-capacity-3 = 
+ramp-capacity-0 = 
+ramp-capacity-1 = 
+ramp-capacity-2 = 
+ramp-capacity-3 = 
 
 ##################################################
 
@@ -288,16 +278,16 @@ format-volume = <ramp-volume> <label-volume>
 
 ramp-volume-foreground = ${colors.color4}
 
-ramp-volume-0 = 
-ramp-volume-1 = 
-ramp-volume-2 = 
-ramp-volume-3 = 
+ramp-volume-0 = 奄
+ramp-volume-1 = 墳
+ramp-volume-2 = 墳
+ramp-volume-3 = 墳
 
 label-muted = ---
 format-muted = <label-muted>
 
-format-muted-prefix = " "
-format-muted-prefix-foreground = ${colors.color4}
+format-muted-prefix = "婢 "
+format-muted-prefix-foreground = #555
 
 ##################################################
 
@@ -305,8 +295,8 @@ format-muted-prefix-foreground = ${colors.color4}
 type = internal/date
 interval = 1
 
-time =  %I:%M %p
-time-alt =  %a %b %d %Y
+time = 愈 %I:%M %p
+time-alt =  %a %b %d %Y
 
 label = %time%
 format = <label>
@@ -322,7 +312,7 @@ type = custom/script
 exec = ~/.config/scripts/uptime.sh
 interval = 1
 
-label =  %output%
+label =  %output%
 format = <label>
 
 format-background = ${colors.color1}
