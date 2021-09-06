@@ -295,7 +295,6 @@ ramp-volume-3 = 
 
 label-muted = ---
 format-muted = <label-muted>
-
 format-muted-prefix = " "
 format-muted-prefix-foreground = ${colors.color4}
 

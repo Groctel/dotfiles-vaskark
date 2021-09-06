@@ -116,11 +116,11 @@ pin-workspaces = true
 enable-click = false
 enable-scroll = false
 
-#icon-0 = 0;
-#icon-1 = 1;
-#icon-2 = 2;
-#icon-3 = 3;
-#icon-4 = 4;
+#icon-0 = 0;
+#icon-1 = 1;
+#icon-2 = 2;
+#icon-3 = 3;
+#icon-4 = 4;
 icon-default = ﱡ
 
 format = <label-monitor> <label-state>
@@ -255,15 +255,21 @@ format-discharging = <ramp-capacity> <label-discharging>
 
 label-full = %percentage%%
 format-full = <label-full>
-format-full-prefix = " "
+format-full-prefix = " "
 format-full-prefix-foreground = ${colors.color4}
 
 ramp-capacity-foreground = ${colors.color4}
 
 ramp-capacity-0 = 
-ramp-capacity-1 = 
-ramp-capacity-2 = 
-ramp-capacity-3 = 
+ramp-capacity-1 = 
+ramp-capacity-2 = 
+ramp-capacity-3 = 
+ramp-capacity-4 = 
+ramp-capacity-5 = 
+ramp-capacity-6 = 
+ramp-capacity-7 = 
+ramp-capacity-8 = 
+ramp-capacity-9 = 
 
 ##################################################
 
@@ -285,7 +291,6 @@ ramp-volume-3 = 墳
 
 label-muted = ---
 format-muted = <label-muted>
-
 format-muted-prefix = "婢 "
 format-muted-prefix-foreground = #555
 

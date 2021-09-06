@@ -7,9 +7,9 @@ killall -q polybar
 while pgrep -u $UID -x polybar >/dev/null; do sleep 0.1; done
 
 # Launch bar
-polybar -r -c ~/.config/bspwm/polybar/current main &
+polybar -q -r -c ~/.config/bspwm/polybar/current main &
 
 external_monitor=$(xrandr --query | grep 'HDMI-2')
 if [[ $external_monitor = *connected* ]]; then
-    polybar -r -c ~/.config/bspwm/polybar/current ext &
+    polybar -q -r -c ~/.config/bspwm/polybar/current ext &
 fi
