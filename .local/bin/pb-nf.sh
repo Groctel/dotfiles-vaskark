@@ -3,9 +3,9 @@
 # polybar
 if pgrep -x polybar 1>/dev/null; then
     pkill polybar 2>/dev/null
-    polybar -r -c ~/.config/berry/polybar/config-nf main 2>/dev/null &
+    polybar -q -r -c ~/.config/berry/polybar/config-nf main 2>/dev/null &
 else
-    polybar -r -c ~/.config/berry/polybar/config-nf main 2>/dev/null &
+    polybar -q -r -c ~/.config/berry/polybar/config-nf main 2>/dev/null &
 fi
 
 # berry
