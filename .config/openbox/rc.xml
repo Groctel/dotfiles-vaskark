@@ -509,15 +509,15 @@
         <command>pactl set-sink-mute @DEFAULT_SINK@ toggle</command>
       </action>
     </keybind>
-    <!-- Lemonbar -->
+    <!-- Polybar -->
     <keybind key="W-semicolon">
       <action name="Execute">
-        <command>sh -c 'pkill lemonbar 2&gt;/dev/null || lemonbar-current'</command>
+        <command>polybar-msg cmd toggle</command>
       </action>
     </keybind>
     <keybind key="W-S-semicolon">
       <action name="Execute">
-        <command>lemonbar-menu.sh</command>
+        <command>polybar-msg cmd restart</command>
       </action>
     </keybind>
     <!-- GLava -->
@@ -548,9 +548,9 @@
       </action>
     </keybind>
     <!-- sxiv -->
-    <keybind key="W-S-equal">
+    <keybind key="W-equal">
       <action name="Execute">
-        <command>sxiv -rt "$HOME/Pictures/wow"</command>
+        <command>sh -c 'ls -t $HOME/Pictures/* | head -20 | xargs sxiv -rt'</command>
       </action>
     </keybind>
     <!-- Reload and Exit keybinds -->
