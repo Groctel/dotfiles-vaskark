@@ -11,10 +11,8 @@
 }}
 
 #window {{
-  /*width: 275px;*/
   /*       vertical   horizontal */
   padding: 16px;
-
 }}
 
 /* Input window */
@@ -70,3 +68,7 @@ entry {{
   border-color: @accent;
 }}
 
+#element-text, element-icon {{
+    background-color: inherit;
+    text-color:       inherit;
+}}
