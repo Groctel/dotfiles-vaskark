@@ -13,7 +13,6 @@
 #window {{
   /*       vertical   horizontal */
   padding: 16px;
-  width: 14%;
 }}
 
 /* Input window */

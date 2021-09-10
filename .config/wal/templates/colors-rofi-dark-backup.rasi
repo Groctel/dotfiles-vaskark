@@ -13,7 +13,6 @@
 }}
 
 #window {{
-  width: 275px; 
   /*       vertical   horizontal */
   padding: 16px;
 
