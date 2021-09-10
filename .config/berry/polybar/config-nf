@@ -162,7 +162,7 @@ format-online = <label-song>
 format-online-prefix = "ﱘ "
 format-online-prefix-foreground = ${colors.color4}
 
-label-offline = mpd offline :(
+label-offline = ﱙ mpd offline :(
 format-offline = <label-offline>
 
 label-song-maxlen = 200
@@ -177,7 +177,7 @@ interval = 1.0
 accumulate-stats = true
 unknown-as-up = true
 
-label-connected = %essid% [%downspeed%]
+label-connected = %essid% [%local_ip% / %downspeed%]
 format-connected-prefix = "說 "
 format-connected = <label-connected>
 format-connected-prefix-foreground = ${colors.color4}
@@ -191,7 +191,7 @@ interval = 1.0
 accumulate-stats = true
 unknown-as-up = true
 
-label-connected = %ifname% [%downspeed%]
+label-connected = %ifname% [%linkspeed% / %downspeed%]
 format-connected-prefix = "說 "
 format-connected = <label-connected>
 format-connected-prefix-foreground = ${colors.color4}
@@ -328,7 +328,7 @@ interval = 1
 
 label = %output%
 format = <label>
-format-prefix = " "
+format-prefix = "ﮧ "
 format-prefix-foreground = ${colors.color4}
 
 ##################################################
