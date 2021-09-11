@@ -21,7 +21,7 @@ super + {_,shift +} Escape
 
 # file managers
 super + {_,shift +} F1
-	{thunar,thunar-pkexec}
+	{nemo,nemo-pkexec}
 
 # browsers
 super + {_,shift +} F2
@@ -80,6 +80,8 @@ XF86MonBrightness{Up,Down}
 # sxiv
 super + equal
 	ls -t $HOME/Pictures/* | head -20 | xargs sxiv -rt
+super + shift + equal
+	ls -t $HOME/Pictures/wow/* | head -20 | xargs sxiv -rt
 
 # reboot, shutdown
 #super + {shift,ctrl} + Delete
