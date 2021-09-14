@@ -90,7 +90,7 @@ content-padding = 0
 [module/misc]
 type = custom/text
 content = 
-content-font = 3
+;content-font = 3
 
 content-background = ${colors.color5}
 content-foreground = ${colors.color0}

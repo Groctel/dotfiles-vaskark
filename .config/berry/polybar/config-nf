@@ -68,6 +68,7 @@ module-margin = 0
 
 font-0 = "scientifica:bold:size=8;2"
 font-1 = "Symbols Nerd Font:size=9;2"
+font-2 = "Symbols Nerd Font:size=12;3"
 
 modules-left = misc sep ewmh-i
 modules-center = mpd
@@ -88,7 +89,8 @@ content-padding = 0
 
 [module/misc]
 type = custom/text
-content = 
+content = 
+;content-font = 3
 
 content-background = ${colors.color5}
 content-foreground = ${colors.color0}
