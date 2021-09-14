@@ -64,16 +64,40 @@ border-color = ${colors.color0}
 padding-left = 0
 padding-right = 0
 
-module-margin = 1
+module-margin = 0
 
 font-0 = "scientifica:bold:size=8;2"
 font-1 = "Symbols Nerd Font:size=9;2"
 
-modules-left = ewmh-i
+modules-left = misc sep ewmh-i
 modules-center = mpd
-modules-right = wireless uptime-alt temp cpu memory battery volume date
+modules-right = wireless uptime-2 temp cpu memory battery volume sep date
 
 ##################################################
+##################################################
+
+[module/sep]
+type = custom/text
+content = " "
+
+content-background = ${colors.color0}
+content-foreground = ${colors.color0}
+content-padding = 0
+
+##################################################
+
+[module/misc]
+type = custom/text
+content = 
+
+content-background = ${colors.color5}
+content-foreground = ${colors.color0}
+content-padding = 2
+
+click-left = polybar-msg cmd restart
+click-middle = wal -f random_user -o ~/.config/berry/wal/extras.sh
+click-right = subl ~/.config/berry/polybar/config-nf
+
 ##################################################
 
 [module/ewmh]
@@ -86,7 +110,7 @@ format = <label-state>
 label-monitor = %name%
 label-monitor-background = ${colors.color0}
 label-monitor-foreground = ${colors.color2}
-label-monitor-padding = 1
+label-monitor-padding = 2
 
 label-active = %index%
 label-active-background = ${colors.color0}
@@ -123,7 +147,7 @@ enable-scroll = false
 #icon-4 = 4;
 icon-default = ﱡ
 
-format = <label-monitor> <label-state>
+format = <label-state>
 
 label-monitor =  %name%
 label-monitor-background = ${colors.color5}
@@ -177,10 +201,11 @@ interval = 1.0
 accumulate-stats = true
 unknown-as-up = true
 
-label-connected = %essid% [%local_ip% / %downspeed%]
+label-connected = %essid% [%downspeed%]
 format-connected-prefix = "說 "
 format-connected = <label-connected>
 format-connected-prefix-foreground = ${colors.color4}
+format-connected-padding = 1
 
 ##################################################
 
@@ -191,10 +216,24 @@ interval = 1.0
 accumulate-stats = true
 unknown-as-up = true
 
-label-connected = %ifname% [%linkspeed% / %downspeed%]
+label-connected = %ifname% [%downspeed%]
 format-connected-prefix = "說 "
 format-connected = <label-connected>
 format-connected-prefix-foreground = ${colors.color4}
+format-connected-padding = 1
+
+##################################################
+
+[module/uptime-2]
+type = custom/script
+exec = ~/.config/scripts/uptime.sh
+interval = 1
+
+label = %output%
+format = <label>
+format-prefix = "羽 "
+format-prefix-foreground = ${colors.color4}
+format-padding = 1
 
 ##################################################
 
@@ -208,11 +247,13 @@ label = %temperature-c%
 format = <label>
 format-prefix = "﨎 "
 format-prefix-foreground = ${colors.color4}
+format-padding = 1
 
 label-warn = %temperature-c%
 format-warn = <label-warn>
 format-warn-prefix = "﨎 "
 format-warn-foreground = ${colors.color1}
+format-warn-padding = 1
 
 ##################################################
 
@@ -224,6 +265,7 @@ label = %percentage%%
 format = <label>
 format-prefix = "﬙ "
 format-prefix-foreground = ${colors.color4}
+format-padding = 1
 
 ##################################################
 
@@ -235,6 +277,7 @@ label = %percentage_used%%
 format = <label>
 format-prefix = " "
 format-prefix-foreground = ${colors.color4}
+format-padding = 1
 
 ##################################################
 
@@ -249,14 +292,17 @@ label-charging = %percentage%%
 format-charging = <label-charging>
 format-charging-prefix = " "
 format-charging-prefix-foreground = ${colors.color4}
+format-charging-padding = 1
 
 label-discharging = %percentage%%
 format-discharging = <ramp-capacity> <label-discharging>
+format-discharging-padding = 1
 
 label-full = %percentage%%
 format-full = <label-full>
 format-full-prefix = " "
 format-full-prefix-foreground = ${colors.color4}
+format-full-padding = 1
 
 ramp-capacity-foreground = ${colors.color4}
 
@@ -283,11 +329,13 @@ label-volume = %percentage%%
 format-volume = <label-volume>
 format-volume-prefix = "墳 "
 format-volume-prefix-foreground = ${colors.color4}
+format-volume-padding = 1
 
 label-muted = ---
 format-muted = <label-muted>
 format-muted-prefix = "婢 "
 format-muted-prefix-foreground = #555
+format-muted-padding = 1
 
 ##################################################
 
@@ -317,19 +365,7 @@ format = <label>
 
 format-background = ${colors.color1}
 format-foreground = ${colors.color0}
-format-padding = 2 
-
-##################################################
-
-[module/uptime-alt]
-type = custom/script
-exec = ~/.config/scripts/uptime.sh
-interval = 1
-
-label = %output%
-format = <label>
-format-prefix = "ﮧ "
-format-prefix-foreground = ${colors.color4}
+format-padding = 2
 
 ##################################################
 ##################################################
