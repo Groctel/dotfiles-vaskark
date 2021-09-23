@@ -2,6 +2,5 @@ configuration {
   modi: "drun,run,ssh,filebrowser,emoji,keys";
   terminal: "alacritty";
   font: "scientifica bold 8";
-  theme: "~/.cache/wal/colors-rofi-dark-new.rasi";
-  /*theme: "themes/default.rasi";*/
 }
+@theme "~/.cache/wal/colors-rofi-dark-new.rasi"
