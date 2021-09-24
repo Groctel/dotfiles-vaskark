@@ -1,7 +1,7 @@
 * {{
   accent:           {color2};
   background:       {color0};
-  background-alt:   {color1};
+  background-alt:   {color5};
   foreground:       #555;
   foreground-alt:   {color0};
 
