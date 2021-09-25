@@ -68,16 +68,16 @@ module-margin = 0
 
 font-0 = "scientifica:bold:size=8;2"
 font-1 = "siji:size=9;2"
-font-2 = "siji:size=12;2"
+font-2 = "siji:size=34;9"
 
-modules-left = misc sep ewmh-i
+modules-left = misc sp ewmh-i
 modules-center = mpd
-modules-right = wireless uptime-2 temp cpu memory battery volume sep date
+modules-right = wlan uptime-2 temp cpu memory battery volume sp date
 
 ##################################################
 ##################################################
 
-[module/sep]
+[module/sp]
 type = custom/text
 content = " "
 
@@ -196,7 +196,7 @@ label-song-ellipsis = true
 
 ##################################################
 
-[module/wireless]
+[module/wlan]
 type = internal/network
 interface = wlan0
 interval = 1.0
@@ -216,7 +216,7 @@ ramp-signal-3 = 
 
 ##################################################
 
-[module/wired]
+[module/eth]
 type = internal/network
 interface = enp0s3
 interval = 1.0
@@ -342,6 +342,33 @@ format-muted = <label-muted>
 format-muted-prefix = " "
 format-muted-prefix-foreground = #555
 format-muted-padding = 1
+
+##################################################
+
+[module/pulseaudio]
+type = internal/pulseaudio
+interval = 10
+click-right = pkill pavucontrol || pavucontrol
+
+format-volume = <bar-volume><label-volume>
+label-volume = %percentage%%
+label-volume-foreground = #555
+
+label-muted = 婢
+label-muted-foreground = #555
+
+bar-volume-width = 10
+bar-volume-foreground = ${colors.color2}
+bar-volume-gradient = false
+bar-volume-indicator = █
+bar-volume-indicator-font = 1
+bar-volume-indicator-foreground = ${colors.color2}
+bar-volume-fill = █
+bar-volume-fill-font = 1
+bar-volume-fill-foreground = ${colors.color2}
+bar-volume-empty = █
+bar-volume-empty-font = 1
+bar-volume-empty-foreground = #555
 
 ##################################################
 

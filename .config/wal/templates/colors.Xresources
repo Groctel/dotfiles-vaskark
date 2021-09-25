@@ -74,14 +74,6 @@ xscreensaver.passwd.thermometer.foreground:  {color2}
 xscreensaver.passwd.thermometer.background:  {color8}
 xscreensaver.passwd.thermometer.width:       8
 
-! xmenu
-xmenu.background: {color0}
-xmenu.foreground: #888888
-xmenu.selbackground: {color2}
-xmenu.selforeground: {color0}
-xmenu.separator: {color5}
-xmenu.border: {color0}
-
 ! sxiv
 Sxiv.font: scientifica-8
 Sxiv.background: {color0}

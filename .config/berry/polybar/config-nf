@@ -68,16 +68,38 @@ module-margin = 0
 
 font-0 = "scientifica:bold:size=8;2"
 font-1 = "Symbols Nerd Font:size=9;2"
-font-2 = "Symbols Nerd Font:size=12;3"
+font-2 = "Symbols Nerd Font:size=35;9"
 
-modules-left = misc sep ewmh-i
-modules-center = mpd
-modules-right = wireless uptime-2 temp cpu memory battery volume sep date
+modules-left = misc sp ewmh-i
+modules-center = pulseaudio
+modules-right = wlan uptime-2 temp cpu memory battery volume div-r date
 
 ##################################################
 ##################################################
 
-[module/sep]
+[module/div-l]
+type = custom/text
+content = ""
+content-font = 3
+
+content-background = ${colors.color0}
+content-foreground = ${colors.color5}
+content-padding = 0
+
+##################################################
+
+[module/div-r]
+type = custom/text
+content = ""
+content-font = 3
+
+content-background = ${colors.color0}
+content-foreground = ${colors.color2}
+content-padding = 0
+
+##################################################
+
+[module/sp]
 type = custom/text
 content = " "
 
@@ -89,8 +111,7 @@ content-padding = 0
 
 [module/misc]
 type = custom/text
-content = 
-;content-font = 3
+content = ""
 
 content-background = ${colors.color5}
 content-foreground = ${colors.color0}
@@ -158,12 +179,12 @@ label-monitor-padding = 2
 
 label-active = ﱢ
 label-active-background = ${colors.color0}
-label-active-foreground = ${colors.color2}
+label-active-foreground = ${colors.color5}
 label-active-padding = 1
 
 label-occupied = %icon%
 label-occupied-background = ${colors.color0}
-label-occupied-foreground = ${colors.color2}
+label-occupied-foreground = ${colors.color5}
 label-occupied-padding = 1
 
 label-urgent = %icon%
@@ -196,7 +217,7 @@ label-song-ellipsis = true
 
 ##################################################
 
-[module/wireless]
+[module/wlan]
 type = internal/network
 interface = wlan0
 interval = 1.0
@@ -211,7 +232,7 @@ format-connected-padding = 1
 
 ##################################################
 
-[module/wired]
+[module/eth]
 type = internal/network
 interface = enp0s3
 interval = 1.0
@@ -288,12 +309,10 @@ type = internal/battery
 full-at = 98
 battery = BAT0
 adapter = AC0
-poll-interval = 1
+poll-interval = 5
 
 label-charging = %percentage%%
-format-charging = <label-charging>
-format-charging-prefix = " "
-format-charging-prefix-foreground = ${colors.color4}
+format-charging = <animation-charging> <label-charging>
 format-charging-padding = 1
 
 label-discharging = %percentage%%
@@ -302,7 +321,7 @@ format-discharging-padding = 1
 
 label-full = %percentage%%
 format-full = <label-full>
-format-full-prefix = " "
+format-full-prefix = " "
 format-full-prefix-foreground = ${colors.color4}
 format-full-padding = 1
 
@@ -318,6 +337,17 @@ ramp-capacity-6 = 
 ramp-capacity-7 = 
 ramp-capacity-8 = 
 ramp-capacity-9 = 
+
+animation-charging-foreground = ${colors.color4}
+
+animation-charging-0 = 
+animation-charging-1 = 
+animation-charging-2 = 
+animation-charging-3 = 
+animation-charging-4 = 
+animation-charging-5 = 
+animation-charging-6 = 
+animation-charging-framerate = 750
 
 ##################################################
 
@@ -338,6 +368,33 @@ format-muted = <label-muted>
 format-muted-prefix = "婢 "
 format-muted-prefix-foreground = #555
 format-muted-padding = 1
+
+##################################################
+
+[module/pulseaudio]
+type = internal/pulseaudio
+interval = 10
+click-right = pkill pavucontrol || pavucontrol
+
+format-volume = <bar-volume><label-volume>
+label-volume = %percentage%%
+label-volume-foreground = #555
+
+label-muted = 婢
+label-muted-foreground = #555
+
+bar-volume-width = 10
+bar-volume-foreground = ${colors.color2}
+bar-volume-gradient = false
+bar-volume-indicator = █
+bar-volume-indicator-font = 1
+bar-volume-indicator-foreground = ${colors.color2}
+bar-volume-fill = █
+bar-volume-fill-font = 1
+bar-volume-fill-foreground = ${colors.color2}
+bar-volume-empty = █
+bar-volume-empty-font = 1
+bar-volume-empty-foreground = #555
 
 ##################################################
 
