@@ -373,28 +373,24 @@ format-muted-padding = 1
 
 [module/pulseaudio]
 type = internal/pulseaudio
-interval = 10
+interval = 5
 click-right = pkill pavucontrol || pavucontrol
 
 format-volume = <bar-volume><label-volume>
 label-volume = %percentage%%
-label-volume-foreground = #555
 
 label-muted = 婢
-label-muted-foreground = #555
 
 bar-volume-width = 10
 bar-volume-foreground = ${colors.color2}
-bar-volume-gradient = false
 bar-volume-indicator = █
 bar-volume-indicator-font = 1
-bar-volume-indicator-foreground = ${colors.color2}
+bar-volume-indicator-foreground = ${self.bar-volume-foreground}
 bar-volume-fill = █
 bar-volume-fill-font = 1
-bar-volume-fill-foreground = ${colors.color2}
+bar-volume-fill-foreground = ${self.bar-volume-foreground}
 bar-volume-empty = █
 bar-volume-empty-font = 1
-bar-volume-empty-foreground = #555
 
 ##################################################
 
@@ -403,7 +399,7 @@ type = internal/date
 interval = 1
 
 time =  %I:%M %p
-time-alt =  %a %b %d %Y
+time-alt =  %a %b %d %Y  %I:%M %p
 
 label = %time%
 format = <label>

@@ -9,7 +9,7 @@ mpd_music_dir = "~/Music"
 mpd_connection_timeout = "5"
 
 # Behaviour #
-execute_on_song_change =
+execute_on_song_change = mpd-notify.sh
 message_delay_time = 1
 autocenter_mode = "yes"
 centered_cursor = "yes"

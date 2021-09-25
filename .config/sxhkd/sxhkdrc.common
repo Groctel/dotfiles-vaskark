@@ -5,7 +5,7 @@
 
 # terminals
 super + {_,shift +,ctrl +} Return
-	{alacritty,kitty,st}
+	{st,alacritty,kitty}
 
 # program launchers
 super + {d,x}
@@ -21,7 +21,7 @@ super + {_,shift +} Escape
 
 # file managers
 super + {_,shift +} F1
-	{nemo,nemo-pkexec}
+	{thunar,thunar-pkexec}
 
 # browsers
 super + {_,shift +} F2
@@ -49,7 +49,7 @@ super + F7
 
 # music
 alt + {F10,F11,F12}
-	mpc -q {prev,toggle,next}
+	mpc -q {prev,toggle,next} && mpd-notify.sh
 alt + shift + {F10,F12}
 	mpc seek {-00:00:05,+00:00:05}
 
@@ -83,8 +83,6 @@ super + equal
 super + shift + equal
 	ls -t $HOME/Pictures/wow/* | head -20 | xargs sxiv -rt
 
-# reboot, shutdown
-#super + {shift,ctrl} + Delete
-#	{reboot,poweroff}
-super + control + Delete
+# exit
+super + Delete
 	exit.sh
