@@ -49,9 +49,11 @@ super + F7
 
 # music
 alt + {F10,F11,F12}
-	mpc -q {prev,toggle,next} && mpd-notify.sh
+	mpc -q {prev && mpd-notify.sh,toggle,next && mpd-notify.sh}
 alt + shift + {F10,F12}
 	mpc seek {-00:00:05,+00:00:05}
+alt + F9
+        mpd-notify.sh
 
 # shots
 super + Print

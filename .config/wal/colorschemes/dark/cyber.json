@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/jason/Pictures/gihapeghvmy61.png",
+    "alpha": "100",
+    "special": {
+        "background": "#1b181b",
+        "foreground": "#c6c5c6",
+        "cursor": "#64747f"
+    },
+    "colors": {
+        "color0": "#1b181b",
+        "color1": "#8c404f",
+        "color2": "#d4927d",
+        "color3": "#a2b6ac",
+        "color4": "#4f5068",
+        "color5": "#8c8684",
+        "color6": "#64747f",
+        "color7": "#c6c5c6",
+        "color8": "#352f35",
+        "color9": "#c3455e",
+        "color10": "#ffb28c",
+        "color11": "#bcffdf",
+        "color12": "#5a5d93",
+        "color13": "#c7a59a",
+        "color14": "#7399b3",
+        "color15": "#fffeff"
+    }
+}
