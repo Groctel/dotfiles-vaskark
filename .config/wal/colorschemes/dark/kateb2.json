@@ -2,26 +2,26 @@
     "wallpaper": "/home/jason/Pictures/kate_beckingsale_3840x2160.jpg",
     "alpha": "100",
     "special": {
-        "background": "#1D2021",
-        "foreground": "#A89984",
-        "cursor": "#8BA59B"
+        "background": "#1c1c1c",
+        "foreground": "#bebebe",
+        "cursor": "#5297cf"
     },
     "colors": {
-        "color0": "#1D2021",
-        "color1": "#FB543F",
-        "color2": "#95C085",
-        "color3": "#FAC03B",
-        "color4": "#0D6678",
-        "color5": "#8F4673",
-        "color6": "#8BA59B",
-        "color7": "#A89984",
-        "color8": "#665C54",
-        "color9": "#FB543F",
-        "color10": "#95C085",
-        "color11": "#FAC03B",
-        "color12": "#0D6678",
-        "color13": "#8F4673",
-        "color14": "#8BA59B",
-        "color15": "#FDF4C1"
+        "color0": "#1c1c1c",
+        "color1": "#d36265",
+        "color2": "#aece91",
+        "color3": "#e7e18c",
+        "color4": "#5e7175",
+        "color5": "#963c59",
+        "color6": "#5297cf",
+        "color7": "#bebebe",
+        "color8": "#353535",
+        "color9": "#ff6b70",
+        "color10": "#e1ffa5",
+        "color11": "#ffff9d",
+        "color12": "#6c9ba5",
+        "color13": "#d0406e",
+        "color14": "#57c6ff",
+        "color15": "#fafafa"
     }
 }
