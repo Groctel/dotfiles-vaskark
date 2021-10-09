@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/jason/Pictures/WallpaperDog-11050305.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#181919",
+        "foreground": "#c5c5c5",
+        "cursor": "#dab891"
+    },
+    "colors": {
+        "color0": "#181919",
+        "color1": "#7c8682",
+        "color2": "#c89d74",
+        "color3": "#a0afa9",
+        "color4": "#4a5c60",
+        "color5": "#61485d",
+        "color6": "#dab891",
+        "color7": "#c5c5c5",
+        "color8": "#303232",
+        "color9": "#90beac",
+        "color10": "#ffcb82",
+        "color11": "#baf9e0",
+        "color12": "#557e87",
+        "color13": "#895280",
+        "color14": "#fff0a4",
+        "color15": "#ffffff"
+    }
+}

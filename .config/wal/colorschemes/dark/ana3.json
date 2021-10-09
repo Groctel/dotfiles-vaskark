@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/jason/Pictures/2560x1440-2021-ana-de-armas-4k_1629227189.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#181617",
+        "foreground": "#c5c4c5",
+        "cursor": "#887f70"
+    },
+    "colors": {
+        "color0": "#181617",
+        "color1": "#664033",
+        "color2": "#ab7842",
+        "color3": "#ac967d",
+        "color4": "#b3b09b",
+        "color5": "#775c4a",
+        "color6": "#887f70",
+        "color7": "#c5c4c5",
+        "color8": "#322d30",
+        "color9": "#8e4e38",
+        "color10": "#ed9c46",
+        "color11": "#f2c48f",
+        "color12": "#fef5b3",
+        "color13": "#a77553",
+        "color14": "#c0a981",
+        "color15": "#fffeff"
+    }
+}

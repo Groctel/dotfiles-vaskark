@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/jason/Pictures/Emma-Watson-35_3840x2160.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#181818",
+        "foreground": "#c5c5c5",
+        "cursor": "#bbada4"
+    },
+    "colors": {
+        "color0": "#181818",
+        "color1": "#807e78",
+        "color2": "#af364a",
+        "color3": "#66493a",
+        "color4": "#ab978a",
+        "color5": "#7d5f4e",
+        "color6": "#bbada4",
+        "color7": "#c5c5c5",
+        "color8": "#313131",
+        "color9": "#b6ab8b",
+        "color10": "#f23756",
+        "color11": "#8e5b41",
+        "color12": "#f2c09f",
+        "color13": "#af7758",
+        "color14": "#ffdbbe",
+        "color15": "#ffffff"
+    }
+}
