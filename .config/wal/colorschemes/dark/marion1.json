@@ -1,27 +1,27 @@
 {
-    "wallpaper": "/home/jason/Pictures/wallpaperflare.com_wallpaper.jpg",
+    "wallpaper": "/home/jason/Pictures/wallpaperflare.com_wallpaper-m.jpg",
     "alpha": "100",
     "special": {
-        "background": "#161617",
-        "foreground": "#c4c4c5",
-        "cursor": "#939bb4"
+        "background": "#021012",
+        "foreground": "#095b67",
+        "cursor": "#26c6da"
     },
     "colors": {
-        "color0": "#161617",
-        "color1": "#634647",
-        "color2": "#5f5058",
-        "color3": "#bc9391",
-        "color4": "#3c495f",
-        "color5": "#7f707a",
-        "color6": "#939bb4",
-        "color7": "#c4c4c5",
-        "color8": "#2e2e30",
-        "color9": "#8b5052",
-        "color10": "#865c73",
-        "color11": "#ffaba6",
-        "color12": "#435c85",
-        "color13": "#b482a3",
-        "color14": "#a9beff",
-        "color15": "#fefeff"
+        "color0": "#021012",
+        "color1": "#16c1d9",
+        "color2": "#4dd0e1",
+        "color3": "#80deea",
+        "color4": "#00bcd4",
+        "color5": "#00acc1",
+        "color6": "#26c6da",
+        "color7": "#095b67",
+        "color8": "#052e34",
+        "color9": "#16c1d9",
+        "color10": "#4dd0e1",
+        "color11": "#80deea",
+        "color12": "#00bcd4",
+        "color13": "#00acc1",
+        "color14": "#26c6da",
+        "color15": "#109cb0"
     }
 }

@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/jason/Pictures/scarlett_johansson_4k_2-3840x2160-m.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#1c2023",
+        "foreground": "#c7ccd1",
+        "cursor": "#95c7ae"
+    },
+    "colors": {
+        "color0": "#1c2023",
+        "color1": "#c795ae",
+        "color2": "#aec795",
+        "color3": "#c7ae95",
+        "color4": "#95aec7",
+        "color5": "#ae95c7",
+        "color6": "#95c7ae",
+        "color7": "#c7ccd1",
+        "color8": "#32393e",
+        "color9": "#ffabe2",
+        "color10": "#e2ffab",
+        "color11": "#ffe2ab",
+        "color12": "#abe2ff",
+        "color13": "#e2abff",
+        "color14": "#abffe2",
+        "color15": "#f8ffff"
+    }
+}

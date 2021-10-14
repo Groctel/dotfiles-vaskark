@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/jason/Pictures/Florence-Pugh-HD-Wallpapers-48700.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#1c1919",
+        "foreground": "#c6c5c5",
+        "cursor": "#96a8b5"
+    },
+    "colors": {
+        "color0": "#1c1919",
+        "color1": "#854941",
+        "color2": "#95756e",
+        "color3": "#c8a490",
+        "color4": "#8f5d52",
+        "color5": "#b48a7a",
+        "color6": "#96a8b5",
+        "color7": "#c6c5c5",
+        "color8": "#363030",
+        "color9": "#b95547",
+        "color10": "#d28d7e",
+        "color11": "#ffcea4",
+        "color12": "#c86f5b",
+        "color13": "#fdaa8b",
+        "color14": "#adddff",
+        "color15": "#fffefe"
+    }
+}
