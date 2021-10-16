@@ -20,7 +20,6 @@ alias h='htop -u $USER'
 alias t='top -u $USER'
 alias nvc="$EDITOR ~/.config/nvim/init.vim"
 alias pf='clear;pfetch'
-alias af='clear;afetch'
 alias n='nnn -D -C -E -o -T e -a -x'
 alias cf='clifm'
 alias c='cava'
