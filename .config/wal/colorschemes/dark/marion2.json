@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/jason/Pictures/wp2095850-marion-cotillard-2017-wallpapers.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#1c1c1c",
+        "foreground": "#c1c1c1",
+        "cursor": "#888888"
+    },
+    "colors": {
+        "color0": "#1c1c1c",
+        "color1": "#dd9999",
+        "color2": "#a06666",
+        "color3": "#999999",
+        "color4": "#aaaaaa",
+        "color5": "#5f8787",
+        "color6": "#888888",
+        "color7": "#c1c1c1",
+        "color8": "#353535",
+        "color9": "#ffaeae",
+        "color10": "#e07373",
+        "color11": "#dab3b3",
+        "color12": "#f3c7c7",
+        "color13": "#6cbebe",
+        "color14": "#c29f9f",
+        "color15": "#fdfdfd"
+    }
+}
