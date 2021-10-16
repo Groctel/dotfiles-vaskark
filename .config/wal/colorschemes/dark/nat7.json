@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/jason/Pictures/2016-natalie-portman-qhd-3840x2160-m.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#1a1919",
+        "foreground": "#c5c5c5",
+        "cursor": "#9ab2a4"
+    },
+    "colors": {
+        "color0": "#1a1919",
+        "color1": "#a4bbaf",
+        "color2": "#b69f8a",
+        "color3": "#505d64",
+        "color4": "#cebc98",
+        "color5": "#7d8784",
+        "color6": "#9ab2a4",
+        "color7": "#c5c5c5",
+        "color8": "#333131",
+        "color9": "#beffe2",
+        "color10": "#ffcd9e",
+        "color11": "#5c7c8d",
+        "color12": "#fffcae",
+        "color13": "#91c0b2",
+        "color14": "#b2fcd1",
+        "color15": "#ffffff"
+    }
+}
