@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/jason/Pictures/animals.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#1c1c1c",
+        "foreground": "#c5c5c5",
+        "cursor": "#6d4345"
+    },
+    "colors": {
+        "color0": "#1c1c1c",
+        "color1": "#6d4345",
+        "color2": "#a1524b",
+        "color3": "#ae6c5e",
+        "color4": "#4e4f52",
+        "color5": "#ae6c5e",
+        "color6": "#6d4345",
+        "color7": "#c5c5c5",
+        "color8": "#313131",
+        "color9": "#994b4f",
+        "color10": "#e05d52",
+        "color11": "#f38168",
+        "color12": "#5b6174",
+        "color13": "#f38168",
+        "color14": "#994b4f",
+        "color15": "#ffffff"
+    }
+}

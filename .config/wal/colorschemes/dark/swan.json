@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/jason/Pictures/swan.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#171717",
+        "foreground": "#c5c5c5",
+        "cursor": "#94a2b8"
+    },
+    "colors": {
+        "color0": "#171717",
+        "color1": "#604655",
+        "color2": "#9f4a61",
+        "color3": "#737374",
+        "color4": "#a07985",
+        "color5": "#868ca6",
+        "color6": "#94a2b8",
+        "color7": "#c5c5c5",
+        "color8": "#515151",
+        "color9": "#604655",
+        "color10": "#9f4a61",
+        "color11": "#737374",
+        "color12": "#a07985",
+        "color13": "#868ca6",
+        "color14": "#94a2b8",
+        "color15": "#c5c5c5"
+    }
+}
