@@ -1,27 +1,27 @@
 {
-    "wallpaper": "/home/jason/Pictures/wp4700174-jessica-chastain-4k-wallpapers-m.jpg",
+    "wallpaper": "/home/jason/Pictures/yr9tkqdu89p61.jpg",
     "alpha": "100",
     "special": {
-        "background": "#322f30",
-        "foreground": "#c0bfbf",
-        "cursor": "#7d8592"
+        "background": "#161519",
+        "foreground": "#c4c4c5",
+        "cursor": "#7b99b8"
     },
     "colors": {
-        "color0": "#322f30",
-        "color1": "#654c51",
-        "color2": "#7f8281",
-        "color3": "#8d7766",
-        "color4": "#5b697e",
-        "color5": "#7b6b75",
-        "color6": "#7d8592",
-        "color7": "#c0bfbf",
-        "color8": "#4b4748",
-        "color9": "#8e5762",
-        "color10": "#94b9ad",
-        "color11": "#c79874",
-        "color12": "#6885b1",
-        "color13": "#ae7c9b",
-        "color14": "#90a8cf",
-        "color15": "#fcfafa"
+        "color0": "#161519",
+        "color1": "#68363e",
+        "color2": "#b79190",
+        "color3": "#c9b4a8",
+        "color4": "#6680a2",
+        "color5": "#284079",
+        "color6": "#7b99b8",
+        "color7": "#c4c4c5",
+        "color8": "#2d2b34",
+        "color9": "#913b49",
+        "color10": "#ffa8a6",
+        "color11": "#ffe3c2",
+        "color12": "#73a4e3",
+        "color13": "#294ea7",
+        "color14": "#8bc6ff",
+        "color15": "#fefeff"
     }
 }
