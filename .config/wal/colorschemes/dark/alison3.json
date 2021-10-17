@@ -1,27 +1,27 @@
 {
-    "wallpaper": "/home/jason/Pictures/i0ifw69x05e71.jpg",
+    "wallpaper": "/home/jason/Pictures/5323236-alison-brie-wallpapers.jpg",
     "alpha": "100",
     "special": {
-        "background": "#1a1a1a",
+        "background": "#171818",
         "foreground": "#c5c5c5",
-        "cursor": "#589fc2"
+        "cursor": "#30444e"
     },
     "colors": {
-        "color0": "#1a1a1a",
-        "color1": "#d59b78",
-        "color2": "#4c9183",
-        "color3": "#e4c290",
-        "color4": "#73a3c2",
-        "color5": "#7c8781",
-        "color6": "#589fc2",
+        "color0": "#171818",
+        "color1": "#7f3c26",
+        "color2": "#6f7e68",
+        "color3": "#d0b27b",
+        "color4": "#436365",
+        "color5": "#cc8a61",
+        "color6": "#30444e",
         "color7": "#c5c5c5",
-        "color8": "#333333",
-        "color9": "#ffc486",
-        "color10": "#54cab2",
-        "color11": "#ffffa3",
-        "color12": "#81d8ff",
-        "color13": "#90c0a6",
-        "color14": "#60d4ff",
+        "color8": "#2f3131",
+        "color9": "#af4826",
+        "color10": "#8ab278",
+        "color11": "#ffed8a",
+        "color12": "#4c8a8e",
+        "color13": "#ffae6a",
+        "color14": "#365b6d",
         "color15": "#ffffff"
     }
 }
