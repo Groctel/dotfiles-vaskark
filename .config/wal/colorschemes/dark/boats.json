@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/jason/.config/wpg/wallpapers/WIDESCREEN-2K-FREE-21.07.15224147-by-@WALLSBYJFL.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#171818",
+        "foreground": "#c5c5c5",
+        "cursor": "#a76e51"
+    },
+    "colors": {
+        "color0": "#171818",
+        "color1": "#653c2b",
+        "color2": "#af8268",
+        "color3": "#7d5137",
+        "color4": "#755b4f",
+        "color5": "#a45e30",
+        "color6": "#a76e51",
+        "color7": "#c5c5c5",
+        "color8": "#2f3131",
+        "color9": "#8c4a2e",
+        "color10": "#f5a475",
+        "color11": "#ae663b",
+        "color12": "#a4715a",
+        "color13": "#e37730",
+        "color14": "#e98959",
+        "color15": "#ffffff"
+    }
+}
