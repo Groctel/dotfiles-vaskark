@@ -10,7 +10,6 @@ alias cd..='cd ..'
 alias d='dirs -v | head -10'
 alias free='free -m'
 alias v=$EDITOR
-#alias vim=$EDITOR
 alias tc="tty-clock -cst -C 2 -f '%A %B %d %Y'"
 alias mount='mount | column -t'
 alias u='unimatrix -c green -a -f -n -s 98'
@@ -80,9 +79,6 @@ alias jce='journalctl -p 3 -xe'
 # bluetoothctl
 alias btc='bluetoothctl'
 
-# pipewire
-alias rpw='systemctl --user daemon-reload;systemctl --user restart pipewire{,-pulse}.{socket,service} pipewire-media-session.service'
-
 # git
 alias gc='git commit -a'
 alias ga='git add'
@@ -97,7 +93,7 @@ alias gs='git status'
 alias gc1='git clone --depth=1'
 
 # fzf
-alias ve='$EDITOR $(fzf)'
+alias fe='$EDITOR $(fzf)'
 alias fw='fz-wal.sh'
 
 # neofetch
