@@ -2,26 +2,26 @@
     "wallpaper": "/home/jason/Pictures/5323236-alison-brie-wallpapers.jpg",
     "alpha": "100",
     "special": {
-        "background": "#171818",
+        "background": "#181818",
         "foreground": "#c5c5c5",
-        "cursor": "#30444e"
+        "cursor": "#c4ad86"
     },
     "colors": {
-        "color0": "#171818",
-        "color1": "#7f3c26",
-        "color2": "#6f7e68",
-        "color3": "#d0b27b",
-        "color4": "#436365",
-        "color5": "#cc8a61",
-        "color6": "#30444e",
+        "color0": "#181818",
+        "color1": "#704034",
+        "color2": "#be896e",
+        "color3": "#71776b",
+        "color4": "#38474e",
+        "color5": "#485f60",
+        "color6": "#c4ad86",
         "color7": "#c5c5c5",
-        "color8": "#2f3131",
-        "color9": "#af4826",
-        "color10": "#8ab278",
-        "color11": "#ffed8a",
-        "color12": "#4c8a8e",
-        "color13": "#ffae6a",
-        "color14": "#365b6d",
+        "color8": "#313131",
+        "color9": "#9c4c38",
+        "color10": "#ffab7b",
+        "color11": "#92a97c",
+        "color12": "#405f6e",
+        "color13": "#528587",
+        "color14": "#ffe698",
         "color15": "#ffffff"
     }
 }
