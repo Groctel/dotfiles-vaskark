@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/jason/Pictures/rooney-mara-30646-1920x1200.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#16181a",
+        "foreground": "#c4c5c5",
+        "cursor": "#9eb3b7"
+    },
+    "colors": {
+        "color0": "#16181a",
+        "color1": "#634b4a",
+        "color2": "#b19f99",
+        "color3": "#426576",
+        "color4": "#6e5a57",
+        "color5": "#807f82",
+        "color6": "#9eb3b7",
+        "color7": "#c4c5c5",
+        "color8": "#2c3135",
+        "color9": "#8b5755",
+        "color10": "#fbc4b1",
+        "color11": "#4987a5",
+        "color12": "#9b6b64",
+        "color13": "#a094b9",
+        "color14": "#b7f7ff",
+        "color15": "#feffff"
+    }
+}
