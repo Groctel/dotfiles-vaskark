@@ -12,9 +12,9 @@ UXTerm*foreground:  {foreground}
 URxvt*background:   {background.alpha}
 XTerm*background:   {background}
 UXTerm*background:  {background}
-URxvt*cursorColor:  {cursor}
-XTerm*cursorColor:  {cursor}
-UXTerm*cursorColor: {cursor}
+URxvt*cursorColor:  {color6}
+XTerm*cursorColor:  {color6}
+UXTerm*cursorColor: {color6}
 URxvt*borderColor:  {background.alpha}
 
 ! Colors 0-15.
@@ -64,7 +64,7 @@ Sxiv.background: {color0}
 Sxiv.foreground: {color7}
 
 ! dmenu
-dmenu.font: scientifica-8:bold, Siji-8:bold
+dmenu.font: scientifica-8:bold
 dmenu.background: {color0}
 dmenu.foreground: #555
 dmenu.selbackground: {color0}
