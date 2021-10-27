@@ -3,8 +3,8 @@
 wallpaper="{wallpaper}"
 
 # Special
-background='{background}'
-foreground='{foreground}'
+background='{color0}'
+foreground='{color7}'
 cursor='{color6}'
 
 # Colors

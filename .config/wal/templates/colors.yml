@@ -1,8 +1,8 @@
 wallpaper: "{wallpaper}"
 
 special:
-    background: "{background}"
-    foreground: "{foreground}"
+    background: "{color0}"
+    foreground: "{color7}"
     cursor: "{color6}"
 
 colors:
