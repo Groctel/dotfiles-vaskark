@@ -1,27 +1,27 @@
 {
-    "wallpaper": "/home/jason/Pictures/Emma-Watson-35_3840x2160.jpg",
+    "wallpaper": "/home/jason/Pictures/8cfz69w1du161.jpg",
     "alpha": "100",
     "special": {
-        "background": "#181818",
+        "background": "#191718",
         "foreground": "#c5c5c5",
-        "cursor": "#bbada4"
+        "cursor": "#464b5b"
     },
     "colors": {
-        "color0": "#181818",
-        "color1": "#807e78",
-        "color2": "#af364a",
-        "color3": "#66493a",
-        "color4": "#ab978a",
-        "color5": "#7d5f4e",
-        "color6": "#bbada4",
+        "color0": "#191718",
+        "color1": "#7e4645",
+        "color2": "#8d7270",
+        "color3": "#965256",
+        "color4": "#77594e",
+        "color5": "#b96f6f",
+        "color6": "#464b5b",
         "color7": "#c5c5c5",
-        "color8": "#313131",
-        "color9": "#b6ab8b",
-        "color10": "#f23756",
-        "color11": "#8e5b41",
-        "color12": "#f2c09f",
-        "color13": "#af7758",
-        "color14": "#ffdbbe",
+        "color8": "#332e31",
+        "color9": "#b04e4d",
+        "color10": "#c78681",
+        "color11": "#d25b62",
+        "color12": "#a76d58",
+        "color13": "#ff7d7d",
+        "color14": "#505c80",
         "color15": "#ffffff"
     }
 }
