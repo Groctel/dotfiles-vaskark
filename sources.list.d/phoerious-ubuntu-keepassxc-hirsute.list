@@ -1,2 +1,2 @@
-deb http://ppa.launchpad.net/phoerious/keepassxc/ubuntu/ hirsute main
+# deb http://ppa.launchpad.net/phoerious/keepassxc/ubuntu/ hirsute main
 # deb-src http://ppa.launchpad.net/phoerious/keepassxc/ubuntu/ hirsute main

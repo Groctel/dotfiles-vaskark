@@ -1,2 +1,2 @@
-deb https://mkvtoolnix.download/ubuntu/ hirsute main
+# deb https://mkvtoolnix.download/ubuntu/ hirsute main
 # deb-src https://mkvtoolnix.download/ubuntu/ hirsute main
