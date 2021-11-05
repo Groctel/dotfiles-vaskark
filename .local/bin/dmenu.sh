@@ -4,8 +4,8 @@
 #. "${HOME}/.cache/wal/colors.sh"
 
 # xyw
-x=0
-y=0
+x=2
+y=2
 w=$(( $(xdotool getdisplaygeometry | awk '{print $1}') - (2*x) ))
 h=30
 

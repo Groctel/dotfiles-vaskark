@@ -223,5 +223,5 @@ while true; do
 	%{l}$(Uptime) $(Window) \
 	%{c}$(Mpc) \
 	%{r}$(Wifi) $(Cpu) $(Memory) $(Battery) $(Volume) $(Time)"
-    sleep 0.05
+    sleep 0.1
 done
