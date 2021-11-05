@@ -373,7 +373,7 @@ format-muted-padding = 1
 
 [module/pulseaudio]
 type = internal/pulseaudio
-interval = 10
+interval = 5
 click-right = pkill pavucontrol || pavucontrol
 
 format-volume = <bar-volume><label-volume>
