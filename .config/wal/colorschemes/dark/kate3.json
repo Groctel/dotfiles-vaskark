@@ -1,27 +1,27 @@
 {
-    "wallpaper": "/home/jason/Pictures/781064.jpg",
+    "wallpaper": "/home/jason/Pictures/kate_winslet_2-wallpaper-3840x2160.jpg",
     "alpha": "100",
     "special": {
-        "background": "#2d2d33",
-        "foreground": "#c4c4b5",
-        "cursor": "#697284"
+        "background": "#1d2021",
+        "foreground": "#a89984",
+        "cursor": "#8ba59b"
     },
     "colors": {
-        "color0": "#2d2d33",
-        "color1": "#9c6647",
-        "color2": "#47676e",
-        "color3": "#a29474",
-        "color4": "#796a70",
-        "color5": "#708684",
-        "color6": "#697284",
-        "color7": "#c4c4b5",
-        "color8": "#44444d",
-        "color9": "#d9804d",
-        "color10": "#508d9a",
-        "color11": "#e4c784",
-        "color12": "#ab7b8e",
-        "color13": "#81beb8",
-        "color14": "#798fba",
-        "color15": "#ffffee"
+        "color0": "#1d2021",
+        "color1": "#fb543f",
+        "color2": "#95c085",
+        "color3": "#fac03b",
+        "color4": "#0d6678",
+        "color5": "#8f4673",
+        "color6": "#8ba59b",
+        "color7": "#a89984",
+        "color8": "#665c54",
+        "color9": "#fb543f",
+        "color10": "#95c085",
+        "color11": "#fac03b",
+        "color12": "#0d6678",
+        "color13": "#8f4673",
+        "color14": "#8ba59b",
+        "color15": "#fdf4c1"
     }
 }
