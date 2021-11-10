@@ -2,26 +2,26 @@
     "wallpaper": "/home/jason/Pictures/gemma-arterton-empire-magazine-5k-oh-m.jpg",
     "alpha": "100",
     "special": {
-        "background": "#322f30",
-        "foreground": "#c0bfbf",
-        "cursor": "#7d8592"
+        "background": "#2f1e2e",
+        "foreground": "#a39e9b",
+        "cursor": "#06b6ef"
     },
     "colors": {
-        "color0": "#322f30",
-        "color1": "#654c51",
-        "color2": "#7f8281",
-        "color3": "#8d7766",
-        "color4": "#5b697e",
-        "color5": "#7b6b75",
-        "color6": "#7d8592",
-        "color7": "#c0bfbf",
-        "color8": "#4b4748",
-        "color9": "#8e5762",
-        "color10": "#94b9ad",
-        "color11": "#c79874",
-        "color12": "#6885b1",
-        "color13": "#ae7c9b",
-        "color14": "#90a8cf",
-        "color15": "#fcfafa"
+        "color0": "#2f1e2e",
+        "color1": "#ef6155",
+        "color2": "#48b685",
+        "color3": "#fec418",
+        "color4": "#5bc4bf",
+        "color5": "#815ba4",
+        "color6": "#06b6ef",
+        "color7": "#a39e9b",
+        "color8": "#4d314c",
+        "color9": "#ff6c59",
+        "color10": "#4dfdae",
+        "color11": "#ffff0c",
+        "color12": "#63ffff",
+        "color13": "#a865e5",
+        "color14": "#01f0ff",
+        "color15": "#e0d9d5"
     }
 }

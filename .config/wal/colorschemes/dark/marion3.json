@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/jason/Pictures/rsnodmd4zox71.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#1c1c1c",
+        "foreground": "#98d1ce",
+        "cursor": "#195465"
+    },
+    "colors": {
+        "color0": "#1c1c1c",
+        "color1": "#c33027",
+        "color2": "#26a98b",
+        "color3": "#33859d",
+        "color4": "#4e5165",
+        "color5": "#33859d",
+        "color6": "#195465",
+        "color7": "#98d1ce",
+        "color8": "#1f1f1f",
+        "color9": "#ff3023",
+        "color10": "#23e9bc",
+        "color11": "#34b4d9",
+        "color12": "#59608e",
+        "color13": "#34b4d9",
+        "color14": "#18718b",
+        "color15": "#caffff"
+    }
+}
