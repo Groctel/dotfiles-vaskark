@@ -1,26 +1,42 @@
 "~~~ Plugins ~~~
 call plug#begin('~/.config/nvim/plugged')
 Plug 'itchyny/lightline.vim'
+" Plug 'vim-airline/vim-airline'
+" Plug 'vim-airline/vim-airline-themes'
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-markdown'
-Plug 'machakann/vim-highlightedyank'
-Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --no-bash' }
 Plug 'nelstrom/vim-markdown-folding'
+Plug 'machakann/vim-highlightedyank'
+Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --no-bash --no-fish' }
 Plug 'dylanaraps/wal.vim'
 Plug 'preservim/nerdtree'
 Plug 'mcchrish/nnn.vim'
+Plug 'scrooloose/nerdcommenter'
 call plug#end()
+
+" Spellcheck
+set spell
+set spelllang=en_us
+
+" Undo
+set undofile
+
+" Bell
+set visualbell
+set errorbells
 
 " Highlight the line on which the cursor lives.
 set nocursorline
 
 " Always show at least one line above/below the cursor.
 set scrolloff=1
+
 " Always show at least one line left/right of the cursor.
 set sidescrolloff=5
 
-" Relative line numbers
-set number relativenumber
+" Line numbers
+set number
+set relativenumber
 
 " Highlight matching pairs of brackets. Use the '%' character to jump between them.
 set matchpairs+=<:>
@@ -35,55 +51,32 @@ set clipboard=unnamedplus
 " Remove timeout for partially typed commands
 set notimeout
 
-" F keys
-" Quick write session with F2
-map <F2> :mksession! ~/.vim_session<cr>
-" And load session with F3
-map <F3> :source ~/.vim_session<cr>
-
-" Fix indentation
-map <F7> gg=G<C-o><C-o>
-" Toggle auto change directory
-map <F9> :set autochdir! autochdir?<CR>
-
-" Toggle vertical line
-set colorcolumn=
-fun! ToggleCC()
-  if &cc == ''
-    " set cc=1,4,21
-    set cc=80
-  else
-    set cc=
-  endif
-endfun
-nnoremap <silent> <F9> :call ToggleCC()<CR>
-
 " Beginning and end of line
 imap <C-a> <home>
 imap <C-e> <end>
 cmap <C-a> <home>
 cmap <C-e> <end>
 
-" Nerdtree toggle
-map <C-n> :NERDTreeToggle<CR>
-" let g:NERDTreeDirArrowExpandable = ''
-" let g:NERDTreeDirArrowCollapsible = ''
+" Nerdtree
+nnoremap <C-n> :NERDTreeToggle<cr>
+let g:NERDTreeDirArrowExpandable = '+'
+let g:NERDTreeDirArrowCollapsible = '-'
 
-" fzf
+" Fzf
 nnoremap <silent> <leader>f :FZF<cr>
 nnoremap <silent> <leader>F :FZF ~<cr>
 
-" Control-S Save
+" Control-S (Save)
 nmap <C-S> :w<cr>
 vmap <C-S> <esc>:w<cr>
 imap <C-S> <esc>:w<cr>
 " Save + back into insert
 " imap <C-S> <esc>:w<cr>a
 
-" Control-C Copy in visual mode
+" Control-C (Copy in visual mode)
 vmap <C-C> y
 
-" Control-V Paste in insert and command mode
+" Control-V (Paste in insert and command mode)
 imap <C-V> <esc>pa
 cmap <C-V> <C-r>0
 
@@ -107,9 +100,7 @@ imap <M-l> <right>
 imap <M-f> <C-right>
 imap <M-b> <C-left>
 
-" Spacemacs-like keybinds
-" Change <leader> bind from default \
-" nnoremap <space> <nop>
+" Leader
 " let mapleader=","
 
 " Make ci( work like quotes do
@@ -143,13 +134,6 @@ nnoremap cib :call New_cib()<CR>
 nnoremap ci{ :call New_ciB()<CR>
 nnoremap ciB :call New_ciB()<CR>
 
-" Alt-m for creating a new line in insert mode
-imap <M-m> <esc>o
-
-" netrw configuration
-let g:netrw_browse_split = 0
-let g:netrw_altfile = 1
-
 " Cycle windows
 nmap <M-o> <C-W>w
 vmap <M-o> <C-W>w
@@ -162,10 +146,6 @@ cmap <M-n> <down>
 cmap <M-k> <up>
 cmap <M-j> <down>
 
-" Back to normal mode from insert
-" inoremap jk <esc>
-" inoremap JK <esc>
-
 " Manually refresh file
 nmap <F5> :e!<cr>
 
@@ -176,18 +156,13 @@ set tabstop=8
 set softtabstop=4
 set shiftwidth=4
 
-"set smartindent
+set smartindent
 set autoindent
 "set cindent
 
 set nocompatible
 filetype plugin indent on
 syntax on
-
-" Write buffer through sudo (works on vim but not neovim)
-" cnoreabbrev w!! w !sudo -S tee % >/dev/null
-" Neovim: suda plugin
-cnoreabbrev w!! w suda://%
 
 " Allow switching between buffers without saving
 set hidden
@@ -224,14 +199,51 @@ let g:markdown_fold_style = 'nested'
 " Highlighted yank (-1 for persistent)
 let g:highlightedyank_highlight_duration = 400
 
+" NerdCommenter
+let g:NERDCreateDefaultMappings = 1
+let g:NERDSpaceDelims = 1
+let g:NERDDefaultAlign = 'left'
+let g:NERDCommentEmptyLines = 1
+let g:NERDTrimTrailingWhitespace = 1
+let g:NERDToggleCheckAllLines = 1
+
 " If lightline/airline is enabled, don't show mode under it
 set noshowmode
 
-" Shell
-set shell=/bin/zsh
+" Airline
+let g:airline_experimental = 1
+let g:airline_detect_modified=1
+let g:airline_detect_paste=0
+let g:airline_detect_spell=0
+let g:airline_inactive_alt_sep=1
+let g:airline#extensions#tabline#enabled = 1
+let g:airline#extensions#tabline#formatter = 'default'
+let g:airline_powerline_fonts = 1
+let g:airline#parts#ffenc#skip_expected_string='utf-8[unix]'
+" let g:airline_theme='wal'
+
+" let g:airline_mode_map = {
+"       \ '__'     : '-',
+"       \ 'c'      : 'C',
+"       \ 'i'      : 'I',
+"       \ 'ic'     : 'I',
+"       \ 'ix'     : 'I',
+"       \ 'n'      : 'N',
+"       \ 'multi'  : 'M',
+"       \ 'ni'     : 'N',
+"       \ 'no'     : 'N',
+"       \ 'R'      : 'R',
+"       \ 'Rv'     : 'R',
+"       \ 's'      : 'S',
+"       \ 'S'      : 'S',
+"       \ ''     : 'S',
+"       \ 't'      : 'T',
+"       \ 'v'      : 'V',
+"       \ 'V'      : 'V',
+"       \ ''     : 'V',
+"       \ }
 
 " Lightline
-" Get default from :h lightline
 let g:lightline = {
     \ 'colorscheme': 'wal',
     \ }
@@ -287,7 +299,7 @@ let g:lightline.component = {
     \ 'sep1': ''
     \}
 
-"let g:lightline.mode_map = {
+" let g:lightline.mode_map = {
 "    \ 'n' : 'N',
 "    \ 'i' : 'I',
 "    \ 'R' : 'R',
