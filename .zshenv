@@ -12,9 +12,6 @@ export HISTFILE="$ZDOTDIR/.zhistory"
 export HISTSIZE=10000
 export SAVEHIST=10000
 
-# xauth (might break some DM's)
-#export XAUTHORITY="$XDG_RUNTIME_DIR/Xauthority"
-
 # less
 export LESSHISTFILE=""
 

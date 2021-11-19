@@ -1,4 +1,4 @@
-"~~~ Plugins ~~~
+" ~~ Plugins ~~
 call plug#begin('~/.config/nvim/plugged')
 Plug 'itchyny/lightline.vim'
 " Plug 'vim-airline/vim-airline'
@@ -65,6 +65,13 @@ let g:NERDTreeDirArrowCollapsible = '-'
 " Fzf
 nnoremap <silent> <leader>f :FZF<cr>
 nnoremap <silent> <leader>F :FZF ~<cr>
+
+let g:fzf_action = {
+  \ 'ctrl-t': 'tab split',
+  \ 'ctrl-x': 'split',
+  \ 'ctrl-v': 'vsplit' }
+
+let g:fzf_layout = { 'window': { 'width': 0.8, 'height': 0.5, 'relative': v:true } }
 
 " Control-S (Save)
 nmap <C-S> :w<cr>
