@@ -1,27 +1,27 @@
 {
-    "wallpaper": "/home/jason/Pictures/rachel-mcadams-4k-g5-m.jpg",
+    "wallpaper": "/home/jason/Pictures/389368.jpg",
     "alpha": "100",
     "special": {
-        "background": "#1c1c1c",
-        "foreground": "#9ea3a9",
-        "cursor": "#70899e"
+        "background": "#0a0f14",
+        "foreground": "#caffff",
+        "cursor": "#33859d"
     },
     "colors": {
-        "color0": "#1c1c1c",
-        "color1": "#55454d",
-        "color2": "#8f6164",
-        "color3": "#5b7170",
-        "color4": "#74a28a",
-        "color5": "#425d53",
-        "color6": "#70899e",
-        "color7": "#9ea3a9",
-        "color8": "#353535",
-        "color9": "#784f64",
-        "color10": "#c96e74",
-        "color11": "#69a09d",
-        "color12": "#84e4b2",
-        "color13": "#4b836e",
-        "color14": "#80b3de",
-        "color15": "#d7dee7"
+        "color0": "#0a0f14",
+        "color1": "#c33027",
+        "color2": "#26a98b",
+        "color3": "#195465",
+        "color4": "#33859d",
+        "color5": "#4e5165",
+        "color6": "#33859d",
+        "color7": "#98d1ce",
+        "color8": "#1a2735",
+        "color9": "#ff3023",
+        "color10": "#23e9bc",
+        "color11": "#18718b",
+        "color12": "#34b4d9",
+        "color13": "#59608e",
+        "color14": "#34b4d9",
+        "color15": "#caffff"
     }
 }
