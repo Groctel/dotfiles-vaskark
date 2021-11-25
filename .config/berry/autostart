@@ -43,11 +43,11 @@ picom --experimental-backends --config ~/.config/picom/picom.conf &
 # lock
 xautolock -time 10 -locker 'lock.sh' -killer 'systemctl suspend' -corners 00-+ &
 
-# dunst
-# dunst &
-
 # lemonbar
 # lemonbar-current &
 
 # polybar
-pb.sh &
+pb-nf.sh &
+
+# touchegg
+touchegg &

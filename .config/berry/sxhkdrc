@@ -17,14 +17,6 @@ super + {_,shift +} semicolon
 super + g
     pkill glava &>/dev/null || glava -d
 
-# wal
-super + F12
-    wal -f random_user -o $HOME/.config/berry/wal/extras.sh
-super + shift + F12
-    wal -R -o $HOME/.config/berry/wal/extras.sh
-super + control + F12
-    wal -f random -o $HOME/.config/berry/wal/extras.sh
-
 # viz
 super + v
     viz.sh
@@ -92,8 +84,8 @@ super + r
 super + c
     berryc window_center
 
-super + Delete
-     berryc quit
+#super + Delete
+#     berryc quit
 
 ~button1
      berryc pointer_focus

@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/jason/Pictures/Caitriona-Balfe-HD-Wallpaper-1920x1200-caitriona-balfe-43263685-1920-1200.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#1c1c1c",
+        "foreground": "#decfc8",
+        "cursor": "#AD8878"
+    },
+    "colors": {
+        "color0": "#1c1c1c",
+        "color1": "#883E45",
+        "color2": "#926F63",
+        "color3": "#B89588",
+        "color4": "#787682",
+        "color5": "#907E89",
+        "color6": "#AD8878",
+        "color7": "#decfc8",
+        "color8": "#353535",
+        "color9": "#bd434f",
+        "color10": "#cd8870",
+        "color11": "#ffb89c",
+        "color12": "#9189b9",
+        "color13": "#cc92b5",
+        "color14": "#f3a989",
+        "color15": "#fffaf1"
+    }
+}

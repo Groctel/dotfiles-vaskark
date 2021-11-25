@@ -5,7 +5,7 @@
 
 # terminals
 super + {_,shift +,ctrl +} Return
-	{st,alacritty,kitty}
+	{alacritty,kitty,st}
 
 # program launchers
 super + {d,x}
@@ -21,7 +21,7 @@ super + {_,shift +} Escape
 
 # file managers
 super + {_,shift +} F1
-	{thunar,thunar-pkexec}
+	{nemo,nemo-pkexec}
 
 # browsers
 super + {_,shift +} F2
@@ -49,7 +49,7 @@ super + F7
 
 # music
 alt + {F10,F11,F12}
-	mpc -q {prev && mpd-notify.sh,toggle,next && mpd-notify.sh}
+	mpc -q {prev,toggle,next} && mpd-notify.sh
 alt + shift + {F10,F12}
 	mpc seek {-00:00:05,+00:00:05}
 alt + F9
@@ -72,12 +72,12 @@ XF86MonBrightness{Up,Down}
 	light {-A 5,-U 5}
 
 # wal
-#super + F12
-#	wal -f random_user -o wal-extras.sh
-#super + shift + F12
-#	wal -R -o wal-extras.sh
-#super + control + F12
-#	wal -f random -o wal-extras.sh
+super + F12
+	wal -f random_user -o wal-extras.sh
+super + shift + F12
+	wal -R -o wal-extras.sh
+super + control + F12
+	wal -f random -o wal-extras.sh
         
 # sxiv
 super + equal

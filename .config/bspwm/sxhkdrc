@@ -17,7 +17,8 @@ super + ctrl + semicolon
 
 # quit bspwm
 super + Delete
-	bspc quit
+	#bspc quit
+	exit.sh
 	
 # restart bspwm
 super + shift + r
