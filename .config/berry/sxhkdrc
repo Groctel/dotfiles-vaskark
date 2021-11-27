@@ -15,7 +15,11 @@ super + {_,shift +} semicolon
 
 # glava
 super + g
-    pkill glava &>/dev/null || glava -d
+    pkill glava || glava -d &>/dev/null
+
+# glava flip
+super + shift + g
+    glava-flip.sh
 
 # viz
 super + v
