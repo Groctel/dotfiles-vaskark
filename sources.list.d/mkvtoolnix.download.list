@@ -1,2 +1,2 @@
-# deb https://mkvtoolnix.download/ubuntu/ hirsute main
-# deb-src https://mkvtoolnix.download/ubuntu/ hirsute main
+deb [arch=amd64 signed-by=/usr/share/keyrings/gpg-pub-moritzbunkus.gpg] https://mkvtoolnix.download/ubuntu/ impish main
+# deb-src [arch=amd64 signed-by=/usr/share/keyrings/gpg-pub-moritzbunkus.gpg] https://mkvtoolnix.download/ubuntu/ impish main
