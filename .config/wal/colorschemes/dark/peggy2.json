@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/jason/Pictures/agent-carter-hayley-atwell-m.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#171616",
+        "foreground": "#c5c4c4",
+        "cursor": "#b2aea4"
+    },
+    "colors": {
+        "color0": "#171616",
+        "color1": "#444c5c",
+        "color2": "#5c4c48",
+        "color3": "#5d5850",
+        "color4": "#847f78",
+        "color5": "#ae9e98",
+        "color6": "#b2aea4",
+        "color7": "#c5c4c4",
+        "color8": "#515050",
+        "color9": "#444c5c",
+        "color10": "#5c4c48",
+        "color11": "#5d5850",
+        "color12": "#847f78",
+        "color13": "#ae9e98",
+        "color14": "#b2aea4",
+        "color15": "#c5c4c4"
+    }
+}
