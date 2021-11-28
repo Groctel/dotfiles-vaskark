@@ -20,7 +20,7 @@ export EDITOR='nvim'
 export VISUAL='nvim'
 
 # man
-export MANPAGER="nvim +Man!"
+export MANPAGER='nvim +Man!'
 
 # scaling
 export QT_AUTO_SCREEN_SCALE_FACTOR=0
@@ -69,6 +69,3 @@ export FFF_COL5=0   # status fg
 export KUNST_SIZE="350x350"
 export KUNST_POSITION="+50+50"
 export KUNST_MUSIC_DIR="$HOME/Music/"
-
-# pure
-# export PURE_PROMPT_SYMBOL=''
