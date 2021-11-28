@@ -5,7 +5,7 @@
 
 # terminals
 super + {_,shift +,ctrl +} Return
-	{alacritty,kitty,st}
+	{alacritty,kitty,urxvt}
 
 # program launchers
 super + {d,x}
