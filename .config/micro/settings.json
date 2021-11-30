@@ -1,0 +1,13 @@
+{
+    "eofnewline": false,
+    "ignorecase": false,
+    "initlua": true,
+    "pluginchannels": [
+        "https://raw.githubusercontent.com/micro-editor/plugin-channel/master/channel.json"
+    ],
+    "pluginrepos": [],
+    "relativeruler": true,
+    "savecursor": true,
+    "softwrap": true,
+    "wordwrap": true
+}
