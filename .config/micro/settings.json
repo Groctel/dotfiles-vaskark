@@ -1,4 +1,7 @@
 {
+    "basename": true,
+    "colorscheme": "solarized",
+    "cursorline": false,
     "eofnewline": false,
     "ignorecase": false,
     "initlua": true,
@@ -6,8 +9,8 @@
         "https://raw.githubusercontent.com/micro-editor/plugin-channel/master/channel.json"
     ],
     "pluginrepos": [],
-    "relativeruler": true,
     "savecursor": true,
+    "saveundo": true,
     "softwrap": true,
     "wordwrap": true
 }
