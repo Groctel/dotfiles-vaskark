@@ -1,7 +1,6 @@
 # general
 alias rm='rm -i'
 alias cp='cp -i'
-alias mv='mv -i'
 alias md='mkdir -pv'
 alias rd='rmdir -pv'
 alias df='df -HT'
@@ -32,21 +31,23 @@ alias fr='feh --randomize --bg-fill --recursive --no-fehbg ~/Pictures/*.(png|jpg
 alias rmpd='systemctl --user daemon-reload; systemctl --user restart mpd'
 alias lf="$HOME/.local/bin/lf.sh"
 alias ed='ed -p ": "'
+alias nd='ncdu -L -q --color dark --exclude-caches'
+alias m='micro'
 
 # lsd
 alias lsd='lsd -h --group-dirs first --no-symlink'
-alias ls='lsd'
-alias l='ls -l'
-alias ll='ls -Al'
-alias lt='ls --tree --depth 2'
+# alias ls='lsd'
+# alias l='ls -l'
+# alias ll='ls -Al'
+# alias lt='ls --tree --depth 2'
 
 # exa
 alias exa='exa --icons --git -g --time-style long-iso --group-directories-first --git-ignore'
-#alias ls='exa'
-#alias l1='ls -1'
-#alias l='ls -l'
-#alias ll='ls -al'
-#alias lt='ls -T -L 2'
+alias ls='exa'
+alias l1='ls -1'
+alias l='ls -l'
+alias ll='ls -al'
+alias lt='ls -T -L 2'
 
 # suffix
 alias -g G='| grep -i'
@@ -63,6 +64,8 @@ alias zs='clear && exec zsh'
 # xrdb
 alias xc="$EDITOR ~/.Xresources"
 alias xu='xrdb ~/.Xresources'
+
+# xinitrc
 alias xx="$EDITOR ~/.xinitrc"
 
 # bindkey help
@@ -106,9 +109,6 @@ alias nfs='clear;neofetch --config ~/.config/neofetch/config-small.conf'
 alias f2s='fonttosfnt -v -r -b -c -g 2 -m 2 -o'
 alias fcc='fc-cache -fv'
 alias fcl='fc-list'
-
-# p10k
-alias p10kc='p10k configure'
 
 # pywal
 alias w1='wal -f random_user -o wal-extras.sh'
