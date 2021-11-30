@@ -1,7 +1,7 @@
 #!/bin/sh
 
 # .xprofile
-[ -f ~/.xprofile ] && . ~/.xprofile
+[ -f "$HOME"/.xprofile ] && . "$HOME"/.xprofile
 
 # wm
 session=${1:-berry}
