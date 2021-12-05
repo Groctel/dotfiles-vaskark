@@ -1,27 +1,27 @@
 {
-    "wallpaper": "/home/jason/Pictures/wallpaperbetter.com_2560x1440.jpg",
+    "wallpaper": "/home/jason/Pictures/4492623-little-caprice-wallpapers-m.jpg",
     "alpha": "100",
     "special": {
-        "background": "#1b1b1c",
-        "foreground": "#c6c6c6",
-        "cursor": "#cbb9a1"
+        "background": "#1c1c1c",
+        "foreground": "#a8bfbd",
+        "cursor": "#1f505d"
     },
     "colors": {
-        "color0": "#1b1b1c",
-        "color1": "#775e5a",
-        "color2": "#b6816d",
-        "color3": "#bca498",
-        "color4": "#9d8e88",
-        "color5": "#947267",
-        "color6": "#cbb9a1",
-        "color7": "#c6c6c6",
-        "color8": "#333335",
-        "color9": "#a87067",
-        "color10": "#ff9f7a",
-        "color11": "#ffcdaf",
-        "color12": "#dfb09d",
-        "color13": "#d08b75",
-        "color14": "#fff3b9",
-        "color15": "#ffffff"
+        "color0": "#1c1c1c",
+        "color1": "#b73a31",
+        "color2": "#309d85",
+        "color3": "#3d7f91",
+        "color4": "#56575b",
+        "color5": "#3d7f91",
+        "color6": "#1f505d",
+        "color7": "#a8bfbd",
+        "color8": "#1f1f1f",
+        "color9": "#ef3c31",
+        "color10": "#2fdbb4",
+        "color11": "#40accb",
+        "color12": "#636882",
+        "color13": "#40accb",
+        "color14": "#206b82",
+        "color15": "#e0e7e7"
     }
 }
