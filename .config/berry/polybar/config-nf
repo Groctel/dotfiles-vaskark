@@ -72,7 +72,7 @@ font-2 = "Symbols Nerd Font:size=35;9"
 
 modules-left = misc sp ewmh-i
 modules-center = mpd
-modules-right = wlan eth uptime-2 temp cpu memory battery volume div-r date
+modules-right = wlan eth uptime-2 temp cpu memory battery volume sp date
 
 ##################################################
 ##################################################
