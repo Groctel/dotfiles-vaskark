@@ -2,26 +2,26 @@
     "wallpaper": "/home/jason/Pictures/tpguh45-m.jpg",
     "alpha": "100",
     "special": {
-        "background": "#262020",
-        "foreground": "#b1a89c",
-        "cursor": "#57464d"
+        "background": "#222222",
+        "foreground": "#DDDDDD",
+        "cursor": "#6D878D"
     },
     "colors": {
-        "color0": "#262020",
-        "color1": "#925633",
-        "color2": "#47676e",
-        "color3": "#aa9a71",
-        "color4": "#55634f",
-        "color5": "#5e6676",
-        "color6": "#57464d",
-        "color7": "#b1a89c",
-        "color8": "#413636",
-        "color9": "#ca6c35",
-        "color10": "#508d9a",
-        "color11": "#efd080",
-        "color12": "#698c5b",
-        "color13": "#6c80a7",
-        "color14": "#7b5062",
-        "color15": "#f0e4d4"
+        "color0": "#222222",
+        "color1": "#E84F4F",
+        "color2": "#FEA63C",
+        "color3": "#B7416E",
+        "color4": "#66AABB",
+        "color5": "#B7CE42",
+        "color6": "#6D878D",
+        "color7": "#DDDDDD",
+        "color8": "#3b3b3b",
+        "color9": "#ff5252",
+        "color10": "#ffd939",
+        "color11": "#fe448b",
+        "color12": "#71e8ff",
+        "color13": "#f9ff44",
+        "color14": "#7db9c7",
+        "color15": "#ffffff"
     }
 }
