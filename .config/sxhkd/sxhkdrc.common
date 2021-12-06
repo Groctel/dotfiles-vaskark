@@ -73,11 +73,11 @@ XF86MonBrightness{Up,Down}
 
 # wal
 super + F12
-	wal -f random_user -o wal-extras.sh
+	wal -q -f random_user -o wal-extras.sh
 super + shift + F12
-	wal -R -o wal-extras.sh
+	wal -q -R -o wal-extras.sh
 super + control + F12
-	wal -f random -o wal-extras.sh
+	wal -q -f random -o wal-extras.sh
         
 # sxiv
 super + equal
