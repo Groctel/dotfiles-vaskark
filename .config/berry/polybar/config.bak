@@ -71,8 +71,8 @@ font-1 = "siji:size=9;2"
 font-2 = "siji:size=34;9"
 
 modules-left = misc sp ewmh-i
-modules-center = mpd
-modules-right = wlan eth uptime-2 temp cpu memory battery volume sp date
+modules-center = pulseaudio
+modules-right = wlan uptime-2 temp cpu memory battery volume sp date
 
 ##################################################
 ##################################################
@@ -196,12 +196,14 @@ label-song-ellipsis = true
 
 ##################################################
 
-[network]
+[module/wlan]
 type = internal/network
+interface = wlan0
 interval = 1.0
 accumulate-stats = true
 unknown-as-up = true
 
+label-connected = %essid% [%downspeed%]
 format-connected = <ramp-signal> <label-connected>
 format-connected-padding = 1
 
@@ -214,19 +216,23 @@ ramp-signal-3 = 
 
 ##################################################
 
-[module/wlan]
-inherit = network
-interface-type = wireless
-
-label-connected = %essid% [%downspeed%]
-
-##################################################
-
 [module/eth]
-inherit = network
-interface-type = wired
+type = internal/network
+interface = enp0s3
+interval = 1.0
+accumulate-stats = true
+unknown-as-up = true
 
 label-connected = %ifname% [%downspeed%]
+format-connected = <ramp-signal> <label-connected>
+format-connected-padding = 1
+
+ramp-signal-foreground = ${colors.color4}
+
+ramp-signal-0 = 
+ramp-signal-1 = 
+ramp-signal-2 = 
+ramp-signal-3 = 
 
 ##################################################
 

@@ -71,8 +71,8 @@ font-1 = "Symbols Nerd Font:size=9;2"
 font-2 = "Symbols Nerd Font:size=35;9"
 
 modules-left = misc sp ewmh-i
-modules-center = pulseaudio
-modules-right = wlan uptime-2 temp cpu memory battery volume div-r date
+modules-center = mpd
+modules-right = wlan eth uptime-2 temp cpu memory battery volume div-r date
 
 ##################################################
 ##################################################
@@ -217,14 +217,12 @@ label-song-ellipsis = true
 
 ##################################################
 
-[module/wlan]
+[network]
 type = internal/network
-interface = wlan0
 interval = 1.0
 accumulate-stats = true
 unknown-as-up = true
 
-label-connected = %essid% [%downspeed%]
 format-connected-prefix = "說 "
 format-connected = <label-connected>
 format-connected-prefix-foreground = ${colors.color4}
@@ -232,18 +230,19 @@ format-connected-padding = 1
 
 ##################################################
 
+[module/wlan]
+inherit = network
+interface-type = wireless
+
+label-connected = %essid% [%downspeed%]
+
+##################################################
+
 [module/eth]
-type = internal/network
-interface = enp0s3
-interval = 1.0
-accumulate-stats = true
-unknown-as-up = true
+inherit = network
+interface-type = wired
 
 label-connected = %ifname% [%downspeed%]
-format-connected-prefix = "說 "
-format-connected = <label-connected>
-format-connected-prefix-foreground = ${colors.color4}
-format-connected-padding = 1
 
 ##################################################
 
