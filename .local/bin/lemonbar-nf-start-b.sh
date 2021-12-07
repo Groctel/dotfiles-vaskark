@@ -7,7 +7,7 @@
 x=300
 y=10
 w=$(( $(xdotool getdisplaygeometry | awk '{print $1}') - (2*x) ))
-h=32
+h=30
 
 # start
 lemonbar-nf.sh | lemonbar \
