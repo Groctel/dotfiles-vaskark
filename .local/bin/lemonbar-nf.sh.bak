@@ -67,8 +67,24 @@ Wifi() {
 		WIFISTR=$(( WIFISTR * 100 / 70 ))
 		ESSID=$(iwconfig "$INTERFACE" | grep ESSID | sed 's/ //g' | sed 's/.*://g' | sed 's/\"//g')
 
-     	ICON="說"
-		echo "%{F$color4}$ICON%{F-} $ESSID "
+		if [ "$WIFISTR" -ge 1 ] ; then
+
+			R1=$(cat /sys/class/net/"$INTERFACE"/statistics/rx_bytes)
+			sleep 1
+     		R2=$(cat /sys/class/net/"$INTERFACE"/statistics/rx_bytes)
+     		RBPS=$(( R2 - R1 ))
+     	    RKBPS=$(( RBPS / 1024 ))
+     	    MKBPS=$(( RKBPS / 1024 ))
+     	    ICON="說"
+     	    ICON_DOWN=""
+
+     	    if [ "$RKBPS" -le 999 ]; then
+				echo "%{F$color4}$ICON%{F-} $ESSID [%{F$color4}$ICON_DOWN%{F-} $RKBPS Kb/s] "
+			else
+				echo "%{F$color4}$ICON%{F-} $ESSID [%{F$color4}$ICON_DOWN%{F-} $MKBPS Mb/s] "
+			fi
+
+		fi
 
 	fi
 
