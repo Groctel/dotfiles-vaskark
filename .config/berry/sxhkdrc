@@ -4,18 +4,18 @@
 
 
 # lemonbar
-#super + semicolon
-#   killall -q lemonbar || lemonbar-current
-#super + shift + semicolon
-#   lemonbar-menu.sh
+super + semicolon
+   pkill lemonbar || lemonbar-current
+super + shift + semicolon
+   lemonbar-menu.sh
 
 # polybar
-super + {_,shift +} semicolon
-    polybar-msg cmd {toggle,restart}
+#super + {_,shift +} semicolon
+#    polybar-msg cmd {toggle,restart}
 
 # glava
 super + g
-    killall -q glava || glava -d
+    pkill glava || glava -d
 
 # glava flip
 super + shift + g

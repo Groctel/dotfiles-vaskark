@@ -9,10 +9,10 @@ case "$MENU" in
 	*Siji)
 		rm -f "$HOME"/.local/bin/lemonbar-current 2>/dev/null
 		ln -s "$HOME"/.local/bin/lemonbar-start.sh "$HOME"/.local/bin/lemonbar-current
-		pkill lemonbar
+		killall -q lemonbar
 		lemonbar-current &
-		sed -i "s|offset = .*$|offset = 15+45|g" ~/.cache/wal/dunstrc
-		pkill dunst
+		sed -i "s|offset = .*$|offset = 15x45|g" ~/.cache/wal/dunstrc
+		killall -q dunst
 		dunst &
 		berryc edge_gap 40 0 0 0 &
 	;;
@@ -20,10 +20,10 @@ case "$MENU" in
 	*Siji-b)
 		rm -f "$HOME"/.local/bin/lemonbar-current 2>/dev/null
 		ln -s "$HOME"/.local/bin/lemonbar-start-b.sh "$HOME"/.local/bin/lemonbar-current
-		pkill lemonbar
+		killall -q lemonbar
 		lemonbar-current &
-		sed -i "s|offset = .*$|offset = 15+15|g" ~/.cache/wal/dunstrc
-		pkill dunst
+		sed -i "s|offset = .*$|offset = 15x15|g" ~/.cache/wal/dunstrc
+		killall -q dunst
 		dunst &
 		berryc edge_gap 0 50 0 0 &
 	;;
@@ -31,10 +31,10 @@ case "$MENU" in
 	*NF)
 		rm -f "$HOME"/.local/bin/lemonbar-current 2>/dev/null
 		ln -s "$HOME"/.local/bin/lemonbar-nf-start.sh "$HOME"/.local/bin/lemonbar-current
-		pkill lemonbar
+		killall -q lemonbar
 		lemonbar-current &
-		sed -i "s|offset = .*$|offset = 15+45|g" ~/.cache/wal/dunstrc
-		pkill dunst
+		sed -i "s|offset = .*$|offset = 15x45|g" ~/.cache/wal/dunstrc
+		killall -q dunst
 		dunst &
 		berryc edge_gap 40 0 0 0 &
 	;;
@@ -42,16 +42,16 @@ case "$MENU" in
 	*NF-b)
 		rm -f "$HOME"/.local/bin/lemonbar-current 2>/dev/null
 		ln -s "$HOME"/.local/bin/lemonbar-nf-start-b.sh "$HOME"/.local/bin/lemonbar-current
-		pkill lemonbar
+		killall -q lemonbar
 		lemonbar-current &
-		sed -i "s|offset = .*$|offset = 15+15|g" ~/.cache/wal/dunstrc
-		pkill dunst
+		sed -i "s|offset = .*$|offset = 15x15|g" ~/.cache/wal/dunstrc
+		killall -q dunst
 		dunst &
 		berryc edge_gap 0 50 0 0 &
 	;;
 
 	*Off)
-		pkill lemonbar 2>/dev/null
+		killall -q lemonbar 2>/dev/null
 	;;
 
 esac
