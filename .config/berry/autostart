@@ -22,14 +22,13 @@ berryc edge_lock   "true"
 berryc set_font    "scientifica-8:bold"
 
 # wal
-wal -R -o $HOME/.config/berry/wal/extras.sh &
+wal -q -R -o $HOME/.config/berry/wal/extras.sh &
 
 # sxhkd
 sxhkd -c $HOME/.config/berry/sxhkdrc $HOME/.config/sxhkd/sxhkdrc.common &
 
 # redshift
 systemctl --user import-environment
-# systemctl --user start graphical-session.target
 systemctl --user restart redshift
 
 # picom

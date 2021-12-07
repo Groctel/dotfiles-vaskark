@@ -447,6 +447,11 @@
         <command>networkmanager_dmenu</command>
       </action>
     </keybind>
+    <keybind key="W-F7">
+      <action name="Execute">
+        <command>man2pdf.sh</command>
+      </action>
+    </keybind>
     <!-- Take a screenshot, say "Cheeeese!" -->
     <keybind key="W-Print">
       <action name="Execute">
@@ -509,7 +514,7 @@
         <command>pactl set-sink-mute @DEFAULT_SINK@ toggle</command>
       </action>
     </keybind>
-    <!-- Polybar -->
+    <!-- Polybar
     <keybind key="W-semicolon">
       <action name="Execute">
         <command>polybar-msg cmd toggle</command>
@@ -518,6 +523,17 @@
     <keybind key="W-S-semicolon">
       <action name="Execute">
         <command>polybar-msg cmd restart</command>
+      </action>
+    </keybind> -->
+    <!-- Lemonbar -->
+       <keybind key="W-semicolon">
+      <action name="Execute">
+        <command>sh -c 'pkill lemonbar 2>/dev/null || lemonbar-current'</command>
+      </action>
+    </keybind>
+    <keybind key="W-S-semicolon">
+      <action name="Execute">
+        <command>lemonbar-menu.sh</command>
       </action>
     </keybind>
     <!-- GLava -->
@@ -534,23 +550,28 @@
     <!-- Pywal -->
     <keybind key="W-F12">
       <action name="Execute">
-        <command>wal -f random_user -o wal-extras.sh</command>
+        <command>wal -q -f random_user -o wal-extras.sh</command>
       </action>
     </keybind>
     <keybind key="W-C-F12">
       <action name="Execute">
-        <command>wal -f random_dark -o wal-extras.sh</command>
+        <command>wal -q -f random_dark -o wal-extras.sh</command>
       </action>
     </keybind>
     <keybind key="W-S-F12">
       <action name="Execute">
-        <command>wal -R -o wal-extras.sh -o lemonbar-start.sh</command>
+        <command>wal -q +-R -o wal-extras.sh -o lemonbar-start.sh</command>
       </action>
     </keybind>
     <!-- sxiv -->
     <keybind key="W-equal">
       <action name="Execute">
         <command>sh -c 'ls -t $HOME/Pictures/* | head -20 | xargs sxiv -rt'</command>
+      </action>
+    </keybind>
+    <keybind key="W-S-equal">
+      <action name="Execute">
+        <command>sh -c 'ls -t $HOME/Pictures/wow/* | head -20 | xargs sxiv -rt'</command>
       </action>
     </keybind>
     <!-- Reload and Exit keybinds -->
@@ -572,7 +593,7 @@
     </keybind>
     <keybind key="W-Delete">
       <action name="Execute">
-        <command>pkill Xorg</command>
+        <command>exit.sh</command>
       </action>
     </keybind>
   </keyboard>

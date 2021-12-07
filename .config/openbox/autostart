@@ -22,10 +22,13 @@ systemctl --user restart redshift.service
 bash $HOME/.fehbg &
 
 # wal
-wal -R -o -wal-extras.sh -q &
+wal -q -R -o -wal-extras.sh &
 
 # lemonbar
-# lemonbar-current &
+lemonbar-current &
 
 # polybar
-pb-nf.sh &
+#pb-nf.sh &
+
+# touchegg
+touchegg.sh &

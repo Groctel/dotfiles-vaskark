@@ -11,8 +11,8 @@ case "$MENU" in
 		ln -s "$HOME"/.local/bin/lemonbar-start.sh "$HOME"/.local/bin/lemonbar-current
 		killall -9 lemonbar 2>/dev/null
 		lemonbar-current &
-		sed -i "s|geometry = .*$|geometry = \"0x0-15+45\"|g" ~/.cache/wal/dunstrc
-		killall -9 dunst 2>/dev/null
+		sed -i "s|offset = .*$|offset = 15+45|g" ~/.cache/wal/dunstrc
+		pkill dunst 2>/dev/null
 		dunst &
 		berryc edge_gap 40 0 0 0 &
 	;;
@@ -22,8 +22,8 @@ case "$MENU" in
 		ln -s "$HOME"/.local/bin/lemonbar-start-b.sh "$HOME"/.local/bin/lemonbar-current
 		killall -9 lemonbar 2>/dev/null
 		lemonbar-current &
-		sed -i "s|geometry = .*$|geometry = \"0x0-15+15\"|g" ~/.cache/wal/dunstrc
-		killall -9 dunst 2>/dev/null
+		sed -i "s|offset = .*$|offset = 15+15|g" ~/.cache/wal/dunstrc
+		pkill dunst 2>/dev/null
 		dunst &
 		berryc edge_gap 0 50 0 0 &
 	;;
@@ -33,8 +33,8 @@ case "$MENU" in
 		ln -s "$HOME"/.local/bin/lemonbar-nf-start.sh "$HOME"/.local/bin/lemonbar-current
 		killall -9 lemonbar 2>/dev/null
 		lemonbar-current &
-		sed -i "s|geometry = .*$|geometry = \"0x0-15+45\"|g" ~/.cache/wal/dunstrc
-		killall -9 dunst 2>/dev/null
+		sed -i "s|offset = .*$|offset = 15+45|g" ~/.cache/wal/dunstrc
+		pkill dunst 2>/dev/null
 		dunst &
 		berryc edge_gap 40 0 0 0 &
 	;;
@@ -44,8 +44,8 @@ case "$MENU" in
 		ln -s "$HOME"/.local/bin/lemonbar-nf-start-b.sh "$HOME"/.local/bin/lemonbar-current
 		killall -9 lemonbar 2>/dev/null
 		lemonbar-current &
-		sed -i "s|geometry = .*$|geometry = \"0x0-15+15\"|g" ~/.cache/wal/dunstrc
-		killall -9 dunst 2>/dev/null
+		sed -i "s|offset = .*$|offset = 15+15|g" ~/.cache/wal/dunstrc
+		pkill dunst 2>/dev/null
 		dunst &
 		berryc edge_gap 0 50 0 0 &
 	;;
