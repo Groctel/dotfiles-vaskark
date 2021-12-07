@@ -464,6 +464,11 @@
       </action>
     </keybind>
     <!-- Multimedia keys-->
+    <keybind key="A-F9">
+      <action name="Execute">
+        <command>mpd-notify.sh</command>
+      </action>
+    </keybind>
     <keybind key="W-A-F10">
       <action name="Execute">
         <command>mpc seek -00:00:05</command>
