@@ -2,7 +2,7 @@
 
 ## Lemonbar menu
 
-MENU="$(rofi -sep "|" -dmenu -i -p 'Lemonbars:' -location 0 -width 10 -lines 5 -font 'scientifica bold 8' <<< "Siji|Siji-b|NF|NF-b|OFF")"
+MENU="$(rofi -sep "|" -dmenu -i -p 'Lemonbars:' -location 0 -font 'scientifica bold 8' -theme-str 'window {width: 15%; lines: 5;}' <<< "Siji|Siji-b|NF|NF-b|Off")"
 
 case "$MENU" in
 	
@@ -50,7 +50,7 @@ case "$MENU" in
 		berryc edge_gap 0 50 0 0 &
 	;;
 
-	*OFF)
+	*Off)
 		killall -9 lemonbar 2>/dev/null
 	;;
 
