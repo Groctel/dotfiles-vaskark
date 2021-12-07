@@ -396,11 +396,6 @@
         <menu>root-menu</menu>
       </action>
     </keybind>
-    <keybind key="W-z">
-      <action name="Execute">
-        <command>xmenu.sh</command>
-      </action>
-    </keybind>
     <!-- Keybindings for running applications -->
     <keybind key="W-Return">
       <action name="Execute">
@@ -410,6 +405,11 @@
     <keybind key="W-S-Return">
       <action name="Execute">
         <command>kitty</command>
+      </action>
+    </keybind>
+    <keybind key="W-C-Return">
+      <action name="Execute">
+        <command>urxvt</command>
       </action>
     </keybind>
     <keybind key="W-Escape">
