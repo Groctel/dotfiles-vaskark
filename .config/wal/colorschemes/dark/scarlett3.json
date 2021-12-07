@@ -2,26 +2,26 @@
     "wallpaper": "/home/jason/Pictures/original-scarlett-black-and-white-43-jpg-cea3653e.jpg",
     "alpha": "100",
     "special": {
-        "background": "#1D2021",
-        "foreground": "#A89984",
-        "cursor": "#8BA59B"
+        "background": "#1d2021",
+        "foreground": "#aaaaaa",
+        "cursor": "#8ba59b"
     },
     "colors": {
-        "color0": "#1D2021",
-        "color1": "#FB543F",
-        "color2": "#95C085",
-        "color3": "#FAC03B",
-        "color4": "#0D6678",
-        "color5": "#8F4673",
-        "color6": "#8BA59B",
-        "color7": "#A89984",
-        "color8": "#665C54",
-        "color9": "#FB543F",
-        "color10": "#95C085",
-        "color11": "#FAC03B",
-        "color12": "#0D6678",
-        "color13": "#8F4673",
-        "color14": "#8BA59B",
-        "color15": "#FDF4C1"
+        "color0": "#1d2021",
+        "color1": "#fb543f",
+        "color2": "#a89984",
+        "color3": "#fac03b",
+        "color4": "#0d6678",
+        "color5": "#8f4673",
+        "color6": "#8ba59b",
+        "color7": "#aaaaaa",
+        "color8": "#34393b",
+        "color9": "#ff5d3d",
+        "color10": "#edca98",
+        "color11": "#ffff38",
+        "color12": "#088aa4",
+        "color13": "#c74d98",
+        "color14": "#a1eace",
+        "color15": "#e6e6e6"
     }
 }
