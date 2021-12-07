@@ -11,6 +11,6 @@ if [[ -n "${GLAVA}" ]]; then
 	sed -i "s|#define FLIP.*$|#define FLIP 1|g" ~/.config/glava/bars.glsl
     fi
     
-    killall -q glava && glava -d &>/dev/null &
+    pkill glava && glava -d &
 
 fi

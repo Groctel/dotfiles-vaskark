@@ -38,7 +38,7 @@ Uptime() {
 
 	UPTIME=$("$HOME"/.config/scripts/uptime.sh)
 	ICON=""
-	echo "%{F#000}%{B$color5}%{A:wal -f random_user -o wal-extras.sh:}  $ICON $UPTIME  %{A}%{B-}%{F-}"
+	echo "%{F#000}%{B$color5}%{A3:wal -f random_user -o wal-extras.sh:}  $ICON $UPTIME  %{A}%{B-}%{F-}"
 
 }
 
@@ -223,5 +223,5 @@ while true; do
 	%{l}$(Uptime) $(Window) \
 	%{c}$(Mpc) \
 	%{r}$(Wifi) $(Cpu) $(Memory) $(Battery) $(Volume) $(Time)"
-    sleep 0.1
+    sleep 0.5
 done

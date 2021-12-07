@@ -1,9 +1,6 @@
 #!/bin/bash
 
-rm -f "$HOME"/.config/touchegg/.touchegg.lock
-
 if pgrep -x touchegg; then
-	killall -q touchegg
+	killall -q touchegg 2> /dev/null
 fi
-
 touchegg &

@@ -4,7 +4,8 @@
 . "$HOME"/.cache/wal/colors.sh
 
 # berry
-if pgrep -x berry 1>/dev/null; then
+BERRY=$(pgrep -x berry)
+if [[ -n "$BERRY" ]]; then
 	berry0=$(sed -n 1p ~/.cache/wal/colors | sed 's/#//')
 	berry2=$(sed -n 3p ~/.cache/wal/colors | sed 's/#//')
 	berryc inner_focus_color   "$berry2"
@@ -14,21 +15,19 @@ if pgrep -x berry 1>/dev/null; then
 fi
 
 # openbox
-if pgrep -x openbox 1>/dev/null; then
+OPENBOX=$(pgrep -x openbox)
+if [[ -n "$OPENBOX" ]]; then
 	openbox --reconfigure
 fi
 
 # dunst
-if pgrep -x dunst 1>/dev/null; then
-	pkill dunst 2>/dev/null
-	dunst &
-fi
+pkill dunst; dunst &
 
 # lemonbar
-#if pgrep -x lemonbar 1>/dev/null; then
-#	pkill lemonbar 2>/dev/null
-#	lemonbar-current &
-#fi
+LEMONBAR=$(pgrep -x lemonbar)
+if [[ -n "$LEMONBAR" ]]; then
+	pkill lemonbar; lemonbar-current &
+fi
 
 # cava
 #sed -i "s|gradient_color_1.*$|gradient_color_1 = "\'$color2\'"|g" ~/.config/cava/config
@@ -36,7 +35,7 @@ fi
 
 # glava
 sed -i "s|#define COLOR @fg.*$|#define COLOR @fg:mix("$color2"ff, "$color10"aa, clamp(d / GRADIENT, 0, 1))|g" ~/.config/glava/bars.glsl
-if pgrep -x glava 1>/dev/null; then
-	pkill glava 2>/dev/null
-	glava -d &
+GLAVA=$(pgrep -x glava)
+if [[ -n "$GLAVA" ]]; then
+	pkill glava; glava -d &
 fi
