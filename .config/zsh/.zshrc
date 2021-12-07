@@ -17,12 +17,12 @@ kitty + complete setup zsh | source /dev/stdin
 
 # pywal
 (cat ~/.cache/wal/sequences &)
-source ~/.cache/wal/colors-tty.sh
+#source ~/.cache/wal/colors-tty.sh
 
 # aliases
 [ -f "$ZDOTDIR/.aliases" ] && source "$ZDOTDIR/.aliases"
 
-# mode
+# mode (emacs: e, vim: v)
 bindkey -e
 export KEYTIMEOUT=1
 
@@ -31,10 +31,14 @@ autoload edit-command-line; zle -N edit-command-line
 bindkey '^x^e' edit-command-line
 
 # urxvt/xterm: 35 (blink), 36 (no blink)
+# beam
 echo -e -n "\x1b[\x36 q"
 
 # clifm
 bindkey -s '^]' 'clifm\n'
+
+# w1
+bindkey -s '^{' 'w1\n'
 
 # ncmpcpp
 ncmpcppShow() {
@@ -51,11 +55,11 @@ f() {
 }
 
 # lf
-LFCD="$HOME/.config/lf/lfcd.sh"
-if [ -f "$LFCD" ]; then
-    source "$LFCD"
-fi
-bindkey -s '^[' 'lfcd\n'
+#LFCD="$HOME/.config/lf/lfcd.sh"
+#if [ -f "$LFCD" ]; then
+#    source "$LFCD"
+#fi
+#bindkey -s '^[' 'lfcd\n'
 
 [ -f "$HOME/.config/lf/icons" ] && source "$HOME/.config/lf/icons"
 
@@ -85,7 +89,10 @@ bindkey "$terminfo[kcud1]" history-substring-search-down
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 # pure
-fpath+=/usr/local/pure
-autoload -U promptinit; promptinit
-zstyle :prompt:pure:git:stash show yes
-prompt pure
+#fpath+=/usr/local/pure
+#autoload -U promptinit; promptinit
+#zstyle :prompt:pure:git:stash show yes
+#prompt pure
+
+# starship
+eval "$(starship init zsh)"
