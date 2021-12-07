@@ -422,9 +422,14 @@
         <command>thunar</command>
       </action>
     </keybind>
+    <keybind key="W-S-F1">
+      <action name="Execute">
+        <command>thunar-pkexec</command>
+      </action>
+    </keybind>
     <keybind key="W-F2">
       <action name="Execute">
-        <command>google-chrome-stable</command>
+        <command>google-chrome</command>
       </action>
     </keybind>
     <keybind key="W-F3">
@@ -541,7 +546,7 @@
         <command>lemonbar-menu.sh</command>
       </action>
     </keybind>
-    <!-- GLava -->
+    <!-- GLava 
     <keybind key="W-g">
       <action name="Execute">
         <command>sh -c 'pkill glava 2&gt;/dev/null || glava -d -a fifo'</command>
@@ -551,7 +556,7 @@
       <action name="Execute">
         <command/>
       </action>
-    </keybind>
+    </keybind> -->
     <!-- Pywal -->
     <keybind key="W-F12">
       <action name="Execute">
@@ -565,7 +570,7 @@
     </keybind>
     <keybind key="W-S-F12">
       <action name="Execute">
-        <command>wal -q +-R -o wal-extras.sh -o lemonbar-start.sh</command>
+        <command>wal -q -R -o wal-extras.sh</command>
       </action>
     </keybind>
     <!-- sxiv -->
