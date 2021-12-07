@@ -30,38 +30,23 @@ export KEYTIMEOUT=1
 autoload edit-command-line; zle -N edit-command-line
 bindkey '^x^e' edit-command-line
 
-# urxvt/xterm: 35 (blink), 36 (no blink)
-# beam
+# urxvt/xterm cursor beam: 35 (blink), 36 (no blink)
 echo -e -n "\x1b[\x36 q"
 
 # clifm
 bindkey -s '^]' 'clifm\n'
 
-# w1
-bindkey -s '^{' 'w1\n'
+# wal
+bindkey -s '^{' 'wal -f random_user -o wal-extras.sh\n'
 
 # ncmpcpp
-ncmpcppShow() {
-  BUFFER="ncmpcpp -q"
-  zle accept-line
-}
-zle -N ncmpcppShow
-bindkey '^\' ncmpcppShow
+bindkey -s '^\' 'ncmpcpp -q\n'
 
 # fff
 f() {
     fff "$@"
     cd "$(cat "${XDG_CACHE_HOME:=${HOME}/.cache}/fff/.fff_d")"
 }
-
-# lf
-#LFCD="$HOME/.config/lf/lfcd.sh"
-#if [ -f "$LFCD" ]; then
-#    source "$LFCD"
-#fi
-#bindkey -s '^[' 'lfcd\n'
-
-[ -f "$HOME/.config/lf/icons" ] && source "$HOME/.config/lf/icons"
 
 # functions
 source $ZDOTDIR/functions/fzf-edit 2>/dev/null
