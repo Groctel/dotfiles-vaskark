@@ -97,8 +97,8 @@ content-foreground = ${colors.color0}
 content-padding = 2
 
 click-left = polybar-msg cmd restart
-click-middle = wal -f random_user -o ~/.config/berry/wal/extras.sh
-click-right = subl ~/.config/berry/polybar/config
+click-right = wal -f random_user -o ~/.config/berry/wal/extras.sh
+click-middle = subl ~/.config/berry/polybar/config
 
 ##################################################
 
