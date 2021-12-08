@@ -37,7 +37,7 @@ echo -e -n "\x1b[\x36 q"
 bindkey -s '^]' 'clifm\n'
 
 # wal
-bindkey -s '^{' 'wal -f random_user -o wal-extras.sh\n'
+bindkey -s '^[' 'wal -f random_user -o wal-extras.sh\n'
 
 # ncmpcpp
 bindkey -s '^\' 'ncmpcpp -q\n'
