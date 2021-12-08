@@ -52,6 +52,7 @@ f() {
 source $ZDOTDIR/functions/fzf-edit 2>/dev/null
 source $ZDOTDIR/functions/fzf-kill 2>/dev/null
 source $ZDOTDIR/functions/fzf-man 2>/dev/null
+source $ZDOTDIR/functions/vi-mode-cursor 2>/dev/null
 
 # plugins
 source $ZDOTDIR/plugins/zsh-extract/extract.plugin.zsh 2>/dev/null
