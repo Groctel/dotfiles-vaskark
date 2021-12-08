@@ -10,7 +10,7 @@ autoload -Uz compinit
 zstyle ':completion:*' matcher-list 'm:{a-zA-Z}={A-Za-z}' 'r:|?=**'
 zmodload zsh/complist
 compinit
-_comp_options+=(globdots)       # Include hidden files.
+_comp_options+=(globdots) # Include hidden files.
 
 # kitty
 kitty + complete setup zsh | source /dev/stdin
@@ -22,7 +22,7 @@ kitty + complete setup zsh | source /dev/stdin
 # aliases
 [ -f "$ZDOTDIR/.aliases" ] && source "$ZDOTDIR/.aliases"
 
-# mode (emacs: e, vim: v)
+# mode (e,v)
 bindkey -e
 export KEYTIMEOUT=1
 
@@ -33,14 +33,16 @@ bindkey '^x^e' edit-command-line
 # urxvt/xterm cursor beam: 35 (blink), 36 (no blink)
 echo -e -n "\x1b[\x36 q"
 
-# clifm
+# clifm (ctrl+])
 bindkey -s '^]' 'clifm\n'
 
-# wal
-bindkey -s '^[' 'wal -f random_user -o wal-extras.sh\n'
-
-# ncmpcpp
-bindkey -s '^\' 'ncmpcpp -q\n'
+# ncmpcpp (ctrl+\)
+ncmpcppShow() {
+  BUFFER="ncmpcpp -q"
+  zle accept-line
+}
+zle -N ncmpcppShow
+bindkey '^\' ncmpcppShow
 
 # fff
 f() {
@@ -52,7 +54,6 @@ f() {
 source $ZDOTDIR/functions/fzf-edit 2>/dev/null
 source $ZDOTDIR/functions/fzf-kill 2>/dev/null
 source $ZDOTDIR/functions/fzf-man 2>/dev/null
-source $ZDOTDIR/functions/vi-mode-cursor 2>/dev/null
 
 # plugins
 source $ZDOTDIR/plugins/zsh-extract/extract.plugin.zsh 2>/dev/null
