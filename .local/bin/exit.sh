@@ -9,8 +9,7 @@ MENU="$(rofi -sep "|" \
 	-p 'Leaving?' \
 	-location 0 \
 	-hide-scrollbar \
-	-l 3 \
-        -theme-str 'window {width: 10%;}' \
+    -theme-str 'window {width: 10%;} listview {lines: 3;}' \
 	<<< "Logout|Restart|Shutdown")"
 
 case "$(uname -s)" in

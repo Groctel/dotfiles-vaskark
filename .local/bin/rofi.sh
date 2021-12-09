@@ -11,4 +11,4 @@ rofi -show drun \
 -hide-scrollbar \
 -matching normal \
 -font 'scientifica bold 8' \
--theme-str 'window {width: 15%;}'
+-theme-str 'window {width: 15%;} listview {lines: 8;}'
