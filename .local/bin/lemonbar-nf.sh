@@ -43,14 +43,14 @@ Uptime() {
 
 Workspaces() {
 
-	TOTAL=$(xdotool get_num_desktops)
 	CURRENT=$(( $(xdotool get_desktop) + 1 ))
+	TOTAL=$(xdotool get_num_desktops)
 
 	for ((a=1; a <= $TOTAL ; a++))
 	do
 		if [ "$a" = "$CURRENT" ]; then
 			# mark current
-			echo -n " %{F$color2}$a%{F-} "
+			echo -n " %{F$color5}$a%{F-} "
 		else
 			# otherwise
 			echo -n " $a "
