@@ -48,6 +48,8 @@ case "$MENU" in
 
 	*Off)
 		killall lemonbar 2>/dev/null
+		sed -i "s|offset = .*$|offset = 15x15|g" ~/.cache/wal/dunstrc
+		pkill dunst
 	;;
 
 esac

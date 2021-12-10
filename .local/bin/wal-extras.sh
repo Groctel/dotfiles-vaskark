@@ -20,8 +20,11 @@ if [[ -n "$OPENBOX" ]]; then
 	openbox --reconfigure
 fi
 
-# dunst
-pkill dunst
+# dunst 
+DUNST=$(pgrep -x dunst)
+if [[ "$DUNST" ]]; then
+	pkill dunst
+fi
 
 # lemonbar
 LEMONBAR=$(pgrep -x lemonbar)
