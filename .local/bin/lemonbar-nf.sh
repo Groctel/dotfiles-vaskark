@@ -3,10 +3,11 @@
 ##
 ## Lemonbar
 ## Fonts: scientifica (bdf), nerd font (ttf)
+## Required: xdotool
 ##
 
 
-# colours
+# wal
 . "$HOME/.cache/wal/colors.sh"
 
 
@@ -50,7 +51,7 @@ Workspaces() {
 	do
 		if [ "$a" = "$CURRENT" ]; then
 			# mark current
-			echo -n " %{F$color5}$a%{F-} "
+			echo -n "%{F$color5} $a %{F-}"
 		else
 			# otherwise
 			echo -n " $a "

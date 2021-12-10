@@ -8,10 +8,14 @@ super + semicolon
    pkill lemonbar || lemonbar-current
 super + shift + semicolon
    lemonbar-menu.sh
+super + ctrl + semicolon
+   pkill lemonbar && lemonbar-current
 
 # polybar
-#super + {_,shift +} semicolon
-#    polybar-msg cmd {toggle,restart}
+#super + semicolon
+#    polybar-msg cmd toggle
+#super + shift + semicolon
+#    polybar-menu.sh
 
 # glava
 super + g
