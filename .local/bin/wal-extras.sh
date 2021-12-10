@@ -21,7 +21,7 @@ if [[ -n "$OPENBOX" ]]; then
 fi
 
 # dunst
-pkill dunst; dunst &
+pkill dunst
 
 # lemonbar
 LEMONBAR=$(pgrep -x lemonbar)

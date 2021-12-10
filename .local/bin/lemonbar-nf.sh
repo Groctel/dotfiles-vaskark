@@ -6,9 +6,8 @@
 ##
 
 
+# colours
 . "$HOME/.cache/wal/colors.sh"
-
-##########
 
 
 Session() {
@@ -40,6 +39,24 @@ Uptime() {
 	ICON=""
 	echo "%{F#000}%{B$color5}%{A3:wal -f random_user -o wal-extras.sh:}  $ICON $UPTIME  %{A}%{B-}%{F-}"
 	
+}
+
+Workspaces() {
+
+	TOTAL=$(xdotool get_num_desktops)
+	CURRENT=$(( $(xdotool get_desktop) + 1 ))
+
+	for ((a=1; a <= $TOTAL ; a++))
+	do
+		if [ "$a" = "$CURRENT" ]; then
+			# mark current
+			echo -n " %{F$color2}$a%{F-} "
+		else
+			# otherwise
+			echo -n " $a "
+		fi
+	done
+
 }
 
 Mpc() {
@@ -212,12 +229,10 @@ Time() {
 }
 
 
-##########
-
-
+# begin
 while true; do
     echo -e "\
-	%{l}$(Uptime) $(Window) \
+	%{l}$(Uptime) $(Workspaces) \
 	%{c}$(Mpc) \
     %{r}$(Wifi) $(Cpu) $(Memory) $(Battery) $(Volume) $(Time)"
     sleep 0.5
