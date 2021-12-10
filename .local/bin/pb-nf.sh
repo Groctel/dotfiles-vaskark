@@ -10,8 +10,11 @@ else
 fi
 
 # berry
-berryc edge_gap 0 50 0 0 &
+BERRY=$(pgrep -x berry)
+if [[ "$BERRY" ]]; then
+    berryc edge_gap 0 50 0 0 &
+fi
 
 # dunst
 #sed -i "s|geometry = .*$|geometry = \"0x0-15+15\"|g" ~/.cache/wal/colors-dunst &
-pkill dunst; dunst &
+pkill dunst
