@@ -39,19 +39,25 @@ output X11-1 pos 0 0 res 1920x1080
 ### Colours (pywal)
 include "$HOME/.cache/wal/colors-sway"
 
+#border  background text indicator child_border
+client.focused $color2 $color2 $color0 $color2 $color2
+client.focused_inactive $color2 $color2 $color0 $color2 $color2
+client.unfocused $color2 $color0 $color2 $color2
+client.urgent $color1 $color0 $color2 $color2
+client.placeholder $color1 $color0 $color2 $color2
+
+client.background $color2
+
 ### Style
-default_border pixel 2
-default_floating_border pixel 2
+default_border pixel 1
+default_floating_border pixel 1
 gaps inner 10
 gaps outer 10 
 smart_gaps off
 smart_borders off
 
-### Background
+### Background (pywal)
 output * background $wallpaper fill
-
-### Windows
-client.focused $color2 $background $color2 $color0 $background
 
 ### Idle configuration
 #
@@ -80,6 +86,13 @@ exec swayidle -w \
 # You can get the names of your inputs by running: swaymsg -t get_inputs
 # Read `man 5 sway-input` for more information about this section.
 
+input * {
+    xkb_layout "us"
+}
+
+### Cursor
+seat seat0 xcursor_theme Paper 24
+
 ### Key bindings
 #
 # Basics:
@@ -102,10 +115,10 @@ exec swayidle -w \
     floating_modifier $mod normal
 
     # Reload the configuration file
-    bindsym $mod+Shift+c reload
+    bindsym $mod+Shift+r reload
 
     # Exit sway (logs you out of your Wayland session)
-    bindsym $mod+Delete exec swaynag -t warning -m 'You pressed the exit shortcut. Do you really want to exit sway? This will end your Wayland session.' -b 'Yes, exit sway' 'swaymsg exit'
+    # bindsym $mod+Delete exec swaynag -t warning -m 'You pressed the exit shortcut. Do you really want to exit sway? This will end your Wayland session.' -b 'Yes, exit sway' 'swaymsg exit'
 #
 # Moving around:
 #
@@ -223,46 +236,76 @@ bindsym $mod+r mode "resize"
 # Status Bar:
 #
 # Read `man 5 sway-bar` for more information about this section.
-bar {
-    position top
-    font pango:scientifica 8
-    height 20
-    gaps 10
-    status_padding 10
-    #mode hide
-    #modifier $mod
-    separator_symbol |
+#bar {
+#    position top
+#    font pango:scientifica 8
+#    height 20
+#    gaps 10
+#    status_padding 10
+#    #mode hide
+#    #modifier $mod
+#    separator_symbol |
 
     # When the status_command prints a new line to stdout, swaybar updates.
     # The default just shows the current date and time.
-    status_command while date +'%-I:%M %p '; do sleep 1; done
+#   status_command while date +'%-I:%M %p '; do sleep 1; done
 
-    colors {
-        statusline $color7
-        background $color0
-        separator $color7
-        focused_workspace $color0 $color2 $color0
-        inactive_workspace $color0 $color0 $color2
-    }
-}
+#    colors {
+#        statusline #666666
+#        background $color0
+#        separator $color7
+#        focused_workspace $color0 $color2 $color0
+#        inactive_workspace $color0 $color0 #666666
+#    }
+#}
 
 include /etc/sway/config.d/*
 
-#
-# Keybindings
-#
+### More keybindings
 
 bindsym XF86AudioRaiseVolume exec pactl set-sink-volume @DEFAULT_SINK@ +5%
 bindsym XF86AudioLowerVolume exec pactl set-sink-volume @DEFAULT_SINK@ -5%
 bindsym XF86AudioMute exec pactl set-sink-mute @DEFAULT_SINK@ toggle
-bindsym XF86MonBrightnessDown exec brightnessctl set 5%-
-bindsym XF86MonBrightnessUp exec brightnessctl set +5%
+
+bindsym XF86MonBrightnessUp exec light -A 5
+bindsym XF86MonBrightnessDown exec light -U 5
+
 bindsym $mod1+F10 exec mpc prev
 bindsym $mod1+F11 exec mpc toggle
 bindsym $mod1+F12 exec mpc next
 
-#
-# Misc
-#
+bindsym $mod+F12 exec wal -q -f random_user -o wal-extras.sh
+bindsym $mod+Shift+F12 exec wal -q -R -o wal-extras.sh
 
-font pango:scientifica bold 8
+bindsym $mod+F1 exec nemo
+bindsym $mod+F2 exec google-chrome
+bindsym $mod+F4 exec feh --randomize --bg-fill --recursive --no-fehbg ~/Pictures/*.(png|jpg)
+bindsym $mod+F5 exec date.sh
+bindsym $mod+F6 exec networkmanager_dmenu
+bindsym $mod+F7 exec man2pdf.sh
+
+bindsym $mod+Control+e exec subl ~/.config/sway/config
+bindsym $mod+semicolon exec pkill waybar || waybar
+
+### Misc
+
+font pango:scientifica 8
+
+### System menu
+set $system System: logout (l), suspend (s), reboot (r), shutdown (S), UEFI (R)
+mode "$system" {
+    # logout
+    bindsym l exec swaymsg exit, mode "default"
+    # suspend
+    bindsym s exec systemctl suspend, mode "default"
+    # reboot
+    bindsym r exec systemctl reboot, mode "default"
+    # shutdown
+    bindsym Shift+s exec systemctl poweroff -i, mode "default"
+    # uefi
+    bindsym Shift+r exec systemctl reboot --firmware-setup, mode "default"
+    # back to normal
+    bindsym Return mode "default"
+    bindsym Escape mode "default"
+}
+bindsym $mod+Delete mode "$system"
