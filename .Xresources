@@ -56,27 +56,35 @@ URxvt.resize-font.show: C-slash
 URxvt.bell-command: canberra-gtk-play -i bell
 
 !! XTerm
-xterm*termName: xterm-256color
-xterm*scrollBar: false
-xterm*geometry: 68x20
-xterm*borderWidth: 0
-xterm*internalBorder: 20
-xterm*renderFont: true
-xterm*faceName: spleen:pixelsize=12:antialias=false
-!xterm*font: spleen-6x12
-xterm*boldMode: false
-xterm*on2Clicks: word
-xterm*on3Clicks: line
-xterm*dynamicColors: On
-xterm*saveLines: 2000
-xterm*bellIsUrgent: true
-xterm*visualBell: true
-xterm*visualBellLine: true
-xterm*selectToClipboard: true
-xterm*metaSendsEscape: true
-xterm*eightBitInput: false
-xterm*modifyCursorKeys: 1
-xterm*modifyFunctionKeys: 1
+XTerm*termName: xterm-256color
+XTerm*geometry: 80x24
+XTerm*borderWidth: 0
+XTerm*internalBorder: 20
+XTerm*renderFont: true
+! XTerm*faceName: spleen:pixelsize=12:antialias=false
+! XTerm*faceSize: 8
+XTerm*font: -*-lemon-*
+XTerm*allowBoldFonts: false
+XTerm*on2Clicks: word
+XTerm*on3Clicks: line
+XTerm*dynamicColors: On
+XTerm*saveLines: 2000
+XTerm*bellIsUrgent: true
+XTerm*visualBell: true
+XTerm*visualBellLine: true
+XTerm*selectToClipboard: true
+XTerm*metaSendsEscape: true
+XTerm*eightBitInput: false
+XTerm*modifyCursorKeys: 1
+XTerm*modifyFunctionKeys: 1
+
+!! Key bindings
+XTerm.vt100.translations: #override \n\
+    Ctrl Shift <Key>C: copy-selection(CLIPBOARD) \n\
+    Ctrl Shift <Key>V: insert-selection(CLIPBOARD) \n\
+    Ctrl <Key> minus: smaller-vt-font() \n\
+    Ctrl <Key> plus: larger-vt-font() \n\
+    Ctrl <Key> 0: set-vt-font(d)
 
 !! Colours
 #include ".cache/wal/colors.Xresources"
