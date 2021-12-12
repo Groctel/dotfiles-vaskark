@@ -10,5 +10,6 @@ case ${session} in
     bspwm) exec /usr/bin/bspwm ;;
     openbox) exec /usr/bin/openbox-session ;;
     gnome) exec /usr/bin/gnome-session ;;
+    sway) exec /usr/bin/sway ;;
     *) exec $1 ;;
 esac

@@ -46,9 +46,9 @@ export FZF_DEFAULT_COMMAND="fd --hidden --follow --exclude '.git' --exclude '.ca
 export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND --type f"
 export FZF_ALT_C_COMMAND="$FZF_DEFAULT_COMMAND --type d"
 export FZF_DEFAULT_OPTS="
---layout=reverse-list
+--layout=reverse
 --info=inline
---height=50%
+--height=40%
 --multi
 --border=sharp
 --preview-window=:hidden
@@ -65,7 +65,5 @@ export FFF_COL3=4   # sel
 export FFF_COL4=5   # cursor
 export FFF_COL5=0   # status fg
 
-# kunst
-export KUNST_SIZE="350x350"
-export KUNST_POSITION="+50+50"
-export KUNST_MUSIC_DIR="$HOME/Music/"
+# micro
+export MICRO_TRUECOLOR=1
