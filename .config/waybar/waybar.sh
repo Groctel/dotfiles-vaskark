@@ -6,5 +6,5 @@ killall -q waybar
 # Wait until the processes have been shut down
 while pgrep -x waybar >/dev/null; do sleep 0.5; done
 
-# Launch main
+# Launch
 waybar

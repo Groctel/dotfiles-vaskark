@@ -1,4 +1,4 @@
-/* Pywal */
+/* Colours */
 @import url('file:///home/jason/.cache/wal/colors-waybar.css');
 
 * {
@@ -6,6 +6,7 @@
     border-radius: 0;
     /* `otf-font-awesome` is required to be installed for icons */
     font-family: scientifica, UbuntuMono;
+    font-weight: bold;
     font-size: 10px;
     min-height: 0;
 }
@@ -134,10 +135,6 @@ label:focus {
     background-color: @color6;
 }
 
-#disk {
-    background-color: #964B00;
-}
-
 #backlight {
     background-color: #90b1b1;
 }
@@ -166,11 +163,11 @@ label:focus {
 }
 
 #temperature.critical {
-    background-color: #eb4d4b;
+    background-color: @color1;
 }
 
 #tray {
-    background-color: #2980b9;
+    background-color: @color8;
 }
 
 #tray > .passive {
