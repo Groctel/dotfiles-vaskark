@@ -10,7 +10,7 @@ Plug 'machakann/vim-highlightedyank'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --no-bash --no-fish' }
 Plug 'dylanaraps/wal.vim'
 Plug 'preservim/nerdtree'
-Plug 'mcchrish/nnn.vim'
+" Plug 'mcchrish/nnn.vim'
 Plug 'scrooloose/nerdcommenter'
 call plug#end()
 
@@ -269,7 +269,7 @@ let g:lightline.inactive = {
     \           [ 'gitbranch', 'readonly', 'filename', 'modified' ] ],
     \ 'right': [ [ 'lineinfo' ],
     \            [ 'percent' ],
-    \            [ 'filetype' ] ]
+    \            [ 'filetype', 'fileencoding' ] ]
     \ }
 
 let g:lightline.tabline = {

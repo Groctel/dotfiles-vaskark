@@ -6,6 +6,7 @@ set $down j
 set $up k
 set $right l
 set $term alacritty
+set $term2 kitty
 set $menu rofi.sh | xargs swaymsg exec --
 
 include /etc/sway/config-vars.d/*
@@ -51,6 +52,7 @@ input * {
 ### keybindings
 # basics
 bindsym $mod+Return exec $term
+bindsym $mod+Shift+Return exec $term2
 bindsym $mod+Shift+q kill
 bindsym $mod+d exec $menu
 floating_modifier $mod normal
@@ -155,21 +157,21 @@ mode "$system" {
 bindsym $mod+Delete mode "$system"
 
 ### status bar
-bar {
-   position top
-   font pango:scientifica 8
-   height 22
-   status_padding 10
+# bar {
+   # position top
+   # font pango:scientifica 8
+   # height 22
+   # status_padding 10
 
-   status_command while date +'%l:%M %p '; do sleep 1; done
+   # status_command while date +'%l:%M %p '; do sleep 1; done
 
-   colors {
-       statusline $color7
-       background $color0
-       focused_workspace $color0 $color2 $color0
-       inactive_workspace $color0 $color0 #666666
-   }
-}
+   # colors {
+   #     statusline $color2
+   #     background $color0
+   #     focused_workspace $color0 $color2 $color0
+   #     inactive_workspace $color0 $color0 #666666
+   # }
+# }
 
 include /etc/sway/config.d/*
 
@@ -195,3 +197,7 @@ bindsym $mod+Shift+F12 exec wal -q -R -o wal-extras.sh
 
 bindsym $mod+Shift+e exec subl ~/.config/sway/config
 bindsym $mod+semicolon exec pkill waybar || waybar
+
+### start
+exec systemctl --user stop redshift
+exec_always ~/.config/waybar/waybar.sh
