@@ -3,10 +3,11 @@
 ##
 ## Lemonbar
 ## Fonts: scientifica (bdf), siji (bdf)
+## Required: xdotool
 ##
 
 
-# colours
+# wal
 . "$HOME/.cache/wal/colors.sh"
 
 
@@ -174,7 +175,7 @@ Volume() {
 		if [ -n "$NOTMUTED" ] ; then
 			VOL=$(awk -F"[][]" '/Left:/ { print $2 }' <(amixer -D pulse sget Master) | sed 's/%//g')
 			ICON=""
-			echo "%{F$color4}$ICON%{F-} $VOL% "
+			echo "%{A3:pavucontrol:}%{A4:pactl set-sink-volume @DEFAULT_SINK@ +5%:}%{A5:pactl set-sink-volume @DEFAULT_SINK@ -5%:}%{F$color4}$ICON%{F-} $VOL% %{A}%{A}%{A}"
 		else
 			ICON=""
 			echo "%{F#555}$ICON%{F-} --% "

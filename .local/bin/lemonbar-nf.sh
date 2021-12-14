@@ -108,7 +108,6 @@ Cpu() {
 
 	CPU=$("$HOME"/.config/scripts/cpu.sh)
 	ICON="﬙"
-        #ICON="﨎"
 	echo "%{F$color4}$ICON%{F-} $CPU "
 
 }
@@ -176,7 +175,7 @@ Volume() {
 		if [ -n "$NOTMUTED" ] ; then
 			VOL=$(awk -F"[][]" '/Left:/ { print $2 }' <(amixer -D pulse sget Master) | sed 's/%//g')
 			ICON="墳"
-			echo "%{F$color4}$ICON%{F-} $VOL% "
+			echo "%{A3:pavucontrol:}%{A4:pactl set-sink-volume @DEFAULT_SINK@ +5%:}%{A5:pactl set-sink-volume @DEFAULT_SINK@ -5%:}%{F$color4}$ICON%{F-} $VOL% %{A}%{A}%{A}"
 		else
 			ICON="婢"
 			echo "%{F#555}$ICON%{F-} --% "
