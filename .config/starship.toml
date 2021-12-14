@@ -21,8 +21,6 @@ disabled = false
 min_time = 500
 format = "took [$duration](bold yellow)"
 
-[directory]
-
 [git_branch]
 symbol = "🌱 "
 

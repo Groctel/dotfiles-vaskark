@@ -48,7 +48,7 @@ export FZF_ALT_C_COMMAND="$FZF_DEFAULT_COMMAND --type d"
 export FZF_DEFAULT_OPTS="
 --layout=reverse
 --info=inline
---height=40%
+--height=50%
 --multi
 --border=sharp
 --preview-window=:hidden
@@ -64,6 +64,3 @@ export FFF_COL2=5   # status bg
 export FFF_COL3=4   # sel
 export FFF_COL4=5   # cursor
 export FFF_COL5=0   # status fg
-
-# micro
-export MICRO_TRUECOLOR=1
