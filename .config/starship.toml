@@ -22,8 +22,6 @@ min_time = 500
 format = "took [$duration](bold yellow)"
 
 [directory]
-truncation_length = 8
-truncation_symbol = "…/"
 
 [git_branch]
 symbol = "🌱 "
@@ -62,21 +60,6 @@ deleted = "🗑"
 ssh_only = true
 format =  "on [$hostname](bold cyan) "
 disabled = false
-
-# [jobs]
-# symbol = "+"
-# number_threshold = 4
-# symbol_threshold = 0
-
-[line_break]
-disabled = false
-
-[memory_usage]
-threshold = -1
-format = "$symbol [${ram_pct}]($style) "
-style = "bold dimmed green"
-symbol= "🐏"
-disabled = true
 
 [username]
 format = "[$user]($style) "
