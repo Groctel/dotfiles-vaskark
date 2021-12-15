@@ -36,7 +36,7 @@ cherry_pick = "[🍒 PICKING](bold red)"
 
 [git_status]
 conflicted = "🏳"
-ahead = "🏎💨"
+ahead = "💨"
 behind = "😰"
 diverged = "😵"
 up_to_date = "✓"
@@ -49,8 +49,7 @@ deleted = "🗑"
 
 [hostname]
 ssh_only = true
-format =  "on [$hostname](bold cyan) "
-disabled = false
+format =  ">> [$hostname](bold cyan) "
 
 [username]
 format = "[$user]($style) "
