@@ -22,7 +22,7 @@ fi
 
 # dunst 
 DUNST=$(pgrep -x dunst)
-if [[ "$DUNST" ]]; then
+if [[ -n "$DUNST" ]]; then
 	pkill dunst
 fi
 
