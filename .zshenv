@@ -25,6 +25,9 @@ export MANPAGER='nvim +Man!'
 # scaling
 export QT_AUTO_SCREEN_SCALE_FACTOR=0
 
+# qt5
+export QT_QPA_PLATFORMTHEME=qt5ct
+
 # pfetch
 export PF_INFO="os kernel uptime shell wm memory palette" 
 export PF_COL1=2
@@ -46,7 +49,8 @@ export FZF_DEFAULT_COMMAND="fd --hidden --follow --exclude '.git' --exclude '.ca
 export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND --type f"
 export FZF_ALT_C_COMMAND="$FZF_DEFAULT_COMMAND --type d"
 export FZF_DEFAULT_OPTS="
---layout=reverse
+--header-first
+--layout=reverse-list
 --info=inline
 --height=50%
 --multi
