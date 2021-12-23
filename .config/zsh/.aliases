@@ -36,18 +36,18 @@ alias m='micro'
 
 # lsd
 alias lsd='lsd -h --group-dirs first --no-symlink'
-# alias ls='lsd'
-# alias l='ls -l'
-# alias ll='ls -Al'
-# alias lt='ls --tree --depth 2'
+alias ls='lsd'
+alias l='ls -l'
+alias ll='ls -Al'
+alias lt='ls --tree --depth 2'
 
 # exa
 alias exa='exa --icons --git -g --time-style long-iso --group-directories-first --git-ignore'
-alias ls='exa'
-alias l1='ls -1'
-alias l='ls -l'
-alias ll='ls -al'
-alias lt='ls -T -L 2'
+# alias ls='exa'
+# alias l1='ls -1'
+# alias l='ls -l'
+# alias ll='ls -al'
+# alias lt='ls -T -L 2'
 
 # suffix
 alias -g G='| grep -i'
@@ -107,7 +107,7 @@ alias nfs='clear;neofetch --config ~/.config/neofetch/config-small.conf'
 
 # fonts
 alias f2s='fonttosfnt -v -r -b -c -g 2 -m 2 -o'
-alias fcc='fc-cache -fv'
+alias fcc='fc-cache -rv'
 alias fcl='fc-list'
 
 # pywal
@@ -126,8 +126,8 @@ alias mkc='make LSMOD=$HOME/.config/modprobed.db localmodconfig'
 alias mkp='make deb-pkg -j4 LOCALVERSION=-custom'
 
 # networking
-alias rnm='sudo systemctl restart network-manager'
-alias up='nmcli c u'
+alias rnm='sudo systemctl restart NetworkManager'
+alias up='nmcli c u --ask'
 alias dn='nmcli c d'
 alias ndw='nmcli d wifi'
 alias i='ip -br -c a'
@@ -140,6 +140,11 @@ alias wsd='windscribe disconnect'
 alias s1='sudo make install'
 alias s2='sudo make PREFIX=/usr/local install'
 alias s3='sudo ninja -C build install'
+
+# systemd
+alias sc='systemctl'
+alias scf='systemctl --failed'
+alias scu='systemctl --user'
 
 # arch
 alias unlock='sudo rm /var/lib/pacman/db.lck'
