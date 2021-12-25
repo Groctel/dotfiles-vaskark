@@ -47,7 +47,7 @@ Workspaces() {
 	CURRENT=$(( $(xdotool get_desktop) + 1 ))
 	TOTAL=$(xdotool get_num_desktops)
 
-	for ((a=1; a <= $TOTAL ; a++))
+	for (( a=1; a <= TOTAL ; a++ ))
 	do
 		if [ "$a" = "$CURRENT" ]; then
 			# mark current
@@ -93,9 +93,9 @@ Wifi() {
      		ICON_DOWN=""
 
      		if [ "$RKBPS" -le 999 ]; then
-				echo "%{F$color4}$ICON%{F-} $ESSID [%{F$color4}$ICON_DOWN%{F-} $RKBPS Kb/s] "
+				echo "%{F$color4}$ICON%{F-} $ESSID [%{F$color4}$ICON_DOWN%{F-} $RKBPS Kb/s]"
 			else
-				echo "%{F$color4}$ICON%{F-} $ESSID [%{F$color4}$ICON_DOWN%{F-} $MKBPS Mb/s] "
+				echo "%{F$color4}$ICON%{F-} $ESSID [%{F$color4}$ICON_DOWN%{F-} $MKBPS Mb/s]"
 			fi
 
 		fi
@@ -108,7 +108,7 @@ Cpu() {
 
 	CPU=$("$HOME"/.config/scripts/cpu.sh)
 	ICON=""
-	echo "%{F$color4}$ICON%{F-} $CPU "
+	echo "%{F$color4}$ICON%{F-} $CPU"
 
 }
 
@@ -123,10 +123,10 @@ Battery() {
 
 		if [ -n "$CHARGE" ] ; then
 			ICON=""
-			echo "%{F$color4}$ICON%{F-} $CAPACITY% "
+			echo "%{F$color4}$ICON%{F-} $CAPACITY%"
 		else
   			ICON=""
-  			echo "%{F$color4}$ICON%{F-} $CAPACITY% "
+  			echo "%{F$color4}$ICON%{F-} $CAPACITY%"
 		fi
 
 	;;
@@ -135,7 +135,7 @@ Battery() {
 
 		CAPACITY=$(apm | awk 'NR==1 { print $4 }')
 	  	ICON=""
-  		echo "%{F$color4}$ICON%{F-} $CAPACITY% "
+  		echo "%{F$color4}$ICON%{F-} $CAPACITY%"
 
 	;;
 
@@ -143,7 +143,7 @@ Battery() {
 
 		CAPACITY=$(apm | awk 'NR==5 { print $4 }')
 		ICON=""
-  		echo "%{F$color4}$ICON%{F-} $CAPACITY% "
+  		echo "%{F$color4}$ICON%{F-} $CAPACITY%"
 
   	;;
 
@@ -160,7 +160,7 @@ Memory() {
 
 	USED=$(( 100*(T - F - B - C) / T ))
 	ICON=""
-	echo "%{F$color4}$ICON%{F-} $USED% "
+	echo "%{F$color4}$ICON%{F-} $USED%"
 
 }
 
@@ -224,14 +224,14 @@ Time() {
 
     TIME=$("$HOME"/.config/scripts/time.sh)
     ICON=""
-    echo "%{F#000}%{B$color2}  $ICON $TIME  %{B-}%{F-}"
+    echo "%{F#000}%{B$color2}  $ICON $TIME  %{U-}%{B-}%{F-}"
 
 }
 
 
 # begin
 while true; do
-    echo -e "\
+    echo "\
 	%{l}$(Uptime) $(Workspaces) \
 	%{c}$(Mpc) \
 	%{r}$(Wifi) $(Cpu) $(Memory) $(Battery) $(Volume) $(Time)"
