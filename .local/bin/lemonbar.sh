@@ -47,7 +47,7 @@ Workspaces() {
 	CURRENT=$(( $(xdotool get_desktop) + 1 ))
 	TOTAL=$(xdotool get_num_desktops)
 
-	for (( a=1; a <= TOTAL ; a++ ))
+	for ((a=1; a <= TOTAL ; a++))
 	do
 		if [ "$a" = "$CURRENT" ]; then
 			# mark current
