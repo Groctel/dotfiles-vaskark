@@ -22,10 +22,8 @@ export VISUAL='nvim'
 # man
 export MANPAGER='nvim +Man!'
 
-# scaling
+# qt
 export QT_AUTO_SCREEN_SCALE_FACTOR=0
-
-# qt5
 export QT_QPA_PLATFORMTHEME=qt5ct
 
 # pfetch
