@@ -36,23 +36,21 @@ alias m='micro'
 
 # lsd
 alias lsd='lsd -h --group-dirs first --no-symlink'
-alias ls='lsd'
-alias l='ls -l'
-alias ll='ls -Al'
-alias lt='ls --tree --depth 2'
+# alias ls='lsd'
+# alias l='ls -l'
+# alias ll='ls -Al'
+# alias lt='ls --tree --depth 2'
 
 # exa
-alias exa='exa --icons --git -g --time-style long-iso --group-directories-first --git-ignore'
-# alias ls='exa'
-# alias l1='ls -1'
-# alias l='ls -l'
-# alias ll='ls -al'
-# alias lt='ls -T -L 2'
+alias exa='exa --icons --git -g --time-style long-iso --group-directories-first -@ -H'
+alias ls='exa'
+alias l1='ls -1'
+alias l='ls -l'
+alias ll='ls -al'
+alias lt='ls -T -L 2'
 
-# suffix
+# grep
 alias -g G='| grep -i'
-alias -s html='google-chrome-stable'
-alias -s md='$EDITOR'
 
 # zsh
 alias zc="$EDITOR $ZDOTDIR/.zshrc"
@@ -76,8 +74,9 @@ alias rhb='run-help bindkey'
 alias lml='exa -l -r -s time /var/log | tail'
 
 # journal
-alias jcb='journalctl -p 3 -xb'
-alias jce='journalctl -p 3 -xe'
+alias jctl='journalctl'
+alias jcb='jctl -p 3 -b'
+alias jce='jctl -p 3 -e'
 
 # bluetoothctl
 alias btc='bluetoothctl'
