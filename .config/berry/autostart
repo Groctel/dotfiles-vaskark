@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 # Set decoration geometry
 berryc border_width         0
@@ -20,6 +20,9 @@ berryc smart_place "true"
 berryc draw_text   "true"
 berryc edge_lock   "true"
 berryc set_font    "scientifica-8:bold"
+berryc json_status "true"
+berryc move_mask   "Mod4Mask"
+berryc resize_mask "Mod4Mask|ShiftMask"
 
 # wal
 wal -q -R -o wal-extras.sh &
