@@ -51,9 +51,9 @@ f() {
 }
 
 # functions
-source $ZDOTDIR/functions/fzf-cd 2>/dev/null
+# source $ZDOTDIR/functions/fzf-cd 2>/dev/null
 source $ZDOTDIR/functions/fzf-edit 2>/dev/null
-source $ZDOTDIR/functions/fzf-history 2>/dev/null
+# source $ZDOTDIR/functions/fzf-history 2>/dev/null
 source $ZDOTDIR/functions/fzf-kill 2>/dev/null
 source $ZDOTDIR/functions/fzf-man 2>/dev/null
 source $ZDOTDIR/functions/fzf-open 2>/dev/null
@@ -84,8 +84,8 @@ autoload -U promptinit; promptinit
 zstyle ':prompt:pure:prompt:success' color green
 zstyle ':prompt:pure:prompt:failure' color red
 zstyle ':prompt:pure:git:stash' show yes
-PURE_GIT_UP_ARROW="💨"
-PURE_GIT_STASH_SYMBOL="📦"
+# PURE_GIT_UP_ARROW="💨"
+# PURE_GIT_STASH_SYMBOL="🗃"
 prompt pure
 
 # starship
