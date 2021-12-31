@@ -6,17 +6,13 @@ alias rd='rmdir -pv'
 alias df='df -HT'
 alias du='du -d 1 -h -c'
 alias cd..='cd ..'
-alias d='dirs -v | head -10'
 alias free='free -m'
 alias v=$EDITOR
 alias tc="tty-clock -cst -C 2 -f '%A %B %d %Y'"
 alias mount='mount | column -t'
 alias u='unimatrix -c green -a -f -n -s 98'
-alias kc='kitty +kitten icat'
-alias kd='kitty +kitten diff'
 alias h='htop -u $USER'
 alias t='top -u $USER'
-alias nvc="$EDITOR ~/.config/nvim/init.vim"
 alias pf='clear;pfetch'
 alias n='nnn -D -C -E -o -T e -a -x'
 alias cf='clifm'
@@ -32,7 +28,6 @@ alias rmpd='systemctl --user daemon-reload; systemctl --user restart mpd'
 alias lf="$HOME/.local/bin/lf.sh"
 alias ed='ed -p ": "'
 alias nd='ncdu -L -q --color dark --exclude-caches'
-alias m='micro'
 
 # lsd
 alias lsd='lsd -h --group-dirs first --no-symlink'
@@ -48,6 +43,9 @@ alias l1='ls -1'
 alias l='ls -l'
 alias ll='ls -al'
 alias lt='ls -T -L 2'
+
+# nvim
+alias nvc="$EDITOR ~/.config/nvim/init.vim"
 
 # grep
 alias -g G='| grep -i'
@@ -86,23 +84,16 @@ alias gc='git commit -a'
 alias ga='git add'
 alias gp='git pull'
 alias gpom='git pull origin master'
-alias gpvm='git pull vaskark master'
-alias gpush='git push'
 alias gl='git log'
 alias gls='git log --stat'
 alias gl1='git log --oneline'
 alias gs='git status'
 alias gc1='git clone --depth=1'
 
-# fzf
-alias fe='$EDITOR $(fzf)'
-alias fw='fzf-wal.sh'
-
 # neofetch
 alias nf0='clear;neofetch --config none'
 alias nf='clear;neofetch'
 alias nfo='clear;neofetch --off'
-alias nfs='clear;neofetch --config ~/.config/neofetch/config-small.conf'
 
 # fonts
 alias f2s='fonttosfnt -v -r -b -c -g 2 -m 2 -o'
@@ -112,6 +103,7 @@ alias fcl='fc-list'
 # pywal
 alias w1='wal -f random_user -o wal-extras.sh'
 alias w2='wal -f random -o wal-extras.sh'
+alias fw='fzf-wal.sh'
 
 # system
 alias upd8='sudo apt update;sudo apt full-upgrade;sudo apt autoremove;sudo apt clean'

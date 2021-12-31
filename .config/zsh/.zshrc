@@ -20,7 +20,7 @@ kitty + complete setup zsh | source /dev/stdin
 source ~/.cache/wal/colors.sh
 
 # aliases
-[ -f "$ZDOTDIR/.aliases" ] && source "$ZDOTDIR/.aliases"
+[ -f "$ZDOTDIR/aliases" ] && source "$ZDOTDIR/aliases"
 
 # mode (e,v)
 bindkey -e
@@ -51,9 +51,7 @@ f() {
 }
 
 # functions
-# source $ZDOTDIR/functions/fzf-cd 2>/dev/null
 source $ZDOTDIR/functions/fzf-edit 2>/dev/null
-# source $ZDOTDIR/functions/fzf-history 2>/dev/null
 source $ZDOTDIR/functions/fzf-kill 2>/dev/null
 source $ZDOTDIR/functions/fzf-man 2>/dev/null
 source $ZDOTDIR/functions/fzf-open 2>/dev/null
