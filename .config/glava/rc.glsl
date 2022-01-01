@@ -17,7 +17,7 @@
 
 /* Window hints */
 #request setfloating  false
-#request setdecorated false
+#request setdecorated true
 #request setfocused   false
 #request setmaximized false
 
@@ -49,9 +49,9 @@
 #request settitle "GLava"
 
 /* Window geometry (x, y, width, height) */
-/*#request setgeometry 0 0 1920 1080*/
-#request setgeometry 460 0 1000 1080
-/*#request setgeometry 1700 0 220 1080*/
+/* #request setgeometry 0 0 1920 1080 */
+#request setgeometry 560 0 800 1080
+/* #request setgeometry 1700 0 220 1080 */
 
 /* Window background color (RGBA format).
    Does not work with `setopacity "xroot"` */
