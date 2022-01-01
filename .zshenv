@@ -35,12 +35,14 @@ export PF_COL2=4
 export RIPGREP_CONFIG_PATH="$XDG_CONFIG_HOME/ripgrep" 
 
 # nnn
+export NNN_OPTS='aCDEoQx'
 export NNN_FIFO='/tmp/nnn.fifo' 
-export NNN_COLORS='2356'
-export NNN_TRASH=2
-export NNN_OPENER=$HOME/.config/nnn/plugins/nuke
+export NNN_COLORS='#0a1b2c3d;2456'
 export NNN_FCOLORS='c1e2272e006033f7c6d6abc4'
-export NNN_PLUG='d:diffs;k:pskill;n:nuke;o:fzopen;p:preview-tui;v:imgview;w:wall'
+export NNN_TRASH=2
+export NNN_OPENER='$HOME/.config/nnn/plugins/nuke'
+export NNN_ORDER='t:/home/jason/Pictures/wow'
+export NNN_PLUG='d:diffs;g:-!git diff;k:pskill;l:-!git log;n:nuke;o:fzopen;p:preview-tui;s:suedit;v:imgview;w:wall'
 
 # fzf
 export FZF_DEFAULT_COMMAND="fd --hidden --follow --exclude '.git' --exclude '.cache'"

@@ -14,7 +14,7 @@ alias u='unimatrix -c green -a -f -n -s 98'
 alias h='htop -u $USER'
 alias t='top -u $USER'
 alias pf='clear;pfetch'
-alias n='nnn -D -C -E -o -T e -a -x'
+alias n='nnn'
 alias cf='clifm'
 alias c='cava'
 alias p='pipes-rs'
@@ -52,9 +52,9 @@ alias -g G='| grep -i'
 
 # zsh
 alias zc="$EDITOR $ZDOTDIR/.zshrc"
-alias za="$EDITOR $ZDOTDIR/.aliases"
+alias za="$EDITOR $ZDOTDIR/aliases"
 alias ze="$EDITOR $HOME/.zshenv"
-alias zr='rm -f ~/.config/zsh/.zhistory && clear && exec zsh' 
+alias zr='rm -f ~/.config/zsh/zhistory && clear && exec zsh' 
 alias zs='clear && exec zsh'
 
 # xrdb

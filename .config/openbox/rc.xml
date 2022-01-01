@@ -123,13 +123,13 @@
       <name>4</name>
       <name>5</name>
     </names>
-    <popupTime>1750</popupTime>
+    <popupTime>1000</popupTime>
     <!-- The number of milliseconds to show the popup for when switching
 		desktops. Set this to 0 to disable the popup. -->
   </desktops>
   <resize>
     <drawContents>yes</drawContents>
-    <popupShow>Nonpixel</popupShow>
+    <popupShow>NonPixel</popupShow>
     <!-- 'Always', 'Never', or 'Nonpixel' (xterms and such) -->
     <popupPosition>Center</popupPosition>
     <!-- 'Center', 'Top', or 'Fixed' -->
@@ -149,7 +149,7 @@
 	cases. -->
   <margins>
     <top>0</top>
-    <bottom>30</bottom>
+    <bottom>0</bottom>
     <left>0</left>
     <right>0</right>
   </margins>
@@ -286,9 +286,6 @@
     </keybind>
     <keybind key="W-m">
       <action name="Move"/>
-    </keybind>
-    <keybind key="A-F4">
-      <action name="Close"/>
     </keybind>
     <keybind key="W-w">
       <action name="Close"/>
@@ -536,9 +533,9 @@
       </action>
     </keybind> -->
     <!-- Lemonbar -->
-       <keybind key="W-semicolon">
+    <keybind key="W-semicolon">
       <action name="Execute">
-        <command>sh -c 'pkill lemonbar 2>/dev/null || lemonbar-current'</command>
+        <command>sh -c 'pkill lemonbar 2&gt;/dev/null || lemonbar-current'</command>
       </action>
     </keybind>
     <keybind key="W-S-semicolon">
