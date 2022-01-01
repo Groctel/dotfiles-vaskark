@@ -1,0 +1,25 @@
+font:
+  normal:
+    family: lemon
+    style: Regular
+
+  bold:
+    family: lemon
+    style: Regular
+
+  size: 7.0
+  
+  #offset:
+    #x: 0
+    #y: 0
+
+window:
+  dimensions:
+    columns: 80
+    lines: 22
+
+  padding:
+    x: 20
+    y: 20
+
+  opacity: 0.95

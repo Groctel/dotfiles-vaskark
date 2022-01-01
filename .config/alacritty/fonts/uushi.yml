@@ -1,0 +1,23 @@
+font:
+  normal:
+    family: uushi
+    style: Regular
+
+  bold:
+    family: uushi
+    style: Regular
+
+  size: 8.0
+
+  #offset:
+    #x: 0
+    #y: 0
+
+window:
+  dimensions:
+    columns: 66
+    lines: 22
+
+  padding:
+    x: 20
+    y: 20

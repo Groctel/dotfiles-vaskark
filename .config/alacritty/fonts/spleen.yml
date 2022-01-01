@@ -1,0 +1,19 @@
+font:
+  normal:
+    family: Spleen
+    style: Regular
+
+  bold:
+    family: Spleen
+    style: Regular
+
+  size: 8.0
+
+window:
+  dimensions:
+    columns: 70
+    lines: 22
+
+  padding:
+    x: 20
+    y: 20
