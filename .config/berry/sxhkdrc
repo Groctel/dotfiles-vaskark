@@ -19,7 +19,7 @@ super + ctrl + semicolon
 
 # glava
 super + g
-    pkill glava || glava -d
+    pkill glava || glava -d &> /dev/null
 
 # glava flip
 super + shift + g
@@ -71,11 +71,11 @@ super + m
 super + f
     berryc fullscreen
 
-super +  p
-    berryc snap_right
-
-super + o 
-    berryc snap_left
+# super +  p
+#     berryc snap_right
+#
+# super + o
+#     berryc snap_left
 
 super + n
     berryc toggle_decorations
