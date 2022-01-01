@@ -9,7 +9,7 @@ Xft.lcdfilter: lcddefault
 
 !! URxvt
 URxvt*termName: rxvt-unicode-256color
-URxvt*font: -*-scientifica-medium-*, xft:UbuntuMono Nerd Font Mono:size=8
+URxvt*font: -*-scientifica-medium-*, xft:UbuntuMono Nerd Font Mono:size=9
 URxvt*boldFont: -*-scientifica-bold-*
 URxvt*letterSpace: -6
 URxvt*lineSpace: 0
@@ -36,6 +36,10 @@ URxvt.keysym.C-Left: \033[1;5D
 
 !! URxvt Extensions
 URxvt.perl-ext-common: default,url-select,selection-to-clipboard,keyboard-select,resize-font,bell-command
+! url-select
+URxvt.keysym.M-u: perl:url-select:select_next
+URxvt.url-select.underline: true
+URxvt.url-select.autocopy: true
 ! selection-to-clipboard
 URxvt.keysym.C-S-C: eval:selection_to_clipboard
 URxvt.keysym.C-S-V: eval:paste_clipboard
@@ -43,10 +47,6 @@ URxvt.keysym.C-S-V: eval:paste_clipboard
 URxvt.keysym.M-Escape: perl:keyboard-select:activate
 URxvt.keysym.M-s: perl:keyboard-select:search
 URxvt.keyboard-select.clipboard: true
-! url-select
-URxvt.keysym.M-u: perl:url-select:select_next
-URxvt.url-select.underline: true
-URxvt.url-select.autocopy: true
 ! resize-font
 URxvt.resize-font.smaller: C-minus
 URxvt.resize-font.bigger: C-equal
@@ -84,7 +84,7 @@ XTerm.vt100.translations: #override \n\
     Ctrl Shift <Key>R: hard-reset() \n\
     Ctrl <Key> -: smaller-vt-font() \n\
     Ctrl <Key> +: larger-vt-font() \n\
-    Ctrl <Key> 0: set-vt-font(d) \n\
+    Ctrl <Key> 0: set-vt-font(d)
 
 !! Colours
 #include ".cache/wal/colors.Xresources"
