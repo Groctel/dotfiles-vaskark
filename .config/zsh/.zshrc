@@ -33,9 +33,6 @@ bindkey '^x^e' edit-command-line
 # urxvt/xterm cursor beam: 35 (blink), 36 (no blink)
 echo -e -n "\x1b[\x36 q"
 
-# clifm (ctrl+])
-bindkey -s '^]' 'clifm\n'
-
 # ncmpcpp (ctrl+\)
 ncmpcppShow() {
   BUFFER="ncmpcpp -q"
