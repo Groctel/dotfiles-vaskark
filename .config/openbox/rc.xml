@@ -129,7 +129,7 @@
   </desktops>
   <resize>
     <drawContents>yes</drawContents>
-    <popupShow>NonPixel</popupShow>
+    <popupShow>Always</popupShow>
     <!-- 'Always', 'Never', or 'Nonpixel' (xterms and such) -->
     <popupPosition>Center</popupPosition>
     <!-- 'Center', 'Top', or 'Fixed' -->
@@ -454,15 +454,15 @@
         <command>man2pdf.sh</command>
       </action>
     </keybind>
-    <!-- Take a screenshot, say "Cheeeese!" -->
+    <!-- Take a screenshot -->
     <keybind key="W-Print">
       <action name="Execute">
-        <command>flameshot gui -p ~/Screenshots</command>
+        <command>sh -c 'maim -d 3 ~/Screenshots/$(date +%Y-%m-%d_%I-%M-%S_%p).png'</command>
       </action>
     </keybind>
     <keybind key="W-S-Print">
       <action name="Execute">
-        <command>flameshot full -p ~/Screenshots -d 3000</command>
+        <command>sh -c 'maim -s ~/Screenshots/$(date +%Y-%m-%d_%I-%M-%S_%p).png'</command>
       </action>
     </keybind>
     <!-- Multimedia keys-->
@@ -535,7 +535,7 @@
     <!-- Lemonbar -->
     <keybind key="W-semicolon">
       <action name="Execute">
-        <command>sh -c 'pkill lemonbar 2&gt;/dev/null || lemonbar-current'</command>
+        <command>sh -c 'pkill lemonbar || lemonbar-current'</command>
       </action>
     </keybind>
     <keybind key="W-S-semicolon">
@@ -543,17 +543,17 @@
         <command>lemonbar-menu.sh</command>
       </action>
     </keybind>
-    <!-- GLava 
+    <!-- GLava -->
     <keybind key="W-g">
       <action name="Execute">
-        <command>sh -c 'pkill glava 2&gt;/dev/null || glava -d -a fifo'</command>
+        <command>sh -c 'pkill glava || glava -d'</command>
       </action>
     </keybind>
-    <keybind key="W-C-semicolon">
+    <keybind key="W-S-g">
       <action name="Execute">
-        <command/>
+        <command>glava-flip.sh</command>
       </action>
-    </keybind> -->
+    </keybind>
     <!-- Pywal -->
     <keybind key="W-F12">
       <action name="Execute">

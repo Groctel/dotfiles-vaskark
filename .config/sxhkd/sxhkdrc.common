@@ -21,7 +21,7 @@ super + {_,shift +} Escape
 
 # file managers
 super + {_,shift +} F1
-	{nemo,nemo-pkexec}
+	{thunar,thunar-pkexec}
 
 # browsers
 super + {_,shift +} F2
@@ -57,9 +57,9 @@ alt + F9
 
 # shots
 super + Print
-        flameshot gui -p ~/Screenshots
+	maim -d 3 ~/Screenshots/$(date +%Y-%m-%d_%I-%M-%S_%p).png
 super + shift + Print
-	flameshot full -p ~/Screenshots -d 3000
+	maim -s ~/Screenshots/$(date +%Y-%m-%d_%I-%M-%S_%p).png
 
 # volume
 XF86Audio{Raise,Lower}Volume
