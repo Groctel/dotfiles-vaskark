@@ -9,7 +9,7 @@ Xft.lcdfilter: lcddefault
 
 !! URxvt
 URxvt*termName: rxvt-unicode-256color
-URxvt*font: -*-scientifica-medium-*, xft:monospace:size=9
+URxvt*font: -*-scientifica-medium-*
 URxvt*boldFont: -*-scientifica-bold-*
 URxvt*letterSpace: -6
 URxvt*lineSpace: 0
@@ -23,7 +23,7 @@ URxvt*depth: 32
 URxvt*iso14755: false
 URxvt*iso14755_52: false
 URxvt*pointerBlank: true
-URxvt*fading: 20
+URxvt*fading: 25
 URxvt*intensityStyles: false
 
 !! URxvt Navigation Keys
@@ -39,7 +39,7 @@ URxvt.perl-ext-common: default,url-select,selection-to-clipboard,keyboard-select
 ! url-select
 URxvt.keysym.M-u: perl:url-select:select_next
 URxvt.url-select.underline: true
-URxvt.url-select.autocopy: true
+! URxvt.url-select.autocopy: true
 ! selection-to-clipboard
 URxvt.keysym.C-S-C: eval:selection_to_clipboard
 URxvt.keysym.C-S-V: eval:paste_clipboard

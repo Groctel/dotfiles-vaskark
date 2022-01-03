@@ -51,7 +51,6 @@
 /* Window geometry (x, y, width, height) */
 /* #request setgeometry 0 0 1920 1080 */
 #request setgeometry 560 0 800 1080
-/* #request setgeometry 1700 0 220 1080 */
 
 /* Window background color (RGBA format).
    Does not work with `setopacity "xroot"` */
@@ -210,7 +209,7 @@
    
    Enabling this also enables acceleration for post-FFT processing
    effects, such as gravity, averaging, windowing, and interpolation. */
-// #request setaccelfft true
+   #request setaccelfft true
 
 /*                    ** DEPRECATED **
    Force window geometry (locking the window in place), useful
@@ -218,14 +217,14 @@
    embedding in the desktop.
    
    This routinely sends X11 events and should be avoided. */
-// #request setforcegeometry false
+   #request setforcegeometry false
 
 /*                    ** DEPRECATED **
    Force window to be raised (focused in some WMs), useful for
    WMs that have their own stacking order for desktop windows.
    
    This routinely sends X11 events and should be avoided. */
-// #request setforceraised false
+   #request setforceraised false
 
 /*                    ** DEPRECATED **
    Scale down the audio buffer before any operations are 
@@ -235,4 +234,4 @@
    since it applies (crude) averaging to the data when shrinking
    the buffer. It is reccommended to use `setsamplerate` and
    `setsamplesize` to improve performance or accuracy instead. */
-// #request setbufscale 1
+   #request setbufscale 1

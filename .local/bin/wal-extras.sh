@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# colors
+# colours
 . "$HOME"/.cache/wal/colors.sh
 
 # berry
