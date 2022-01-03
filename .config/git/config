@@ -11,3 +11,5 @@
 	sw = switch
 [credential]
 	helper = cache --timeout=3600
+[init]
+	defaultBranch = master
