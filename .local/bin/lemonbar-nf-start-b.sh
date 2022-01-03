@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# wal
+# colours
 . "$HOME"/.cache/wal/colors.sh
 
 # offset

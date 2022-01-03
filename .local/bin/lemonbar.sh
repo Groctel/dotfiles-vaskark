@@ -7,7 +7,7 @@
 ##
 
 
-# wal
+# colours
 . "$HOME/.cache/wal/colors.sh"
 
 

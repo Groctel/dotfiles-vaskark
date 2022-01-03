@@ -15,9 +15,9 @@ _comp_options+=(globdots) # Include hidden files.
 # kitty
 kitty + complete setup zsh | source /dev/stdin
 
-# pywal
+# wal
 (cat ~/.cache/wal/sequences &)
-source ~/.cache/wal/colors.sh
+# source ~/.cache/wal/colors.sh
 
 # aliases
 [ -f "$ZDOTDIR/aliases" ] && source "$ZDOTDIR/aliases"

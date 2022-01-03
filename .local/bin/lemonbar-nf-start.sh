@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# wal
+# colours
 . "$HOME"/.cache/wal/colors.sh
 
 # offset
@@ -21,4 +21,3 @@ lemonbar-nf.sh | lemonbar \
 -F "#555" \
 -d \
 | $SHELL
-
