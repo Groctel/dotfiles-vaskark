@@ -87,4 +87,4 @@ XTerm.vt100.translations: #override \n\
     Ctrl <Key> 0: set-vt-font(d)
 
 !! Colours
-#include ".cache/wal/colors.Xresources"
+#include "../../.cache/wal/colors.Xresources"
