@@ -1,0 +1,44 @@
+set sandbox none
+set statusbar-h-padding 8
+set statusbar-v-padding 8
+set page-padding 1
+set selection-clipboard clipboard
+set font "scientifica 8"
+set window-height 700
+set window-width 700
+
+map k scroll half-up
+map j scroll half-down
+map D toggle_page_mode
+map r reload
+map R rotate
+map + zoom in
+map - zoom out
+map 0 zoom reset
+map i recolor
+map p print
+
+set default-bg "{color0}"
+set default-fg "{color2}"
+set statusbar-bg "{color2}"
+set statusbar-fg "{color0}"
+set inputbar-bg "{color2}"
+set inputbar-fg "{color0}"
+set notification-bg "{color2}"
+set notification-fg "{color0}"
+set notification-error-bg "{color1}"
+set notification-error-fg "{color0}"
+set notification-warning-bg "{color4}"
+set notification-warning-fg "{color0}"
+set highlight-color "{color3}"
+set highlight-active-color "{color4}"
+set completion-bg "{color0}"
+set completion-fg "{color2}"
+set completion-highlight-bg "{color3}"
+set completion-highlight-fg "{color4}"
+set recolor-lightcolor "{color0}"
+set recolor-darkcolor "{color7}"
+set index-bg "#FFF"
+set index-fg "{color0}"
+set index-active-bg "{color2}"
+set index-active-fg "{color0}"
