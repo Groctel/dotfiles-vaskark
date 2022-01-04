@@ -17,7 +17,7 @@ kitty + complete setup zsh | source /dev/stdin
 
 # wal
 (cat ~/.cache/wal/sequences &)
-# source ~/.cache/wal/colors.sh
+source ~/.cache/wal/colors.sh
 
 # aliases
 [ -f "$ZDOTDIR/aliases" ] && source "$ZDOTDIR/aliases"
@@ -46,6 +46,9 @@ f() {
     fff "$@"
     cd "$(cat "${XDG_CACHE_HOME:=${HOME}/.cache}/fff/.fff_d")"
 }
+
+# lf
+[ -f "$HOME/.config/lf/icons" ] && source "$HOME/.config/lf/icons"
 
 # functions
 source $ZDOTDIR/functions/fzf-edit 2>/dev/null

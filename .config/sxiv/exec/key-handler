@@ -1,39 +1,34 @@
 #!/bin/sh
 
-# Example for $XDG_CONFIG_HOME/sxiv/exec/key-handler
-# Called by sxiv(1) after the external prefix key (C-x by default) is pressed.
-# The next key combo is passed as its first argument. Passed via stdin are the
-# images to act upon, one path per line: all marked images, if in thumbnail
-# mode and at least one image has been marked, otherwise the current image.
-# sxiv(1) blocks until this script terminates. It then checks which images
-# have been modified and reloads them.
+while read file
+do
+        case "$1" in
+        "w")
+		feh --no-fehbg --bg-fill "$file" & ;;
+	"r")
+		convert -rotate 90 "$file" "$file" ;;
+	"R")
+		convert -rotate -90 "$file" "$file" ;;
+	"f")
+		convert -flop "$file" "$file" ;;
+	"y")
+		echo -n "$file" | tr -d '\n' | xclip -selection clipboard &&
+		notify-send "$file copied to clipboard" & ;;
+	"Y")
+		readlink -f "$file" | tr -d '\n' | xclip -selection clipboard &&
+			notify-send "$(readlink -f "$file") copied to clipboard" & ;;
+	"g")	
+		gimp "$file" ;;
+	"i")	
+		notify-send "File information" "$(mediainfo "$file")" ;;
 
-# The key combo argument has the following form: "[C-][M-][S-]KEY",
-# where C/M/S indicate Ctrl/Meta(Alt)/Shift modifier states and KEY is the X
-# keysym as listed in /usr/include/X11/keysymdef.h without the "XK_" prefix.
-
-rotate() {
-	degree="$1"
-	tr '\n' '\0' | xargs -0 realpath | sort | uniq | while read file; do
-		case "$(file -b -i "$file")" in
-		image/jpeg*) jpegtran -rotate "$degree" -copy all -outfile "$file" "$file" ;;
-		*)           mogrify  -rotate "$degree" "$file" ;;
-		esac
-	done
-}
-
-case "$1" in
-"C-x")      xclip -in -filter | tr '\n' ' ' | xclip -in -selection clipboard ;;
-"C-c")      while read file; do xclip -selection clipboard -target image/png "$file"; done ;;
-"C-e")      while read file; do urxvt -bg "#444" -fg "#eee" -sl 0 -title "$file" -e sh -c "exiv2 pr -q -pa '$file' | less" & done ;;
-"C-g")      while read file; do gimp "$file" & done;;
-"C-w")	  	while read file; do xwallpaper --zoom "$file" & done;;
-"C-comma")  rotate 270 ;;
-"C-period") rotate  90 ;;
-"C-slash")  rotate 180 ;;
-"1")      	while read file; do wal -i "$file" --backend colorthief;wal-extras.sh & done;;
-"2")      	while read file; do wal -i "$file" --backend colorz;wal-extras.sh & done;;
-"3")      	while read file; do wal -i "$file" --backend haishoku;wal-extras.sh & done;;
-"4")      	while read file; do wal -i "$file" --backend wal;wal-extras.sh & done;;
-esac
-
+	"1")
+		wal -i "$file" --backend colorthief && wal-extras.sh ;;
+	"2")
+		wal -i "$file" --backend faster_colorthief && wal-extras.sh ;;
+	"3")
+		wal -i "$file" --backend haishoku && wal-extras.sh ;;
+	"4")
+		wal -i "$file" --backend wal && wal-extras.sh ;;
+        esac
+done

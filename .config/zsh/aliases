@@ -26,22 +26,25 @@ alias fr='feh --randomize --bg-fill --recursive --no-fehbg ~/Pictures/*.(png|jpg
 alias rmpd='systemctl --user daemon-reload; systemctl --user restart mpd'
 alias lf="$HOME/.local/bin/lf.sh"
 alias ed='ed -p ": "'
-alias nd='ncdu -L -q --color dark --exclude-caches'
+alias ncdu='ncdu -L -q --color dark --exclude-caches'
 
 # lsd
 alias lsd='lsd -h --group-dirs first --no-symlink'
-# alias ls='lsd'
-# alias l='ls -l'
-# alias ll='ls -Al'
-# alias lt='ls --tree --depth 2'
+alias ls='lsd'
+alias l='ls -l'
+alias ll='ls -Al'
+alias lt='ls --tree --depth 2'
 
 # exa
 alias exa='exa --icons --git -g --time-style long-iso --group-directories-first -@ -H'
-alias ls='exa'
-alias l1='ls -1'
-alias l='ls -l'
-alias ll='ls -al'
-alias lt='ls -T -L 2'
+# alias ls='exa'
+# alias l1='ls -1'
+# alias l='ls -l'
+# alias ll='ls -al'
+# alias lt='ls -T -L 2'
+
+# kitty
+alias icat='kitty +kitten icat'
 
 # nvim
 alias nvc="$EDITOR ~/.config/nvim/init.vim"
@@ -52,7 +55,7 @@ alias -g G='| grep -i'
 # zsh
 alias zc="$EDITOR $ZDOTDIR/.zshrc"
 alias za="$EDITOR $ZDOTDIR/aliases"
-alias ze="$EDITOR $HOME/.zshenv"
+alias zp="$EDITOR $HOME/.config/shell/profile"
 alias zr='rm -f ~/.config/zsh/zhistory && clear && exec zsh' 
 alias zs='clear && exec zsh'
 
@@ -61,14 +64,16 @@ alias xc="$EDITOR ~/.Xresources"
 alias xu='xrdb ~/.Xresources'
 
 # xinitrc
-alias xx="$EDITOR ~/.xinitrc"
+alias xx="$EDITOR $XINITRC"
 
 # bindkey help
 alias rhb='run-help bindkey'
 
 # last modified logs
-#alias lml='ls -lt /var/log | tail'
 alias lml='exa -l -r -s time /var/log | tail'
+
+# clean logs
+alias clogs='sudo rm -rf /var/log/*'
 
 # journal
 alias jctl='journalctl'
@@ -108,7 +113,7 @@ alias upd8='sudo apt update;sudo apt full-upgrade;sudo apt autoremove;sudo apt c
 alias shut='poweroff'
 
 # startx
-alias startx='startx $HOME/.xinitrc'
+alias startx='startx $XINITRC'
 
 # kernel
 alias mkc='make LSMOD=$HOME/.config/modprobed.db localmodconfig'
