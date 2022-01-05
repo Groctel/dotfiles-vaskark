@@ -43,8 +43,8 @@ cmd open ${{
 }}
 
 # define a custom 'rename' command without prompt for overwrite
-# cmd rename %[ -e $1 ] && printf "file exists" || mv $f $1
-# map r push :rename<space>
+cmd rename %[ -e $1 ] && printf "file exists" || mv $f $1
+map r push :rename<space>
 
 # make sure trash folder exists
 %mkdir -p ~/.local/share/Trash/files
@@ -63,7 +63,7 @@ cmd delete ${{
 }}
 
 # use '<delete>' key for either 'trash' or 'delete' command
-# map <delete> trash
+map <delete> trash
 # map <delete> delete
 
 # extract the current file with the right command
@@ -79,6 +79,7 @@ cmd extract ${{
         *.7z) 7z x $f;;
     esac
 }}
+map E :extract
 
 # compress current file or selected files with tar and gunzip
 #cmd tar ${{
@@ -98,18 +99,39 @@ cmd extract ${{
 #    rm -rf $1
 #}}
 
+cmd fzf_search ${{
+    res="$( \
+        RG_PREFIX="rg --column --line-number --no-heading --color=always \
+            --smart-case "
+        FZF_DEFAULT_COMMAND="$RG_PREFIX ''" \
+            fzf --bind "change:reload:$RG_PREFIX {q} || true" \
+            --ansi --layout=reverse --header 'Search in files' \
+            | cut -d':' -f1
+    )"
+    [ ! -z "$res" ] && lf -remote "send $id select \"$res\""
+}}
+map gs :fzf_search
+
+cmd video_preview ${{
+    cache="$(mktemp "${TMPDIR:-/tmp}/thumb_cache.XXXXX")"
+    ffmpegthumbnailer -i "$f" -o "$cache" -s 0
+    ~/.config/lf/draw_img.sh "$cache"
+}}
+map + :video_preview
+
 set previewer ~/.config/lf/previewer.sh
 set cleaner ~/.config/lf/clear_img.sh
 
 # settings
 set relativenumber
-set dircounts
+#set dircounts
 set autoquit
-#set nopreview
+set preview
 set ratios 1:2:3
-#set info time:size
+set info time:size
 set icons
-#set drawbox
 
 # mappings
 map . set hidden!
+map f $nvim $(fzf)
+map - $~/.config/lf/draw_img.sh "$f"
