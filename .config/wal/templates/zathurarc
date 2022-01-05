@@ -6,6 +6,8 @@ set selection-clipboard clipboard
 set font "scientifica 8"
 set window-height 700
 set window-width 700
+set window-title-basename true
+set statusbar-basename false
 
 map k scroll half-up
 map j scroll half-down
