@@ -4,7 +4,7 @@ set statusbar-v-padding 8
 set page-padding 1
 set selection-clipboard clipboard
 set font "scientifica 8"
-set window-height 700
+set window-height 800
 set window-width 700
 set window-title-basename true
 set statusbar-basename false
