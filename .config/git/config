@@ -10,6 +10,6 @@
 	re = remote
 	sw = switch
 [credential]
-	helper = cache --timeout=3600
+	helper = cache
 [init]
 	defaultBranch = master
