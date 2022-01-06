@@ -28,8 +28,8 @@ super + {_,shift +} F2
 	{google-chrome,firefox}
 
 # wp
-super + F3
-	feh --randomize --bg-fill --recursive --no-fehbg ~/Pictures/*.(png|jpg)
+# super + F3
+#	feh --randomize --bg-fill --recursive --no-fehbg ~/Pictures/*.(png|jpg)
 	
 # farge
 super + F4
@@ -57,9 +57,9 @@ alt + F9
 
 # shots
 super + Print
-	maim -d 3 ~/Screenshots/$(date +%Y-%m-%d_%I-%M-%S_%p).png
+	scrot -q 85 -d 3 '%Y-%m-%d_%I-%M-%S_%p.png' -e 'mv $f ~/Screenshots/'
 super + shift + Print
-	maim -s ~/Screenshots/$(date +%Y-%m-%d_%I-%M-%S_%p).png
+	scrot -q 85 -s '%Y-%m-%d_%I-%M-%S_%p.png' -e 'mv $f ~/Screenshots/'
 
 # volume
 XF86Audio{Raise,Lower}Volume

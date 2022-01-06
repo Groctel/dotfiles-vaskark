@@ -1,5 +1,8 @@
 #!/bin/sh
 
+# colours
+. "$HOME/.cache/wal/colors.sh"
+
 # picom
 picom --experimental-backends --config ~/.config/picom/picom.conf &
 # picom --config ~/.config/picom/picom-xr.conf &
@@ -15,11 +18,11 @@ xautolock -time 10 -locker 'lock.sh' -killer 'systemctl suspend' -corners 00-+ &
 systemctl --user import-environment
 systemctl --user restart redshift.service
 
-# dunst
-# dunst &
+# bg
+# bash $HOME/.fehbg &
 
 # bg
-bash $HOME/.fehbg &
+xwallpaper --zoom $wallpaper &
 
 # wal
 wal -q -R -o -wal-extras.sh &

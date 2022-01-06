@@ -4,7 +4,7 @@ while read file
 do
         case "$1" in
         "w")
-		feh --no-fehbg --bg-fill "$file" & ;;
+		xwallpaper --zoom "$file" & ;;
 	"r")
 		convert -rotate 90 "$file" "$file" ;;
 	"R")
