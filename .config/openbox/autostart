@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 # colours
 . "$HOME/.cache/wal/colors.sh"
@@ -20,8 +20,6 @@ systemctl --user restart redshift.service
 
 # bg
 # bash $HOME/.fehbg &
-
-# bg
 xwallpaper --zoom $wallpaper &
 
 # wal

@@ -1,0 +1,159 @@
+# general
+alias \
+	rm='rm -i' \
+	cp='cp -i' \
+	md='mkdir -pv' \
+	rd='rmdir -pv' \
+	df='df -HT' \
+	du='du -d 1 -h -c' \
+	cd..='cd ..' \
+	free='free -m' \
+	v=$EDITOR \
+	tc="tty-clock -cst -C 2 -f '%A %B %d %Y'" \
+	mount='mount | column -t' \
+	u='unimatrix -c green -a -f -n -s 98' \
+	h='htop -u $USER' \
+	t='top -u $USER' \
+	pf='clear;pfetch' \
+	n='nnn' \
+	c='cava' \
+	p='pipes-rs' \
+	mi='mediainfo' \
+	grep='grep --color=auto' \
+	egrep='egrep --color=auto' \
+	ping='ping -c 5' \
+	path='print -l $path' \
+	fr='feh --randomize --bg-fill --recursive --no-fehbg ~/Pictures/*.(png|jpg)' \
+	rmpd='systemctl --user daemon-reload; systemctl --user restart mpd' \
+	lf="$HOME/.local/bin/lf.sh" \
+	ed='ed -p ": "' \
+	ncdu='ncdu -L -q --color dark --exclude-caches' \
+	icat='kitty +kitten icat' \
+
+# lsd
+alias \
+	lsd='lsd -h --group-dirs first --no-symlink' \
+	ls='lsd' \
+	l='ls -l' \
+	ll='ls -al' \
+	lt='ls --tree --depth 2' \
+
+# exa
+# alias \
+	# exa='exa --icons --git -g --time-style long-iso --group-directories-first -@ -H' \
+	# ls='exa' \
+	# l='ls -l' \
+	# ll='ls -al' \
+	# lt='ls -T -L 2' \
+
+# nvim
+alias nvc="$EDITOR ~/.config/nvim/init.vim"
+
+# grep
+alias -g G='| grep -i'
+
+# zsh
+alias \
+	zc="$EDITOR $ZDOTDIR/.zshrc" \
+	za="$EDITOR $HOME/.config/shell/aliasrc" \
+	zp="$EDITOR $HOME/.config/shell/profile" \
+	zr="rm -f $ZDOTDIR/zhistory && clear && exec zsh" \ 
+	zs="clear && exec zsh" \
+
+# xrdb
+alias \
+	xc="$EDITOR ~/.config/x11/xresources" \
+	xu='xrdb ~/.config/x11/xresources' \
+
+# xinitrc
+alias xx="$EDITOR $XINITRC"
+
+# bindkey help
+alias rhb='run-help bindkey'
+
+# last modified logs
+alias lml='exa -l -r -s time /var/log | tail'
+
+# clean logs
+alias clogs='sudo rm -rf /var/log/*'
+
+# journal
+alias \
+	jctl='journalctl' \
+	jcb='jctl -p 3 -b' \
+	jce='jctl -p 3 -e' \
+
+# bluetoothctl
+alias btc='bluetoothctl'
+
+# git
+alias \
+	gc='git commit -a' \
+	ga='git add' \
+	gp='git pull' \
+	gl='git log' \
+	gls='git log --stat' \
+	gs='git status' \
+	gc1='git clone --depth=1' \
+
+# neofetch
+alias \
+	nf0='clear;neofetch --config none' \
+	nf='clear;neofetch' \
+	nfo='clear;neofetch --off' \
+
+# fonts
+alias \
+	f2s='fonttosfnt -v -r -b -c -g 2 -m 2 -o' \
+	fcc='fc-cache -rv' \
+	fcl='fc-list' \
+
+# pywal
+alias \
+	w1='wal -f random_user -o wal-extras.sh' \
+	w2='wal -f random -o wal-extras.sh' \
+	fw='fzf-wal.sh' \
+
+# system
+alias \
+	upd8='sudo apt update;sudo apt full-upgrade;sudo apt autoremove;sudo apt clean' \
+	alias shut='poweroff' \
+
+# startx
+[ -f "$XINITRC" ] && alias startx="startx $XINITRC"
+
+# kernel
+alias \
+	mkc='make LSMOD=$HOME/.config/modprobed.db localmodconfig' \
+	mkp='make deb-pkg -j4 LOCALVERSION=-custom' \
+
+# networking
+alias \
+	rnm='sudo systemctl restart NetworkManager' \
+	up='nmcli c u' \
+	dn='nmcli c d' \
+	ndw='nmcli d wifi' \
+	i='ip -br -c a' \
+
+# windscribe
+alias \
+	wsc='windscribe connect' \
+	wsd='windscribe disconnect' \
+
+# install
+alias \
+	s1='sudo make install' \
+	s2='sudo make PREFIX=/usr/local install' \
+	s3='sudo ninja -C build install' \
+
+# systemd
+alias \
+	sc='systemctl' \
+	alias scu='systemctl --user' \
+
+# arch
+alias \
+	unlock='sudo rm /var/lib/pacman/db.lck' \
+	rpo='sudo pacman -Rns $(pacman -Qtdq)' \
+	mlr='sudo reflector --country 'United States' --protocol https --latest 10 --sort rate --save /etc/pacman.d/mirrorlist' \
+	mla='sudo reflector --country 'United States' --protocol https --latest 10 --sort age --save /etc/pacman.d/mirrorlist' \
