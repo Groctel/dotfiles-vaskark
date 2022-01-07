@@ -8,10 +8,7 @@ setopt autocd		# Automatically cd into typed directory.
 stty stop undef		# Disable ctrl-s to freeze terminal.
 
 # aliases
-[ -f "$ZDOTDIR/.aliases" ] && source "$ZDOTDIR/.aliases"
-
-# fzf
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+[ -f "${XDG_CONFIG_HOME:-$HOME/.config}/shell/aliasrc" ] && source "${XDG_CONFIG_HOME:-$HOME/.config}/shell/aliasrc"
 
 # basic auto/tab complete:
 autoload -Uz compinit
@@ -64,32 +61,35 @@ ncmpcppShow() {
 zle -N ncmpcppShow
 bindkey '^\' ncmpcppShow
 
-# lf (ctrl-])
-lfcd () {
-    tmp="$(mktemp)"
-    lf -last-dir-path="$tmp" "$@"
-    if [ -f "$tmp" ]; then
-        dir="$(cat "$tmp")"
-        rm -f "$tmp" >/dev/null
-        [ -d "$dir" ] && [ "$dir" != "$(pwd)" ] && cd "$dir"
-    fi
-}
-bindkey -s '^]' 'lfcd\n'
-
 # kitty completion
 kitty + complete setup zsh | source /dev/stdin
 
 # pywal
 (cat ~/.cache/wal/sequences &)
-source ~/.cache/wal/colors-tty.sh
+source ~/.cache/wal/colors.sh
 
 # functions
-source ~/.config/zsh/functions/fzf-edit 2>/dev/null
-source ~/.config/zsh/functions/fzf-kill 2>/dev/null
-source ~/.config/zsh/functions/fzf-man 2>/dev/null
+source $ZDOTDIR/functions/fzf-edit 2>/dev/null
+source $ZDOTDIR/functions/fzf-kill 2>/dev/null
+source $ZDOTDIR/functions/fzf-man 2>/dev/null
+source $ZDOTDIR/functions/fzf-open 2>/dev/null
 
 # plugins
-source /usr/local/oh-my-zsh/plugins/extract/extract.plugin.zsh 2>/dev/null
-source /usr/local/oh-my-zsh/plugins/command-not-found/command-not-found.plugin.zsh 2>/dev/null
-source /usr/local/oh-my-zsh/custom/plugins/zsh-autosuggestions/zsh-autosuggestions.plugin.zsh 2>/dev/null
-source /usr/local/oh-my-zsh/custom/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.plugin.zsh 2>/dev/null
+source $ZDOTDIR/plugins/zsh-extract/extract.plugin.zsh 2>/dev/null
+source $ZDOTDIR/plugins/zsh-autosuggestions/zsh-autosuggestions.plugin.zsh 2>/dev/null
+source $ZDOTDIR/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.plugin.zsh 2>/dev/null
+source $ZDOTDIR/plugins/zsh-history-substring-search/zsh-history-substring-search.plugin.zsh 2>/dev/null
+
+# autosuggestions
+bindkey '^ ' autosuggest-toggle
+
+# syntax-highlighting
+ZSH_HIGHLIGHT_HIGHLIGHTERS=(main brackets pattern cursor)
+ZSH_HIGHLIGHT_PATTERNS+=('rm -rf *' 'fg=black,bold,bg=red')
+
+# history-substring-search keys
+bindkey "$terminfo[kcuu1]" history-substring-search-up
+bindkey "$terminfo[kcud1]" history-substring-search-down
+
+# fzf
+[ -f ~/.config/fzf/fzf.zsh ] && source ~/.config/fzf/fzf.zsh
