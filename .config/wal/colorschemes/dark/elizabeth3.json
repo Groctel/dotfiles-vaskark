@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/jason/Pictures/wp3794489-elizabeth-debicki-wallpapers.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#171819",
+        "foreground": "#c5c5c5",
+        "cursor": "#beb799"
+    },
+    "colors": {
+        "color0": "#171819",
+        "color1": "#1f2e68",
+        "color2": "#5d4c4c",
+        "color3": "#5e5c4e",
+        "color4": "#7d796f",
+        "color5": "#b59b8a",
+        "color6": "#beb799",
+        "color7": "#c5c5c5",
+        "color8": "#515152",
+        "color9": "#1f2e68",
+        "color10": "#5d4c4c",
+        "color11": "#5e5c4e",
+        "color12": "#7d796f",
+        "color13": "#b59b8a",
+        "color14": "#beb799",
+        "color15": "#c5c5c5"
+    }
+}
