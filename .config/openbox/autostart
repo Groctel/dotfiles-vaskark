@@ -15,8 +15,7 @@ picom --experimental-backends --config ~/.config/picom/picom.conf &
 xautolock -time 10 -locker 'lock.sh' -killer 'systemctl suspend' -corners 00-+ &
 
 # redshift
-systemctl --user import-environment
-systemctl --user restart redshift.service
+systemctl --user import-environment; systemctl --user restart redshift.service
 
 # bg
 # bash $HOME/.fehbg &
@@ -30,6 +29,3 @@ lemonbar-current &
 
 # polybar
 #pb-nf.sh &
-
-# touchegg
-touchegg.sh &

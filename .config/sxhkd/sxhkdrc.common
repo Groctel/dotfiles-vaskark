@@ -4,22 +4,24 @@
 
 
 # terminals
-super + {_,shift +,ctrl +} Return
-	{alacritty,kitty,urxvt}
-
-# program launchers
-super + {d,x}
-	{rofi.sh,dmenu.sh}
+super +  {_,shift +, ctrl +} Return
+ 	{alacritty,kitty,urxvt}
+# super + t ; {a,k,s,u,x}
+# 	{alacritty,kitty,st,urxvt,xterm}
 
 # reload sxhkd
 super + control + r
 	pkill -USR1 -x sxhkd
 
-# lockscreen
-super + {_,shift +} Escape
-	{lock.sh,xscreensaver-command -lock}
+# launchers
+super + {d,x}
+	{rofi.sh,dmenu.sh}
 
-# file managers
+# lock
+super +  Escape
+	lock.sh
+
+# files
 super + {_,shift +} F1
 	{thunar,thunar-pkexec}
 
@@ -27,7 +29,7 @@ super + {_,shift +} F1
 super + {_,shift +} F2
 	{google-chrome,firefox}
 
-# wp
+# feh
 # super + F3
 #	feh --randomize --bg-fill --recursive --no-fehbg ~/Pictures/*.(png|jpg)
 	
@@ -56,10 +58,8 @@ alt + F9
         mpd-notify.sh
 
 # shots
-super + Print
-	scrot -q 85 -d 3 '%Y-%m-%d_%I-%M-%S_%p.png' -e 'mv $f ~/Screenshots/'
-super + shift + Print
-	scrot -q 85 -s '%Y-%m-%d_%I-%M-%S_%p.png' -e 'mv $f ~/Screenshots/'
+super + {_,shift +} Print
+	scrot -q 85 {-d 3,-s} '%Y-%m-%d_%I-%M-%S_%p.png' -e 'mv $f ~/Screenshots/'
 
 # volume
 XF86Audio{Raise,Lower}Volume
@@ -72,18 +72,12 @@ XF86MonBrightness{Up,Down}
 	light {-A 5,-U 5}
 
 # wal
-super + F12
-	wal -q -f random_user -o wal-extras.sh
-super + shift + F12
-	wal -q -R -o wal-extras.sh
-super + control + F12
-	wal -q -f random -o wal-extras.sh
+super + {_,shift +,ctrl +} F12
+	wal -q {-f random_user,-R,-f random} -o wal-extras.sh
         
 # sxiv
-super + equal
-	ls -t $HOME/Pictures/* | head -20 | xargs sxiv -rt
-super + shift + equal
-	ls -t $HOME/Pictures/wow/* | head -20 | xargs sxiv -rt
+super + {_,shift +} equal
+	ls -t {$HOME/Pictures/*,ls -t $HOME/Pictures/wow/*} | head -20 | xargs sxiv -rt
 
 # exit
 super + Delete
