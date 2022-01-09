@@ -57,8 +57,8 @@ alias \
 	zc="$EDITOR $ZDOTDIR/.zshrc" \
 	za="$EDITOR $HOME/.config/shell/aliasrc" \
 	zp="$EDITOR $HOME/.config/shell/profile" \
-	zr="rm -f $ZDOTDIR/zhistory && clear && exec zsh" \ 
-	zs="clear && exec zsh" \
+	zr="rm -f $ZDOTDIR/zhistory && clear && exec zsh" \
+        zs="clear;exec zsh" \
 
 # xrdb
 alias \

@@ -16,10 +16,8 @@ font:
 window:
   dimensions:
     columns: 80
-    lines: 22
+    lines: 24
 
   padding:
     x: 20
     y: 20
-
-  opacity: 0.95
