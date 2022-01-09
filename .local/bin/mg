@@ -1,3 +1,0 @@
-#!/bin/bash
-
-exec kitty +kitten hyperlinked_grep --smart-case "$@"

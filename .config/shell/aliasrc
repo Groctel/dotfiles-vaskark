@@ -29,6 +29,7 @@ alias \
 	ed='ed -p ": "' \
 	ncdu='ncdu -L -q --color dark --exclude-caches' \
 	icat='kitty +kitten icat' \
+        mg='kitty +kitten hyperlinked_grep --smart-case "$@"'
 
 # lsd
 alias \
