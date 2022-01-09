@@ -8,16 +8,3 @@ font:
     style: Sans
 
   size: 8.0
-
-  #offset:
-    #x: 0
-    #y: 0
-
-window:
-  dimensions:
-    columns: 68
-    lines: 22
-
-  padding:
-    x: 20
-    y: 20
