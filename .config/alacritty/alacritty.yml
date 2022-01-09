@@ -9,11 +9,10 @@
 # All imports must either be absolute paths starting with `/`, or paths relative
 # to the user's home directory starting with `~/`.
 import:
-#  - /path/to/alacritty.yml
 # - ~/.config/alacritty/fonts/berry.yml
-- ~/.config/alacritty/fonts/lemon.yml
+# - ~/.config/alacritty/fonts/lemon.yml
 # - ~/.config/alacritty/fonts/monospace.yml
-# - ~/.config/alacritty/fonts/scientifica.yml
+- ~/.config/alacritty/fonts/scientifica.yml
 # - ~/.config/alacritty/fonts/spleen.yml
 # - ~/.config/alacritty/fonts/uushi.yml
 
@@ -354,7 +353,7 @@ bell:
 
   # Duration of the visual bell flash in milliseconds. A `duration` of `0` will
   # disable the visual bell animation.
-  duration: 250
+  #duration: 0
 
   # Visual bell animation color.
   #color: '#ffffff'
