@@ -1,5 +1,4 @@
-" Plugins
-
+" plug.vim
 if ! filereadable(system('echo -n "${XDG_CONFIG_HOME:-$HOME/.config}/nvim/autoload/plug.vim"'))
     echo "Downloading junegunn/vim-plug to manage plugins..."
     silent !mkdir -p ${XDG_CONFIG_HOME:-$HOME/.config}/nvim/autoload/
@@ -7,6 +6,7 @@ if ! filereadable(system('echo -n "${XDG_CONFIG_HOME:-$HOME/.config}/nvim/autolo
     autocmd VimEnter * PlugInstall
 endif
 
+" Plugins
 call plug#begin('~/.config/nvim/plugged')
 Plug 'itchyny/lightline.vim'
 " Plug 'vim-airline/vim-airline'
@@ -18,7 +18,6 @@ Plug 'machakann/vim-highlightedyank'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --no-bash --no-fish' }
 Plug 'dylanaraps/wal.vim'
 Plug 'preservim/nerdtree'
-" Plug 'mcchrish/nnn.vim'
 Plug 'scrooloose/nerdcommenter'
 call plug#end()
 
