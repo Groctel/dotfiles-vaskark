@@ -1,18 +1,13 @@
 #!/bin/sh
 
-# bitmaps
-xset +fp /usr/local/share/fonts/misc &
-
-# xrdb
-xrdb $HOME/.Xresources
+# colors
+. "${HOME}/.cache/wal/colors.sh"
 
 # picom
 pgrep -x picom || picom --experimental-backends --config ~/.config/picom/picom.conf &
 
 # redshift
-systemctl --user import-environment
-#systemctl --user start graphical-session.target
-systemctl --user restart redshift.service
+systemctl --user import-environment; systemctl --user restart redshift.service
 
 # lock
 pgrep -x xautolock || xautolock -time 10 -locker 'lock.sh' -killer 'systemctl suspend' -corners 00-+ &
@@ -35,7 +30,8 @@ fi
 pgrep -x sxhkd || sxhkd -c $HOME/.config/bspwm/sxhkdrc $HOME/.config/sxhkd/sxhkdrc.common &
 
 # wp
-bash $HOME/.fehbg &
+# bash $HOME/.fehbg &
+xwallpaper --zoom $wallpaper &
 
 # dunst
 pgrep -x dunst || dunst &
@@ -48,17 +44,17 @@ bspc monitor eDP-1 -d 1 2 3 4 5
 bspc monitor HDMI-2 -d 6 7 8 9 10
 
 # desktop
-bspc config automatic_scheme 	        alternate
+bspc config automatic_scheme 	    alternate
 bspc config pointer_modifier 		mod4
-bspc config initial_polarity        	second_child
+bspc config initial_polarity        second_child
 bspc config split_ratio          	0.50
 
 bspc config borderless_monocle   	true
 bspc config gapless_monocle      	false
-bspc config single_monocle		true
+bspc config single_monocle		    true
 bspc config focus_follows_pointer 	true
-bspc config click_to_focus		none
-bspc config presel_feedback		true
+bspc config click_to_focus		    none
+bspc config presel_feedback		    true
 
 bspc config top_padding 		0
 bspc config bottom_padding 		0
@@ -66,9 +62,6 @@ bspc config left_padding 		0
 bspc config right_padding 		0
 bspc config border_width 		1
 bspc config window_gap			20
-
-# colors
-. "${HOME}/.cache/wal/colors.sh"
 
 bspc config normal_border_color 	"$color8"
 bspc config active_border_color 	"$color2"
