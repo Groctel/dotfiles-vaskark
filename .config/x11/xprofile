@@ -1,11 +1,10 @@
 # start
-xrandr --dpi 96
 xset +fp ~/.local/share/fonts/misc
 xrdb -merge $HOME/.config/x11/xresources
 
 # ssh-agent
-if [ ! -S ~/.ssh/ssh_auth_sock ]; then
-    eval `ssh-agent`
-    ln -sf "$SSH_AUTH_SOCK" ~/.ssh/ssh_auth_sock
-fi
-export SSH_AUTH_SOCK=~/.ssh/ssh_auth_sock
+# if [ ! -S ~/.ssh/ssh_auth_sock ]; then
+# 	eval `ssh-agent`
+#     ln -sf "$SSH_AUTH_SOCK" ~/.ssh/ssh_auth_sock
+# fi
+# export SSH_AUTH_SOCK=~/.ssh/ssh_auth_sock
