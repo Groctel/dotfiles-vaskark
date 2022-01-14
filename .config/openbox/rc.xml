@@ -159,7 +159,7 @@
     <floatingX>0</floatingX>
     <floatingY>0</floatingY>
     <noStrut>no</noStrut>
-    <stacking>Above</stacking>
+    <stacking>Below</stacking>
     <!-- 'Above', 'Normal', or 'Below' -->
     <direction>Vertical</direction>
     <!-- 'Vertical' or 'Horizontal' -->
@@ -411,7 +411,7 @@
     </keybind>
     <keybind key="W-Escape">
       <action name="Execute">
-        <command>lock.sh</command>
+        <command>lock-alt.sh</command>
       </action>
     </keybind>
     <keybind key="W-F1">
@@ -457,12 +457,12 @@
     <!-- Take a screenshot -->
     <keybind key="W-Print">
       <action name="Execute">
-        <command>sh -c 'maim -d 3 ~/Screenshots/$(date +%Y-%m-%d_%I-%M-%S_%p).png'</command>
+        <command>sh -c "scrot -q 85 -d 3 '%Y-%m-%d_%I-%M-%S_%p.png' -e 'mv $f ~/Screenshots/'"</command>
       </action>
     </keybind>
     <keybind key="W-S-Print">
       <action name="Execute">
-        <command>sh -c 'maim -s ~/Screenshots/$(date +%Y-%m-%d_%I-%M-%S_%p).png'</command>
+        <command>sh -c "scrot -q 85 -s '%Y-%m-%d_%I-%M-%S_%p.png' -e 'mv $f ~/Screenshots/'"</command>
       </action>
     </keybind>
     <!-- Multimedia keys-->
@@ -573,12 +573,12 @@
     <!-- sxiv -->
     <keybind key="W-equal">
       <action name="Execute">
-        <command>sh -c 'ls -t $HOME/Pictures/* | head -20 | xargs sxiv -rt'</command>
+        <command>sh -c 'ls -t $HOME/Pictures/* | head -20 | xargs sxiv -rtb'</command>
       </action>
     </keybind>
     <keybind key="W-S-equal">
       <action name="Execute">
-        <command>sh -c 'ls -t $HOME/Pictures/wow/* | head -20 | xargs sxiv -rt'</command>
+        <command>sh -c 'ls -t $HOME/Pictures/wow/* | head -20 | xargs sxiv -rtb'</command>
       </action>
     </keybind>
     <!-- Reload and Exit keybinds -->

@@ -28,4 +28,4 @@ wal -q -R -o -wal-extras.sh &
 lemonbar-current &
 
 # polybar
-#pb-nf.sh &
+# pb-nf.sh &
