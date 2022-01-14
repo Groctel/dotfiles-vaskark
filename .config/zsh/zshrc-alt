@@ -2,10 +2,10 @@
 typeset -U PATH path
 
 # enable colors and change prompt:
-autoload -U colors && colors	# Load colors
+autoload -U colors && colors
 PS1="%B%{$fg[red]%}[%{$fg[yellow]%}%n%{$fg[green]%}@%{$fg[blue]%}%M %{$fg[magenta]%}%~%{$fg[red]%}]%{$reset_color%}$%b "
-setopt autocd		# Automatically cd into typed directory.
-stty stop undef		# Disable ctrl-s to freeze terminal.
+setopt autocd autopushd
+stty stop undef # Disable ctrl-s to freeze terminal.
 
 # aliases
 [ -f "${XDG_CONFIG_HOME:-$HOME/.config}/shell/aliasrc" ] && source "${XDG_CONFIG_HOME:-$HOME/.config}/shell/aliasrc"
@@ -19,11 +19,11 @@ zmodload zsh/complist
 compinit
 _comp_options+=(globdots)		# Include hidden files.
 
-# mode: vi (v) or emacs (e)
-bindkey -v
+# mode
+# bindkey -v
 export KEYTIMEOUT=1
 
-# edit line in vim with ctrl-e:
+# edit line
 autoload edit-command-line; zle -N edit-command-line
 bindkey '^e' edit-command-line
 
@@ -38,22 +38,22 @@ bindkey -v '^?' backward-delete-char
 function zle-keymap-select {
   if [[ ${KEYMAP} == vicmd ]] ||
      [[ $1 = 'block' ]]; then
-    echo -ne '\e[1 q'
+    echo -ne '\e[2 q'
   elif [[ ${KEYMAP} == main ]] ||
        [[ ${KEYMAP} == viins ]] ||
        [[ ${KEYMAP} = '' ]] ||
        [[ $1 = 'beam' ]]; then
-    echo -ne '\e[5 q'
+    echo -ne '\e[6 q'
   fi
 }
 zle -N zle-keymap-select
 zle-line-init() {
     zle -K viins # initiate `vi insert` as keymap (can be removed if `bindkey -V` has been set elsewhere)
-    echo -ne "\e[5 q"
+    echo -ne "\e[6 q"
 }
 zle -N zle-line-init
-echo -ne '\e[5 q' # Use beam shape cursor on startup.
-preexec() { echo -ne '\e[5 q' ;} # Use beam shape cursor for each new prompt.
+echo -ne '\e[6 q' # Use beam shape cursor on startup.
+preexec() { echo -ne '\e[6 q' ;} # Use beam shape cursor for each new prompt.
 
 # ncmpcpp (ctrl+\)
 ncmpcppShow() {
@@ -66,7 +66,7 @@ bindkey '^\' ncmpcppShow
 # kitty completion
 kitty + complete setup zsh | source /dev/stdin
 
-# pywal
+# wal
 (cat ~/.cache/wal/sequences &)
 source ~/.cache/wal/colors.sh
 
@@ -75,23 +75,22 @@ source ~/.cache/wal/colors.sh
 
 # functions
 source $ZDOTDIR/functions/fzf-edit 2>/dev/null
-source $ZDOTDIR/functions/fzf-kill 2>/dev/null
-source $ZDOTDIR/functions/fzf-man 2>/dev/null
-source $ZDOTDIR/functions/fzf-open 2>/dev/null
+# source $ZDOTDIR/functions/fzf-kill 2>/dev/null
+# source $ZDOTDIR/functions/fzf-man 2>/dev/null
+# source $ZDOTDIR/functions/fzf-open 2>/dev/null
 
-# plugins
+# extract
 source $ZDOTDIR/plugins/zsh-extract/extract.plugin.zsh 2>/dev/null
-source $ZDOTDIR/plugins/zsh-autosuggestions/zsh-autosuggestions.plugin.zsh 2>/dev/null
-source $ZDOTDIR/plugins/zsh-history-substring-search/zsh-history-substring-search.plugin.zsh 2>/dev/null
-source $ZDOTDIR/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.plugin.zsh 2>/dev/null
 
 # autosuggestions
+source $ZDOTDIR/plugins/zsh-autosuggestions/zsh-autosuggestions.plugin.zsh 2>/dev/null
 bindkey '^ ' autosuggest-toggle
 
-# syntax-highlighting
+# syntax highlighting
+source $ZDOTDIR/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.plugin.zsh 2>/dev/null
 ZSH_HIGHLIGHT_HIGHLIGHTERS=(main brackets pattern cursor)
 ZSH_HIGHLIGHT_PATTERNS+=('rm -rf *' 'fg=black,bold,bg=red')
 
-# history-substring-search keys
-bindkey "$terminfo[kcuu1]" history-substring-search-up
-bindkey "$terminfo[kcud1]" history-substring-search-down
+# history filter
+bindkey "^[[A" history-beginning-search-backward
+bindkey "^[[B" history-beginning-search-forward
