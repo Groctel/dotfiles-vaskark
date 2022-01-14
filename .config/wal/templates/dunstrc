@@ -6,7 +6,7 @@
     offset = 15x15
     padding = 8
     horizontal_padding = 8
-    transparency = 25
+    transparency = 0
     font = scientifica 8
     format = "<b>%s</b>\n%b"
 
