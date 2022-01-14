@@ -70,7 +70,7 @@ font-0 = "scientifica:bold:size=8;2"
 font-1 = "Symbols Nerd Font:size=9;2"
 font-2 = "Symbols Nerd Font:size=35;9"
 
-modules-left = misc sp ewmh-i
+modules-left = misc sp ewmh
 modules-center = mpd
 modules-right = wlan eth uptime-2 temp cpu memory battery volume sp date
 
@@ -118,7 +118,7 @@ content-foreground = ${colors.color0}
 content-padding = 2
 
 click-left = polybar-msg cmd restart
-click-right = wal -f random_user -o ~/.config/berry/wal/extras.sh
+click-right = wal -f random_user -o wal-extras.sh
 click-middle = subl ~/.config/berry/polybar/config-nf
 
 ##################################################
