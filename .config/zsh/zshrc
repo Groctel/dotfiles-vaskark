@@ -1,0 +1,91 @@
+# path
+typeset -U PATH path
+
+# set
+setopt autocd autopushd histignorealldups incappendhistory extendedhistory
+stty stop undef
+
+# basic auto/tab complete:
+autoload -Uz compinit
+zstyle ':completion:*' matcher-list 'm:{a-zA-Z}={A-Za-z}' 'r:|?=**'
+zstyle ':completion:*' menu select
+zstyle ':completion::complete:*' gain-privileges 1
+zmodload zsh/complist
+compinit
+_comp_options+=(globdots) # Include hidden files.
+
+# kitty
+kitty + complete setup zsh | source /dev/stdin
+
+# wal
+(cat ~/.cache/wal/sequences &)
+source ~/.cache/wal/colors.sh
+
+# aliases
+[ -f "${XDG_CONFIG_HOME:-$HOME/.config}/shell/aliasrc" ] && source "${XDG_CONFIG_HOME:-$HOME/.config}/shell/aliasrc"
+
+# edit line vim (ctrl-e), emacs (ctrl-x, ctrl-e):
+# autoload edit-command-line; zle -N edit-command-line
+# bindkey '^x^e' edit-command-line
+
+# urxvt/xterm cursor beam: 35 (blink), 36 (no blink)
+# echo -e -n "\x1b[\x36 q"
+
+# ncmpcpp (ctrl+\)
+ncmpcppShow() {
+  BUFFER="ncmpcpp -q"
+  zle accept-line
+}
+zle -N ncmpcppShow
+bindkey '^\' ncmpcppShow
+
+# fff
+f() {
+    fff "$@"
+    cd "$(cat "${XDG_CACHE_HOME:=${HOME}/.cache}/fff/.fff_d")"
+}
+
+# lf
+[ -f "$HOME/.config/lf/icons" ] && source "$HOME/.config/lf/icons"
+
+# fzf
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+# functions
+source $ZDOTDIR/functions/fzf-edit 2>/dev/null
+source $ZDOTDIR/functions/fzf-kill 2>/dev/null
+source $ZDOTDIR/functions/fzf-man 2>/dev/null
+source $ZDOTDIR/functions/fzf-open 2>/dev/null
+
+# pure
+fpath+=/usr/local/pure
+autoload -U promptinit; promptinit
+zstyle ':prompt:pure:prompt:success' color green
+zstyle ':prompt:pure:prompt:failure' color red
+zstyle ':prompt:pure:git:stash' show yes
+# PURE_GIT_UP_ARROW="💨"
+# PURE_GIT_STASH_SYMBOL="🗃"
+prompt pure
+
+# starship
+# eval "$(starship init zsh)"
+
+# extract
+source $ZDOTDIR/plugins/zsh-extract/extract.plugin.zsh 2>/dev/null
+
+# autosuggestions
+source $ZDOTDIR/plugins/zsh-autosuggestions/zsh-autosuggestions.plugin.zsh 2>/dev/null
+bindkey '^ ' autosuggest-toggle
+
+# history
+source $ZDOTDIR/plugins/zsh-history-substring-search/zsh-history-substring-search.plugin.zsh 2>/dev/null
+bindkey "$terminfo[kcuu1]" history-substring-search-up
+bindkey "$terminfo[kcud1]" history-substring-search-down
+
+# syntax highlighting
+source $ZDOTDIR/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.plugin.zsh 2>/dev/null
+ZSH_HIGHLIGHT_HIGHLIGHTERS=(main brackets pattern cursor)
+ZSH_HIGHLIGHT_PATTERNS+=('rm -rf *' 'fg=black,bold,bg=red')
+
+# vi-mode
+source $ZDOTDIR/plugins/zsh-vi-mode/zsh-vi-mode.plugin.zsh 2>/dev/null

@@ -13,6 +13,8 @@ stty stop undef		# Disable ctrl-s to freeze terminal.
 # basic auto/tab complete:
 autoload -Uz compinit
 zstyle ':completion:*' matcher-list 'm:{a-zA-Z}={A-Za-z}' 'r:|?=**'
+zstyle ':completion:*' menu select
+zstyle ':completion::complete:*' gain-privileges 1
 zmodload zsh/complist
 compinit
 _comp_options+=(globdots)		# Include hidden files.
@@ -68,6 +70,9 @@ kitty + complete setup zsh | source /dev/stdin
 (cat ~/.cache/wal/sequences &)
 source ~/.cache/wal/colors.sh
 
+# fzf
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
 # functions
 source $ZDOTDIR/functions/fzf-edit 2>/dev/null
 source $ZDOTDIR/functions/fzf-kill 2>/dev/null
@@ -77,8 +82,8 @@ source $ZDOTDIR/functions/fzf-open 2>/dev/null
 # plugins
 source $ZDOTDIR/plugins/zsh-extract/extract.plugin.zsh 2>/dev/null
 source $ZDOTDIR/plugins/zsh-autosuggestions/zsh-autosuggestions.plugin.zsh 2>/dev/null
-source $ZDOTDIR/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.plugin.zsh 2>/dev/null
 source $ZDOTDIR/plugins/zsh-history-substring-search/zsh-history-substring-search.plugin.zsh 2>/dev/null
+source $ZDOTDIR/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.plugin.zsh 2>/dev/null
 
 # autosuggestions
 bindkey '^ ' autosuggest-toggle
@@ -90,6 +95,3 @@ ZSH_HIGHLIGHT_PATTERNS+=('rm -rf *' 'fg=black,bold,bg=red')
 # history-substring-search keys
 bindkey "$terminfo[kcuu1]" history-substring-search-up
 bindkey "$terminfo[kcud1]" history-substring-search-down
-
-# fzf
-[ -f ~/.config/fzf/fzf.zsh ] && source ~/.config/fzf/fzf.zsh
