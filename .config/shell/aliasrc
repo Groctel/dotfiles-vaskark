@@ -33,7 +33,7 @@ alias \
 
 # lsd
 alias \
-	lsd='lsd -h --group-dirs first --no-symlink' \
+	lsd='lsd -h' \
 	ls='lsd' \
 	l='ls -l' \
 	ll='ls -al' \
