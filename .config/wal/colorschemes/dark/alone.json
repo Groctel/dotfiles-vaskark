@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/jason/Pictures/dsvm6t4vlsb81.png",
+    "alpha": "100",
+    "special": {
+        "background": "#181819",
+        "foreground": "#c5c5c5",
+        "cursor": "#c6b08e"
+    },
+    "colors": {
+        "color0": "#181819",
+        "color1": "#623d36",
+        "color2": "#b18d74",
+        "color3": "#7fb3af",
+        "color4": "#727f76",
+        "color5": "#157385",
+        "color6": "#c6b08e",
+        "color7": "#c5c5c5",
+        "color8": "#303032",
+        "color9": "#89483c",
+        "color10": "#f9b383",
+        "color11": "#91fcf4",
+        "color12": "#84b493",
+        "color13": "#119cb7",
+        "color14": "#ffe9a2",
+        "color15": "#ffffff"
+    }
+}

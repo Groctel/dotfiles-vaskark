@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/jason/Pictures/monica-bellucci-esquire-2020-j4.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#161616",
+        "foreground": "#c4c4c4",
+        "cursor": "#977368"
+    },
+    "colors": {
+        "color0": "#161616",
+        "color1": "#815e51",
+        "color2": "#275d4c",
+        "color3": "#dfb1a3",
+        "color4": "#674840",
+        "color5": "#c2948a",
+        "color6": "#977368",
+        "color7": "#c4c4c4",
+        "color8": "#2f2f2f",
+        "color9": "#b5735b",
+        "color10": "#2a8165",
+        "color11": "#ffd8ba",
+        "color12": "#905748",
+        "color13": "#ffb29d",
+        "color14": "#d48c76",
+        "color15": "#ffffff"
+    }
+}

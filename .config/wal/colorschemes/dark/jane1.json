@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/jason/Pictures/jane-levy-beau-nelson-for-glamour-5k-2p.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#1b191c",
+        "foreground": "#c6c5c6",
+        "cursor": "#eeb99d"
+    },
+    "colors": {
+        "color0": "#1b191c",
+        "color1": "#764249",
+        "color2": "#cc8c8a",
+        "color3": "#836349",
+        "color4": "#d0a5b2",
+        "color5": "#946e72",
+        "color6": "#eeb99d",
+        "color7": "#c6c5c6",
+        "color8": "#343036",
+        "color9": "#a54956",
+        "color10": "#ffa19d",
+        "color11": "#b77f51",
+        "color12": "#ffbedd",
+        "color13": "#d17e87",
+        "color14": "#ffe7b1",
+        "color15": "#fffeff"
+    }
+}

@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/jason/Pictures/alison-brie-american-actress-beautiful-actress-5k-4867x4354-4759.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#191918",
+        "foreground": "#c5c5c5",
+        "cursor": "#dab99c"
+    },
+    "colors": {
+        "color0": "#191918",
+        "color1": "#604d3a",
+        "color2": "#bc9a7e",
+        "color3": "#8b7f6f",
+        "color4": "#7a624b",
+        "color5": "#8ec6d1",
+        "color6": "#dab99c",
+        "color7": "#c5c5c5",
+        "color8": "#323230",
+        "color9": "#866441",
+        "color10": "#ffc68f",
+        "color11": "#c4a780",
+        "color12": "#ab7f54",
+        "color13": "#a1ffff",
+        "color14": "#ffeeb2",
+        "color15": "#ffffff"
+    }
+}
