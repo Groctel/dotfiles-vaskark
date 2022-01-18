@@ -56,7 +56,7 @@ alias -g G='| grep -i'
 # zsh
 alias \
 	zc="$EDITOR $ZDOTDIR/.zshrc" \
-	za="$EDITOR $HOME/.config/shell/aliasrc" \
+	za="$EDITOR $HOME/.config/shell/aliases" \
 	zp="$EDITOR $HOME/.config/shell/profile" \
 	zr="rm -f $ZDOTDIR/zhistory && clear && exec zsh" \
         zs="clear;exec zsh" \
