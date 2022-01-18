@@ -87,7 +87,6 @@ f() {
 source $ZDOTDIR/functions/fzf-edit 2>/dev/null
 source $ZDOTDIR/functions/fzf-kill 2>/dev/null
 source $ZDOTDIR/functions/fzf-man 2>/dev/null
-source $ZDOTDIR/functions/fzf-open 2>/dev/null
 
 # extract
 source $ZDOTDIR/plugins/zsh-extract/extract.plugin.zsh 2>/dev/null
@@ -108,13 +107,13 @@ bindkey "^[[A" history-beginning-search-backward
 bindkey "^[[B" history-beginning-search-forward
 
 # pure
-fpath+=/usr/local/pure
+fpath+=~/.pure
 autoload -U promptinit; promptinit
 zstyle ':prompt:pure:prompt:success' color green
 zstyle ':prompt:pure:prompt:failure' color red
 zstyle ':prompt:pure:git:stash' show yes
-# PURE_GIT_UP_ARROW="💨"
-# PURE_GIT_STASH_SYMBOL="🗃"
+PURE_GIT_UP_ARROW="💨"
+PURE_GIT_STASH_SYMBOL="🗃"
 prompt pure
 
 # starship
