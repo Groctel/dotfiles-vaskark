@@ -76,7 +76,7 @@ alias rhb='run-help bindkey'
 alias lml='exa -l -r -s time /var/log | tail'
 
 # clean logs
-alias clogs='sudo rm -rf /var/log/*'
+alias clean_logs='sudo rm -rf /var/log/*'
 
 # journal
 alias \

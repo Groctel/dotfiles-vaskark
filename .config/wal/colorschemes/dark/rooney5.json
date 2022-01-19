@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/jason/Pictures/Rooney-Mara-04_2560x1600.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#181717",
+        "foreground": "#c5c5c5",
+        "cursor": "#8f8175"
+    },
+    "colors": {
+        "color0": "#181717",
+        "color1": "#775f4e",
+        "color2": "#b79987",
+        "color3": "#644d3e",
+        "color4": "#c6b3a3",
+        "color5": "#bc6a4e",
+        "color6": "#8f8175",
+        "color7": "#c5c5c5",
+        "color8": "#312f2f",
+        "color9": "#a77958",
+        "color10": "#ffc19a",
+        "color11": "#8c6146",
+        "color12": "#ffe6bc",
+        "color13": "#ff8154",
+        "color14": "#caa687",
+        "color15": "#ffffff"
+    }
+}

@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/jason/Pictures/eva_green_dreamers_mirror.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#1a1917",
+        "foreground": "#c5c5c5",
+        "cursor": "#c9b697"
+    },
+    "colors": {
+        "color0": "#1a1917",
+        "color1": "#69492b",
+        "color2": "#786545",
+        "color3": "#8d8267",
+        "color4": "#b6734c",
+        "color5": "#b89773",
+        "color6": "#c9b697",
+        "color7": "#c5c5c5",
+        "color8": "#535251",
+        "color9": "#69492b",
+        "color10": "#786545",
+        "color11": "#8d8267",
+        "color12": "#b6734c",
+        "color13": "#b89773",
+        "color14": "#c9b697",
+        "color15": "#c5c5c5"
+    }
+}

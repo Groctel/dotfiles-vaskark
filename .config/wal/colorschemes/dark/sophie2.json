@@ -1,27 +1,27 @@
 {
-    "wallpaper": "/home/jason/Pictures/sophie-turner-black-dress_3840x2160_xtrafondos.com-m.jpg",
+    "wallpaper": "/home/jason/Pictures/sophie-turner-black-dress_3840x2160_xtrafondos.com.jpg",
     "alpha": "100",
     "special": {
-        "background": "#111111",
-        "foreground": "#bebebe",
-        "cursor": "#5297cf"
+        "background": "#1a191a",
+        "foreground": "#c5c5c5",
+        "cursor": "#c29583"
     },
     "colors": {
-        "color0": "#111111",
-        "color1": "#d36265",
-        "color2": "#aece91",
-        "color3": "#e7e18c",
-        "color4": "#5e7175",
-        "color5": "#963c59",
-        "color6": "#5297cf",
-        "color7": "#bebebe",
-        "color8": "#2a2a2a",
-        "color9": "#ff6b70",
-        "color10": "#e1ffa5",
-        "color11": "#ffff9d",
-        "color12": "#6c9ba5",
-        "color13": "#d0406e",
-        "color14": "#57c6ff",
-        "color15": "#fafafa"
+        "color0": "#1a191a",
+        "color1": "#644c45",
+        "color2": "#5e575a",
+        "color3": "#7c6d69",
+        "color4": "#7a5d52",
+        "color5": "#deb6a3",
+        "color6": "#c29583",
+        "color7": "#c5c5c5",
+        "color8": "#333133",
+        "color9": "#8c5c4e",
+        "color10": "#856573",
+        "color11": "#b08579",
+        "color12": "#ab725d",
+        "color13": "#ffe3ba",
+        "color14": "#ffb895",
+        "color15": "#ffffff"
     }
 }
