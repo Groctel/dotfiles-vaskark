@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/jason/Pictures/scarlett-johansson-for-mango-fall-2010-wallpaper.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#171719",
+        "foreground": "#c5c5c5",
+        "cursor": "#0f699d"
+    },
+    "colors": {
+        "color0": "#171719",
+        "color1": "#714140",
+        "color2": "#867078",
+        "color3": "#3484b1",
+        "color4": "#0f699d",
+        "color5": "#c58e80",
+        "color6": "#0f699d",
+        "color7": "#c5c5c5",
+        "color8": "#2e2e33",
+        "color9": "#9e4947",
+        "color10": "#be8197",
+        "color11": "#34aff5",
+        "color12": "#088bd7",
+        "color13": "#ffac91",
+        "color14": "#088bd7",
+        "color15": "#ffffff"
+    }
+}

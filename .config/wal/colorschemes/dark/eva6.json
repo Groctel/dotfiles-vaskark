@@ -1,27 +1,27 @@
 {
-    "wallpaper": "/home/jason/Pictures/eva_green_dreamers_mirror.jpg",
+    "wallpaper": "/home/jason/Pictures/eva_green_dreamers_mirror-m.jpg",
     "alpha": "100",
     "special": {
-        "background": "#1a1917",
-        "foreground": "#c5c5c5",
-        "cursor": "#c9b697"
+        "background": "#2b2c33",
+        "foreground": "#fffddd",
+        "cursor": "#636f7d"
     },
     "colors": {
-        "color0": "#1a1917",
-        "color1": "#69492b",
-        "color2": "#786545",
-        "color3": "#8d8267",
-        "color4": "#b6734c",
-        "color5": "#b89773",
-        "color6": "#c9b697",
-        "color7": "#c5c5c5",
-        "color8": "#535251",
-        "color9": "#69492b",
-        "color10": "#786545",
-        "color11": "#8d8267",
-        "color12": "#b6734c",
-        "color13": "#b89773",
-        "color14": "#c9b697",
-        "color15": "#c5c5c5"
+        "color0": "#2b2c33",
+        "color1": "#b16c7f",
+        "color2": "#92ab75",
+        "color3": "#bdab77",
+        "color4": "#485476",
+        "color5": "#746081",
+        "color6": "#636f7d",
+        "color7": "#d9c1a9",
+        "color8": "#41434e",
+        "color9": "#f8799c",
+        "color10": "#bff085",
+        "color11": "#ffe886",
+        "color12": "#5167a5",
+        "color13": "#996eb6",
+        "color14": "#728fb0",
+        "color15": "#fffddd"
     }
 }

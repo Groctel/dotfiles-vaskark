@@ -58,7 +58,7 @@ URxvt*borderColor:  {background.alpha}
 ! sxiv
 Sxiv.font: scientifica-8
 Sxiv.background: {color0}
-Sxiv.foreground: {color7}
+Sxiv.foreground: {color5}
 
 ! dmenu
 dmenu.font: scientifica-8:bold
