@@ -30,7 +30,7 @@ wal -q -R -o wal-extras.sh &
 sxhkd -c $HOME/.config/berry/sxhkdrc $HOME/.config/sxhkd/sxhkdrc.common &
 
 # redshift
-systemctl --user import-environment
+systemctl --user import-environment 2>/dev/null
 systemctl --user restart redshift
 
 # picom
