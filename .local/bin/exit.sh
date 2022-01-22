@@ -16,15 +16,23 @@ case "$(uname -s)" in
 	
 	Linux*)
 		case "$MENU" in
-			*Logout) pkill Xorg ;;
+			*Logout) pkill X ;;
 			*Restart) shutdown -r now ;;
-			*Shutdown) shutdown -P now ;;
+			*Shutdown) shutdown now ;;
 		esac
 	;;
 
+	FreeBSD*)
+		case "$MENU" in
+			*Logout) pkill X ;;
+			*Restart) shutdown -r now ;;
+			*Shutdown) shutdown -p now ;;
+		esac
+	;;			
+
 	OpenBSD*)
 		case "$MENU" in
-			*Logout) pkill Xorg ;;
+			*Logout) pkill X ;;
 			*Restart) shutdown -r now ;;
 			*Shutdown) shutdown -p now ;;
 		esac
