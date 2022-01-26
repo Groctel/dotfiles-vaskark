@@ -1,8 +1,5 @@
 #!/bin/bash
 
-# Import wal colors 
-#. "${HOME}/.cache/wal/colors.sh"
-
 # xyw
 x=2
 y=2
