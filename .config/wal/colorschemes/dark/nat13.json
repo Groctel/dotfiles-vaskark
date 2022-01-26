@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/jason/Pictures/wallpaperflare.com_wallpaper_(6).jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#181616",
+        "foreground": "#fffefe",
+        "cursor": "#d5b79a"
+    },
+    "colors": {
+        "color0": "#181616",
+        "color1": "#7a372a",
+        "color2": "#cd8c75",
+        "color3": "#8f8673",
+        "color4": "#8f8673",
+        "color5": "#ce6447",
+        "color6": "#d5b79a",
+        "color7": "#c5c4c4",
+        "color8": "#322d2d",
+        "color9": "#a9402b",
+        "color10": "#ffac83",
+        "color11": "#cab484",
+        "color12": "#cab484",
+        "color13": "#ff774a",
+        "color14": "#ffedb0",
+        "color15": "#fffefe"
+    }
+}

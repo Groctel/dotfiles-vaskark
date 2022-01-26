@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/jason/Pictures/atomic-blonde-movie-charlize-theron-sofia-boutella-4k.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#161618",
+        "foreground": "#fefeff",
+        "cursor": "#8073b9"
+    },
+    "colors": {
+        "color0": "#161618",
+        "color1": "#793e68",
+        "color2": "#b8728f",
+        "color3": "#313966",
+        "color4": "#465679",
+        "color5": "#855a83",
+        "color6": "#8073b9",
+        "color7": "#c4c4c5",
+        "color8": "#2d2d32",
+        "color9": "#a9448c",
+        "color10": "#ff80b6",
+        "color11": "#35438e",
+        "color12": "#4e6ba9",
+        "color13": "#bb66b7",
+        "color14": "#9a82ff",
+        "color15": "#fefeff"
+    }
+}

@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/jason/Pictures/bad-times-at-the-el-royale-movie-dakota-johnson-4k-0i.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#1c1c1c",
+        "foreground": "#ffe6e6",
+        "cursor": "#271c5e"
+    },
+    "colors": {
+        "color0": "#1c1c1c",
+        "color1": "#672560",
+        "color2": "#b4836d",
+        "color3": "#845f93",
+        "color4": "#a66b97",
+        "color5": "#73488a",
+        "color6": "#271c5e",
+        "color7": "#d6b0b0",
+        "color8": "#353535",
+        "color9": "#8f2684",
+        "color10": "#fca37a",
+        "color11": "#b26bce",
+        "color12": "#e979cd",
+        "color13": "#994fc1",
+        "color14": "#2d1c82",
+        "color15": "#ffe6e6"
+    }
+}

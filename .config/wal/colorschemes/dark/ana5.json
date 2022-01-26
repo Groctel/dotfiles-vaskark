@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/jason/Pictures/ana-de-armas-photoshoot-beautiful-actress-4440x2874-4801.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#191a1b",
+        "foreground": "#fefeff",
+        "cursor": "#73767b"
+    },
+    "colors": {
+        "color0": "#191a1b",
+        "color1": "#634c4e",
+        "color2": "#4e6472",
+        "color3": "#baaea1",
+        "color4": "#415463",
+        "color5": "#ae9a91",
+        "color6": "#73767b",
+        "color7": "#c5c5c6",
+        "color8": "#313335",
+        "color9": "#8c575c",
+        "color10": "#5884a0",
+        "color11": "#ffe3ba",
+        "color12": "#496e8b",
+        "color13": "#f6c0a7",
+        "color14": "#8695af",
+        "color15": "#fefeff"
+    }
+}
