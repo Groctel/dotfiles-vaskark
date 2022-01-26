@@ -29,7 +29,8 @@ alias \
 	ed='ed -p ": "' \
 	ncdu='ncdu -L -q --color dark --exclude-caches' \
 	icat='kitty +kitten icat' \
-        mg='kitty +kitten hyperlinked_grep --smart-case "$@"'
+        mg='kitty +kitten hyperlinked_grep --smart-case "$@"' \
+        m='micro' \
 
 # lsd
 alias \
@@ -55,10 +56,10 @@ alias -g G='| grep -i'
 
 # zsh
 alias \
+        zh="rm -f $ZDOTDIR/zhistory && clear && exec zsh" \
 	zc="$EDITOR $ZDOTDIR/.zshrc" \
 	za="$EDITOR $HOME/.config/shell/aliases" \
 	zp="$EDITOR $HOME/.config/shell/profile" \
-	zr="rm -f $ZDOTDIR/zhistory && clear && exec zsh" \
         zs="clear;exec zsh" \
 
 # xrdb
@@ -113,12 +114,15 @@ alias \
 alias \
 	w1='wal -f random_user -o wal-extras.sh' \
 	w2='wal -f random -o wal-extras.sh' \
+        wr='wal --backend haishoku --recursive -i ~/Pictures -o wal-extras.sh' \
 	fw='fzf-wal.sh' \
 
 # system
 alias \
 	upd8='sudo apt update;sudo apt full-upgrade;sudo apt autoremove;sudo apt clean' \
-	alias shut='poweroff' \
+	shut='poweroff' \
+        nu='sudo nala upgrade -y' \
+        nh='nala history' \
 
 # startx
 [ -f "$XINITRC" ] && alias startx="startx $XINITRC"
@@ -135,11 +139,6 @@ alias \
 	dn='nmcli c d' \
 	ndw='nmcli d wifi' \
 	i='ip -br -c a' \
-
-# windscribe
-alias \
-	wsc='windscribe connect' \
-	wsd='windscribe disconnect' \
 
 # install
 alias \
