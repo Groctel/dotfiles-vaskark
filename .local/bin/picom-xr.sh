@@ -9,4 +9,4 @@ fi
 sleep 0.1s
 
 # Launch
-picom --config ~/.config/picom/picom-xr.conf >> /tmp/picom.log 2>&1 &
+picom --config ~/.config/picom/picom-xr.conf &>/dev/null &
