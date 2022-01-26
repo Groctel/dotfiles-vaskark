@@ -29,7 +29,7 @@ fi
 # lemonbar
 LEMONBAR=$(pgrep -x lemonbar)
 if [[ -n "$LEMONBAR" ]]; then
-	pkill lemonbar; lemonbar-current &
+	pkill lemonbar; lemonbar-current 2>/dev/null &
 fi
 
 # glava
