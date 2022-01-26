@@ -5,11 +5,11 @@
 
 # lemonbar
 super + semicolon
-   pkill lemonbar || lemonbar-current
+   pkill lemonbar || lemonbar-current 2> /dev/null
 super + shift + semicolon
    lemonbar-menu.sh
 super + ctrl + semicolon
-   pkill lemonbar && lemonbar-current
+   pkill lemonbar && lemonbar-current 2> /dev/null
 
 # polybar
 #super + semicolon
@@ -28,6 +28,10 @@ super + shift + g
 # viz
 super + v
     viz.sh
+
+# terms
+super + t ; {a,k,s,u,x}
+    {alacritty --config-file ~/.config/alacritty/lemon.yml,kitty,st,urxvt,xterm}
 
 
 #
@@ -92,8 +96,9 @@ super + r
 super + c
     berryc window_center
 
-#super + Delete
-#     berryc quit
+super + Delete
+#    berryc quit
+    exit.sh
 
 ~button1
      berryc pointer_focus

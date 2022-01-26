@@ -6,8 +6,6 @@
 # terminals
 super +  {_,shift +, ctrl +} Return
  	{alacritty,kitty,urxvt}
-# super + t ; {a,k,s,u,x}
-# 	{alacritty,kitty,st,urxvt,xterm}
 
 # reload sxhkd
 super + control + r
@@ -23,7 +21,7 @@ super +  Escape
 
 # files
 super + {_,shift +} F1
-	{thunar,thunar-pkexec}
+	{nemo,nemo-pkexec}
 
 # browsers
 super + {_,shift +} F2
@@ -78,7 +76,3 @@ super + {_,shift +,ctrl +} F12
 # sxiv
 super + {_,shift +} equal
 	ls -t {$HOME/Pictures/*,ls -t $HOME/Pictures/wow/*} | head -20 | xargs sxiv -rt
-
-# exit
-super + Delete
-	exit.sh
