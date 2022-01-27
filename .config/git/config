@@ -13,3 +13,8 @@
 	helper = cache
 [init]
 	defaultBranch = master
+[color]
+	status = auto
+	branch = auto
+	diff = auto
+	interactive = auto
