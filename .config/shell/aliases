@@ -2,6 +2,7 @@
 alias \
 	rm='rm -i' \
 	cp='cp -i' \
+	ln='ln -i' \
 	md='mkdir -pv' \
 	rd='rmdir -pv' \
 	df='df -HT' \
