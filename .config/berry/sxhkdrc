@@ -5,11 +5,11 @@
 
 # lemonbar
 super + semicolon
-   pkill lemonbar || lemonbar-current 2> /dev/null
+   pkill lemonbar || lemonbar-current
 super + shift + semicolon
    lemonbar-menu.sh
 super + ctrl + semicolon
-   pkill lemonbar && lemonbar-current 2> /dev/null
+   pkill lemonbar && lemonbar-current
 
 # polybar
 #super + semicolon
