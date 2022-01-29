@@ -825,7 +825,7 @@ key_bindings:
   #- { key: NumpadSubtract, mods: Control,                         action: DecreaseFontSize }
 
   # (Extras) 
-   - { key: F2, mods: Control|Shift, command: { program: "subl", args: ["~/.config/alacritty/alacritty.yml"] }}
+   - { key: F2, mods: Control|Shift, command: { program: "subl", args: ["~/.config/alacritty/mono.yml"] }}
 
   # (Windows only)
   #- { key: Return,   mods: Alt,           action: ToggleFullscreen }
