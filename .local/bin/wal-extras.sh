@@ -36,5 +36,5 @@ fi
 sed -i "s|#define COLOR @fg.*$|#define COLOR @fg:mix("$color2"ff, "$color10"aa, clamp(d / GRADIENT, 0, 1))|g" ~/.config/glava/bars.glsl
 GLAVA=$(pgrep -x glava)
 if [[ "$GLAVA" ]]; then
-	pkill glava; glava -d &
+	pkill glava; glava -d 2>/dev/null &
 fi

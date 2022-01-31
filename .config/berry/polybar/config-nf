@@ -69,10 +69,11 @@ module-margin = 0
 font-0 = "scientifica:bold:size=8;2"
 font-1 = "Symbols Nerd Font:size=9;2"
 font-2 = "Symbols Nerd Font:size=35;9"
+font-3 = "Symbols Nerd Font:size=10;3"
 
 modules-left = misc sp ewmh
-modules-center = mpd
-modules-right = wlan eth uptime-2 temp cpu memory battery volume sp date
+modules-center = pulseaudio
+modules-right = wlan eth uptime-2 temp cpu memory battery volume div-r date
 
 ##################################################
 ##################################################
@@ -111,7 +112,9 @@ content-padding = 0
 
 [module/misc]
 type = custom/text
-content = ""
+;       ⚡  漣     綠 ﮧ ﮊ        
+content = ""
+content-font = 4
 
 content-background = ${colors.color5}
 content-foreground = ${colors.color0}
@@ -137,7 +140,7 @@ label-monitor-padding = 2
 
 label-active = %index%
 label-active-background = ${colors.color0}
-label-active-foreground = ${colors.color2}
+label-active-foreground = ${colors.color5}
 label-active-padding = 1
 
 label-occupied = %index%
@@ -219,7 +222,7 @@ label-song-ellipsis = true
 
 [network]
 type = internal/network
-interval = 1.0
+interval = 1
 accumulate-stats = true
 unknown-as-up = true
 
@@ -353,7 +356,7 @@ animation-charging-framerate = 750
 [module/volume]
 type = internal/pulseaudio
 sink = alsa_output.pci-0000_00_1f.3.analog-stereo
-interval = 5
+interval = 1
 click-right = pkill pavucontrol || pavucontrol
 
 label-volume = %percentage%%
@@ -372,7 +375,7 @@ format-muted-padding = 1
 
 [module/pulseaudio]
 type = internal/pulseaudio
-interval = 5
+interval = 1
 click-right = pkill pavucontrol || pavucontrol
 
 format-volume = <bar-volume><label-volume>
@@ -383,13 +386,9 @@ label-muted = 婢
 bar-volume-width = 10
 bar-volume-foreground = ${colors.color2}
 bar-volume-indicator = █
-bar-volume-indicator-font = 1
-;bar-volume-indicator-foreground = ${self.bar-volume-foreground}
 bar-volume-fill = █
-bar-volume-fill-font = 1
 bar-volume-fill-foreground = ${self.bar-volume-foreground}
 bar-volume-empty = █
-bar-volume-empty-font = 1
 
 ##################################################
 
