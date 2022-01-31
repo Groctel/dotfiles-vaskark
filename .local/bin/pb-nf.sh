@@ -3,7 +3,7 @@
 # polybar
 POLYBAR=$(pgrep -x polybar)
 if [[ -n "$POLYBAR" ]]; then
-    pkill polybar
+    killall -q polybar
     polybar -q -r -c ~/.config/berry/polybar/config-nf main 2>/dev/null &
 else
     polybar -q -r -c ~/.config/berry/polybar/config-nf main 2>/dev/null &
