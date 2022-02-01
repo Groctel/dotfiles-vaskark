@@ -52,3 +52,6 @@ lemonbar-current &
 
 # touchegg
 touchegg &
+
+# glava
+sed -i "s|#request setgeometry.*$|#request setgeometry 610 0 800 1080|g" ~/.config/glava/rc.glsl

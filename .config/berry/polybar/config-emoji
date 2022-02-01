@@ -67,12 +67,13 @@ padding-right = 0
 module-margin = 0
 
 font-0 = "scientifica:bold:size=8;2"
-font-1 = "siji:size=9;2"
-font-2 = "siji:size=34;9"
+font-1 = "Apple Color Emoji:scale=12;2"
+# font-1 = "Noto Color Emoji:scale=12;2"
+# font-1 = "JoyPixels:scale=12;2"
 
 modules-left = misc sp ewmh
 modules-center = pulseaudio
-modules-right = wlan eth uptime-2 temp cpu memory battery volume sp date
+modules-right = wlan eth uptime temp cpu memory battery volume sp date
 
 ##################################################
 ##################################################
@@ -89,16 +90,18 @@ content-padding = 0
 
 [module/misc]
 type = custom/text
-content = 
-;content-font = 3
 
+; 🌭 🌮 🍉 🍔 🍕 🍩 🍿 🍺 🐡 🐧 🐹 👾 👽 🐲 🖲 🥞 🍫 🕹 ☢ 🌊 🍓 🐯 👅 💼 🍯 🔗 👊 📺
+; 💻 🔥 🗃 🚀 🙏 🥃 🥭 🦊 🧀 🧊 🧟 🧼 🫒 🐔 🥑 🥨 🍑 ☘ ☠ 🍄 🍰 ☄ 🐋 🎧 😸 🍇
+
+content = "🚀"
 content-background = ${colors.color5}
 content-foreground = ${colors.color0}
 content-padding = 2
 
 click-left = polybar-msg cmd restart
 click-right = wal -f random_user -o wal-extras.sh
-click-middle = subl ~/.config/berry/polybar/config
+click-middle = subl ~/.config/berry/polybar/config-emoji
 
 ##################################################
 
@@ -142,21 +145,21 @@ pin-workspaces = true
 enable-click = false
 enable-scroll = false
 
-#icon-0 = 0;
-#icon-1 = 1;
-#icon-2 = 2;
-#icon-3 = 3;
-#icon-4 = 4;
-icon-default = 
+#icon-0 = 0;
+#icon-1 = 1;
+#icon-2 = 2;
+#icon-3 = 3;
+#icon-4 = 4;
+icon-default = ﱡ
 
 format = <label-state>
 
-label-monitor =  %name%
+label-monitor =  %name%
 label-monitor-background = ${colors.color5}
 label-monitor-foreground = ${colors.color0}
 label-monitor-padding = 2
 
-label-active = 
+label-active = ﱢ
 label-active-background = ${colors.color0}
 label-active-foreground = ${colors.color5}
 label-active-padding = 1
@@ -184,15 +187,33 @@ host = 127.0.0.1
 port = 6600
 
 label-song = %{A1:mpc -q toggle:}%{A2:mpc -q prev:}%{A3:mpc -q next:}%artist% >> %title%%{A}%{A}%{A}
+format-online-prefix = "🎵 "
 format-online = <label-song>
-format-online-prefix = " "
-format-online-prefix-foreground = ${colors.color4}
 
-label-offline =  mpd offline :(
+label-offline = mpd offline :(
 format-offline = <label-offline>
 
 label-song-maxlen = 200
 label-song-ellipsis = true
+
+##################################################
+
+[module/pulseaudio]
+type = internal/pulseaudio
+interval = 1
+click-right = pkill pavucontrol || pavucontrol
+
+format-volume = <bar-volume><label-volume>
+label-volume = %percentage%%
+
+label-muted = 🔇
+
+bar-volume-width = 10
+bar-volume-foreground = ${colors.color2}
+bar-volume-indicator = █
+bar-volume-fill = █
+bar-volume-fill-foreground = ${self.bar-volume-foreground}
+bar-volume-empty = █
 
 ##################################################
 
@@ -202,15 +223,9 @@ interval = 1
 accumulate-stats = true
 unknown-as-up = true
 
-format-connected = <ramp-signal> <label-connected>
+format-connected-prefix = "💨 "
+format-connected = <label-connected>
 format-connected-padding = 1
-
-ramp-signal-foreground = ${colors.color4}
-
-ramp-signal-0 = 
-ramp-signal-1 = 
-ramp-signal-2 = 
-ramp-signal-3 = 
 
 ##################################################
 
@@ -230,15 +245,14 @@ label-connected = %ifname% [%downspeed%]
 
 ##################################################
 
-[module/uptime-2]
+[module/uptime]
 type = custom/script
 exec = ~/.config/scripts/uptime.sh
 interval = 1
 
 label = %output%
+format-prefix = "⏳ "
 format = <label>
-format-prefix = " "
-format-prefix-foreground = ${colors.color4}
 format-padding = 1
 
 ##################################################
@@ -247,30 +261,27 @@ format-padding = 1
 type = internal/temperature
 thermal-zone = 0
 base-temperature = 20
-warn-temperature = 70
+warn-temperature = 75
 
 label = %temperature-c%
+format-prefix = "🌡 "
 format = <label>
-format-prefix = " "
-format-prefix-foreground = ${colors.color4}
 format-padding = 1
 
 label-warn = %temperature-c%
+format-warn-prefix = "🌡 "
 format-warn = <label-warn>
-format-warn-prefix = " "
-format-warn-foreground = ${colors.color1}
 format-warn-padding = 1
 
 ##################################################
 
 [module/cpu]
 type = internal/cpu
-interval = 1
+interval = 0.5
 
 label = %percentage%%
+format-prefix = "🤖 "
 format = <label>
-format-prefix = " "
-format-prefix-foreground = ${colors.color4}
 format-padding = 1
 
 ##################################################
@@ -280,9 +291,8 @@ type = internal/memory
 interval = 1
 
 label = %percentage_used%%
+format-prefix = "🍜 "
 format = <label>
-format-prefix = " "
-format-prefix-foreground = ${colors.color4}
 format-padding = 1
 
 ##################################################
@@ -292,30 +302,22 @@ type = internal/battery
 full-at = 98
 battery = BAT0
 adapter = AC0
-poll-interval = 1
+poll-interval = 5
 
 label-charging = %percentage%%
+format-charging-prefix = "🔌 "
 format-charging = <label-charging>
-format-charging-prefix = " "
-format-charging-prefix-foreground = ${colors.color4}
 format-charging-padding = 1
 
 label-discharging = %percentage%%
-format-discharging = <ramp-capacity> <label-discharging>
+format-discharging-prefix = "🔋 "
+format-discharging = <label-discharging>
 format-discharging-padding = 1
 
 label-full = %percentage%%
+format-full-prefix = "🔋 "
 format-full = <label-full>
-format-full-prefix = " "
-format-full-prefix-foreground = ${colors.color4}
 format-full-padding = 1
-
-ramp-capacity-foreground = ${colors.color4}
-
-ramp-capacity-0 = 
-ramp-capacity-1 = 
-ramp-capacity-2 = 
-ramp-capacity-3 = 
 
 ##################################################
 
@@ -326,35 +328,14 @@ interval = 5
 click-right = pkill pavucontrol || pavucontrol
 
 label-volume = %percentage%%
+format-volume-prefix = "🔉 "
 format-volume = <label-volume>
-format-volume-prefix = " "
-format-volume-prefix-foreground = ${colors.color4}
 format-volume-padding = 1
 
 label-muted = ---
+format-muted-prefix = "🔇 "
 format-muted = <label-muted>
-format-muted-prefix = " "
-format-muted-prefix-foreground = #555
 format-muted-padding = 1
-
-##################################################
-
-[module/pulseaudio]
-type = internal/pulseaudio
-interval = 1
-click-right = pkill pavucontrol || pavucontrol
-
-format-volume = <bar-volume><label-volume>
-label-volume = %percentage%%
-
-label-muted = 婢
-
-bar-volume-width = 10
-bar-volume-foreground = ${colors.color2}
-bar-volume-indicator = █
-bar-volume-fill = █
-bar-volume-fill-foreground = ${self.bar-volume-foreground}
-bar-volume-empty = █
 
 ##################################################
 
@@ -362,27 +343,13 @@ bar-volume-empty = █
 type = internal/date
 interval = 1
 
-time =  %I:%M %p
-time-alt =  %a %b %d %Y  %I:%M %p
+time = ⌚ %I:%M %p
+time-alt = 📆 %a %b %d %Y ⌚ %I:%M %p
 
 label = %time%
 format = <label>
 
 format-background = ${colors.color2}
-format-foreground = ${colors.color0}
-format-padding = 2
-
-##################################################
-
-[module/uptime]
-type = custom/script
-exec = ~/.config/scripts/uptime.sh
-interval = 1
-
-label =  %output%
-format = <label>
-
-format-background = ${colors.color1}
 format-foreground = ${colors.color0}
 format-padding = 2
 

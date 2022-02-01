@@ -4,8 +4,7 @@
 . "$HOME"/.cache/wal/colors.sh
 
 # berry
-BERRY=$(pgrep -x berry)
-if [[ "$BERRY" ]]; then
+if [[ "$(pgrep -x berry)" ]]; then
 	berry0=$(sed -n 1p ~/.cache/wal/colors | sed 's/#//')
 	berry2=$(sed -n 3p ~/.cache/wal/colors | sed 's/#//')
 	berryc inner_focus_color   "$berry2"
@@ -15,26 +14,22 @@ if [[ "$BERRY" ]]; then
 fi
 
 # openbox
-OPENBOX=$(pgrep -x openbox)
-if [[ "$OPENBOX" ]]; then
+if [[ "$(pgrep -x openbox)" ]]; then
 	openbox --reconfigure
 fi
 
 # dunst 
-DUNST=$(pgrep -x dunst)
-if [[ "$DUNST" ]]; then
+if [[ "$(pgrep -x dunst)" ]]; then
 	pkill dunst
 fi
 
 # lemonbar
-LEMONBAR=$(pgrep -x lemonbar)
-if [[ "$LEMONBAR" ]]; then
+if [[ "$(pgrep -x lemonbar)" ]]; then
 	pkill lemonbar; lemonbar-current 2>/dev/null &
 fi
 
 # glava
 sed -i "s|#define COLOR @fg.*$|#define COLOR @fg:mix(""$color2""ff, ""$color10""aa, clamp(d / GRADIENT, 0, 1))|g" ~/.config/glava/bars.glsl
-GLAVA=$(pgrep -x glava)
-if [[ "$GLAVA" ]]; then
-	pkill glava; glava -d 2>/dev/null &
+if [[ "$(pgrep -x glava)" ]]; then
+	pkill glava; glava -d &>/dev/null &
 fi

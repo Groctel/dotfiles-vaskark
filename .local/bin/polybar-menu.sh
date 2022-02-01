@@ -7,8 +7,8 @@ MENU="$(rofi -sep "|" \
 	-p 'Polybars:' \
 	-location 0 \
 	-font 'scientifica bold 8' \
-    -theme-str 'window {width: 10%;} listview {lines: 3;}' \
-	<<< "Siji|NF|Off")"
+    -theme-str 'window {width: 10%;} listview {lines: 4;}' \
+	<<< "Siji|NF|Emoji|Off")"
 
 case "$MENU" in
 	
@@ -24,6 +24,13 @@ case "$MENU" in
 		rm -f "$HOME"/.local/bin/polybar-current 2>/dev/null
 		ln -s "$HOME"/.local/bin/pb-nf.sh "$HOME"/.local/bin/polybar-current
 		polybar-current 2>/dev/null 
+	;;
+
+	*Emoji)
+	killall -q polybar 2>/dev/null
+	rm -f "$HOME"/.local/bin/polybar-current 2>/dev/null
+	ln -s "$HOME"/.local/bin/pb-emoji.sh "$HOME"/.local/bin/polybar-current
+	polybar-current 2>/dev/null 
 	;;
 
 	*Off)
