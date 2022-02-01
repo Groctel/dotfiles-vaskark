@@ -58,18 +58,13 @@ cursor-click = pointer
 background = ${colors.color0}
 foreground = #555
 
-border-size = 4
+border-size = 0
 border-color = ${colors.color0}
 
-padding-left = 0
-padding-right = 0
-
-module-margin = 0
-
 font-0 = "scientifica:bold:size=8;2"
-font-1 = "Apple Color Emoji:scale=14;2:antialias=false"
+# font-1 = "Apple Color Emoji:scale=14;2:antialias=false"
 # font-1 = "Noto Color Emoji:scale=12;2:antialias=false"
-# font-1 = "JoyPixels:scale=12;2:antialias=false"
+font-1 = "JoyPixels:scale=12;2:antialias=false"
 
 modules-left = misc sp ewmh
 modules-center = pulseaudio
@@ -93,8 +88,8 @@ type = custom/text
 
 ; 🌭 🌮 🍉 🍔 🍕 🍩 🍿 🍺 🐡 🐧 🐹 👾 👽 🐲 🖲 🥞 🍫 🕹 ☢ 🌊 🍓 🐯 👅 💼 🍯 🔗 👊 📺
 ; 💻 🔥 🗃 🚀 🙏 🥃 🥭 🦊 🧀 🧊 🧟 🧼 🫒 🐔 🥑 🥨 🍑 ☘ ☠ 🍄 🍰 ☄ 🐋 🎧 😸 🍇 🐙
+content = "🚀"
 
-content = "🐙"
 content-background = ${colors.color5}
 content-foreground = ${colors.color0}
 content-padding = 2
