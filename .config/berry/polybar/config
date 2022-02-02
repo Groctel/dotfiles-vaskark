@@ -59,12 +59,7 @@ background = ${colors.color0}
 foreground = #555
 
 border-size = 0
-border-color = ${colors.color0}
-
-padding-left = 0
-padding-right = 0
-
-module-margin = 0
+border-color = ${self.background}
 
 font-0 = "scientifica:bold:size=8;2"
 font-1 = "siji:size=9;2"
@@ -72,7 +67,7 @@ font-2 = "siji:size=34;9"
 
 modules-left = misc sp ewmh
 modules-center = pulseaudio
-modules-right = wlan eth uptime-2 temp cpu memory battery volume sp date
+modules-right = wlan eth uptime temp cpu memory battery volume sp date
 
 ##################################################
 ##################################################
@@ -196,6 +191,25 @@ label-song-ellipsis = true
 
 ##################################################
 
+[module/pulseaudio]
+type = internal/pulseaudio
+interval = 1
+click-right = pkill pavucontrol || pavucontrol
+
+format-volume = <bar-volume><label-volume>
+label-volume = %percentage%%
+
+label-muted = 婢
+
+bar-volume-width = 10
+bar-volume-foreground = ${colors.color2}
+bar-volume-indicator = █
+bar-volume-fill = █
+bar-volume-fill-foreground = ${self.bar-volume-foreground}
+bar-volume-empty = █
+
+##################################################
+
 [network]
 type = internal/network
 interval = 1
@@ -230,7 +244,7 @@ label-connected = %ifname% [%downspeed%]
 
 ##################################################
 
-[module/uptime-2]
+[module/uptime]
 type = custom/script
 exec = ~/.config/scripts/uptime.sh
 interval = 1
@@ -339,25 +353,6 @@ format-muted-padding = 1
 
 ##################################################
 
-[module/pulseaudio]
-type = internal/pulseaudio
-interval = 1
-click-right = pkill pavucontrol || pavucontrol
-
-format-volume = <bar-volume><label-volume>
-label-volume = %percentage%%
-
-label-muted = 婢
-
-bar-volume-width = 10
-bar-volume-foreground = ${colors.color2}
-bar-volume-indicator = █
-bar-volume-fill = █
-bar-volume-fill-foreground = ${self.bar-volume-foreground}
-bar-volume-empty = █
-
-##################################################
-
 [module/date]
 type = internal/date
 interval = 1
@@ -369,20 +364,6 @@ label = %time%
 format = <label>
 
 format-background = ${colors.color2}
-format-foreground = ${colors.color0}
-format-padding = 2
-
-##################################################
-
-[module/uptime]
-type = custom/script
-exec = ~/.config/scripts/uptime.sh
-interval = 1
-
-label =  %output%
-format = <label>
-
-format-background = ${colors.color1}
 format-foreground = ${colors.color0}
 format-padding = 2
 
