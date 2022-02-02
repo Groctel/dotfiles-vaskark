@@ -8,11 +8,11 @@ MENU="$(rofi -sep "|" \
 	-location 0 \
 	-font 'scientifica bold 8' \
     -theme-str 'window {width: 10%;} listview {lines: 4;}' \
-	<<< "Siji|NF|Emoji|Off")"
+	<<< "siji|nf|emoji|off")"
 
 case "$MENU" in
 	
-	*Siji)
+	*siji)
 		rm -f "$HOME"/.local/bin/lemonbar-current 2>/dev/null
 		ln -s "$HOME"/.local/bin/lemonbar-start.sh "$HOME"/.local/bin/lemonbar-current
 		killall lemonbar
@@ -22,7 +22,7 @@ case "$MENU" in
 		berryc edge_gap 40 0 0 0 &
 	;;
 
-	*NF)
+	*nf)
 		rm -f "$HOME"/.local/bin/lemonbar-current 2>/dev/null
 		ln -s "$HOME"/.local/bin/lemonbar-nf-start.sh "$HOME"/.local/bin/lemonbar-current
 		killall lemonbar
@@ -32,7 +32,7 @@ case "$MENU" in
 		berryc edge_gap 40 0 0 0 &
 	;;
 
-	*Emoji)
+	*emoji)
 		rm -f "$HOME"/.local/bin/lemonbar-current 2>/dev/null
 		ln -s "$HOME"/.local/bin/lemonbar-emoji-start.sh "$HOME"/.local/bin/lemonbar-current
 		killall lemonbar
@@ -42,7 +42,7 @@ case "$MENU" in
 		berryc edge_gap 0 50 0 0 &
 	;;
 
-	*Off)
+	*off)
 		killall lemonbar
 		sed -i "s|offset = .*$|offset = 15x15|g" ~/.cache/wal/dunstrc
 		pkill dunst

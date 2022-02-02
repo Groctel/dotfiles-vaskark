@@ -7,34 +7,34 @@ MENU="$(rofi -sep "|" \
 	-p 'Polybars:' \
 	-location 0 \
 	-font 'scientifica bold 8' \
-    -theme-str 'window {width: 10%;} listview {lines: 4;}' \
-	<<< "Siji|NF|Emoji|Off")"
+    -theme-str 'window {width: 10%;} listview {lines: 5;}' \
+	<<< "siji|nf|emoji|---|off")"
 
 case "$MENU" in
 	
-	*Siji)
+	*siji)
 		killall -q polybar 2>/dev/null
 		rm -f "$HOME"/.local/bin/polybar-current 2>/dev/null
 		ln -s "$HOME"/.local/bin/pb.sh "$HOME"/.local/bin/polybar-current
 		polybar-current 2>/dev/null
 	;;
 
-	*NF)
+	*nf)
 		killall -q polybar 2>/dev/null
 		rm -f "$HOME"/.local/bin/polybar-current 2>/dev/null
 		ln -s "$HOME"/.local/bin/pb-nf.sh "$HOME"/.local/bin/polybar-current
 		polybar-current 2>/dev/null 
 	;;
 
-	*Emoji)
+	*emoji)
 	killall -q polybar 2>/dev/null
 	rm -f "$HOME"/.local/bin/polybar-current 2>/dev/null
 	ln -s "$HOME"/.local/bin/pb-emoji.sh "$HOME"/.local/bin/polybar-current
 	polybar-current 2>/dev/null 
 	;;
 
-	*Off)
-		killall -q polybar
+	*off)
+		polybar-msg cmd quit
 	;;
 
 esac
