@@ -41,7 +41,7 @@ super + F5
 	
 # networkmanager_dmenu
 super + F6
-	networkmanager_dmenu
+	nmdm.sh
 
 # man2pdf
 super + F7

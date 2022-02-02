@@ -446,7 +446,7 @@
     </keybind>
     <keybind key="W-F6">
       <action name="Execute">
-        <command>networkmanager_dmenu</command>
+        <command>nmdm.sh</command>
       </action>
     </keybind>
     <keybind key="W-F7">
@@ -521,18 +521,18 @@
         <command>pactl set-sink-mute @DEFAULT_SINK@ toggle</command>
       </action>
     </keybind>
-    <!-- Polybar
+    <!-- Polybar -->
     <keybind key="W-semicolon">
       <action name="Execute">
-        <command>polybar-msg cmd toggle</command>
+        <command>sh -c 'pkill polybar || polybar-current'</command>
       </action>
     </keybind>
     <keybind key="W-S-semicolon">
       <action name="Execute">
-        <command>polybar-msg cmd restart</command>
+        <command>polybar-menu.sh</command>
       </action>
-    </keybind> -->
-    <!-- Lemonbar -->
+    </keybind>
+    <!-- Lemonbar
     <keybind key="W-semicolon">
       <action name="Execute">
         <command>sh -c 'pkill lemonbar || lemonbar-current'</command>
@@ -542,7 +542,7 @@
       <action name="Execute">
         <command>lemonbar-menu.sh</command>
       </action>
-    </keybind>
+    </keybind> -->
     <!-- GLava -->
     <keybind key="W-g">
       <action name="Execute">
