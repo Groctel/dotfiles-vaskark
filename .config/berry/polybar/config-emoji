@@ -58,12 +58,12 @@ cursor-click = pointer
 background = ${colors.color0}
 foreground = #555
 
-border-size = 4
+border-size = 0
 border-color = ${self.background}
 
 font-0 = "scientifica:bold:size=8;2"
-font-1 = "Apple Color Emoji:scale=14;2"
-; font-1 = "JoyPixels:scale=12;2"
+; font-1 = "Apple Color Emoji:scale=14;2"
+font-1 = "JoyPixels:scale=12;2"
 ; font-1 = "Noto Color Emoji:scale=12;2"
 
 modules-left = misc sp ewmh
@@ -86,8 +86,8 @@ content-padding = 0
 [module/misc]
 type = custom/text
 
-; 🌭 🌮 🍉 🍔 🍕 🍩 🍿 🍺 🐡 🐧 🐹 👾 👽 🐲 🖲 🥞 🍫 🕹 ☢ 🌊 🍓 🐯 👅 💼 🍯 🔗 👊 📺
-; 💻 🔥 🗃 🚀 🙏 🥃 🥭 🦊 🧀 🧊 🧟 🧼 🫒 🐔 🥑 🥨 🍑 ☘ ☠ 🍄 🍰 ☄ 🐋 🎧 😸 🍇 🐙 ⛵
+; 🌭 🌮 🍉 🍔 🍕 🍩 🍿 🍺 🐡 🐧 🐹 👾 👽 🐲 🖲 🥞 🍫 🕹 ☢ 🌊 🍓 🐯 👅 💼 🍯 🔗 👊 📺 🍹 🍱
+; 💻 🔥 🗃 🚀 🙏 🥃 🥭 🦊 🧀 🧊 🧟 🧼 🫒 🐔 🥑 🥨 🍑 ☘ ☠ 🍄 🍰 ☄ 🐋 🎧 😸 🍇 🐙 ⛵ 🍵
 
 content = "🚀"
 content-background = ${colors.color5}
@@ -182,7 +182,7 @@ host = 127.0.0.1
 port = 6600
 
 label-song = %{A1:mpc -q toggle:}%{A2:mpc -q prev:}%{A3:mpc -q next:}%artist% >> %title%%{A}%{A}%{A}
-format-online-prefix = "🎵 "
+format-online-prefix = "🎶 "
 format-online = <label-song>
 
 label-offline = mpd offline :(
@@ -272,7 +272,7 @@ format-warn-padding = 1
 
 [module/cpu]
 type = internal/cpu
-interval = 0.5
+interval = 1
 
 label = %percentage%%
 format-prefix = "🤖 "
@@ -310,7 +310,7 @@ format-discharging = <label-discharging>
 format-discharging-padding = 1
 
 label-full = %percentage%%
-format-full-prefix = "🔋 "
+format-full-prefix = "💎 "
 format-full = <label-full>
 format-full-padding = 1
 
@@ -334,6 +334,7 @@ format-muted-padding = 1
 ramp-volume-0 = 🔈
 ramp-volume-1 = 🔉
 ramp-volume-2 = 🔊
+ramp-volume-3 = 🔊
 
 ##################################################
 

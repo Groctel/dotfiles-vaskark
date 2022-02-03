@@ -298,7 +298,7 @@ format-warn-padding = 1
 
 [module/cpu]
 type = internal/cpu
-interval = 0.5
+interval = 1
 
 label = %percentage%%
 format = <label>
