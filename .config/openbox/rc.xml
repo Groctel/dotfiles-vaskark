@@ -446,7 +446,7 @@
     </keybind>
     <keybind key="W-F6">
       <action name="Execute">
-        <command>networkmanager_dmenu -theme-str 'window {width: 20%;}'</command>
+        <command>networkmanager_dmenu -theme-str 'window {width: 15%;}'</command>
       </action>
     </keybind>
     <keybind key="W-F7">
