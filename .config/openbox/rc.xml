@@ -411,7 +411,7 @@
     </keybind>
     <keybind key="W-Escape">
       <action name="Execute">
-        <command>lock-alt.sh</command>
+        <command>lock.sh</command>
       </action>
     </keybind>
     <keybind key="W-F1">
