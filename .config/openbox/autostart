@@ -22,13 +22,13 @@ bash $HOME/.fehbg &
 # xwallpaper --zoom $wallpaper &
 
 # wal
-wal -q -R -o -wal-extras.sh &
+wal -R -o -wal-extras.sh &
 
 # lemonbar
-lemonbar-current &
+# lemonbar-current &
 
 # polybar
-# pb-nf.sh &
+polybar-current &
 
 # glava
 sed -i "s|#request setgeometry.*$|#request setgeometry 0 0 1920 1080|g" ~/.config/glava/rc.glsl

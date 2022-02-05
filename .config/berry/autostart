@@ -24,7 +24,7 @@ berryc move_mask   "Mod4Mask"
 berryc resize_mask "Mod4Mask|ShiftMask"
 
 # wal
-wal -q -R -o wal-extras.sh &
+wal -R -o wal-extras.sh
 
 # sxhkd
 sxhkd -c $HOME/.config/berry/sxhkdrc $HOME/.config/sxhkd/sxhkdrc.common &
@@ -45,10 +45,10 @@ picom --experimental-backends --config ~/.config/picom/picom.conf &
 xautolock -time 10 -locker 'lock.sh' -killer 'systemctl suspend' -corners 00-+ &
 
 # lemonbar
-lemonbar-current &
+# lemonbar-current &
 
 # polybar
-# polybar-current &
+polybar-current &
 
 # touchegg
 touchegg &
