@@ -22,7 +22,7 @@ bash $HOME/.fehbg &
 # xwallpaper --zoom $wallpaper &
 
 # wal
-wal -R -o -wal-extras.sh &
+wal -R -o -wal-extras.sh
 
 # lemonbar
 # lemonbar-current &
