@@ -62,13 +62,13 @@ border-size = 0
 border-color = ${self.background}
 
 font-0 = "scientifica:bold:size=8;2"
-; font-1 = "Apple Color Emoji:scale=14;2"
-font-1 = "JoyPixels:scale=12;2"
-; font-1 = "Noto Color Emoji:scale=12;2"
+font-1 = "Apple Color Emoji:scale=18;2"
+;font-1 = "JoyPixels:scale=12;2"
+;font-1 = "Noto Color Emoji:scale=12;2"
 
 modules-left = misc sp ewmh
 modules-center = mpd
-modules-right = wlan eth uptime temp cpu memory battery volume sp date
+modules-right = wlan uptime temp cpu memory battery volume sp date
 
 ##################################################
 ##################################################
@@ -87,9 +87,9 @@ content-padding = 0
 type = custom/text
 
 ; 🌭 🌮 🍉 🍔 🍕 🍩 🍿 🍺 🐡 🐧 🐹 👾 👽 🐲 🖲 🥞 🍫 🕹 ☢ 🌊 🍓 🐯 👅 💼 🍯 🔗 👊 📺 🍹 🍱
-; 💻 🔥 🗃 🚀 🙏 🥃 🥭 🦊 🧀 🧊 🧟 🧼 🫒 🐔 🥑 🥨 🍑 ☘ ☠ 🍄 🍰 ☄ 🐋 🎧 😸 🍇 🐙 ⛵ 🍵
+; 💻 🔥 🚀 🙏 🥃 🥭 🦊 🧀 🧊 🧟 🧼 🫒 🐔 🥑 🥨 🍑 ☘ ☠ 🍄 🍰 ☄ 🐋 🎧 😸 🍇 🐙 ⛵ 🍵 🎁 🧁
 
-content = "🚀"
+content = 🚀
 content-background = ${colors.color5}
 content-foreground = ${colors.color0}
 content-padding = 2
@@ -310,7 +310,7 @@ format-discharging = <label-discharging>
 format-discharging-padding = 1
 
 label-full = %percentage%%
-format-full-prefix = "💎 "
+format-full-prefix = "🔋 "
 format-full = <label-full>
 format-full-padding = 1
 

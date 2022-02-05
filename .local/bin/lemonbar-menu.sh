@@ -7,34 +7,24 @@ MENU="$(rofi -sep "|" \
 	-p 'Lemonbars:' \
 	-location 0 \
 	-font 'scientifica bold 8' \
-    -theme-str 'window {width: 10%;} listview {lines: 5;}' \
-	<<< "siji|nf|emoji|---|off")"
+    -theme-str 'window {width: 10%;} listview {lines: 3;}' \
+	<<< "siji|nf|emoji")"
 
 case "$MENU" in
 	
 	*siji)
-		killall lemonbar
-		rm -f "$HOME"/.local/bin/lemonbar-current 2>/dev/null
-		ln -s "$HOME"/.local/bin/lemonbar-start.sh "$HOME"/.local/bin/lemonbar-current
-		lemonbar-current
+		ln -sf "$HOME"/.local/bin/lemonbar-start.sh "$HOME"/.local/bin/lemonbar-current
 	;;
 
 	*nf)
-		killall lemonbar
-		rm -f "$HOME"/.local/bin/lemonbar-current 2>/dev/null
-		ln -s "$HOME"/.local/bin/lemonbar-nf-start.sh "$HOME"/.local/bin/lemonbar-current
-		lemonbar-current
+		ln -sf "$HOME"/.local/bin/lemonbar-nf-start.sh "$HOME"/.local/bin/lemonbar-current
 	;;
 
 	*emoji)
-		killall lemonbar
-		rm -f "$HOME"/.local/bin/lemonbar-current 2>/dev/null
-		ln -s "$HOME"/.local/bin/lemonbar-emoji-start.sh "$HOME"/.local/bin/lemonbar-current
-		lemonbar-current
-	;;
-
-	*off)
-		killall lemonbar
+		ln -sf "$HOME"/.local/bin/lemonbar-emoji-start.sh "$HOME"/.local/bin/lemonbar-current
 	;;
 
 esac
+
+killall lemonbar
+lemonbar-current

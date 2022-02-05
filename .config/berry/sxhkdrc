@@ -8,18 +8,16 @@ super + semicolon
    pkill lemonbar || lemonbar-current
 super + shift + semicolon
    lemonbar-menu.sh
-super + ctrl + semicolon
-   pkill lemonbar && lemonbar-current
 
 # polybar
-#super + semicolon
+# super + semicolon
 #    polybar-msg cmd toggle
-#super + shift + semicolon
+# super + shift + semicolon
 #    polybar-menu.sh
 
 # glava
 super + g
-    pkill glava || glava -d &> /dev/null
+    pkill glava || glava -d &>/dev/null
 
 # glava flip
 super + shift + g
@@ -30,8 +28,8 @@ super + v
     viz.sh
 
 # terms
-super + t ; {a,k,s,u,x}
-    {alacritty --config-file ~/.config/alacritty/lemon.yml,kitty,st,urxvt,xterm}
+super + t ; {k,l,m,s,u,x}
+    {kitty,alacritty --config-file ~/.config/alacritty/lemon.yml,alacritty --config-file ~/.config/alacritty/mono.yml,st,urxvt,xterm}
 
 
 #

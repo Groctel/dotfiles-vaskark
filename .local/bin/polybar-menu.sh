@@ -13,23 +13,17 @@ MENU="$(rofi -sep "|" \
 case "$MENU" in
 	
 	*siji)
-		killall -q polybar
-		rm -f "$HOME"/.local/bin/polybar-current 2>/dev/null
-		ln -s "$HOME"/.local/bin/pb.sh "$HOME"/.local/bin/polybar-current
+		ln -sf "$HOME"/.local/bin/pb.sh "$HOME"/.local/bin/polybar-current
 		polybar-current
 	;;
 
 	*nf)
-		killall -q polybar
-		rm -f "$HOME"/.local/bin/polybar-current 2>/dev/null
-		ln -s "$HOME"/.local/bin/pb-nf.sh "$HOME"/.local/bin/polybar-current
+		ln -sf "$HOME"/.local/bin/pb-nf.sh "$HOME"/.local/bin/polybar-current
 		polybar-current
 	;;
 
 	*emoji)
-		killall -q polybar
-		rm -f "$HOME"/.local/bin/polybar-current 2>/dev/null
-		ln -s "$HOME"/.local/bin/pb-emoji.sh "$HOME"/.local/bin/polybar-current
+		ln -sf "$HOME"/.local/bin/pb-emoji.sh "$HOME"/.local/bin/polybar-current
 		polybar-current
 	;;
 

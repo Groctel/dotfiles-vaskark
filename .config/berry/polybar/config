@@ -67,7 +67,7 @@ font-2 = "siji:size=11;2"
 
 modules-left = misc sp ewmh
 modules-center = pulseaudio
-modules-right = wlan eth uptime temp cpu memory battery volume sp date
+modules-right = wlan uptime temp cpu memory battery volume sp date
 
 ##################################################
 ##################################################
