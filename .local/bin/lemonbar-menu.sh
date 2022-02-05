@@ -6,7 +6,6 @@ MENU="$(rofi -sep "|" \
 	-dmenu -i \
 	-p 'Lemonbars:' \
 	-location 0 \
-	-font 'scientifica bold 8' \
     -theme-str 'window {width: 10%;} listview {lines: 3;}' \
 	<<< "siji|nf|emoji")"
 
