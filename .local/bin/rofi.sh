@@ -1,14 +1,12 @@
 #!/bin/bash
 
 rofi -show drun \
--display-drun 'Apps' \
--display-run 'Bin' \
--display-ssh 'SSH' \
--display-filebrowser 'Files' \
--display-emoji 'Emoji' \
--display-keys 'Keys' \
+-display-drun '🚀' \
+-display-run '🍉' \
+-display-ssh '💻' \
+-display-emoji '🐳' \
+-display-keys '🔑' \
 -disable-history \
 -hide-scrollbar \
 -matching normal \
--font 'scientifica bold 8' \
--theme-str 'window {width: 12%;} listview {lines: 5;}'
+-theme-str 'window {width: 15%;} listview {lines: 6;}'
