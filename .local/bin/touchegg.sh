@@ -1,7 +1,6 @@
 #!/bin/bash
 
-TE=$(pgrep -x touchegg)
-if [[ -n "$TE" ]]; then
+if [[ "$(pgrep -x touchegg)" ]]; then
 	killall -q touchegg 2>/dev/null
 	touchegg &>/dev/null &
 else
