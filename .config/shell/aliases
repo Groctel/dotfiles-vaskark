@@ -11,7 +11,7 @@ alias tc="tty-clock -cst -C 2 -f '%A %B %d %Y'"
 alias mount='mount | column -t'
 alias u='unimatrix -c green -a -f -n -s 98'
 alias h='htop -u $USER'
-alias t='top -u $USER'
+alias t='top -U $USER'
 alias pf='clear;pfetch'
 alias n='nnn'
 alias c='cava'
@@ -29,6 +29,10 @@ alias m='micro'
 alias v=$EDITOR
 alias nvc="$EDITOR ~/.config/nvim/init.vim"
 alias -g G='| grep -i'
+alias rhb='run-help bindkey'
+alias lml='exa -l -r -s time /var/log | tail'
+alias clean_logs='sudo rm -rf /var/log/*'
+alias btc='bluetoothctl'
 
 # lsd
 # alias lsd='lsd -h --group-dirs first --no-symlink'
@@ -46,7 +50,7 @@ alias lt='ls -T -L 2'
 
 # zsh
 alias zc="$EDITOR $ZDOTDIR/.zshrc"
-alias za="$EDITOR $HOME/.config/shell/aliasrc"
+alias za="$EDITOR $HOME/.config/shell/aliases"
 alias zp="$EDITOR $HOME/.config/shell/profile"
 alias zh="rm -f $ZDOTDIR/zhistory && clear && exec zsh" 
 alias zs="clear && exec zsh"
@@ -58,22 +62,10 @@ alias xu='xrdb ~/.config/x11/xresources'
 # xinitrc
 alias xx="$EDITOR $XINITRC"
 
-# bindkey help
-alias rhb='run-help bindkey'
-
-# last modified logs
-alias lml='exa -l -r -s time /var/log | tail'
-
-# clean logs
-alias clean_logs='sudo rm -rf /var/log/*'
-
 # journal
 alias jctl='journalctl'
 alias jcb='jctl -p 3 -b'
 alias jce='jctl -p 3 -e'
-
-# bluetoothctl
-alias btc='bluetoothctl'
 
 # git
 alias gc='git commit -a'
