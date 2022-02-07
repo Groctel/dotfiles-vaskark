@@ -54,6 +54,7 @@ URxvt.resize-font.reset: C-0
 URxvt.resize-font.show: C-slash
 ! bell-command
 URxvt.bell-command: canberra-gtk-play -i bell
+! URxvt.bell-command: notify-send "Beep!"
 
 !! XTerm
 XTerm.vt100*termName: xterm-256color
@@ -66,7 +67,7 @@ XTerm.vt100*allowBoldFonts: true
 XTerm.vt100*geometry: 80x22
 XTerm.vt100*on2Clicks: word
 XTerm.vt100*on3Clicks: line
-XTerm.vt100*dynamicColors: On
+! XTerm.vt100*dynamicColors: On
 XTerm.vt100*saveLines: 2000
 XTerm.vt100*bellIsUrgent: true
 XTerm.vt100*visualBell: true

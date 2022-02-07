@@ -4,7 +4,7 @@ rofi -show drun \
 -display-drun '🚀' \
 -display-run '🍉' \
 -display-ssh '💻' \
--display-emoji '🐳' \
+-display-emoji '🍔' \
 -display-keys '🔑' \
 -disable-history \
 -hide-scrollbar \

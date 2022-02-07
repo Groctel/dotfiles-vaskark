@@ -22,17 +22,17 @@ alias egrep='egrep --color=auto'
 alias ping='ping -c 5'
 alias path='print -l $path'
 alias rmpd='systemctl --user daemon-reload; systemctl --user restart mpd'
-alias lf="~/.local/bin/lf.sh"
+alias lf="$HOME/.local/bin/lf.sh"
 alias ed='ed -p ": "'
 alias ncdu='ncdu -L -q --color dark --exclude-caches'
 alias m='micro'
-alias v=$EDITOR
-alias nvc="$EDITOR ~/.config/nvim/init.vim"
-alias -g G='| grep -i'
+alias v="$EDITOR"
+alias nvc="$EDITOR $XDG_CONFIG_HOME/nvim/init.vim"
 alias rhb='run-help bindkey'
 alias lml='exa -l -r -s time /var/log | tail'
 alias clean_logs='sudo rm -rf /var/log/*'
 alias btc='bluetoothctl'
+alias -g G='| grep -i'
 
 # lsd
 # alias lsd='lsd -h --group-dirs first --no-symlink'
@@ -50,14 +50,14 @@ alias lt='ls -T -L 2'
 
 # zsh
 alias zc="$EDITOR $ZDOTDIR/.zshrc"
-alias za="$EDITOR $HOME/.config/shell/aliases"
-alias zp="$EDITOR $HOME/.config/shell/profile"
+alias za="$EDITOR $XDG_CONFIG_HOME/shell/aliases"
+alias zp="$EDITOR $XDG_CONFIG_HOME/shell/profile"
 alias zh="rm -f $ZDOTDIR/zhistory && clear && exec zsh" 
 alias zs="clear && exec zsh"
 
 # xrdb
-alias xc="$EDITOR ~/.config/x11/xresources"
-alias xu='xrdb ~/.config/x11/xresources'
+alias xc="$EDITOR $XDG_CONFIG_HOME/x11/xresources"
+alias xu="xrdb $XDG_CONFIG_HOME/x11/xresources"
 
 # xinitrc
 alias xx="$EDITOR $XINITRC"
@@ -83,7 +83,7 @@ alias nfo='clear;neofetch --off'
 
 # fonts
 alias f2s='fonttosfnt -v -r -b -c -g 2 -m 2 -o'
-alias fcc='fc-cache -rv'
+alias fcc='fc-cache'
 alias fcl='fc-list'
 
 # wal
@@ -100,7 +100,7 @@ alias shut='poweroff'
 [ -f "$XINITRC" ] && alias startx="startx $XINITRC"
 
 # kernel
-alias mkc='make LSMOD=$HOME/.config/modprobed.db localmodconfig'
+alias mkc="make LSMOD=$XDG_CONFIG_HOME/modprobed.db localmodconfig"
 alias mkp='make deb-pkg -j4 LOCALVERSION=-custom'
 
 # networking
@@ -120,7 +120,7 @@ alias sc='systemctl'
 alias scu='systemctl --user'
 
 # arch
-alias unlock='sudo rm /var/lib/pacman/db.lck'
-alias cleanup='sudo pacman -Rns $(pacman -Qtdq)'
-alias mlr='sudo reflector --country 'United States' --protocol https --latest 10 --sort rate --save /etc/pacman.d/mirrorlist'
-alias mla='sudo reflector --country 'United States' --protocol https --latest 10 --sort age --save /etc/pacman.d/mirrorlist'
+# alias unlock='sudo rm /var/lib/pacman/db.lck'
+# alias cleanup='sudo pacman -Rns $(pacman -Qtdq)'
+# alias mlr='sudo reflector --country 'United States' --protocol https --latest 10 --sort rate --save /etc/pacman.d/mirrorlist'
+# alias mla='sudo reflector --country 'United States' --protocol https --latest 10 --sort age --save /etc/pacman.d/mirrorlist'
