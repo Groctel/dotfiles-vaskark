@@ -9,4 +9,4 @@ rofi -show drun \
 -disable-history \
 -hide-scrollbar \
 -matching normal \
--theme-str 'window {width: 15%;} listview {lines: 6;}'
+-theme-str 'window {width: 15%;} listview {lines: 5;}'

@@ -4,7 +4,7 @@
 
 MENU="$(rofi -sep "|" \
 	-dmenu -i \
-	-p 'Polybars:' \
+	-p 'Polybars' \
 	-location 0 \
     -theme-str 'window {width: 10%;} listview {lines: 5;}' \
 	<<< "siji|nf|emoji|---|off")"

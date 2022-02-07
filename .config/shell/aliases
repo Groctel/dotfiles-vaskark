@@ -1,72 +1,59 @@
 # general
-alias \
-	rm='rm -i' \
-	cp='cp -i' \
-	ln='ln -i' \
-	md='mkdir -pv' \
-	rd='rmdir -pv' \
-	df='df -HT' \
-	du='du -d 1 -h -c' \
-	cd..='cd ..' \
-	free='free -m' \
-	v=$EDITOR \
-	tc="tty-clock -cst -C 2 -f '%A %B %d %Y'" \
-	mount='mount | column -t' \
-	u='unimatrix -c green -a -f -n -s 98' \
-	h='htop -u $USER' \
-	t='top -u $USER' \
-	pf='clear;pfetch' \
-	n='nnn' \
-	c='cava' \
-	p='pipes-rs' \
-	mi='mediainfo' \
-	grep='grep --color=auto' \
-	egrep='egrep --color=auto' \
-	ping='ping -c 5' \
-	path='print -l $path' \
-	fr='feh --randomize --bg-fill --recursive --no-fehbg ~/Pictures/*.(png|jpg)' \
-	rmpd='systemctl --user daemon-reload; systemctl --user restart mpd' \
-	lf="$HOME/.local/bin/lf.sh" \
-	ed='ed -p ": "' \
-	ncdu='ncdu -L -q --color dark --exclude-caches' \
-	icat='kitty +kitten icat' \
-        mg='kitty +kitten hyperlinked_grep --smart-case "$@"' \
-        m='micro' \
-
-# lsd
-alias \
-	lsd='lsd -h' \
-	ls='lsd' \
-	l='ls -l' \
-	ll='ls -al' \
-	lt='ls --tree --depth 2' \
-
-# exa
-alias \
-        exa='exa --icons --git -g --time-style long-iso --group-directories-first -@ -H' \
-	# ls='exa' \
-	# l='ls -l' \
-	# ll='ls -al' \
-	# lt='ls -T -L 2' \
-
-# nvim
+alias rm='rm -i'
+alias cp='cp -i'
+alias ln='ln -i'
+alias md='mkdir -pv'
+alias rd='rmdir -pv'
+alias df='df -hT'
+alias du='du -d 1 -h -c'
+alias cd..='cd ..'
+alias tc="tty-clock -cst -C 2 -f '%A %B %d %Y'"
+alias mount='mount | column -t'
+alias u='unimatrix -c green -a -f -n -s 98'
+alias h='htop -u $USER'
+alias t='top -u $USER'
+alias pf='clear;pfetch'
+alias n='nnn'
+alias c='cava'
+alias p='pipes-rs'
+alias mi='mediainfo'
+alias grep='grep --color=auto'
+alias egrep='egrep --color=auto'
+alias ping='ping -c 5'
+alias path='print -l $path'
+alias rmpd='systemctl --user daemon-reload; systemctl --user restart mpd'
+alias lf="~/.local/bin/lf.sh"
+alias ed='ed -p ": "'
+alias ncdu='ncdu -L -q --color dark --exclude-caches'
+alias m='micro'
+alias v=$EDITOR
 alias nvc="$EDITOR ~/.config/nvim/init.vim"
-
-# grep
 alias -g G='| grep -i'
 
+# lsd
+# alias lsd='lsd -h --group-dirs first --no-symlink'
+# alias ls='lsd'
+# alias l='ls -l'
+# alias ll='ls -al'
+# alias lt='ls --tree --depth 2'
+
+# exa
+alias exa='exa --icons --git -g --time-style long-iso --group-directories-first -@ -H'
+alias ls='exa'
+alias l='ls -l'
+alias ll='ls -al'
+alias lt='ls -T -L 2'
+
 # zsh
-alias \
-        zh="rm -f $ZDOTDIR/zhistory && clear && exec zsh" \
-	zc="$EDITOR $ZDOTDIR/.zshrc" \
-	za="$EDITOR $HOME/.config/shell/aliases" \
-	zp="$EDITOR $HOME/.config/shell/profile" \
-        zs="clear;exec zsh" \
+alias zc="$EDITOR $ZDOTDIR/.zshrc"
+alias za="$EDITOR $HOME/.config/shell/aliasrc"
+alias zp="$EDITOR $HOME/.config/shell/profile"
+alias zh="rm -f $ZDOTDIR/zhistory && clear && exec zsh" 
+alias zs="clear && exec zsh"
 
 # xrdb
-alias \
-	xc="$EDITOR ~/.config/x11/xresources" \
-	xu='xrdb ~/.config/x11/xresources' \
+alias xc="$EDITOR ~/.config/x11/xresources"
+alias xu='xrdb ~/.config/x11/xresources'
 
 # xinitrc
 alias xx="$EDITOR $XINITRC"
@@ -81,80 +68,67 @@ alias lml='exa -l -r -s time /var/log | tail'
 alias clean_logs='sudo rm -rf /var/log/*'
 
 # journal
-alias \
-	jctl='journalctl' \
-	jcb='jctl -p 3 -b' \
-	jce='jctl -p 3 -e' \
+alias jctl='journalctl'
+alias jcb='jctl -p 3 -b'
+alias jce='jctl -p 3 -e'
 
 # bluetoothctl
 alias btc='bluetoothctl'
 
 # git
-alias \
-	gc='git commit -a' \
-	ga='git add' \
-	gp='git pull' \
-	gl='git log' \
-	gls='git log --stat' \
-	gs='git status' \
-	gc1='git clone --depth=1' \
+alias gc='git commit -a'
+alias ga='git add'
+alias gp='git pull'
+alias gl='git log'
+alias gls='git log --stat'
+alias gs='git status'
+alias gc1='git clone --depth=1'
 
 # neofetch
-alias \
-	nf0='clear;neofetch --config none' \
-	nf='clear;neofetch' \
-	nfo='clear;neofetch --off' \
+alias nf0='clear;neofetch --config none'
+alias nf='clear;neofetch'
+alias nfo='clear;neofetch --off'
 
 # fonts
-alias \
-	f2s='fonttosfnt -v -r -b -c -g 2 -m 2 -o' \
-	fcc='fc-cache -rv' \
-	fcl='fc-list' \
+alias f2s='fonttosfnt -v -r -b -c -g 2 -m 2 -o'
+alias fcc='fc-cache -rv'
+alias fcl='fc-list'
 
-# pywal
-alias \
-	w1='wal -f random_user -o wal-extras.sh' \
-	w2='wal -f random -o wal-extras.sh' \
-        wr='wal --backend haishoku --recursive -i ~/Pictures -o wal-extras.sh' \
-	fw='fzf-wal.sh' \
+# wal
+alias w1='wal -f random_user -o wal-extras.sh'
+alias w2='wal -f random -o wal-extras.sh'
+alias fw='fzf-wal.sh'
 
 # system
-alias \
-	upd8='sudo apt update;sudo apt full-upgrade;sudo apt autoremove;sudo apt clean' \
-	shut='poweroff' \
-        nu='sudo nala upgrade -y' \
-        nh='nala history' \
+alias upd8='sudo apt update;sudo apt full-upgrade;sudo apt autoremove;sudo apt clean'
+alias nu='sudo nala upgrade -y'
+alias shut='poweroff'
 
 # startx
 [ -f "$XINITRC" ] && alias startx="startx $XINITRC"
 
 # kernel
-alias \
-	mkc='make LSMOD=$HOME/.config/modprobed.db localmodconfig' \
-	mkp='make deb-pkg -j4 LOCALVERSION=-custom' \
+alias mkc='make LSMOD=$HOME/.config/modprobed.db localmodconfig'
+alias mkp='make deb-pkg -j4 LOCALVERSION=-custom'
 
 # networking
-alias \
-	rnm='sudo systemctl restart NetworkManager' \
-	up='nmcli c u' \
-	dn='nmcli c d' \
-	ndw='nmcli d wifi' \
-	i='ip -br -c a' \
+alias rnm='sudo systemctl restart NetworkManager'
+alias up='nmcli c u'
+alias dn='nmcli c d'
+alias ndw='nmcli d wifi'
+alias i='ip -br -c a'
 
 # install
-alias \
-	s1='sudo make install' \
-	s2='sudo make PREFIX=/usr/local install' \
-	s3='sudo ninja -C build install' \
+alias s1='sudo make install'
+alias s2='sudo make PREFIX=/usr/local install'
+alias s3='sudo ninja -C build install'
 
 # systemd
-alias \
-	sc='systemctl' \
-	alias scu='systemctl --user' \
+alias sc='systemctl'
+alias scu='systemctl --user'
 
 # arch
-alias \
-	unlock='sudo rm /var/lib/pacman/db.lck' \
-	rpo='sudo pacman -Rns $(pacman -Qtdq)' \
-	mlr='sudo reflector --country 'United States' --protocol https --latest 10 --sort rate --save /etc/pacman.d/mirrorlist' \
-	mla='sudo reflector --country 'United States' --protocol https --latest 10 --sort age --save /etc/pacman.d/mirrorlist' \
+alias unlock='sudo rm /var/lib/pacman/db.lck'
+alias cleanup='sudo pacman -Rns $(pacman -Qtdq)'
+alias mlr='sudo reflector --country 'United States' --protocol https --latest 10 --sort rate --save /etc/pacman.d/mirrorlist'
+alias mla='sudo reflector --country 'United States' --protocol https --latest 10 --sort age --save /etc/pacman.d/mirrorlist'
