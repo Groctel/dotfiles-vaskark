@@ -18,7 +18,6 @@ alias c='cava'
 alias p='pipes-rs'
 alias mi='mediainfo'
 alias grep='grep --color=auto'
-alias egrep='egrep --color=auto'
 alias ping='ping -c 5'
 alias path='print -l $path'
 alias rmpd='systemctl --user daemon-reload; systemctl --user restart mpd'
@@ -83,7 +82,7 @@ alias nfo='clear;neofetch --off'
 
 # fonts
 alias f2s='fonttosfnt -v -r -b -c -g 2 -m 2 -o'
-alias fcc='fc-cache'
+alias fcc='fc-cache -rv'
 alias fcl='fc-list'
 
 # wal
