@@ -53,7 +53,7 @@ alias zc="$EDITOR $ZDOTDIR/.zshrc"
 alias za="$EDITOR $XDG_CONFIG_HOME/shell/aliases"
 alias zp="$EDITOR $XDG_CONFIG_HOME/shell/profile"
 alias zh="rm -f $ZDOTDIR/zhistory && clear && exec zsh" 
-alias zs="clear && exec zsh"
+alias zs="source $HOME/.zprofile && clear && exec zsh"
 
 # xrdb
 alias xc="$EDITOR $XDG_CONFIG_HOME/x11/xresources"

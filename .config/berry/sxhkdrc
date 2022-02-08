@@ -28,8 +28,8 @@ super + v
     viz.sh
 
 # terms
-super + t ; {k,l,m,s,u,x}
-    {kitty,alacritty --config-file ~/.config/alacritty/lemon.yml,alacritty --config-file ~/.config/alacritty/mono.yml,st,urxvt,xterm}
+super + t ; {g,k,l,m,s,u,x}
+    {gnome-terminal,kitty,alacritty --config-file ~/.config/alacritty/lemon.yml,alacritty --config-file ~/.config/alacritty/mono.yml,st,urxvt,xterm}
 
 
 #
