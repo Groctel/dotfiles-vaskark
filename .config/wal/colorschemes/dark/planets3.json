@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/jason/Pictures/C5vI7UV.png",
+    "alpha": "100",
+    "special": {
+        "background": "#18171a",
+        "foreground": "#ffffff",
+        "cursor": "#165e73"
+    },
+    "colors": {
+        "color0": "#18171a",
+        "color1": "#88408e",
+        "color2": "#e18845",
+        "color3": "#338e9d",
+        "color4": "#42c2d6",
+        "color5": "#b2519f",
+        "color6": "#165e73",
+        "color7": "#c5c5c5",
+        "color8": "#302e34",
+        "color9": "#bc45c6",
+        "color10": "#ffae46",
+        "color11": "#34c2d9",
+        "color12": "#43ffff",
+        "color13": "#f858d8",
+        "color14": "#137f9e",
+        "color15": "#ffffff"
+    }
+}
