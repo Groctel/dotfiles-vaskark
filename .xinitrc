@@ -2,7 +2,7 @@
 
 # misc
 xset +fp ~/.local/share/fonts/misc
-xrdb -merge $HOME/.config/x11/xresources
+xrdb -merge $HOME/.Xresources
 
 # ssh-agent
 if [ ! -S ~/.ssh/ssh_auth_sock ]; then
