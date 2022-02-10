@@ -8,7 +8,7 @@ setopt autocd autopushd hist_ignore_all_dups inc_append_history extended_history
 stty stop undef # Disable ctrl-s to freeze terminal.
 
 # aliases
-[ -f "${XDG_CONFIG_HOME:-$HOME/.config}/shell/aliases" ] && source "${XDG_CONFIG_HOME:-$HOME/.config}/shell/aliases"
+[ -f "$ZDOTDIR/aliases" ] && source "$ZDOTDIR/aliases"
 
 # basic auto/tab complete:
 autoload -Uz compinit
