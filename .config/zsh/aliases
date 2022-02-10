@@ -87,7 +87,7 @@ alias fw='fzf-wal.sh'
 
 # system
 alias upd8='sudo apt update;sudo apt full-upgrade;sudo apt autoremove;sudo apt clean'
-alias nu='sudo nala upgrade -y && sudo nala autoremove'
+alias nu='sudo nala upgrade -y'
 alias shut='poweroff'
 
 # startx
