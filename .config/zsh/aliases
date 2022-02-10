@@ -1,11 +1,10 @@
 # general
 alias rm='rm -i'
 alias cp='cp -i'
-alias ln='ln -i'
 alias md='mkdir -pv'
 alias rd='rmdir -pv'
-alias df='df -hT'
-alias du='du -d 1 -h -c'
+alias df='df -h'
+alias du='du -h -c'
 alias cd..='cd ..'
 alias tc="tty-clock -cst -C 2 -f '%A %B %d %Y'"
 alias mount='mount | column -t'
@@ -27,7 +26,6 @@ alias ncdu='ncdu -L -q --color dark --exclude-caches'
 alias m='micro'
 alias v="$EDITOR"
 alias nvc="$EDITOR $XDG_CONFIG_HOME/nvim/init.vim"
-alias rhb='run-help bindkey'
 alias lml='exa -l -r -s time /var/log | tail'
 alias clean_logs='sudo rm -rf /var/log/*'
 alias btc='bluetoothctl'
@@ -73,9 +71,9 @@ alias gs='git status'
 alias gc1='git clone --depth=1'
 
 # neofetch
-alias nf0='clear;neofetch --config none'
 alias nf='clear;neofetch'
 alias nfo='clear;neofetch --off'
+alias nf0='clear;neofetch --config none'
 
 # fonts
 alias f2s='fonttosfnt -v -r -b -c -g 2 -m 2 -o'
@@ -89,7 +87,7 @@ alias fw='fzf-wal.sh'
 
 # system
 alias upd8='sudo apt update;sudo apt full-upgrade;sudo apt autoremove;sudo apt clean'
-alias nu='sudo nala upgrade -y'
+alias nu='sudo nala upgrade -y && sudo nala autoremove'
 alias shut='poweroff'
 
 # startx
