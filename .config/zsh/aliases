@@ -1,0 +1,122 @@
+# general
+alias rm='rm -i'
+alias cp='cp -i'
+alias ln='ln -i'
+alias md='mkdir -pv'
+alias rd='rmdir -pv'
+alias df='df -hT'
+alias du='du -d 1 -h -c'
+alias cd..='cd ..'
+alias tc="tty-clock -cst -C 2 -f '%A %B %d %Y'"
+alias mount='mount | column -t'
+alias u='unimatrix -c green -a -f -n -s 98'
+alias h='htop -u $USER'
+alias t='top -U $USER'
+alias pf='clear;pfetch'
+alias n='nnn'
+alias c='cava'
+alias p='pipes-rs'
+alias mi='mediainfo'
+alias grep='grep --color=auto'
+alias ping='ping -c 5'
+alias path='print -l $path'
+alias rmpd='systemctl --user daemon-reload; systemctl --user restart mpd'
+alias lf="$HOME/.local/bin/lf.sh"
+alias ed='ed -p ": "'
+alias ncdu='ncdu -L -q --color dark --exclude-caches'
+alias m='micro'
+alias v="$EDITOR"
+alias nvc="$EDITOR $XDG_CONFIG_HOME/nvim/init.vim"
+alias rhb='run-help bindkey'
+alias lml='exa -l -r -s time /var/log | tail'
+alias clean_logs='sudo rm -rf /var/log/*'
+alias btc='bluetoothctl'
+alias -g G='| grep -i'
+
+# lsd
+# alias lsd='lsd -h --group-dirs first --no-symlink'
+# alias ls='lsd'
+# alias l='ls -l'
+# alias ll='ls -al'
+# alias lt='ls --tree --depth 2'
+
+# exa
+alias exa='exa --icons --git -g --time-style long-iso --group-directories-first -@ -H'
+alias ls='exa'
+alias l='ls -l'
+alias ll='ls -al'
+alias lt='ls -T -L 2'
+
+# zsh
+alias zc="$EDITOR $ZDOTDIR/.zshrc"
+alias za="$EDITOR $ZDOTDIR/aliases"
+alias zp="$EDITOR $HOME/.zprofile"
+alias zh="rm -f $ZDOTDIR/zhistory && clear && exec zsh" 
+alias zs="source $HOME/.zprofile && clear && exec zsh"
+
+# xrdb
+alias xc="$EDITOR $HOME/.Xresources"
+alias xu="xrdb $HOME/.Xresources"
+
+# journal
+alias jctl='journalctl'
+alias jcb='jctl -p 3 -b'
+alias jce='jctl -p 3 -e'
+
+# git
+alias gc='git commit -a'
+alias ga='git add'
+alias gp='git pull'
+alias gl='git log'
+alias gls='git log --stat'
+alias gs='git status'
+alias gc1='git clone --depth=1'
+
+# neofetch
+alias nf0='clear;neofetch --config none'
+alias nf='clear;neofetch'
+alias nfo='clear;neofetch --off'
+
+# fonts
+alias f2s='fonttosfnt -v -r -b -c -g 2 -m 2 -o'
+alias fcc='fc-cache -rv'
+alias fcl='fc-list'
+
+# wal
+alias w1='wal -f random_user -o wal-extras.sh'
+alias w2='wal -f random -o wal-extras.sh'
+alias fw='fzf-wal.sh'
+
+# system
+alias upd8='sudo apt update;sudo apt full-upgrade;sudo apt autoremove;sudo apt clean'
+alias nu='sudo nala upgrade -y'
+alias shut='poweroff'
+
+# startx
+alias startx='startx $HOME/.xinitrc'
+
+# kernel
+alias mkc="make LSMOD=$XDG_CONFIG_HOME/modprobed.db localmodconfig"
+alias mkp='make deb-pkg -j4 LOCALVERSION=-custom'
+
+# networking
+alias rnm='sudo systemctl restart NetworkManager'
+alias up='nmcli c u'
+alias dn='nmcli c d'
+alias ndw='nmcli d wifi'
+alias i='ip -br -c a'
+
+# install
+alias s1='sudo make install'
+alias s2='sudo make PREFIX=/usr/local install'
+alias s3='sudo ninja -C build install'
+
+# systemd
+alias sc='systemctl'
+alias scu='systemctl --user'
+
+# arch
+# alias unlock='sudo rm /var/lib/pacman/db.lck'
+# alias cleanup='sudo pacman -Rns $(pacman -Qtdq)'
+# alias mlr='sudo reflector --country 'United States' --protocol https --latest 10 --sort rate --save /etc/pacman.d/mirrorlist'
+# alias mla='sudo reflector --country 'United States' --protocol https --latest 10 --sort age --save /etc/pacman.d/mirrorlist'

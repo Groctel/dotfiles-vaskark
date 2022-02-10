@@ -6,7 +6,7 @@ setopt autocd autopushd hist_ignore_all_dups inc_append_history extended_history
 stty stop undef # Disable ctrl-s to freeze terminal.
 
 # aliases
-[ -f "${XDG_CONFIG_HOME:-$HOME/.config}/shell/aliases" ] && source "${XDG_CONFIG_HOME:-$HOME/.config}/shell/aliases"
+[ -f "$ZDOTDIR/aliases" ] && source "$ZDOTDIR/aliases"
 
 # basic auto/tab complete:
 autoload -Uz compinit
@@ -25,7 +25,7 @@ bindkey -M menuselect 'j' vi-down-line-or-history
 bindkey -v '^?' backward-delete-char
 
 # mode
-# bindkey -e
+bindkey -v
 export KEYTIMEOUT=1
 
 # change cursor shape for different vi modes.
@@ -107,11 +107,11 @@ ZSH_HIGHLIGHT_STYLES[root]='bg=red'
 # bindkey "^[[B" history-beginning-search-forward
 
 # pure
-fpath+=~/.pure
-zstyle ':prompt:pure:prompt:success' color green
-zstyle ':prompt:pure:git:stash' show yes
-autoload -U promptinit; promptinit
-prompt pure
+# fpath+=~/.pure
+# zstyle ':prompt:pure:prompt:success' color green
+# zstyle ':prompt:pure:git:stash' show yes
+# autoload -U promptinit; promptinit
+# prompt pure
 
 # starship
-# eval "$(starship init zsh)"
+eval "$(starship init zsh)"
