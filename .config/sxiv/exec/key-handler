@@ -1,10 +1,14 @@
 #!/bin/sh
 
+#
+# hotkey: ctrl-x
+#
+
 while read file
 do
         case "$1" in
         "w")
-		xwallpaper --zoom "$file" & ;;
+		feh --no-fehbg --bg-fill "$file" ;;
 	"r")
 		convert -rotate 90 "$file" "$file" ;;
 	"R")
@@ -20,15 +24,15 @@ do
 	"g")	
 		gimp "$file" ;;
 	"i")	
-		notify-send "File information" "$(mediainfo "$file")" ;;
+		notify-send "File info:" "$(mediainfo "$file")" ;;
 
 	"1")
-		wal -i "$file" --backend colorthief && wal-extras.sh ;;
+		wal -i "$file" --backend colorthief -o wal-extras.sh ;;
 	"2")
-		wal -i "$file" --backend faster_colorthief && wal-extras.sh ;;
+		wal -i "$file" --backend faster_colorthief -o wal-extras.sh ;;
 	"3")
-		wal -i "$file" --backend haishoku && wal-extras.sh ;;
+		wal -i "$file" --backend haishoku -o wal-extras.sh ;;
 	"4")
-		wal -i "$file" --backend wal && wal-extras.sh ;;
+		wal -i "$file" --backend wal -o wal-extras.sh ;;
         esac
 done
