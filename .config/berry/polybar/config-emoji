@@ -62,7 +62,7 @@ border-size = 0
 border-color = ${self.background}
 
 font-0 = "scientifica:bold:size=8;2"
-font-1 = "Apple Color Emoji:scale=18;2"
+font-1 = "Apple Color Emoji:scale=14;2"
 ;font-1 = "JoyPixels:scale=12;2"
 ;font-1 = "Noto Color Emoji:scale=12;2"
 
@@ -86,8 +86,8 @@ content-padding = 0
 [module/misc]
 type = custom/text
 
-; 🌭 🌮 🍉 🍔 🍕 🍩 🍿 🍺 🐡 🐧 🐹 👾 👽 🐲 🖲 🥞 🍫 🕹 ☢ 🌊 🍓 🐯 👅 💼 🍯 🔗 👊 📺 🍹 🍱
-; 💻 🔥 🚀 🙏 🥃 🥭 🦊 🧀 🧊 🧟 🧼 🫒 🐔 🥑 🥨 🍑 ☘ ☠ 🍄 🍰 ☄ 🐋 🎧 😸 🍇 🐙 ⛵ 🍵 🎁 🧁
+; 🌭 🌮 🍉 🍔 🍕 🍩 🍿 🍺 🐡 🐧 🐹 👾 👽 🐲 🖲 🥞 🍫 🕹 ☢ 🌊 🍓 🐯 👅 💼 🍯 🔗 👊 📺 🍹 🍱 🦠
+; 💻 🔥 🚀 🙏 🥃 🥭 🦊 🧀 🧊 🧟 🧼 🫒 🐔 🥑 🥨 🍑 ☘ ☠ 🍄 🍰 ☄ 🐋 🎧 😸 🍇 🐙 ⛵ 🍵 🎁 🧁🦖
 
 content = 🚀
 content-background = ${colors.color5}
@@ -343,7 +343,7 @@ type = internal/date
 interval = 1
 
 time = ⌚ %I:%M %p
-time-alt = 📆 %a %b %d %Y ⌚ %I:%M:%S %p
+time-alt = 🗓 %a %b %d %Y ⌚ %I:%M %p
 
 label = %time%
 format = <label>

@@ -358,7 +358,7 @@ type = internal/date
 interval = 1
 
 time =  %I:%M %p
-time-alt =  %a %b %d %Y  %I:%M:%S %p
+time-alt =  %a %b %d %Y  %I:%M %p
 
 label = %time%
 format = <label>

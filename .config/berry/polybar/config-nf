@@ -63,7 +63,7 @@ border-color = ${self.background}
 
 font-0 = "scientifica:bold:size=8;2"
 font-1 = "Symbols Nerd Font:size=9;2"
-font-2 = "Symbols Nerd Font:size=35;9"
+font-2 = "Symbols Nerd Font:size=37;10"
 font-3 = "Symbols Nerd Font:size=10;3"
 
 modules-left = misc sp ewmh
@@ -392,7 +392,7 @@ type = internal/date
 interval = 1
 
 time =  %I:%M %p
-time-alt =  %a %b %d %Y  %I:%M:%S %p
+time-alt =  %a %b %d %Y  %I:%M %p
 
 label = %time%
 format = <label>
