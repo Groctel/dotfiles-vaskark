@@ -42,7 +42,7 @@ super + F5
 # networkmanager_dmenu
 super + F6
 	networkmanager_dmenu -theme-str 'window {width: 15%;}'
-
+	
 # man2pdf
 super + F7
 	man2pdf.sh
@@ -75,4 +75,4 @@ super + {_,shift +,ctrl +} F12
         
 # sxiv
 super + {_,shift +} equal
-	ls -t {$HOME/Pictures/*,ls -t $HOME/Pictures/wow/*} | head -20 | xargs sxiv -rt
+	ls -t {$HOME/Pictures/*,ls -t $HOME/Pictures/wow/*} | head -20 | xargs nsxiv -rt
