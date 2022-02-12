@@ -58,7 +58,7 @@ kitty + complete setup zsh | source /dev/stdin
 
 # wal
 (cat ~/.cache/wal/sequences &)
-source ~/.cache/wal/colors.sh
+# source ~/.cache/wal/colors.sh
 
 # urxvt/xterm cursor beam: 35 (blink), 36 (no blink)
 echo -e -n "\x1b[\x36 q"

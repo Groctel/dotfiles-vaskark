@@ -11,7 +11,7 @@ super + shift + semicolon
 
 # polybar
 # super + semicolon
-#    polybar-msg cmd toggle
+#  pkill polybar || polybar-current
 # super + shift + semicolon
 #    polybar-menu.sh
 

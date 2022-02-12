@@ -1,7 +1,7 @@
 #!/bin/sh
 
 # misc
-xset +fp ~/.local/share/fonts/misc
+xset +fp $HOME/.local/share/fonts/misc
 xrdb -merge $HOME/.Xresources
 
 # ssh-agent
