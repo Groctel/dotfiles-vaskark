@@ -1,7 +1,4 @@
-# path
-typeset -U PATH path
-
-# options
+# set
 setopt autocd autopushd hist_ignore_all_dups inc_append_history extended_history share_history
 stty stop undef # Disable ctrl-s to freeze terminal.
 
@@ -78,7 +75,7 @@ f() {
 }
 
 # lf
-[ -f "$HOME/.config/lf/icons" ] && source "$HOME/.config/lf/icons"
+[ -f "$XDG_CONFIG_HOME/lf/icons" ] && source "$XDG_CONFIG_HOME/lf/icons"
 
 # fzf
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh

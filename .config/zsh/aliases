@@ -39,7 +39,7 @@ alias -g G='| grep -i'
 # alias lt='ls --tree --depth 2'
 
 # exa
-alias exa='exa --icons --git -g --time-style long-iso --group-directories-first -@ -H'
+alias exa='exa --icons --git -g --group-directories-first'
 alias ls='exa'
 alias l='ls -l'
 alias ll='ls -al'
@@ -48,9 +48,9 @@ alias lt='ls -T -L 2'
 # zsh
 alias zc="$EDITOR $ZDOTDIR/.zshrc"
 alias za="$EDITOR $ZDOTDIR/aliases"
-alias zp="$EDITOR $ZDOTDIR/.zprofile"
+alias ze="$EDITOR $ZDOTDIR/.zshenv"
 alias zh="rm -f $ZDOTDIR/zhistory && clear && exec zsh" 
-alias zs="source $ZDOTDIR/.zprofile && clear && exec zsh"
+alias zs="source $ZDOTDIR/.zshenv && clear && exec zsh"
 
 # xrdb
 alias xc="$EDITOR $HOME/.Xresources"
