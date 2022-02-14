@@ -1,4 +1,4 @@
-!! Xft
+! Xft
 Xft.dpi: 96
 Xft.antialias: 1
 Xft.hinting: 1
@@ -7,26 +7,22 @@ Xft.autohint: 1
 Xft.hintstyle: hintfull
 Xft.lcdfilter: lcddefault
 
-!! URxvt
+! URxvt
 URxvt*termName: rxvt-unicode-256color
-URxvt*font: -*-scientifica-medium-*
-URxvt*boldFont: -*-scientifica-bold-*
+URxvt*font: -*-scientifica-medium-r-*
+URxvt*boldFont: -*-scientifica-bold-r-*
 URxvt*letterSpace: -6
-URxvt*lineSpace: 0
 URxvt*geometry: 80x22
 URxvt*internalBorder: 20
-URxvt*cursorBlink: false
 URxvt*saveLines: 2000
 URxvt*scrollBar: false
-URxvt*urgentOnBell: true
+URxvt*visualBell: true
 URxvt*depth: 32
 URxvt*iso14755: false
 URxvt*iso14755_52: false
 URxvt*pointerBlank: true
-URxvt*fading: 25
-URxvt*intensityStyles: false
 
-!! URxvt Navigation Keys
+! URxvt Navigation Keys
 URxvt.keysym.M-Up: command:\033]720;1\007
 URxvt.keysym.M-k: command:\033]720;1\007
 URxvt.keysym.M-Down: command:\033]721;1\007
@@ -34,7 +30,7 @@ URxvt.keysym.M-j: command:\033]721;1\007
 URxvt.keysym.C-Right: \033[1;5C
 URxvt.keysym.C-Left: \033[1;5D
 
-!! URxvt Extensions
+! URxvt Extensions
 URxvt.perl-ext-common: default,url-select,selection-to-clipboard,keyboard-select,resize-font,bell-command
 ! url-select
 URxvt.keysym.M-u: perl:url-select:select_next
@@ -56,29 +52,21 @@ URxvt.resize-font.show: C-slash
 URxvt.bell-command: canberra-gtk-play -i bell
 ! URxvt.bell-command: notify-send "Beep!"
 
-!! XTerm
-XTerm.vt100*termName: xterm-256color
-XTerm.vt100*borderWidth: 0
-XTerm.vt100*internalBorder: 20
-XTerm.vt100*renderFont: true
-XTerm.vt100*faceName: scientifica:pixelsize=11:antialias=false
-! XTerm.vt100*faceSize: 8
-XTerm.vt100*allowBoldFonts: true
-XTerm.vt100*geometry: 80x22
-XTerm.vt100*on2Clicks: word
-XTerm.vt100*on3Clicks: line
-! XTerm.vt100*dynamicColors: On
-XTerm.vt100*saveLines: 2000
-XTerm.vt100*bellIsUrgent: true
-XTerm.vt100*visualBell: true
-XTerm.vt100*visualBellLine: true
-XTerm.vt100*selectToClipboard: true
-XTerm.vt100*metaSendsEscape: true
-XTerm.vt100*eightBitInput: false
-XTerm.vt100*modifyCursorKeys: 1
-XTerm.vt100*modifyFunctionKeys: 1
+! XTerm
+XTerm*termName: xterm-256color
+XTerm*faceName: scientifica:pixelsize=11
+XTerm*allowBoldFonts: true
+XTerm*renderFont: true
+XTerm*geometry: 80x22
+XTerm*internalBorder: 20
+XTerm*scrollBar: false
+XTerm*on2Clicks: word
+XTerm*on3Clicks: line
+XTerm*saveLines: 2000
+XTerm*visualBell: true
+XTerm*selectToClipboard: true
 
-!! XTerm Keybindings
+! XTerm Keybindings
 XTerm.vt100.translations: #override \n\
     Ctrl Shift <Key>C: copy-selection(CLIPBOARD) \n\
     Ctrl Shift <Key>V: insert-selection(CLIPBOARD) \n\
@@ -87,5 +75,5 @@ XTerm.vt100.translations: #override \n\
     Ctrl <Key> +: larger-vt-font() \n\
     Ctrl <Key> 0: set-vt-font(d)
 
-!! Colours
+! Colours
 #include ".cache/wal/colors.Xresources"
