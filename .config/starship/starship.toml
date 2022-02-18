@@ -1,0 +1,24 @@
+# new line
+add_newline = true
+
+# right prompt
+right_format = """$cmd_duration"""
+
+[character]
+success_symbol = "[❯](bold green)"
+error_symbol = "[❯](bold red)"
+vicmd_symbol = "[❮](bold green)"
+
+[cmd_duration]
+min_time = 500
+format = "took [$duration](bold yellow)"
+
+[git_branch]
+symbol = "🌱 "
+
+[hostname]
+ssh_only = true
+format =  ">> [$hostname](bold cyan) "
+
+[username]
+format = "[$user]($style) "
