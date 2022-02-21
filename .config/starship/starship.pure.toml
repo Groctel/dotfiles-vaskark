@@ -46,3 +46,10 @@ style = "yellow"
 [python]
 format = "[$virtualenv]($style) "
 style = "bright-black"
+
+[hostname]
+ssh_only = true
+format =  ">> [$hostname](bold cyan) "
+
+[username]
+format = "[$user]($style) "
