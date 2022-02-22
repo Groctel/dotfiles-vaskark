@@ -193,7 +193,7 @@ label-song-ellipsis = true
 
 [module/pulseaudio]
 type = internal/pulseaudio
-interval = 1
+interval = 5
 click-right = pkill pavucontrol || pavucontrol
 
 format-volume = <bar-volume><label-volume>
