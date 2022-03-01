@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/jason/Pictures/waves-light.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#19191a",
+        "foreground": "#fefefe",
+        "cursor": "#e68553"
+    },
+    "colors": {
+        "color0": "#19191a",
+        "color1": "#8f316c",
+        "color2": "#db596a",
+        "color3": "#6067c1",
+        "color4": "#2a4180",
+        "color5": "#793d93",
+        "color6": "#e68553",
+        "color7": "#c5c5c5",
+        "color8": "#303134",
+        "color9": "#c53591",
+        "color10": "#e65c75",
+        "color11": "#6670e4",
+        "color12": "#2a4db3",
+        "color13": "#a540cf",
+        "color14": "#e79c50",
+        "color15": "#fefefe"
+    }
+}
