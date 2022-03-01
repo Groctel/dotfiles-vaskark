@@ -85,9 +85,9 @@ Wifi() {
 			MKBPS=$(( RKBPS / 1024 ))
      	    
      		if [ "$RKBPS" -le 999 ]; then
-				echo "💨 $ESSID [👇 $RKBPS Kb/s] "
+				echo "💨 $ESSID [$RKBPS Kb/s] "
 			else
-				echo "💨 $ESSID [👇 $MKBPS Mb/s] "
+				echo "💨 $ESSID [$MKBPS Mb/s] "
 			fi
 
 		fi
@@ -113,7 +113,6 @@ Battery() {
 		CAPACITY=$(cat /sys/class/power_supply/BAT0/capacity)
 
 		if [[ "$CHARGE" ]] ; then
-			ICON="🔌"
 			echo "🔌 $CAPACITY% "
 		else
   			echo "🔋 $CAPACITY% "
