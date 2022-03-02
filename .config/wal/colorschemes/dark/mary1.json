@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/jason/Pictures/wp1975305-mary-elizabeth-winstead-wallpapers.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#181615",
+        "foreground": "#fffefe",
+        "cursor": "#dbb49d"
+    },
+    "colors": {
+        "color0": "#181615",
+        "color1": "#bc476b",
+        "color2": "#c98483",
+        "color3": "#763d38",
+        "color4": "#906048",
+        "color5": "#097dac",
+        "color6": "#dbb49d",
+        "color7": "#c5c4c4",
+        "color8": "#322e2c",
+        "color9": "#ff4b84",
+        "color10": "#ff9694",
+        "color11": "#a4453d",
+        "color12": "#c9784f",
+        "color13": "#01a7ea",
+        "color14": "#ffe3b3",
+        "color15": "#fffefe"
+    }
+}
