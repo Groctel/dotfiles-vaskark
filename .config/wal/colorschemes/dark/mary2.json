@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/jason/Pictures/mary-elizabeth-winstead-fargo-bath-photoshoot-4k-pk.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#1a1619",
+        "foreground": "#fffeff",
+        "cursor": "#766c80"
+    },
+    "colors": {
+        "color0": "#1a1619",
+        "color1": "#693139",
+        "color2": "#614662",
+        "color3": "#a4aeaf",
+        "color4": "#9497a0",
+        "color5": "#019cb5",
+        "color6": "#766c80",
+        "color7": "#c5c4c5",
+        "color8": "#352c33",
+        "color9": "#923542",
+        "color10": "#88508a",
+        "color11": "#bff4f9",
+        "color12": "#acbae3",
+        "color13": "#01cbeb",
+        "color14": "#997db5",
+        "color15": "#fffeff"
+    }
+}
