@@ -1,12 +1,13 @@
-#!/bin/bash
+#!/bin/sh
 
-# If picom is running, kill it to prevent multiple instances
-if pgrep -x picom; then
-	killall -q picom
+#
+# Picom start/reload
+#
+
+# if picom is running, kill it to prevent multiple instances
+if [ "$(pgrep -x picom)" ]; then
+	pkill -x picom
 fi
 
-# Wait until the processes have been shut down
-sleep 0.1s
-
-# Launch
-picom --config ~/.config/picom/picom-xr.conf &>/dev/null &
+# launch
+picom --config ~/.config/picom/picom-xr.conf 2>/dev/null &

@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 
 # Set decoration geometry
 berryc border_width         0
@@ -24,10 +24,10 @@ berryc move_mask   "Mod4Mask"
 berryc resize_mask "Mod4Mask|ShiftMask"
 
 # wal
-wal -R -o wal-extras.sh
+wal -q -R -o wal-extras.sh
 
 # sxhkd
-sxhkd -c $HOME/.config/berry/sxhkdrc $HOME/.config/sxhkd/sxhkdrc.common &
+sxhkd -c "$HOME"/.config/berry/sxhkdrc "$HOME"/.config/sxhkd/sxhkdrc.common &
 
 # redshift
 systemctl --user import-environment; systemctl --user restart redshift
@@ -53,4 +53,4 @@ lemonbar-current &
 touchegg &
 
 # glava
-sed -i "s|#request setgeometry.*$|#request setgeometry 610 0 800 1080|g" ~/.config/glava/rc.glsl
+sed -i "s|#request setgeometry.*$|#request setgeometry 560 0 800 1080|g" ~/.config/glava/rc.glsl

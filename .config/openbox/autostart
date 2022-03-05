@@ -1,7 +1,4 @@
-#!/bin/bash
-
-# colours
-# . "$HOME/.cache/wal/colors.sh"
+#!/bin/sh
 
 # picom
 picom --experimental-backends --config ~/.config/picom/picom.conf &
@@ -18,11 +15,10 @@ xautolock -time 10 -locker 'lock.sh' -killer 'systemctl suspend' -corners 00-+ &
 systemctl --user import-environment; systemctl --user restart redshift
 
 # bg
-bash $HOME/.fehbg &
-# xwallpaper --zoom $wallpaper &
+bash "$HOME"/.fehbg &
 
 # wal
-wal -R -o -wal-extras.sh
+wal -q -R -o -wal-extras.sh
 
 # lemonbar
 # lemonbar-current &
