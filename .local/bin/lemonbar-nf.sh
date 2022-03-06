@@ -90,12 +90,11 @@ Wifi() {
 			RKBPS=$(ifstat -i "$INTERFACE" 0.2s 1 | awk 'NR==3 {print $1}' | sed 's:\.[^|]*::g')
 			MKBPS=$(( RKBPS / 1024 ))
 			ICON="說"
-     	    ICON_DOWN=""
      	    
      		if [ "$RKBPS" -le 999 ]; then
-				echo "%{F$color4}$ICON%{F-} $ESSID [%{F$color4}$ICON_DOWN%{F-} $RKBPS Kb/s] "
+				echo "%{F$color4}$ICON%{F-} $ESSID [$RKBPS Kb/s] "
 			else
-				echo "%{F$color4}$ICON%{F-} $ESSID [%{F$color4}$ICON_DOWN%{F-} $MKBPS Mb/s] "
+				echo "%{F$color4}$ICON%{F-} $ESSID [$MKBPS Mb/s] "
 			fi
 
 		fi
