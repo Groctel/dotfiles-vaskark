@@ -2,7 +2,7 @@
 
 # polybar
 if [ "$(pgrep -x polybar)" ]; then
-    pkill polybar
+    pkill -x polybar
     polybar -q -r -c ~/.config/polybar/config-nf 2>/dev/null &
 else
     polybar -q -r -c ~/.config/polybar/config-nf 2>/dev/null &
