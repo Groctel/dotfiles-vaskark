@@ -62,9 +62,7 @@ border-size = 0
 border-color = ${self.background}
 
 font-0 = "scientifica:bold:size=8;2"
-font-1 = "Apple Color Emoji:scale=14;2"
-;font-1 = "JoyPixels:scale=12;2"
-;font-1 = "Noto Color Emoji:scale=12;2"
+font-1 = "Emoji:scale=16;2"
 
 modules-left = misc sp ewmh
 modules-center = mpd

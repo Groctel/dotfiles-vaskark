@@ -15,7 +15,7 @@ lemonbar-emoji.sh 2>/dev/null | lemonbar \
 -o 0 \
 -f "-*-scientifica-bold-r-*" \
 -o 1 \
--f "Apple Color Emoji-8" \
+-f "Emoji-8" \
 -g "$w"x"$h"+"$x"+"$y" \
 -B "$color0" \
 -F "#555" \
