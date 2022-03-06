@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 
 # colours
 . "$HOME"/.cache/wal/colors.sh
@@ -21,4 +21,4 @@ lemonbar-emoji.sh 2>/dev/null | lemonbar \
 -F "#555" \
 -d \
 -b \
-| $SHELL
+| $SHELL &

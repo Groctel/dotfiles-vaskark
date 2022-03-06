@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 PULSE=true
 NUM="${2:-5}"

@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 ## Lemonbar menu
 
@@ -13,17 +13,17 @@ case "$MENU" in
 	
 	*siji)
 		ln -sf "$HOME"/.local/bin/lemonbar-start.sh "$HOME"/.local/bin/lemonbar-current
+		pkill -x lemonbar && lemonbar-current
 	;;
 
 	*nf)
 		ln -sf "$HOME"/.local/bin/lemonbar-nf-start.sh "$HOME"/.local/bin/lemonbar-current
+		pkill -x lemonbar && lemonbar-current
 	;;
 
 	*emoji)
 		ln -sf "$HOME"/.local/bin/lemonbar-emoji-start.sh "$HOME"/.local/bin/lemonbar-current
+		pkill -x lemonbar && lemonbar-current
 	;;
 
 esac
-
-killall lemonbar
-lemonbar-current

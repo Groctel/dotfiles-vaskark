@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 
 # xyw
 x=2

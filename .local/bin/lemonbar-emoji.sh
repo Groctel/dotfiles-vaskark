@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 ##
 ## Lemonbar
@@ -8,7 +8,7 @@
 
 
 # colours
-. "$HOME/.cache/wal/colors.sh"
+. "$HOME"/.cache/wal/colors.sh
 
 
 Session() {
@@ -60,7 +60,7 @@ Mpc() {
 
 	MPD=$(pgrep -x mpd)
 
-	if [[ "$MPD" ]] ; then
+	if [ "$MPD" ] ; then
 		MPC=$(mpc current -f "%artist% >> %title%")
 		echo "%{A:mpc toggle 1>/dev/null:}%{A2:mpc prev 1>/dev/null:}%{A3:mpc next 1>/dev/null:}🎵 $MPC%{A}%{A}%{A}"
 	else
@@ -74,7 +74,7 @@ Wifi() {
     INTERFACE=$(ip addr | awk '/state UP/ {print $2}' | sed 's/://g')
 	WIFISTR=$(iwconfig "$INTERFACE" | grep "Link" | sed 's/ //g' | sed 's/LinkQuality=//g' | sed 's/\/.*//g') 
 
-	if [[ "$WIFISTR" ]] ; then
+	if [ "$WIFISTR" ] ; then
 
 		WIFISTR=$(( WIFISTR * 100 / 70 ))
 		ESSID=$(iwconfig "$INTERFACE" | grep ESSID | sed 's/ //g' | sed 's/.*://g' | sed 's/\"//g')
@@ -158,7 +158,7 @@ Volume() {
 
 		NOTMUTED=$(amixer -D pulse sget Master | grep "\[on\]")
 
-		if [[ "$NOTMUTED" ]] ; then
+		if [ "$NOTMUTED" ] ; then
 			VOL=$(awk -F"[][]" '/Left:/ { print $2 }' <(amixer -D pulse sget Master) | sed 's/%//g')
 			echo "%{A3:pavucontrol:}%{A4:pactl set-sink-volume @DEFAULT_SINK@ +5%:}%{A5:pactl set-sink-volume @DEFAULT_SINK@ -5%:}🔊 $VOL% %{A}%{A}%{A}"
 		else
@@ -210,7 +210,7 @@ Time() {
 
 # begin
 while true; do
-    echo -e "\
+    echo "\
 	%{l}$(Uptime) $(Workspaces) \
 	%{c}$(Mpc) \
     %{r}$(Wifi) $(Cpu) $(Memory) $(Battery) $(Volume) $(Time)"

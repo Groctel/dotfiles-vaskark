@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 
 # colors
 color0=$(awk 'NR==1 {print substr($1,2,7)}' ~/.cache/wal/colors)dd

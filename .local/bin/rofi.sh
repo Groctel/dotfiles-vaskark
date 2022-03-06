@@ -1,4 +1,8 @@
-#!/bin/bash
+#!/bin/sh
+
+#
+# rofi
+#
 
 rofi -show drun \
 -display-drun '🚀' \

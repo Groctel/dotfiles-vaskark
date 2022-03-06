@@ -1,8 +1,8 @@
-#!/bin/bash
+#!/bin/sh
 
-if [[ "$(pgrep -x touchegg)" ]]; then
-	killall -q touchegg 2>/dev/null
-	touchegg &>/dev/null &
+if [ "$(pgrep -x touchegg)" ]; then
+	pkill -x touchegg 2>/dev/null
+	touchegg 2>/dev/null &
 else
-	touchegg &>/dev/null &
+	touchegg 2>/dev/null &
 fi

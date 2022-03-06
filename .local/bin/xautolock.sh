@@ -1,7 +1,7 @@
-#!/bin/bash
+#!/bin/sh
 
 # Terminate
-if pgrep -x xautolock; then
+if [ "$(pgrep -x xautolock)" ]; then
 	killall -q xautolock
 fi
 

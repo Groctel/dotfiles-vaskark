@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 ##
 ## Lemonbar
@@ -8,7 +8,7 @@
 
 
 # colours
-. "$HOME/.cache/wal/colors.sh"
+. "$HOME"/.cache/wal/colors.sh
 
 
 Session() {
@@ -121,7 +121,7 @@ Battery() {
 		CHARGE=$(acpi | grep "Not charging")
 		CAPACITY=$(cat /sys/class/power_supply/BAT0/capacity)
 
-		if [[ -n "$CHARGE" ]] ; then
+		if [ -n "$CHARGE" ] ; then
 			ICON=""
 			echo "%{F$color4}$ICON%{F-} $CAPACITY% "
 		else
@@ -231,7 +231,7 @@ Time() {
 
 # begin
 while true; do
-    echo -e "\
+    echo "\
 	%{l}$(Uptime) $(Workspaces) \
 	%{c}$(Mpc) \
     %{r}$(Wifi) $(Cpu) $(Memory) $(Battery) $(Volume) $(Time)"

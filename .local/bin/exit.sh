@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 # exit script
 # note: must be in 'operators' group on *bsd

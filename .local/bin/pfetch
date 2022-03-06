@@ -1,5 +1,5 @@
 #!/bin/sh
-#
+
 # pfetch - Simple POSIX sh fetch script.
 # modified: openbsd logo (vaskark)
 

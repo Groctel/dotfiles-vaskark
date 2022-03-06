@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 ##
 ## Lemonbar
@@ -8,7 +8,7 @@
 
 
 # colours
-. "$HOME/.cache/wal/colors.sh"
+. "$HOME"/.cache/wal/colors.sh
 
 
 Session() {

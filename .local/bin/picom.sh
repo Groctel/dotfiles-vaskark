@@ -4,11 +4,9 @@
 # Picom start/reload
 #
 
-
-# if picom is running, kill it to prevent multiple instances
 if [ "$(pgrep -x picom)" ]; then
 	pkill -x picom
+	picom --experimental-backends --config ~/.config/picom/picom.conf 2>/dev/null &
+else
+	picom --experimental-backends --config ~/.config/picom/picom.conf 2>/dev/null &
 fi
-
-# launch
-picom --experimental-backends --config ~/.config/picom/picom.conf 2>/dev/null &

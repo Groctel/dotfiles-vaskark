@@ -62,14 +62,37 @@ border-size = 0
 border-color = ${self.background}
 
 font-0 = "scientifica:bold:size=8;2"
-font-1 = "siji:size=9;2"
-font-2 = "siji:size=11;2"
+font-1 = "Symbols Nerd Font:size=9;2"
+font-2 = "Symbols Nerd Font:size=37;10"
+font-3 = "Symbols Nerd Font:size=10;3"
 
 modules-left = misc sp ewmh
-modules-center = pulseaudio
-modules-right = wlan uptime temp cpu memory battery volume sp date
+modules-center = mpd
+modules-right = wlan uptime temp cpu memory battery volume div-r date
 
 ##################################################
+##################################################
+
+[module/div-l]
+type = custom/text
+content = ""
+content-font = 3
+
+content-background = ${colors.color0}
+content-foreground = ${colors.color5}
+content-padding = 0
+
+##################################################
+
+[module/div-r]
+type = custom/text
+content = ""
+content-font = 3
+
+content-background = ${colors.color0}
+content-foreground = ${colors.color2}
+content-padding = 0
+
 ##################################################
 
 [module/sp]
@@ -84,8 +107,9 @@ content-padding = 0
 
 [module/misc]
 type = custom/text
-content = 
-content-font = 3
+;       ⚡  漣                 車
+content = ""
+content-font = 4
 
 content-background = ${colors.color5}
 content-foreground = ${colors.color0}
@@ -93,7 +117,7 @@ content-padding = 2
 
 click-left = polybar-msg cmd restart
 click-right = wal -f random_user -o wal-extras.sh
-click-middle = subl ~/.config/berry/polybar/config
+click-middle = subl ~/.config/berry/polybar/config-nf
 
 ##################################################
 
@@ -137,21 +161,21 @@ pin-workspaces = true
 enable-click = false
 enable-scroll = false
 
-#icon-0 = 0;
-#icon-1 = 1;
-#icon-2 = 2;
-#icon-3 = 3;
-#icon-4 = 4;
-icon-default = 
+#icon-0 = 0;
+#icon-1 = 1;
+#icon-2 = 2;
+#icon-3 = 3;
+#icon-4 = 4;
+icon-default = ﱡ
 
 format = <label-state>
 
-label-monitor =  %name%
+label-monitor =  %name%
 label-monitor-background = ${colors.color5}
 label-monitor-foreground = ${colors.color0}
 label-monitor-padding = 2
 
-label-active = 
+label-active = ﱢ
 label-active-background = ${colors.color0}
 label-active-foreground = ${colors.color5}
 label-active-padding = 1
@@ -180,10 +204,10 @@ port = 6600
 
 label-song = %{A1:mpc -q toggle:}%{A2:mpc -q prev:}%{A3:mpc -q next:}%artist% >> %title%%{A}%{A}%{A}
 format-online = <label-song>
-format-online-prefix = " "
+format-online-prefix = "ﱘ "
 format-online-prefix-foreground = ${colors.color4}
 
-label-offline =  mpd offline :(
+label-offline = ﱙ mpd offline :(
 format-offline = <label-offline>
 
 label-song-maxlen = 200
@@ -216,15 +240,10 @@ interval = 1
 accumulate-stats = true
 unknown-as-up = true
 
-format-connected = <ramp-signal> <label-connected>
+format-connected-prefix = "說 "
+format-connected = <label-connected>
+format-connected-prefix-foreground = ${colors.color4}
 format-connected-padding = 1
-
-ramp-signal-foreground = ${colors.color4}
-
-ramp-signal-0 = 
-ramp-signal-1 = 
-ramp-signal-2 = 
-ramp-signal-3 = 
 
 ##################################################
 
@@ -251,7 +270,7 @@ interval = 1
 
 label = %output%
 format = <label>
-format-prefix = " "
+format-prefix = "羽 "
 format-prefix-foreground = ${colors.color4}
 format-padding = 1
 
@@ -261,17 +280,17 @@ format-padding = 1
 type = internal/temperature
 thermal-zone = 0
 base-temperature = 20
-warn-temperature = 70
+warn-temperature = 75
 
 label = %temperature-c%
 format = <label>
-format-prefix = " "
+format-prefix = "﨎 "
 format-prefix-foreground = ${colors.color4}
 format-padding = 1
 
 label-warn = %temperature-c%
 format-warn = <label-warn>
-format-warn-prefix = " "
+format-warn-prefix = "﨎 "
 format-warn-foreground = ${colors.color1}
 format-warn-padding = 1
 
@@ -283,7 +302,7 @@ interval = 1
 
 label = %percentage%%
 format = <label>
-format-prefix = " "
+format-prefix = "﬙ "
 format-prefix-foreground = ${colors.color4}
 format-padding = 1
 
@@ -295,7 +314,7 @@ interval = 1
 
 label = %percentage_used%%
 format = <label>
-format-prefix = " "
+format-prefix = " "
 format-prefix-foreground = ${colors.color4}
 format-padding = 1
 
@@ -306,12 +325,10 @@ type = internal/battery
 full-at = 98
 battery = BAT0
 adapter = AC0
-poll-interval = 1
+poll-interval = 5
 
 label-charging = %percentage%%
-format-charging = <label-charging>
-format-charging-prefix = " "
-format-charging-prefix-foreground = ${colors.color4}
+format-charging = <animation-charging> <label-charging>
 format-charging-padding = 1
 
 label-discharging = %percentage%%
@@ -320,16 +337,33 @@ format-discharging-padding = 1
 
 label-full = %percentage%%
 format-full = <label-full>
-format-full-prefix = " "
+format-full-prefix = " "
 format-full-prefix-foreground = ${colors.color4}
 format-full-padding = 1
 
 ramp-capacity-foreground = ${colors.color4}
 
-ramp-capacity-0 = 
-ramp-capacity-1 = 
-ramp-capacity-2 = 
-ramp-capacity-3 = 
+ramp-capacity-0 = 
+ramp-capacity-1 = 
+ramp-capacity-2 = 
+ramp-capacity-3 = 
+ramp-capacity-4 = 
+ramp-capacity-5 = 
+ramp-capacity-6 = 
+ramp-capacity-7 = 
+ramp-capacity-8 = 
+ramp-capacity-9 = 
+
+animation-charging-foreground = ${colors.color4}
+
+animation-charging-0 = 
+animation-charging-1 = 
+animation-charging-2 = 
+animation-charging-3 = 
+animation-charging-4 = 
+animation-charging-5 = 
+animation-charging-6 = 
+animation-charging-framerate = 750
 
 ##################################################
 
@@ -341,13 +375,13 @@ click-right = pkill pavucontrol || pavucontrol
 
 label-volume = %percentage%%
 format-volume = <label-volume>
-format-volume-prefix = " "
+format-volume-prefix = "墳 "
 format-volume-prefix-foreground = ${colors.color4}
 format-volume-padding = 1
 
 label-muted = ---
 format-muted = <label-muted>
-format-muted-prefix = " "
+format-muted-prefix = "婢 "
 format-muted-prefix-foreground = #555
 format-muted-padding = 1
 
@@ -357,8 +391,8 @@ format-muted-padding = 1
 type = internal/date
 interval = 1
 
-time =  %I:%M %p
-time-alt =  %a %b %d %Y  %I:%M %p
+time =  %I:%M %p
+time-alt =  %a %b %d %Y  %I:%M %p
 
 label = %time%
 format = <label>
