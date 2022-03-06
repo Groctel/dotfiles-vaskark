@@ -96,7 +96,7 @@ content-padding = 2
 
 click-left = polybar-msg cmd restart
 click-right = wal -f random_user -o wal-extras.sh
-click-middle = subl ~/.config/berry/polybar/config-emoji
+click-middle = subl ~/.config/polybar/config-emoji
 
 ##################################################
 
