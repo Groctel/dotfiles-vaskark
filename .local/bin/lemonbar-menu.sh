@@ -13,17 +13,17 @@ case "$MENU" in
 	
 	*siji)
 		ln -sf "$HOME"/.local/bin/lemonbar-start.sh "$HOME"/.local/bin/lemonbar-current
-		pkill -x lemonbar && lemonbar-current
+		pkill lemonbar && lemonbar-current
 	;;
 
 	*nf)
 		ln -sf "$HOME"/.local/bin/lemonbar-nf-start.sh "$HOME"/.local/bin/lemonbar-current
-		pkill -x lemonbar && lemonbar-current
+		pkill lemonbar && lemonbar-current
 	;;
 
 	*emoji)
 		ln -sf "$HOME"/.local/bin/lemonbar-emoji-start.sh "$HOME"/.local/bin/lemonbar-current
-		pkill -x lemonbar && lemonbar-current
+		pkill lemonbar && lemonbar-current
 	;;
 
 esac
