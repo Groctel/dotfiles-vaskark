@@ -20,10 +20,7 @@ bash "$HOME"/.fehbg &
 # wal
 wal -q -R -o -wal-extras.sh
 
-# lemonbar
-# lemonbar-current &
-
-# polybar
+# status bar
 polybar-current &
 
 # glava

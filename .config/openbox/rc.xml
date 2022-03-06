@@ -529,7 +529,7 @@
     <!-- Polybar -->
     <keybind key="W-semicolon">
       <action name="Execute">
-        <command>polybar-msg cmd toggle</command>
+        <command>sh -c 'pkill polybar || polybar-current'</command>
       </action>
     </keybind>
     <keybind key="W-S-semicolon">
