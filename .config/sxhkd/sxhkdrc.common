@@ -41,7 +41,7 @@ super + F5
 	
 # networkmanager_dmenu
 super + F6
-	networkmanager_dmenu -theme-str 'window {width: 15%;}'
+	nmdm.sh
 	
 # man2pdf
 super + F7
