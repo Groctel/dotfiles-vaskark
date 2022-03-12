@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/jason/Pictures/anantha-krishnan-wIYLfpZfbGk-unsplash.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#161b1b",
+        "foreground": "#c4c6c6",
+        "cursor": "#8eb4b9"
+    },
+    "colors": {
+        "color0": "#161b1b",
+        "color1": "#5d4f3f",
+        "color2": "#207a80",
+        "color3": "#7d8e95",
+        "color4": "#86a5ac",
+        "color5": "#a8a4a4",
+        "color6": "#8eb4b9",
+        "color7": "#c4c6c6",
+        "color8": "#505454",
+        "color9": "#5d4f3f",
+        "color10": "#207a80",
+        "color11": "#7d8e95",
+        "color12": "#86a5ac",
+        "color13": "#a8a4a4",
+        "color14": "#8eb4b9",
+        "color15": "#c4c6c6"
+    }
+}
