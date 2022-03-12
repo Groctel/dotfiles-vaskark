@@ -4,7 +4,7 @@
 
 
 # terminals
-super +  {_,shift +, ctrl +} Return
+super +  {_,shift +,ctrl +} Return
  	{alacritty,kitty,urxvt}
 
 # reload sxhkd
@@ -74,5 +74,5 @@ super + {_,shift +,ctrl +} F12
 	wal -q {-f random_user,-R,-f random} -o wal-extras.sh
         
 # sxiv
-super + {_,shift +,ctrl +} equal
-	ls -t {$HOME/Pictures/*,$HOME/Pictures/wow/*,$HOME/Pictures/shots/*} | head -20 | xargs nsxiv -rt
+super + {_,shift +} equal
+	ls -t {"$HOME"/Pictures/*,"$HOME"/Pictures/wow/*} | head -20 | xargs nsxiv -rt
