@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/jason/Pictures/rose-byrne-most-popular-celebs-in-2015-actress-rose-wallpaper.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#181817",
+        "foreground": "#ffffff",
+        "cursor": "#264051"
+    },
+    "colors": {
+        "color0": "#181817",
+        "color1": "#6a3b23",
+        "color2": "#2e5440",
+        "color3": "#bb922f",
+        "color4": "#416657",
+        "color5": "#8d6334",
+        "color6": "#264051",
+        "color7": "#c5c5c5",
+        "color8": "#31312f",
+        "color9": "#934924",
+        "color10": "#337552",
+        "color11": "#ffc42d",
+        "color12": "#498f73",
+        "color13": "#c38137",
+        "color14": "#295471",
+        "color15": "#ffffff"
+    }
+}
