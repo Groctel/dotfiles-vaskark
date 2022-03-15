@@ -1,0 +1,76 @@
+#
+# wm independent hotkeys
+#
+
+
+# lemonbar
+super + semicolon
+   pkill polybar || polybar-current
+super + shift + semicolon
+   polybar-menu.sh
+
+# terms
+super + t ; {g,k,l,m,s,u,x}
+    {gnome-terminal,kitty,alacritty --config-file ~/.config/alacritty/lemon.yml,alacritty --config-file ~/.config/alacritty/mono.yml,st,urxvt,xterm}
+
+# glava
+super + g
+    pkill glava || glava -d 2>/dev/null
+
+
+#
+# shod hotkeys
+#
+
+
+# close window
+super + w
+	shodc close
+
+# move window (50)
+super + {h, j, k, l}
+	shodc geom -r {-x -50 -y 0, -x 0 -y 50, -x 0 -y -50, -x 50 -y 0}
+super + {Left, Down, Up, Right}
+	shodc geom -r {-x -50 -y 0, -x 0 -y 50, -x 0 -y -50, -x 50 -y 0}
+
+# move window (10)
+super + ctrl + {h, j, k, l}
+	shodc geom -r {-x -10 -y 0, -x 0 -y 10, -x 0 -y -10, -x 10 -y 0}
+super + ctrl + {Left, Down, Up, Right}
+	shodc geom -r {-x -10 -y 0, -x 0 -y 10, -x 0 -y -10, -x 10 -y 0}
+
+# resize window (50)
+super + shift + {h, j, k, l}
+	shodc geom -r {-w -50 -h 0, -w 0 -h 50, -w 0 -h -50, -w 50 -h 0}
+super + shift + {Left, Down, Up, Right}
+	shodc geom -r {-w -50 -h 0, -w 0 -h 50, -w 0 -h -50, -w 50 -h 0}
+
+# resize window (10)
+super + shift + ctrl + {h, j, k, l}
+	shodc geom -r {-w -10 -h 0, -w 0 -h 10, -w 0 -h -10, -w 10 -h 0}
+super + shift + ctrl + {Left, Down, Up, Right}
+	shodc geom -r {-w -10 -h 0, -w 0 -h 10, -w 0 -h -10, -w 10 -h 0}
+
+# go to workspace
+super + {1-5}
+	shodc goto {1-5}
+
+# send to workspace
+super + shift + {1-5}
+	shodc sendto {1-5}
+
+# window state (above,below,fullscreen,shaded,sticky)
+super + {a,b,f,u,s}
+	shodc state {-a,-b,-f,-s,-y}
+
+# focus
+super + Tab
+	shodc focus -n
+
+# center
+super + c
+	~/.config/shod/center.sh
+
+# exit
+super + Delete
+    exit.sh
