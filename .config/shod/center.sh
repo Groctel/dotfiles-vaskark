@@ -1,7 +1,7 @@
 #!/bin/sh
 
 #
-# shod center window
+# center active window
 #
 
 # center point of screen
