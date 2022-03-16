@@ -3,7 +3,13 @@
 #
 
 
-# lemonbar
+# # lemonbar
+# super + semicolon
+#    pkill lemonbar || lemonbar-current
+# super + shift + semicolon
+#    lemonbar-menu.sh
+
+# polybar
 super + semicolon
    pkill polybar || polybar-current
 super + shift + semicolon
@@ -61,15 +67,23 @@ super + shift + {1-5}
 
 # window state (above,below,fullscreen,shaded,sticky)
 super + {a,b,f,u,s}
-	shodc state {-a,-b,-f,-s,-y}
+	shodc state -{a,b,f,s,y}
 
-# focus
+# focus cycle
 super + Tab
 	shodc focus -n
 
 # center
 super + c
 	~/.config/shod/center.sh
+
+# send window to top left
+super + n
+	shodc geom -x 20 -y 20
+
+# send window to top right
+super + p
+	~/.config/shod/right.sh
 
 # exit
 super + Delete

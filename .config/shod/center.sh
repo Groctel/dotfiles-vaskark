@@ -1,12 +1,12 @@
 #!/bin/sh
 
 #
-# center active window
+# center window
 #
 
 # center point of screen
-x1=$(( $(xdotool getdisplaygeometry | awk '{print $1}') / 2 ))
-y1=$(( $(xdotool getdisplaygeometry | awk '{print $2}') / 2 ))
+x1=$(( $(xwininfo -root | awk '/Width:/ { print $2 }') / 2 ))
+y1=$(( $(xwininfo -root | awk '/Height:/ { print $2 }') / 2 ))
 
 # active window dimensions
 x2=$(( $(xwininfo -id "$(xdotool getactivewindow)" |  awk '/Width:/ {print $2}') / 2 ))

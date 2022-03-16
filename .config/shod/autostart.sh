@@ -1,12 +1,27 @@
 #!/bin/sh
 
-# misc
+# sxhkd
 sxhkd -c "$HOME"/.config/shod/sxhkdrc "$HOME"/.config/sxhkd/sxhkdrc.common &
+
+# picom
 picom --experimental-backends --config "$HOME"/.config/picom/picom.conf &
+
+# redshift
 systemctl --user import-environment; systemctl --user restart redshift &
+
+# xautolock
 xautolock -time 10 -locker 'lock.sh' -killer 'systemctl suspend' -corners 00-+ &
+
+# polkit
+/usr/lib/policykit-1-gnome/polkit-gnome-authentication-agent-1 &
+
+# wal
 wal -q -R -o wal-extras.sh
-touchegg.sh
+
+# touchegg
+touchegg &
+
+# status bar
 polybar-current &
 
 # glava
