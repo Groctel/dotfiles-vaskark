@@ -85,21 +85,17 @@ super + Tab
 super + c
 	~/.config/shod/center.sh
 
-# send window to top left
-super + n
+# move window top left
+super + o
 	shodc geom -x 5 -y 5
 
-# send window to top right
+# move window top right
 super + p
 	~/.config/shod/move_right.sh
 
-# snap window, left
-super + shift + n
-	~/.config/shod/snap_left.sh
-
-# snap window, right
-super + shift + p
-	~/.config/shod/snap_right.sh
+# snap window left,right
+super + shift + {o,p}
+	~/.config/shod/{snap_left.sh,snap_right.sh}
 
 # exit
 super + Delete
