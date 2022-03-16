@@ -3,7 +3,7 @@
 #
 
 
-# # lemonbar
+# lemonbar
 # super + semicolon
 #    pkill lemonbar || lemonbar-current
 # super + shift + semicolon
@@ -11,17 +11,25 @@
 
 # polybar
 super + semicolon
-   pkill polybar || polybar-current
+ pkill polybar || polybar-current
 super + shift + semicolon
    polybar-menu.sh
-
-# terms
-super + t ; {g,k,l,m,s,u,x}
-    {gnome-terminal,kitty,alacritty --config-file ~/.config/alacritty/lemon.yml,alacritty --config-file ~/.config/alacritty/mono.yml,st,urxvt,xterm}
 
 # glava
 super + g
     pkill glava || glava -d 2>/dev/null
+
+# glava flip
+super + shift + g
+    glava-flip.sh
+
+# viz
+super + v
+    viz.sh
+
+# terms
+super + t ; {g,k,l,m,s,u,x}
+    {gnome-terminal,kitty,alacritty --config-file ~/.config/alacritty/lemon.yml,alacritty --config-file ~/.config/alacritty/mono.yml,st,urxvt,xterm}
 
 
 #
@@ -73,17 +81,25 @@ super + {a,b,f,u,s}
 super + Tab
 	shodc focus -n
 
-# center
+# center window
 super + c
 	~/.config/shod/center.sh
 
 # send window to top left
 super + n
-	shodc geom -x 20 -y 20
+	shodc geom -x 5 -y 5
 
 # send window to top right
 super + p
-	~/.config/shod/right.sh
+	~/.config/shod/move_right.sh
+
+# snap window, left
+super + shift + n
+	~/.config/shod/snap_left.sh
+
+# snap window, right
+super + shift + p
+	~/.config/shod/snap_right.sh
 
 # exit
 super + Delete

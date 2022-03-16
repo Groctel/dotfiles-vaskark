@@ -1,7 +1,7 @@
 #!/bin/sh
 
 #
-# send window to top right
+# move window to top right
 #
 
 # width of root
@@ -11,7 +11,7 @@ x=$(xwininfo -root | awk '/Width:/ { print $2 }')
 w=$(xwininfo -id "$(xdotool getactivewindow)" | awk '/Width:/ { print $2 }')
 
 # y-offset
-y=20
+y=5
 
-# send
+# move
 shodc geom -x $(( x - w - y )) -y "$y"
