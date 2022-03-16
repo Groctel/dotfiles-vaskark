@@ -99,6 +99,6 @@ shod.notifGap:                          3
 shod.notifGravity:                      NE
 shod.shadowThickness:                   2
 shod.snapProximity:                     8
-shod.font:                              fixed
+shod.faceName:                          scientifica:bold:pixelsize=11
 shod.foreground:                        #000
 shod.titleWidth:                        15

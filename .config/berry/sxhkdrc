@@ -73,11 +73,14 @@ super + m
 super + f
     berryc fullscreen
 
-# super +  p
-#     berryc snap_right
-#
-# super + o
-#     berryc snap_left
+super + o
+    berryc window_move_absolute 0 0
+
+super + p
+    ~/.config/berry/move_right.sh
+
+super + shift + {o,p}
+    berryc {snap_left,snap_right}
 
 super + n
     berryc toggle_decorations
@@ -95,8 +98,8 @@ super + c
     berryc window_center
 
 super + Delete
-#    berryc quit
     exit.sh
+#    berryc quit
 
 ~button1
      berryc pointer_focus
