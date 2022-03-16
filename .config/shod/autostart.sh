@@ -1,5 +1,9 @@
 #!/bin/sh
 
+#
+# shod autostart
+#
+
 # sxhkd
 sxhkd -c "$HOME"/.config/shod/sxhkdrc "$HOME"/.config/sxhkd/sxhkdrc.common &
 

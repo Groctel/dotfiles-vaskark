@@ -1,7 +1,7 @@
 #!/bin/sh
 
 #
-# move window to top right
+# move window top right
 #
 
 # width of root
