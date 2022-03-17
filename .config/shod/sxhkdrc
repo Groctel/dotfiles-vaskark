@@ -73,9 +73,9 @@ super + {1-5}
 super + shift + {1-5}
 	shodc sendto {1-5}
 
-# window state (above,below,fullscreen,shaded,sticky)
-super + {a,b,f,u,s}
-	shodc state -{a,b,f,s,y}
+# window state (above,below,fullscreen,maximized,shaded,sticky)
+super + {a,b,f,m,u,s}
+	shodc state -{a,b,f,M,s,y}
 
 # focus cycle
 super + Tab
@@ -93,7 +93,7 @@ super + o
 super + p
 	~/.config/shod/move_right.sh
 
-# snap window left,right
+# snap window left, right
 super + shift + {o,p}
 	~/.config/shod/{snap_left.sh,snap_right.sh}
 
