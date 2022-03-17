@@ -35,4 +35,4 @@ x=$(( $(xdotool getdisplaygeometry | awk '{print $1}') / 2 - (w/2) ))
 sed -i "s|#request setgeometry.*$|#request setgeometry $x 0 $w $h|g" ~/.config/glava/rc.glsl
 
 # wm
-exec shod
+exec shod -c -m Mod4
