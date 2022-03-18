@@ -79,8 +79,8 @@ super + o
 super + p
     ~/.config/berry/move_right.sh
 
-super + shift + {o,p}
-    berryc {snap_left,snap_right}
+super + shift + {o, p}
+    berryc {snap_left, snap_right}
 
 super + n
     berryc toggle_decorations
