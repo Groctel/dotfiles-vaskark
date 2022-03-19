@@ -15,8 +15,9 @@ export SSH_AUTH_SOCK=~/.ssh/ssh_auth_sock
 session=${1:-berry}
 case ${session} in
     berry) /usr/local/bin/berry ;;
-    bspwm) exec /usr/bin/bspwm ;;
-    openbox) exec /usr/bin/openbox-session ;;
-    gnome) exec /usr/bin/gnome-session ;;
+    bspwm) /usr/bin/bspwm ;;
+    openbox) /usr/bin/openbox-session ;;
+    gnome) /usr/bin/gnome-session ;;
+    shod) "$HOME"/.config/shod/autostart ;;
     *) exec $1 ;;
 esac
