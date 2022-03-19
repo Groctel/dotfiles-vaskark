@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/jason/Pictures/naomi-watts-wallpaper.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#19171a",
+        "foreground": "#ffffff",
+        "cursor": "#126391"
+    },
+    "colors": {
+        "color0": "#19171a",
+        "color1": "#761a25",
+        "color2": "#6a436f",
+        "color3": "#027ec4",
+        "color4": "#2b3d71",
+        "color5": "#ea6601",
+        "color6": "#126391",
+        "color7": "#c5c5c5",
+        "color8": "#322e34",
+        "color9": "#a21828",
+        "color10": "#924b9b",
+        "color11": "#01a4ff",
+        "color12": "#2d4a9d",
+        "color13": "#ff8401",
+        "color14": "#0c83c7",
+        "color15": "#ffffff"
+    }
+}
