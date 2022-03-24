@@ -2,7 +2,6 @@
 # wm independent hotkeys
 #
 
-
 # terminals
 super +  {_,shift +,ctrl +} Return
  	{alacritty,kitty,urxvt}
@@ -75,4 +74,4 @@ super + {_,shift +,ctrl +} F12
         
 # sxiv
 super + {_,shift +} equal
-	ls -t {"$HOME"/Pictures/*,"$HOME"/Pictures/wow/*} | head -20 | xargs nsxiv -rt
+	ls -t {"$HOME"/Pictures/*,"$HOME"/Pictures/wow/*} | head -50 | xargs nsxiv -rt

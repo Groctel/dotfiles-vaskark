@@ -2,7 +2,6 @@
 # wm independent hotkeys
 #
 
-
 # lemonbar
 super + semicolon
    pkill lemonbar || lemonbar-current
@@ -27,15 +26,17 @@ super + shift + g
 super + v
     viz.sh
 
+# subl
+super + e
+    subl
+
 # terms
 super + t ; {g,k,l,m,s,u,x}
     {gnome-terminal,kitty,alacritty --config-file ~/.config/alacritty/lemon.yml,alacritty --config-file ~/.config/alacritty/mono.yml,st,urxvt,xterm}
 
-
 #
 # berry hotkeys
 #
-
 
 super + {h, j, k, l}
     berryc window_move {-50 0, 0 50, 0 -50, 50 0}

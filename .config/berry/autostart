@@ -20,8 +20,6 @@ berryc smart_place "true"
 berryc draw_text   "true"
 berryc edge_lock   "true"
 berryc set_font    "scientifica-8:bold"
-berryc move_mask   "Mod4Mask"
-berryc resize_mask "Mod4Mask|ShiftMask"
 
 # wal
 wal -q -R -o wal-extras.sh

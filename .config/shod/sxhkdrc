@@ -2,7 +2,6 @@
 # wm independent hotkeys
 #
 
-
 # lemonbar
 # super + semicolon
 #    pkill lemonbar || lemonbar-current
@@ -27,15 +26,16 @@ super + shift + g
 super + v
     viz.sh
 
+super + e
+	subl
+
 # terms
 super + t ; {g,k,l,m,s,u,x}
     {gnome-terminal,kitty,alacritty --config-file ~/.config/alacritty/lemon.yml,alacritty --config-file ~/.config/alacritty/mono.yml,st,urxvt,xterm}
 
-
 #
 # shod hotkeys
 #
-
 
 # close window
 super + w
