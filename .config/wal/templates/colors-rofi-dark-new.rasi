@@ -31,8 +31,8 @@ entry {{
 }}
 
 #prompt {{
-  /*       vertical   horizontal */
-  padding: 8px       12px;
+  /*       vertical horizontal */
+  padding: 10px 12px;
   background-color: @background-alt;
   text-color: @foreground-alt;
 }}
@@ -40,14 +40,14 @@ entry {{
 #textbox-prompt-colon {{
   expand: false;
   str: ">>";
-  padding: 8px;
+  padding: 10px;
   text-color: @foreground;
 }}
 
 #entry {{
   text-color: @foreground;
   /*       top    right   bottom  left */
-  padding: 8px   10px    8px    0px;
+  padding: 10px   10px    10px    0px;
 }}
 
 /* List of entries */
