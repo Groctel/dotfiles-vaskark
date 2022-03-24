@@ -20,38 +20,38 @@ export GTK2_RC_FILES="$XDG_CONFIG_HOME/gtk-2.0/gtkrc-2.0"
 export LESSHISTFILE=""
 
 # editor
-export EDITOR='nvim'
-export VISUAL='nvim'
+export EDITOR="nvim"
+export VISUAL="nvim"
 
 # man
-export MANPAGER='nvim +Man!'
+export MANPAGER="nvim +Man!"
 
 # qt
 export QT_AUTO_SCREEN_SCALE_FACTOR=0
-export QT_QPA_PLATFORMTHEME=qt5ct
+export QT_QPA_PLATFORMTHEME="qt5ct"
 
 # pfetch
 export PF_INFO="ascii os kernel memory uptime shell wm" 
 export PF_COL1=2
 export PF_COL2=5
-export PF_ASCII='OpenBSD'
+export PF_ASCII="OpenBSD"
 
 # rg
 export RIPGREP_CONFIG_PATH="$XDG_CONFIG_HOME/ripgrep" 
 
 # nnn
-export NNN_OPTS='aCDEoQ'
-export NNN_COLORS='2456'
+export NNN_OPTS="aCDEoQ"
+export NNN_COLORS="2456"
 export NNN_TRASH=2
 export NNN_OPENER="$HOME/.config/nnn/plugins/nuke"
 export NNN_ORDER="t:$HOME/Pictures;t:$HOME/Pictures/wow;t:$HOME/Pictures/shots"
-export NNN_PLUG='d:diffs;g:-!git diff;k:pskill;l:-!git log;m:-!mediainfo $nnn;n:nuke;o:fzopen;s:suedit;v:imgview;w:wall'
+export NNN_PLUG="d:diffs;g:-!git diff;k:pskill;l:-!git log;m:-!mediainfo;n:nuke;o:fzopen;s:suedit;v:imgview;w:wall"
 
 # fzf
 export FZF_DEFAULT_COMMAND="fd --hidden --follow --exclude '.git' --exclude '.cache'"
 export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND --type f"
 export FZF_ALT_C_COMMAND="$FZF_DEFAULT_COMMAND --type d"
-export FZF_CTRL_R_OPTS='--sort --exact'
+export FZF_CTRL_R_OPTS="--sort --exact"
 export FZF_DEFAULT_OPTS="
 --header-first
 --layout=reverse-list
