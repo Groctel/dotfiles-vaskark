@@ -39,8 +39,11 @@ export PF_ASCII="OpenBSD"
 # rg
 export RIPGREP_CONFIG_PATH="$XDG_CONFIG_HOME/ripgrep" 
 
+# starship
+export STARSHIP_CONFIG="$XDG_CONFIG_HOME/starship/pure.toml"
+
 # nnn
-export NNN_OPTS="aCDEoQ"
+export NNN_OPTS="acCDEoQ"
 export NNN_COLORS="2456"
 export NNN_TRASH=2
 export NNN_OPENER="$HOME/.config/nnn/plugins/nuke"
