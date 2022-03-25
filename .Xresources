@@ -16,7 +16,7 @@ URxvt*geometry: 80x22
 URxvt*internalBorder: 20
 URxvt*saveLines: 2000
 URxvt*scrollBar: false
-URxvt*visualBell: true
+URxvt*visualBell: false
 URxvt*depth: 32
 URxvt*iso14755: false
 URxvt*iso14755_52: false
@@ -27,8 +27,6 @@ URxvt.keysym.M-Up: command:\033]720;1\007
 URxvt.keysym.M-k: command:\033]720;1\007
 URxvt.keysym.M-Down: command:\033]721;1\007
 URxvt.keysym.M-j: command:\033]721;1\007
-URxvt.keysym.C-Right: \033[1;5C
-URxvt.keysym.C-Left: \033[1;5D
 
 ! URxvt Extensions
 URxvt.perl-ext-common: default,url-select,selection-to-clipboard,keyboard-select,resize-font,bell-command
@@ -50,7 +48,6 @@ URxvt.resize-font.reset: C-0
 URxvt.resize-font.show: C-slash
 ! bell-command
 URxvt.bell-command: canberra-gtk-play -i bell
-! URxvt.bell-command: notify-send "Beep!"
 
 ! XTerm
 XTerm*termName: xterm-256color
