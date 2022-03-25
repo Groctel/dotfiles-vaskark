@@ -1,6 +1,0 @@
-action = copy
-files = [emojis]
-skin-tone = light
-max-recent = 5
-prompt = 🍔 
-selector-args = -theme-str 'window {width: 15%;} listview {lines:6;}'
