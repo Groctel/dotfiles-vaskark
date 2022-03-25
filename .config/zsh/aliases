@@ -15,20 +15,16 @@ alias pf='clear;pfetch'
 alias n='nnn'
 alias c='cava'
 alias p='pipes-rs'
-alias mi='mediainfo'
+alias m='mediainfo'
 alias grep='grep --color=auto'
 alias ping='ping -c 5'
 alias path='print -l $path'
 alias rmpd='systemctl --user daemon-reload; systemctl --user restart mpd'
 alias lf="$HOME/.local/bin/lf.sh"
-alias ed='ed -p ": "'
-alias ncdu='ncdu -L -q --color dark --exclude-caches'
-alias m='micro'
 alias v="$EDITOR"
 alias nvc="$EDITOR $XDG_CONFIG_HOME/nvim/init.vim"
 alias lml='exa -l -r -s time /var/log | tail'
 alias clean_logs='sudo rm -rf /var/log/*'
-alias btc='bluetoothctl'
 alias -g G='| grep -i'
 
 # lsd
@@ -87,7 +83,7 @@ alias fw='fzf-wal.sh'
 
 # system
 alias upd8='sudo apt update;sudo apt full-upgrade;sudo apt autoremove;sudo apt clean'
-alias nu='sudo nala upgrade -y'
+# alias nu='sudo nala upgrade -y'
 alias shut='poweroff'
 
 # startx
@@ -95,7 +91,7 @@ alias startx='startx $HOME/.xinitrc'
 
 # kernel
 alias mkc="make LSMOD=$XDG_CONFIG_HOME/modprobed.db localmodconfig"
-alias mkp='make deb-pkg -j4 LOCALVERSION=-custom'
+alias mkp='make deb-pkg -j4 LOCALVERSION=-custom 2>&1 | tee ~/compile_output.txt'
 
 # networking
 alias rnm='sudo systemctl restart NetworkManager'
