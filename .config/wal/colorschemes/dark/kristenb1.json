@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/jason/Pictures/kristen_bell_red_washing_machine.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#151616",
+        "foreground": "#c4c4c4",
+        "cursor": "#90c4cb"
+    },
+    "colors": {
+        "color0": "#151616",
+        "color1": "#770e1d",
+        "color2": "#36737f",
+        "color3": "#0e4061",
+        "color4": "#718b87",
+        "color5": "#3c95b8",
+        "color6": "#90c4cb",
+        "color7": "#c4c4c4",
+        "color8": "#2d2f2f",
+        "color9": "#a3091f",
+        "color10": "#3a9db0",
+        "color11": "#0a5485",
+        "color12": "#82c5ba",
+        "color13": "#3ec8ff",
+        "color14": "#a4ffff",
+        "color15": "#ffffff"
+    }
+}
