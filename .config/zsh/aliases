@@ -91,7 +91,8 @@ alias startx='startx $HOME/.xinitrc'
 
 # kernel
 alias mkc="make LSMOD=$XDG_CONFIG_HOME/modprobed.db localmodconfig"
-alias mkp='make deb-pkg -j4 LOCALVERSION=-custom 2>&1 | tee ~/compile_output.txt'
+#alias mkp='make deb-pkg -j4 LOCALVERSION=-custom 2>&1 | tee ~/compile_output.txt'
+alias mkp='make deb-pkg -j4 LOCALVERSION=-custom'
 
 # networking
 alias rnm='sudo systemctl restart NetworkManager'
