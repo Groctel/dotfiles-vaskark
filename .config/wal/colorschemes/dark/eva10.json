@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/jason/Pictures/eva-green-in-penny-dreadful-4k-1-m.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#151516",
+        "foreground": "#c4c4c4",
+        "cursor": "#9ca0aa"
+    },
+    "colors": {
+        "color0": "#151516",
+        "color1": "#737380",
+        "color2": "#5c435f",
+        "color3": "#3d4358",
+        "color4": "#4c5260",
+        "color5": "#aa91b0",
+        "color6": "#9ca0aa",
+        "color7": "#c4c4c4",
+        "color8": "#2d2d2f",
+        "color9": "#8585b6",
+        "color10": "#7f4c85",
+        "color11": "#45517c",
+        "color12": "#576687",
+        "color13": "#e9a7f9",
+        "color14": "#b5c6f2",
+        "color15": "#ffffff"
+    }
+}

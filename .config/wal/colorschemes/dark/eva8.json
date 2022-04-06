@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/jason/Pictures/Eva_Green_HD_Wallpapers_High_Quality_Wallpapers.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#171616",
+        "foreground": "#c5c4c4",
+        "cursor": "#8c6445"
+    },
+    "colors": {
+        "color0": "#171616",
+        "color1": "#6c452b",
+        "color2": "#7c7c7c",
+        "color3": "#575962",
+        "color4": "#c8b196",
+        "color5": "#b69270",
+        "color6": "#8c6445",
+        "color7": "#c5c4c4",
+        "color8": "#302e2e",
+        "color9": "#96572e",
+        "color10": "#b19191",
+        "color11": "#656c8b",
+        "color12": "#ffe7ac",
+        "color13": "#ffbd7e",
+        "color14": "#c3804c",
+        "color15": "#fffefe"
+    }
+}
