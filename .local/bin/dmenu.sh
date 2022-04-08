@@ -12,5 +12,4 @@ dmenu_run \
 -h $h \
 -x $x \
 -y $y \
--z $w \
--l 0
+-z $w
