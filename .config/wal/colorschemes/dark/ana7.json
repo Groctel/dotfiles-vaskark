@@ -1,27 +1,27 @@
 {
-    "wallpaper": "/home/jason/Pictures/seicgo784js81.jpg",
+    "wallpaper": "/home/jason/Pictures/seicgo784js81-1.jpg",
     "alpha": "100",
     "special": {
-        "background": "#191817",
+        "background": "#191818",
         "foreground": "#c5c5c5",
-        "cursor": "#d8b89c"
+        "cursor": "#c3b0a3"
     },
     "colors": {
-        "color0": "#191817",
-        "color1": "#6b3d30",
-        "color2": "#7d6245",
-        "color3": "#8f7a66",
-        "color4": "#b5833e",
-        "color5": "#c2977c",
-        "color6": "#d8b89c",
+        "color0": "#191818",
+        "color1": "#4b4c58",
+        "color2": "#624741",
+        "color3": "#6c5e4d",
+        "color4": "#86796d",
+        "color5": "#b49d8d",
+        "color6": "#c3b0a3",
         "color7": "#c5c5c5",
         "color8": "#525151",
-        "color9": "#6b3d30",
-        "color10": "#7d6245",
-        "color11": "#8f7a66",
-        "color12": "#b5833e",
-        "color13": "#c2977c",
-        "color14": "#d8b89c",
+        "color9": "#4b4c58",
+        "color10": "#624741",
+        "color11": "#6c5e4d",
+        "color12": "#86796d",
+        "color13": "#b49d8d",
+        "color14": "#c3b0a3",
         "color15": "#c5c5c5"
     }
 }
