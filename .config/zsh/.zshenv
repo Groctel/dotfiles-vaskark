@@ -31,7 +31,7 @@ export QT_AUTO_SCREEN_SCALE_FACTOR=0
 export QT_QPA_PLATFORMTHEME="qt5ct"
 
 # pfetch
-export PF_INFO="ascii os kernel memory uptime shell wm" 
+export PF_INFO="ascii os kernel memory uptime wm shell" 
 export PF_COL1=2
 export PF_COL2=5
 export PF_ASCII="OpenBSD"
