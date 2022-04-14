@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/jason/Pictures/Sandra-Bullock-1-m.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#191819",
+        "foreground": "#c5c5c5",
+        "cursor": "#bb7473"
+    },
+    "colors": {
+        "color0": "#191819",
+        "color1": "#75393c",
+        "color2": "#7b595e",
+        "color3": "#a64b44",
+        "color4": "#724b59",
+        "color5": "#bb7473",
+        "color6": "#bb7473",
+        "color7": "#c5c5c5",
+        "color8": "#323032",
+        "color9": "#a33e43",
+        "color10": "#ad6570",
+        "color11": "#e75449",
+        "color12": "#a05570",
+        "color13": "#ff8381",
+        "color14": "#ff8381",
+        "color15": "#ffffff"
+    }
+}

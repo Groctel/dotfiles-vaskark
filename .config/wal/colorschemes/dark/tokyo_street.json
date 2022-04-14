@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/jason/Pictures/sselc89xi9t81.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#161817",
+        "foreground": "#c4c5c5",
+        "cursor": "#b1a27e"
+    },
+    "colors": {
+        "color0": "#161817",
+        "color1": "#9b9179",
+        "color2": "#6e504c",
+        "color3": "#6d3f2c",
+        "color4": "#7e7363",
+        "color5": "#284244",
+        "color6": "#b1a27e",
+        "color7": "#c4c5c5",
+        "color8": "#2d3230",
+        "color9": "#dbc38b",
+        "color10": "#9b5e56",
+        "color11": "#974d2f",
+        "color12": "#b29872",
+        "color13": "#2d5b5f",
+        "color14": "#f9da90",
+        "color15": "#feffff"
+    }
+}

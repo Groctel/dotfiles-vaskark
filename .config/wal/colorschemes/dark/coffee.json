@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/jason/Pictures/mm8p186wkrs71.png",
+    "alpha": "100",
+    "special": {
+        "background": "#16181a",
+        "foreground": "#c4c5c5",
+        "cursor": "#f3c07d"
+    },
+    "colors": {
+        "color0": "#16181a",
+        "color1": "#714741",
+        "color2": "#b94e41",
+        "color3": "#8d7a5c",
+        "color4": "#938f86",
+        "color5": "#c79c6e",
+        "color6": "#f3c07d",
+        "color7": "#c4c5c5",
+        "color8": "#505153",
+        "color9": "#714741",
+        "color10": "#b94e41",
+        "color11": "#8d7a5c",
+        "color12": "#938f86",
+        "color13": "#c79c6e",
+        "color14": "#f3c07d",
+        "color15": "#c4c5c5"
+    }
+}
