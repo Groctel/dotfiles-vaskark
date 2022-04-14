@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/jason/Pictures/r6mg098mm8t81.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#151718",
+        "foreground": "#c4c5c5",
+        "cursor": "#575058"
+    },
+    "colors": {
+        "color0": "#151718",
+        "color1": "#542c38",
+        "color2": "#853a4c",
+        "color3": "#643c49",
+        "color4": "#3a424a",
+        "color5": "#935662",
+        "color6": "#575058",
+        "color7": "#c4c5c5",
+        "color8": "#2c3032",
+        "color9": "#753045",
+        "color10": "#b93e5c",
+        "color11": "#8c435b",
+        "color12": "#425568",
+        "color13": "#ce6076",
+        "color14": "#795d7d",
+        "color15": "#feffff"
+    }
+}
