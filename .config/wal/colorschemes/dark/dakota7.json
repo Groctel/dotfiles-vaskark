@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/jason/Pictures/1093344-fashion-Dakota-Johnson.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#171616",
+        "foreground": "#c5c4c4",
+        "cursor": "#d1b39d"
+    },
+    "colors": {
+        "color0": "#171616",
+        "color1": "#643f32",
+        "color2": "#645057",
+        "color3": "#7a6049",
+        "color4": "#8b756b",
+        "color5": "#ba9a8a",
+        "color6": "#d1b39d",
+        "color7": "#c5c4c4",
+        "color8": "#515050",
+        "color9": "#643f32",
+        "color10": "#645057",
+        "color11": "#7a6049",
+        "color12": "#8b756b",
+        "color13": "#ba9a8a",
+        "color14": "#d1b39d",
+        "color15": "#c5c4c4"
+    }
+}
