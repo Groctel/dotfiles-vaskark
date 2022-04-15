@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/jason/Pictures/hbz090121btynatalie-015-1631540671.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#181716",
+        "foreground": "#c5c5c4",
+        "cursor": "#9fa2b1"
+    },
+    "colors": {
+        "color0": "#181716",
+        "color1": "#c49074",
+        "color2": "#8b7773",
+        "color3": "#e1b79a",
+        "color4": "#e1b79a",
+        "color5": "#b24c4a",
+        "color6": "#9fa2b1",
+        "color7": "#c5c5c4",
+        "color8": "#32302d",
+        "color9": "#ffb582",
+        "color10": "#c58f85",
+        "color11": "#ffe9af",
+        "color12": "#ffe9af",
+        "color13": "#f7534f",
+        "color14": "#b8c4fb",
+        "color15": "#fffffe"
+    }
+}
