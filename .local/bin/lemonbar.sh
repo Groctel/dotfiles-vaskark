@@ -10,7 +10,7 @@ w=$(( $(xdotool getdisplaygeometry | awk '{print $1}') - (2*x) ))
 h=30
 
 # start
-~/.config/lemonbar/lemonbar-siji 2>/dev/null | lemonbar \
+~/.config/lemonbar/lemonbar 2>/dev/null | lemonbar \
 -p \
 -o 1 \
 -f "-*-scientifica-bold-r-*" \
