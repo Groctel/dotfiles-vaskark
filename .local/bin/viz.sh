@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/bin/sh
 
 # Toggle visualizer:
 # Kill it if it is running or spawn it if it does not running
