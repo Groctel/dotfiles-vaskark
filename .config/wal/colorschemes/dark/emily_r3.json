@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/jason/Pictures/5wiai907j2u81.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#1a1918",
+        "foreground": "#c5c5c5",
+        "cursor": "#c38973"
+    },
+    "colors": {
+        "color0": "#1a1918",
+        "color1": "#663d31",
+        "color2": "#4e4c4d",
+        "color3": "#815645",
+        "color4": "#926a5b",
+        "color5": "#dfa58f",
+        "color6": "#c38973",
+        "color7": "#c5c5c5",
+        "color8": "#34322f",
+        "color9": "#8e4935",
+        "color10": "#6f5864",
+        "color11": "#b46a4c",
+        "color12": "#cd8266",
+        "color13": "#ffcba2",
+        "color14": "#ffa981",
+        "color15": "#ffffff"
+    }
+}
