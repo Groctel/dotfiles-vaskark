@@ -2,26 +2,26 @@
     "wallpaper": "/home/jason/Pictures/Elle-Fanning-actress-looking-at-viewer-1285109-wallhere.com-m.jpg",
     "alpha": "100",
     "special": {
-        "background": "#1c1c1c",
-        "foreground": "#bbbbbb",
-        "cursor": "#6f819e"
+        "background": "#222222",
+        "foreground": "#DDDDDD",
+        "cursor": "#B7CE42"
     },
     "colors": {
-        "color0": "#1c1c1c",
-        "color1": "#6d424b",
-        "color2": "#718e85",
-        "color3": "#997559",
-        "color4": "#4f6588",
-        "color5": "#6d424b",
-        "color6": "#6f819e",
-        "color7": "#bbbbbb",
-        "color8": "#353535",
-        "color9": "#994a5a",
-        "color10": "#82c9b3",
-        "color11": "#d69663",
-        "color12": "#5880be",
-        "color13": "#994a5a",
-        "color14": "#7ea3de",
-        "color15": "#cccccc"
+        "color0": "#222222",
+        "color1": "#E84F4F",
+        "color2": "#FEA63C",
+        "color3": "#B7CE42",
+        "color4": "#6D878D",
+        "color5": "#B7416E",
+        "color6": "#66AABB",
+        "color7": "#DDDDDD",
+        "color8": "#3b3b3b",
+        "color9": "#ff5252",
+        "color10": "#ffd939",
+        "color11": "#f9ff44",
+        "color12": "#7db9c7",
+        "color13": "#fe448b",
+        "color14": "#71e8ff",
+        "color15": "#ffffff"
     }
 }
