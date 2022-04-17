@@ -9,10 +9,10 @@ window:
 
 font:
   normal:
-    family: Monospace
-    style: Regular
+    family: scientifica
+    style: Medium
   bold:
-    family: Monospace
+    family: scientifica
     style: Bold
   size: 8.0
 
@@ -25,4 +25,4 @@ cursor:
   vi_mode_style: Block
 
 key_bindings:
-   - { key: F2, mods: Control|Shift, command: { program: "subl", args: ["~/.config/alacritty/mono.yml"] }}
+   - { key: F2, mods: Control|Shift, command: { program: "subl", args: ["~/.config/alacritty/sci.yml"] }}
