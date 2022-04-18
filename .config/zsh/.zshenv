@@ -54,13 +54,14 @@ export NNN_PLUG="d:diffs;g:-!git diff;k:pskill;l:-!git log;m:-!mediainfo;n:nuke;
 export FZF_DEFAULT_COMMAND="fd --hidden --follow --exclude '.git' --exclude '.cache'"
 export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND --type f"
 export FZF_ALT_C_COMMAND="$FZF_DEFAULT_COMMAND --type d"
-export FZF_CTRL_R_OPTS="--sort --exact"
+export FZF_CTRL_R_OPTS="--exact"
 export FZF_DEFAULT_OPTS="
 --header-first
 --layout=reverse-list
---info=inline
---height=50%
+--info=default
+--height=70%
 --multi
+--padding=1
 --border=sharp
 --preview-window=:hidden
 --preview '([[ -f {} ]] && (bat --style=numbers --color=always {} || cat {})) || ([[ -d {} ]] && (tree -C {} | less)) || echo {} 2> /dev/null | head -200'
