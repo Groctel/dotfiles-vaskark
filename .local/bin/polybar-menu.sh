@@ -1,6 +1,8 @@
 #!/usr/bin/env bash
 
-## Polybar menu
+#
+# Polybar menu
+#
 
 MENU="$(rofi -sep "|" \
 	-dmenu -i \

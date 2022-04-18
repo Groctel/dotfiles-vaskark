@@ -1,6 +1,8 @@
 #!/usr/bin/env bash
 
-## Lemonbar menu
+#
+# Lemonbar menu
+#
 
 MENU="$(rofi -sep "|" \
 	-dmenu -i \
