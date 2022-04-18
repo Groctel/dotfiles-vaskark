@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/jason/Pictures/h5lq7zotrot81.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#151619",
+        "foreground": "#c4c4c5",
+        "cursor": "#2f9ad5"
+    },
+    "colors": {
+        "color0": "#151619",
+        "color1": "#e24107",
+        "color2": "#ee9008",
+        "color3": "#76331a",
+        "color4": "#41bff4",
+        "color5": "#f905f7",
+        "color6": "#2f9ad5",
+        "color7": "#c4c4c5",
+        "color8": "#2b2d34",
+        "color9": "#ff5001",
+        "color10": "#ffbc01",
+        "color11": "#a23d18",
+        "color12": "#40ffff",
+        "color13": "#ff01ff",
+        "color14": "#2ccdff",
+        "color15": "#fefeff"
+    }
+}
