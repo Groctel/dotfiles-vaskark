@@ -40,7 +40,7 @@ export PF_ASCII="OpenBSD"
 export RIPGREP_CONFIG_PATH="$XDG_CONFIG_HOME/ripgrep" 
 
 # starship
-export STARSHIP_CONFIG="$XDG_CONFIG_HOME/starship/pure.toml"
+export STARSHIP_CONFIG="$XDG_CONFIG_HOME/starship/starship.toml"
 
 # nnn
 export NNN_OPTS="acCDEoQ"
@@ -65,7 +65,7 @@ export FZF_DEFAULT_OPTS="
 --border=sharp
 --preview-window=:hidden
 --preview '([[ -f {} ]] && (bat --style=numbers --color=always {} || cat {})) || ([[ -d {} ]] && (tree -C {} | less)) || echo {} 2> /dev/null | head -200'
---prompt='∼ ' --pointer='▶' --marker='✓'
+--prompt=' ' --pointer='▶' --marker='✓'
 --bind '?:toggle-preview'
 --bind 'ctrl-a:select-all'
 "
