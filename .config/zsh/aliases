@@ -75,6 +75,7 @@ alias nf0='clear;neofetch --config none'
 alias f2s='fonttosfnt -v -r -b -c -g 2 -m 2 -o'
 alias fcc='fc-cache -rv'
 alias fcl='fc-list'
+alias sf='setfont /usr/local/share/fonts/spleen/spleen-6x12.psfu'
 
 # wal
 alias w1='wal -f random_user -o wal-extras.sh'
@@ -109,9 +110,3 @@ alias s3='sudo ninja -C build install'
 # systemd
 alias sc='systemctl'
 alias scu='systemctl --user'
-
-# arch
-# alias unlock='sudo rm /var/lib/pacman/db.lck'
-# alias cleanup='sudo pacman -Rns $(pacman -Qtdq)'
-# alias mlr='sudo reflector --country 'United States' --protocol https --latest 10 --sort rate --save /etc/pacman.d/mirrorlist'
-# alias mla='sudo reflector --country 'United States' --protocol https --latest 10 --sort age --save /etc/pacman.d/mirrorlist'
