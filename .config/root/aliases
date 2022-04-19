@@ -1,0 +1,29 @@
+# general
+alias rm='rm -i'
+alias cp='cp -i'
+alias md='mkdir -pv'
+alias rd='rmdir -pv'
+alias cd..='cd ..'
+alias grep='grep --color=auto'
+alias ping='ping -c 5'
+alias path='print -l $path'
+
+# exa
+alias exa='exa --icons --git -g --group-directories-first'
+alias ls='exa'
+alias l='ls -l'
+alias ll='ls -al'
+alias lt='ls -T -L 2'
+
+# git
+alias gc='git commit -a'
+alias ga='git add'
+alias gp='git pull'
+alias gl='git log'
+alias gls='git log --stat'
+alias gs='git status'
+alias gc1='git clone --depth=1'
+
+# system
+alias upd8='apt update;apt full-upgrade;apt autoremove;apt clean'
+alias shut='poweroff'
