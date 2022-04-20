@@ -238,7 +238,7 @@ Time() {
 # begin
 while true; do
     echo "\
-	%{l}$(Kernel) $(Workspaces) \
+	%{l}$(Uptime) $(Workspaces) \
 	%{c}$(Mpc) \
 	%{r}$(Wifi) $(Cpu) $(Memory) $(Battery) $(Volume) $(Time)"
     sleep 0.5
