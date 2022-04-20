@@ -1,6 +1,3 @@
-# editor
-export EDITOR="nvim"
-
 # man
 export MANPAGER="nvim +Man!"
 
