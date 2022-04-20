@@ -1,10 +1,10 @@
 #!/usr/bin/env bash
 
-##
-## Lemonbar
-## Fonts: scientifica (bdf), emoji font
-## Required: xdotool
-##
+#
+# Lemonbar
+# Fonts: scientifica (bdf), emoji font
+# Required: xdotool
+#
 
 
 # colours

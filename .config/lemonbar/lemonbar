@@ -1,10 +1,10 @@
 #!/usr/bin/env bash
 
-##
-## Lemonbar
-## Fonts: scientifica (bdf), siji (bdf)
-## Required: xdotool
-##
+#
+# Lemonbar
+# Fonts: scientifica (bdf), siji (bdf)
+# Required: xdotool
+#
 
 
 # colours
@@ -34,12 +34,19 @@ Hostname() {
 
 }
 
+Kernel() {
+
+	KERN=$(uname -r)
+	ICON=""
+	echo "%{F#000}%{B$color5}  $ICON $KERN  %{B-}%{F-}"
+
+}
+
 Uptime() {
 
 	UPTIME=$("$HOME"/.config/scripts/uptime.sh)
 	ICON=""
 	echo "%{F#000}%{B$color5}%{A3:wal -f random_user -o wal-extras.sh:}  $ICON $UPTIME  %{A}%{B-}%{F-}"
-
 }
 
 Workspaces() {
@@ -231,7 +238,7 @@ Time() {
 # begin
 while true; do
     echo "\
-	%{l}$(Uptime) $(Workspaces) \
+	%{l}$(Kernel) $(Workspaces) \
 	%{c}$(Mpc) \
 	%{r}$(Wifi) $(Cpu) $(Memory) $(Battery) $(Volume) $(Time)"
     sleep 0.5

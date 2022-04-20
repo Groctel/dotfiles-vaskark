@@ -1,10 +1,10 @@
 #!/usr/bin/env bash
 
-##
-## Lemonbar
-## Fonts: scientifica (bdf), nerd font (ttf)
-## Required: xdotool
-##
+#
+# Lemonbar
+# Fonts: scientifica (bdf), nerd font (ttf)
+# Required: xdotool
+#
 
 
 # colours
@@ -31,6 +31,14 @@ Hostname() {
 	HOST=$(uname -n)
 	ICON=""
 	echo "%{F#000}%{B$color5}  $ICON $HOST  %{B-}%{F-}"
+
+}
+
+Kernel() {
+
+	KERN=$(uname -r)
+	ICON=""
+	echo "%{F#000}%{B$color5}  $ICON $KERN  %{B-}%{F-}"
 
 }
 
@@ -231,7 +239,7 @@ Time() {
 # begin
 while true; do
     echo "\
-	%{l}$(Uptime) $(Workspaces) \
+	%{l}$(Kernel) $(Workspaces) \
 	%{c}$(Mpc) \
     %{r}$(Wifi) $(Cpu) $(Memory) $(Battery) $(Volume) $(Time)"
     sleep 0.5
