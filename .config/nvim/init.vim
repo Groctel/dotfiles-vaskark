@@ -9,8 +9,6 @@ endif
 " Plugins
 call plug#begin('~/.config/nvim/plugged')
 Plug 'itchyny/lightline.vim'
-" Plug 'vim-airline/vim-airline'
-" Plug 'vim-airline/vim-airline-themes'
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-markdown'
 Plug 'nelstrom/vim-markdown-folding'
@@ -223,39 +221,6 @@ let g:NERDToggleCheckAllLines = 1
 
 " If lightline/airline is enabled, don't show mode under it
 set noshowmode
-
-" Airline
-let g:airline_experimental = 1
-let g:airline_detect_modified=1
-let g:airline_detect_paste=0
-let g:airline_detect_spell=0
-let g:airline_inactive_alt_sep=1
-let g:airline#extensions#tabline#enabled = 1
-let g:airline#extensions#tabline#formatter = 'default'
-let g:airline_powerline_fonts = 1
-let g:airline#parts#ffenc#skip_expected_string='utf-8[unix]'
-" let g:airline_theme='wal'
-
-" let g:airline_mode_map = {
-"       \ '__'     : '-',
-"       \ 'c'      : 'C',
-"       \ 'i'      : 'I',
-"       \ 'ic'     : 'I',
-"       \ 'ix'     : 'I',
-"       \ 'n'      : 'N',
-"       \ 'multi'  : 'M',
-"       \ 'ni'     : 'N',
-"       \ 'no'     : 'N',
-"       \ 'R'      : 'R',
-"       \ 'Rv'     : 'R',
-"       \ 's'      : 'S',
-"       \ 'S'      : 'S',
-"       \ ''     : 'S',
-"       \ 't'      : 'T',
-"       \ 'v'      : 'V',
-"       \ 'V'      : 'V',
-"       \ ''     : 'V',
-"       \ }
 
 " Lightline
 let g:lightline = {
