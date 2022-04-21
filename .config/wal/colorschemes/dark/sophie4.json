@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/jason/Pictures/sophie-turner-sansa-stark-wallpaper.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#171718",
+        "foreground": "#c5c5c5",
+        "cursor": "#b5b87e"
+    },
+    "colors": {
+        "color0": "#171718",
+        "color1": "#67443a",
+        "color2": "#7a7a47",
+        "color3": "#a1af67",
+        "color4": "#354866",
+        "color5": "#828177",
+        "color6": "#b5b87e",
+        "color7": "#c5c5c5",
+        "color8": "#2f2f31",
+        "color9": "#905240",
+        "color10": "#abab4f",
+        "color11": "#dcf573",
+        "color12": "#3a5b8e",
+        "color13": "#b9b48a",
+        "color14": "#fdff8f",
+        "color15": "#ffffff"
+    }
+}

@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/jason/Pictures/mcps2sky4xt81.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#181717",
+        "foreground": "#c5c5c5",
+        "cursor": "#4b5f6f"
+    },
+    "colors": {
+        "color0": "#181717",
+        "color1": "#414d5b",
+        "color2": "#bb7344",
+        "color3": "#677785",
+        "color4": "#759bb4",
+        "color5": "#733f35",
+        "color6": "#4b5f6f",
+        "color7": "#c5c5c5",
+        "color8": "#312f2f",
+        "color9": "#4a6380",
+        "color10": "#ff9247",
+        "color11": "#769bbc",
+        "color12": "#84cdfd",
+        "color13": "#a04a39",
+        "color14": "#557c9c",
+        "color15": "#ffffff"
+    }
+}

@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/jason/Pictures/mw_got_as.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#14141d",
+        "foreground": "#b1b1d8",
+        "cursor": "#96ac87"
+    },
+    "colors": {
+        "color0": "#14141d",
+        "color1": "#6a564c",
+        "color2": "#41545c",
+        "color3": "#6a8a85",
+        "color4": "#3a596f",
+        "color5": "#6a8a85",
+        "color6": "#96ac87",
+        "color7": "#b1b1d8",
+        "color8": "#292939",
+        "color9": "#956d57",
+        "color10": "#487084",
+        "color11": "#7cc1b7",
+        "color12": "#41779a",
+        "color13": "#7cc1b7",
+        "color14": "#c1f39c",
+        "color15": "#e4e4ff"
+    }
+}

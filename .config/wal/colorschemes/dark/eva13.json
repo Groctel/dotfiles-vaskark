@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/jason/Pictures/wallpapersden.com_actress-eva-green-2020_1920x1666.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#171616",
+        "foreground": "#c5c4c4",
+        "cursor": "#a2897a"
+    },
+    "colors": {
+        "color0": "#171616",
+        "color1": "#583c37",
+        "color2": "#846d62",
+        "color3": "#6d4e45",
+        "color4": "#ae9c8c",
+        "color5": "#55464d",
+        "color6": "#a2897a",
+        "color7": "#c5c4c4",
+        "color8": "#302e2e",
+        "color9": "#7b473e",
+        "color10": "#ba8870",
+        "color11": "#995f4e",
+        "color12": "#f6c9a1",
+        "color13": "#785063",
+        "color14": "#e5ad8c",
+        "color15": "#fffefe"
+    }
+}
