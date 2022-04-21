@@ -55,7 +55,7 @@ kitty + complete setup zsh | source /dev/stdin
 
 # wal
 (cat ~/.cache/wal/sequences &)
-# source ~/.cache/wal/colors.sh
+source ~/.cache/wal/colors.sh
 
 # urxvt/xterm cursor beam: 35 (blink), 36 (no blink)
 echo -e -n "\x1b[\x36 q"
@@ -80,6 +80,11 @@ f() {
 # fzf
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
+# nala
+autoload bashcompinit
+bashcompinit
+source /usr/share/bash-completion/completions/nala
+
 # functions
 source $ZDOTDIR/functions/fzf-edit 2>/dev/null
 source $ZDOTDIR/functions/fzf-kill 2>/dev/null
@@ -97,7 +102,6 @@ bindkey '^ ' autosuggest-toggle
 source $ZDOTDIR/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.plugin.zsh 2>/dev/null
 ZSH_HIGHLIGHT_HIGHLIGHTERS=(brackets cursor line main pattern regexp root)
 ZSH_HIGHLIGHT_PATTERNS+=('rm -rf *' 'fg=black,bold,bg=red')
-ZSH_HIGHLIGHT_STYLES[root]='bg=red'
 
 # history filter
 # bindkey "^[[A" history-beginning-search-backward
@@ -105,7 +109,7 @@ ZSH_HIGHLIGHT_STYLES[root]='bg=red'
 
 # pure
 # fpath+=~/.pure
-# zstyle ':prompt:pure:prompt:success' color green
+# zstyle ':prompt:pure:prompt:success' color magenta
 # zstyle ':prompt:pure:git:stash' show yes
 # autoload -U promptinit; promptinit
 # prompt pure
