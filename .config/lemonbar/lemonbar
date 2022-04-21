@@ -19,10 +19,11 @@ Session() {
 
 }
 
-User() {
+Name() {
 
+	NAME=$(logname)
 	ICON=""
-	echo "%{F#000}%{B$color5}  $ICON $USER  %{B-}%{F-}"
+	echo "%{F#000}%{B$color5}  $ICON $NAME  %{B-}%{F-}"
 
 }
 
