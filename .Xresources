@@ -21,6 +21,7 @@ URxvt*depth: 32
 URxvt*iso14755: false
 URxvt*iso14755_52: false
 URxvt*pointerBlank: true
+URxvt*intensityStyles: false
 
 ! URxvt Navigation Keys
 URxvt.keysym.M-Up: command:\033]720;1\007
