@@ -81,6 +81,9 @@ XTerm.vt100.translations: #override \n\
 *Dialog.unameFont:   scientifica 8
 *Dialog.buttonFont:  scientifica 8
 *Dialog.dateFont:    scientifica 8
+*errorFont:          scientifica 8
+*errorColor:         #CCC
+*dateFormat:         \n\%A %B %e\n\%-I:%M %p
 
 ! Colours
 #include ".cache/wal/colors.Xresources"

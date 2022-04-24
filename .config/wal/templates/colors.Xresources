@@ -101,4 +101,25 @@ shod.shadowThickness:                   2
 shod.snapProximity:                     8
 shod.faceName:                          scientifica:bold:pixelsize=11
 shod.foreground:                        #000
-shod.titleWidth:                        15
+shod.titleWidth:                        24
+
+! XScreensaver
+*default.Dialog.foreground:				{color2}
+*default.Dialog.background:				{color0}
+*default.Dialog.button.foreground:		#000
+*default.Dialog.button.background:		{color2}
+*default.Dialog.logo.background:		{color0}
+*default.Dialog.logo.width:				210
+*default.Dialog.logo.height:			210
+*default.Dialog.text.background:		{color5}
+*default.Dialog.text.foreground:		#000
+*default.Dialog.error.foreground:		{color1}
+*default.Dialog.topShadowColor:			{color8}
+*default.Dialog.bottomShadowColor:		{color8}
+*default.Dialog.shadowWidth:			0
+*default.Dialog.thermometer.foreground:	{color5}
+*default.Dialog.thermometer.background:	{color8}
+*default.Dialog.thermometer.width:		8
+*default.Dialog.borderColor:			{color2}
+*default.Dialog.borderWidth:			0
+*default.Dialog.internalPadding:		24
