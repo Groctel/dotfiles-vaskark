@@ -104,14 +104,14 @@ shod.foreground:                        #000
 shod.titleWidth:                        24
 
 ! XScreensaver
-*default.Dialog.foreground:				{color2}
+*default.Dialog.foreground:				#666
 *default.Dialog.background:				{color0}
 *default.Dialog.button.foreground:		#000
-*default.Dialog.button.background:		{color5}
+*default.Dialog.button.background:		{color2}
 *default.Dialog.logo.background:		{color0}
 *default.Dialog.logo.width:				210
 *default.Dialog.logo.height:			210
-*default.Dialog.text.background:		{color5}
+*default.Dialog.text.background:		{color2}
 *default.Dialog.text.foreground:		#000
 *default.Dialog.error.foreground:		{color1}
 *default.Dialog.topShadowColor:			{color8}
