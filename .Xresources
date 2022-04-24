@@ -73,5 +73,14 @@ XTerm.vt100.translations: #override \n\
     Ctrl <Key> +: larger-vt-font() \n\
     Ctrl <Key> 0: set-vt-font(d)
 
+! Xscreensaver
+*Dialog.headingFont: scientifica 8
+*Dialog.bodyFont:    scientifica 8
+*Dialog.errorFont:   scientifica 8
+*Dialog.labelFont:   scientifica 8
+*Dialog.unameFont:   scientifica 8
+*Dialog.buttonFont:  scientifica 8
+*Dialog.dateFont:    scientifica 8
+
 ! Colours
 #include ".cache/wal/colors.Xresources"
