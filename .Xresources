@@ -30,7 +30,7 @@ URxvt.keysym.M-Down: command:\033]721;1\007
 URxvt.keysym.M-j: command:\033]721;1\007
 
 ! URxvt Extensions
-URxvt.perl-ext-common: default,url-select,selection-to-clipboard,keyboard-select,resize-font,bell-command
+URxvt.perl-ext-common: default,url-select,selection-to-clipboard,keyboard-select,resize-font,bell-command,searchable-scrollback
 ! url-select
 URxvt.keysym.M-u: perl:url-select:select_next
 URxvt.url-select.underline: true
