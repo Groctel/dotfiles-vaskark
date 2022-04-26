@@ -462,12 +462,12 @@
     <!-- Take a screenshot -->
     <keybind key="W-Print">
       <action name="Execute">
-        <command>sh -c "scrot -q 85 -d 3 '%Y-%m-%d_%I-%M-%S_%p.png' -e 'mv $f ~/Screenshots/'"</command>
+        <command>flameshot full</command>
       </action>
     </keybind>
     <keybind key="W-S-Print">
       <action name="Execute">
-        <command>sh -c "scrot -q 85 -s '%Y-%m-%d_%I-%M-%S_%p.png' -e 'mv $f ~/Screenshots/'"</command>
+        <command>flameshot gui</command>
       </action>
     </keybind>
     <!-- Multimedia keys-->
@@ -578,12 +578,12 @@
     <!-- nsxiv -->
     <keybind key="W-equal">
       <action name="Execute">
-        <command>sh -c 'ls -t $HOME/Pictures/* | head -20 | xargs nsxiv -rt'</command>
+        <command>sh -c 'ls -t $HOME/Pictures/* | head -50 | xargs nsxiv -rt'</command>
       </action>
     </keybind>
     <keybind key="W-S-equal">
       <action name="Execute">
-        <command>sh -c 'ls -t $HOME/Pictures/wow/* | head -20 | xargs nsxiv -rt'</command>
+        <command>sh -c 'ls -t $HOME/Pictures/wow/* | head -50 | xargs nsxiv -rt'</command>
       </action>
     </keybind>
     <!-- Reload and Exit keybinds -->
