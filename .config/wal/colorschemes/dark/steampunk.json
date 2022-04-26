@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/jason/Pictures/Steampunk_metal.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#161616",
+        "foreground": "#c4c4c4",
+        "cursor": "#2e251f"
+    },
+    "colors": {
+        "color0": "#161616",
+        "color1": "#3f4246",
+        "color2": "#35302f",
+        "color3": "#25272a",
+        "color4": "#353a40",
+        "color5": "#be7833",
+        "color6": "#2e251f",
+        "color7": "#c4c4c4",
+        "color8": "#2f2f2f",
+        "color9": "#495463",
+        "color10": "#4b3a36",
+        "color11": "#2b313b",
+        "color12": "#3d4a5a",
+        "color13": "#ff9b32",
+        "color14": "#402f23",
+        "color15": "#ffffff"
+    }
+}

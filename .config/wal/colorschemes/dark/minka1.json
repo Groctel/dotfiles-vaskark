@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/jason/Pictures/minka-kelly-wallpaper-25824-26508-hd-wallpapers.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#161617",
+        "foreground": "#c4c4c5",
+        "cursor": "#7c7c85"
+    },
+    "colors": {
+        "color0": "#161617",
+        "color1": "#77212d",
+        "color2": "#ce867e",
+        "color3": "#42646b",
+        "color4": "#7c7c85",
+        "color5": "#42646b",
+        "color6": "#7c7c85",
+        "color7": "#c4c4c5",
+        "color8": "#2e2e30",
+        "color9": "#a42033",
+        "color10": "#ff9c8e",
+        "color11": "#4a8996",
+        "color12": "#9090bd",
+        "color13": "#4a8996",
+        "color14": "#9090bd",
+        "color15": "#fefeff"
+    }
+}

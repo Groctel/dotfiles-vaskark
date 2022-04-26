@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/jason/Pictures/solarized.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#171b1b",
+        "foreground": "#c5c6c6",
+        "cursor": "#5d9893"
+    },
+    "colors": {
+        "color0": "#171b1b",
+        "color1": "#887444",
+        "color2": "#3a837a",
+        "color3": "#a9934f",
+        "color4": "#2f6e67",
+        "color5": "#60543e",
+        "color6": "#5d9893",
+        "color7": "#c5c6c6",
+        "color8": "#2d3636",
+        "color9": "#be9c4b",
+        "color10": "#3fb6a7",
+        "color11": "#ebc756",
+        "color12": "#32998d",
+        "color13": "#877046",
+        "color14": "#69d5cc",
+        "color15": "#feffff"
+    }
+}

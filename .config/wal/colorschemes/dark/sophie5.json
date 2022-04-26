@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/jason/Pictures/wp4165284-sophie-turner-2019-wallpapers.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#191716",
+        "foreground": "#c5c5c4",
+        "cursor": "#b4997b"
+    },
+    "colors": {
+        "color0": "#191716",
+        "color1": "#623a23",
+        "color2": "#a59282",
+        "color3": "#775338",
+        "color4": "#897560",
+        "color5": "#ac886a",
+        "color6": "#b4997b",
+        "color7": "#c5c5c4",
+        "color8": "#332f2d",
+        "color9": "#884924",
+        "color10": "#e9bc95",
+        "color11": "#a66a3d",
+        "color12": "#c1986d",
+        "color13": "#f1af77",
+        "color14": "#fdc78c",
+        "color15": "#fffffe"
+    }
+}

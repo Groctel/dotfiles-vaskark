@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/jason/Pictures/umrvx0mki6i61.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#191a1c",
+        "foreground": "#c5c5c6",
+        "cursor": "#d7c097"
+    },
+    "colors": {
+        "color0": "#191a1c",
+        "color1": "#7f544e",
+        "color2": "#9d7d60",
+        "color3": "#c39767",
+        "color4": "#cbab88",
+        "color5": "#c94e57",
+        "color6": "#d7c097",
+        "color7": "#c5c5c6",
+        "color8": "#303236",
+        "color9": "#b26358",
+        "color10": "#dca16c",
+        "color11": "#ffc572",
+        "color12": "#ffdf9a",
+        "color13": "#ff5361",
+        "color14": "#ffffac",
+        "color15": "#fefeff"
+    }
+}

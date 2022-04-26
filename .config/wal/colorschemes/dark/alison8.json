@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/jason/Pictures/Alison-Brie-Free-HD-Wallpapers.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#181819",
+        "foreground": "#c5c5c5",
+        "cursor": "#6a5b4d"
+    },
+    "colors": {
+        "color0": "#181819",
+        "color1": "#29445e",
+        "color2": "#817168",
+        "color3": "#60463f",
+        "color4": "#4d5763",
+        "color5": "#722f5d",
+        "color6": "#6a5b4d",
+        "color7": "#c5c5c5",
+        "color8": "#303032",
+        "color9": "#2c5882",
+        "color10": "#b68e78",
+        "color11": "#875547",
+        "color12": "#58708c",
+        "color13": "#9e327c",
+        "color14": "#957558",
+        "color15": "#ffffff"
+    }
+}
