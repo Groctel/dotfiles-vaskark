@@ -89,6 +89,7 @@ source /usr/share/bash-completion/completions/nala
 source $ZDOTDIR/functions/fzf-edit 2>/dev/null
 source $ZDOTDIR/functions/fzf-kill 2>/dev/null
 source $ZDOTDIR/functions/fzf-man 2>/dev/null
+source $ZDOTDIR/functions/fzf-git 2>/dev/null
 
 # extract
 source $ZDOTDIR/plugins/zsh-extract/extract.plugin.zsh 2>/dev/null

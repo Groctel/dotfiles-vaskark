@@ -54,7 +54,7 @@ export NNN_PLUG="d:diffs;g:-!git diff;k:pskill;l:-!git log;m:-!mediainfo;n:nuke;
 export FZF_DEFAULT_COMMAND="fd --hidden --follow --exclude '.git' --exclude '.cache'"
 export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND --type f"
 export FZF_ALT_C_COMMAND="$FZF_DEFAULT_COMMAND --type d"
-export FZF_CTRL_R_OPTS="--exact"
+export FZF_CTRL_R_OPTS='--sort --exact'
 export FZF_DEFAULT_OPTS="
 --header-first
 --layout=reverse-list
