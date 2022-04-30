@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/jason/Pictures/pgp7px927bs61.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#1a1a1c",
+        "foreground": "#c5c5c6",
+        "cursor": "#d9b084"
+    },
+    "colors": {
+        "color0": "#1a1a1c",
+        "color1": "#8b5b4e",
+        "color2": "#c79867",
+        "color3": "#a87954",
+        "color4": "#e6c6a1",
+        "color5": "#c46058",
+        "color6": "#d9b084",
+        "color7": "#c5c5c6",
+        "color8": "#323235",
+        "color9": "#c26e57",
+        "color10": "#ffc672",
+        "color11": "#ea9b5c",
+        "color12": "#ffffb7",
+        "color13": "#ff6d5f",
+        "color14": "#ffe594",
+        "color15": "#fefeff"
+    }
+}

@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/jason/Pictures/y8m80cnktuv81.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#191919",
+        "foreground": "#c5c5c5",
+        "cursor": "#6acae3"
+    },
+    "colors": {
+        "color0": "#191919",
+        "color1": "#807f7e",
+        "color2": "#cd9481",
+        "color3": "#1877cd",
+        "color4": "#4ab9e2",
+        "color5": "#d48320",
+        "color6": "#6acae3",
+        "color7": "#c5c5c5",
+        "color8": "#323232",
+        "color9": "#b6a593",
+        "color10": "#ffb592",
+        "color11": "#109bff",
+        "color12": "#4cf9ff",
+        "color13": "#ffab19",
+        "color14": "#74ffff",
+        "color15": "#ffffff"
+    }
+}

@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/jason/Pictures/wp3695171-emilia-clarke-hd-wallpapers.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#191717",
+        "foreground": "#c5c5c5",
+        "cursor": "#ceb59e"
+    },
+    "colors": {
+        "color0": "#191717",
+        "color1": "#6d4241",
+        "color2": "#977b73",
+        "color3": "#b99785",
+        "color4": "#805e4e",
+        "color5": "#855058",
+        "color6": "#ceb59e",
+        "color7": "#c5c5c5",
+        "color8": "#332e2e",
+        "color9": "#984b49",
+        "color10": "#d59684",
+        "color11": "#ffbd98",
+        "color12": "#b37558",
+        "color13": "#ba5a68",
+        "color14": "#ffeab5",
+        "color15": "#ffffff"
+    }
+}

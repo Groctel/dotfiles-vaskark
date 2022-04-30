@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/jason/Pictures/gfznbj9a4qu81-m.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#111111",
+        "foreground": "#bebebe",
+        "cursor": "#5297cf"
+    },
+    "colors": {
+        "color0": "#111111",
+        "color1": "#d36265",
+        "color2": "#aece91",
+        "color3": "#e7e18c",
+        "color4": "#5e7175",
+        "color5": "#963c59",
+        "color6": "#5297cf",
+        "color7": "#bebebe",
+        "color8": "#2a2a2a",
+        "color9": "#ff6b70",
+        "color10": "#e1ffa5",
+        "color11": "#ffff9d",
+        "color12": "#6c9ba5",
+        "color13": "#d0406e",
+        "color14": "#57c6ff",
+        "color15": "#fafafa"
+    }
+}
