@@ -1,0 +1,46 @@
+# settings
+set shell zsh
+set shellopts '-euy'
+set ifs "\n"
+set filesep "\n"
+set scrolloff 10
+set relativenumber
+set autoquit
+#set icons
+
+# mappings
+map o &mimeopen $f
+map O $mimeopen --ask $f
+map x $$f
+map X !$f
+map . set hidden!
+map <enter> shell
+
+# open
+cmd open ${{
+    case $(file --mime-type $f -b) in
+        text/*) $EDITOR $fx;;
+        *) for f in $fx; do setsid $OPENER $f > /dev/null 2> /dev/null & done;;
+    esac
+}}
+
+# make sure trash folder exists
+%mkdir -p ~/.local/share/Trash/files
+
+# move current file or selected files to trash folder
+cmd trash %set -f; mv $fx ~/.local/share/Trash/files
+map <delete> trash
+
+# extract
+cmd extract ${{
+    set -f
+    case $f in
+        *.tar.bz|*.tar.bz2|*.tbz|*.tbz2) tar xjvf $f;;
+        *.tar.gz|*.tgz) tar xzvf $f;;
+        *.tar.xz|*.txz) tar xJvf $f;;
+        *.zip) unzip $f;;
+        *.rar) unrar x $f;;
+        *.7z) 7z x $f;;
+    esac
+}}
+map E :extract
