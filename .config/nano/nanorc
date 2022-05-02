@@ -128,7 +128,7 @@ set nonewlines
 # set punct "!.?"
 
 ## Make status-bar messages disappear after 1 keystroke instead of after 20.
-# set quickblank
+set quickblank
 
 ## The regular expression that matches quoting characters in email
 ## or line-comment introducers in source code.  The default is:
