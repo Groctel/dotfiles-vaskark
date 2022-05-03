@@ -13,6 +13,9 @@ export HISTFILE="$ZDOTDIR/zhistory"
 export HISTSIZE=10000
 export SAVEHIST=10000
 
+# x11
+export XINITRC="$XDG_CONFIG_HOME/x11/xinitrc"
+
 # gtk-2.0
 export GTK2_RC_FILES="$XDG_CONFIG_HOME/gtk-2.0/gtkrc-2.0"
 
@@ -50,6 +53,20 @@ export NNN_OPENER="$HOME/.config/nnn/plugins/nuke"
 export NNN_ORDER="t:$HOME/Pictures;t:$HOME/Pictures/wow;t:$HOME/Pictures/shots"
 export NNN_PLUG="d:diffs;g:-!git diff;k:pskill;l:-!git log;m:-!mediainfo;n:nuke;o:fzopen;s:suedit;v:imgview;w:wall"
 
+FZF_COLORS="bg+:1,\
+bg:0,\
+fg:7,\
+fg+:232,\
+border:gray,\
+spinner:2,\
+hl:2,\
+header:4,\
+info:7,\
+pointer:232,\
+marker:1,\
+prompt:2,\
+hl+:255" \
+
 # fzf
 export FZF_DEFAULT_COMMAND="fd --hidden --follow --exclude '.git' --exclude '.cache'"
 export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND --type f"
@@ -60,6 +77,7 @@ export FZF_DEFAULT_OPTS="
 --layout=reverse-list
 --info=default
 --height=70%
+--color='$FZF_COLORS'
 --multi
 --padding=1
 --border=sharp
@@ -76,5 +94,3 @@ export FFF_COL2=5   # status bg
 export FFF_COL3=4   # sel
 export FFF_COL4=5   # cursor
 export FFF_COL5=0   # status fg
-export FFF_FAV1=~
-export FFF_FAV2=~/Pictures

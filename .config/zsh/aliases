@@ -89,7 +89,7 @@ alias upd8='sudo apt update;sudo apt full-upgrade;sudo apt autoremove;sudo apt c
 alias shut='poweroff'
 
 # startx
-alias startx='startx $HOME/.xinitrc'
+alias startx='startx $XINITRC'
 
 # kernel
 alias mkc="make LSMOD=$XDG_CONFIG_HOME/modprobed.db localmodconfig"
