@@ -26,10 +26,9 @@ color14='{color14}'
 color15='{color15}'
 
 # FZF colors
-export FZF_DEFAULT_OPTS="
-    $FZF_DEFAULT_OPTS
-    --color fg:7,bg:0,hl:2,fg+:232,bg+:1,hl+:255
-    --color info:7,prompt:2,spinner:1,pointer:232,marker:1
+export FZF_DEFAULT_OPTS="$FZF_DEFAULT_OPTS\
+--color fg:gray,hl:2,fg+:0,bg+:2,hl+:255,border:5
+--color info:gray,prompt:2,spinner:5,pointer:0,marker:0
 "
 
 # Fix LS_COLORS being unreadable.

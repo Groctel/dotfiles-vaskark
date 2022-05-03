@@ -53,20 +53,6 @@ export NNN_OPENER="$HOME/.config/nnn/plugins/nuke"
 export NNN_ORDER="t:$HOME/Pictures;t:$HOME/Pictures/wow;t:$HOME/Pictures/shots"
 export NNN_PLUG="d:diffs;g:-!git diff;k:pskill;l:-!git log;m:-!mediainfo;n:nuke;o:fzopen;s:suedit;v:imgview;w:wall"
 
-FZF_COLORS="bg+:1,\
-bg:0,\
-fg:7,\
-fg+:232,\
-border:gray,\
-spinner:2,\
-hl:2,\
-header:4,\
-info:7,\
-pointer:232,\
-marker:1,\
-prompt:2,\
-hl+:255" \
-
 # fzf
 export FZF_DEFAULT_COMMAND="fd --hidden --follow --exclude '.git' --exclude '.cache'"
 export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND --type f"
@@ -75,9 +61,8 @@ export FZF_CTRL_R_OPTS='--sort --exact'
 export FZF_DEFAULT_OPTS="
 --header-first
 --layout=reverse-list
---info=default
+--info=inline
 --height=70%
---color='$FZF_COLORS'
 --multi
 --padding=1
 --border=sharp

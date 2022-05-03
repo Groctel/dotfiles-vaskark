@@ -6,13 +6,12 @@ stty stop undef # Disable ctrl-s to freeze terminal.
 [ -f "$ZDOTDIR/aliases" ] && source "$ZDOTDIR/aliases"
 
 # basic auto/tab complete:
-autoload -Uz compinit
+zmodload zsh/complist
+autoload -Uz compinit; compinit
+_comp_options+=(globdots) # Include hidden files
 zstyle ':completion:*' matcher-list 'm:{a-zA-Z}={A-Za-z}' 'r:|?=**'
 zstyle ':completion:*' menu select
 zstyle ':completion::complete:*' gain-privileges 1
-zmodload zsh/complist
-compinit
-_comp_options+=(globdots) # Include hidden files.
 
 # use vim keys in tab complete menu:
 bindkey -M menuselect 'h' vi-backward-char
@@ -93,6 +92,11 @@ source $ZDOTDIR/functions/fzf-git 2>/dev/null
 
 # extract
 source $ZDOTDIR/plugins/zsh-extract/extract.plugin.zsh 2>/dev/null
+
+# completions
+source $ZDOTDIR/plugins/zsh-completions/zsh-completions.plugin.zsh 2>/dev/null
+zstyle ':completion:*:*:*:*:descriptions' format '%F{magenta}-- %d --%f'
+zstyle ':completion:*:default' list-colors ${(s.:.)LS_COLORS}
 
 # autosuggestions
 source $ZDOTDIR/plugins/zsh-autosuggestions/zsh-autosuggestions.plugin.zsh 2>/dev/null
