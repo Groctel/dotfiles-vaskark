@@ -1,0 +1,39 @@
+  escape Super_L
+
+exec picom --experimental-backends --config ~/.config/picom/picom.conf
+exec wal -R -o wal-extras.sh
+exec xsetroot -cursor_name left_ptr
+exec xscreensaver --no-splash
+exec xautolock -time 10 -locker 'xscreensaver-command -lock' -killer 'systemctl suspend' -corners 00-+
+exec /usr/lib/policykit-1-gnome/polkit-gnome-authentication-agent-1
+exec systemctl --user import-environment; exec systemctl --user restart redshift
+
+set font scientifica:size=8:antialias=true
+set ignoreresizehints 0
+set padding 8 8 8 8
+set onlyborder 0
+set gap 4
+
+set bargravity nw
+set barborder 1
+set barpadding 0
+set barsticky 0
+
+definekey top XF86AudioRaiseVolume exec pactl set-sink-volume @DEFAULT_SINK@ +5%
+definekey top XF86AudioLowerVolume exec pactl set-sink-volume @DEFAULT_SINK@ -5%
+definekey top XF86AudioMute exec pactl set-sink-mute @DEFAULT_SINK@ toggle
+
+definekey top M-F10 exec mpc prev
+definekey top M-F11 exec mpc toggle
+definekey top M-F12 exec mpc next
+
+bind equal exec sh -c 'ls -t "$HOME"/Pictures/* | head -50 | xargs nsxiv -rt'
+bind plus exec sh -c 'ls -t "$HOME"/Pictures/wow/* | head -50 | xargs nsxiv -rt'
+
+bind Return exec alacritty
+bind d exec rofi.sh
+bind g exec sh -c 'pkill glava || glava -d'
+bind e exec subl ~/.config/sdorfehs/config
+bind F12 exec wal -f random_user -o wal-extras.sh
+bind Escape exec sdorfehs -c abort
+bind Delete exec sdorfehs -c quit
