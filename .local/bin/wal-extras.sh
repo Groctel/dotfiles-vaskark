@@ -16,6 +16,16 @@ fi
 # openbox
 [ "$(pgrep -x openbox)" ] && openbox --reconfigure
 
+# sdorfehs
+if [ "$(pgrep -x sdorfehs)" ]; then
+        sdorfehs -c "set barbordercolor #444"
+        sdorfehs -c "set bgcolor $color0"
+        sdorfehs -c "set fgcolor #777"
+        sdorfehs -c "set bwcolor #444"
+        sdorfehs -c "set fwcolor $color2"
+        ~/.config/sdorfehs/launch.sh
+fi
+
 # dunst 
 [ "$(pgrep -x dunst)" ] && pkill dunst
 
@@ -23,7 +33,7 @@ fi
 [ "$(pgrep -x lemonbar)" ] && pkill lemonbar && lemonbar-current &
 
 # glava
-sed -i "s|#define COLOR @fg.*$|#define COLOR @fg:mix(""$color2""ff, ""$color10""aa, clamp(d / GRADIENT, 0, 1))|g" ~/.config/glava/bars.glsl
+sed -i "s|#define COLOR @fg.*$|#define COLOR @fg:mix(""$color5""ff, ""$color13""aa, clamp(d / GRADIENT, 0, 1))|g" ~/.config/glava/bars.glsl
 [ "$(pgrep -x glava)" ] && pkill glava && glava -d 2>/dev/null &
 
 # cava
