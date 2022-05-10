@@ -14,6 +14,7 @@ set padding 8 8 8 8
 set onlyborder 0
 set gap 4
 set vscreens 5
+set msgwait 5
 
 set bargravity nw
 set barborder 1

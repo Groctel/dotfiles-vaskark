@@ -11,32 +11,24 @@
 Mpc() {
 
   CURRENT="$(mpc current -f "%artist% ∎ %title%")"
-  ICON=""
-  echo "^fn(siji:size=8)^fg($color5)$ICON^fg()^fn() $CURRENT"
-
-}
-
-Kernel() {
-
-  KERN=$(uname -r)
-  ICON=""
-  echo "^fn(siji:size=8)^fg($color5)$ICON^fg()^fn() $KERN"
+  ICON="🎵"
+  echo "^fn(Emoji:size=7)$ICON^fn() $CURRENT"
 
 }
 
 Uptime() {
 
   UP=$("$HOME"/.config/scripts/uptime.sh)
-  ICON=""
-  echo "^fn(siji:size=8)^fg($color5)$ICON^fg()^fn() $UP"
+  ICON="⏲"
+  echo "^fn(Emoji:size=7)$ICON^fn() $UP"
 
 }
 
 Cpu() {
 
   CPU=$("$HOME"/.config/scripts/cpu.sh)
-  ICON=""
-  echo "^fn(siji:size=8)^fg($color5)$ICON^fg()^fn() $CPU"
+  ICON="🤖"
+  echo "^fn(Emoji:size=7)$ICON^fn() $CPU"
 
 }
 
@@ -48,8 +40,8 @@ Memory() {
   C=$(grep Cached < /proc/meminfo | awk 'NR==1 {print $2}')
 
   USED=$(( 100*(T - F - B - C) / T ))
-  ICON=""
-  echo "^fn(siji:size=8)^fg($color5)$ICON^fg()^fn() $USED%"
+  ICON="🍜"
+  echo "^fn(Emoji:size=7)$ICON^fn() $USED%"
 
 }
 
@@ -59,11 +51,11 @@ Battery() {
   CAPACITY=$(cat /sys/class/power_supply/BAT0/capacity)
 
   if [ -n "$CHARGE" ] ; then
-    ICON=""
-    echo "^fn(siji:size=8)^fg($color5)$ICON^fg()^fn() $CAPACITY%"
+    ICON="🔌"
+    echo "^fn(Emoji:size=7)$ICON^fn() $CAPACITY%"
   else
-    ICON=""
-    echo "^fn(siji:size=8)^fg($color5)$ICON^fg()^fn() $CAPACITY%"
+    ICON="🔋"
+    echo "^fn(Emoji:size=7)$ICON^fn() $CAPACITY%"
   fi
 
 }
@@ -74,11 +66,11 @@ Volume() {
 
   if [ -n "$NOTMUTED" ] ; then
     VOL=$(amixer -D pulse sget Master | awk -F"[][]" '/Left:/ { print $2 }' | sed 's/%//g')
-    ICON=""
-    echo "^fn(siji:size=8)^fg($color5)$ICON^fg()^fn() $VOL%"
+    ICON="🔊"
+    echo "^fn(Emoji:size=7)$ICON^fn() $VOL%"
   else
-    ICON=""
-    echo "^fn(siji:size=8)^fg(#444)$ICON^fg()^fn() --%"
+    ICON="🔇"
+    echo "^fn(Emoji:size=7)$ICON^fn() --%"
   fi
 
 }
@@ -86,8 +78,8 @@ Volume() {
 Time() {
 
   TIME="$(date "+%-I:%M %p")"
-  ICON=""
-  echo "^fn(siji:size=8)^fg($color2)$ICON^fg()^fn() $TIME"
+  ICON="⏳"
+  echo "^fn(Emoji:size=7)$ICON^fn() $TIME"
 
 }
 
@@ -95,5 +87,5 @@ Time() {
 
 while true; do
   echo "$(Mpc)  $(Uptime)  $(Cpu)  $(Memory)  $(Battery)  $(Volume)  $(Time)" > ~/.config/sdorfehs/bar
-  sleep 0.5
+  sleep 1
 done

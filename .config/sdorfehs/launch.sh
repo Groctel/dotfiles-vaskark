@@ -1,8 +1,8 @@
 #!/bin/sh
 
 #
-# Launch bar script
+# Launch bar
 #
 
-killall -q bar.sh 2>/dev/null
+[ "$(pgrep -x bar.sh)" ] && killall -q bar.sh
 ~/.config/sdorfehs/bar.sh &
