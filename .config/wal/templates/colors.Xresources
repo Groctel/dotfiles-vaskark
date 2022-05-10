@@ -75,34 +75,6 @@ dmenu.foreground: #555
 dmenu.selbackground: {color0}
 dmenu.selforeground: {color5}
 
-! shod
-shod.activeBackground:                 {color2}
-shod.activeTopShadowColor:             {color2}
-shod.activeBottomShadowColor:          {color2}
-shod.inactiveBackground:               {color8}
-shod.inactiveTopShadowColor:           {color8}
-shod.inactiveBottomShadowColor:        {color8}
-shod.urgentBackground:                 {color1}
-shod.urgentTopShadowColor:             {color1}
-shod.urgentBottomShadowColor:          {color1}
-shod.notifBackground:                  {color4}
-shod.notifTopShadowColor:              {color4}
-shod.notifBottomShadowColor:           {color4}
-shod.dockBackground:                   {color2}
-shod.dockTopShadowColor:               {color2}
-shod.dockBottomShadowColor:            {color2}
-shod.borderWidth:                       1
-shod.dockGravity:                       E
-shod.dockWidth:                         64
-shod.numOfDesktops:                     5
-shod.notifGap:                          3
-shod.notifGravity:                      NE
-shod.shadowThickness:                   2
-shod.snapProximity:                     8
-shod.faceName:                          scientifica:bold:pixelsize=11
-shod.foreground:                        #000
-shod.titleWidth:                        24
-
 ! XScreensaver
 *default.Dialog.foreground:				#666
 *default.Dialog.background:				{color0}

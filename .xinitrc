@@ -21,7 +21,6 @@ case ${session} in
     bspwm) /usr/bin/bspwm ;;
     openbox) /usr/bin/openbox-session ;;
     gnome) /usr/bin/gnome-session ;;
-    wayland) env GNOME_SHELL_SESSION_MODE=ubuntu /usr/bin/gnome-session --session=ubuntu ;;
-    shod) "$HOME"/.config/shod/autostart ;;
+    sdorfehs) /usr/local/bin/sdorfehs ;;
     *) exec $1 ;;
 esac

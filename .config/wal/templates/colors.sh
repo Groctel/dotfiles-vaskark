@@ -27,7 +27,7 @@ color15='{color15}'
 
 # FZF colors
 export FZF_DEFAULT_OPTS="$FZF_DEFAULT_OPTS\
---color fg:gray,hl:2,fg+:0,bg+:2,hl+:255,border:5
+--color fg:gray,hl:2,fg+:0,bg+:2,hl+:255
 --color info:gray,prompt:2,spinner:5,pointer:0,marker:0
 "
 
