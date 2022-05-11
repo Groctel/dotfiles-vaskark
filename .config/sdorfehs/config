@@ -4,9 +4,10 @@ exec picom --experimental-backends --config ~/.config/picom/picom.conf
 exec wal -R -o wal-extras.sh
 exec xsetroot -cursor_name left_ptr
 exec xscreensaver --no-splash
-exec xautolock -time 10 -locker 'xscreensaver-command -lock' -killer 'systemctl suspend' -corners 00-+
+exec xidle -program "/usr/local/bin/xscreensaver-command -lock" -timeout 300
 exec /usr/lib/policykit-1-gnome/polkit-gnome-authentication-agent-1
 exec systemctl --user import-environment; exec systemctl --user restart redshift
+exec sh ~/.config/sdorfehs/launch.sh
 
 set font scientifica:bold:size=8:antialias=true
 set ignoreresizehints 1
@@ -37,8 +38,8 @@ bind Return exec alacritty
 bind d exec rofi.sh
 bind g exec sh -c 'pkill glava || glava -d'
 bind e exec subl ~/.config/sdorfehs/config
-bind F12 exec wal -f random_user -o wal-extras.sh
+bind F12 exec wal -f random_user -o wal-extras.sh 
 
 bind C-Escape exec sdorfehs -c restart
 bind Escape exec sdorfehs -c abort
-bind Delete exec sdorfehs -c quit
+bind Delete exec sdorfehs -c quit ; exec killall -q bar.sh

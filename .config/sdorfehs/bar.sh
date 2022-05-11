@@ -6,21 +6,13 @@
 
 . "$HOME"/.cache/wal/colors.sh
 
-##########
+###
 
-Mpc() {
+Music() {
 
-  CURRENT="$(mpc current -f "%artist% ∎ %title%")"
+  TRACK="$(mpc current -f "%artist% ∎ %title%")"
   ICON=""
-  echo "^fn(siji:size=8)^fg($color5)$ICON^fg()^fn() $CURRENT"
-
-}
-
-Kernel() {
-
-  KERN=$(uname -r)
-  ICON=""
-  echo "^fn(siji:size=8)^fg($color5)$ICON^fg()^fn() $KERN"
+  echo "^fn(siji:size=8)^fg($color5)$ICON^fg()^fn() $TRACK"
 
 }
 
@@ -91,9 +83,9 @@ Time() {
 
 }
 
-##########
+###
 
 while true; do
-  echo "$(Mpc)  $(Uptime)  $(Cpu)  $(Memory)  $(Battery)  $(Volume)  $(Time)" > ~/.config/sdorfehs/bar
-  sleep 0.5
+  echo "$(Music)  $(Uptime)  $(Cpu)  $(Memory)  $(Battery)  $(Volume)  $(Time)" > ~/.config/sdorfehs/bar
+  sleep 1
 done

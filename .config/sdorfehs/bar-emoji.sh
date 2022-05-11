@@ -6,20 +6,20 @@
 
 . "$HOME"/.cache/wal/colors.sh
 
-##########
+###
 
-Mpc() {
+Music() {
 
-  CURRENT="$(mpc current -f "%artist% ∎ %title%")"
+  TRACK="$(mpc current -f "%artist% ∎ %title%")"
   ICON="🎵"
-  echo "^fn(Emoji:size=7)$ICON^fn() $CURRENT"
+  echo "^fn(Emoji:size=7)$ICON^fn() $TRACK"
 
 }
 
 Uptime() {
 
   UP=$("$HOME"/.config/scripts/uptime.sh)
-  ICON="⏲"
+  ICON="⏳"
   echo "^fn(Emoji:size=7)$ICON^fn() $UP"
 
 }
@@ -78,14 +78,14 @@ Volume() {
 Time() {
 
   TIME="$(date "+%-I:%M %p")"
-  ICON="⏳"
+  ICON="⌚"
   echo "^fn(Emoji:size=7)$ICON^fn() $TIME"
 
 }
 
-##########
+###
 
 while true; do
-  echo "$(Mpc)  $(Uptime)  $(Cpu)  $(Memory)  $(Battery)  $(Volume)  $(Time)" > ~/.config/sdorfehs/bar
+  echo "$(Music)  $(Uptime)  $(Cpu)  $(Memory)  $(Battery)  $(Volume)  $(Time)" > ~/.config/sdorfehs/bar
   sleep 1
 done
