@@ -253,7 +253,7 @@ let g:lightline.tab = {
     \ 'inactive': [ 'tabnum', 'filename', 'modified' ] }
 
 let g:lightline.component = {
-    \ 'gitbranch': '%{fugitive#head()}',
+    \ 'gitbranch': '%{FugitiveHead()}',
     \ 'mode': '%{lightline#mode()}',
     \ 'absolutepath': '%F',
     \ 'relativepath': '%f',
