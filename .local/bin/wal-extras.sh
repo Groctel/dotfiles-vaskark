@@ -20,11 +20,13 @@ fi
 if [ "$(pgrep -x sdorfehs)" ]; then
         sdorfehs -c "set barbordercolor #444"
         sdorfehs -c "set bgcolor $color0"
-        sdorfehs -c "set fgcolor #777"
+        sdorfehs -c "set fgcolor $color2"
         sdorfehs -c "set bwcolor #444"
         sdorfehs -c "set fwcolor $color2"
-        ~/.config/sdorfehs/launch.sh
 fi
+
+# cwm
+[ "$(pgrep -x cwm)" ] && pkill -SIGHUP cwm
 
 # dunst 
 [ "$(pgrep -x dunst)" ] && pkill dunst
