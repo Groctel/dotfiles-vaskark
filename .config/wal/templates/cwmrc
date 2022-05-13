@@ -1,29 +1,100 @@
 # general
-fontname "scientifica:pixelsize=11:bold:antialias=true"
+fontname "scientifica:size=8:bold"
 gap 8 8 8 8
-borderwidth 1
+borderwidth 2
+moveamount 5
 sticky yes
 
 # colors
 color activeborder '{color2}'
 color inactiveborder '{color8}'
 color urgencyborder '{color1}'
-color groupborder '{color6}'
-color ungroupborder '{color13}'
+color groupborder '{color4}'
+color ungroupborder '{color1}'
+color font '#666'
+color selfont '{color2}' 
+color menubg '{color0}'
+color menufg '{color0}' 
 
 # ignore
-ignore dmenu
 ignore Bar
 ignore Polybar
+ignore GLava
 
 # unbind
+unbind-key all
+unbind-mouse all
 
-# bind
-bind-key CM-Return alacritty
-bind-key CM-d rofi.sh
-bind-key M-F10 mpc prev
-bind-key M-F11 mpc toggle
-bind-key M-F12 mpc next
-bind-key XF86AudioRaiseVolume pactl set-sink-volume @DEFAULT_SINK@ +5%
-bind-key XF86AudioLowerVolume pactl set-sink-volume @DEFAULT_SINK@ -5%
-bind-key XF86AudioMute pactl set-sink-mute @DEFAULT_SINK@ toggle
+# keys
+bind-key 4-Return alacritty
+bind-key 4-d rofi.sh
+bind-key 4-x dmenu.sh
+bind-key 4-w window-close
+bind-key 4-m window-maximize
+bind-key 4-f window-fullscreen
+bind-key 4-s window-stick
+bind-key 4-F1 thunar
+bind-key 4-F2 google-chrome
+bind-key 4-F5 date.sh
+bind-key 4-F6 nmdm.sh
+bind-key 4-F7 man2pdf.sh
+bind-key 4S-r restart
+bind-key 4-Delete quit
+
+# wal
+bind-key 4-F12 'wal -f random_user -o wal-extras.sh'
+bind-key 4S-F12 'wal -R -o wal-extras.sh'
+
+# music
+bind-key M-F10 'mpc prev'
+bind-key M-F11 'mpc toggle'
+bind-key M-F12 'mpc next'
+
+# statusbar
+bind-key 4-semicolon lemonbar-menu.sh
+bind-key 4S-semicolon 'pkill lemonbar'
+
+# volume
+bind-key XF86AudioRaiseVolume 'pactl set-sink-volume @DEFAULT_SINK@ +5%'
+bind-key XF86AudioLowerVolume 'pactl set-sink-volume @DEFAULT_SINK@ -5%'
+bind-key XF86AudioMute 'pactl set-sink-mute @DEFAULT_SINK@ toggle'
+
+# move to workspace
+bind-key 4-1 group-only-1
+bind-key 4-2 group-only-2
+bind-key 4-3 group-only-3
+bind-key 4-4 group-only-4
+bind-key 4-5 group-only-5
+
+# move window to workspace
+bind-key 4S-1 window-movetogroup-1
+bind-key 4S-2 window-movetogroup-2
+bind-key 4S-3 window-movetogroup-3
+bind-key 4S-4 window-movetogroup-4
+bind-key 4S-5 window-movetogroup-5
+
+# move
+bind-key 4-Left window-move-left-big
+bind-key 4-Down window-move-down-big
+bind-key 4-Up window-move-up-big
+bind-key 4-Right window-move-right-big
+
+# resize
+bind-key M-Left window-resize-left-big
+bind-key M-Down window-resize-down-big
+bind-key M-Up window-resize-up-big
+bind-key M-Right window-resize-right-big
+
+# maximize
+bind-key M-h window-hmaximize
+bind-key M-v window-vmaximize
+
+# cycle
+bind-key 4-Tab window-cycle-ingroup
+bind-key 4S-Tab window-rcycle-ingroup
+bind-key C-Tab group-cycle
+bind-key CS-Tab group-rcycle
+
+# mouse
+bind-mouse 4-1 window-move
+bind-mouse M-1 window-resize

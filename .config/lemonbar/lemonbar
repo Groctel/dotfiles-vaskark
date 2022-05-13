@@ -8,7 +8,7 @@
 
 
 # colours
-. "$HOME"/.cache/wal/colors.sh
+. "$HOME/.cache/wal/colors.sh"
 
 
 Session() {
@@ -52,7 +52,12 @@ Uptime() {
 
 Workspaces() {
 
-	CURRENT=$(( $(xdotool get_desktop) + 1 ))
+   	if [ "$(pgrep -x cwm)" ]; then
+		CURRENT=$(( $(xdotool get_desktop) ))
+	else
+		CURRENT=$(( $(xdotool get_desktop) + 1 ))
+	fi
+
 	TOTAL=$(xdotool get_num_desktops)
 
 	for ((a=1; a <= TOTAL ; a++))
@@ -65,7 +70,7 @@ Workspaces() {
 			echo -n " $a "
 		fi
 	done
-
+    
 }
 
 Mpc() {
@@ -180,7 +185,7 @@ Volume() {
 		NOTMUTED=$(amixer -D pulse sget Master | grep "\[on\]")
 
 		if [ -n "$NOTMUTED" ] ; then
-			VOL=$(awk -F"[][]" '/Left:/ { print $2 }' <(amixer -D pulse sget Master) | sed 's/%//g')
+    		VOL=$(amixer -D pulse sget Master | awk -F"[][]" '/Left:/ { print $2 }' | sed 's/%//g')
 			ICON=""
 			echo "%{A3:pavucontrol:}%{A4:pactl set-sink-volume @DEFAULT_SINK@ +5%:}%{A5:pactl set-sink-volume @DEFAULT_SINK@ -5%:}%{F$color4}$ICON%{F-} $VOL% %{A}%{A}%{A}"
 		else
