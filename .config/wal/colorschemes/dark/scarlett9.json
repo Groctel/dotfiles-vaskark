@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/jason/Pictures/GettyImages-109478107.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#181818",
+        "foreground": "#c5c5c5",
+        "cursor": "#875a46"
+    },
+    "colors": {
+        "color0": "#181818",
+        "color1": "#6c3c37",
+        "color2": "#b78c78",
+        "color3": "#cba991",
+        "color4": "#886e68",
+        "color5": "#803662",
+        "color6": "#875a46",
+        "color7": "#c5c5c5",
+        "color8": "#313131",
+        "color9": "#96453c",
+        "color10": "#ffae88",
+        "color11": "#ffd7a5",
+        "color12": "#c08577",
+        "color13": "#b23a81",
+        "color14": "#bc6f4d",
+        "color15": "#ffffff"
+    }
+}

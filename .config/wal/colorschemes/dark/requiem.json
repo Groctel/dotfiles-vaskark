@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/jason/Pictures/jc_requiem.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#171617",
+        "foreground": "#c5c4c5",
+        "cursor": "#886869"
+    },
+    "colors": {
+        "color0": "#171617",
+        "color1": "#684247",
+        "color2": "#cf8476",
+        "color3": "#483c5f",
+        "color4": "#6d4a62",
+        "color5": "#6d4a62",
+        "color6": "#886869",
+        "color7": "#c5c4c5",
+        "color8": "#302e30",
+        "color9": "#924a54",
+        "color10": "#ff9d84",
+        "color11": "#5a4385",
+        "color12": "#995483",
+        "color13": "#995483",
+        "color14": "#c07779",
+        "color15": "#fffeff"
+    }
+}

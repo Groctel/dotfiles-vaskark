@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/jason/Pictures/angelina-jolie-5k_1536950637-m.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#1a1a19",
+        "foreground": "#ffffff",
+        "cursor": "#8b604a"
+    },
+    "colors": {
+        "color0": "#1a1a19",
+        "color1": "#694231",
+        "color2": "#c28e78",
+        "color3": "#e2b39e",
+        "color4": "#525659",
+        "color5": "#796b64",
+        "color6": "#8b604a",
+        "color7": "#c5c5c5",
+        "color8": "#333331",
+        "color9": "#925135",
+        "color10": "#ffb087",
+        "color11": "#ffdfb4",
+        "color12": "#5f717e",
+        "color13": "#ab8673",
+        "color14": "#c27852",
+        "color15": "#ffffff"
+    }
+}

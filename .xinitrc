@@ -1,10 +1,8 @@
 #!/bin/sh
 
-# fonts
+# misc
 xset +fp "$HOME"/.local/share/fonts/misc,/usr/local/share/fonts/spleen
-
-# xresources
-[ -f "$HOME"/.Xresources ] && xrdb -merge "$HOME"/.Xresources
+xrdb -merge "$HOME"/.Xresources
 
 # ssh-agent
 if [ ! -S ~/.ssh/ssh_auth_sock ]; then
@@ -19,8 +17,9 @@ session=${1:-berry}
 case ${session} in
     berry) /usr/local/bin/berry ;;
     bspwm) /usr/bin/bspwm ;;
-    openbox) /usr/bin/openbox-session ;;
+    cwm) "$HOME"/bin/cwm.sh ;;
     gnome) /usr/bin/gnome-session ;;
+    openbox) /usr/bin/openbox-session ;;
     sdorfehs) /usr/local/bin/sdorfehs ;;
     *) exec $1 ;;
 esac
