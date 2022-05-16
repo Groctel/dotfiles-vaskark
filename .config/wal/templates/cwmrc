@@ -1,5 +1,5 @@
 # general
-fontname "scientifica:size=8:bold"
+fontname "scientifica:size=8"
 gap 8 8 8 8
 borderwidth 2
 moveamount 5
@@ -30,20 +30,28 @@ bind-key 4-Return alacritty
 bind-key 4-d rofi.sh
 bind-key 4-x dmenu.sh
 bind-key 4-w window-close
+bind-key 4-h window-hide
 bind-key 4-m window-maximize
 bind-key 4-f window-fullscreen
 bind-key 4-s window-stick
 bind-key 4-F1 thunar
+bind-key 4S-F1 thunar-pkexec
 bind-key 4-F2 google-chrome
 bind-key 4-F5 date.sh
 bind-key 4-F6 nmdm.sh
 bind-key 4-F7 man2pdf.sh
+bind-key 4-equal pics1.sh
+bind-key 4S-equal pics2.sh
 bind-key 4S-r restart
 bind-key 4-Delete quit
 
 # wal
 bind-key 4-F12 'wal -f random_user -o wal-extras.sh'
 bind-key 4S-F12 'wal -R -o wal-extras.sh'
+
+# glava
+bind-key 4-g glava-toggle.sh
+bind-key 4S-g glava-flip.sh
 
 # music
 bind-key M-F10 'mpc prev'
@@ -73,6 +81,7 @@ bind-key 4S-3 window-movetogroup-3
 bind-key 4S-4 window-movetogroup-4
 bind-key 4S-5 window-movetogroup-5
 
+
 # move
 bind-key 4-Left window-move-left-big
 bind-key 4-Down window-move-down-big
@@ -86,8 +95,8 @@ bind-key M-Up window-resize-up-big
 bind-key M-Right window-resize-right-big
 
 # maximize
-bind-key M-h window-hmaximize
-bind-key M-v window-vmaximize
+# bind-key M-h window-hmaximize
+# bind-key M-v window-vmaximize
 
 # cycle
 bind-key 4-Tab window-cycle-ingroup

@@ -1,5 +1,7 @@
+# mod
 escape Super_L
 
+# startup
 exec picom --experimental-backends --config ~/.config/picom/picom.conf
 exec wal -R -o wal-extras.sh
 exec xsetroot -cursor_name left_ptr
@@ -9,6 +11,7 @@ exec /usr/lib/policykit-1-gnome/polkit-gnome-authentication-agent-1
 exec systemctl --user import-environment; exec systemctl --user restart redshift
 exec sh ~/.config/sdorfehs/launch.sh
 
+# general
 set font scientifica:bold:size=8:antialias=true
 set ignoreresizehints 1
 set padding 8 8 8 8
@@ -17,29 +20,48 @@ set gap 4
 set vscreens 5
 set msgwait 5
 
+# bar
 set bargravity nw
 set barborder 1
 set barpadding 10 10
 set barinpadding 0
 set barsticky 1
 
+# goto screen
+definekey top M-1 vselect 0
+definekey top M-2 vselect 1
+definekey top M-3 vselect 2
+definekey top M-4 vselect 3
+definekey top M-5 vselect 4
+
+# move window, goto screen
+definekey top C-1 vmove 0
+definekey top C-2 vmove 1
+definekey top C-3 vmove 2
+definekey top C-4 vmove 3
+definekey top C-5 vmove 4
+
+# volume
 definekey top XF86AudioRaiseVolume exec pactl set-sink-volume @DEFAULT_SINK@ +5%
 definekey top XF86AudioLowerVolume exec pactl set-sink-volume @DEFAULT_SINK@ -5%
 definekey top XF86AudioMute exec pactl set-sink-mute @DEFAULT_SINK@ toggle
 
+# music
 definekey top M-F10 exec mpc prev
 definekey top M-F11 exec mpc toggle
 definekey top M-F12 exec mpc next
 
+# pics
 bind equal exec sh -c 'ls -t "$HOME"/Pictures/* | head -50 | xargs nsxiv -rt'
 bind plus exec sh -c 'ls -t "$HOME"/Pictures/wow/* | head -50 | xargs nsxiv -rt'
 
+# some keys ...
 bind Return exec alacritty
 bind d exec rofi.sh
-bind g exec sh -c 'pkill glava || glava -d'
+bind g exec glava-toggle.sh
 bind e exec subl ~/.config/sdorfehs/config
-bind F12 exec wal -f random_user -o wal-extras.sh 
+bind F12 exec wal -f random_user -o wal-extras.sh
 
 bind C-Escape exec sdorfehs -c restart
 bind Escape exec sdorfehs -c abort
-bind Delete exec sdorfehs -c quit ; exec killall -q bar.sh
+bind Delete exec sdorfehs -c quit ; exec killall -q bar-emoji.sh2
