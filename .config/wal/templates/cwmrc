@@ -81,7 +81,6 @@ bind-key 4S-3 window-movetogroup-3
 bind-key 4S-4 window-movetogroup-4
 bind-key 4S-5 window-movetogroup-5
 
-
 # move
 bind-key 4-Left window-move-left-big
 bind-key 4-Down window-move-down-big

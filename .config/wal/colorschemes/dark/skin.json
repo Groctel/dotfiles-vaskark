@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/jason/Pictures/scarlett-johansson-under-the-skin-artwork-pic.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#141414",
+        "foreground": "#c4c4c4",
+        "cursor": "#092b43"
+    },
+    "colors": {
+        "color0": "#141414",
+        "color1": "#6a544c",
+        "color2": "#1b4655",
+        "color3": "#26728a",
+        "color4": "#105a7e",
+        "color5": "#c55948",
+        "color6": "#092b43",
+        "color7": "#c4c4c4",
+        "color8": "#2d2d2d",
+        "color9": "#956757",
+        "color10": "#1b5e75",
+        "color11": "#259abe",
+        "color12": "#0b78ad",
+        "color13": "#ff664c",
+        "color14": "#06385c",
+        "color15": "#ffffff"
+    }
+}
