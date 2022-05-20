@@ -28,18 +28,18 @@ set barinpadding 0
 set barsticky 1
 
 # goto screen
-definekey top M-1 vselect 0
-definekey top M-2 vselect 1
-definekey top M-3 vselect 2
-definekey top M-4 vselect 3
-definekey top M-5 vselect 4
+definekey top F1 vselect 0
+definekey top F2 vselect 1
+definekey top F3 vselect 2
+definekey top F4 vselect 3
+definekey top F5 vselect 4
 
 # move window, goto screen
-definekey top C-1 vmove 0
-definekey top C-2 vmove 1
-definekey top C-3 vmove 2
-definekey top C-4 vmove 3
-definekey top C-5 vmove 4
+definekey top M-F1 vmove 0
+definekey top M-F2 vmove 1
+definekey top M-F3 vmove 2
+definekey top M-F4 vmove 3
+definekey top M-F5 vmove 4
 
 # volume
 definekey top XF86AudioRaiseVolume exec pactl set-sink-volume @DEFAULT_SINK@ +5%
@@ -52,13 +52,14 @@ definekey top M-F11 exec mpc toggle
 definekey top M-F12 exec mpc next
 
 # pics
-bind equal exec sh -c 'ls -t "$HOME"/Pictures/* | head -50 | xargs nsxiv -rt'
-bind plus exec sh -c 'ls -t "$HOME"/Pictures/wow/* | head -50 | xargs nsxiv -rt'
+bind equal exec pics1.sh
+bind plus exec pics2.sh
 
 # some keys ...
 bind Return exec alacritty
 bind d exec rofi.sh
 bind g exec glava-toggle.sh
+bind G exec glava-flip.sh
 bind e exec subl ~/.config/sdorfehs/config
 bind F12 exec wal -f random_user -o wal-extras.sh
 

@@ -4,11 +4,12 @@
 # sdorfehs bar
 #
 
+# colours
 . "$HOME"/.cache/wal/colors.sh
 
 ###
 
-Music() {
+music() {
 
   TRACK="$(mpc current -f "%artist% ∎ %title%")"
   ICON="🎵"
@@ -16,7 +17,35 @@ Music() {
 
 }
 
-Uptime() {
+wifi() {
+
+  INTERFACE=$(ip addr | awk '/state UP/ {print $2}' | sed 's/://g')
+  WIFISTR=$(iwconfig "$INTERFACE" | grep "Link" | sed 's/ //g' | sed 's/LinkQuality=//g' | sed 's/\/.*//g') 
+
+  if [ -n "$WIFISTR" ] ; then
+
+    WIFISTR=$(( WIFISTR * 100 / 70 ))
+    ESSID=$(iwconfig "$INTERFACE" | grep ESSID | sed 's/ //g' | sed 's/.*://g' | sed 's/\"//g')
+
+    if [ "$WIFISTR" -ge 1 ] ; then
+
+      RKBPS=$(ifstat -i "$INTERFACE" 0.2s 1 | awk 'NR==3 {print $1}' | sed 's:\.[^|]*::g')
+      MKBPS=$(( RKBPS / 1024 ))
+      ICON="💨"
+
+      if [ "$RKBPS" -le 999 ]; then
+        echo "^fn(Emoji:size=7)$ICON^fn() $ESSID [$RKBPS Kb/s]"
+      else
+        echo "^fn(Emoji:size=7)$ICON^fn() $ESSID [$MKBPS Mb/s]"
+      fi
+
+    fi
+
+  fi
+
+}
+
+uptime() {
 
   UP=$("$HOME"/.config/scripts/uptime.sh)
   ICON="⏳"
@@ -24,7 +53,7 @@ Uptime() {
 
 }
 
-Cpu() {
+cpu() {
 
   CPU=$("$HOME"/.config/scripts/cpu.sh)
   ICON="🤖"
@@ -32,7 +61,7 @@ Cpu() {
 
 }
 
-Memory() {
+memory() {
 
   T=$(grep MemTotal < /proc/meminfo | awk '{print $2}')
   F=$(grep MemFree < /proc/meminfo | awk '{print $2}')
@@ -45,7 +74,7 @@ Memory() {
 
 }
 
-Battery() {
+battery() {
 
   CHARGE=$(acpi | grep "Not charging")
   CAPACITY=$(cat /sys/class/power_supply/BAT0/capacity)
@@ -60,7 +89,7 @@ Battery() {
 
 }
 
-Volume() {
+volume() {
 
   NOTMUTED=$(amixer -D pulse sget Master | grep "\[on\]")
 
@@ -75,7 +104,7 @@ Volume() {
 
 }
 
-Time() {
+time() {
 
   TIME="$(date "+%-I:%M %p")"
   ICON="⌚"
@@ -86,6 +115,6 @@ Time() {
 ###
 
 while true; do
-  echo "$(Music)  $(Uptime)  $(Cpu)  $(Memory)  $(Battery)  $(Volume)  $(Time)" > ~/.config/sdorfehs/bar
+  echo "$(wifi)  $(music)  $(uptime)  $(cpu)  $(memory)  $(battery)  $(volume)  $(time)" > ~/.config/sdorfehs/bar
   sleep 1
 done
