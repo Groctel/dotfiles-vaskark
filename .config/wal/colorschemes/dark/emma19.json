@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/jason/Pictures/9bsqlncwnsl81.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#191817",
+        "foreground": "#c5c5c5",
+        "cursor": "#7d574c"
+    },
+    "colors": {
+        "color0": "#191817",
+        "color1": "#ba887a",
+        "color2": "#90706c",
+        "color3": "#d7a899",
+        "color4": "#d7a899",
+        "color5": "#834b57",
+        "color6": "#7d574c",
+        "color7": "#c5c5c5",
+        "color8": "#33312e",
+        "color9": "#ffa58a",
+        "color10": "#cb847c",
+        "color11": "#ffceaf",
+        "color12": "#ffceaf",
+        "color13": "#b75469",
+        "color14": "#af6955",
+        "color15": "#ffffff"
+    }
+}

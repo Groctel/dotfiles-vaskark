@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/jason/Pictures/emma-stone-beautiful-actress-american-actress-5k-4610x6500-5151.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#1b1819",
+        "foreground": "#c6c5c5",
+        "cursor": "#94744d"
+    },
+    "colors": {
+        "color0": "#1b1819",
+        "color1": "#6f443d",
+        "color2": "#9b7c73",
+        "color3": "#b59656",
+        "color4": "#dcc198",
+        "color5": "#c25574",
+        "color6": "#94744d",
+        "color7": "#c6c5c5",
+        "color8": "#352f31",
+        "color9": "#9b5044",
+        "color10": "#da9784",
+        "color11": "#fcc95e",
+        "color12": "#ffffad",
+        "color13": "#FF5C8E",
+        "color14": "#cf9855",
+        "color15": "#fffefe"
+    }
+}
