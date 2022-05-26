@@ -5,8 +5,7 @@ escape Super_L
 exec picom --experimental-backends --config ~/.config/picom/picom.conf
 exec wal -R -o wal-extras.sh
 exec xsetroot -cursor_name left_ptr
-exec xscreensaver --no-splash
-exec xidle -program "/usr/local/bin/xscreensaver-command -lock" -timeout 300
+exec xautolock -time 10 -locker 'lock.sh' -killer 'systemctl suspend' -corners +0-0 -cornerdelay 2 &
 exec /usr/lib/policykit-1-gnome/polkit-gnome-authentication-agent-1
 exec systemctl --user import-environment; exec systemctl --user restart redshift
 exec sh ~/.config/sdorfehs/launch.sh

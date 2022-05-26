@@ -16,10 +16,10 @@ berryc text_focus_color     000000
 berryc text_unfocus_color   111111
 
 # Other options
-berryc smart_place "true"
-berryc draw_text   "true"
-berryc edge_lock   "true"
-berryc set_font    "scientifica-8:bold"
+berryc smart_place  "true"
+berryc draw_text    "true"
+berryc edge_lock    "true"
+berryc set_font     "scientifica-8:bold"
 
 # wal
 wal -q -R -o wal-extras.sh
@@ -39,7 +39,8 @@ picom --experimental-backends --config ~/.config/picom/picom.conf &
 # /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
 
 # lock
-xautolock -time 10 -locker 'lock.sh' -killer 'systemctl suspend' -corners 00-+ &
+xscreensaver --no-splash &
+xautolock -time 10 -locker 'xscreensaver-command -lock' -killer 'systemctl suspend' -corners +0-0 -cornerdelay 2 &
 
 # status bar
 lemonbar-current &

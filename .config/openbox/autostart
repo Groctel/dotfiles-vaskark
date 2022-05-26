@@ -9,7 +9,7 @@ picom --experimental-backends --config ~/.config/picom/picom.conf &
 # /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
 
 # lock
-xautolock -time 10 -locker 'lock.sh' -killer 'systemctl suspend' -corners 00-+ &
+xautolock -time 10 -locker 'lock.sh' -killer 'systemctl suspend' -corners +0-0 -cornerdelay 2 &
 
 # redshift
 systemctl --user import-environment; systemctl --user restart redshift
@@ -18,10 +18,13 @@ systemctl --user import-environment; systemctl --user restart redshift
 bash "$HOME"/.fehbg &
 
 # wal
-wal -q -R -o -wal-extras.sh
+wal -R -o -wal-extras.sh
 
 # status bar
 polybar-current &
 
 # glava
-sed -i "s|#request setgeometry.*$|#request setgeometry 0 0 1920 1080|g" ~/.config/glava/rc.glsl
+w=$(( $(xdotool getdisplaygeometry | awk '{print $1}') / 1 ))
+h=$(( $(xdotool getdisplaygeometry | awk '{print $2}') ))
+x=$(( $(xdotool getdisplaygeometry | awk '{print $1}') / 2 - (w/2) ))
+sed -i "s|#request setgeometry.*$|#request setgeometry $x 0 $w $h|g" ~/.config/glava/rc.glsl

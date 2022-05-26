@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/jason/Pictures/alexandra-daddario-5k-2019-f3.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#161717",
+        "foreground": "#c4c5c5",
+        "cursor": "#ac7a70"
+    },
+    "colors": {
+        "color0": "#161717",
+        "color1": "#6a1e1d",
+        "color2": "#1b5654",
+        "color3": "#ba8d7e",
+        "color4": "#865e56",
+        "color5": "#a74f5b",
+        "color6": "#ac7a70",
+        "color7": "#c4c5c5",
+        "color8": "#2e3030",
+        "color9": "#921e1c",
+        "color10": "#1b7774",
+        "color11": "#ffad8f",
+        "color12": "#bc7061",
+        "color13": "#E9566A",
+        "color14": "#f2927f",
+        "color15": "#feffff"
+    }
+}

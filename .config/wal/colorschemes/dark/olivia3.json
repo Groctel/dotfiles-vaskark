@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/jason/Pictures/Olivia_Munn_wallpaper_953675.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#151515",
+        "foreground": "#c4c4c4",
+        "cursor": "#48606d"
+    },
+    "colors": {
+        "color0": "#151515",
+        "color1": "#87604b",
+        "color2": "#b89081",
+        "color3": "#8c7970",
+        "color4": "#694438",
+        "color5": "#7a2c3c",
+        "color6": "#48606d",
+        "color7": "#c4c4c4",
+        "color8": "#2e2e2e",
+        "color9": "#bd7853",
+        "color10": "#ffb193",
+        "color11": "#c69781",
+        "color12": "#92533e",
+        "color13": "#a92e47",
+        "color14": "#518099",
+        "color15": "#ffffff"
+    }
+}

@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/jason/Pictures/gdf5euudxyn51-1.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#151516",
+        "foreground": "#c4c4c4",
+        "cursor": "#e0a98b"
+    },
+    "colors": {
+        "color0": "#151516",
+        "color1": "#6a403b",
+        "color2": "#87554a",
+        "color3": "#95675b",
+        "color4": "#505257",
+        "color5": "#c58971",
+        "color6": "#e0a98b",
+        "color7": "#c4c4c4",
+        "color8": "#2d2d2f",
+        "color9": "#944a41",
+        "color10": "#bd6552",
+        "color11": "#d17c66",
+        "color12": "#5d657b",
+        "color13": "#ffa97e",
+        "color14": "#ffd49d",
+        "color15": "#ffffff"
+    }
+}

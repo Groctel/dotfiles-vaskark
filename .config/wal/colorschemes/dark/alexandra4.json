@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/jason/Pictures/alexandra-daddario-hd-wallpapers-780706-1.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#191718",
+        "foreground": "#c5c5c5",
+        "cursor": "#7e5543"
+    },
+    "colors": {
+        "color0": "#191718",
+        "color1": "#673d2f",
+        "color2": "#644360",
+        "color3": "#b3826f",
+        "color4": "#906b5b",
+        "color5": "#a74f5b",
+        "color6": "#7e5543",
+        "color7": "#c5c5c5",
+        "color8": "#332e31",
+        "color9": "#8f4a33",
+        "color10": "#8c4c84",
+        "color11": "#fba07d",
+        "color12": "#ca8567",
+        "color13": "#E9566A",
+        "color14": "#b0694a",
+        "color15": "#ffffff"
+    }
+}
