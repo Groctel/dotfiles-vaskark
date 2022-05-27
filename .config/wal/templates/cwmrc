@@ -18,8 +18,9 @@ color menufg '{color0}'
 
 # ignore
 ignore Bar
-ignore Polybar
 ignore GLava
+ignore Plank
+ignore Polybar
 
 # unbind
 unbind-key all
