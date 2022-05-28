@@ -60,8 +60,8 @@ bind-key M-F11 'mpc toggle'
 bind-key M-F12 'mpc next'
 
 # statusbar
-bind-key 4-semicolon lemonbar-menu.sh
-bind-key 4S-semicolon 'pkill lemonbar'
+bind-key 4-semicolon lemonbar-toggle.sh
+bind-key 4S-semicolon lemonbar-menu.sh
 
 # volume
 bind-key XF86AudioRaiseVolume 'pactl set-sink-volume @DEFAULT_SINK@ +5%'
