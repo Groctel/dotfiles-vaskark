@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/jason/Pictures/170620-allison-williams-rf-1160-1.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#191717",
+        "foreground": "#c5c5c5",
+        "cursor": "#e1b59d"
+    },
+    "colors": {
+        "color0": "#191717",
+        "color1": "#958984",
+        "color2": "#bc927c",
+        "color3": "#674339",
+        "color4": "#875e4a",
+        "color5": "#895057",
+        "color6": "#e1b59d",
+        "color7": "#c5c5c5",
+        "color8": "#332e2e",
+        "color9": "#d3aa99",
+        "color10": "#ffb78c",
+        "color11": "#90513f",
+        "color12": "#bd7552",
+        "color13": "#c05966",
+        "color14": "#ffe4b3",
+        "color15": "#ffffff"
+    }
+}

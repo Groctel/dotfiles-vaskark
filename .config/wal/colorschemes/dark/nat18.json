@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/jason/Pictures/actresses-natalie-portman-monochrome-wallpaper-83ee34cce290678cd16253bdfed59848.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#161717",
+        "foreground": "#c4c5c5",
+        "cursor": "#959bb3"
+    },
+    "colors": {
+        "color0": "#161717",
+        "color1": "#634647",
+        "color2": "#5f5058",
+        "color3": "#bc9391",
+        "color4": "#394a5c",
+        "color5": "#806f78",
+        "color6": "#959bb3",
+        "color7": "#c4c5c5",
+        "color8": "#2e3030",
+        "color9": "#8b5052",
+        "color10": "#865c73",
+        "color11": "#ffaba6",
+        "color12": "#405f81",
+        "color13": "#b5809c",
+        "color14": "#acbcfd",
+        "color15": "#feffff"
+    }
+}
