@@ -4,7 +4,7 @@
 . "$HOME"/.cache/wal/colors.sh
 
 # offset
-x=$(( $(xdotool getdisplaygeometry | awk '{print $1}') / 7 ))
+x=$(( $(xdotool getdisplaygeometry | awk '{print $1}') / 6 ))
 y=10
 w=$(( $(xdotool getdisplaygeometry | awk '{print $1}') - (2*x) ))
 h=30
