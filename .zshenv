@@ -13,11 +13,11 @@ export HISTFILE="$ZDOTDIR/zhistory"
 export HISTSIZE=10000
 export SAVEHIST=10000
 
-# x11
-export XINITRC="$XDG_CONFIG_HOME/x11/xinitrc"
-
 # gtk-2.0
 export GTK2_RC_FILES="$XDG_CONFIG_HOME/gtk-2.0/gtkrc-2.0"
+
+# plank
+export XDG_SESSION_TYPE=x11
 
 # less
 export LESSHISTFILE=""
