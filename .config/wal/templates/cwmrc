@@ -35,8 +35,8 @@ bind-key 4-h window-hide
 bind-key 4-m window-maximize
 bind-key 4-f window-fullscreen
 bind-key 4-s window-stick
-bind-key 4-F1 thunar
-bind-key 4S-F1 thunar-pkexec
+bind-key 4-F1 nemo
+bind-key 4S-F1 nemo-pkexec
 bind-key 4-F2 google-chrome
 bind-key 4-F5 date.sh
 bind-key 4-F6 nmdm.sh

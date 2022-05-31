@@ -3,8 +3,6 @@
 # misc
 xset +fp "$HOME"/.local/share/fonts/misc,/usr/local/share/fonts/spleen
 xrdb -merge "$HOME"/.Xresources
-# plank
-export XDG_SESSION_TYPE=x11
 
 # ssh-agent
 if [ ! -S ~/.ssh/ssh_auth_sock ]; then
