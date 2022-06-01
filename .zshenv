@@ -17,7 +17,7 @@ export SAVEHIST=10000
 export GTK2_RC_FILES="$XDG_CONFIG_HOME/gtk-2.0/gtkrc-2.0"
 
 # plank
-export XDG_SESSION_TYPE=x11
+export XDG_SESSION_TYPE='x11'
 
 # less
 export LESSHISTFILE=""
