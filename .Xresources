@@ -28,6 +28,8 @@ URxvt.keysym.M-Up: command:\033]720;1\007
 URxvt.keysym.M-k: command:\033]720;1\007
 URxvt.keysym.M-Down: command:\033]721;1\007
 URxvt.keysym.M-j: command:\033]721;1\007
+URxvt.keysym.M-C: ©
+URxvt.keysym.M-R: ®
 
 ! URxvt Extensions
 URxvt.perl-ext-common: default,matcher,selection-to-clipboard,keyboard-select,resize-font,bell-command
@@ -61,6 +63,10 @@ XTerm*on3Clicks: line
 XTerm*saveLines: 2000
 XTerm*visualBell: true
 XTerm*selectToClipboard: true
+
+! X cursor
+! Xcursor.theme: Paper
+! Xcursor.size: 16
 
 ! XTerm Keybindings
 XTerm.vt100.translations: #override \n\
