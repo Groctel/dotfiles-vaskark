@@ -1,9 +1,9 @@
-# set
+# options
 setopt autocd autopushd hist_ignore_all_dups inc_append_history extended_history share_history
 stty stop undef # Disable ctrl-s to freeze terminal.
 
 # aliases
-[ -f "$ZDOTDIR/aliases" ] && source "$ZDOTDIR/aliases"
+[ -f "$ZDOTDIR/.aliases" ] && source "$ZDOTDIR/.aliases"
 
 # basic auto/tab complete:
 zmodload zsh/complist
@@ -11,7 +11,6 @@ autoload -Uz compinit; compinit
 _comp_options+=(globdots) # Include hidden files
 zstyle ':completion:*' matcher-list 'm:{a-zA-Z}={A-Za-z}' 'r:|?=**'
 zstyle ':completion:*' menu select
-zstyle ':completion::complete:*' gain-privileges 1
 
 # use vim keys in tab complete menu:
 bindkey -M menuselect 'h' vi-backward-char
@@ -43,7 +42,7 @@ zle-line-init() {
 }
 zle -N zle-line-init
 echo -ne '\e[6 q' # Use beam shape cursor on startup.
-preexec() { echo -ne '\e[6 q' ;} # Use beam shape cursor for each new prompt.
+preexec() { echo -ne '\e[6 q' ;} # Use beam shape cursor for each new prompt
 
 # edit line
 autoload edit-command-line; zle -N edit-command-line
@@ -79,11 +78,6 @@ f() {
 # fzf
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
-# nala
-autoload bashcompinit
-bashcompinit
-source /usr/share/bash-completion/completions/nala
-
 # functions
 source $ZDOTDIR/functions/fzf-edit 2>/dev/null
 source $ZDOTDIR/functions/fzf-kill 2>/dev/null
@@ -92,11 +86,6 @@ source $ZDOTDIR/functions/fzf-git 2>/dev/null
 
 # extract
 source $ZDOTDIR/plugins/zsh-extract/extract.plugin.zsh 2>/dev/null
-
-# completions
-source $ZDOTDIR/plugins/zsh-completions/zsh-completions.plugin.zsh 2>/dev/null
-zstyle ':completion:*:*:*:*:descriptions' format '%F{magenta}-- %d --%f'
-zstyle ':completion:*:default' list-colors ${(s.:.)LS_COLORS}
 
 # autosuggestions
 source $ZDOTDIR/plugins/zsh-autosuggestions/zsh-autosuggestions.plugin.zsh 2>/dev/null
@@ -107,10 +96,6 @@ bindkey '^ ' autosuggest-toggle
 source $ZDOTDIR/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.plugin.zsh 2>/dev/null
 ZSH_HIGHLIGHT_HIGHLIGHTERS=(brackets cursor line main pattern regexp root)
 ZSH_HIGHLIGHT_PATTERNS+=('rm -rf *' 'fg=black,bold,bg=red')
-
-# history filter
-# bindkey "^[[A" history-beginning-search-backward
-# bindkey "^[[B" history-beginning-search-forward
 
 # pure
 # fpath+=~/.pure

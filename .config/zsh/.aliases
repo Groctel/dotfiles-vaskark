@@ -43,10 +43,10 @@ alias ll='ls -al'
 alias lt='ls -T -L 2'
 
 # zsh
+alias za="$EDITOR $ZDOTDIR/.aliases"
 alias zc="$EDITOR $ZDOTDIR/.zshrc"
-alias za="$EDITOR $ZDOTDIR/aliases"
 alias ze="$EDITOR $HOME/.zshenv"
-alias zh="rm -f $ZDOTDIR/zhistory && clear && exec zsh" 
+alias zh="rm -f $ZDOTDIR/.zhistory && clear && exec zsh" 
 alias zs="source $HOME/.zshenv && clear && exec zsh"
 
 # xrdb
@@ -83,11 +83,6 @@ alias w1='wal -f random_user -o wal-extras.sh'
 alias w2='wal -f random -o wal-extras.sh'
 alias fw='fzf-wal.sh'
 
-# system
-alias upd8='sudo apt update;sudo apt full-upgrade;sudo apt autoremove;sudo apt clean'
-# alias nu='sudo nala upgrade -y'
-alias shut='poweroff'
-
 # startx
 alias startx='startx $HOME/.xinitrc'
 
@@ -111,3 +106,7 @@ alias s3='sudo ninja -C build install'
 # systemd
 alias sc='systemctl'
 alias scu='systemctl --user'
+
+# system
+alias upd8='sudo apt update;sudo apt full-upgrade;sudo apt autoremove;sudo apt clean'
+alias shut='poweroff'

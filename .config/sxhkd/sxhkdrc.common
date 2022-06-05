@@ -16,11 +16,11 @@ super + {d,x}
 
 # lock
 super +  Escape
-	lock.sh
+	xscreensaver-command -quiet -lock
 
 # files
 super + {_,shift +} F1
-	{nemo,nemo-pkexec}
+	{thunar,thunar-pkexec}
 
 # browsers
 super + {_,shift +} F2
@@ -48,7 +48,7 @@ super + F7
 
 # music
 alt + {F10,F11,F12}
-	mpc -q {prev,toggle,next} && mpd-notify.sh
+	mpc -q {prev,toggle,next}
 alt + shift + {F10,F12}
 	mpc seek {-00:00:05,+00:00:05}
 alt + F9
