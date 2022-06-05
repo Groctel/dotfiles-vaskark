@@ -13,7 +13,6 @@ export SSH_AUTH_SOCK=~/.ssh/ssh_auth_sock
 
 # wm
 session=${1:-berry}
-
 case ${session} in
     berry) /usr/local/bin/berry ;;
     bspwm) /usr/bin/bspwm ;;
