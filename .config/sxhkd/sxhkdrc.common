@@ -23,8 +23,8 @@ super + {_,shift +} F1
 	{thunar,thunar-pkexec}
 
 # browsers
-super + {_,shift +} F2
-	{google-chrome,firefox}
+super + F2
+	google-chrome
 
 # feh
 super + F3
@@ -48,7 +48,7 @@ super + F7
 
 # music
 alt + {F10,F11,F12}
-	mpc -q {prev,toggle,next}
+	mpc {prev,toggle,next}
 alt + shift + {F10,F12}
 	mpc seek {-00:00:05,+00:00:05}
 alt + F9
@@ -72,6 +72,6 @@ XF86MonBrightness{Up,Down}
 super + {_,shift +,ctrl +} F12
 	wal -q {-f random_user,-R,-f random} -o wal-extras.sh
         
-# sxiv
+# pics
 super + {_,shift +} equal
 	ls -t {"$HOME"/Pictures/*,"$HOME"/Pictures/wow/*} | head -50 | xargs nsxiv -rt
