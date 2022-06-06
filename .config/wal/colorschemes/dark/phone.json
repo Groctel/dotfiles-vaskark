@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/jason/Pictures/hbe6stpiybt81.png",
+    "alpha": "100",
+    "special": {
+        "background": "#191819",
+        "foreground": "#c5c5c5",
+        "cursor": "#7b5c47"
+    },
+    "colors": {
+        "color0": "#191819",
+        "color1": "#5e4a45",
+        "color2": "#5b5158",
+        "color3": "#67636d",
+        "color4": "#424861",
+        "color5": "#426185",
+        "color6": "#7b5c47",
+        "color7": "#c5c5c5",
+        "color8": "#323032",
+        "color9": "#84594f",
+        "color10": "#815e76",
+        "color11": "#83739b",
+        "color12": "#4b5788",
+        "color13": "#487db9",
+        "color14": "#ac754f",
+        "color15": "#ffffff"
+    }
+}

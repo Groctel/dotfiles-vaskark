@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/jason/Pictures/jaimie-alexander-2017-45.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#161516",
+        "foreground": "#c4c4c4",
+        "cursor": "#36678f"
+    },
+    "colors": {
+        "color0": "#161516",
+        "color1": "#733535",
+        "color2": "#7b757d",
+        "color3": "#284264",
+        "color4": "#806045",
+        "color5": "#bc7166",
+        "color6": "#36678f",
+        "color7": "#c4c4c4",
+        "color8": "#2f2d2f",
+        "color9": "#a03939",
+        "color10": "#a788b2",
+        "color11": "#2a548b",
+        "color12": "#b37b4c",
+        "color13": "#ff8471",
+        "color14": "#3987c6",
+        "color15": "#ffffff"
+    }
+}

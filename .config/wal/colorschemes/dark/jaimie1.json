@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/jason/Pictures/jaimie-alexander-in-blindspot-season-2-to.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#181818",
+        "foreground": "#c5c5c5",
+        "cursor": "#80888e"
+    },
+    "colors": {
+        "color0": "#181818",
+        "color1": "#354552",
+        "color2": "#6c716d",
+        "color3": "#a78e79",
+        "color4": "#465661",
+        "color5": "#999c90",
+        "color6": "#80888e",
+        "color7": "#c5c5c5",
+        "color8": "#313131",
+        "color9": "#3c5a73",
+        "color10": "#7ea185",
+        "color11": "#ebb68a",
+        "color12": "#507188",
+        "color13": "#d0dea7",
+        "color14": "#94b3ca",
+        "color15": "#ffffff"
+    }
+}
