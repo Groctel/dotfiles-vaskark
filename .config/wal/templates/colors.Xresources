@@ -55,11 +55,6 @@ URxvt*borderColor:  {background.alpha}
 *.color66: {color0}
 *color66:  {color0}
 
-! sxiv
-Sxiv.font: scientifica-8
-Sxiv.background: {color0}
-Sxiv.foreground: {color5}
-
 ! nsxiv
 Nsxiv.bar.font: scientifica-8
 Nsxiv.bar.background: {color5}
