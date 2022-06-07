@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/jason/Pictures/eva-green-women-freckles-red-lipstick-wallpaper-bfb1d01cbbcf81cf32e6deb82a93d377-m.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#171616",
+        "foreground": "#c5c4c4",
+        "cursor": "#bc9583"
+    },
+    "colors": {
+        "color0": "#171616",
+        "color1": "#865d4e",
+        "color2": "#987467",
+        "color3": "#d0a5ad",
+        "color4": "#d5b39f",
+        "color5": "#733c35",
+        "color6": "#bc9583",
+        "color7": "#c5c4c4",
+        "color8": "#302e2e",
+        "color9": "#bb7257",
+        "color10": "#d68f75",
+        "color11": "#ffbed1",
+        "color12": "#ffe2b6",
+        "color13": "#a04539",
+        "color14": "#ffba95",
+        "color15": "#fffefe"
+    }
+}
