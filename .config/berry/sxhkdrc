@@ -15,16 +15,8 @@ super + shift + semicolon
 #    polybar-menu.sh
 
 # glava
-super + g
-    pkill glava || glava -d 2>/dev/null
-
-# glava flip
-super + shift + g
-    glava-flip.sh
-
-# viz
-super + v
-    viz.sh
+super + {_,shift +} g
+    {pkill glava || glava -d 2>/dev/null,glava-flip.sh}
 
 # subl
 super + e
@@ -74,13 +66,13 @@ super + m
 super + f
     berryc fullscreen
 
-super + o
-    berryc window_move_absolute 0 0
+super + {_,shift +} o
+    {berryc window_move_absolute 0 0,~/.config/berry/bottom_left.sh}
 
-super + p
-    ~/.config/berry/move_right.sh
+super + {_,shift +} p
+    {~/.config/berry/top_right.sh,~/.config/berry/bottom_right.sh}
 
-super + shift + {o, p}
+super + ctrl + {o, p}
     berryc {snap_left, snap_right}
 
 super + n
