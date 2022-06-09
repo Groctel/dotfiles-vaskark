@@ -4,10 +4,10 @@
 # move window to bottom left
 #
 
-# height of root
+# root
 y=$(xwininfo -root | awk '/Height:/ { print $2 }')
 
-# height of window
+# window
 h=$(xwininfo -id "$(xdotool getactivewindow)" | awk '/Height:/ { print $2 }')
 
 # move

@@ -4,10 +4,10 @@
 # move window to top right
 #
 
-# width of root
+# root
 x=$(xwininfo -root | awk '/Width:/ { print $2 }')
 
-# width of window
+# window
 w=$(xwininfo -id "$(xdotool getactivewindow)" | awk '/Width:/ { print $2 }')
 
 # move
