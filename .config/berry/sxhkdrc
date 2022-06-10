@@ -66,8 +66,8 @@ super + m
 super + f
     berryc fullscreen
 
-super + z; {u,i,o,p,h,j,k,l}
-    {~/.config/berry/top_left.sh,~/.config/berry/bottom_left.sh,~/.config/berry/bottom_right.sh,~/.config/berry/top_right.sh,~/.config/berry/center_left.sh,~/.config/berry/center_bottom.sh,~/.config/berry/center_top.sh,~/.config/berry/center_right.sh}
+super + {u,i,o,p}
+    {berryc window_move_absolute 0 0,~/.config/berry/bottom_left.sh,~/.config/berry/bottom_right.sh,~/.config/berry/top_right.sh}
 
 super + ctrl + {o, p}
     berryc {snap_left, snap_right}

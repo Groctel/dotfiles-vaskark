@@ -16,4 +16,4 @@ h=$(xwininfo -id "$(xdotool getactivewindow)" | awk '/Height:/ { print $2 }')
 b=4
 
 # move
-xdo move -x $(( x/2 - w/2 -b/2 )) -y $(( y/2 - h/2 -b/2 ))
+xdo move -x $(( x/2 - w/2 -b/2 )) -y $(( y/2 - h/2 - b/2 ))

@@ -12,5 +12,8 @@ y=$(xwininfo -root | awk '/Height:/ { print $2 }')
 w=$(xwininfo -id "$(xdotool getactivewindow)" | awk '/Width:/ { print $2 }')
 h=$(xwininfo -id "$(xdotool getactivewindow)" | awk '/Height:/ { print $2 }')
 
+# titlebar height
+b=24
+
 # move
-berryc window_move_absolute $(( x/2 - w/2 )) $(( y - h - 24 ))
+berryc window_move_absolute $(( x/2 - w/2 )) $(( y - h - b ))
