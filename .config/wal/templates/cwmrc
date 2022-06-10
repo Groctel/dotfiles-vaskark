@@ -28,26 +28,26 @@ unbind-mouse all
 
 # keys
 bind-key 4-Return alacritty
-bind-key 4-d rofi.sh
-bind-key 4-x dmenu.sh
+bind-key 4-d 'rofi.sh'
+bind-key 4-x 'dmenu.sh'
 bind-key 4-w window-close
 bind-key 4-h window-hide
 bind-key 4-m window-maximize
 bind-key 4-f window-fullscreen
-bind-key 4-c /home/jason/.config/cwm/center.sh
-bind-key 4-o /home/jason/.config/cwm/top_left.sh
-bind-key 4-p /home/jason/.config/cwm/top_right.sh
-bind-key 4S-o /home/jason/.config/cwm/bottom_left.sh
-bind-key 4S-p /home/jason/.config/cwm/bottom_right.sh
+bind-key 4-c '/home/jason/.config/cwm/center.sh'
+bind-key 4-u '/home/jason/.config/cwm/top_left.sh'
+bind-key 4-i '/home/jason/.config/cwm/bottom_left.sh'
+bind-key 4-o '/home/jason/.config/cwm/bottom_right.sh'
+bind-key 4-p '/home/jason/.config/cwm/top_right.sh'
 bind-key 4-s window-stick
 bind-key 4-F1 nemo
 bind-key 4S-F1 nemo-pkexec
 bind-key 4-F2 google-chrome
-bind-key 4-F5 date.sh
-bind-key 4-F6 nmdm.sh
-bind-key 4-F7 man2pdf.sh
-bind-key 4-equal pics1.sh
-bind-key 4S-equal pics2.sh
+bind-key 4-F5 'date.sh'
+bind-key 4-F6 'nmdm.sh'
+bind-key 4-F7 'man2pdf.sh'
+bind-key 4-equal 'pics1.sh'
+bind-key 4S-equal 'pics2.sh'
 bind-key 4S-r restart
 bind-key 4-Delete quit
 
@@ -56,8 +56,8 @@ bind-key 4-F12 'wal -f random_user -o wal-extras.sh'
 bind-key 4S-F12 'wal -R -o wal-extras.sh'
 
 # glava
-bind-key 4-g glava-toggle.sh
-bind-key 4S-g glava-flip.sh
+bind-key 4-g 'glava-toggle.sh'
+bind-key 4S-g 'glava-flip.sh'
 
 # music
 bind-key M-F10 'mpc prev'
@@ -65,8 +65,8 @@ bind-key M-F11 'mpc toggle'
 bind-key M-F12 'mpc next'
 
 # statusbar
-bind-key 4-semicolon lemonbar-toggle.sh
-bind-key 4S-semicolon lemonbar-menu.sh
+bind-key 4-semicolon 'lemonbar-toggle.sh'
+bind-key 4S-semicolon 'lemonbar-menu.sh'
 
 # volume
 bind-key XF86AudioRaiseVolume 'pactl set-sink-volume @DEFAULT_SINK@ +5%'
