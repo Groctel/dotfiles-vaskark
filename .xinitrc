@@ -16,7 +16,7 @@ session=${1:-berry}
 case ${session} in
     berry) /usr/local/bin/berry ;;
     bspwm) /usr/bin/bspwm ;;
-    cwm) "$HOME"/.config/cwm/autostart.sh ;;
+    cwm) "$HOME"/.config/cwm/autostart ;;
     gnome) /usr/bin/gnome-session ;;
     openbox) /usr/bin/openbox-session ;;
     sdorfehs) /usr/local/bin/sdorfehs ;;
