@@ -1,3 +1,5 @@
+#!/bin/sh
+
 # general
 fontname "scientifica:size=8"
 gap 8 8 8 8
@@ -34,6 +36,11 @@ bind-key 4-w window-close
 bind-key 4-h window-hide
 bind-key 4-m window-maximize
 bind-key 4-f window-fullscreen
+bind-key 4-c /home/jason/.config/cwm/center.sh
+bind-key 4-o /home/jason/.config/cwm/top_left.sh
+bind-key 4-p /home/jason/.config/cwm/top_right.sh
+bind-key 4S-o /home/jason/.config/cwm/bottom_left.sh
+bind-key 4S-p /home/jason/.config/cwm/bottom_right.sh
 bind-key 4-s window-stick
 bind-key 4-F1 nemo
 bind-key 4S-F1 nemo-pkexec
