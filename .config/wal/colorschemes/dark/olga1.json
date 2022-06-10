@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/jason/Pictures/1920x1200-px-brunettes-celebrity-close-faces-hair-1787125-wallhere.com.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#171617",
+        "foreground": "#c5c4c5",
+        "cursor": "#533b38"
+    },
+    "colors": {
+        "color0": "#171617",
+        "color1": "#644a44",
+        "color2": "#9f7470",
+        "color3": "#726366",
+        "color4": "#a58e8e",
+        "color5": "#984267",
+        "color6": "#533b38",
+        "color7": "#c5c4c5",
+        "color8": "#302e30",
+        "color9": "#8c594d",
+        "color10": "#e08880",
+        "color11": "#a1727c",
+        "color12": "#eaa4a4",
+        "color13": "#D34783",
+        "color14": "#74453f",
+        "color15": "#fffeff"
+    }
+}
