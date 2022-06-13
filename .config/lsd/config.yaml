@@ -30,7 +30,7 @@ color:
   # when specifying <theme-file-name>, lsd will look up theme file
   # XDG Base Directory if relative, e.g. ~/.config/lsd/themes/<theme-file-name>.yaml,
   # The file path if absolute
-  theme: default
+  theme: wal
 
 # == Date ==
 # This specifies the date format for the date column. The freeform format
@@ -43,7 +43,7 @@ date: +%d %b %Y %I:%M:%S %p
 # == Dereference ==
 # Whether to dereference symbolic links.
 # Possible values: false, true
-dereference: true
+dereference: false
 
 # == Display ==
 # What items to display. Do not specify this for the default behavior.
@@ -55,7 +55,7 @@ icons:
   # When to use icons.
   # When "classic" is set, this is set to "never".
   # Possible values: always, auto, never
-  when: always
+  when: auto
   # Which icon theme to use.
   # Possible values: fancy, unicode
   theme: fancy
@@ -93,6 +93,11 @@ recursion:
 # Possible values: default, short, bytes
 size: default
 
+# == Permission ==
+# Specify the format of the permission column
+# Possible value: rwx, octal
+permission: rwx
+
 # == Sorting ==
 sorting:
   # Specify what to sort by.
@@ -116,6 +121,16 @@ no-symlink: true
 # Possible values: false, true
 total-size: false
 
+# == Hyperlink ==
+# Attach hyperlink to filenames
+# Possible values: always, auto, never
+hyperlink: never
+
 # == Symlink arrow ==
 # Specifies how the symlink arrow display, chars in both ascii and utf8
 symlink-arrow: ⇒
+
+# == Header ==
+# Whether to display block headers.
+# Possible values: false, true
+header: false
