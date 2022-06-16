@@ -2,6 +2,10 @@
 export PATH="$HOME/.local/bin:$PATH"
 typeset -U PATH path
 
+# locale
+export LC_ALL="en_CA.UTF-8"
+export LC_CTYPE="en_CA.UTF-8"
+
 # xdg
 export XDG_CONFIG_HOME="$HOME/.config"
 export XDG_DATA_HOME="$HOME/.local/share"
@@ -17,7 +21,7 @@ export SAVEHIST=10000
 export GTK2_RC_FILES="$XDG_CONFIG_HOME/gtk-2.0/gtkrc-2.0"
 
 # plank
-export XDG_SESSION_TYPE='x11'
+export XDG_SESSION_TYPE="x11"
 
 # less
 export LESSHISTFILE=""
