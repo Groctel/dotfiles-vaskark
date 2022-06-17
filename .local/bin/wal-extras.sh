@@ -25,6 +25,12 @@ if [ "$(pgrep -x sdorfehs)" ]; then
         sdorfehs -c "set fwcolor $color2"
 fi
 
+# hypr
+if [ "$(pgrep -x Hypr)" ]; then
+	hypr2=$(sed -n 3p ~/.cache/wal/colors | sed 's/#//')
+	sed -i "s|col.active_border.*$|col.active_border=0x77""$hypr2""|g" ~/.config/hypr/hypr.conf
+fi
+
 # cwm
 [ "$(pgrep -x cwm)" ] && pkill -SIGHUP cwm
 
