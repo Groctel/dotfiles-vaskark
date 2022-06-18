@@ -184,21 +184,6 @@ Memory() {
 
 }
 
-# Volume() {
-
-# 	NOTMUTED=$(amixer -D pulse sget Master | grep "\[on\]")
-
-# 	if [ -n "$NOTMUTED" ] ; then
-# 		VOL=$(pactl list sinks | awk '/Volume: front-left/ { print $5 }' | sed 's/,//')
-# 		ICON=""
-# 		echo "%{A3:pavucontrol:}%{A4:pactl set-sink-volume @DEFAULT_SINK@ +5%:}%{A5:pactl set-sink-volume @DEFAULT_SINK@ -5%:}%{F$color4}$ICON%{F-} $VOL% %{A}%{A}%{A}"
-# 	else
-# 		ICON=""
-# 		echo "%{F#555}$ICON%{F-} --% "
-# 	fi
-
-# }
-
 Volume() {
 
 	MUTE=$(pactl list sinks | awk '/Mute:/ { print $2 }')
