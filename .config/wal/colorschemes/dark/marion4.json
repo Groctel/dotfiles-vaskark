@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/jason/Pictures/women-brunette-sitting-actress-blue-Marion-Cotillard-85971-wallhere.com-1.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#161616",
+        "foreground": "#c4c4c4",
+        "cursor": "#667d8e"
+    },
+    "colors": {
+        "color0": "#161616",
+        "color1": "#6a6a6a",
+        "color2": "#364442",
+        "color3": "#243950",
+        "color4": "#507086",
+        "color5": "#8f2030",
+        "color6": "#667d8e",
+        "color7": "#c4c4c4",
+        "color8": "#2f2f2f",
+        "color9": "#86868a",
+        "color10": "#3c6259",
+        "color11": "#27496f",
+        "color12": "#5894bd",
+        "color13": "#C51E36",
+        "color14": "#73a6ca",
+        "color15": "#fefefe"
+    }
+}

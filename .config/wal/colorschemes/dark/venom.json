@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/jason/Pictures/06w0fhoogc691.png",
+    "alpha": "100",
+    "special": {
+        "background": "#141414",
+        "foreground": "#c4c4c4",
+        "cursor": "#635b4f"
+    },
+    "colors": {
+        "color0": "#141414",
+        "color1": "#683b39",
+        "color2": "#415059",
+        "color3": "#af9f8d",
+        "color4": "#495963",
+        "color5": "#683b39",
+        "color6": "#635b4f",
+        "color7": "#c4c4c4",
+        "color8": "#2d2d2d",
+        "color9": "#91433f",
+        "color10": "#4a6a7d",
+        "color11": "#f7cfa2",
+        "color12": "#53768b",
+        "color13": "#91433f",
+        "color14": "#8c785b",
+        "color15": "#ffffff"
+    }
+}

@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/jason/Pictures/dlihshsnsk591.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#17191d",
+        "foreground": "#c5c5c6",
+        "cursor": "#4c617a"
+    },
+    "colors": {
+        "color0": "#17191d",
+        "color1": "#76909a",
+        "color2": "#723b53",
+        "color3": "#d2907e",
+        "color4": "#777680",
+        "color5": "#d9715e",
+        "color6": "#4c617a",
+        "color7": "#c5c5c6",
+        "color8": "#2d3039",
+        "color9": "#87c3d9",
+        "color10": "#9f416a",
+        "color11": "#ffae8d",
+        "color12": "#8d89b6",
+        "color13": "#ff8465",
+        "color14": "#557cab",
+        "color15": "#fefeff"
+    }
+}
