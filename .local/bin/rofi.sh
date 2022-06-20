@@ -6,7 +6,7 @@
 
 rofi -show drun \
 -display-drun '🚀' \
--display-run '🍉' \
+-display-run '👾' \
 -display-ssh '💻' \
 -display-emoji '🍔' \
 -display-keys '🔑' \
