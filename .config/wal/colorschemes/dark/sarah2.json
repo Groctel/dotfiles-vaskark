@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/jason/Pictures/wp3141053-sarah-gadon-wallpapers.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#1b1919",
+        "foreground": "#c6c5c5",
+        "cursor": "#7d5a49"
+    },
+    "colors": {
+        "color0": "#1b1919",
+        "color1": "#64463b",
+        "color2": "#b5937b",
+        "color3": "#a4a59e",
+        "color4": "#c8b09a",
+        "color5": "#b65b64",
+        "color6": "#7d5a49",
+        "color7": "#c6c5c5",
+        "color8": "#353131",
+        "color9": "#8c5642",
+        "color10": "#ffbb8c",
+        "color11": "#e4ebb8",
+        "color12": "#ffe3b1",
+        "color13": "#fe6473",
+        "color14": "#af7052",
+        "color15": "#fffefe"
+    }
+}
