@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/jason/Pictures/eva-green-actress-women-dark-hair-wallpaper.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#141414",
+        "foreground": "#c4c4c4",
+        "cursor": "#572e23"
+    },
+    "colors": {
+        "color0": "#141414",
+        "color1": "#76645c",
+        "color2": "#9e8073",
+        "color3": "#b3988b",
+        "color4": "#654f43",
+        "color5": "#9a3337",
+        "color6": "#572e23",
+        "color7": "#c4c4c4",
+        "color8": "#2d2d2d",
+        "color9": "#a87c68",
+        "color10": "#dfa084",
+        "color11": "#ebbd9f",
+        "color12": "#8f624b",
+        "color13": "#d7333b",
+        "color14": "#7b3823",
+        "color15": "#ffffff"
+    }
+}

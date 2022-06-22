@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/jason/Pictures/edo2ehn9qv691.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#181515",
+        "foreground": "#c5c4c4",
+        "cursor": "#b7360a"
+    },
+    "colors": {
+        "color0": "#181515",
+        "color1": "#7a2010",
+        "color2": "#483635",
+        "color3": "#e58d59",
+        "color4": "#d34709",
+        "color5": "#cc683f",
+        "color6": "#b7360a",
+        "color7": "#c5c4c4",
+        "color8": "#322c2c",
+        "color9": "#a7230b",
+        "color10": "#653e3c",
+        "color11": "#ffb15e",
+        "color12": "#ff5801",
+        "color13": "#ff7f40",
+        "color14": "#f94001",
+        "color15": "#fffefe"
+    }
+}
