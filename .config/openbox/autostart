@@ -9,7 +9,7 @@ picom --experimental-backends --config ~/.config/picom/picom.conf &
 # /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
 
 # lock
-xautolock -time 10 -locker 'lock.sh' -killer 'systemctl suspend' -corners +0-0 -cornerdelay 2 &
+xautolock -time 10 -locker 'lock.sh' -killer 'systemctl suspend' -corners +0-0 -cornerdelay 1 &
 
 # redshift
 systemctl --user import-environment; systemctl --user restart redshift

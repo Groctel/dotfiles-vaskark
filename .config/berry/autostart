@@ -40,7 +40,7 @@ picom --experimental-backends --config ~/.config/picom/picom.conf &
 
 # lock
 xscreensaver --no-splash &
-xautolock -time 10 -locker 'xscreensaver-command -lock' -killer 'systemctl suspend' -corners +0-0 -cornerdelay 2 &
+xautolock -time 10 -locker 'xscreensaver-command -lock' -killer 'systemctl suspend' -corners +0-0 -cornerdelay 1 &
 
 # status bar
 lemonbar-current &
