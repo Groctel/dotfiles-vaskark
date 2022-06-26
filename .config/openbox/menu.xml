@@ -1,54 +1,282 @@
 <?xml version='1.0' encoding='utf-8'?>
 <openbox_menu xmlns="http://openbox.org/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://openbox.org/                 file:///usr/share/openbox/menu.xsd">
-  <menu id="root-menu" label="Openbox">
-    <separator label="OPENBOX" />
-    <item label="Term">
+  <menu id="root-menu" label="">
+    <item label="term">
       <action name="Execute">
         <execute>alacritty</execute>
       </action>
     </item>
-    <item label="Files">
+    <item label="files">
       <action name="Execute">
         <execute>thunar</execute>
       </action>
     </item>
-    <item label="Web">
+    <item label="web">
       <action name="Execute">
         <execute>google-chrome</execute>
       </action>
     </item>
     <separator />
-    <menu id="applications-menu" label="Programs" execute="/usr/bin/obamenu" />        
+    <menu id="programs" label="programs">
+      <menu id="develop" label="develop">
+        <item label="neovim">
+          <action name="Execute">
+            <execute>alacritty -e nvim</execute>
+          </action>
+        </item>
+        <item label="sublime">
+          <action name="Execute">
+            <execute>subl</execute>
+          </action>
+        </item>
+      </menu>
+      <menu id="games" label="games">
+        <item label="mahjongg">
+          <action name="Execute">
+            <execute>mahjongg</execute>
+          </action>
+        </item>
+        <item label="solitaire">
+          <action name="Execute">
+            <execute>aisleriot</execute>
+          </action>
+        </item>
+        <item label="sudoku">
+          <action name="Execute">
+            <execute>sudoku</execute>
+          </action>
+        </item>
+      </menu>
+      <menu id="graphics" label="graphics">
+        <item label="cheese">
+          <action name="Execute">
+            <execute>cheese</execute>
+          </action>
+        </item>
+        <item label="gimp">
+          <action name="Execute">
+            <execute>gimp</execute>
+          </action>
+        </item>
+        <item label="flameshot">
+          <action name="Execute">
+            <execute>flameshot gui</execute>
+          </action>
+        </item>
+        <item label="yacreader">
+          <action name="Execute">
+            <execute>YACReader</execute>
+          </action>
+        </item>
+      </menu>
+      <menu id="internet" label="internet">
+        <item label="google chrome">
+          <action name="Execute">
+            <execute>google-chrome</execute>
+          </action>
+        </item>
+        <item label="transmission">
+          <action name="Execute">
+            <execute>transmissionbt</execute>
+          </action>
+        </item>
+        <item label="windscribe">
+          <action name="Execute">
+            <execute>windscribe</execute>
+          </action>
+        </item>
+      </menu>
+      <menu id="multimedia" label="multimedia">
+        <item label="easytag">
+          <action name="Execute">
+            <execute>easytag</execute>
+          </action>
+        </item>
+        <item label="mpv">
+          <action name="Execute">
+            <execute>mpv</execute>
+          </action>
+        </item>
+        <item label="mkvtoolnix">
+          <action name="Execute">
+            <execute>mkvtoolnix-gui</execute>
+          </action>
+        </item>
+        <item label="ncmpcpp">
+          <action name="Execute">
+            <execute>alacritty -e ncmpcpp</execute>
+          </action>
+        </item>
+        <item label="vlc">
+          <action name="Execute">
+            <execute>vlc</execute>
+          </action>
+        </item>
+        <item label="ymuse">
+          <action name="Execute">
+            <execute>ymuse</execute>
+          </action>
+        </item>
+      </menu>
+      <menu id="office" label="office">
+        <item label="evince">
+          <action name="Execute">
+            <execute>evince</execute>
+          </action>
+        </item>
+        <item label="foliate">
+          <action name="Execute">
+            <execute>com.github.johnfactotum.Foliate</execute>
+          </action>
+        </item>
+        <item label="zathura">
+          <action name="Execute">
+            <execute>zathura</execute>
+          </action>
+        </item>
+      </menu>
+      <menu id="utilities" label="utilities">
+        <item label="calculator">
+          <action name="Execute">
+            <execute>gnome-calculator</execute>
+          </action>
+        </item>
+        <item label="characters">
+          <action name="Execute">
+            <execute>gnome-characters</execute>
+          </action>
+        </item>
+        <item label="nautilus">
+          <action name="Execute">
+            <execute>nautilus</execute>
+          </action>
+        </item>
+        <item label="font manager">
+          <action name="Execute">
+            <execute>font-manager</execute>
+          </action>
+        </item>
+        <item label="nemo">
+          <action name="Execute">
+            <execute>nemo</execute>
+          </action>
+        </item>
+        <item label="nemo (admin)">
+          <action name="Execute">
+            <execute>nemo-pkexec</execute>
+          </action>
+        </item>
+        <item label="plank">
+          <action name="Execute">
+            <execute>plank</execute>
+          </action>
+        </item>
+        <item label="thunar">
+          <action name="Execute">
+            <execute>thunar</execute>
+          </action>
+        </item>
+        <item label="thunar (admin)">
+          <action name="Execute">
+            <execute>thunar-pkexec</execute>
+          </action>
+        </item>
+      </menu>
+      <menu id="settings" label="settings">
+        <item label="lxappearance">
+          <action name="Execute">
+            <execute>lxappearance</execute>
+          </action>
+        </item>
+      </menu>
+      <menu id="system" label="system">
+        <item label="alacritty">
+          <action name="Execute">
+            <execute>alacritty</execute>
+          </action>
+        </item>
+        <item label="bleachbit">
+          <action name="Execute">
+            <execute>bleachbit</execute>
+          </action>
+        </item>
+        <item label="bleachbit (admin)">
+          <action name="Execute">
+            <execute>bleachbit-pkexec</execute>
+          </action>
+        </item>
+        <item label="firewall">
+          <action name="Execute">
+            <execute>gufw</execute>
+          </action>
+        </item>
+        <item label="htop">
+          <action name="Execute">
+            <execute>alacritty -e htop</execute>
+          </action>
+        </item>
+        <item label="kitty">
+          <action name="Execute">
+            <execute>kitty</execute>
+          </action>
+        </item>
+        <item label="logs">
+          <action name="Execute">
+            <execute>gnome-system-log</execute>
+          </action>
+        </item>
+        <item label="st">
+          <action name="Execute">
+            <execute>st</execute>
+          </action>
+        </item>
+        <item label="system monitor">
+          <action name="Execute">
+            <execute>gnome-system-monitor</execute>
+          </action>
+        </item>
+        <item label="urxvt">
+          <action name="Execute">
+            <execute>urxvt</execute>
+          </action>
+        </item>
+        <item label="xterm">
+          <action name="Execute">
+            <execute>xterm</execute>
+          </action>
+        </item>
+      </menu>
+    </menu>
     <separator />
-    <item label="Config">
+    <item label="config">
       <action name="Execute">
         <execute>obconf</execute>
       </action>
     </item>
-    <item label="Reconfigure">
+    <item label="reload">
       <action name="Reconfigure" />
     </item>
-    <item label="Restart">
+    <item label="restart">
       <action name="Restart" />
     </item>
     <separator />
-    <menu id="exit" label="Exit">
-      <item label="Logout">
+    <menu id="exit" label="exit">
+      <item label="logout">
         <action name="Execute">
-          <execute>pkill x</execute>
+          <execute>pkill X</execute>
         </action>
       </item>
-      <item label="Suspend">
-        <action name="Execute">
-          <execute>systemctl suspend</execute>
-        </action>
-      </item>
-      <item label="Reboot">
+      <item label="reboot">
         <action name="Execute">
           <execute>systemctl reboot</execute>
         </action>
       </item>
-      <item label="Shutdown">
+      <item label="suspend">
+        <action name="Execute">
+          <execute>systemctl suspend</execute>
+        </action>
+      </item>
+      <item label="shutdown">
         <action name="Execute">
           <execute>systemctl poweroff</execute>
         </action>

@@ -4,9 +4,9 @@ menu.items.bg.color: {color0}
 menu.overlap.x: -10
 
 !! menu text
-menu.items.text.color: {color7}
+menu.items.text.color: #999
 menu.items.justify: left
-menu.items.disabled.text.color: #4d5066
+menu.items.disabled.text.color: {color8}
 
 !! menu separator
 menu.separator.padding.height: 2
@@ -38,7 +38,7 @@ window.label.text.justify: center
 window.active.label.bg: parentrelative
 window.active.label.text.color: {color0}
 window.inactive.label.bg: parentrelative
-window.inactive.label.text.color: #444444
+window.inactive.label.text.color: #444
 
 !! window buttons
 window.*.button.*.bg: parentrelative
