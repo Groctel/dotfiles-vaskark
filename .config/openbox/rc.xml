@@ -562,17 +562,17 @@
     <!-- Pywal -->
     <keybind key="W-F12">
       <action name="Execute">
-        <command>wal -q -f random_user -o wal-extras.sh</command>
+        <command>wal -q -f random_user -o ~/.config/openbox/wal.sh</command>
       </action>
     </keybind>
     <keybind key="W-C-F12">
       <action name="Execute">
-        <command>wal -q -f random_dark -o wal-extras.sh</command>
+        <command>wal -q -f random_dark -o ~/.config/openbox/wal.sh</command>
       </action>
     </keybind>
     <keybind key="W-S-F12">
       <action name="Execute">
-        <command>wal -q -R -o wal-extras.sh</command>
+        <command>wal -q -R -o ~/.config/openbox/wal.sh</command>
       </action>
     </keybind>
     <!-- nsxiv -->
@@ -593,7 +593,7 @@
     <keybind key="W-S-r">
       <action name="Reconfigure"/>
     </keybind>
-<!--     <keybind key="W-S-Delete">
+    <!--     <keybind key="W-S-Delete">
       <action name="Execute">
         <command>reboot</command>
       </action>
