@@ -51,8 +51,6 @@ alt + {F10,F11,F12}
 	mpc {prev,toggle,next}
 alt + shift + {F10,F12}
 	mpc seek {-00:00:05,+00:00:05}
-alt + F9
-        mpd-notify.sh
 
 # shots
 super + {_,shift +} Print
@@ -67,10 +65,6 @@ XF86AudioMute
 # brightness
 XF86MonBrightness{Up,Down}
 	light {-A 5,-U 5}
-
-# wal
-super + {_,shift +,ctrl +} F12
-	wal -q {-f random_user,-R,-f random} -o wal-extras.sh
         
 # pics
 super + {_,shift +} equal
