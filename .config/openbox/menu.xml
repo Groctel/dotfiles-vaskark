@@ -260,7 +260,12 @@
       <action name="Restart" />
     </item>
     <separator />
-    <menu id="exit" label="exit">
+    <item label="exit">
+      <action name="Execute">
+        <execute>openbox --exit</execute>
+      </action>
+    </item>
+<!--<menu id="exit" label="exit">
       <item label="logout">
         <action name="Execute">
           <execute>pkill X</execute>
@@ -281,6 +286,6 @@
           <execute>systemctl poweroff</execute>
         </action>
       </item>
-    </menu>
+    </menu> -->
   </menu>
 </openbox_menu>
