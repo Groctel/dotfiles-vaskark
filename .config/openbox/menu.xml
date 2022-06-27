@@ -107,11 +107,6 @@
             <execute>alacritty -e ncmpcpp</execute>
           </action>
         </item>
-        <item label="vlc">
-          <action name="Execute">
-            <execute>vlc</execute>
-          </action>
-        </item>
         <item label="ymuse">
           <action name="Execute">
             <execute>ymuse</execute>
@@ -212,7 +207,7 @@
         </item>
         <item label="htop">
           <action name="Execute">
-            <execute>alacritty -e htop</execute>
+            <execute>sh -c 'alacritty -e htop -u $USER'</execute>
           </action>
         </item>
         <item label="kitty">
@@ -225,14 +220,14 @@
             <execute>gnome-system-log</execute>
           </action>
         </item>
+        <item label="monitor">
+          <action name="Execute">
+            <execute>gnome-system-monitor</execute>
+          </action>
+        </item>
         <item label="st">
           <action name="Execute">
             <execute>st</execute>
-          </action>
-        </item>
-        <item label="system monitor">
-          <action name="Execute">
-            <execute>gnome-system-monitor</execute>
           </action>
         </item>
         <item label="urxvt">
@@ -260,32 +255,10 @@
       <action name="Restart" />
     </item>
     <separator />
-    <item label="exit">
+    <item label="bye!">
       <action name="Execute">
         <execute>openbox --exit</execute>
       </action>
     </item>
-<!--<menu id="exit" label="exit">
-      <item label="logout">
-        <action name="Execute">
-          <execute>pkill X</execute>
-        </action>
-      </item>
-      <item label="reboot">
-        <action name="Execute">
-          <execute>systemctl reboot</execute>
-        </action>
-      </item>
-      <item label="suspend">
-        <action name="Execute">
-          <execute>systemctl suspend</execute>
-        </action>
-      </item>
-      <item label="shutdown">
-        <action name="Execute">
-          <execute>systemctl poweroff</execute>
-        </action>
-      </item>
-    </menu> -->
   </menu>
 </openbox_menu>

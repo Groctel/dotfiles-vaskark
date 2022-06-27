@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/jason/Pictures/emily-blunt-celebrities-girls-hd-wallpaper-d2d241276634d111fd0ab474fdf22550.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#181716",
+        "foreground": "#c5c5c4",
+        "cursor": "#8f8784"
+    },
+    "colors": {
+        "color0": "#181716",
+        "color1": "#62463d",
+        "color2": "#b99b88",
+        "color3": "#d2b59f",
+        "color4": "#d2b59f",
+        "color5": "#297a6a",
+        "color6": "#8f8784",
+        "color7": "#c5c5c4",
+        "color8": "#32302d",
+        "color9": "#895544",
+        "color10": "#ffc49b",
+        "color11": "#ffe8b6",
+        "color12": "#ffe8b6",
+        "color13": "#2aa990",
+        "color14": "#cba799",
+        "color15": "#fffffe"
+    }
+}
