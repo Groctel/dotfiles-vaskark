@@ -6,6 +6,9 @@
 # openbox
 openbox --reconfigure
 
+# lemonbar
+# [ "$(pgrep -x lemonbar)" ] && pkill lemonbar && lemonbar-current &
+
 # dunst 
 [ "$(pgrep -x dunst)" ] && pkill dunst
 
