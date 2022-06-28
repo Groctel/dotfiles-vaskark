@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/jason/Pictures/tesmtzlkkno51.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#191818",
+        "foreground": "#c5c5c5",
+        "cursor": "#2f4852"
+    },
+    "colors": {
+        "color0": "#191818",
+        "color1": "#71353a",
+        "color2": "#744b53",
+        "color3": "#807062",
+        "color4": "#807062",
+        "color5": "#cf8765",
+        "color6": "#2f4852",
+        "color7": "#c5c5c5",
+        "color8": "#323030",
+        "color9": "#9d3a42",
+        "color10": "#a35564",
+        "color11": "#b59070",
+        "color12": "#b59070",
+        "color13": "#ffa86f",
+        "color14": "#346172",
+        "color15": "#ffffff"
+    }
+}

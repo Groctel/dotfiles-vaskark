@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/jason/Pictures/saoirse_ronan-19.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#161616",
+        "foreground": "#c4c4c4",
+        "cursor": "#94a5a6"
+    },
+    "colors": {
+        "color0": "#161616",
+        "color1": "#5d483f",
+        "color2": "#336b70",
+        "color3": "#8a8982",
+        "color4": "#adac9d",
+        "color5": "#784d57",
+        "color6": "#94a5a6",
+        "color7": "#c4c4c4",
+        "color8": "#2f2f2f",
+        "color9": "#825947",
+        "color10": "#37939c",
+        "color11": "#c4bf97",
+        "color12": "#f6f2b6",
+        "color13": "#A8576A",
+        "color14": "#ace8ec",
+        "color15": "#ffffff"
+    }
+}

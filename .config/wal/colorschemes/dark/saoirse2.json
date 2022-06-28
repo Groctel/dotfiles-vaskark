@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/jason/Pictures/saoirse-ronan-5k-gb-1.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#1a1715",
+        "foreground": "#c5c5c4",
+        "cursor": "#967862"
+    },
+    "colors": {
+        "color0": "#1a1715",
+        "color1": "#644327",
+        "color2": "#b79381",
+        "color3": "#b79381",
+        "color4": "#cdae9c",
+        "color5": "#d5a1aa",
+        "color6": "#967862",
+        "color7": "#c5c5c4",
+        "color8": "#352f2b",
+        "color9": "#8b5629",
+        "color10": "#ffb893",
+        "color11": "#ffb893",
+        "color12": "#ffdbb3",
+        "color13": "#ffb9cd",
+        "color14": "#d3996f",
+        "color15": "#fffffe"
+    }
+}
