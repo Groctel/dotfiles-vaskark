@@ -30,6 +30,9 @@ export LESSHISTFILE=""
 export EDITOR="nvim"
 export VISUAL="nvim"
 
+# vim
+export VIMINIT="source $XDG_CONFIG_HOME/vim/vimrc"
+
 # man
 export MANPAGER="nvim +Man!"
 
@@ -78,8 +81,8 @@ export FZF_DEFAULT_OPTS="
 "
 
 # fff
-export FFF_COL1=2   # dir
-export FFF_COL2=5   # status bg
-export FFF_COL3=4   # sel
-export FFF_COL4=5   # cursor
-export FFF_COL5=0   # status fg
+export FFF_COL1=2 # dir
+export FFF_COL2=5 # status bg
+export FFF_COL3=4 # sel
+export FFF_COL4=5 # cursor
+export FFF_COL5=0 # status fg
