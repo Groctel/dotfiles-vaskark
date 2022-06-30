@@ -20,8 +20,8 @@ Plug 'scrooloose/nerdcommenter'
 call plug#end()
 
 " Spellcheck
-set spell
-set spelllang=en_us
+"set spell
+"set spelllang=en_us
 
 " Undo
 set undofile
