@@ -4,6 +4,7 @@ Plug 'dylanaraps/wal.vim'
 Plug 'tpope/vim-fugitive'
 Plug 'scrooloose/nerdcommenter'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --no-bash --no-fish' }
+Plug 'preservim/nerdtree'
 call plug#end()
 
 set autoindent
@@ -28,7 +29,6 @@ set wildmenu
 set nocursorline
 set number relativenumber
 set mouse=a
-set title
 
 set hidden
 set history=1000
@@ -41,6 +41,7 @@ set undofile
 set viminfo+=n~/.vim/viminfo
 set visualbell
 
+" lightline
 let g:lightline = {
     \ 'colorscheme': 'srcery_drk',
     \ }
@@ -96,19 +97,19 @@ let g:lightline.component = {
     \ 'sep1': ''
     \}
 
-"let g:lightline.mode_map = {
-    "\ 'n' : 'N',
-    "\ 'i' : 'I',
-    "\ 'R' : 'R',
-    "\ 'v' : 'V',
-    "\ 'V' : 'L',
-    "\ "\<C-v>": 'B',
-    "\ 'c' : 'C',
-    "\ 's' : 'S',
-    "\ 'S' : 'S-LINE',
-    "\ "\<C-s>": 'S-BLOCK',
-    "\ 't': 'T',
-    "\ }
+let g:lightline.mode_map = {
+    \ 'n' : 'N',
+    \ 'i' : 'I',
+    \ 'R' : 'R',
+    \ 'v' : 'V',
+    \ 'V' : 'L',
+    \ "\<C-v>": 'B',
+    \ 'c' : 'C',
+    \ 's' : 'S',
+    \ 'S' : 'S-LINE',
+    \ "\<C-s>": 'S-BLOCK',
+    \ 't': 'T',
+    \ }
 
 let g:lightline.separator = {
     \   'left': '', 'right': ''
@@ -125,9 +126,15 @@ let g:lightline.enable = {
     \ 'tabline': 1
     \ }
 
+" colours
 colorscheme wal
 
+" ctrl-s
 nmap <C-S> :w<cr>
 vmap <C-S> <esc>:w<cr>
 imap <C-S> <esc>:w<cr>
 
+" nerdtree
+nnoremap <leader>n :NERDTreeToggle<CR>
+let g:NERDTreeDirArrowExpandable = '―'
+let g:NERDTreeDirArrowCollapsible = ''
