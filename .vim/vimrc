@@ -1,4 +1,4 @@
-call plug#begin('~/.config/vim/plugged')
+call plug#begin('~/.vim/plugged')
 Plug 'itchyny/lightline.vim'
 Plug 'dylanaraps/wal.vim'
 Plug 'tpope/vim-fugitive'
@@ -6,28 +6,40 @@ Plug 'scrooloose/nerdcommenter'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --no-bash --no-fish' }
 call plug#end()
 
-syntax on
+set autoindent
+set expandtab
 filetype plugin indent on
-scriptencoding utf-8
-set encoding=utf8
+set shiftwidth=4
+set smarttab
 set tabstop=4
+
+set hlsearch
+set ignorecase
+set incsearch
+set smartcase
+
+set encoding=utf8
+scriptencoding utf-8
+syntax on
+set wrap
+
+set laststatus=2
+set wildmenu
+set nocursorline
+set number relativenumber
+set mouse=a
+set title
+
+set hidden
+set history=1000
 set showcmd
 set showmatch
-set ignorecase
-set smartcase
-set incsearch
 set autowrite
-set hidden
-set mouse=a
-set number relativenumber
-set nocursorline
 set background=dark
 set noshowmode
-set wildmenu
-set laststatus=2
-set hlsearch
 set undofile
-set viminfo+=n~/.config/vim/viminfo
+set viminfo+=n~/.vim/viminfo
+set visualbell
 
 let g:lightline = {
     \ 'colorscheme': 'srcery_drk',
@@ -118,3 +130,4 @@ colorscheme wal
 nmap <C-S> :w<cr>
 vmap <C-S> <esc>:w<cr>
 imap <C-S> <esc>:w<cr>
+

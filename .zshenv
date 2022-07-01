@@ -31,7 +31,7 @@ export EDITOR="nvim"
 export VISUAL="nvim"
 
 # vim
-export VIMINIT="source $XDG_CONFIG_HOME/vim/vimrc"
+export VIMINIT="source $HOME/.vim/vimrc"
 
 # man
 export MANPAGER="nvim +Man!"
