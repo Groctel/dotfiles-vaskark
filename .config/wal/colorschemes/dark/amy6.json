@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/jason/Pictures/Amy-Adams-cleavage-1152171-1.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#19191a",
+        "foreground": "#c5c5c5",
+        "cursor": "#af9388"
+    },
+    "colors": {
+        "color0": "#19191a",
+        "color1": "#614236",
+        "color2": "#826e68",
+        "color3": "#7a5745",
+        "color4": "#bfa597",
+        "color5": "#623a3a",
+        "color6": "#af9388",
+        "color7": "#c5c5c5",
+        "color8": "#313133",
+        "color9": "#87513c",
+        "color10": "#b88678",
+        "color11": "#aa6d4d",
+        "color12": "#ffcfae",
+        "color13": "#894141",
+        "color14": "#f7b69c",
+        "color15": "#ffffff"
+    }
+}
