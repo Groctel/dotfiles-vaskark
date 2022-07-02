@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/jason/.config/wpg/wallpapers/amy-adams-redhead-women-actress-wallpaper-79af642862777ec5f970bafe0ffb2100.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#1c1c1c",
+        "foreground": "#e0cdc1",
+        "cursor": "#B18870"
+    },
+    "colors": {
+        "color0": "#1c1c1c",
+        "color1": "#996D58",
+        "color2": "#7F7688",
+        "color3": "#C89671",
+        "color4": "#726E6A",
+        "color5": "#A1483B",
+        "color6": "#B18870",
+        "color7": "#e0cdc1",
+        "color8": "#353535",
+        "color9": "#d68862",
+        "color10": "#a588c1",
+        "color11": "#ffbf7e",
+        "color12": "#a28f7b",
+        "color13": "#df523e",
+        "color14": "#f8ab7e",
+        "color15": "#fffaec"
+    }
+}
