@@ -24,7 +24,6 @@ alias lf='$HOME/.local/bin/lf.sh'
 alias lfb='lf -config ~/.config/lf/lfrc-basic'
 alias v="$EDITOR"
 alias nvc="$EDITOR $XDG_CONFIG_HOME/nvim/init.vim"
-alias vc="$EDITOR $HOME/.vim/vimrc"
 alias lml='exa -l -r -s time /var/log | tail'
 alias cl='sudo rm -rf /var/log/*'
 alias -g G='| grep -i'

@@ -19,6 +19,11 @@
     <separator />
     <menu id="programs" label="programs">
       <menu id="develop" label="develop">
+        <item label="gedit">
+          <action name="Execute">
+            <execute>gedit</execute>
+          </action>
+        </item>
         <item label="neovim">
           <action name="Execute">
             <execute>alacritty -e nvim</execute>
@@ -48,11 +53,6 @@
         </item>
       </menu>
       <menu id="graphics" label="graphics">
-        <item label="cheese">
-          <action name="Execute">
-            <execute>cheese</execute>
-          </action>
-        </item>
         <item label="gimp">
           <action name="Execute">
             <execute>gimp</execute>
@@ -136,9 +136,19 @@
             <execute>gnome-calculator</execute>
           </action>
         </item>
+        <item label="baobab">
+          <action name="Execute">
+            <execute>baobab</execute>
+          </action>
+        </item>
         <item label="characters">
           <action name="Execute">
             <execute>gnome-characters</execute>
+          </action>
+        </item>
+        <item label="font manager">
+          <action name="Execute">
+            <execute>font-manager</execute>
           </action>
         </item>
         <item label="nautilus">
@@ -146,9 +156,9 @@
             <execute>nautilus</execute>
           </action>
         </item>
-        <item label="font manager">
+        <item label="nautilus (admin)">
           <action name="Execute">
-            <execute>font-manager</execute>
+            <execute>nautilus-pkexec</execute>
           </action>
         </item>
         <item label="nemo">

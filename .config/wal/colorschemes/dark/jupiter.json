@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/jason/Pictures/67auybtel5991.webp",
+    "alpha": "100",
+    "special": {
+        "background": "#161617",
+        "foreground": "#c4c4c5",
+        "cursor": "#8c7877"
+    },
+    "colors": {
+        "color0": "#161617",
+        "color1": "#6f3432",
+        "color2": "#c07657",
+        "color3": "#965c51",
+        "color4": "#2c3146",
+        "color5": "#794447",
+        "color6": "#8c7877",
+        "color7": "#c4c4c5",
+        "color8": "#2e2e30",
+        "color9": "#9a3936",
+        "color10": "#ff915e",
+        "color11": "#d26d5a",
+        "color12": "#313b62",
+        "color13": "#a94c51",
+        "color14": "#c68c89",
+        "color15": "#fefeff"
+    }
+}

@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/jason/Pictures/wp6847376-carice-van-houten-wallpapers.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#1a1817",
+        "foreground": "#c5c5c5",
+        "cursor": "#9b7763"
+    },
+    "colors": {
+        "color0": "#1a1817",
+        "color1": "#6b4438",
+        "color2": "#c39681",
+        "color3": "#88614b",
+        "color4": "#e1bd9b",
+        "color5": "#b2464e",
+        "color6": "#9b7763",
+        "color7": "#c5c5c5",
+        "color8": "#34302e",
+        "color9": "#95523e",
+        "color10": "#ffbb92",
+        "color11": "#be7a53",
+        "color12": "#fff4b0",
+        "color13": "#f74a57",
+        "color14": "#d99570",
+        "color15": "#ffffff"
+    }
+}

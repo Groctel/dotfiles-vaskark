@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/jason/Pictures/2189046.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#171816",
+        "foreground": "#c5c5c4",
+        "cursor": "#7c8170"
+    },
+    "colors": {
+        "color0": "#171816",
+        "color1": "#634a3e",
+        "color2": "#1e7d79",
+        "color3": "#01b3bf",
+        "color4": "#2d6146",
+        "color5": "#745f4b",
+        "color6": "#7c8170",
+        "color7": "#c5c5c4",
+        "color8": "#30322d",
+        "color9": "#8b5c46",
+        "color10": "#1caca6",
+        "color11": "#01e8f8",
+        "color12": "#31875a",
+        "color13": "#a37b55",
+        "color14": "#a7b782",
+        "color15": "#fffffe"
+    }
+}

@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/jason/Pictures/amy-adams-wallpaper-ed96188daa319ca6983b423d6421bef6.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#161719",
+        "foreground": "#c4c5c5",
+        "cursor": "#0e4562"
+    },
+    "colors": {
+        "color0": "#161719",
+        "color1": "#c63b36",
+        "color2": "#947d6a",
+        "color3": "#cbbb90",
+        "color4": "#b69876",
+        "color5": "#6c3633",
+        "color6": "#0e4562",
+        "color7": "#c4c5c5",
+        "color8": "#2d2f33",
+        "color9": "#ff3d35",
+        "color10": "#d0a079",
+        "color11": "#fffda4",
+        "color12": "#ffc685",
+        "color13": "#963c37",
+        "color14": "#0a5b86",
+        "color15": "#feffff"
+    }
+}
