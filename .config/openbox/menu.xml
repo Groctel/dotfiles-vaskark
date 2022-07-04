@@ -35,6 +35,38 @@
           </action>
         </item>
       </menu>
+      <menu id="files" label="files">
+        <item label="nautilus">
+          <action name="Execute">
+            <execute>nautilus</execute>
+          </action>
+        </item>
+        <item label="nautilus (admin)">
+          <action name="Execute">
+            <execute>nautilus-pkexec</execute>
+          </action>
+        </item>
+        <item label="nemo">
+          <action name="Execute">
+            <execute>nemo</execute>
+          </action>
+        </item>
+        <item label="nemo (admin)">
+          <action name="Execute">
+            <execute>nemo-pkexec</execute>
+          </action>
+        </item>
+        <item label="thunar">
+          <action name="Execute">
+            <execute>thunar</execute>
+          </action>
+        </item>
+        <item label="thunar (admin)">
+          <action name="Execute">
+            <execute>thunar-pkexec</execute>
+          </action>
+        </item>
+      </menu>
       <menu id="games" label="games">
         <item label="mahjongg">
           <action name="Execute">
@@ -86,7 +118,7 @@
           </action>
         </item>
       </menu>
-      <menu id="multimedia" label="multimedia">
+      <menu id="multimedia" label="media">
         <item label="easytag">
           <action name="Execute">
             <execute>easytag</execute>
@@ -151,39 +183,9 @@
             <execute>font-manager</execute>
           </action>
         </item>
-        <item label="nautilus">
-          <action name="Execute">
-            <execute>nautilus</execute>
-          </action>
-        </item>
-        <item label="nautilus (admin)">
-          <action name="Execute">
-            <execute>nautilus-pkexec</execute>
-          </action>
-        </item>
-        <item label="nemo">
-          <action name="Execute">
-            <execute>nemo</execute>
-          </action>
-        </item>
-        <item label="nemo (admin)">
-          <action name="Execute">
-            <execute>nemo-pkexec</execute>
-          </action>
-        </item>
         <item label="plank">
           <action name="Execute">
             <execute>plank</execute>
-          </action>
-        </item>
-        <item label="thunar">
-          <action name="Execute">
-            <execute>thunar</execute>
-          </action>
-        </item>
-        <item label="thunar (admin)">
-          <action name="Execute">
-            <execute>thunar-pkexec</execute>
           </action>
         </item>
       </menu>
@@ -226,7 +228,7 @@
           </action>
         </item>
       </menu>
-      <menu id="term" label="term">
+      <menu id="terms" label="terms">
         <item label="alacritty">
           <action name="Execute">
             <execute>alacritty</execute>
@@ -240,6 +242,11 @@
         <item label="st">
           <action name="Execute">
             <execute>st</execute>
+          </action>
+        </item>
+        <item label="terminal">
+          <action name="Execute">
+            <execute>gnome-terminal</execute>
           </action>
         </item>
         <item label="urxvt">
