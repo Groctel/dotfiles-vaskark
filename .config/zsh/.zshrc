@@ -3,7 +3,7 @@ setopt autocd autopushd hist_ignore_all_dups inc_append_history extended_history
 stty stop undef # Disable ctrl-s to freeze terminal.
 
 # aliases
-[ -f "$ZDOTDIR/.aliases" ] && source "$ZDOTDIR/.aliases"
+[ -f "$ZDOTDIR/aliases" ] && source "$ZDOTDIR/aliases"
 
 # basic auto/tab complete:
 zmodload zsh/complist

@@ -13,7 +13,7 @@ export XDG_CACHE_HOME="$HOME/.cache"
 
 # zsh
 export ZDOTDIR="$XDG_CONFIG_HOME/zsh"
-export HISTFILE="$ZDOTDIR/.zhistory"
+export HISTFILE="$ZDOTDIR/zhistory"
 export HISTSIZE=10000
 export SAVEHIST=10000
 
@@ -29,9 +29,6 @@ export LESSHISTFILE=""
 # editor
 export EDITOR="nvim"
 export VISUAL="nvim"
-
-# vim
-export VIMINIT="source $HOME/.vim/vimrc"
 
 # man
 export MANPAGER="nvim +Man!"
