@@ -1,0 +1,112 @@
+# general
+alias rm='rm -i'
+alias cp='cp -i'
+alias md='mkdir -pv'
+alias rd='rmdir -pv'
+alias df='df -h'
+alias du='du -h -c'
+alias cd..='cd ..'
+alias tc="tty-clock -cst -C 5 -f '%a %b %d %Y'"
+alias mount='mount | column -t'
+alias u='unimatrix -c green -a -f -n -s 98'
+alias h='htop -u $USER'
+alias t='top -U $USER'
+alias pf='clear;pfetch'
+alias n='nnn'
+alias c='cava'
+alias p='pipes-rs'
+alias mi='mediainfo'
+alias grep='grep --color=auto'
+alias ping='ping -c 5'
+alias path='print -l $path'
+alias rmpd='systemctl --user daemon-reload; systemctl --user restart mpd'
+alias lf='$HOME/.local/bin/lf.sh'
+alias lfb='lf -config ~/.config/lf/lfrc-basic'
+alias v="$EDITOR"
+alias nvc="$EDITOR $XDG_CONFIG_HOME/nvim/init.vim"
+alias lml='exa -l -r -s time /var/log | tail'
+alias cl='sudo rm -rf /var/log/*'
+alias -g G='| grep -i'
+
+# lsd
+alias lsd='lsd -h'
+# alias ls='lsd'
+# alias l='ls -l'
+# alias ll='ls -al'
+# alias lt='ls --tree --depth 2'
+
+# exa
+alias exa='exa --icons --git -g --group-directories-first'
+alias ls='exa'
+alias l='ls -l'
+alias ll='ls -al'
+alias lt='ls -T -L 2'
+
+# zsh
+alias za="$EDITOR $ZDOTDIR/aliases"
+alias zc="$EDITOR $ZDOTDIR/.zshrc"
+alias ze="$EDITOR $HOME/.zshenv"
+alias zh="rm -f $ZDOTDIR/zhistory && clear && exec zsh" 
+alias zs="source $HOME/.zshenv && clear && exec zsh"
+
+# xrdb
+alias xc="$EDITOR $HOME/.Xresources"
+alias xu="xrdb $HOME/.Xresources"
+
+# journal
+alias jctl='journalctl'
+alias jcb='jctl -p 3 -b'
+alias jce='jctl -p 3 -e'
+
+# git
+alias gc='git commit -a'
+alias ga='git add'
+alias gp='git pull'
+alias gl='git log'
+alias gls='git log --stat'
+alias gs='git status'
+alias gc1='git clone --depth=1'
+
+# neofetch
+alias nf='clear;neofetch'
+alias nfo='clear;neofetch --off'
+alias nf0='clear;neofetch --config none'
+
+# fonts
+alias f2s='fonttosfnt -v -r -b -c -g 2 -m 2 -o'
+alias fcc='fc-cache -rv'
+alias fcl='fc-list'
+alias sf='setfont /usr/local/share/fonts/spleen/spleen-6x12.psfu'
+
+# wal
+alias w1='wal -f random_user -o wal-extras.sh'
+alias w2='wal -f random -o wal-extras.sh'
+alias fw='fzf-wal.sh'
+
+# startx
+alias startx='startx $HOME/.xinitrc'
+
+# kernel
+alias mkc="make LSMOD=$XDG_CONFIG_HOME/modprobed.db localmodconfig"
+#alias mkp='make deb-pkg -j4 LOCALVERSION=-custom 2>&1 | tee ~/compile_output.txt'
+alias mkp='make deb-pkg -j4 LOCALVERSION=-custom'
+
+# networking
+alias rnm='sudo systemctl restart NetworkManager'
+alias up='nmcli c u'
+alias dn='nmcli c d'
+alias ndw='nmcli d wifi'
+alias i='ip -br -c a'
+
+# install
+alias s1='sudo make install'
+alias s2='sudo make PREFIX=/usr/local install'
+alias s3='sudo ninja -C build install'
+
+# systemd
+alias sc='systemctl'
+alias scu='systemctl --user'
+
+# system
+alias upd8='sudo apt update;sudo apt full-upgrade;sudo apt autoremove;sudo apt clean'
+alias shut='poweroff'
