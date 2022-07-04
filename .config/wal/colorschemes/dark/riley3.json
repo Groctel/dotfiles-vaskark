@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/jason/Pictures/riley-reid-american-wallpaper-927122007d262e5b4a88b2c5b00869b2.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#1a1919",
+        "foreground": "#c5c5c5",
+        "cursor": "#83614d"
+    },
+    "colors": {
+        "color0": "#1a1919",
+        "color1": "#66493a",
+        "color2": "#c29a88",
+        "color3": "#515d6a",
+        "color4": "#7f7d81",
+        "color5": "#e26080",
+        "color6": "#83614d",
+        "color7": "#c5c5c5",
+        "color8": "#333131",
+        "color9": "#8e5b41",
+        "color10": "#ffc09b",
+        "color11": "#5d7895",
+        "color12": "#a592b8",
+        "color13": "#FF679B",
+        "color14": "#b77a56",
+        "color15": "#ffffff"
+    }
+}

@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/jason/Pictures/riley-reid-smiling-wallpaper-e516a4f5cfb43ae47c0e8d2b75406f83.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#181818",
+        "foreground": "#c5c5c5",
+        "cursor": "#757575"
+    },
+    "colors": {
+        "color0": "#181818",
+        "color1": "#d3353c",
+        "color2": "#b19b91",
+        "color3": "#624135",
+        "color4": "#736157",
+        "color5": "#e26080",
+        "color6": "#757575",
+        "color7": "#c5c5c5",
+        "color8": "#313131",
+        "color9": "#e9313c",
+        "color10": "#e1bca3",
+        "color11": "#8a523b",
+        "color12": "#a57962",
+        "color13": "#FF679B",
+        "color14": "#a5958b",
+        "color15": "#ffffff"
+    }
+}

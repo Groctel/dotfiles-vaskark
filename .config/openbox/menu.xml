@@ -130,7 +130,7 @@
           </action>
         </item>
       </menu>
-      <menu id="utilities" label="utilities">
+      <menu id="utils" label="utils">
         <item label="calculator">
           <action name="Execute">
             <execute>gnome-calculator</execute>
@@ -195,11 +195,6 @@
         </item>
       </menu>
       <menu id="system" label="system">
-        <item label="alacritty">
-          <action name="Execute">
-            <execute>alacritty</execute>
-          </action>
-        </item>
         <item label="bleachbit">
           <action name="Execute">
             <execute>bleachbit</execute>
@@ -220,11 +215,6 @@
             <execute>sh -c 'alacritty -e htop -u $USER'</execute>
           </action>
         </item>
-        <item label="kitty">
-          <action name="Execute">
-            <execute>kitty</execute>
-          </action>
-        </item>
         <item label="logs">
           <action name="Execute">
             <execute>gnome-system-log</execute>
@@ -233,6 +223,18 @@
         <item label="monitor">
           <action name="Execute">
             <execute>gnome-system-monitor</execute>
+          </action>
+        </item>
+      </menu>
+      <menu id="term" label="term">
+        <item label="alacritty">
+          <action name="Execute">
+            <execute>alacritty</execute>
+          </action>
+        </item>
+        <item label="kitty">
+          <action name="Execute">
+            <execute>kitty</execute>
           </action>
         </item>
         <item label="st">
