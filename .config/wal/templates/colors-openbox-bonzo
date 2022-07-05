@@ -9,10 +9,10 @@ menu.overlap.x: -4
 # Menu text
 menu.items.text.color: {color7}
 menu.items.justify: left
-menu.items.disabled.text.color: #8a8a8a
+menu.items.disabled.text.color: {color8}
 
 # Menu separator
-menu.separator.padding.height: 2
+menu.separator.padding.height: 1
 menu.separator.color: {color0}
 
 # Menu border

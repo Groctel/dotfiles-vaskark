@@ -9,12 +9,8 @@ sticky yes
 color activeborder '{color2}'
 color inactiveborder '{color8}'
 color urgencyborder '{color1}'
-color groupborder '{color4}'
-color ungroupborder '{color1}'
 color font '#666'
 color selfont '{color2}' 
-color menubg '{color0}'
-color menufg '{color0}' 
 
 # ignore
 ignore Bar
@@ -27,7 +23,7 @@ unbind-key all
 unbind-mouse all
 
 # keys
-bind-key 4-Return st
+bind-key 4-Return alacritty
 bind-key 4-d 'rofi.sh'
 bind-key 4-x 'dmenu.sh'
 bind-key 4-w window-close

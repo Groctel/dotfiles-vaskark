@@ -65,6 +65,10 @@ XF86AudioMute
 # brightness
 XF86MonBrightness{Up,Down}
 	light {-A 5,-U 5}
+
+# wal
+super + {_,shift +,ctrl +} F12
+    wal -q {-f random_user,-R,-f random} -o wal-extras.sh
         
 # pics
 super + {_,shift +} equal

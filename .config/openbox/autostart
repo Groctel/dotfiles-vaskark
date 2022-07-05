@@ -9,7 +9,8 @@ picom --experimental-backends --config ~/.config/picom/picom.conf &
 # /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
 
 # lock
-xautolock -time 10 -locker 'lock.sh' -killer 'systemctl suspend' -corners +0-0 -cornerdelay 1 &
+xscreensaver --no-splash &
+xautolock -time 10 -locker 'xscreensaver-command -lock' -killer 'systemctl suspend' -corners +0-0 -cornerdelay 1 &
 
 # redshift
 systemctl --user import-environment; systemctl --user restart redshift
@@ -18,10 +19,10 @@ systemctl --user import-environment; systemctl --user restart redshift
 bash "$HOME"/.fehbg &
 
 # wal
-wal -R -o -wal-extras.sh
+wal -R -o wal-extras.sh
 
-# status bar
-polybar-current &
+# statusbar
+# polybar-current &
 
 # glava
 w=$(( $(xdotool getdisplaygeometry | awk '{print $1}') / 1 ))

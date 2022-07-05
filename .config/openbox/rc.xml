@@ -526,7 +526,7 @@
         <command>pactl set-sink-mute @DEFAULT_SINK@ toggle</command>
       </action>
     </keybind>
-    <!-- Polybar -->
+    <!-- Polybar
     <keybind key="W-semicolon">
       <action name="Execute">
         <command>sh -c 'pkill polybar || polybar-current'</command>
@@ -536,8 +536,8 @@
       <action name="Execute">
         <command>polybar-menu.sh</command>
       </action>
-    </keybind>
-    <!-- Lemonbar
+    </keybind> -->
+    <!-- Lemonbar -->
     <keybind key="W-semicolon">
       <action name="Execute">
         <command>sh -c 'pkill lemonbar || lemonbar-current'</command>
@@ -547,7 +547,7 @@
       <action name="Execute">
         <command>lemonbar-menu.sh</command>
       </action>
-    </keybind> -->
+    </keybind>
     <!-- GLava -->
     <keybind key="W-g">
       <action name="Execute">
@@ -562,17 +562,12 @@
     <!-- Pywal -->
     <keybind key="W-F12">
       <action name="Execute">
-        <command>wal -q -f random_user -o ~/.config/openbox/wal.sh</command>
-      </action>
-    </keybind>
-    <keybind key="W-C-F12">
-      <action name="Execute">
-        <command>wal -q -f random_dark -o ~/.config/openbox/wal.sh</command>
+        <command>wal -q -f random_user -o wal-extras.sh</command>
       </action>
     </keybind>
     <keybind key="W-S-F12">
       <action name="Execute">
-        <command>wal -q -R -o ~/.config/openbox/wal.sh</command>
+        <command>wal -q -R -o wal-extras.sh</command>
       </action>
     </keybind>
     <!-- nsxiv -->

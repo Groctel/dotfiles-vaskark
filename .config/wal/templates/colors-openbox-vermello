@@ -9,7 +9,7 @@ menu.items.justify: left
 menu.items.disabled.text.color: {color8}
 
 # menu separator
-menu.separator.padding.height: 2
+menu.separator.padding.height: 1
 menu.separator.color: {color0}
 
 # menu border

@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
 <openbox_menu xmlns="http://openbox.org/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://openbox.org/                 file:///usr/share/openbox/menu.xsd">
   <menu id="root-menu" label="">
-<!-- <separator label="OPENBOX" /> -->
+    <separator label="Openbox" />
     <item label="Term">
       <action name="Execute">
         <execute>alacritty</execute>
@@ -18,14 +18,14 @@
       </action>
     </item>
     <separator />
-    <menu id="applications-menu" label="Applications" execute="/usr/bin/obamenu" />        
+    <menu id="applications" label="Applications" execute="/usr/bin/obamenu" />
     <separator />
-    <item label="OBConf">
+    <item label="Config">
       <action name="Execute">
         <execute>obconf</execute>
       </action>
     </item>
-    <item label="Reconfig">
+    <item label="Reload">
       <action name="Reconfigure" />
     </item>
     <item label="Restart">

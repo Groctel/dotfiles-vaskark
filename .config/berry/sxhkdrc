@@ -26,10 +26,6 @@ super + e
 super + t ; {g,k,l,m,s,u,x}
     {gnome-terminal,kitty,alacritty --config-file ~/.config/alacritty/lemon.yml,alacritty --config-file ~/.config/alacritty/mono.yml,st,urxvt,xterm}
 
-# wal
-super + {_,shift +,ctrl +} F12
-    wal -q {-f random_user,-R,-f random} -o ~/.config/berry/wal.sh
-
 #
 # berry hotkeys
 #
