@@ -22,7 +22,7 @@ menu.border.color: {color0}
 # Menu headers
 menu.title.bg: flat
 menu.title.bg.color: {color5}
-menu.title.text.color: {color0}
+menu.title.text.color: #000
 menu.title.text.justify: center
 
 # Selected menu item
