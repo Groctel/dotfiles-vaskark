@@ -1,49 +1,49 @@
-!! Bonzo by Addy
-!! Inspired by Onyx by Dana Jansens
+# Bonzo by Addy
+# Inspired by Onyx by Dana Jansens
 
-!! Menu background
+# Menu background
 menu.items.bg: flat
 menu.items.bg.color: {color0}
 menu.overlap.x: -4
 
-!! Menu text
+# Menu text
 menu.items.text.color: {color7}
 menu.items.justify: left
 menu.items.disabled.text.color: #8a8a8a
 
-!! Menu separator
+# Menu separator
 menu.separator.padding.height: 2
 menu.separator.color: {color0}
 
-!! Menu border
+# Menu border
 menu.border.width: 10
 menu.border.color: {color0}
 
-!! Menu headers
+# Menu headers
 menu.title.bg: flat
 menu.title.bg.color: {color5}
 menu.title.text.color: {color0}
 menu.title.text.justify: center
 
-!! Selected menu item
+# Selected menu item
 menu.items.active.bg: flat
 menu.items.active.bg.color: {color2}
 menu.items.active.text.color: {color0}
 
-!! Titlebar
+# Titlebar
 window.active.title.bg: flat
 window.active.title.bg.color: {color2}
 window.inactive.title.bg: flat
 window.inactive.title.bg.color: {color0}
 
-!! Titlebar text
+# Titlebar text
 window.label.text.justify: center
 window.active.label.bg: parentrelative
 window.active.label.text.color: {color0}
 window.inactive.label.bg: parentrelative
 window.inactive.label.text.color: {color8}
 
-!! Window buttons
+# Window buttons
 window.*.button.*.bg: parentrelative
 window.active.button.*.hover.bg: flat
 window.inactive.button.*.hover.bg: parentrelative
@@ -58,7 +58,7 @@ window.active.button.disabled.image.color: #aaaaaa
 window.inactive.button.*.image.color: {color8}
 window.inactive.button.disabled.image.color: {color8}
 
-!! Borders
+# Borders
 window.active.border.color: #2f343f
 window.inactive.border.color: #ffffff
 border.width: 0
@@ -70,7 +70,7 @@ window.inactive.client.color:  #ffffff
 window.client.padding.width: 0
 window.client.padding.height: 0
 
-!! On-screen displays
+# On-screen displays
 osd.border.width: 1
 osd.border.color: {color0}
 osd.label.text.color: {color2}
