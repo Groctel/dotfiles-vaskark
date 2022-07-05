@@ -75,7 +75,7 @@
         </item>
         <item label="solitaire">
           <action name="Execute">
-            <execute>aisleriot</execute>
+            <execute>sol</execute>
           </action>
         </item>
         <item label="sudoku">
@@ -242,11 +242,6 @@
         <item label="st">
           <action name="Execute">
             <execute>st</execute>
-          </action>
-        </item>
-        <item label="terminal">
-          <action name="Execute">
-            <execute>gnome-terminal</execute>
           </action>
         </item>
         <item label="urxvt">
