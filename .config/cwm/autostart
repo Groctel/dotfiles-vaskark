@@ -14,4 +14,4 @@ x=$(( $(xdotool getdisplaygeometry | awk '{print $1}') / 2 - (w/2) ))
 sed -i "s|#request setgeometry.*$|#request setgeometry $x 0 $w $h|g" ~/.config/glava/rc.glsl
 
 # cwm
-exec /usr/local/bin/cwm
+exec /usr/local/bin/cwm -c ~/.config/cwm/cwmrc
