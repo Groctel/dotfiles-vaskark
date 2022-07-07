@@ -70,6 +70,15 @@ dmenu.foreground: #555
 dmenu.selbackground: {color0}
 dmenu.selforeground: {color5}
 
+! dwm
+dwm.normbgcolor: {color0}
+dwm.normfgcolor: #555555
+dwm.normbordercolor: {color0}
+dwm.selbgcolor: {color0}
+dwm.selfgcolor: {color5}
+dwm.selbordercolor: {color5}
+
+
 ! XScreensaver
 *default.Dialog.foreground:				#666
 *default.Dialog.background:				{color0}

@@ -32,7 +32,7 @@ case "$(uname -s)" in
 
 	OpenBSD*)
 		case "$MENU" in
-			*Logout) pkill X ;;
+			*Logout) pkill x ;;
 			*Restart) shutdown -r now ;;
 			*Shutdown) shutdown -p now ;;
 		esac
