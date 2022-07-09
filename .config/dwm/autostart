@@ -1,0 +1,147 @@
+#!/bin/sh
+
+# colours
+. "$XDG_CACHE_HOME"/wal/colors.sh
+
+Mpc() {
+
+    MPD=$(pgrep -x mpd)
+
+    if [ -n "$MPD" ] ; then
+        MPC=$(mpc current -f "%artist% >> %title%")
+        ICON="ﱘ"
+        echo "$ICON $MPC "
+    else
+        ICON="ﱙ"
+        echo "$ICON mpd offline "
+    fi
+
+}
+
+Wifi() {
+
+    INTERFACE=$(ip addr | awk '/state UP/ {print $2}' | sed 's/://g')
+    WIFISTR=$(iwconfig "$INTERFACE" | grep "Link" | sed 's/ //g' | sed 's/LinkQuality=//g' | sed 's/\/.*//g') 
+
+    if [ -n "$WIFISTR" ] ; then
+
+        WIFISTR=$(( WIFISTR * 100 / 70 ))
+        ESSID=$(iwconfig "$INTERFACE" | grep ESSID | sed 's/ //g' | sed 's/.*://g' | sed 's/\"//g')
+
+        if [ "$WIFISTR" -ge 1 ] ; then
+
+            RKBPS=$(ifstat -i "$INTERFACE" 0.2s 1 | awk 'NR==3 {print $1}' | sed 's:\.[^|]*::g')
+            MKBPS=$(( RKBPS / 1024 ))
+            ICON="說"
+            
+            if [ "$RKBPS" -le 999 ]; then
+                echo " $ICON $ESSID [$RKBPS Kb/s] "
+            else
+                echo " $ICON $ESSID [$MKBPS Mb/s] "
+            fi
+
+        fi
+
+    fi
+
+}
+
+Uptime() {
+
+    UP=$("$XDG_CONFIG_HOME"/scripts/uptime.sh)
+    ICON=""
+    echo " $ICON $UP "
+
+}
+
+Cpu() {
+
+    CPU=$("$XDG_CONFIG_HOME"/scripts/cpu.sh)
+    ICON="﬙"
+    echo " $ICON $CPU "
+
+}
+
+Memory() {
+
+    T=$(grep MemTotal < /proc/meminfo | awk '{print $2}')
+    F=$(grep MemFree < /proc/meminfo | awk '{print $2}')
+    B=$(grep Buffers < /proc/meminfo | awk '{print $2}')
+    C=$(grep Cached < /proc/meminfo | awk 'NR==1 {print $2}')
+
+    USED=$(( 100*(T - F - B - C) / T ))
+    ICON=""
+    echo " $ICON $USED% "
+
+}
+
+Battery() {
+
+    case $(uname -s) in
+
+    Linux*)
+
+        CHARGE=$(acpi | grep "Not charging")
+        CAPACITY=$(cat /sys/class/power_supply/BAT0/capacity)
+
+        if [ -n "$CHARGE" ] ; then
+            ICON=""
+            echo " $ICON $CAPACITY% "
+        else
+            ICON=""
+            echo " $ICON $CAPACITY% "
+        fi
+
+    ;;
+
+    OpenBSD*)
+
+        CAPACITY=$(apm | awk 'NR==1 { print $4 }')
+        ICON=""
+        echo " $ICON $CAPACITY% "
+
+    ;;
+
+    FreeBSD*)
+
+        CAPACITY=$(apm | awk 'NR==5 { print $4 }')
+        ICON=""
+        echo " $ICON $CAPACITY% "
+
+    ;;
+
+    esac
+
+}
+
+Volume() {
+    
+    MUTE=$(pactl list sinks | awk '/Mute:/ { print $2 }')
+
+    if [ "$MUTE" = "no" ] ; then
+        VOL=$(pactl list sinks | awk '/Volume: front-left/ { print $5 }' | sed 's/,//')
+        ICON="墳"
+        echo " $ICON $VOL "
+    else
+        ICON="婢"
+        echo " $ICON --% "
+    fi
+
+}
+
+Clock() {
+
+    TIME=$("$XDG_CONFIG_HOME"/scripts/time.sh)
+    ICON=""
+    echo " $ICON $TIME"
+
+}
+
+# bar
+while true; do
+    xsetroot -name "$(Mpc)$(Wifi)$(Uptime)$(Cpu)$(Memory)$(Battery)$(Volume)$(Clock)"
+    sleep 0.1
+done &
+
+# dwm
+dwm
