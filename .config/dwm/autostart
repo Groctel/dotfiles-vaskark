@@ -8,12 +8,9 @@ Mpc() {
     MPD=$(pgrep -x mpd)
 
     if [ -n "$MPD" ] ; then
-        MPC=$(mpc current -f "%artist% >> %title%")
+        MPC=$(mpc current -f "%title% by %artist%")
         ICON="ﱘ"
         echo "$ICON $MPC "
-    else
-        ICON="ﱙ"
-        echo "$ICON mpd offline "
     fi
 
 }
@@ -140,8 +137,14 @@ Clock() {
 # bar
 while true; do
     xsetroot -name "$(Mpc)$(Wifi)$(Uptime)$(Cpu)$(Memory)$(Battery)$(Volume)$(Clock)"
-    sleep 0.1
+    sleep 0.5
 done &
 
+# glava
+w=$(( $(xdotool getdisplaygeometry | awk '{print $1}') / 2 ))
+h=$(( $(xdotool getdisplaygeometry | awk '{print $2}') ))
+x=$(( $(xdotool getdisplaygeometry | awk '{print $1}') / 2 - (w/2) ))
+sed -i "s|#request setgeometry.*$|#request setgeometry $x 0 $w $h|g" ~/.config/glava/rc.glsl
+
 # dwm
-dwm
+/usr/local/bin/dwm
