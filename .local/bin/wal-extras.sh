@@ -34,6 +34,9 @@ fi
 # cwm
 [ "$(pgrep -x cwm)" ] && pkill -SIGHUP cwm
 
+# dwm
+[ "$(pgrep -x dwm)" ] && pkill -SIGHUP dwm
+
 # dunst 
 [ "$(pgrep -x dunst)" ] && pkill dunst
 
