@@ -153,7 +153,7 @@ Battery() {
 
 	OpenBSD*)
 
-		CAPACITY=$(apm | awk 'NR==1 { print $4 }')
+		CAPACITY=$(apm -l)
 	  	ICON=""
   		echo "%{F$color4}$ICON%{F-} $CAPACITY%"
 
