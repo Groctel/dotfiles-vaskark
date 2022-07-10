@@ -8,6 +8,7 @@ exec xsetroot -cursor_name left_ptr
 exec xautolock -time 10 -locker 'lock.sh' -killer 'systemctl suspend' -corners +0-0 -cornerdelay 1 &
 exec /usr/lib/policykit-1-gnome/polkit-gnome-authentication-agent-1
 exec systemctl --user import-environment; exec systemctl --user restart redshift
+exec glava.sh
 exec sh ~/.config/sdorfehs/launch.sh
 
 # general

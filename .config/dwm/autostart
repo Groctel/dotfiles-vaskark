@@ -7,6 +7,7 @@ wal -R -o wal-extras.sh &
 /usr/lib/policykit-1-gnome/polkit-gnome-authentication-agent-1 &
 xscreensaver --no-splash &
 xautolock -time 10 -locker 'xscreensaver-command -lock' -killer 'systemctl suspend' -corners +0-0 -cornerdelay 1 &
+glava.sh &
 
 # functions
 
@@ -17,7 +18,7 @@ Mpc() {
     if [ -n "$MPD" ] ; then
         MPC=$(mpc current -f "%artist% ∎ %title%")
         ICON="ﱘ"
-        echo "  $ICON $MPC"
+        echo "$ICON $MPC"
     fi
 
 }
@@ -123,9 +124,9 @@ Volume() {
     MUTE=$(pactl list sinks | awk '/Mute:/ { print $2 }')
 
     if [ "$MUTE" = "no" ] ; then
-        VOL=$(pactl list sinks | awk '/Volume: front-left/ { print $5 }' | sed 's/,//')
+        VOL=$("$XDG_CONFIG_HOME"/scripts/vol.sh)
         ICON="墳"
-        echo "  $ICON $VOL"
+        echo "  $ICON $VOL%"
     else
         ICON="婢"
         echo "  $ICON --%"
@@ -146,12 +147,6 @@ while true; do
     xsetroot -name "$(Mpc)$(Wifi)$(Uptime)$(Cpu)$(Memory)$(Battery)$(Volume)$(Clock)"
     sleep 0.5
 done &
-
-# glava
-# w=$(( $(xdotool getdisplaygeometry | awk '{print $1}') / 2 ))
-# h=$(( $(xdotool getdisplaygeometry | awk '{print $2}') ))
-# x=$(( $(xdotool getdisplaygeometry | awk '{print $1}') / 2 - (w/2) ))
-# sed -i "s|#request setgeometry.*$|#request setgeometry $x 0 $w $h|g" ~/.config/glava/rc.glsl &
 
 # dwm
 /usr/local/bin/dwm
