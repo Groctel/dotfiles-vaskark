@@ -1,7 +1,7 @@
 #!/bin/sh
 
 # colours
-. "$HOME"/.cache/wal/colors.sh
+. "$XDG_CACHE_HOME"/wal/colors.sh
 
 # offset
 x=$(( $(xdotool getdisplaygeometry | awk '{print $1}') / 6 ))

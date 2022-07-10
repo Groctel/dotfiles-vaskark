@@ -8,7 +8,7 @@
 
 
 # colours
-. "$HOME/.cache/wal/colors.sh"
+. "$XDG_CACHE_HOME/wal/colors.sh"
 
 
 Session() {
@@ -45,7 +45,7 @@ Kernel() {
 
 Uptime() {
 
-	UPTIME=$("$HOME"/.config/scripts/uptime.sh)
+	UPTIME=$("$XDG_CONFIG_HOME"/scripts/uptime.sh)
 	ICON=""
 	echo "%{F#000}%{B$color5}%{A3:wal -f random_user -o wal-extras.sh:}  $ICON $UPTIME  %{A}%{B-}%{F-}"
 }
@@ -118,7 +118,7 @@ Wifi() {
 
 Pkgs() {
 
-	PKGS=$("$HOME"/.config/scripts/pkgs.sh)
+	PKGS=$("$XDG_CONFIG_HOME"/scripts/pkgs.sh)
 	ICON=""
 	echo "%{F$color4}$ICON%{F-} $PKGS"
 
@@ -126,7 +126,7 @@ Pkgs() {
 
 Cpu() {
 
-	CPU=$("$HOME"/.config/scripts/cpu.sh)
+	CPU=$("$XDG_CONFIG_HOME"/scripts/cpu.sh)
 	ICON=""
 	echo "%{F$color4}$ICON%{F-} $CPU"
 
@@ -218,7 +218,7 @@ Date() {
 
 Time() {
 
-    TIME=$("$HOME"/.config/scripts/time.sh)
+    TIME=$("$XDG_CONFIG_HOME"/scripts/time.sh)
     ICON=""
     echo "%{F#000}%{B$color2}  $ICON $TIME  %{U-}%{B-}%{F-}"
 
@@ -230,7 +230,7 @@ Time() {
 
 while true; do
     echo "\
-	%{l}$(Kernel) $(Workspaces) \
+	%{l}$(Uptime) $(Workspaces) \
 	%{c}$(Mpc) \
 	%{r}$(Wifi) $(Cpu) $(Memory) $(Battery) $(Volume) $(Time)"
     sleep 0.5
