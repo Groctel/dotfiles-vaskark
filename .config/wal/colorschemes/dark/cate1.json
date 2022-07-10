@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/jason/Pictures/actresses-cate-blanchett-actress-australian-wallpaper-638a73faf8257c3de8e23e239108e2b1.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#171719",
+        "foreground": "#c5c5c5",
+        "cursor": "#c2b193"
+    },
+    "colors": {
+        "color0": "#171719",
+        "color1": "#644535",
+        "color2": "#b5977a",
+        "color3": "#7d6445",
+        "color4": "#9eb0aa",
+        "color5": "#A14049",
+        "color6": "#c2b193",
+        "color7": "#c5c5c5",
+        "color8": "#2e2e33",
+        "color9": "#8b563a",
+        "color10": "#fec38a",
+        "color11": "#af834d",
+        "color12": "#b7fae4",
+        "color13": "#DF4452",
+        "color14": "#ffeca8",
+        "color15": "#ffffff"
+    }
+}

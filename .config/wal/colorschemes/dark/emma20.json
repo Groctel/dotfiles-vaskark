@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/jason/Pictures/4lso5forxja91-2.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#191716",
+        "foreground": "#c5c5c4",
+        "cursor": "#b1784e"
+    },
+    "colors": {
+        "color0": "#191716",
+        "color1": "#724533",
+        "color2": "#b99581",
+        "color3": "#92614a",
+        "color4": "#a4826f",
+        "color5": "#954b3e",
+        "color6": "#b1784e",
+        "color7": "#c5c5c4",
+        "color8": "#332f2d",
+        "color9": "#9e5537",
+        "color10": "#ffbb93",
+        "color11": "#cc7851",
+        "color12": "#e7a37e",
+        "color13": "#CF5742",
+        "color14": "#f69954",
+        "color15": "#fffffe"
+    }
+}

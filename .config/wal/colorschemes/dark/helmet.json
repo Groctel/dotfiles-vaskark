@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/jason/Pictures/ign_leafHelmet.png",
+    "alpha": "100",
+    "special": {
+        "background": "#1c1c1c",
+        "foreground": "#cccccc",
+        "cursor": "#69b0b9"
+    },
+    "colors": {
+        "color0": "#1c1c1c",
+        "color1": "#ac4852",
+        "color2": "#8a95b0",
+        "color3": "#c76855",
+        "color4": "#426e9a",
+        "color5": "#a87098",
+        "color6": "#69b0b9",
+        "color7": "#cccccc",
+        "color8": "#1f1f1f",
+        "color9": "#e1505f",
+        "color10": "#a1c1e7",
+        "color11": "#e18161",
+        "color12": "#4a94df",
+        "color13": "#e581d3",
+        "color14": "#7be3e3",
+        "color15": "#eeeeee"
+    }
+}

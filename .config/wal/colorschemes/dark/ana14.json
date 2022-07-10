@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/jason/Pictures/ana-de-armas-in-2020-i0-1.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#191817",
+        "foreground": "#c5c5c5",
+        "cursor": "#7d746a"
+    },
+    "colors": {
+        "color0": "#191817",
+        "color1": "#725a49",
+        "color2": "#b1937a",
+        "color3": "#a2a39d",
+        "color4": "#b9a997",
+        "color5": "#613335",
+        "color6": "#7d746a",
+        "color7": "#c5c5c5",
+        "color8": "#33312e",
+        "color9": "#a07252",
+        "color10": "#f9bd8b",
+        "color11": "#e0e8b7",
+        "color12": "#ffdcae",
+        "color13": "#87383C",
+        "color14": "#b1977a",
+        "color15": "#ffffff"
+    }
+}

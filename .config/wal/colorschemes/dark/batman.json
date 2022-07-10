@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/jason/Pictures/e2tyt9vgxv991.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#191716",
+        "foreground": "#c5c5c4",
+        "cursor": "#a74b42"
+    },
+    "colors": {
+        "color0": "#191716",
+        "color1": "#65352f",
+        "color2": "#d2795a",
+        "color3": "#93574a",
+        "color4": "#daac6f",
+        "color5": "#87473f",
+        "color6": "#a74b42",
+        "color7": "#c5c5c4",
+        "color8": "#332f2d",
+        "color9": "#8c3d33",
+        "color10": "#ff9361",
+        "color11": "#cd6751",
+        "color12": "#ffe27a",
+        "color13": "#bc5245",
+        "color14": "#e85546",
+        "color15": "#fffffe"
+    }
+}
