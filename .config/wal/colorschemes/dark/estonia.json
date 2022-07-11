@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/jason/Pictures/zaumrxwwcpa91.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#181814",
+        "foreground": "#ccb9b9",
+        "cursor": "#80c1cd"
+    },
+    "colors": {
+        "color0": "#181814",
+        "color1": "#724b32",
+        "color2": "#817e90",
+        "color3": "#bf9685",
+        "color4": "#80c1cd",
+        "color5": "#397487",
+        "color6": "#80c1cd",
+        "color7": "#ccb9b9",
+        "color8": "#32322b",
+        "color9": "#9f5e37",
+        "color10": "#9f92cd",
+        "color11": "#f4ba97",
+        "color12": "#91f4f4",
+        "color13": "#3d9ebd",
+        "color14": "#91f4f4",
+        "color15": "#fde5e5"
+    }
+}

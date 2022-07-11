@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/jason/Pictures/ana-de-armas-vogue-espana-2020.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#1a1919",
+        "foreground": "#c5c5c5",
+        "cursor": "#605750"
+    },
+    "colors": {
+        "color0": "#1a1919",
+        "color1": "#6b3627",
+        "color2": "#b2725a",
+        "color3": "#ce9578",
+        "color4": "#6f4d3f",
+        "color5": "#9f4b49",
+        "color6": "#605750",
+        "color7": "#c5c5c5",
+        "color8": "#333131",
+        "color9": "#944029",
+        "color10": "#f88c63",
+        "color11": "#ffba86",
+        "color12": "#9b5f46",
+        "color13": "#DD534F",
+        "color14": "#886f5c",
+        "color15": "#ffffff"
+    }
+}
