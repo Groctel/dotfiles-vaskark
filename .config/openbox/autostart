@@ -19,10 +19,10 @@ systemctl --user import-environment; systemctl --user restart redshift
 bash "$HOME"/.fehbg &
 
 # wal
-wal -R -o wal-extras.sh
+# wal -R -o wal-extras.sh
 
 # statusbar
 # polybar-current &
 
 # glava
-glava.sh &
+glava.sh
