@@ -37,6 +37,13 @@ fi
 # dwm
 [ "$(pgrep -x dwm)" ] && pkill -SIGHUP dwm
 
+# dk
+if [ "$(pgrep -x dk)" ]; then
+	dkcmd set border colour focus = "$color2"
+	dkcmd set border colour unfocus = #444444
+	dkcmd set border colour urgent = "$color1"
+fi
+
 # dunst 
 [ "$(pgrep -x dunst)" ] && pkill dunst
 
@@ -45,7 +52,7 @@ fi
 
 # glava
 sed -i "s|#define COLOR @fg.*$|#define COLOR @fg:mix(""$color5""ff, ""$color13""aa, clamp(d / GRADIENT, 0, 1))|g" ~/.config/glava/bars.glsl
-[ "$(pgrep -x glava)" ] && pkill glava && glava -d 2>/dev/null &
+[ "$(pgrep -x glava)" ] && pkill -USR1 glava &
 
 # cava
 sed -i "s|gradient_color_1.*$|gradient_color_1 = \'""$color5""\'|g" ~/.config/cava/config
