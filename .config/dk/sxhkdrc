@@ -1,9 +1,7 @@
 # polybar
-super + semicolon
-	pkill polybar || polybar-current
-super + shift + semicolon
-	polybar-menu.sh
-
+super + {_,shift +} semicolon
+	{pkill polybar || polybar-current,polybar-menu.sh}
+	
 # glava
 super + {_,shift +} g
     {glava-toggle.sh,glava-flip.sh}
@@ -20,6 +18,10 @@ super + shift + r
 # restart dk
 super + ctrl + shift + r
 	dkcmd restart
+
+# center window (floating)
+super + c
+	"$HOME"/.config/dk/center.sh
 
 # focus next or previous window
 super + {j,k}
