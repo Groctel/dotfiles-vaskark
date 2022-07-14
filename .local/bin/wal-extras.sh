@@ -5,11 +5,9 @@
 
 # berry
 if [ "$(pgrep -x berry)" ]; then
-	berry0=$(sed -n 1p ~/.cache/wal/colors | sed 's/#//')
-	berry2=$(sed -n 3p ~/.cache/wal/colors | sed 's/#//')
-	berryc inner_focus_color   "$berry2"
-	berryc text_focus_color    "$berry0"
-	berryc inner_unfocus_color "$berry0"
+	berryc inner_focus_color   "$(echo "$color2" | sed 's/#//')"
+	berryc text_focus_color    "000000"
+	berryc inner_unfocus_color "$(echo "$color0" | sed 's/#//')"
 	berryc text_unfocus_color  "444444"
 fi
 
@@ -27,7 +25,7 @@ fi
 
 # hypr
 if [ "$(pgrep -x Hypr)" ]; then
-	hypr2=$(sed -n 3p ~/.cache/wal/colors | sed 's/#//')
+	hypr2=$(echo "$color2" | sed 's/#//')
 	sed -i "s|col.active_border.*$|col.active_border=0x77""$hypr2""|g" ~/.config/hypr/hypr.conf
 fi
 

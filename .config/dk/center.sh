@@ -13,7 +13,7 @@ w=$(xwininfo -id "$(xdotool getactivewindow)" | awk '/Width:/ { print $2 }')
 h=$(xwininfo -id "$(xdotool getactivewindow)" | awk '/Height:/ { print $2 }')
 
 # border
-b=4
+b=1
 
 # move
 xdo move -x $(( x/2 - w/2 -b/2 )) -y $(( y/2 - h/2 - b/2 ))
