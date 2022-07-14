@@ -153,6 +153,7 @@ fi
 
 # apps
 picom --experimental-backends --config ~/.config/picom/picom.conf &
+systemctl --user import-environment; systemctl --user restart redshift
 bash "$HOME"/.fehbg &
 /usr/lib/policykit-1-gnome/polkit-gnome-authentication-agent-1 &
 xscreensaver --no-splash &
