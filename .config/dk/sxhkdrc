@@ -6,6 +6,10 @@ super + {_,shift +} semicolon
 super + {_,shift +} g
     {glava-toggle.sh,glava-flip.sh}
 
+# pics
+super + p; {minus,equal}
+	ls -t {"$HOME"/Pictures/*,"$HOME"/Pictures/wow/*} | head -50 | xargs nsxiv -rt
+
 # quit dk
 super + Delete
 	exit.sh
@@ -19,9 +23,9 @@ super + shift + r
 super + ctrl + shift + r
 	dkcmd restart
 
-# center window (floating)
+# center
 super + c
-	"$HOME"/.config/dk/center.sh
+	"$XDG_CONFIG_HOME"/dk/center.sh
 
 # focus next or previous window
 super + {j,k}
@@ -73,7 +77,7 @@ super + {_,shift + }{i,o}
 	dkcmd set {master,stack} {+1,-1}
 
 # change gap width
-super + alt + {equal,minus}
+super + {equal,minus}
 	dkcmd set gap width {+5,-5}
 
 # change border widths

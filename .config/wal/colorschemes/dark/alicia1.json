@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/jason/.config/wpg/wallpapers/alicia-amanda-vikander-wallpaper.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#191a19",
+        "foreground": "#c5c5c5",
+        "cursor": "#3a736e"
+    },
+    "colors": {
+        "color0": "#191a19",
+        "color1": "#664249",
+        "color2": "#837171",
+        "color3": "#c28e8b",
+        "color4": "#d5aa9f",
+        "color5": "#3A736E",
+        "color6": "#D5AA9F",
+        "color7": "#c5c5c5",
+        "color8": "#313331",
+        "color9": "#8f4a58",
+        "color10": "#ba8383",
+        "color11": "#ffa59f",
+        "color12": "#ffceb6",
+        "color13": "#40A098",
+        "color14": "#FFCEB6",
+        "color15": "#ffffff"
+    }
+}

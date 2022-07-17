@@ -22,7 +22,7 @@ super +  Escape
 super + {_,shift +} F1
 	{thunar,thunar-pkexec}
 
-# browsers
+# browser
 super + F2
 	google-chrome
 
@@ -52,23 +52,22 @@ alt + {F10,F11,F12}
 alt + shift + {F10,F12}
 	mpc seek {-00:00:05,+00:00:05}
 
-# shots
+# shot
 super + {_,shift +} Print
-	scrot -q 85 {-d 3,-s} '%Y-%m-%d_%I-%M-%S_%p.png' -e 'mv $f ~/Screenshots/'
+	flameshot {full,gui}
+	# scrot -q 85 {-d 3,-s} '%Y-%m-%d_%I-%M-%S_%p.png' -e 'mv $f ~/Screenshots/'
 
 # volume
-XF86Audio{Raise,Lower}Volume
-	pactl set-sink-volume {@DEFAULT_SINK@ +5%,@DEFAULT_SINK@ -5%}
-XF86AudioMute
-	pactl set-sink-mute @DEFAULT_SINK@ toggle
+XF86Audio{RaiseVolume,LowerVolume,Mute}
+	{pactl set-sink-volume 0 +5%,pactl set-sink-volume 0 -5%,pactl set-sink-mute 0 toggle}
 
 # brightness
 XF86MonBrightness{Up,Down}
 	light {-A 5,-U 5}
 
 # wal
-super + {_,shift +,ctrl +} F12
-    wal -q {-f random_user,-R,-f random} -o wal-extras.sh
+super + {_,shift +} F12
+    wal {-f random_user,-R} -o wal-extras.sh
         
 # pics
 super + {_,shift +} equal
