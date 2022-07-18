@@ -55,4 +55,4 @@ sed -i "s|#define COLOR @fg.*$|#define COLOR @fg:mix(""$color5""ff, ""$color13""
 # cava
 sed -i "s|gradient_color_1.*$|gradient_color_1 = \'""$color5""\'|g" ~/.config/cava/config
 sed -i "s|gradient_color_2.*$|gradient_color_2 = \'""$color13""\'|g" ~/.config/cava/config
-[ "$(pgrep -x cava)" ] && pkill -USR2 cava
+[ "$(pgrep -x cava)" ] && pkill -USR1 cava
