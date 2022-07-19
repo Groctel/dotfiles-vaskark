@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/jason/Pictures/lily_james.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#1b1918",
+        "foreground": "#c6c5c5",
+        "cursor": "#9a8f87"
+    },
+    "colors": {
+        "color0": "#1b1918",
+        "color1": "#593d36",
+        "color2": "#5f483d",
+        "color3": "#ad8f7b",
+        "color4": "#7a665e",
+        "color5": "#ab7c71",
+        "color6": "#9a8f87",
+        "color7": "#c6c5c5",
+        "color8": "#35312f",
+        "color9": "#7c493c",
+        "color10": "#855a45",
+        "color11": "#f4b68c",
+        "color12": "#ac7e6c",
+        "color13": "#f09580",
+        "color14": "#dab69c",
+        "color15": "#fffefe"
+    }
+}
