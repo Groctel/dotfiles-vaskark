@@ -3,7 +3,7 @@
 # polybar
 if [ "$(pgrep -x polybar)" ]; then
     polybar-msg cmd quit
-    polybar -q -r -c ~/.config/polybar/config-emoji main 2>/dev/null &
+    polybar -r -c ~/.config/polybar/config-emoji.ini 2>/dev/null &
 else
-    polybar -q -r -c ~/.config/polybar/config-emoji main 2>/dev/null &
+    polybar -r -c ~/.config/polybar/config-emoji.ini 2>/dev/null &
 fi

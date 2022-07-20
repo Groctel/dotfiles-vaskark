@@ -3,7 +3,7 @@
 # polybar
 if [ "$(pgrep -x polybar)" ]; then
     polybar-msg cmd quit
-    polybar -q -r -c ~/.config/polybar/config-nf main 2>/dev/null &
+    polybar -r -c ~/.config/polybar/config-nf.ini 2>/dev/null &
 else
-    polybar -q -r -c ~/.config/polybar/config-nf main 2>/dev/null &
+    polybar -r -c ~/.config/polybar/config-nf.ini 2>/dev/null &
 fi
