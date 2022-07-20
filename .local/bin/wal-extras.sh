@@ -33,7 +33,7 @@ fi
 [ "$(pgrep -x cwm)" ] && pkill -SIGHUP cwm
 
 # dwm
-[ "$(pgrep -x dwm)" ] && pkill -SIGHUP dwm
+[ "$(pgrep -x dwm)" ] && pkill -SIGHUP dwm && pkill -SIGHUP slstatus
 
 # dk
 if [ "$(pgrep -x dk)" ]; then
