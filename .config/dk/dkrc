@@ -49,8 +49,8 @@ fi
 	#       try embracing the default behaviour and allow access to any workspace from any monitor
 	#       you might end up liking it :)
 	#
-	# mon1='DisplayPort-0'
-	# mon2='HDMI-A-0'
+	# mon1='eDp-1'
+	# mon2='HDMI-2'
 	# dkcmd set static_ws=true \
 	# 	ws=1  mon=$mon1 \
 	# 	ws=2  mon=$mon1 \
@@ -121,7 +121,7 @@ fi
 	dkcmd rule class="^mpv$" instance="^albumart$" float=true ignore=true callback=albumart bw=0
 
 	# open window(s) in a floating state
-	dkcmd rule class="^(pavucontrol|transmission-gtk|steam|lxappearance)$" float=true
+	dkcmd rule class="^(pavucontrol|transmission-gtk|lxappearance|Windscribe2)$" float=true
 
 	# open window(s) with a specific geometry and coordinates (floating only!)
 	dkcmd rule class="^google-chrome$" title="^open files$" float=true w=1280 h=720
@@ -133,7 +133,7 @@ fi
 	dkcmd rule class="^firefox$" ws=1 focus=true
 
 	# update or remove an existing rule with the same match patterns
-	dkcmd rule class="^firefox$" mon="HDMI-A-0"
+	dkcmd rule class="^firefox$" mon="HDMI-2"
 	dkcmd rule remove class="^firefox$"
 
 	# apply current rule set to all existing windows (useful for WM reload/restart)
