@@ -10,9 +10,13 @@ super + {_,shift +} g
 super + p; {minus,equal}
 	ls -t {"$HOME"/Pictures/*,"$HOME"/Pictures/wow/*} | head -50 | xargs nsxiv -rt
 
+# launch
+super + {d,x}
+	"$XDG_CONFIG_HOME"/dk/{rofi.sh,dmenu.sh}
+
 # quit dk
 super + Delete
-	exit.sh
+	"$XDG_CONFIG_HOME"/dk/exit.sh
 	# dkcmd quit
 
 # reload dkrc

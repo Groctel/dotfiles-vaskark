@@ -59,7 +59,7 @@ super + {_,shift +} Print
 
 # volume
 XF86Audio{RaiseVolume,LowerVolume,Mute}
-	{pactl set-sink-volume 0 +5%,pactl set-sink-volume 0 -5%,pactl set-sink-mute 0 toggle}
+	pactl {set-sink-volume 0 +5%,set-sink-volume 0 -5%,set-sink-mute 0 toggle}
 
 # brightness
 XF86MonBrightness{Up,Down}

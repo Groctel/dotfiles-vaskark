@@ -8,6 +8,8 @@ MENU="$(rofi -sep "|" \
 	-dmenu -i \
 	-p 'Polybars' \
 	-location 0 \
+	-font 'scientifica bold 8' \
+	-theme "~/.cache/wal/colors-rofi-mine.rasi" \
     -theme-str 'window {width: 10%;} listview {lines: 3;}' \
 	<<< "siji|nf|emoji")"
 

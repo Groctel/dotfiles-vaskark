@@ -11,6 +11,8 @@ rofi -show drun \
 -display-emoji '🍔' \
 -display-keys '🔑' \
 -disable-history \
+-font "scientifica bold 8" \
 -hide-scrollbar \
 -matching normal \
+-theme "~/.cache/wal/colors-rofi-mine.rasi" \
 -theme-str 'window {width: 15%;} listview {lines: 5;}'

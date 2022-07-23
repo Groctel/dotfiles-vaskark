@@ -416,7 +416,7 @@
     </keybind>
     <keybind key="W-Escape">
       <action name="Execute">
-        <command>lock.sh</command>
+        <command>xscreensaver-command -lock</command>
       </action>
     </keybind>
     <keybind key="W-F1">
@@ -513,17 +513,17 @@
     </keybind>
     <keybind key="XF86AudioRaiseVolume">
       <action name="Execute">
-        <command>pactl set-sink-volume @DEFAULT_SINK@ +5%</command>
+        <command>pactl set-sink-volume 0 +5%</command>
       </action>
     </keybind>
     <keybind key="XF86AudioLowerVolume">
       <action name="Execute">
-        <command>pactl set-sink-volume @DEFAULT_SINK@ -5%</command>
+        <command>pactl set-sink-volume 0 -5%</command>
       </action>
     </keybind>
     <keybind key="XF86AudioMute">
       <action name="Execute">
-        <command>pactl set-sink-mute @DEFAULT_SINK@ toggle</command>
+        <command>pactl set-sink-mute 0 toggle</command>
       </action>
     </keybind>
     <!-- Polybar
