@@ -30,7 +30,12 @@ if [ "$(pgrep -x Hypr)" ]; then
 fi
 
 # cwm
-[ "$(pgrep -x cwm)" ] && pkill -SIGHUP cwm
+if [ "$(pgrep -x cwm)" ]; then
+	sed -i "s|color activeborder.*$|color activeborder \'""$color2""\'|g" ~/.config/cwm/cwmrc
+	sed -i "s|color inactiveborder.*$|color inactiveborder \'#444444\'|g" ~/.config/cwm/cwmrc
+	sed -i "s|color urgencyborder.*$|color urgencyborder \'""$color1""\'|g" ~/.config/cwm/cwmrc
+	pkill -SIGHUP cwm
+fi
 
 # dwm
 [ "$(pgrep -x dwm)" ] && pkill -SIGHUP dwm && pkill -SIGHUP slstatus
