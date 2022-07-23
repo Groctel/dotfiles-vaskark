@@ -6,11 +6,11 @@ moveamount 5
 sticky yes
 
 # colors
-color activeborder '{color2}'
-color inactiveborder '{color8}'
-color urgencyborder '{color1}'
+color activeborder '#34656e'
+color inactiveborder '#444444'
+color urgencyborder '#786c6c'
 color font '#666'
-color selfont '{color2}' 
+color selfont '#4c5b6b' 
 
 # ignore
 ignore Bar
