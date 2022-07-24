@@ -96,6 +96,14 @@ Wifi() {
 
 }
 
+Pkgs() {
+
+	PKGS=$("$XDG_CONFIG_HOME"/scripts/pkgs.sh)
+	ICON=""
+	echo "%{F$color4}$ICON%{F-} $PKGS"
+
+}
+
 Cpu() {
 
 	CPU=$("$HOME"/.config/scripts/cpu.sh)
@@ -107,32 +115,32 @@ Battery() {
 
 	case $(uname -s) in
 
-	Linux*)
+		Linux*)
 
-		CHARGE=$(acpi | grep "Not charging")
-		CAPACITY=$(cat /sys/class/power_supply/BAT0/capacity)
+			CHARGE=$(acpi | grep "Not charging")
+			CAPACITY=$(cat /sys/class/power_supply/BAT0/capacity)
 
-		if [[ "$CHARGE" ]] ; then
-			echo "🔌 $CAPACITY% "
-		else
-  			echo "🔋 $CAPACITY% "
-		fi
+			if [[ "$CHARGE" ]] ; then
+				echo "🔌 $CAPACITY% "
+			else
+	  			echo "🔋 $CAPACITY% "
+			fi
 
-	;;
+		;;
 
-	OpenBSD*)
+		OpenBSD*)
 
-		CAPACITY=$(apm | awk 'NR==1 { print $4 }')
-  		echo "🔋 $CAPACITY% "
+			CAPACITY=$(apm -l)
+	  		echo "🔋 $CAPACITY% "
 
-	;;
+		;;
 
-	FreeBSD*)
+		FreeBSD*)
 
-		CAPACITY=$(apm | awk 'NR==5 { print $4 }')
-  		echo "🔋 $CAPACITY% "
+			CAPACITY=$(apm | awk 'NR==5 { print $4 }')
+	  		echo "🔋 $CAPACITY% "
 
-  	;;
+	  	;;
 
 	esac
 
@@ -152,36 +160,14 @@ Memory() {
 
 Volume() {
 
-	case $(uname -s) in
+	MUTE=$(pactl list sinks | awk '/Mute:/ { print $2 }')
 
-	Linux*)
-
-		NOTMUTED=$(amixer -D pulse sget Master | grep "\[on\]")
-
-		if [ "$NOTMUTED" ] ; then
-			VOL=$(awk -F"[][]" '/Left:/ { print $2 }' <(amixer -D pulse sget Master) | sed 's/%//g')
-			echo "%{A3:pavucontrol:}%{A4:pactl set-sink-volume @DEFAULT_SINK@ +5%:}%{A5:pactl set-sink-volume @DEFAULT_SINK@ -5%:}🔊 $VOL% %{A}%{A}%{A}"
+	if [ "$MUTE" = "no" ] ; then
+		VOL=$("$XDG_CONFIG_HOME"/scripts/vol.sh)
+			echo "%{A3:pavucontrol:}%{A4:pactl set-sink-volume 0 +5%:}%{A5:pactl set-sink-volume 0 -5%:}🔊 $VOL% %{A}%{A}%{A}"
 		else
 			echo "🔇 --% "
 		fi
-
-	;;
-
-	FreeBSD*)
-	
-		VOL=$(mixer | grep 'vol' | awk '{ print $7 }' | sed 's/.*://')
-		echo "🔊 $VOL% "
-
-	;;
-
-	OpenBSD*)
-		
-		VOL=$(pactl list sinks | awk '/Volume: front-left/ { print $5 }' | sed 's/,//')
-		echo "🔊 $VOL% "
-
-	;;
-
-	esac
 
 }
 
@@ -208,7 +194,9 @@ Time() {
 }
 
 
-# begin
+###
+
+
 while true; do
     echo "\
 	%{l}$(Uptime) $(Workspaces) \
