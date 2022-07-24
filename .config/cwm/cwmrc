@@ -6,9 +6,9 @@ moveamount 5
 sticky yes
 
 # colors
-color activeborder '#745b5a'
+color activeborder '#589584'
 color inactiveborder '#444444'
-color urgencyborder '#6d4753'
+color urgencyborder '#ca7162'
 color font '#666'
 color selfont '#4c5b6b' 
 
@@ -30,7 +30,7 @@ bind-key 4-w window-close
 bind-key 4-h window-hide
 bind-key 4-m window-maximize
 bind-key 4-f window-fullscreen
-bind-key 4-c '/home/jason/.config/cwm/center.sh'
+bind-key 4-c 'center.sh'
 bind-key 4-u '/home/jason/.config/cwm/top_left.sh'
 bind-key 4-i '/home/jason/.config/cwm/bottom_left.sh'
 bind-key 4-o '/home/jason/.config/cwm/bottom_right.sh'

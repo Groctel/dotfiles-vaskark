@@ -1,6 +1,6 @@
 # polybar
 super + {_,shift +} semicolon
-	{pkill lemonbar || lemonbar-current,lemonbar-menu.sh}
+	{pkill polybar || polybar-current,polybar-menu.sh}
 	
 # glava
 super + {_,shift +} g
@@ -29,7 +29,7 @@ super + ctrl + shift + r
 
 # center
 super + c
-	"$XDG_CONFIG_HOME"/dk/center.sh
+	center.sh
 
 # focus next or previous window
 super + {j,k}
