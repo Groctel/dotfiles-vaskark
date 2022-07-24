@@ -1,7 +1,7 @@
 #!/bin/sh
 
 #
-# move window to center bottom
+# move window to center
 #
 
 # root
@@ -12,8 +12,8 @@ y=$(xwininfo -root | awk '/Height:/ { print $2 }')
 w=$(xwininfo -id "$(xdotool getactivewindow)" | awk '/Width:/ { print $2 }')
 h=$(xwininfo -id "$(xdotool getactivewindow)" | awk '/Height:/ { print $2 }')
 
-# titlebar height
-b=24
+# border
+b=1
 
 # move
-berryc window_move_absolute $(( x/2 - w/2 )) $(( y - h - b ))
+xdo move -x $(( x/2 - w/2 - b )) -y $(( y/2 - h/2 - b ))

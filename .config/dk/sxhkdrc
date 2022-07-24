@@ -29,7 +29,7 @@ super + ctrl + shift + r
 
 # center
 super + c
-	center.sh
+	~/.config/dk/center.sh
 
 # focus next or previous window
 super + {j,k}
