@@ -7,23 +7,19 @@
 pgrep -x picom || picom --experimental-backends --config ~/.config/picom/picom.conf &
 
 # redshift
-systemctl --user import-environment; systemctl --user restart redshift.service &
+pgrep -x redshift || systemctl --user restart redshift.service
 
 # lock
-pgrep -x xautolock || xautolock -time 10 -locker 'lock.sh' -killer 'systemctl suspend' -corners 00-+ &
+pgrep -x xautolock || xautolock -time 10 -locker 'lock.sh' -killer 'systemctl suspend' -corners +0-0 -cornerdelay 1 &
 
 # polkit
 pgrep -x /usr/lib/policykit-1-gnome/polkit-gnome-authentication-agent-1 || /usr/lib/policykit-1-gnome/polkit-gnome-authentication-agent-1 &
-#/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
-
-# polybar
-"$HOME"/.config/bspwm/launch_polybar.sh
 
 # sxhkd
 pgrep -x sxhkd || sxhkd -c "$HOME"/.config/bspwm/sxhkdrc "$HOME"/.config/sxhkd/sxhkdrc.common &
 
 # wp
-bash "$HOME"/.fehbg &
+[ -f "$HOME"/.fehbg ] || bash "$HOME"/.fehbg &
 
 # dunst
 pgrep -x dunst || dunst &
@@ -53,7 +49,7 @@ bspc config bottom_padding 		    0
 bspc config left_padding 		    0
 bspc config right_padding 		    0
 bspc config border_width 		    1
-bspc config window_gap			    20
+bspc config window_gap			    10
 
 bspc config normal_border_color 	"$color8"
 bspc config active_border_color 	"$color2"
@@ -64,5 +60,4 @@ bspc config presel_feedback_color	"$color2"
 bspc rule -r "*"
 
 # rules
-#bspc rule -a Sxiv desktop='^3' state=floating follow=on
 bspc rule -a St state=floating

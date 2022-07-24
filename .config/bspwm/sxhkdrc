@@ -3,10 +3,14 @@
 #
 
 # polybar
-super + {_,shift +} semicolon
-	polybar-msg cmd {toggle,restart}
-super + ctrl + semicolon
-	pkill polybar || polybar -r -c ~/.config/bspwm/polybar/current main
+super + semicolon
+ pkill polybar || polybar-current
+super + shift + semicolon
+   polybar-menu.sh
+
+# glava
+super + {_,shift +} g
+    {pkill glava || glava -d 2>/dev/null,glava-flip.sh}
 
 #
 # bspwm hotkeys
@@ -14,8 +18,8 @@ super + ctrl + semicolon
 
 # quit bspwm
 super + Delete
-#	bspc quit
 	exit.sh
+#	bspc quit
 	
 # restart bspwm
 super + shift + r
