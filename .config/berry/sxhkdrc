@@ -3,24 +3,16 @@
 #
 
 # lemonbar
-super + semicolon
-   pkill lemonbar || lemonbar-current
-super + shift + semicolon
-   lemonbar-menu.sh
+super + {_,shift +} semicolon
+    {pkill lemonbar || lemonbar-current,lemonbar-menu.sh}
 
 # polybar
-# super + semicolon
-#  pkill polybar || polybar-current
-# super + shift + semicolon
-#    polybar-menu.sh
+# super + {_,shift +} semicolon
+#     {pkill polybar || polybar-current,polybar-menu.sh}
 
 # glava
 super + {_,shift +} g
-    {pkill glava || glava -d 2>/dev/null,glava-flip.sh}
-
-# subl
-super + e
-    subl
+    {pkill glava || glava -d,glava-flip.sh}
 
 # terms
 super + t ; {g,k,l,m,s,u,x}

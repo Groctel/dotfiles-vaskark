@@ -220,7 +220,7 @@ Time() {
 
     TIME=$("$XDG_CONFIG_HOME"/scripts/time.sh)
     ICON=""
-    echo "%{F#000}%{B$color2}  $ICON $TIME  %{U-}%{B-}%{F-}"
+    echo "%{F#000}%{B$color2}  $ICON $TIME  %{B-}%{F-}"
 
 }
 

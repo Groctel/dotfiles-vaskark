@@ -1,6 +1,6 @@
 # polybar
 super + {_,shift +} semicolon
-	{pkill polybar || polybar-current,polybar-menu.sh}
+	{pkill lemonbar || lemonbar-current,lemonbar-menu.sh}
 	
 # glava
 super + {_,shift +} g
@@ -12,11 +12,11 @@ super + p; {minus,equal}
 
 # launch
 super + {d,x}
-	"$XDG_CONFIG_HOME"/dk/{rofi.sh,dmenu.sh}
+	{rofi.sh,dmenu.sh}
 
 # quit dk
 super + Delete
-	"$XDG_CONFIG_HOME"/dk/exit.sh
+	exit.sh
 	# dkcmd quit
 
 # reload dkrc

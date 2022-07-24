@@ -22,7 +22,7 @@ berryc edge_lock    "true"
 berryc set_font     "scientifica-8:bold"
 
 # wal
-wal -q -R -o wal-extras.sh
+wal -R -o wal-extras.sh
 
 # sxhkd
 sxhkd -c "$HOME"/.config/berry/sxhkdrc "$HOME"/.config/sxhkd/sxhkdrc.common &
