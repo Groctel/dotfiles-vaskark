@@ -5,7 +5,7 @@
 
 # determine where to place the log file
 logfile="$HOME"/.config/dk/dkrc.log
-[ -d "$HOME"/.local/share/xorg ] && logfile="$HOME"/.local/share/xorg/dkrc.log
+[ -d "$HOME"/.config/dk ] && logfile="$HOME"/.config/dk/dkrc.log
 : > "$logfile"
 
 
@@ -25,7 +25,7 @@ fi
 
 	# default workspace '_' values used when allocating new workspaces
 	# can be applied to all existing workspaces when passed 'apply' after ws=_
-	dkcmd set ws=_ apply layout=tile master=1 stack=3 gap=10 msplit=0.5 ssplit=0.5 pad bottom 40
+	dkcmd set ws=_ apply layout=tile master=1 stack=3 gap=10 msplit=0.5 ssplit=0.5
 
 	# use grid layout, padding, and gaps on workspace 10
 	# dkcmd set ws=5 layout=grid pad left=200 right=200 top=100 bottom=100 gap width=50

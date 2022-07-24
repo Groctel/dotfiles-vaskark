@@ -6,13 +6,14 @@
 
 rofi -show drun \
 -display-drun '🚀' \
+-drun-display-format '{name}' \
 -display-run '👾' \
 -display-ssh '💻' \
 -display-emoji '🍔' \
 -display-keys '🔑' \
 -disable-history \
--font "scientifica bold 8" \
+-font 'scientifica bold 8' \
 -hide-scrollbar \
 -matching normal \
--theme "~/.cache/wal/colors-rofi-mine.rasi" \
+-theme '~/.cache/wal/colors-rofi-mine.rasi' \
 -theme-str 'window {width: 15%;} listview {lines: 5;}'
