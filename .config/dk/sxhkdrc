@@ -14,6 +14,10 @@ super + p; {minus,equal}
 super + {d,x}
 	{rofi.sh,dmenu.sh}
 
+# lock
+super + Escape
+    xscreensaver-command lock
+
 # quit dk
 super + Delete
 	exit.sh
@@ -29,7 +33,7 @@ super + ctrl + shift + r
 
 # center
 super + c
-	~/.config/dk/center.sh
+	center.sh
 
 # focus next or previous window
 super + {j,k}
