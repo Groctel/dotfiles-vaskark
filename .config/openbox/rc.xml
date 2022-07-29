@@ -570,6 +570,11 @@
         <command>wal -q -R -o wal-extras.sh</command>
       </action>
     </keybind>
+    <keybind key="W-C-F12">
+      <action name="Execute">
+        <command>wal-switcher.sh</command>
+      </action>
+    </keybind>
     <!-- nsxiv -->
     <keybind key="W-equal">
       <action name="Execute">

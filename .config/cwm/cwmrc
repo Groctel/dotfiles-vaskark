@@ -50,6 +50,7 @@ bind-key 4-Delete exit.sh
 # wal
 bind-key 4-F12 'wal -f random_user -o wal-extras.sh'
 bind-key 4S-F12 'wal -R -o wal-extras.sh'
+bind-key 4C-F12 'wal-switcher.sh'
 
 # glava
 bind-key 4-g 'glava-toggle.sh'
