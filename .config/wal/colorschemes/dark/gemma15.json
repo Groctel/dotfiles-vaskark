@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/jason/Pictures/gemma-arterton-wallpaper-29b79d4145393f8a26a269369b3a3046.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#171616",
+        "foreground": "#c5c4c4",
+        "cursor": "#d3b39f"
+    },
+    "colors": {
+        "color0": "#171616",
+        "color1": "#6b4437",
+        "color2": "#8b7169",
+        "color3": "#bf927d",
+        "color4": "#90604b",
+        "color5": "#5c5257",
+        "color6": "#d3b39f",
+        "color7": "#c5c4c4",
+        "color8": "#302e2e",
+        "color9": "#95533c",
+        "color10": "#c48a78",
+        "color11": "#ffb68d",
+        "color12": "#c97753",
+        "color13": "#825f71",
+        "color14": "#ffe3b6",
+        "color15": "#fffefe"
+    }
+}

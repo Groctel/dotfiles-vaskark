@@ -4,25 +4,26 @@
 . "$HOME"/.cache/wal/colors.sh
 
 # picom
-pgrep -x picom || picom --experimental-backends --config ~/.config/picom/picom.conf &
+pgrep -x picom >/dev/null || picom --experimental-backends --config ~/.config/picom/picom.conf &
 
 # redshift
-pgrep -x redshift || systemctl --user restart redshift.service
+pgrep -x redshift >/dev/null || systemctl --user import-environment; systemctl --user restart redshift.service
 
 # lock
-pgrep -x xautolock || xautolock -time 10 -locker 'lock.sh' -killer 'systemctl suspend' -corners +0-0 -cornerdelay 1 &
+pgrep -x xscreensaver >/dev/null || xscreensaver --no-splash &
+pgrep -x xautolock >/dev/null || xautolock -time 10 -locker 'xscreensaver-command -lock' -killer 'systemctl suspend' -corners +0-0 -cornerdelay 1 &
 
 # polkit
-pgrep -x /usr/lib/policykit-1-gnome/polkit-gnome-authentication-agent-1 || /usr/lib/policykit-1-gnome/polkit-gnome-authentication-agent-1 &
+pgrep -x /usr/lib/policykit-1-gnome/polkit-gnome-authentication-agent-1 >/dev/null || /usr/lib/policykit-1-gnome/polkit-gnome-authentication-agent-1 &
 
 # sxhkd
-pgrep -x sxhkd || sxhkd -c "$HOME"/.config/bspwm/sxhkdrc "$HOME"/.config/sxhkd/sxhkdrc.common &
+pgrep -x sxhkd >/dev/null || sxhkd -c "$HOME"/.config/bspwm/sxhkdrc "$HOME"/.config/sxhkd/sxhkdrc.common &
 
 # wp
 [ -f "$HOME"/.fehbg ] || bash "$HOME"/.fehbg &
 
 # dunst
-pgrep -x dunst || dunst &
+pgrep -x dunst >/dev/null || dunst &
 
 # cursor
 xsetroot -cursor_name left_ptr &
@@ -54,7 +55,7 @@ bspc config window_gap			    10
 bspc config normal_border_color 	"$color8"
 bspc config active_border_color 	"$color2"
 bspc config focused_border_color 	"$color2"
-bspc config presel_feedback_color	"$color2"
+bspc config presel_feedback_color	"$color5"
 
 # reset all rules
 bspc rule -r "*"

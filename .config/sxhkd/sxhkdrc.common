@@ -16,7 +16,7 @@ super + {d,x}
 
 # lock
 super +  Escape
-	xscreensaver-command -quiet -lock
+        xscreensaver-command -lock
 
 # files
 super + {_,shift +} F1
@@ -29,10 +29,6 @@ super + F2
 # feh
 super + F3
 	feh --randomize --bg-fill --recursive --no-fehbg ~/Pictures/*.(png|jpg)
-	
-# farge
-super + F4
-	farge --image-viewer sxiv
 	
 # date
 super + F5
@@ -66,8 +62,8 @@ XF86MonBrightness{Up,Down}
 	light {-A 5,-U 5}
 
 # wal
-super + {_,shift +} F12
-    wal {-f random_user,-R} -o wal-extras.sh
+super + {_,shift +,ctrl +} F12
+    {wal -f random_user -o wal-extras.sh,-R -o wal-extras.sh,wal-favs.sh}
         
 # pics
 super + {_,shift +} equal

@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/jason/Pictures/vn8nsr46mjd91.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#161616",
+        "foreground": "#c4c4c4",
+        "cursor": "#bd958a"
+    },
+    "colors": {
+        "color0": "#161616",
+        "color1": "#722a2e",
+        "color2": "#897373",
+        "color3": "#bd958a",
+        "color4": "#ceada2",
+        "color5": "#722a2e",
+        "color6": "#bd958a",
+        "color7": "#c4c4c4",
+        "color8": "#2f2f2f",
+        "color9": "#984541",
+        "color10": "#c28585",
+        "color11": "#ffb59e",
+        "color12": "#ffd4ba",
+        "color13": "#984541",
+        "color14": "#ffb59e",
+        "color15": "#ffffff"
+    }
+}

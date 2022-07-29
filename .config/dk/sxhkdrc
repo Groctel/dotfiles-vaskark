@@ -4,24 +4,16 @@ super + {_,shift +} semicolon
 	
 # glava
 super + {_,shift +} g
-    {glava-toggle.sh,glava-flip.sh}
-
-# pics
-super + p; {minus,equal}
-	ls -t {"$HOME"/Pictures/*,"$HOME"/Pictures/wow/*} | head -50 | xargs nsxiv -rt
+    {pkill glava || glava -d,glava-flip.sh}
 
 # launch
 super + {d,x}
 	{rofi.sh,dmenu.sh}
 
-# lock
-super + Escape
-    xscreensaver-command lock
-
 # quit dk
 super + Delete
 	exit.sh
-	# dkcmd quit
+    # dkcmd exit
 
 # reload dkrc
 super + shift + r
@@ -44,7 +36,7 @@ super + {w,z,Tab}
 	dkcmd win {kill,swap,cycle}
 
 # toggle fullscreen and fake fullscreen (enable manipulating fullscreen window)
-	F11
+super + F11
 	dkcmd win full
 
 # toggle floating or sticky
@@ -81,11 +73,11 @@ super + l ; {t,r,m,g,s,d,f,u}
 	dkcmd set layout {tile,rtile,mono,grid,spiral,dwindle,none,tstack}
 
 # change number of windows in master or first stack
-super + {_,shift + }{i,o}
-	dkcmd set {master,stack} {+1,-1}
+# super + {_,shift + }{i,o}
+#         dkcmd set {master,stack} {+1,-1}
 
 # change gap width
-super + {equal,minus}
+super + alt + {equal,minus}
 	dkcmd set gap width {+5,-5}
 
 # change border widths

@@ -2,6 +2,7 @@
 
 #
 # move window to center
+# req: xdo
 #
 
 # root

@@ -85,17 +85,20 @@ source $ZDOTDIR/functions/fzf-man 2>/dev/null
 source $ZDOTDIR/functions/fzf-git 2>/dev/null
 
 # extract
-source $ZDOTDIR/plugins/zsh-extract/extract.plugin.zsh 2>/dev/null
+source $ZDOTDIR/zsh-extract/extract.plugin.zsh 2>/dev/null
 
 # autosuggestions
-source $ZDOTDIR/plugins/zsh-autosuggestions/zsh-autosuggestions.plugin.zsh 2>/dev/null
+source $ZDOTDIR/zsh-autosuggestions/zsh-autosuggestions.plugin.zsh 2>/dev/null
 ZSH_AUTOSUGGEST_STRATEGY=(history completion)
 bindkey '^ ' autosuggest-toggle
 
 # syntax highlighting
-source $ZDOTDIR/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.plugin.zsh 2>/dev/null
-ZSH_HIGHLIGHT_HIGHLIGHTERS=(brackets cursor line main pattern regexp root)
-ZSH_HIGHLIGHT_PATTERNS+=('rm -rf *' 'fg=black,bold,bg=red')
+# source $ZDOTDIR/zsh-syntax-highlighting/zsh-syntax-highlighting.plugin.zsh 2>/dev/null
+# ZSH_HIGHLIGHT_HIGHLIGHTERS=(brackets cursor line main pattern regexp root)
+# ZSH_HIGHLIGHT_PATTERNS+=('rm -rf *' 'fg=black,bold,bg=red')
+
+# fsh
+source $ZDOTDIR/fast-syntax-highlighting/F-Sy-H.plugin.zsh 2>/dev/null
 
 # pure
 # fpath+=~/.pure

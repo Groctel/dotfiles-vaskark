@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/jason/Pictures/gemma-arterton-women-model-black-coat-wallpaper-02f6dc353f6523b95532e44a42615f40.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#1b1818",
+        "foreground": "#8a8585",
+        "cursor": "#5485b6"
+    },
+    "colors": {
+        "color0": "#1b1818",
+        "color1": "#ca4949",
+        "color2": "#4b8b8b",
+        "color3": "#a06e3b",
+        "color4": "#7272ca",
+        "color5": "#8464c4",
+        "color6": "#5485b6",
+        "color7": "#8a8585",
+        "color8": "#352f2f",
+        "color9": "#ff4c4c",
+        "color10": "#53c2c2",
+        "color11": "#de8f3e",
+        "color12": "#7f7fff",
+        "color13": "#a56eff",
+        "color14": "#5bacfd",
+        "color15": "#c7bfbf"
+    }
+}

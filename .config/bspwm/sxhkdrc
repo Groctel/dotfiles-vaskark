@@ -3,14 +3,12 @@
 #
 
 # polybar
-super + semicolon
- pkill polybar || polybar-current
-super + shift + semicolon
-   polybar-menu.sh
+super + {_,shift +} semicolon
+ {pkill polybar || polybar-current,polybar-menu.sh}
 
 # glava
 super + {_,shift +} g
-    {pkill glava || glava -d 2>/dev/null,glava-flip.sh}
+    {pkill glava || glava -d,glava-flip.sh}
 
 #
 # bspwm hotkeys
