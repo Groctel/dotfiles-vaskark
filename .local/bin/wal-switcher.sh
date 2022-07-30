@@ -7,7 +7,7 @@
 theme=$(wal --theme | sed '/Light Themes/,$d' | sed '/Dark Themes/,$d' | sed -e '/^\S/d' -e 's/ - //' | rofi \
     -dmenu \
     -i \
-    -p 'Pywal' \
+    -p 'wal' \
     -hide-scrollbar \
     -matching normal \
     -font 'scientifica bold 8' \
@@ -15,6 +15,6 @@ theme=$(wal --theme | sed '/Light Themes/,$d' | sed '/Dark Themes/,$d' | sed -e 
     -theme-str 'window {width: 12%;} listview {lines: 4; columns: 1;}'
 )
 
-if [ -n "$theme" ]; then
-	wal -q --theme "$theme" -o wal-extras.sh
-fi
+[ "$theme" ] && wal -q --theme "$theme" -o wal-extras.sh
+
+exit 0
