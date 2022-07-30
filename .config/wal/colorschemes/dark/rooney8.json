@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/jason/Pictures/rooneymara-1659115401143-9020-1.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#181818",
+        "foreground": "#c5c5c5",
+        "cursor": "#695b4f"
+    },
+    "colors": {
+        "color0": "#181818",
+        "color1": "#4f595c",
+        "color2": "#475155",
+        "color3": "#c9afa4",
+        "color4": "#77736e",
+        "color5": "#b7998b",
+        "color6": "#695b4f",
+        "color7": "#c5c5c5",
+        "color8": "#313131",
+        "color9": "#5b7982",
+        "color10": "#526d78",
+        "color11": "#ffd9bd",
+        "color12": "#a99780",
+        "color13": "#ffbf9f",
+        "color14": "#94755a",
+        "color15": "#ffffff"
+    }
+}

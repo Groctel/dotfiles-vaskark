@@ -1,27 +1,27 @@
 {
-    "wallpaper": "/home/jason/Pictures/ge7s6zexwpl81.jpg",
+    "wallpaper": "/home/jason/Pictures/Pictures-of-Rebecca-Hall-1.jpg",
     "alpha": "100",
     "special": {
-        "background": "#161615",
-        "foreground": "#c4c4c4",
-        "cursor": "#b89481"
+        "background": "#181817",
+        "foreground": "#c5c5c5",
+        "cursor": "#c1b3a0"
     },
     "colors": {
-        "color0": "#161615",
-        "color1": "#603d30",
-        "color2": "#79474a",
-        "color3": "#77523e",
-        "color4": "#937360",
-        "color5": "#aa8673",
-        "color6": "#b89481",
-        "color7": "#c4c4c4",
-        "color8": "#50504f",
-        "color9": "#603d30",
-        "color10": "#79474a",
-        "color11": "#77523e",
-        "color12": "#937360",
-        "color13": "#aa8673",
-        "color14": "#b89481",
-        "color15": "#c4c4c4"
+        "color0": "#181817",
+        "color1": "#5d4a3d",
+        "color2": "#b29e91",
+        "color3": "#52574a",
+        "color4": "#64604d",
+        "color5": "#723348",
+        "color6": "#c1b3a0",
+        "color7": "#c5c5c5",
+        "color8": "#31312f",
+        "color9": "#825e45",
+        "color10": "#fcc8a7",
+        "color11": "#6c7b55",
+        "color12": "#8d8458",
+        "color13": "#9E375A",
+        "color14": "#ffecb9",
+        "color15": "#ffffff"
     }
 }

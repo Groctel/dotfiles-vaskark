@@ -63,7 +63,7 @@ XF86MonBrightness{Up,Down}
 
 # wal
 super + {_,shift +,ctrl +} F12
-    {wal -f random_user -o wal-extras.sh,-R -o wal-extras.sh,wal-switcher.sh}
+    {wal -f random_user -o wal-extras.sh,wal -R -o wal-extras.sh,wal-switcher.sh}
         
 # pics
 super + {_,shift +} equal
