@@ -7,7 +7,7 @@
 theme=$(wal --theme | sed '/Light Themes/,$d' | sed '/Dark Themes/,$d' | sed -e '/^\S/d' -e 's/ - //' | rofi \
     -dmenu \
     -i \
-    -p 'wal' \
+    -p 'pywal' \
     -hide-scrollbar \
     -matching fuzzy \
     -font 'scientifica bold 8' \

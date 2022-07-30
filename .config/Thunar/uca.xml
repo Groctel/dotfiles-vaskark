@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<actions>
+<action>
+	<icon>utilities-terminal</icon>
+	<name>Open Terminal Here</name>
+	<unique-id>1647897352928881-1</unique-id>
+	<command>alacritty</command>
+	<description>Terminal emulator</description>
+	<patterns>*</patterns>
+	<startup-notify/>
+	<directories/>
+</action>
+<action>
+	<icon>/usr/local/share/icons/hicolor/128x128/apps/nsxiv.png</icon>
+	<name>Thumbnails</name>
+	<unique-id>1659179647960963-1</unique-id>
+	<command>nsxiv -rt %f</command>
+	<description>Image thumbnails</description>
+	<patterns>*</patterns>
+	<directories/>
+	<image-files/>
+</action>
+</actions>
