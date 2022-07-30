@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/jason/Pictures/jenna-coleman-face_3675x2783.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#181719",
+        "foreground": "#c5c5c5",
+        "cursor": "#8998a2"
+    },
+    "colors": {
+        "color0": "#181719",
+        "color1": "#533d43",
+        "color2": "#997672",
+        "color3": "#6f5f64",
+        "color4": "#a5857d",
+        "color5": "#5d474a",
+        "color6": "#8998a2",
+        "color7": "#c5c5c5",
+        "color8": "#312e33",
+        "color9": "#754552",
+        "color10": "#d88b82",
+        "color11": "#9d6e7d",
+        "color12": "#e9a18f",
+        "color13": "#835158",
+        "color14": "#9ec9e5",
+        "color15": "#ffffff"
+    }
+}
