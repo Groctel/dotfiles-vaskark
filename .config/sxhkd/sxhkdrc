@@ -3,7 +3,7 @@
 #
 
 # terminals
-super +  {_,shift +,ctrl +} Return
+super + {_,shift +,ctrl +} Return
  	{alacritty,kitty,urxvt}
 
 # reload sxhkd
@@ -16,7 +16,7 @@ super + {d,x}
 
 # lock
 super +  Escape
-        xscreensaver-command -lock
+    xscreensaver-command -lock
 
 # files
 super + {_,shift +} F1

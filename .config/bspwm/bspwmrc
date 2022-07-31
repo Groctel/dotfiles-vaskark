@@ -17,7 +17,7 @@ pgrep -x xautolock >/dev/null || xautolock -time 10 -locker 'xscreensaver-comman
 pgrep -x /usr/lib/policykit-1-gnome/polkit-gnome-authentication-agent-1 >/dev/null || /usr/lib/policykit-1-gnome/polkit-gnome-authentication-agent-1 &
 
 # sxhkd
-pgrep -x sxhkd >/dev/null || sxhkd -c "$HOME"/.config/bspwm/sxhkdrc "$HOME"/.config/sxhkd/sxhkdrc.common &
+pgrep -x sxhkd >/dev/null || sxhkd -c "$HOME"/.config/bspwm/sxhkdrc "$HOME"/.config/sxhkd/sxhkdrc &
 
 # wp
 [ -f "$HOME"/.fehbg ] || bash "$HOME"/.fehbg &

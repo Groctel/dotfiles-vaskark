@@ -12,7 +12,7 @@ logfile="$HOME"/.config/dk/dkrc.log
 # (re)load sxhkd for keybinds
 if hash sxhkd >/dev/null 2>&1; then
 	pkill sxhkd
-	sxhkd -c "$HOME"/.config/dk/sxhkdrc "$HOME"/.config/sxhkd/sxhkdrc.common &
+	sxhkd -c "$HOME"/.config/dk/sxhkdrc "$HOME"/.config/sxhkd/sxhkdrc &
 fi
 
 { # compound command to redirect all output
@@ -121,7 +121,7 @@ fi
 	dkcmd rule class="^mpv$" instance="^albumart$" float=true ignore=true callback=albumart bw=0
 
 	# open window(s) in a floating state
-	dkcmd rule class="^(pavucontrol|transmission-gtk|lxappearance|Windscribe2)$" float=true
+	dkcmd rule class="^(pavucontrol|transmission-gtk|lxappearance|Windscribe2|St|Wpg)$" float=true
 
 	# open window(s) with a specific geometry and coordinates (floating only!)
 	dkcmd rule class="^google-chrome$" title="^open files$" float=true w=1280 h=720

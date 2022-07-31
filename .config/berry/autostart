@@ -25,7 +25,7 @@ berryc set_font     "scientifica-8:bold"
 wal -R -o wal-extras.sh
 
 # sxhkd
-sxhkd -c "$HOME"/.config/berry/sxhkdrc "$HOME"/.config/sxhkd/sxhkdrc.common &
+sxhkd -c "$HOME"/.config/berry/sxhkdrc "$HOME"/.config/sxhkd/sxhkdrc &
 
 # redshift
 systemctl --user import-environment; systemctl --user restart redshift
