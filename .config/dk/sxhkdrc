@@ -74,7 +74,7 @@ super + l ; {t,r,m,g,s,d,f,u}
 
 # change number of windows in master or first stack
 # super + {_,shift + }{i,o}
-#         dkcmd set {master,stack} {+1,-1}
+#	dkcmd set {master,stack} {+1,-1}
 
 # change gap width
 super + alt + {equal,minus}

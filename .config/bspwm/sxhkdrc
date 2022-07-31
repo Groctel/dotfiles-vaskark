@@ -4,7 +4,7 @@
 
 # polybar
 super + {_,shift +} semicolon
- {pkill polybar || polybar-current,polybar-menu.sh}
+	{pkill polybar || polybar-current,polybar-menu.sh}
 
 # glava
 super + {_,shift +} g

@@ -27,6 +27,8 @@ crct10dif_pclmul
 cryptd
 crypto_simd
 drm
+drm_buddy
+drm_dp_helper
 drm_kms_helper
 ecc
 ecdh_generic
@@ -99,6 +101,7 @@ nft_compat
 nft_counter
 nft_limit
 nls_iso8859_1
+ntfs3
 nvme
 nvme_core
 parport
@@ -152,7 +155,9 @@ syscopyarea
 sysfillrect
 sysimgblt
 ttm
+tun
 uas
+udf
 usbhid
 usb_storage
 uvcvideo
