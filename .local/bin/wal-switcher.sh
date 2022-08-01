@@ -4,7 +4,8 @@
 # Pywal user theme switcher
 #
 
-theme=$(wal --theme | sed '/Light Themes/,$d' | sed '/Dark Themes/,$d' | sed -e '/^\S/d' -e 's/ - //' | rofi \
+theme=$(wal --theme | sed '/Light Themes/,$d' | sed '/Dark Themes/,$d' | sed -e '/^\S/d' -e 's/ - //' | \
+    rofi \
     -dmenu \
     -i \
     -p 'pywal' \
