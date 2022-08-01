@@ -14,6 +14,6 @@ theme=$(wal --theme | sed '/Light Themes/,$d' | sed '/Dark Themes/,$d' | sed -e 
     -font 'scientifica bold 8' \
     -theme "$HOME/.cache/wal/colors-rofi-mine.rasi" \
     -theme-str 'window {width: 12%;} listview {lines: 4; columns: 1;}'
-)
+    )
 
 [ -n "$theme" ] && wal -q --theme "$theme" -o wal-extras.sh
