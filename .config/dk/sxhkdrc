@@ -6,6 +6,10 @@ super + {_,shift +} semicolon
 super + {_,shift +} g
     {pkill glava || glava -d,glava-flip.sh}
 
+# term
+super + {_,shift +,ctrl +} Return
+	{alacritty,st,urxvt}
+
 # launch
 super + {d,x}
 	{rofi.sh,dmenu.sh}
