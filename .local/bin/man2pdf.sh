@@ -1,7 +1,7 @@
 #!/bin/sh
 
 #
-# Manpage pdf
+# Manpages to pdf
 #
 
 choice=$(man -k . | \
