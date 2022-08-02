@@ -1,5 +1,4 @@
 -- init
-require('autocmd')
 require('keys')
 require('plugins')
 require('settings')
