@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/jason/Pictures/wp9972214-007-no-time-to-die-wallpapers.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#191817",
+        "foreground": "#c5c5c5",
+        "cursor": "#46423d"
+    },
+    "colors": {
+        "color0": "#191817",
+        "color1": "#613c2a",
+        "color2": "#907c79",
+        "color3": "#4e4a43",
+        "color4": "#7b6253",
+        "color5": "#823b41",
+        "color6": "#46423d",
+        "color7": "#c5c5c5",
+        "color8": "#33312e",
+        "color9": "#874a2d",
+        "color10": "#cc948c",
+        "color11": "#6e624d",
+        "color12": "#ad7c5e",
+        "color13": "#B5404A",
+        "color14": "#635646",
+        "color15": "#ffffff"
+    }
+}
