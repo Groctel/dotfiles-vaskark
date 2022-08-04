@@ -1,6 +1,6 @@
 #!/bin/sh
 
-# misc
+## misc
 xset +fp "$HOME"/.local/share/fonts/misc,/usr/local/share/fonts/spleen
 xrdb -merge "$HOME"/.Xresources
 
