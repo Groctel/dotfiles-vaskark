@@ -5,7 +5,7 @@
 # get CPU temperature
 #
 
-[ -z "$1" ] && set -- '${c}°C'
+[ -z "$1" ] && set -- "${c}°C"
 
 c=
 
@@ -14,9 +14,9 @@ case $(uname -s) in
     Linux*)
 
         path=/sys/class/thermal/thermal_zone0/temp
-        if [ -f $path ]
+        if [ -f "$path" ]
         then
-            read -r c < $path
+            read -r c < "$path"
         else
             echo "could not get temperature" >&2
             exit 1

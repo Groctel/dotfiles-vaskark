@@ -97,8 +97,11 @@ bindkey '^ ' autosuggest-toggle
 # ZSH_HIGHLIGHT_HIGHLIGHTERS=(brackets cursor line main pattern regexp root)
 # ZSH_HIGHLIGHT_PATTERNS+=('rm -rf *' 'fg=black,bold,bg=red')
 
-# fsh
+# f-sy-h
 source $ZDOTDIR/fast-syntax-highlighting/F-Sy-H.plugin.zsh 2>/dev/null
+
+# keychain
+eval "$(keychain --eval --agents ssh id_rsa -q)"
 
 # pure
 # fpath+=~/.pure

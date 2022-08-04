@@ -23,7 +23,7 @@ alias rmpd='systemctl --user daemon-reload; systemctl --user restart mpd'
 alias lf='$HOME/.local/bin/lf.sh'
 alias lfb='lf -config ~/.config/lf/lfrc-basic'
 alias v="$EDITOR"
-alias nvc="$EDITOR $XDG_CONFIG_HOME/nvim/init.vim"
+alias nvc="$EDITOR $XDG_CONFIG_HOME/nvim/init.lua"
 alias lml='exa -l -r -s time /var/log | tail'
 alias cl='sudo rm -rf /var/log/*'
 alias -g G='| grep -i'
@@ -47,7 +47,7 @@ alias za="$EDITOR $ZDOTDIR/aliases"
 alias zc="$EDITOR $ZDOTDIR/.zshrc"
 alias ze="$EDITOR $HOME/.zshenv"
 alias zh="rm -f $ZDOTDIR/zhistory && clear && exec zsh" 
-alias zs="source $HOME/.zshenv && clear && exec zsh"
+alias zs="source $HOME/.zshenv && source $XDG_CONFIG_HOME/zsh/.zshrc && clear && exec zsh"
 
 # xrdb
 alias xc="$EDITOR $HOME/.Xresources"

@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 # download
 INTERFACE=$(ip addr | awk '/state UP/ {print $2}' | sed 's/://g')

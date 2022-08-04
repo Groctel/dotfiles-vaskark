@@ -11,9 +11,6 @@ xrdb -merge "$HOME"/.Xresources
 # fi
 # export SSH_AUTH_SOCK=~/.ssh/ssh_auth_sock
 
-# keychain
-eval $(keychain --eval --agents ssh id_rsa)
-
 # wm
 session=${1:-berry}
 case ${session} in
