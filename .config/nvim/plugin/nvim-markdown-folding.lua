@@ -1,0 +1,1 @@
+vim.api.nvim_set_var('markdown_fold_style','nested')
