@@ -46,8 +46,8 @@ alias lt='ls -T -L 2'
 alias za="$EDITOR $ZDOTDIR/aliases"
 alias zc="$EDITOR $ZDOTDIR/.zshrc"
 alias ze="$EDITOR $HOME/.zshenv"
-alias zh="rm -f $ZDOTDIR/zhistory && clear && exec zsh" 
-alias zs="source $HOME/.zshenv && source $XDG_CONFIG_HOME/zsh/.zshrc && clear && exec zsh"
+alias zh="rm -f $ZDOTDIR/zhistory ; clear ; exec zsh" 
+alias zs="source $HOME/.zshenv ; source $XDG_CONFIG_HOME/zsh/.zshrc ; clear && exec zsh"
 
 # xrdb
 alias xc="$EDITOR $HOME/.Xresources"
