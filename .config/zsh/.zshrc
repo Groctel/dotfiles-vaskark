@@ -101,7 +101,7 @@ bindkey '^ ' autosuggest-toggle
 source $ZDOTDIR/fast-syntax-highlighting/F-Sy-H.plugin.zsh 2>/dev/null
 
 # keychain
-eval "$(keychain --eval --agents ssh id_rsa -q)"
+eval "$(keychain --eval --agents ssh id_rsa --timeout 15 -q)"
 
 # pure
 # fpath+=~/.pure
