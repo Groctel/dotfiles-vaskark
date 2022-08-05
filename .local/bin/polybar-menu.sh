@@ -9,25 +9,28 @@ MENU="$(rofi -sep "|" \
 	-p 'Polybars' \
 	-location 0 \
 	-font 'scientifica bold 8' \
-	-theme "~/.cache/wal/colors-rofi-mine.rasi" \
+	-theme "$HOME/.cache/wal/colors-rofi-mine.rasi" \
     -theme-str 'window {width: 10%;} listview {lines: 3;}' \
 	<<< "siji|nf|emoji")"
 
 case "$MENU" in
 	
 	*siji)
-		ln -sf "$HOME"/.local/bin/polybar.sh "$HOME"/.local/bin/polybar-current
-		polybar-current
+		pkill polybar
+		ln -sf "$HOME"/.config/polybar/config.ini "$HOME"/.config/polybar/current
+		polybar main -r -c "$HOME/.config/polybar/current" &
 	;;
 
 	*nf)
-		ln -sf "$HOME"/.local/bin/polybar-nf.sh "$HOME"/.local/bin/polybar-current
-		polybar-current
+		pkill polybar
+		ln -sf "$HOME"/.config/polybar/config-nf.ini "$HOME"/.config/polybar/current
+		polybar main -r -c "$HOME/.config/polybar/current" &
 	;;
 
 	*emoji)
-		ln -sf "$HOME"/.local/bin/polybar-emoji.sh "$HOME"/.local/bin/polybar-current
-		polybar-current
+		pkill polybar
+		ln -sf "$HOME"/.config/polybar/config-emoji.ini "$HOME"/.config/polybar/current
+		polybar main -r -c "$HOME/.config/polybar/current" &
 	;;
 
 esac

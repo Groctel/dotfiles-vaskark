@@ -1,6 +1,6 @@
 # polybar
 super + {_,shift +} semicolon
-	{pkill polybar || polybar-current,polybar-menu.sh}
+	{pkill polybar || polybar main -r -c "$XDG_CONFIG_HOME"/polybar/current,polybar-menu.sh}
 	
 # glava
 super + {_,shift +} g

@@ -6,9 +6,9 @@ moveamount 5
 sticky yes
 
 # colors
-color activeborder '#b58e88'
+color activeborder '#674040'
 color inactiveborder '#444444'
-color urgencyborder '#634245'
+color urgencyborder '#364765'
 color font '#666'
 color selfont '#4c5b6b' 
 
@@ -62,7 +62,7 @@ bind-key M-F11 'mpc toggle'
 bind-key M-F12 'mpc next'
 
 # statusbar
-bind-key 4-semicolon 'lemonbar-toggle.sh'
+bind-key 4-semicolon "sh -c 'pkill lemonbar || lemonbar-current'"
 bind-key 4S-semicolon 'lemonbar-menu.sh'
 
 # volume

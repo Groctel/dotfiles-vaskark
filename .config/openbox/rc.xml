@@ -529,7 +529,7 @@
     <!-- Polybar
     <keybind key="W-semicolon">
       <action name="Execute">
-        <command>sh -c 'pkill polybar || polybar-current'</command>
+        <command>sh -c 'pkill polybar || polybar main -r -c "$XDG_CONFIG_HOME"/polybar/current'</command>
       </action>
     </keybind>
     <keybind key="W-S-semicolon">
