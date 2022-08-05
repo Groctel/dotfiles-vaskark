@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/jason/Pictures/rsjqojlmjhf91.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#191618",
+        "foreground": "#c5c4c5",
+        "cursor": "#e3c296"
+    },
+    "colors": {
+        "color0": "#191618",
+        "color1": "#7b384f",
+        "color2": "#c88073",
+        "color3": "#b25158",
+        "color4": "#b45563",
+        "color5": "#974961",
+        "color6": "#e3c296",
+        "color7": "#c5c4c5",
+        "color8": "#332d31",
+        "color9": "#ab3d63",
+        "color10": "#ff9881",
+        "color11": "#f85863",
+        "color12": "#fb5d74",
+        "color13": "#d25078",
+        "color14": "#ffffaa",
+        "color15": "#fffeff"
+    }
+}
