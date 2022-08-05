@@ -22,19 +22,19 @@ case "$MENU" in
 	*siji)
 		pkill polybar
 		ln -sf "$PB"/config.ini "$CUR"
-		polybar main -r -c "$CUR" &
+		polybar main -q -r -c "$CUR" &
 	;;
 
 	*nf)
 		pkill polybar
 		ln -sf "$PB"/config-nf.ini "$CUR"
-		polybar main -r -c "$CUR" &
+		polybar main -q -r -c "$CUR" &
 	;;
 
 	*emoji)
 		pkill polybar
 		ln -sf "$PB"/config-emoji.ini "$CUR"
-		polybar main -r -c "$CUR" &
+		polybar main -q -r -c "$CUR" &
 	;;
 
 esac
