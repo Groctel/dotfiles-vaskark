@@ -1,6 +1,6 @@
 #!/bin/sh
 
-# colours
+# colors
 . "$XDG_CACHE_HOME"/wal/colors.sh
 
 # offset
@@ -21,4 +21,4 @@ h=30
 -F "#555" \
 -b \
 -d \
-| $SHELL &
+| $SHELL
