@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/jason/Pictures/lany6ur93kf91.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#181819",
+        "foreground": "#c5c5c5",
+        "cursor": "#3b475f"
+    },
+    "colors": {
+        "color0": "#181819",
+        "color1": "#704441",
+        "color2": "#8f7071",
+        "color3": "#935c52",
+        "color4": "#cca5af",
+        "color5": "#a7515a",
+        "color6": "#3b475f",
+        "color7": "#c5c5c5",
+        "color8": "#303032",
+        "color9": "#9d4e49",
+        "color10": "#ca8183",
+        "color11": "#cd6d5b",
+        "color12": "#ffbed7",
+        "color13": "#E95968",
+        "color14": "#425885",
+        "color15": "#ffffff"
+    }
+}

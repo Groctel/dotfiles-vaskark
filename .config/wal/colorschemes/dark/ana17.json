@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/jason/Pictures/overdrive-5120x2880-ana-de-armas-5k-14372-1.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#181615",
+        "foreground": "#c5c4c4",
+        "cursor": "#ae8161"
+    },
+    "colors": {
+        "color0": "#181615",
+        "color1": "#523322",
+        "color2": "#474136",
+        "color3": "#6e482d",
+        "color4": "#84583c",
+        "color5": "#9a6b4c",
+        "color6": "#ae8161",
+        "color7": "#c5c4c4",
+        "color8": "#51504f",
+        "color9": "#523322",
+        "color10": "#474136",
+        "color11": "#6e482d",
+        "color12": "#84583c",
+        "color13": "#9a6b4c",
+        "color14": "#ae8161",
+        "color15": "#c5c4c4"
+    }
+}

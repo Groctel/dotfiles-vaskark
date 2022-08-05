@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/jason/Pictures/i40ujhon3wz51.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#181616",
+        "foreground": "#c5c4c4",
+        "cursor": "#89604b"
+    },
+    "colors": {
+        "color0": "#181616",
+        "color1": "#5d3e30",
+        "color2": "#673c48",
+        "color3": "#ba825f",
+        "color4": "#725038",
+        "color5": "#a32b44",
+        "color6": "#89604b",
+        "color7": "#c5c4c4",
+        "color8": "#322d2d",
+        "color9": "#824d35",
+        "color10": "#904358",
+        "color11": "#ffa469",
+        "color12": "#9f663d",
+        "color13": "#E12A50",
+        "color14": "#bf7853",
+        "color15": "#fffefe"
+    }
+}

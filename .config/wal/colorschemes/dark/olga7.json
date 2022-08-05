@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/jason/Pictures/kurylenko-models-olga-women-wallpaper-d910e87d310aad5b3697f88f0081665d.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#171615",
+        "foreground": "#c5c4c4",
+        "cursor": "#c49a7d"
+    },
+    "colors": {
+        "color0": "#171615",
+        "color1": "#573c30",
+        "color2": "#6e513e",
+        "color3": "#836656",
+        "color4": "#a77b63",
+        "color5": "#8d9199",
+        "color6": "#c49a7d",
+        "color7": "#c5c4c4",
+        "color8": "#51504f",
+        "color9": "#573c30",
+        "color10": "#6e513e",
+        "color11": "#836656",
+        "color12": "#a77b63",
+        "color13": "#8d9199",
+        "color14": "#c49a7d",
+        "color15": "#c5c4c4"
+    }
+}
