@@ -5,7 +5,7 @@
 # get CPU temperature
 #
 
-[ -z "$1" ] && set -- "${c}°C"
+[ -z "$1" ] && set -- '${c}°C'
 
 c=
 
