@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/jason/Pictures/ana-de-armas-bond-premiere-photoshoot-4k-fk-1.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#161616",
+        "foreground": "#c4c4c4",
+        "cursor": "#765046"
+    },
+    "colors": {
+        "color0": "#161616",
+        "color1": "#5f3b36",
+        "color2": "#624547",
+        "color3": "#7d5f5a",
+        "color4": "#b89b90",
+        "color5": "#8f4350",
+        "color6": "#765046",
+        "color7": "#c4c4c4",
+        "color8": "#2f2f2f",
+        "color9": "#85453c",
+        "color10": "#8A4E52",
+        "color11": "#b07167",
+        "color12": "#ffbfa5",
+        "color13": "#C7495F",
+        "color14": "#a5604e",
+        "color15": "#ffffff"
+    }
+}
