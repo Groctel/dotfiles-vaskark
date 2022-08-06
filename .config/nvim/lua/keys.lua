@@ -39,6 +39,9 @@ map('i', '<M-j>', '<down>')
 map('i', '<M-k>', '<up>')
 map('i', '<M-l>', '<right>')
 
+-- tabs
+map('n', '<M-t>', 'gt')
+
 -- mimic shell movements
 map('i', '<C-A>', '<esc>I')
 map('i', '<C-E>', '<esc>A')
@@ -48,10 +51,6 @@ map('n', '<silent><esc>', ':noh<return><esc>')
 
 -- refresh file
 map('n', '<F5>', ':e!<cr>')
-
--- fzf
--- map('n', '<leader>f', '<esc>:FZF <cr>', { noremap = true })
--- map('n', '<leader>F', '<esc>:FZF ~<cr>', {noremap = true })
 
 -- telescope
 -- map('n', '<leader>ff', '<cmd>lua require('telescope.builtin').find_files()<cr>')
