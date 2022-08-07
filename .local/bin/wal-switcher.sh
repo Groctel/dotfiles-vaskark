@@ -10,7 +10,7 @@ theme=$(wal --theme | sed '/Light Themes/,$d' | sed '/Dark Themes/,$d' | sed -e 
     -i \
     -p 'pywal' \
     -hide-scrollbar \
-    -matching fuzzy \
+    -matching normal \
     -font 'scientifica bold 8' \
     -theme "$HOME/.cache/wal/colors-rofi-mine.rasi" \
     -theme-str 'window {width: 12%;} listview {lines: 4; columns: 1;}'
