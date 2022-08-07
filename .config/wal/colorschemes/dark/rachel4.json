@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/jason/Pictures/wp1989116-rachel-weisz-wallpapers-1.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#181716",
+        "foreground": "#c5c5c4",
+        "cursor": "#b06f4c"
+    },
+    "colors": {
+        "color0": "#181716",
+        "color1": "#69432d",
+        "color2": "#c49174",
+        "color3": "#dbb498",
+        "color4": "#775f48",
+        "color5": "#b65d59",
+        "color6": "#b06f4c",
+        "color7": "#c5c5c4",
+        "color8": "#32302d",
+        "color9": "#925430",
+        "color10": "#ffb682",
+        "color11": "#ffe6ad",
+        "color12": "#a77b51",
+        "color13": "#fe6862",
+        "color14": "#f58b52",
+        "color15": "#fffffe"
+    }
+}
