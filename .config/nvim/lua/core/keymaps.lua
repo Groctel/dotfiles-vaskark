@@ -30,6 +30,7 @@ map('n', '<M-t>', 'gt')
 map('v', '<M-t>', 'gt')
 map('t', '<M-t>', 'gt')
 map('i', '<M-t>', 'gt')
+-- map('n', '<tab>', 'gt')
 
 -- move window
 map('n', '<M-h>', '<C-W>h')
@@ -54,12 +55,12 @@ map('i', '<C-A>', '<esc>I')
 map('i', '<C-E>', '<esc>A')
 
 -- clear search highlighting
-map('n', '<silent><esc>', ':noh<return><esc>')
+map('n', '<esc>', ':noh<return><esc>')
 
 -- refresh file
 map('n', '<F5>', ':e!<cr>')
 
--- Reload configuration without restart nvim
+-- reload configuration without restart nvim
 map('n', '<leader>r', ':so %<cr>')
 
 -- telescope
@@ -73,10 +74,14 @@ map('n', '<leader>fm', ':Telescope man_pages theme=dropdown<cr>')
 map('n', '<leader>n', '<esc>:NvimTreeToggle<cr>')
 
 -- alpha
-map('n', '<leader>aa', '<esc>:Alpha<cr>')
+map('n', '<leader>a', '<esc>:Alpha<cr>')
+
+-- bufferline
+map('n', '<Tab>', ':BufferLineCycleNext<cr>')
+map('n', '<S-Tab>', ':BufferLineCyclePrev<cr>')
 
 -- toggleterm
-map('n', '<C-T>', ':ToggleTerm size=50 direction=horizontal<cr>')
+map('n', '<leader>t', ':ToggleTerm<cr>')
 map('t', '<esc>', '<C-\\><C-n>')
 
 -- quit

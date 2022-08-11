@@ -9,9 +9,9 @@ local dashboard = require('alpha.themes.dashboard')
 local function footer()
   local version = vim.version()
   local print_version = "v" .. version.major .. '.' .. version.minor .. '.' .. version.patch
-  local datetime = os.date('%a %b %d, %Y %-I:%M %p')
+  local datetime = os.date('%b %d %Y %-I:%M %p')
 
-  return print_version .. ' -- ' .. datetime
+  return print_version .. ' ... ' .. datetime
 end
 
 -- Banner
