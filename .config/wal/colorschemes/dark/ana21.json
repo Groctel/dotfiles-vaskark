@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/jason/Pictures/ana-de-armas-vanity-fair-2020-fu-1.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#191918",
+        "foreground": "#c5c5c5",
+        "cursor": "#94806a"
+    },
+    "colors": {
+        "color0": "#191918",
+        "color1": "#6a4e3b",
+        "color2": "#555f3f",
+        "color3": "#ba9c87",
+        "color4": "#7b6e49",
+        "color5": "#b88581",
+        "color6": "#94806a",
+        "color7": "#c5c5c5",
+        "color8": "#323230",
+        "color9": "#946341",
+        "color10": "#728547",
+        "color11": "#ffc79a",
+        "color12": "#ac9552",
+        "color13": "#ff9b93",
+        "color14": "#d0a779",
+        "color15": "#ffffff"
+    }
+}

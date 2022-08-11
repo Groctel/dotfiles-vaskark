@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/jason/Pictures/gw8igfvou4z51.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#161515",
+        "foreground": "#c4c4c4",
+        "cursor": "#b19687"
+    },
+    "colors": {
+        "color0": "#161515",
+        "color1": "#785c49",
+        "color2": "#614437",
+        "color3": "#c4ac9a",
+        "color4": "#947769",
+        "color5": "#c29ea9",
+        "color6": "#b19687",
+        "color7": "#c4c4c4",
+        "color8": "#2f2d2d",
+        "color9": "#a87552",
+        "color10": "#87543d",
+        "color11": "#ffdcb1",
+        "color12": "#d09478",
+        "color13": "#ffb6d2",
+        "color14": "#fabd9b",
+        "color15": "#ffffff"
+    }
+}
