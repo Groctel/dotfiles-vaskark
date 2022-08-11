@@ -1,6 +1,10 @@
 -- map function
-local function map(m, k, v)
-    vim.keymap.set(m, k, v, { silent = true })
+local function map(mode, lhs, rhs, opts)
+  local options = { noremap = true, silent = true }
+  if opts then
+    options = vim.tbl_extend('force', options, opts)
+  end
+  vim.api.nvim_set_keymap(mode, lhs, rhs, options)
 end
 
 -- save
@@ -21,6 +25,12 @@ map('v', '<M-o>', '<C-W>w')
 map('t', '<M-o>', '<esc><C-W>w')
 map('i', '<M-o>', '<esc><C-W>w')
 
+-- cycle tabs
+map('n', '<M-t>', 'gt')
+map('v', '<M-t>', 'gt')
+map('t', '<M-t>', 'gt')
+map('i', '<M-t>', 'gt')
+
 -- move window
 map('n', '<M-h>', '<C-W>h')
 map('n', '<M-j>', '<C-W>j')
@@ -39,9 +49,6 @@ map('i', '<M-j>', '<down>')
 map('i', '<M-k>', '<up>')
 map('i', '<M-l>', '<right>')
 
--- tabs
-map('n', '<M-t>', 'gt')
-
 -- mimic shell movements
 map('i', '<C-A>', '<esc>I')
 map('i', '<C-E>', '<esc>A')
@@ -52,16 +59,25 @@ map('n', '<silent><esc>', ':noh<return><esc>')
 -- refresh file
 map('n', '<F5>', ':e!<cr>')
 
--- telescope
--- map('n', '<leader>ff', '<cmd>lua require('telescope.builtin').find_files()<cr>')
-map('n', '<leader>ff', ':Telescope find_files<cr>')
-map('n', '<leader>fb', ':Telescope buffers<cr>')
-map('n', '<leader>fg', ':Telescope live_grep<cr>')
-map('n', '<leader>fh', ':Telescope help_tags<cr>')
-map('n', '<leader>fm', ':Telescope man_pages<cr>')
+-- Reload configuration without restart nvim
+map('n', '<leader>r', ':so %<cr>')
 
--- nerdtree
-map('n', '<leader>n', '<esc>:NERDTreeToggle<cr>')
+-- telescope
+map('n', '<leader>ff', ':Telescope find_files theme=dropdown<cr>')
+map('n', '<leader>fb', ':Telescope buffers theme=dropdown<cr>')
+map('n', '<leader>fg', ':Telescope live_grep theme=dropdown<cr>')
+map('n', '<leader>fh', ':Telescope help_tags theme=dropdown<cr>')
+map('n', '<leader>fm', ':Telescope man_pages theme=dropdown<cr>')
+
+-- nvimtree
+map('n', '<leader>n', '<esc>:NvimTreeToggle<cr>')
+
+-- alpha
+map('n', '<leader>aa', '<esc>:Alpha<cr>')
+
+-- toggleterm
+map('n', '<C-T>', ':ToggleTerm size=50 direction=horizontal<cr>')
+map('t', '<esc>', '<C-\\><C-n>')
 
 -- quit
 map('n', '<C-W>q', ':q<cr>')

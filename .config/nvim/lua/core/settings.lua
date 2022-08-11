@@ -33,4 +33,4 @@ vim.o.list = true
 vim.o.wildmenu = true
 vim.o.scrolloff = 8
 vim.o.showmode = false
-vim.o.laststatus = 2
+-- vim.o.termguicolors = true

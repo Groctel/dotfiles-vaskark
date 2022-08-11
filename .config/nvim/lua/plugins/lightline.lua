@@ -1,6 +1,4 @@
-lua require('init')
-
-" Lightline
+vim.cmd[[
 let g:lightline = {
     \ 'colorscheme': 'wal'
     \ }
@@ -24,7 +22,7 @@ let g:lightline.inactive = {
 
 let g:lightline.tabline = {
     \ 'left': [ [ ] ],
-    \ 'right': [ [ 'tabs' ] ] 
+    \ 'right': [ ['tabs'] ] 
     \ }
 
 let g:lightline.tab = {
@@ -59,18 +57,18 @@ let g:lightline.component = {
     \ }
 
 " let g:lightline.mode_map = {
-   " \ 'n' : 'N',
-   " \ 'i' : 'I',
-   " \ 'R' : 'R',
-   " \ 'v' : 'V',
-   " \ 'V' : 'L',
-   " \ "\<C-v>": 'B',
-   " \ 'c' : 'C',
-   " \ 's' : 'S',
-   " \ 'S' : 'S-LINE',
-   " \ "\<C-s>": 'S-BLOCK',
-   " \ 't': 'T',
-   " \ }
+   " " \ 'n' : 'N',
+   " " \ 'i' : 'I',
+   " " \ 'R' : 'R',
+   " " \ 'v' : 'V',
+   " " \ 'V' : 'L',
+   " " \ "\<C-v>": 'B',
+   " " \ 'c' : 'C',
+   " " \ 's' : 'S',
+   " " \ 'S' : 'S-LINE',
+   " " \ "\<C-s>": 'S-BLOCK',
+   " " \ 't': 'T',
+   " " \ }
 
 let g:lightline.separator = {
     \   'left': '', 'right': ''
@@ -80,10 +78,10 @@ let g:lightline.subseparator = {
     \ }
 
 " let g:lightline.separator = {
-    " \   'left': '', 'right': ''
+    " \   'left': '', 'right': ''
     " \ }
 " let g:lightline.subseparator = {
-    " \   'left': '', 'right': ''
+    " \   'left': '', 'right': ''
     " \ }
 
 " let g:lightline.separator = {
@@ -100,3 +98,4 @@ let g:lightline.enable = {
     \ 'statusline': 1,
     \ 'tabline': 1
     \ }
+]]
