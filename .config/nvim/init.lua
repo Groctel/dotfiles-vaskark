@@ -1,4 +1,5 @@
--- modules
+-- Lua modules
+
 require('core.colors')
 require('core.keymaps')
 require('core.settings')
