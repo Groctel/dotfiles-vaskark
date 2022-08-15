@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/jason/Pictures/gemma-arterton-wide-hd-wallpaper-52019-53725-hd-wallpapers-1.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#171615",
+        "foreground": "#c5c4c4",
+        "cursor": "#9fa9cb"
+    },
+    "colors": {
+        "color0": "#171615",
+        "color1": "#67422b",
+        "color2": "#887066",
+        "color3": "#d0ac8d",
+        "color4": "#b98b6b",
+        "color5": "#be786c",
+        "color6": "#9fa9cb",
+        "color7": "#c5c4c4",
+        "color8": "#312f2c",
+        "color9": "#8f532e",
+        "color10": "#c08b75",
+        "color11": "#ffdda0",
+        "color12": "#ffb178",
+        "color13": "#ff8e79",
+        "color14": "#b7ceff",
+        "color15": "#fffefe"
+    }
+}
