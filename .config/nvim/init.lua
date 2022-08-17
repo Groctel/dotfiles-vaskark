@@ -1,16 +1,16 @@
--- Lua modules
+-- main
+require('main.colors')
+require('main.keymaps')
+require('main.plugins')
+require('main.settings')
 
-require('core.colors')
-require('core.keymaps')
-require('core.settings')
-
-require('plugins')
+-- plugins
 require('plugins.alpha')
 require('plugins.bufferline')
 require('plugins.highlightedyank')
+require('plugins.image')
 -- require('plugins.lightline')
 require('plugins.lualine')
-require('plugins.markdown-folding')
 require('plugins.nerdcommenter')
 require('plugins.nvim-tree')
 require('plugins.telescope')

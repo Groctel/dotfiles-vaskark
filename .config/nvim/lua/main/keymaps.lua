@@ -82,7 +82,6 @@ map('n', '<S-Tab>', ':BufferLineCyclePrev<cr>')
 
 -- toggleterm
 map('n', '<leader>t', ':ToggleTerm<cr>')
-map('t', '<esc>', '<C-\\><C-n>')
 
 -- quit
 map('n', '<C-W>q', ':q<cr>')
